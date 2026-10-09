@@ -1,0 +1,60 @@
+{
+  "nodes": 1670341,
+  "candidate_drugs": 5326,
+  "diseases": 3538,
+  "stored_records": 28709074,
+  "original_unique_connections": 27927289,
+  "model_connections_before_inverses": 27917681,
+  "removed_connections": 9608,
+  "removed_connections_by_predicate": {
+    "biolink:treats": 3616,
+    "biolink:treats_or_applied_or_studied_to_treat": 1720,
+    "biolink:applied_to_treat": 1257,
+    "biolink:in_clinical_trials_for": 2044,
+    "biolink:affects": 139,
+    "biolink:contributes_to": 120,
+    "biolink:has_side_effect": 237,
+    "biolink:correlated_with": 125,
+    "biolink:disrupts": 22,
+    "biolink:related_to": 201,
+    "biolink:contraindicated_in": 61,
+    "biolink:causes": 39,
+    "biolink:predisposes_to_condition": 8,
+    "biolink:studied_to_treat": 5,
+    "biolink:positively_correlated_with": 11,
+    "biolink:negatively_correlated_with": 2,
+    "biolink:produces": 1
+  },
+  "pair_splits": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "isolated_nodes_after_mask": 64,
+  "isolated_candidate_drugs": 6,
+  "validation_isolated_drug_pairs": 1,
+  "validation_isolated_disease_pairs": 27,
+  "validation_diseases": 986,
+  "validation_pairs_without_visible_treatment_for_disease": 184,
+  "source_inventory_sha256": "0745e2d0d4fd1b60a98d20b63e067f993279d3ce36e29b8999d6a52994becbc4",
+  "config_sha256": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75",
+  "dataset_sha256": {
+    "candidate_degree.npy": "189f1c6dd616e827e81258acb58484f69828dc2b021f1848b77be69d463415aa",
+    "candidates.json": "a7a9580b5634f7eb3e0bbf7dad092f4aa0029e512cd9f3c1ee87bd8c1ddcbfce",
+    "labels.json": "707f2b251e194c771e2126db57f211273ba44cca505c9e95ec494d151e7ee666",
+    "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+    "triples.npy": "d7203bc004e13e144a8b5e904827a0175724da5433e07d71c6b982df39915af6"
+  },
+  "checks": [
+    "source inventory equals full Gandalf target pairs",
+    "exact disjoint global split",
+    "visible targets retained",
+    "all direct held-out pair predicates and directions absent"
+  ],
+  "limitations": [
+    "Graph assertions are not clinically adjudicated treatments",
+    "Indirect clues through equivalent or related entities may remain",
+    "Previously explored pairs may occur in this broader exploratory split"
+  ],
+  "preparation_seconds": 39.177329471334815
+}

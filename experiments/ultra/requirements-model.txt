@@ -1,0 +1,10 @@
+# Python 3.11; tested on Apple Silicon and Linux x86_64 (CPU).
+# On Linux, install torch from the CPU or CUDA wheel index first; see SETUP.md.
+numpy==1.26.4
+torch==2.1.0
+torch-geometric==2.4.0
+ninja==1.13.2
+easydict==1.13
+PyYAML==6.0.3
+Jinja2==3.1.6
+# Install torch-scatter separately after torch; see SETUP.md.

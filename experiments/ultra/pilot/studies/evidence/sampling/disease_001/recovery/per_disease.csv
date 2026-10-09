@@ -1,0 +1,41 @@
+scope,disease,name,known_pairs,known_recovered,known_missed,recovery_fraction,reached_pairs,additional_pairs_no_explicit_treats,additional_with_other_treatment_family_links,additional_without_treatment_family_links,additional_contraindicated_pairs,recovered_known_treats_edges_traversed
+drug,MONDO:0000816,abdominal obesity-metabolic syndrome,24,22,2,0.9166666666666666,420,398,267,131,13,5
+drug,MONDO:0001134,essential hypertension,16,15,1,0.9375,406,391,184,207,0,9
+drug,MONDO:0002046,alcohol abuse,18,18,0,1.0,339,321,107,214,0,17
+drug,MONDO:0002471,bursitis,18,18,0,1.0,344,326,65,261,0,18
+drug,MONDO:0004993,carcinoma,17,12,5,0.7058823529411765,320,308,204,104,0,2
+drug,MONDO:0005047,infertility,22,18,4,0.8181818181818182,349,331,137,194,0,13
+drug,MONDO:0005146,post-traumatic stress disorder,32,31,1,0.96875,373,342,184,158,0,21
+drug,MONDO:0005642,atopic conjunctivitis,62,61,1,0.9838709677419355,332,271,35,236,0,61
+drug,MONDO:0005867,Mycoplasma pneumoniae pneumonia,23,23,0,1.0,320,297,48,249,0,23
+drug,MONDO:0005970,staphylococcal pneumonia,30,30,0,1.0,336,306,32,274,0,30
+drug,MONDO:0006547,exanthem,39,23,16,0.5897435897435898,596,573,191,382,4,7
+drug,MONDO:0006668,bacterial conjunctivitis,23,23,0,1.0,298,275,23,252,0,23
+drug,MONDO:0008487,Androgen excess,33,31,2,0.9393939393939394,332,301,159,142,0,20
+drug,MONDO:0011438,acne,48,43,5,0.8958333333333334,382,339,101,238,0,36
+drug,MONDO:0015758,primary cutaneous T-cell lymphoma,38,38,0,1.0,295,257,62,195,0,36
+drug,MONDO:0021201,skin infection,39,38,1,0.9743589743589743,332,294,46,248,0,37
+drug,MONDO:0021661,coronary atherosclerosis,59,45,14,0.7627118644067796,374,329,184,145,23,21
+drug,MONDO:0024327,Chronic uremia,47,32,15,0.6808510638297872,439,407,274,133,21,15
+drug,UMLS:C0276089,Pneumonia caused by Escherichia coli,24,24,0,1.0,313,289,0,289,0,24
+drug,UMLS:C1167648,Abdominal and gastrointestinal infections,17,17,0,1.0,297,280,0,280,0,17
+chemical_or_drug,MONDO:0000816,abdominal obesity-metabolic syndrome,28,23,5,0.8214285714285714,911,888,473,415,14,5
+chemical_or_drug,MONDO:0001134,essential hypertension,24,20,4,0.8333333333333334,697,677,235,442,0,13
+chemical_or_drug,MONDO:0002046,alcohol abuse,22,22,0,1.0,669,647,202,445,0,21
+chemical_or_drug,MONDO:0002471,bursitis,20,20,0,1.0,596,576,78,498,0,20
+chemical_or_drug,MONDO:0004993,carcinoma,20,12,8,0.6,716,704,351,353,0,2
+chemical_or_drug,MONDO:0005047,infertility,28,21,7,0.75,723,702,217,485,0,16
+chemical_or_drug,MONDO:0005146,post-traumatic stress disorder,36,35,1,0.9722222222222222,699,664,280,384,0,24
+chemical_or_drug,MONDO:0005642,atopic conjunctivitis,76,73,3,0.9605263157894737,650,577,61,516,0,73
+chemical_or_drug,MONDO:0005867,Mycoplasma pneumoniae pneumonia,26,26,0,1.0,586,560,68,492,0,26
+chemical_or_drug,MONDO:0005970,staphylococcal pneumonia,33,33,0,1.0,581,548,42,506,0,33
+chemical_or_drug,MONDO:0006547,exanthem,41,24,17,0.5853658536585366,950,926,205,721,4,8
+chemical_or_drug,MONDO:0006668,bacterial conjunctivitis,25,25,0,1.0,548,523,39,484,0,25
+chemical_or_drug,MONDO:0008487,Androgen excess,36,34,2,0.9444444444444444,735,701,313,388,0,23
+chemical_or_drug,MONDO:0011438,acne,66,51,15,0.7727272727272727,725,674,172,502,0,42
+chemical_or_drug,MONDO:0015758,primary cutaneous T-cell lymphoma,40,40,0,1.0,641,601,139,462,0,38
+chemical_or_drug,MONDO:0021201,skin infection,78,73,5,0.9358974358974359,643,570,83,487,0,72
+chemical_or_drug,MONDO:0021661,coronary atherosclerosis,70,51,19,0.7285714285714285,752,701,309,392,24,23
+chemical_or_drug,MONDO:0024327,Chronic uremia,57,37,20,0.6491228070175439,834,797,423,374,23,18
+chemical_or_drug,UMLS:C0276089,Pneumonia caused by Escherichia coli,28,28,0,1.0,515,487,0,487,0,28
+chemical_or_drug,UMLS:C1167648,Abdominal and gastrointestinal infections,23,23,0,1.0,495,472,0,472,0,23

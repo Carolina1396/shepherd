@@ -1,0 +1,96 @@
+{
+  "copied_on": "2026-10-09",
+  "scope": "Byte-identical copies of existing local reports; no inference rerun and no raw score arrays included. Source paths are relative to experiments/ultra.",
+  "files": [
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/validation/metrics.json",
+      "published_path": "full-graph-ultra/run_001/validation/metrics.json",
+      "sha256": "bdc252c155e8c558d68b2fcc169aca3a01e072e05645e99ba9a66b429550a71c"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/test/metrics.json",
+      "published_path": "full-graph-ultra/run_001/test/metrics.json",
+      "sha256": "521f444209124bb2a7ceeb448d11beb662bb292246547db9aee8badb9b4150ac"
+    },
+    {
+      "source_local_path": "output/gpu-verification/verification.json",
+      "published_path": "gpu-verification/verification.json",
+      "sha256": "7a50a9d2ecd90b36353914ba8d1530eac92cdd5d3224fa134f2ca395f90389e9"
+    },
+    {
+      "source_local_path": "output/gpu-verification/requirements-freeze.txt",
+      "published_path": "gpu-verification/requirements-freeze.txt",
+      "sha256": "ae47c43102f6d4da2da81d9a8d8cda206932858cd91ea4c8328545dc31687de4"
+    },
+    {
+      "source_local_path": "pilot/results/disease_001/summary.json",
+      "published_path": "sampling/disease_001/summary.json",
+      "sha256": "ff227b907cd6a7e684eaa9a1ec340db896d35662c47ece751cc0b3e4e4fde5ea"
+    },
+    {
+      "source_local_path": "pilot/results/disease_001/recovery/summary.json",
+      "published_path": "sampling/disease_001/recovery/summary.json",
+      "sha256": "3a73a23dfb04a4c9fd4c9aaa80c60b624978434f13eaa25fd1556c146f6daf32"
+    },
+    {
+      "source_local_path": "pilot/results/disease_001/ultra_001/validation/metrics.json",
+      "published_path": "sampling/disease_001/ultra_001/validation/metrics.json",
+      "sha256": "399d325faee04982eafb1b85d9927d428b65db84600e0c898ea22d3c7977eac3"
+    },
+    {
+      "source_local_path": "pilot/results/disease_001/recovery/verification.json",
+      "published_path": "sampling/disease_001/recovery/verification.json",
+      "sha256": "b60c524b2a2774ee99bd75d759ee66755f30cad5548902af6be0ad86a9eb1849"
+    },
+    {
+      "source_local_path": "pilot/results/disease_001/recovery/per_disease.csv",
+      "published_path": "sampling/disease_001/recovery/per_disease.csv",
+      "sha256": "d447e37f685bfe0e1d12ed5add39011ed19b55547eff229bdf96183211d8ea62"
+    },
+    {
+      "source_local_path": "pilot/results/disease_001/verification.json",
+      "published_path": "sampling/disease_001/verification.json",
+      "sha256": "737338d99fbc3469104e8d896cbe0a01d234d59c3b2e4e1764784f858dc0e821"
+    },
+    {
+      "source_local_path": "pilot/results/disease_001/ultra_001/verification.json",
+      "published_path": "sampling/disease_001/ultra_001/verification.json",
+      "sha256": "fdb79adb585aeae5d041a56545cdde6a416e0c3672dea173e528c1f03f8bfbe9"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/preparation.json",
+      "published_path": "full-graph-ultra/run_001/preparation.json",
+      "sha256": "e4fd13ae2c3920b71daa77a228c08e47d298dad478848d53d0f40930f8d9ef37"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/validation/benchmark.json",
+      "published_path": "full-graph-ultra/run_001/validation/benchmark.json",
+      "sha256": "b1b0ee3a094e3ecca797e6f79173ff73968e33e9cd3a99c26b2fcabc111d2df4"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/test/benchmark.json",
+      "published_path": "full-graph-ultra/run_001/test/benchmark.json",
+      "sha256": "96db3262bf9256460e3f72d2108c8846772188299390b64f41df8b16e1a8eb4b"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra-inspection/summary.json",
+      "published_path": "full-graph-ultra-inspection/summary.json",
+      "sha256": "49a96bdfd36bd7e5e50ca7fc8f28c7ecfe0596a34ec973467667bb3fb00f3135"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/preparation_verification.json",
+      "published_path": "full-graph-ultra/run_001/preparation_verification.json",
+      "sha256": "e08449dc999463b546f0e46d07feb2f2e439ec46e2e077f9cf6299d62d8c5dfa"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/validation_verification.json",
+      "published_path": "full-graph-ultra/run_001/validation_verification.json",
+      "sha256": "8b7320b7fab2af0fb154f8ddd6e6b734cdd1e053b7c2d349328c748a53a01344"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/run_001/test_verification.json",
+      "published_path": "full-graph-ultra/run_001/test_verification.json",
+      "sha256": "30c26b68d18dca8fa0bcd309712cdfab0100b2106ec41c3c17e0c207293e136e"
+    }
+  ]
+}

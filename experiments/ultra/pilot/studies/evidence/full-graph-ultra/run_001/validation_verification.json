@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "split_counts": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "exact_seeded_global_split_verified": true,
+  "candidate_pool_matches_native_drug_categories": true,
+  "model_graph_is_exact_source_subset": true,
+  "all_and_only_hidden_direct_connections_removed": true,
+  "connections_removed": 9608,
+  "visible_targets_retained": true,
+  "degree_baseline_recomputed": true,
+  "test_metrics_computed": false,
+  "validation_pairs_independently_ranked": 1807,
+  "validation_diseases": 986
+}

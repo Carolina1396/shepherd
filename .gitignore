@@ -182,3 +182,7 @@ cython_debug/
 
 # The ARAX port keeps ARAX's own scripts/ packages (Infer, COHD_local)
 !shepherd_utils/arax/**/scripts/
+
+# Publish the ULTRA experiment code; keep the scorer experiment local.
+/experiments/scorer/
+!/experiments/ultra/scripts/

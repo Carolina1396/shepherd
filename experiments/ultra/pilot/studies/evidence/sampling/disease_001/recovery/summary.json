@@ -1,0 +1,68 @@
+{
+  "run_id": "disease_001",
+  "source_run_summary_sha256": "ff227b907cd6a7e684eaa9a1ec340db896d35662c47ece751cc0b3e4e4fde5ea",
+  "gandalf_commit": "3fbaded1c922de3d61ff2af17694264d13b221f5",
+  "graph": "/home/agonzalez/shepherd/experiments/ultra/output/gandalf/full-store",
+  "known_definition": "Unique chemical/drug -> explicit biolink:treats -> disease pairs in the full graph, all sources; no clinical adjudication",
+  "recovery_definition": "Known treatment node occurs anywhere in a completed walk from its disease; exact CURIE match",
+  "additional_definition": "Reached eligible node without explicit treats for that disease; graph candidates, not validated treatments",
+  "treatment_family": [
+    "biolink:ameliorates_condition",
+    "biolink:applied_to_treat",
+    "biolink:contraindicated_in",
+    "biolink:in_clinical_trials_for",
+    "biolink:in_preclinical_trials_for",
+    "biolink:studied_to_treat",
+    "biolink:treats",
+    "biolink:treats_or_applied_or_studied_to_treat"
+  ],
+  "counting_unit": "Unique disease-node pair unless field name starts with distinct; a node can be known for one disease and additional for another",
+  "known_links_visible_during_sampling": true,
+  "checks": [
+    "sampling output hashes",
+    "same graph metadata and Gandalf commit",
+    "coverage matches sampling summary",
+    "reached pairs partition into known recovered and additional",
+    "known counts match archived cohort for every disease"
+  ],
+  "totals": {
+    "drug": {
+      "known_pairs": 629,
+      "known_recovered": 562,
+      "known_missed": 67,
+      "reached_pairs": 7197,
+      "additional_pairs_no_explicit_treats": 6635,
+      "additional_with_other_treatment_family_links": 2303,
+      "additional_without_treatment_family_links": 4332,
+      "additional_contraindicated_pairs": 61,
+      "recovered_known_treats_edges_traversed": 435,
+      "recovery_fraction": 0.8934817170111288,
+      "distinct_known_nodes": 419,
+      "distinct_recovered_known_nodes": 381,
+      "distinct_additional_nodes": 1971,
+      "distinct_reached_nodes": 2022,
+      "distinct_nodes_in_both_recovered_and_additional_roles": 330
+    },
+    "chemical_or_drug": {
+      "known_pairs": 777,
+      "known_recovered": 671,
+      "known_missed": 106,
+      "reached_pairs": 13666,
+      "additional_pairs_no_explicit_treats": 12995,
+      "additional_with_other_treatment_family_links": 3690,
+      "additional_without_treatment_family_links": 9305,
+      "additional_contraindicated_pairs": 65,
+      "recovered_known_treats_edges_traversed": 533,
+      "recovery_fraction": 0.8635778635778636,
+      "distinct_known_nodes": 547,
+      "distinct_recovered_known_nodes": 476,
+      "distinct_additional_nodes": 6122,
+      "distinct_reached_nodes": 6227,
+      "distinct_nodes_in_both_recovered_and_additional_roles": 371
+    }
+  },
+  "output_sha256": {
+    "per_disease.csv": "d447e37f685bfe0e1d12ed5add39011ed19b55547eff229bdf96183211d8ea62",
+    "pairs.csv": "86d2f0bc903936e1fbaca345a7ba68cdc41ccc7558cb039235f64fc0afc1efde"
+  }
+}

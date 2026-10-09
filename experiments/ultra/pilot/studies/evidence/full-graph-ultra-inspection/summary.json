@@ -1,0 +1,61 @@
+{
+  "connected_nodes": 1670341,
+  "stored_edge_records": 28709074,
+  "unique_directed_triples_before_masking": 27927289,
+  "predicates": 60,
+  "connected_candidate_chemicals_or_drugs": 1117832,
+  "connected_candidate_drugs": 5326,
+  "connected_disease_nodes": 51707,
+  "treats_records_all_endpoint_types": 33634,
+  "eligible_treats_records": 27236,
+  "eligible_treats_pairs_match_source_inventory": true,
+  "populations": {
+    "chemical_or_drug": {
+      "pairs": 22918,
+      "distinct_treatment_subjects": 4556,
+      "diseases": 3901,
+      "diseases_with_one_pair": 1813,
+      "diseases_with_two_pairs": 572,
+      "largest_disease_pair_count": 305,
+      "global_split_preview_seed": 731,
+      "global_split_preview_counts": {
+        "visible": 18334,
+        "validation": 2291,
+        "test": 2293
+      },
+      "validation_diseases": 1145,
+      "test_diseases": 1122,
+      "validation_pairs_without_visible_treatment_for_disease": 226,
+      "test_pairs_without_visible_treatment_for_disease": 223
+    },
+    "drug_only": {
+      "pairs": 18079,
+      "distinct_treatment_subjects": 2344,
+      "diseases": 3538,
+      "diseases_with_one_pair": 1657,
+      "diseases_with_two_pairs": 544,
+      "largest_disease_pair_count": 166,
+      "global_split_preview_seed": 731,
+      "global_split_preview_counts": {
+        "visible": 14463,
+        "validation": 1807,
+        "test": 1809
+      },
+      "validation_diseases": 986,
+      "test_diseases": 977,
+      "validation_pairs_without_visible_treatment_for_disease": 184,
+      "test_pairs_without_visible_treatment_for_disease": 178
+    }
+  },
+  "eligible_treats_pairs_with_other_treatment_predicates": {
+    "biolink:treats_or_applied_or_studied_to_treat": 9247,
+    "biolink:in_clinical_trials_for": 12399,
+    "biolink:applied_to_treat": 6648,
+    "biolink:contraindicated_in": 284,
+    "biolink:studied_to_treat": 18,
+    "biolink:in_preclinical_trials_for": 1
+  },
+  "source_inventory_sha256": "0745e2d0d4fd1b60a98d20b63e067f993279d3ce36e29b8999d6a52994becbc4",
+  "split_status": "Global allocation preview only; no evaluation dataset or scores created",
+  "elapsed_seconds": 115.45388950034976
+}

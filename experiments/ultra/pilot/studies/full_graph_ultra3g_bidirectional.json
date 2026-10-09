@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "study_id": "full_graph_ultra3g_bidirectional",
+  "completed_on": "2026-10-09",
+  "role": "Exploratory full-graph reference within the Gandalf sampling and ULTRA pilot study",
+  "result_provenance": {
+    "source": "Exact verified execution outputs reported in this conversation, retained after completion at user request",
+    "record_type": "Protocol and aggregate results; not a raw inference artifact archive",
+    "raw_score_arrays_retained": false,
+    "per_pair_rank_files_retained": false,
+    "original_temporary_runners_retained": false,
+    "reason_raw_outputs_absent": "Temporary files and GPU caches were deleted at user request before the experiment was selected for retention",
+    "disease_to_drug_reused": "Aggregate from the immediately preceding verified temporary 3g head-prediction run; no rescoring during the reverse-direction run"
+  },
+  "model": {
+    "checkpoint": "vendor/ULTRA/ckpts/ultra_3g.pth",
+    "checkpoint_sha256": "fdedc01b0045fc089d2ad5da08569466b7b221691fe978a18e91082bbb133c18",
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "training_epochs": 0
+  },
+  "graph": {
+    "source_release": "Translator KG 2026_06_21",
+    "store": "output/gandalf/full-store",
+    "prepared_dataset": "output/full-graph-ultra/run_001",
+    "sampled": false,
+    "nodes": 1670341,
+    "original_relations": 60,
+    "relations_with_inverses": 120,
+    "connections_before_holdout_mask": 27927289,
+    "removed_connections": 9608,
+    "connections_after_mask_before_inverses": 27917681,
+    "model_edges_with_inverses": 55835362,
+    "input_file_sha256": {
+      "candidate_degree.npy": "189f1c6dd616e827e81258acb58484f69828dc2b021f1848b77be69d463415aa",
+      "candidates.json": "a7a9580b5634f7eb3e0bbf7dad092f4aa0029e512cd9f3c1ee87bd8c1ddcbfce",
+      "labels.json": "707f2b251e194c771e2126db57f211273ba44cca505c9e95ec494d151e7ee666",
+      "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+      "triples.npy": "d7203bc004e13e144a8b5e904827a0175724da5433e07d71c6b982df39915af6"
+    },
+    "prepared_config_sha256": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75",
+    "relation_graph_sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+    "prepared_config_note": "Existing preparation config names 4g; these reference runs reused its frozen graph and split but explicitly loaded the 3g checkpoint"
+  },
+  "evaluation": {
+    "target_relation": "biolink:treats",
+    "target_categories": {
+      "subject": "biolink:Drug",
+      "object": "biolink:Disease"
+    },
+    "split_method": "Sort unique CURIE pairs, shuffle with random.Random(731), allocate floor(0.8*N) visible, floor(0.1*N) validation, remainder test",
+    "split_seed": 731,
+    "all_target_pairs": 18079,
+    "split_counts": {
+      "visible": 14463,
+      "validation": 1807,
+      "test": 1809
+    },
+    "evaluated_split": "test",
+    "unique_test_pairs": 1809,
+    "test_diseases": 977,
+    "test_drugs": 910,
+    "validation_evaluated_with_3g": false,
+    "masking": "Remove every direct connection between validation/test pairs, all predicates and both directions, before inverse augmentation and relation-graph construction",
+    "filtering": "Exclude other known explicit Drug-Disease treats answers across all splits from ranking competitors; do not restore held-out graph edges",
+    "ties": "pessimistic",
+    "retain_isolated_candidates_and_targets": true,
+    "combined_weighting": "Equal weighting of both directions: 3618 directional predictions over 1809 unique pairs",
+    "metric_units": "MRR and Hits@k are fractions on [0,1]; Hits@k are not percentages"
+  },
+  "results": {
+    "given_drug_predict_disease": {
+      "prediction": "tail",
+      "query_category": "biolink:Drug",
+      "candidate_category": "biolink:Disease",
+      "queries": 910,
+      "candidates_per_query": 51707,
+      "answers": 1809,
+      "mrr": 0.13098222052857125,
+      "hits_at_1": 0.07075732448866777,
+      "hits_at_3": 0.14262023217247097,
+      "hits_at_10": 0.2542841348811498,
+      "top_10_answers": 460,
+      "inference_seconds": 437.53773773275316,
+      "elapsed_run_seconds": 450.2921187952161,
+      "peak_pytorch_allocated_bytes": 20123288064,
+      "batch_single_query_check": {
+        "scores_and_checked_ranks_matched": true,
+        "max_absolute_score_difference": 5.662441253662109e-06,
+        "rtol": 1e-05,
+        "atol": 1e-05
+      }
+    },
+    "given_disease_predict_drug": {
+      "prediction": "head",
+      "query_category": "biolink:Disease",
+      "candidate_category": "biolink:Drug",
+      "queries": 977,
+      "candidates_per_query": 5326,
+      "answers": 1809,
+      "mrr": 0.07650686832996832,
+      "hits_at_1": 0.04588170259812051,
+      "hits_at_3": 0.07462686567164178,
+      "hits_at_10": 0.12990602542841348,
+      "top_10_answers": 235,
+      "disease_macro_mrr": 0.0760580067671195,
+      "inference_seconds": 469.90472957491875,
+      "elapsed_run_seconds": 483.4324387162924,
+      "peak_pytorch_allocated_bytes": 20113143296,
+      "batch_single_query_check": {
+        "scores_and_checked_ranks_matched": true,
+        "max_absolute_score_difference": 7.867813110351562e-06,
+        "rtol": 1e-05,
+        "atol": 1e-05
+      }
+    },
+    "combined": {
+      "directional_answers": 3618,
+      "unique_pairs": 1809,
+      "mrr": 0.10374454442926978,
+      "hits_at_1": 0.05831951354339414,
+      "hits_at_3": 0.10862354892205638,
+      "hits_at_10": 0.19209508015478166,
+      "top_10_directional_answers": 695
+    }
+  },
+  "execution": {
+    "gpu": "NVIDIA RTX A6000",
+    "batch_size": 4,
+    "relation_graph_reused": true,
+    "timing_note": "GPU inference timings include synchronization; elapsed runs also include setup and batching checks. Existing relation graph was reused, not rebuilt."
+  },
+  "reported_verification_at_execution": [
+    "Existing prepared dataset hashes matched; exact global split reconstructed",
+    "No direct held-out pair connections remained under any predicate or direction",
+    "Relation graph cache hash matched the frozen masked triple hash",
+    "Disease candidates and target IDs checked against read-only Gandalf node properties; original Drug candidate set matched",
+    "Original 4g scores and checked ranks reproduced when validating the 3g drug-prediction runner",
+    "Batched and single-query scores matched within tolerance, with identical checked answer ranks",
+    "Each answer rank checked using direct comparison and sorted-score search",
+    "All 1809 ranks in each direction independently recomputed from saved temporary score arrays before deletion",
+    "Exact test-pair coverage and all aggregate metrics verified; combined arithmetic verified"
+  ],
+  "existing_4g_drug_prediction_reference": {
+    "metrics_path": "output/full-graph-ultra/run_001/test/metrics.json",
+    "answers": 1809,
+    "mrr": 0.10683563486210765,
+    "hits_at_1": 0.05749032614704257,
+    "hits_at_3": 0.1011608623548922,
+    "hits_at_10": 0.20066334991708126,
+    "top_10_answers": 363,
+    "diseases": 977,
+    "disease_macro_mrr": 0.10405564666631878
+  },
+  "limitations": [
+    "Raw scores, per-pair ranks, and temporary runners are no longer available; this record cannot independently reproduce those original outputs",
+    "A permanent bidirectional 3g rerun entry point is now available; repeating inference is still required to generate new raw outputs",
+    "Test results were already inspected; further comparisons are exploratory, not a new confirmatory evaluation",
+    "Directions have different candidate populations; their score difference does not isolate direction alone",
+    "MechRepoNet and sampled-graph studies use different targets and candidates and do not isolate graph structure",
+    "Metrics measure graph-assertion recovery, not clinically validated efficacy; indirect clues through equivalent or related entities may remain"
+  ],
+  "reproduction": {
+    "restored_on": "2026-10-09",
+    "runner": "pilot/run_full_graph_reference.py",
+    "candidate_builder": "pilot/reference_candidates.py",
+    "command_from_repository_root": "bash experiments/ultra/scripts/gpu_python.sh -B -u experiments/ultra/pilot/run_full_graph_reference.py --output experiments/ultra/pilot/results/full_graph_3g_001",
+    "resume": "Repeat the command with --resume; recorded inputs and settings must match",
+    "smoke_test": "Use a separate output directory and --max-new-queries-per-direction 4; it remains explicitly incomplete",
+    "retains_raw_scores_and_ranks": true,
+    "scope": "Reconstructs both test directions from the retained frozen graph, split and 3g checkpoint. This is newly implemented rerun code, not recovery of the deleted temporary scripts.",
+    "full_rerun_after_restoration_completed": false,
+    "verification": {
+      "unit_tests_passed": 4,
+      "gpu_smoke_queries_per_direction": 4,
+      "additional_resume_queries_per_direction": 1,
+      "saved_scores_unchanged_on_resume": true,
+      "overwrite_guard_checked": true,
+      "incomplete_runs_have_no_final_metrics": true
+    }
+  }
+}

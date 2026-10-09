@@ -1,0 +1,87 @@
+{
+  "source": "output/archive/treatment-pilot-20261008/pilot/results/pilot_001/preparation.json",
+  "source_sha256": "1648abb475a965bec31d3443936c2e3dc95d77000267d946e124ceb5e064ce8b",
+  "selection": "Same 20 diseases as archived pilot_001; originally sampled with seed 20261006 from 237 diseases having 20\u2013100 eligible explicit treats pairs.",
+  "diseases": [
+    {
+      "id": "MONDO:0000816",
+      "name": "abdominal obesity-metabolic syndrome"
+    },
+    {
+      "id": "MONDO:0001134",
+      "name": "essential hypertension"
+    },
+    {
+      "id": "MONDO:0002046",
+      "name": "alcohol abuse"
+    },
+    {
+      "id": "MONDO:0002471",
+      "name": "bursitis"
+    },
+    {
+      "id": "MONDO:0004993",
+      "name": "carcinoma"
+    },
+    {
+      "id": "MONDO:0005047",
+      "name": "infertility"
+    },
+    {
+      "id": "MONDO:0005146",
+      "name": "post-traumatic stress disorder"
+    },
+    {
+      "id": "MONDO:0005642",
+      "name": "atopic conjunctivitis"
+    },
+    {
+      "id": "MONDO:0005867",
+      "name": "Mycoplasma pneumoniae pneumonia"
+    },
+    {
+      "id": "MONDO:0005970",
+      "name": "staphylococcal pneumonia"
+    },
+    {
+      "id": "MONDO:0006547",
+      "name": "exanthem"
+    },
+    {
+      "id": "MONDO:0006668",
+      "name": "bacterial conjunctivitis"
+    },
+    {
+      "id": "MONDO:0008487",
+      "name": "Androgen excess"
+    },
+    {
+      "id": "MONDO:0011438",
+      "name": "acne"
+    },
+    {
+      "id": "MONDO:0015758",
+      "name": "primary cutaneous T-cell lymphoma"
+    },
+    {
+      "id": "MONDO:0021201",
+      "name": "skin infection"
+    },
+    {
+      "id": "MONDO:0021661",
+      "name": "coronary atherosclerosis"
+    },
+    {
+      "id": "MONDO:0024327",
+      "name": "Chronic uremia"
+    },
+    {
+      "id": "UMLS:C0276089",
+      "name": "Pneumonia caused by Escherichia coli"
+    },
+    {
+      "id": "UMLS:C1167648",
+      "name": "Abdominal and gastrointestinal infections"
+    }
+  ]
+}

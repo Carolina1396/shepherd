@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "sampled_target_pairs": 535,
+  "pair_splits": {
+    "test": 61,
+    "visible": 425,
+    "validation": 49
+  },
+  "unchanged_nodes_and_candidates": true,
+  "model_graph_matches_original_minus_all_hidden_direct_edges": true,
+  "removed_connections": 209,
+  "validation_ranks_recomputed": 49,
+  "validation_top_10_answers": 9,
+  "test_metrics_not_computed": true
+}

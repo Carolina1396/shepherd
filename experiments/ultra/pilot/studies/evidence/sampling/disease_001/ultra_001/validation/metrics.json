@@ -1,0 +1,35 @@
+{
+  "split": "validation",
+  "ultra": {
+    "answers": 49,
+    "mrr": 0.09490759964794719,
+    "hits_at_1": 0.04081632653061224,
+    "hits_at_10": 0.1836734693877551,
+    "top_10_answers": 9
+  },
+  "degree_baseline": {
+    "answers": 49,
+    "mrr": 0.08386113549686444,
+    "hits_at_1": 0.061224489795918366,
+    "hits_at_10": 0.12244897959183673,
+    "top_10_answers": 6
+  },
+  "scored_diseases": 20,
+  "diseases_with_evaluated_answers": 18,
+  "candidates_per_disease": 6227,
+  "coverage": 1.0,
+  "runtime_seconds": 4.175661204382777,
+  "peak_rss_bytes": 430223360,
+  "model": {
+    "checkpoint": "ultra_4g.pth",
+    "sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "training_epochs": 0,
+    "device": "cpu",
+    "ties": "pessimistic"
+  },
+  "evaluation_scope": "Exploratory link ranking within a fixed graph sampled before label masking; not an end-to-end held-out benchmark",
+  "known_filter": "All full-graph explicit treats answers for the disease; ranking only",
+  "preparation_sha256": "df8c1f72e4e329b74a246127f87a9fe6c43d70a7cd55b91df8c8acf2d1ad7b17",
+  "config_sha256": "c62cfd629460e42d0d6e1d56630ae8f8b0df4006772dfacd54a1a0a1d0cac8a8"
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "direct_upstream_attempts_matched": 20000,
+  "same_archived_disease_cohort": true,
+  "disease_anchors_checked": 20,
+  "attempts_per_disease": 1000,
+  "completed_walks": 19512,
+  "failed_walks": 488,
+  "original_directed_connections_checked": 46868,
+  "per_disease_and_aggregate_coverage_checked": true,
+  "pairwise_overlaps_checked": 190,
+  "node_lookups_and_output_hashes_checked": true,
+  "overwrite_and_invalid_argument_guards_checked": true
+}

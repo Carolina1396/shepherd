@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "reference": "All 777 original archived labels, ignoring their old split and coverage",
+  "recovery_recomputed_from_saved_walks": true,
+  "known_pairs_match_original_labels_exactly": true,
+  "drug_and_chemical_recovery_and_additional_counts_checked": true,
+  "pair_export_classifications_checked": true
+}

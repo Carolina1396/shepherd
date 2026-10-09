@@ -1,0 +1,11 @@
+{
+  "disease": "DOID:0080685",
+  "seconds": 1.4579901602119207,
+  "nodes": 1670341,
+  "edges_with_inverses": 55835362,
+  "candidate_drugs": 5326,
+  "peak_gpu_allocated_bytes": 7707437056,
+  "peak_gpu_reserved_bytes": 7899971584,
+  "rough_total_inference_hours_at_first_query_rate": 0.3993273049913761,
+  "includes_first_query_warmup": true
+}

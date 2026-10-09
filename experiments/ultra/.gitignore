@@ -1,0 +1,10 @@
+data/
+__pycache__/
+.venv/
+.venv-model/
+.venv-model-gpu/
+vendor/
+.cache/
+output/
+.ipynb_checkpoints/
+pilot/results/

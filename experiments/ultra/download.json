@@ -1,0 +1,27 @@
+{
+  "dataset": "translator_kg",
+  "release": "2026_06_21",
+  "tier_label": "tier0-20260621",
+  "tier_label_source": "https://github.com/RTXteam/xDTD_training_pipeline/blob/master/config.yaml",
+  "downloaded_at_utc": "2026-10-03T22:15:11.598871+00:00",
+  "verification": {
+    "zstd_test": "passed",
+    "metadata_json": "parsed; name and version match",
+    "checksums": "locally computed SHA-256; not compared against publisher checksums"
+  },
+  "extracted": false,
+  "files": [
+    {
+      "path": "data/tier0-20260621/translator_kg.tar.zst",
+      "url": "https://kgx-storage.ci.transltr.io/releases/translator_kg/2026_06_21/translator_kg.tar.zst",
+      "bytes": 3232838647,
+      "sha256": "3522815fbfba026302319a1f9fd2b150e8b3937ad77e37306ca30b7abca3c92d"
+    },
+    {
+      "path": "data/tier0-20260621/graph-metadata.json",
+      "url": "https://kgx-storage.ci.transltr.io/releases/translator_kg/2026_06_21/graph-metadata.json",
+      "bytes": 3709029,
+      "sha256": "a1e021c291dcd64b1077f2308d88cb2e205b75678d9852e7a6cd378ffc777b07"
+    }
+  ]
+}
