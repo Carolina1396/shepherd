@@ -1,0 +1,211 @@
+{
+  "experiment": 8,
+  "name": "MechRepoNet pretrained 4g under Experiment 3 protocol",
+  "comparison": {
+    "complete": true,
+    "experiment": 8,
+    "graph": "MechRepoNet",
+    "pretrained_checkpoint": "4g",
+    "candidate_compounds": 40413,
+    "preparation": {
+      "complete": true,
+      "nodes": 249553,
+      "candidate_compounds": 40413,
+      "disease_nodes": 13932,
+      "eligible_pairs": 3439,
+      "pair_splits": {
+        "visible": 2751,
+        "validation": 343,
+        "test": 345
+      },
+      "queries_by_split": {
+        "visible": 785,
+        "validation": 232,
+        "test": 244
+      },
+      "original_edge_records": 9650411,
+      "original_unique_connections": 9650411,
+      "removed_connections": 688,
+      "removed_by_predicate": {
+        "indication": 688
+      },
+      "remaining_connections": 9649723,
+      "edges_with_inverses": 19299446,
+      "non_target_indication_records_by_categories": {
+        "ChemicalSubstance -> Pathway": 103,
+        "AnatomicalEntity -> Disease": 1,
+        "ChemicalSubstance -> PhenotypicFeature": 109,
+        "MacromolecularMachine -> PhenotypicFeature": 1,
+        "ChemicalSubstance -> MacromolecularMachine": 12
+      },
+      "isolated_candidate_compounds": 0,
+      "all_heldout_direct_connections_absent": true,
+      "all_visible_indication_pairs_retained": true,
+      "source_files": {
+        "/home/agonzalez/git/ULTRA/kg-datasets/MechRepoNet/raw/graph.txt.backup": "2d5b710d1f8cc41e7b2923931b12b71768c734aea01a79d1f3d65c9696921bb0",
+        "/home/agonzalez/data_KG/MIND_nodes/nodes.csv": "3f576f4786967879b4009c44f5020eb3db722fce486c76b36a334bc9e5a234d4"
+      },
+      "source_code_sha256": {
+        "prepare.py": "072f60c44781dc5287aeff4f084c368e7a0be22cdff07934262161f25a35c4af",
+        "full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+      },
+      "config_sha256": "db71234a67726b08e5be2813beffab9ce9addef52efeeabbbf69f9d5cd22abe3",
+      "dataset_sha256": {
+        "candidates.json": "2e571939f796285543db181d79eac9d6e75c90cd03855613406e7ef6cf22b359",
+        "labels.json": "b1fabb27006bcad6d3a239aca68a361baf9ad05fac68c858acfaa14399909d68",
+        "nodes.json": "e306d612412b4f4a3ff97f7102d7e8ecb4fda06ce0b0a4df2967d6c89c6c0740",
+        "predicates.json": "14d602ec2582c04ea020270101b915918c3b9815fa5d9ccca618b5ed4e52cd38",
+        "triples.npy": "9e2edf483b80db1e8785acc0e840761b054202734555bba55478c0a41dc4fb3f"
+      },
+      "preparation_seconds": 19.37256105900451
+    },
+    "settings_sha256": "2043d90178a25b6679c48b356d6571421ff794585b63f9eadc42ccd014cbb5e6",
+    "results": {
+      "validation": {
+        "split": "validation",
+        "complete": true,
+        "scored_queries": 232,
+        "total_queries": 232,
+        "evaluated_pairs": 343,
+        "ultra": {
+          "answers": 343,
+          "mrr": 0.27273246118086797,
+          "hits_at_1": 0.1924198250728863,
+          "hits_at_3": 0.29737609329446063,
+          "hits_at_10": 0.4314868804664723,
+          "top_10_answers": 148,
+          "diseases": 232,
+          "disease_macro_mrr": 0.27578528501430793
+        },
+        "candidates_per_query": 40413,
+        "inference_seconds": 44.917380181956105,
+        "answer_ranks_sha256": "c269ee281c9b1afecdb7e1abef5927e8749a3b5d389868cb210dae6b6406041c"
+      },
+      "test": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 244,
+        "total_queries": 244,
+        "evaluated_pairs": 345,
+        "ultra": {
+          "answers": 345,
+          "mrr": 0.21927574624107662,
+          "hits_at_1": 0.1391304347826087,
+          "hits_at_3": 0.2318840579710145,
+          "hits_at_10": 0.37971014492753624,
+          "top_10_answers": 131,
+          "diseases": 244,
+          "disease_macro_mrr": 0.2084707283590167
+        },
+        "candidates_per_query": 40413,
+        "inference_seconds": 46.62095408915775,
+        "answer_ranks_sha256": "3c51b3332b7740f4911a81dacda4075c418a26bb7625fcd4153b08b9b776a60f"
+      }
+    },
+    "tier0_experiment3": {
+      "validation": {
+        "answers": 1807,
+        "mrr": 0.10574815363561749,
+        "hits_at_1": 0.05644714997232983,
+        "hits_at_3": 0.10348644161593802,
+        "hits_at_10": 0.19203099059214168,
+        "top_10_answers": 347,
+        "diseases": 986,
+        "disease_macro_mrr": 0.10277716684831123
+      },
+      "test": {
+        "answers": 1809,
+        "mrr": 0.10683563486210765,
+        "hits_at_1": 0.05749032614704257,
+        "hits_at_3": 0.1011608623548922,
+        "hits_at_10": 0.20066334991708126,
+        "top_10_answers": 363,
+        "diseases": 977,
+        "disease_macro_mrr": 0.10405564666631878
+      }
+    },
+    "limitations": [
+      "Different KG, evaluation pairs and candidate category/count; protocol comparison, not a controlled graph-only effect.",
+      "Previously inspected graphs and historical test labels; exploratory evaluation."
+    ]
+  },
+  "settings": {
+    "experiment": 8,
+    "protocol_reference": "Experiment 3",
+    "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "preparation_sha256": "f96bbb88314a11c0312a5fd8a5db744f92a2cad4a58ef7b4c3982f077bce0394",
+    "training_epochs": 0,
+    "seed": 1024,
+    "source_sha256": {
+      "pilot/mechreponet/run.py": "c3b0cc5e370a7a10b9e877670a9fbb85db0b25802a775b43702b3b945ab6e8b3",
+      "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+      "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+    },
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "torch": "2.1.0+cu118",
+    "cuda": "11.8",
+    "gpu": "NVIDIA RTX A6000",
+    "ranking": "Given disease, rank all connected ChemicalSubstance nodes; all-known filtering and pessimistic ties",
+    "batch_size": 1,
+    "splits": [
+      "validation",
+      "test"
+    ],
+    "selection": "Fixed pretrained checkpoint; validation does not select a model or change settings"
+  },
+  "preparation_verification": {
+    "verified": true,
+    "unique_pairs": 3439,
+    "split_counts": {
+      "visible": 2751,
+      "validation": 343,
+      "test": 345
+    },
+    "candidates": 40413,
+    "nodes": 249553,
+    "heldout_pairs_checked_both_directions": 688,
+    "remaining_connections_scanned": 9649723,
+    "all_direct_heldout_connections_absent": true,
+    "candidate_and_target_categories_verified": true,
+    "split_independently_reconstructed": true
+  },
+  "score_verification": {
+    "validation": {
+      "score_files_hash_verified": 232,
+      "all_candidate_scores_finite": true,
+      "ranks_recomputed": 343,
+      "metrics_recomputed": true
+    },
+    "test": {
+      "score_files_hash_verified": 244,
+      "all_candidate_scores_finite": true,
+      "ranks_recomputed": 345,
+      "metrics_recomputed": true
+    }
+  },
+  "resources": {
+    "validation": {
+      "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "settings_sha256": "2043d90178a25b6679c48b356d6571421ff794585b63f9eadc42ccd014cbb5e6",
+      "peak_gpu_allocated_bytes": 2118591488,
+      "peak_gpu_reserved_bytes": 2290089984,
+      "relation_graph_sha256": "5fe13e2ba9a17a098fb971c0fb9e343b8363db871cbe67925c0462f231684777",
+      "complete": true
+    },
+    "test": {
+      "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "settings_sha256": "2043d90178a25b6679c48b356d6571421ff794585b63f9eadc42ccd014cbb5e6",
+      "peak_gpu_allocated_bytes": 2118591488,
+      "peak_gpu_reserved_bytes": 2290089984,
+      "relation_graph_sha256": "5fe13e2ba9a17a098fb971c0fb9e343b8363db871cbe67925c0462f231684777",
+      "complete": true
+    }
+  },
+  "relation_graph": {
+    "sha256": "5fe13e2ba9a17a098fb971c0fb9e343b8363db871cbe67925c0462f231684777",
+    "triples_sha256": "9e2edf483b80db1e8785acc0e840761b054202734555bba55478c0a41dc4fb3f",
+    "seconds": 87.22462145199825,
+    "edges": 10336
+  },
+  "source_comparison_sha256": "813de0a1ef792ee8f70aa6772d0ef45ced89b36f01413fb0eb96b4737d77374d"
+}

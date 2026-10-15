@@ -1,7 +1,7 @@
 # ULTRA setup and local checks
 
 Return to the [project overview](README.md) or the
-[pilot experiments and run commands](pilot/README.md).
+[four-study index and run guides](pilot/README.md).
 
 The existing machine already has the environments, checkpoints, graph store,
 and prepared evaluation inputs. Use installation/build commands only when their
@@ -44,7 +44,11 @@ under this directory and verify its SHA-256 before preparing the graph.
 
 For sampling and 4g evaluation, install the dependencies, run notebooks 01–02,
 build/verify the Gandalf store, then use the preparation and inference commands
-in the pilot README. This full sequence has not been tested from a clean clone.
+linked from the [pilot index](pilot/README.md). The current chemical/drug
+workflow starts with the [baseline preparation](pilot/chemical_disease/README.md),
+then uses those frozen inputs for [fine-tuning](pilot/chemical_finetune/README.md).
+Follow each guide's required paths: newer runners also depend on local prepared
+datasets. This full sequence has not been tested from a clean clone.
 
 The **exact 3g reference runner requires the original frozen**
 `output/full-graph-ultra/run_001/` directory, including `data/`, `config.json`,

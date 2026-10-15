@@ -1,0 +1,19 @@
+{
+  "policy": "treats_only",
+  "complete": true,
+  "training_pairs_expected": 18334,
+  "training_diseases_expected": 3487,
+  "diseases": 3487,
+  "pairs": 18334,
+  "reached": 18334,
+  "bound": 18334,
+  "recovery": 1.0,
+  "bound_recovery": 1.0,
+  "rule_status_counts": {
+    "Success": 66253
+  },
+  "verified_from_saved_graphs": true,
+  "source_comparison": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_retrieval_001",
+  "settings_sha256": "5a605ae500c03d44dcf55ba5b84ad4379d51f0f8da57bde76a25aec65972c538",
+  "interpretation": "Visible training treats edges remain in the graph; this is retrieval coverage of known evidence, not held-out prediction."
+}

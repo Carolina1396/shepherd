@@ -1,0 +1,2227 @@
+{
+  "experiment": "7a",
+  "run_id": "retrieval_001",
+  "summary": {
+    "complete": true,
+    "cohort_diseases": 50,
+    "completed_diseases": 50,
+    "cohort_validation_pairs": 85,
+    "strategies": {
+      "gandalf_walks": {
+        "evaluated_validation_pairs": 85,
+        "answers_reached": 45,
+        "answer_coverage": 0.5294117647058824,
+        "mean_disease_answer_coverage": 0.6391363636363636,
+        "mean_nodes": 1711.12,
+        "mean_edges": 2095.08,
+        "mean_drug_nodes": 286.48,
+        "total_retrieval_seconds": 2.174291085015284,
+        "answers_returned_as_rule_drugs": 0
+      },
+      "aragorn_rules": {
+        "evaluated_validation_pairs": 85,
+        "answers_reached": 1,
+        "answer_coverage": 0.011764705882352941,
+        "mean_disease_answer_coverage": 0.0018181818181818182,
+        "mean_nodes": 136.2,
+        "mean_edges": 262.28,
+        "mean_drug_nodes": 71.1,
+        "total_retrieval_seconds": 162.67811832603184,
+        "answers_returned_as_rule_drugs": 1
+      }
+    },
+    "settings_sha256": "2fc97193462a2a4ecb14272b08463970d74dcd9d41e5b5226ff13d589eeee5d5",
+    "rule_status_counts": {
+      "Success": 950
+    },
+    "scope": "Coverage under fixed budgets; timeouts/errors are reported, not silently treated as exhaustive rule searches. No ULTRA inference or test metrics.",
+    "driver_elapsed_seconds": 182.02451292300248,
+    "parent_peak_rss_bytes": 5437476864
+  },
+  "settings": {
+    "experiment": "7a",
+    "evaluation": "retrieval coverage only; no model scores",
+    "diseases": 50,
+    "seed": 7317,
+    "attempts": 1000,
+    "walk_length": 3,
+    "edge_cap": 3000,
+    "rule_timeout_seconds": 5,
+    "rule_hard_timeout_grace_seconds": 2,
+    "rule_extra_virtual_memory_gb": 4,
+    "subclass_expansion": false,
+    "rules_sha256": "19182519fff4e0deaad4125e01da8ee97b7608ea81ef1d7086c2e184b2b9e5e8",
+    "rules_count": 18,
+    "includes_direct_lookup": true,
+    "candidate_drugs": 5326,
+    "gandalf_commit": "3fbaded1c922de3d61ff2af17694264d13b221f5",
+    "native_sampler_sha256": "dea9af3c8a794bafb581cdede9fa2975a8ab67bce25fdd34a29f287c7b191a28",
+    "source_sha256": {
+      "run.py": "4eda8acccea5b77e2bbad4ebfaeb009cb87c6b9fe9c1c1b4fd270cd674e41e69",
+      "masked_graph.py": "99083bf40eeca247478f905cc901f2aae73145a8030157aef1281261623f92b4"
+    },
+    "source_labels_sha256": "707f2b251e194c771e2126db57f211273ba44cca505c9e95ec494d151e7ee666",
+    "candidate_sha256": "a7a9580b5634f7eb3e0bbf7dad092f4aa0029e512cd9f3c1ee87bd8c1ddcbfce",
+    "source_graph_metadata_sha256": "082ff43832a0e76830ef9ae71784b2b161c12a03859e31d1946f98a0250c6240",
+    "mask": "All 3616 validation/test pairs; all direct predicates and both directions before traversal",
+    "edge_count": "Unique directed subject-predicate-object triples; duplicate evidence records retain native sampling weight",
+    "cohort": [
+      "MONDO:0001860",
+      "MONDO:0001881",
+      "MONDO:0002303",
+      "MONDO:0002974",
+      "MONDO:0004471",
+      "MONDO:0004938",
+      "MONDO:0004994",
+      "MONDO:0005025",
+      "MONDO:0005105",
+      "MONDO:0005114",
+      "MONDO:0005249",
+      "MONDO:0005260",
+      "MONDO:0005294",
+      "MONDO:0005366",
+      "MONDO:0005459",
+      "MONDO:0005567",
+      "MONDO:0005777",
+      "MONDO:0006507",
+      "MONDO:0007024",
+      "MONDO:0008219",
+      "MONDO:0008375",
+      "MONDO:0008383",
+      "MONDO:0009067",
+      "MONDO:0011565",
+      "MONDO:0015253",
+      "MONDO:0015492",
+      "MONDO:0017937",
+      "MONDO:0019355",
+      "MONDO:0021061",
+      "MONDO:0022518",
+      "MONDO:0030608",
+      "MONDO:0044339",
+      "MONDO:0044753",
+      "MONDO:0800175",
+      "UMLS:C0161816",
+      "UMLS:C0264714",
+      "UMLS:C0267509",
+      "UMLS:C0270425",
+      "UMLS:C0276027",
+      "UMLS:C0280099",
+      "UMLS:C0339507",
+      "UMLS:C0340076",
+      "UMLS:C0497391",
+      "UMLS:C0700201",
+      "UMLS:C0742186",
+      "UMLS:C0862204",
+      "UMLS:C1279888",
+      "UMLS:C1698510",
+      "UMLS:C1719989",
+      "UMLS:C5848476"
+    ]
+  },
+  "cohort": {
+    "seed": 7317,
+    "diseases": [
+      {
+        "disease": "MONDO:0001860",
+        "index": 306511,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0001881",
+        "index": 306530,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0002303",
+        "index": 306885,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0002974",
+        "index": 307452,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0004471",
+        "index": 308750,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0004938",
+        "index": 309160,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0004994",
+        "index": 309211,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "MONDO:0005025",
+        "index": 309235,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "MONDO:0005105",
+        "index": 309308,
+        "validation_pairs": 3
+      },
+      {
+        "disease": "MONDO:0005114",
+        "index": 309316,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0005249",
+        "index": 309428,
+        "validation_pairs": 8
+      },
+      {
+        "disease": "MONDO:0005260",
+        "index": 309438,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0005294",
+        "index": 309464,
+        "validation_pairs": 5
+      },
+      {
+        "disease": "MONDO:0005366",
+        "index": 309518,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "MONDO:0005459",
+        "index": 309587,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0005567",
+        "index": 309684,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0005777",
+        "index": 309867,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0006507",
+        "index": 310469,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0007024",
+        "index": 310914,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0008219",
+        "index": 311998,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0008375",
+        "index": 312145,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0008383",
+        "index": 312153,
+        "validation_pairs": 11
+      },
+      {
+        "disease": "MONDO:0009067",
+        "index": 312787,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0011565",
+        "index": 315133,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0015253",
+        "index": 318612,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "MONDO:0015492",
+        "index": 318797,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "MONDO:0017937",
+        "index": 320611,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0019355",
+        "index": 321668,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0021061",
+        "index": 322783,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0022518",
+        "index": 323346,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0030608",
+        "index": 324445,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "MONDO:0044339",
+        "index": 325793,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "MONDO:0044753",
+        "index": 325877,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "MONDO:0800175",
+        "index": 327214,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0161816",
+        "index": 1517199,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0264714",
+        "index": 1521353,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0267509",
+        "index": 1521509,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0270425",
+        "index": 1521656,
+        "validation_pairs": 2
+      },
+      {
+        "disease": "UMLS:C0276027",
+        "index": 1521866,
+        "validation_pairs": 4
+      },
+      {
+        "disease": "UMLS:C0280099",
+        "index": 1522356,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0339507",
+        "index": 1524214,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0340076",
+        "index": 1524253,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0497391",
+        "index": 1527569,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0700201",
+        "index": 1530531,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0742186",
+        "index": 1531202,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C0862204",
+        "index": 1533327,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C1279888",
+        "index": 1538926,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C1698510",
+        "index": 1547353,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C1719989",
+        "index": 1548185,
+        "validation_pairs": 1
+      },
+      {
+        "disease": "UMLS:C5848476",
+        "index": 1572225,
+        "validation_pairs": 2
+      }
+    ],
+    "validation_pairs": 85
+  },
+  "mask_verification": {
+    "source_records": 28709074,
+    "removed_records": 11521,
+    "remaining_records": 28697553,
+    "nodes": 1670341,
+    "hidden_pairs": 3616,
+    "source_unmodified": true,
+    "forward_reverse_mapping_verified": true,
+    "all_heldout_direct_connections_absent": true,
+    "load_mask_seconds": 16.237160356002278
+  },
+  "context_verification": {
+    "verified": true,
+    "unique_masked_connections": 27917681,
+    "equals_experiment_5_context": true,
+    "method": "Independent raw CSR record scan, all held-out pair mask, sorted unique triples compared elementwise with frozen pilot triples.npy"
+  },
+  "output_verification": {
+    "verified": true,
+    "graphs_checked": 100,
+    "artifact_hashes_verified": 150,
+    "heldout_pairs_absent_in_all_outputs": true,
+    "per_graph_coverage_and_summary_recomputed": true,
+    "rule_status_counts": {
+      "Success": 950
+    },
+    "bounded_rule_result_sets": 1,
+    "maximum_rule_child_peak_rss_bytes": 4492996608
+  },
+  "biolink": {
+    "version": "4.4.2"
+  },
+  "per_disease": [
+    {
+      "disease": "MONDO:0001860",
+      "index": 306511,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1644,
+          "edges": 1933,
+          "drug_nodes": 289,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.0212695989976055
+        },
+        "aragorn_rules": {
+          "nodes": 69,
+          "edges": 81,
+          "drug_nodes": 38,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.2857936400032486
+        }
+      },
+      "completed_walks": 995,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "a95815d238abeae021173c7982039e5bf24784b93d0227decdd82439aa0fc8cd",
+        "aragorn_rules.json": "4db3aca7a25718beeada5bf90b63ff37d9425c0f25c0e6afb3cb53b17ddf5243",
+        "rules.json": "19e2926e0c2d1f8f419333c4225e43e55ffeb75c119e84045662748fcec37f04"
+      }
+    },
+    {
+      "disease": "MONDO:0001881",
+      "index": 306530,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2001,
+          "edges": 2547,
+          "drug_nodes": 342,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.029199716002040077
+        },
+        "aragorn_rules": {
+          "nodes": 12,
+          "edges": 11,
+          "drug_nodes": 9,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.1471987289987737
+        }
+      },
+      "completed_walks": 980,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "9bb690e158a467aa54921d98c4452282b1f1afd9f7b15e87d47c62012688c944",
+        "aragorn_rules.json": "fdc2e622e7cfa47cdc095e607cd92d5cfeb3c2ff2bacdc134a4567549310a405",
+        "rules.json": "64426633f1a12de181612f2f1874f0e6a9eb874344a735e55ca6a00fccf9c837"
+      }
+    },
+    {
+      "disease": "MONDO:0002303",
+      "index": 306885,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1639,
+          "edges": 2019,
+          "drug_nodes": 247,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.023596792001626454
+        },
+        "aragorn_rules": {
+          "nodes": 14,
+          "edges": 29,
+          "drug_nodes": 7,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.08461029099999
+        }
+      },
+      "completed_walks": 981,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "a7afe4f7ed278991ef9b3b0a137d37c872cdd06bba0006a64afe87dca3283efc",
+        "aragorn_rules.json": "6ada07f9a13ed7fcc41a0750f27d62b1da69ccbe6ba361679b10c14897eaafd1",
+        "rules.json": "dae8b46d960ccfad6246698f2f64e8ca82fc90eaf0b5da6360fb9851b5fdf30a"
+      }
+    },
+    {
+      "disease": "MONDO:0002974",
+      "index": 307452,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2299,
+          "edges": 2759,
+          "drug_nodes": 382,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.0556204800013802
+        },
+        "aragorn_rules": {
+          "nodes": 1408,
+          "edges": 1608,
+          "drug_nodes": 642,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 7.535508810993633
+        }
+      },
+      "completed_walks": 985,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "48673ed6521a30e39cf554e5ca029d3a5375ebe7ae99292667f38e4c9e88a323",
+        "aragorn_rules.json": "6740268955ff79b980b63306982a441ad57e05ca837f0c38e3656287444b87ba",
+        "rules.json": "8591dbfaa83c1ddf13faea4c0e75ea84588ccf0e08382480183f839af22d5de1"
+      }
+    },
+    {
+      "disease": "MONDO:0004471",
+      "index": 308750,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1771,
+          "edges": 2208,
+          "drug_nodes": 361,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.042660020997573156
+        },
+        "aragorn_rules": {
+          "nodes": 2,
+          "edges": 1,
+          "drug_nodes": 1,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.851811047999945
+        }
+      },
+      "completed_walks": 992,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "2dcef66763271a4f19318922b66d95f57911e5fa2ef32646a12f24d7be90fc55",
+        "aragorn_rules.json": "2e393b48e1260b7f801011e1fb830f616146e42ae9dc98eb588974241380a21a",
+        "rules.json": "7f6353843ab174a5977b4460ecc378573b0c811a0d6584ce8e5e74784839ac8b"
+      }
+    },
+    {
+      "disease": "MONDO:0004938",
+      "index": 309160,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1845,
+          "edges": 2316,
+          "drug_nodes": 293,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04564136199769564
+        },
+        "aragorn_rules": {
+          "nodes": 9,
+          "edges": 8,
+          "drug_nodes": 4,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8705135530035477
+        }
+      },
+      "completed_walks": 992,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "a122e0d035cbf95333b39a89ba86aa604b787067be12428dcb467a9d0ab9090f",
+        "aragorn_rules.json": "c7669518b29edb881624802a17a38859124c8dea4eb46377c53f2ba81969cc59",
+        "rules.json": "8931c4bd6db706c870495376b76384eea97af3fa9de2cf434f45a4391aa8b79c"
+      }
+    },
+    {
+      "disease": "MONDO:0004994",
+      "index": 309211,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2359,
+          "edges": 2804,
+          "drug_nodes": 434,
+          "validation_pairs": 2,
+          "answers_reached": 1,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.05622383199806791
+        },
+        "aragorn_rules": {
+          "nodes": 419,
+          "edges": 1621,
+          "drug_nodes": 272,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 4.9254646849949495
+        }
+      },
+      "completed_walks": 989,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "04dda0df4628bcbb90f1789d01c07efb5f902957c1cf7de54ec31b297c07bcee",
+        "aragorn_rules.json": "51747071dd55895999650ad71dadb645e2debebcda05f0df60e4ae5ed7acb398",
+        "rules.json": "26fd42183c7ccde2631e738d7e8d1445944fd89153bb68cdc8b5ee9e763eabcd"
+      }
+    },
+    {
+      "disease": "MONDO:0005025",
+      "index": 309235,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1774,
+          "edges": 2380,
+          "drug_nodes": 307,
+          "validation_pairs": 2,
+          "answers_reached": 2,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.047748406999744475
+        },
+        "aragorn_rules": {
+          "nodes": 80,
+          "edges": 320,
+          "drug_nodes": 60,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.2251578770010383
+        }
+      },
+      "completed_walks": 974,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "74333fd217c6a63490724296ffccc58ee5b67eaed299c2f038f3af9f1e96c6b3",
+        "aragorn_rules.json": "15979bfff2f134456f1c0cc617d6305f306cf6e592318667964453c19a595ac1",
+        "rules.json": "49c4f846d250ffccc2434dfe4f9c744e73d5c302ea42cb4605e46b7c4ac7f059"
+      }
+    },
+    {
+      "disease": "MONDO:0005105",
+      "index": 309308,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2376,
+          "edges": 2795,
+          "drug_nodes": 364,
+          "validation_pairs": 3,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.05413043099542847
+        },
+        "aragorn_rules": {
+          "nodes": 417,
+          "edges": 1141,
+          "drug_nodes": 244,
+          "validation_pairs": 3,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 4.769820459994662
+        }
+      },
+      "completed_walks": 967,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "38fbad1be35b36fd7c59373006532c894c93e19f96175256f9ad0e97fdc35ff3",
+        "aragorn_rules.json": "1bfcd19a197ad59d633233a2221ef2bdc11816ca0a6dfa87a367271169d5201e",
+        "rules.json": "fac9319db8dbf1fc0d5f4661851da34dfe09fa2a99320b9a3a124a7bd92f1048"
+      }
+    },
+    {
+      "disease": "MONDO:0005114",
+      "index": 309316,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1626,
+          "edges": 2014,
+          "drug_nodes": 267,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03811476300325012
+        },
+        "aragorn_rules": {
+          "nodes": 2,
+          "edges": 1,
+          "drug_nodes": 1,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.9500037049947423
+        }
+      },
+      "completed_walks": 978,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "f537a175f0f6c0fc0b6f2679ddcf1080b678051ba2feb7d305350ba8a3d9f1da",
+        "aragorn_rules.json": "e5e35df57add4e62463aa21a2639cab77cf39631af381699571ccb2d79918777",
+        "rules.json": "11d14e5df90d722ae20e94a0d9be91a5af8628a9270940fe6710dbd84ed1e480"
+      }
+    },
+    {
+      "disease": "MONDO:0005249",
+      "index": 309428,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2352,
+          "edges": 2863,
+          "drug_nodes": 481,
+          "validation_pairs": 8,
+          "answers_reached": 3,
+          "answer_coverage": 0.375,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.05692411599738989
+        },
+        "aragorn_rules": {
+          "nodes": 929,
+          "edges": 2865,
+          "drug_nodes": 548,
+          "validation_pairs": 8,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 5.126651195001614
+        }
+      },
+      "completed_walks": 990,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "3103e81685b4cd9b254255908b56f62e0cba1e5f1e2b495ca62d109642d06dfe",
+        "aragorn_rules.json": "b378b7813094603895bec3183daeb6c5b9869bdd75d878c660b2d48ddaa22c73",
+        "rules.json": "8104606bde8de46b335f658c1eb77ca17b891b17ecccc19035404e6d3f0da254"
+      }
+    },
+    {
+      "disease": "MONDO:0005260",
+      "index": 309438,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2240,
+          "edges": 2700,
+          "drug_nodes": 358,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.05260597400047118
+        },
+        "aragorn_rules": {
+          "nodes": 834,
+          "edges": 1400,
+          "drug_nodes": 443,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 4.219124366005417
+        }
+      },
+      "completed_walks": 986,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "810205cc2b7b362098c47f85224127df8e77015a7a3df13e1ec6bd7e87f8fc7d",
+        "aragorn_rules.json": "bfe1852f14c1596df33d5da6d4abc2b40d1f8d3be91cbf6443a205dfeff1c1dd",
+        "rules.json": "6fcad60dfa8ae65fa26d8736d44148ba0311f4bff57b7884f1a3e79863ffd8e5"
+      }
+    },
+    {
+      "disease": "MONDO:0005294",
+      "index": 309464,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2479,
+          "edges": 2828,
+          "drug_nodes": 283,
+          "validation_pairs": 5,
+          "answers_reached": 2,
+          "answer_coverage": 0.4,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.056310183004825376
+        },
+        "aragorn_rules": {
+          "nodes": 88,
+          "edges": 156,
+          "drug_nodes": 51,
+          "validation_pairs": 5,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.5487345220026327
+        }
+      },
+      "completed_walks": 986,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "a2dc832e0b8157058e15227f13c9b6bb6ddd647b6288147048182671f69f0401",
+        "aragorn_rules.json": "ae6b97eeff60aad3122b4bd1fe309bbedd1e4bb75edcabe28e2b3a09889f845c",
+        "rules.json": "079ef95d860e5d57c296be3f8f346bd49117042973281ebd8df27cb8ae7dad7c"
+      }
+    },
+    {
+      "disease": "MONDO:0005366",
+      "index": 309518,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1805,
+          "edges": 2392,
+          "drug_nodes": 310,
+          "validation_pairs": 2,
+          "answers_reached": 1,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.047784827002033126
+        },
+        "aragorn_rules": {
+          "nodes": 12,
+          "edges": 11,
+          "drug_nodes": 11,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.141488543005835
+        }
+      },
+      "completed_walks": 970,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "87dc3265f4cdc5feb92447c0a2f80b1b60614b08772c596080230bb750a7e84f",
+        "aragorn_rules.json": "026605b009874935c50649508e23b5c6ba034029df7656781d84d5454e6d06f3",
+        "rules.json": "90ddccd1fb2aeaa77e242019a7cd8737761e18daddfa1298741e423c8923b394"
+      }
+    },
+    {
+      "disease": "MONDO:0005459",
+      "index": 309587,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1673,
+          "edges": 1971,
+          "drug_nodes": 285,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03914490500028478
+        },
+        "aragorn_rules": {
+          "nodes": 3,
+          "edges": 2,
+          "drug_nodes": 2,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.9020243440027116
+        }
+      },
+      "completed_walks": 956,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "f2845dda99502aa4729c87fdbaa3e3413d1dc0ba7158c0e8a543d2ae6e8c05db",
+        "aragorn_rules.json": "ea4b9c0510bae491c3b383db628363b11212be15febfbaf1a16e03dd5b921713",
+        "rules.json": "a2c28f4c298a66c277887c7a2719edc5fa9cdc4d24705723735187f33ea4964e"
+      }
+    },
+    {
+      "disease": "MONDO:0005567",
+      "index": 309684,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1941,
+          "edges": 2423,
+          "drug_nodes": 395,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.05437992000224767
+        },
+        "aragorn_rules": {
+          "nodes": 5,
+          "edges": 4,
+          "drug_nodes": 3,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.1195209110010182
+        }
+      },
+      "completed_walks": 983,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "291f5d7ef8e01f34196f7fad602d50f0d82f889cac8bc759303210e4c6230820",
+        "aragorn_rules.json": "07c253e0af8fc68376d8e28b3e933d9e5e61e11f32b237813ac66c12584fb4ff",
+        "rules.json": "7222cb61d997b0e8e91e188e1a276c928389ce7d51eec13b2a2dec27d94b45ca"
+      }
+    },
+    {
+      "disease": "MONDO:0005777",
+      "index": 309867,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1581,
+          "edges": 1848,
+          "drug_nodes": 233,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03676934899704065
+        },
+        "aragorn_rules": {
+          "nodes": 11,
+          "edges": 10,
+          "drug_nodes": 10,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.750363456994819
+        }
+      },
+      "completed_walks": 994,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "969e7e4c043b4cdb6d6e41206097d10c0518572dda869b6dd069e81b8db0fc4f",
+        "aragorn_rules.json": "3bcd1312d430c7fd86c0cbe5346cd3b6b1824b168135ce7b090851f73c3204f5",
+        "rules.json": "407104486bc4659a9e3dc8148f1ca40bffa1a3945d0afad49c648ff60660262a"
+      }
+    },
+    {
+      "disease": "MONDO:0006507",
+      "index": 310469,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1628,
+          "edges": 2141,
+          "drug_nodes": 234,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04709993900178233
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.871481522000977
+        }
+      },
+      "completed_walks": 983,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "466df137ea9662bc2d3680e4ae9460401c71ca7dadadde1563776e67d9c033f3",
+        "aragorn_rules.json": "6408fdafa2e25893f41db4bffa13bb914d06e8c3080ae5d7dd37470cac441965",
+        "rules.json": "00becc0ad626a4d0af1880727057c0f216b6bcf7f8719a2fb357a05b49039ced"
+      }
+    },
+    {
+      "disease": "MONDO:0007024",
+      "index": 310914,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1422,
+          "edges": 1723,
+          "drug_nodes": 228,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03395779399579624
+        },
+        "aragorn_rules": {
+          "nodes": 7,
+          "edges": 6,
+          "drug_nodes": 5,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.7420037019983283
+        }
+      },
+      "completed_walks": 991,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "270d015ab4352c09445784b64b6c216a8ae230cf13ae627b8f79456f080c82ff",
+        "aragorn_rules.json": "d24e66f5b06ac0d4d875a00251533b8820666db2e521746137591e0bff4cc77f",
+        "rules.json": "891f15c66438e2cb527a21ff83b8a0395f0fce7b26e63a7e1fcaa4027be6eebb"
+      }
+    },
+    {
+      "disease": "MONDO:0008219",
+      "index": 311998,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1717,
+          "edges": 2011,
+          "drug_nodes": 233,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03725760999805061
+        },
+        "aragorn_rules": {
+          "nodes": 3,
+          "edges": 2,
+          "drug_nodes": 2,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.9690764150000177
+        }
+      },
+      "completed_walks": 954,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "03f30d4e0c9920f29b7ba4e686a68a0529fcbce605c57a1fb09181e62f156b39",
+        "aragorn_rules.json": "b261222fe12d055e69f5af773a26422d52f0e58001b8017b1e075ef7b91cd854",
+        "rules.json": "d932363fbf03025082971cb80fc8e890e534ef77f74d160170ec296995a4b35c"
+      }
+    },
+    {
+      "disease": "MONDO:0008375",
+      "index": 312145,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1989,
+          "edges": 2416,
+          "drug_nodes": 238,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.05001810899557313
+        },
+        "aragorn_rules": {
+          "nodes": 116,
+          "edges": 323,
+          "drug_nodes": 61,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.199323453998659
+        }
+      },
+      "completed_walks": 983,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "709f7bcfa888c20f71ccb60e5763bb6aab3af5ffbd441997f2b13c3a765e1e87",
+        "aragorn_rules.json": "75a4133c59f1ae46e4a640db192a317839b4bae327f1cccd1c4b874979345523",
+        "rules.json": "2e18ddd7ab4e30661d5e0c37996c280e9b86c55bb20388ece08ad584f0faeef0"
+      }
+    },
+    {
+      "disease": "MONDO:0008383",
+      "index": 312153,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 2546,
+          "edges": 2899,
+          "drug_nodes": 314,
+          "validation_pairs": 11,
+          "answers_reached": 2,
+          "answer_coverage": 0.18181818181818182,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.056978086999151856
+        },
+        "aragorn_rules": {
+          "nodes": 1980,
+          "edges": 3000,
+          "drug_nodes": 914,
+          "validation_pairs": 11,
+          "answers_reached": 1,
+          "answer_coverage": 0.09090909090909091,
+          "answers_returned_as_rule_drugs": 1,
+          "retrieval_seconds": 7.225603454004158
+        }
+      },
+      "completed_walks": 986,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "8759af6b3c36518eb21601359c0a7ecf961c3d5f608fda9314c9db671df4d90f",
+        "aragorn_rules.json": "95b966315e7746c25ef5155c5b189d0512669638608fb58fff0d99d8bb7f73bd",
+        "rules.json": "8f6c0b53f8d2c8bb0146c18b1789af8770b4249d4f5517819749bfbb381411ad"
+      }
+    },
+    {
+      "disease": "MONDO:0009067",
+      "index": 312787,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1626,
+          "edges": 1906,
+          "drug_nodes": 244,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.037388479002402164
+        },
+        "aragorn_rules": {
+          "nodes": 30,
+          "edges": 42,
+          "drug_nodes": 20,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.884351412001706
+        }
+      },
+      "completed_walks": 957,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "38f97f08ceec4c9606143507e2c56b767d29b4e8df021d6c27ba8536e9af6d9d",
+        "aragorn_rules.json": "deda1b78c63e642b219768ee22c1b58c56694ed609a21023e27949373eca936b",
+        "rules.json": "1f70e2731cdef315cf391f25cc99b95813a4b91ebc5d7c50a87d95e756d7a7a3"
+      }
+    },
+    {
+      "disease": "MONDO:0011565",
+      "index": 315133,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1928,
+          "edges": 2357,
+          "drug_nodes": 324,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.053715565998572856
+        },
+        "aragorn_rules": {
+          "nodes": 110,
+          "edges": 135,
+          "drug_nodes": 65,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.1507819539983757
+        }
+      },
+      "completed_walks": 978,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "bfa29c02398a0b50e82d40f5d09a2617aa9381a6697d2e0ce19843ac31df00f8",
+        "aragorn_rules.json": "d3eacf478ed3dc58fd43ccb2b879cdc6201a3ee995457a09c3a1acd8cf925463",
+        "rules.json": "96adb941fa44185b0139c1476bcaf2b44af91c51b19c6e06a35669a13f3e5c33"
+      }
+    },
+    {
+      "disease": "MONDO:0015253",
+      "index": 318612,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1782,
+          "edges": 2056,
+          "drug_nodes": 210,
+          "validation_pairs": 2,
+          "answers_reached": 1,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04087917700235266
+        },
+        "aragorn_rules": {
+          "nodes": 21,
+          "edges": 31,
+          "drug_nodes": 13,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8817191110065323
+        }
+      },
+      "completed_walks": 942,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "a5ed4233e173de9add52def71feb8fc37d35dfa2b4f7ea44494b58e09b6c6049",
+        "aragorn_rules.json": "3c6512b639d6f8f1df53ec6e50a449cc212d78d5c56c11a63b0f1c712a9ce6b0",
+        "rules.json": "b9d883b42851da59a7b42558de2b82a174b9460a77dbd8bbcd4bc6deef5ab797"
+      }
+    },
+    {
+      "disease": "MONDO:0015492",
+      "index": 318797,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1755,
+          "edges": 2100,
+          "drug_nodes": 283,
+          "validation_pairs": 2,
+          "answers_reached": 1,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.0448880299954908
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.7653572910057846
+        }
+      },
+      "completed_walks": 978,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "9dae948b2f1e9d278d10eaf6a5c7ed9a8837e86b388551a993890a81edd28db6",
+        "aragorn_rules.json": "0ffdb86b6d578b2163e6e8f041a993da40d482e07dd1477cc689feaa2da0c07c",
+        "rules.json": "513440f7f0bea0177e2c00bca521bacfc24a876bb27299f862eed1c1fcd06102"
+      }
+    },
+    {
+      "disease": "MONDO:0017937",
+      "index": 320611,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 972,
+          "edges": 1356,
+          "drug_nodes": 98,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03585375700640725
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.770891184001812
+        }
+      },
+      "completed_walks": 988,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "257ef0ae78f19a935215d0626e2bb564a9a00e456fb7ccee80e5a49e0bb5cfac",
+        "aragorn_rules.json": "551135eedde8d6439bd23049a52189ceeb1025338d679da081678417059af8d0",
+        "rules.json": "b421c14f4afaf65471ad61542652c9077aadb2c5f5b5a32e6960f209758f1173"
+      }
+    },
+    {
+      "disease": "MONDO:0019355",
+      "index": 321668,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1778,
+          "edges": 2181,
+          "drug_nodes": 289,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.056046759003947955
+        },
+        "aragorn_rules": {
+          "nodes": 2,
+          "edges": 1,
+          "drug_nodes": 1,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8107059429967194
+        }
+      },
+      "completed_walks": 995,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "3231b7d4d51628ebd966687e7d09c832edfc22e06caf7d66052a6176f3d941cb",
+        "aragorn_rules.json": "1b5a54d0379ec967157d3b142c8268538ab2e414460f920427c8c5d0d1114ab5",
+        "rules.json": "974387ef6a87df324343f4637b5e983b0b56ee892f130600733c9af3db3e4606"
+      }
+    },
+    {
+      "disease": "MONDO:0021061",
+      "index": 322783,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1801,
+          "edges": 2083,
+          "drug_nodes": 300,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04334609299985459
+        },
+        "aragorn_rules": {
+          "nodes": 2,
+          "edges": 1,
+          "drug_nodes": 1,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8183349350001663
+        }
+      },
+      "completed_walks": 987,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "d06b2f87f4ba40d939dd621b062b065775d4f7bfadc35fc30d4faf93eec69aa3",
+        "aragorn_rules.json": "febe8338df27196085bb6b821dcb510436996f57f99ced07eae7bb29ee01b21e",
+        "rules.json": "ef01973842e10ba16c21c92058b60061c7ba534612f0fe06fcc5152495097b3c"
+      }
+    },
+    {
+      "disease": "MONDO:0022518",
+      "index": 323346,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1615,
+          "edges": 1913,
+          "drug_nodes": 266,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04073537400108762
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.723446249998233
+        }
+      },
+      "completed_walks": 995,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "04c2c2d8a9f3d7cde5c0b18a04e11eebaa6ea04c195745df4390d24aa1cd7d57",
+        "aragorn_rules.json": "4e29eb6f84ade1677c5b91d4623464cef92028746beaecf44984c69c56955e1a",
+        "rules.json": "8a58b9450dcf7a33c2f376cafc056f69c5d754d82e6736072a054726b507a400"
+      }
+    },
+    {
+      "disease": "MONDO:0030608",
+      "index": 324445,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1554,
+          "edges": 1893,
+          "drug_nodes": 243,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04233313599979738
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.876389904995449
+        }
+      },
+      "completed_walks": 952,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "c09d640d828b0c92f720be78804caddf763b637fd2b1c628751dbc339a05500f",
+        "aragorn_rules.json": "5d18dfd9a90bf0dcf853d2aba977a95f4c451b6285c4f82fc9ad41501e10ce64",
+        "rules.json": "5f7eeafbd70d88fa86ce77cd77b99ea1c24cc4c49453635a63af32ced79b62bb"
+      }
+    },
+    {
+      "disease": "MONDO:0044339",
+      "index": 325793,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1405,
+          "edges": 1664,
+          "drug_nodes": 197,
+          "validation_pairs": 2,
+          "answers_reached": 2,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.043365566998545546
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.7635179160060943
+        }
+      },
+      "completed_walks": 896,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "e5a8a521b48748e306888df12c08aebade8417309579f05fe4944a62164f60c8",
+        "aragorn_rules.json": "c59a55d4c8177366249af5db5623d1344b4ac62f386fddd87131684cccce2736",
+        "rules.json": "67937d69af3922a1465d1b0ae42fb097d80ef8300ee68367382b9a6705860a70"
+      }
+    },
+    {
+      "disease": "MONDO:0044753",
+      "index": 325877,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1603,
+          "edges": 1853,
+          "drug_nodes": 256,
+          "validation_pairs": 2,
+          "answers_reached": 1,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04949512900202535
+        },
+        "aragorn_rules": {
+          "nodes": 56,
+          "edges": 86,
+          "drug_nodes": 29,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.926561683001637
+        }
+      },
+      "completed_walks": 969,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "87de53512f92d3ceb5d851ce40d9243f0365dbd0ef8de149c10849b2d6cb5feb",
+        "aragorn_rules.json": "ea4ce87e46e6728ae9c4196fb380f913742584e99b404254b57324d9fdb5f30a",
+        "rules.json": "2fec2bca9b68b486e138252e2d6672dad1337f056e8fc6006fbcb3c142a7154c"
+      }
+    },
+    {
+      "disease": "MONDO:0800175",
+      "index": 327214,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1823,
+          "edges": 2347,
+          "drug_nodes": 356,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.05853117899823701
+        },
+        "aragorn_rules": {
+          "nodes": 49,
+          "edges": 120,
+          "drug_nodes": 35,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.9744702500029234
+        }
+      },
+      "completed_walks": 989,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "35accca78a961e141cf4e2375d8f676ebccb2565672d46bf398e10120c5b4abf",
+        "aragorn_rules.json": "dcf85bcdbcbd04a50c9a8311f1dffa2d36d230354c6304fa9a372b7139f86587",
+        "rules.json": "b14efd6dd97abf04c8bd9b64ed93d586b24b7d9048bcb3939a44f71e267cbbf3"
+      }
+    },
+    {
+      "disease": "UMLS:C0161816",
+      "index": 1517199,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1742,
+          "edges": 2062,
+          "drug_nodes": 263,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04532919399935054
+        },
+        "aragorn_rules": {
+          "nodes": 3,
+          "edges": 2,
+          "drug_nodes": 2,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.758311245997902
+        }
+      },
+      "completed_walks": 989,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "d0dd04015730de32b92ada910963480a5dbb031808083cde6d5577ed49dd6000",
+        "aragorn_rules.json": "c924468db1fc3d95c1a4f3a0d4106e72c49b19a23b8eba73ac176f556b6772c3",
+        "rules.json": "751f275f51987de62e545ebc5dfbd2acb1cb101a4926bbf68baaa9eec07dc616"
+      }
+    },
+    {
+      "disease": "UMLS:C0264714",
+      "index": 1521353,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1593,
+          "edges": 1971,
+          "drug_nodes": 309,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.036685839004348963
+        },
+        "aragorn_rules": {
+          "nodes": 10,
+          "edges": 9,
+          "drug_nodes": 7,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.836241720993712
+        }
+      },
+      "completed_walks": 995,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "d219fcd9b664750cd6c22e92892027ee547d9281c39943cc399a6079441585df",
+        "aragorn_rules.json": "e0e49f0d3e0fe659a884cd020c10d068aff7a8399b69b6441cf01494d710c7cd",
+        "rules.json": "17de95da3cb1b0f890220bf6b6effe50124cff0fbc4480d3f0958e72860c80fa"
+      }
+    },
+    {
+      "disease": "UMLS:C0267509",
+      "index": 1521509,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1610,
+          "edges": 1993,
+          "drug_nodes": 362,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.0435544510037289
+        },
+        "aragorn_rules": {
+          "nodes": 4,
+          "edges": 3,
+          "drug_nodes": 3,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.7477500239983783
+        }
+      },
+      "completed_walks": 979,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "cb72aa2cf2fbddc8e569d611a861a7e52df78299a4e46a7b12d061c6174fe5fc",
+        "aragorn_rules.json": "3b145731fe2ec016c15a31947d35c991c2a7202bca8fee04882509c33195686f",
+        "rules.json": "f5c64ab0d48762336b4f5294d2b5caff880bb95c3b44cadbc57850d8f7eecc46"
+      }
+    },
+    {
+      "disease": "UMLS:C0270425",
+      "index": 1521656,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1636,
+          "edges": 1909,
+          "drug_nodes": 259,
+          "validation_pairs": 2,
+          "answers_reached": 1,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04102521999448072
+        },
+        "aragorn_rules": {
+          "nodes": 18,
+          "edges": 17,
+          "drug_nodes": 15,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.7576367060028133
+        }
+      },
+      "completed_walks": 996,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "9d7348dc55baecabdf77aa4b186addd7f53e13cb8aaef9b9dd824a188f5a5c83",
+        "aragorn_rules.json": "93c3d654c99784dd28fd4cece68165c9b422bb440da330ce65a612ebc12db9e0",
+        "rules.json": "02d525cd2b1f23739945c67a0e75a02ae40dfdfc0fc80ee20d7bf4ba1a936e8b"
+      }
+    },
+    {
+      "disease": "UMLS:C0276027",
+      "index": 1521866,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1384,
+          "edges": 1752,
+          "drug_nodes": 333,
+          "validation_pairs": 4,
+          "answers_reached": 2,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03927361599926371
+        },
+        "aragorn_rules": {
+          "nodes": 11,
+          "edges": 10,
+          "drug_nodes": 10,
+          "validation_pairs": 4,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.723716343003616
+        }
+      },
+      "completed_walks": 998,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "661a7c636d58d91733af678de9cdc174e46003f44544da2267a5fbce663f4ee0",
+        "aragorn_rules.json": "5fcbedc758c975f36d35b180d6f8262f9a2a0c9ffaf73a65b476ce3fd0c0682f",
+        "rules.json": "cccf0bf1f38bca2608df4d3cb88c09e293c8b1eb26056d6f1232f5c407746560"
+      }
+    },
+    {
+      "disease": "UMLS:C0280099",
+      "index": 1522356,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1871,
+          "edges": 2530,
+          "drug_nodes": 295,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.06113250800262904
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.1810209559989744
+        }
+      },
+      "completed_walks": 969,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "256afb7ecc98231a26484245cc177fa9b3eeceba295c9decea530748249f7c5d",
+        "aragorn_rules.json": "4d29ca0f5a50905960532c00df80078b914fd79dcea150e0f210eeed5ddadc01",
+        "rules.json": "d7acc197a88dc4eca596fc3edf967ccf1fecf95b883d4c3aaafa4063f8d1968b"
+      }
+    },
+    {
+      "disease": "UMLS:C0339507",
+      "index": 1524214,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1414,
+          "edges": 1838,
+          "drug_nodes": 285,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.035609354003099725
+        },
+        "aragorn_rules": {
+          "nodes": 2,
+          "edges": 1,
+          "drug_nodes": 1,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.88141116299812
+        }
+      },
+      "completed_walks": 997,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "25f3594c42b9390fd85cbc307c41384cd138147c584bdaefb082dee8eb32f4c0",
+        "aragorn_rules.json": "8a033af7dcfcb88ceb1616f431934f1bb9ed20f371f8ef3b6692a90b87180bbb",
+        "rules.json": "63857f8fe05fb8d2480efd1b96c458a889d794d14365dd1fe84fd020b8e6d294"
+      }
+    },
+    {
+      "disease": "UMLS:C0340076",
+      "index": 1524253,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1354,
+          "edges": 1683,
+          "drug_nodes": 288,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.033779552999476437
+        },
+        "aragorn_rules": {
+          "nodes": 3,
+          "edges": 2,
+          "drug_nodes": 2,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8997923730057664
+        }
+      },
+      "completed_walks": 996,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "ccaf5e868f69937f2069c1161bf1d73a810c45e20863c537c0f157e5b25a6cf6",
+        "aragorn_rules.json": "0a0f61d02c815f9104f2e838316979cb3754607903de714c4bcc26af0837cfc7",
+        "rules.json": "6d084d89e390321d7f3d1166985cd6a04ee8f035948acfe743ee7b999b9d7654"
+      }
+    },
+    {
+      "disease": "UMLS:C0497391",
+      "index": 1527569,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1264,
+          "edges": 1512,
+          "drug_nodes": 283,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.031659451000450645
+        },
+        "aragorn_rules": {
+          "nodes": 2,
+          "edges": 1,
+          "drug_nodes": 1,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8665872260025935
+        }
+      },
+      "completed_walks": 993,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "6cd00c0a47f6126bd41aa6707c6550fbcf64f5f59cdbb65b59103909e6618bc7",
+        "aragorn_rules.json": "d2f0a20dd076938e5a3ae1419bd6113dc3763ef64d0df925fe1e6819f1486152",
+        "rules.json": "2bcc831858ba6e99a3fac0964e7134374009aff753bf2f66c7c50162ed2c0171"
+      }
+    },
+    {
+      "disease": "UMLS:C0700201",
+      "index": 1530531,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1706,
+          "edges": 2072,
+          "drug_nodes": 265,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03847283700451953
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.0129182700038655
+        }
+      },
+      "completed_walks": 992,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "4e3993316fa712ff60ad77503e6facc2ba8a2da7a64739a17e36997b8e4129b3",
+        "aragorn_rules.json": "bfca975b73e328c81f8d76d9d75161de8f4a40e7cf012fe1021e810a6da28357",
+        "rules.json": "7024651f4e2afc668a3145a9f81ebe0a5503bdb43f9547485fc56aee613ce288"
+      }
+    },
+    {
+      "disease": "UMLS:C0742186",
+      "index": 1531202,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1533,
+          "edges": 1897,
+          "drug_nodes": 209,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.03587428099854151
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8286513200000627
+        }
+      },
+      "completed_walks": 986,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "4a0cf090ce263b58590081bc025ecbe6cb86d3031605d119d5ca3b6ee7282dec",
+        "aragorn_rules.json": "a486c6585c2d2bdb4a03731df44b786c86065a1d4b8c7592af9dc3dadd270fc1",
+        "rules.json": "4af164fc01eac988e62872ab7beb5592b03f355c51520cfde828f0b14840f7c7"
+      }
+    },
+    {
+      "disease": "UMLS:C0862204",
+      "index": 1533327,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1123,
+          "edges": 1457,
+          "drug_nodes": 239,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.040252822000184096
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.713333550003881
+        }
+      },
+      "completed_walks": 981,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "af0f5d6ae1f3029597d2d485e3186319f15fee05d7d9eece681f2c24aa848e33",
+        "aragorn_rules.json": "c798c37de3088c448e6330c1043e91b6069affab3ca9ad383641d09a1f0d3a83",
+        "rules.json": "7587593efbfac10eb7a3d4bfe0e72c14e4f8d7096a943fc36907fdd5a820bf64"
+      }
+    },
+    {
+      "disease": "UMLS:C1279888",
+      "index": 1538926,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1627,
+          "edges": 2032,
+          "drug_nodes": 311,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.048506302999157924
+        },
+        "aragorn_rules": {
+          "nodes": 38,
+          "edges": 37,
+          "drug_nodes": 8,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.926091991001158
+        }
+      },
+      "completed_walks": 997,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "8036f5ee98c180208ab085266b50b40e2d803eaebb5e8aa8620e0c580ac6fc09",
+        "aragorn_rules.json": "1ac36152102ceb5896940e5a4b8c2bcb97dd2dabb657b483607bd1fa87f8cbce",
+        "rules.json": "e6764625ac22e3fa326602b46256365f5616e763fb8ad134c2e86e1da81b2259"
+      }
+    },
+    {
+      "disease": "UMLS:C1698510",
+      "index": 1547353,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1369,
+          "edges": 1753,
+          "drug_nodes": 313,
+          "validation_pairs": 1,
+          "answers_reached": 1,
+          "answer_coverage": 1.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.04058270499808714
+        },
+        "aragorn_rules": {
+          "nodes": 14,
+          "edges": 13,
+          "drug_nodes": 11,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.745522212004289
+        }
+      },
+      "completed_walks": 969,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "8fe80671842e1671b607b75ad8a4f711f710fd477898d005deebfefc2bb420fc",
+        "aragorn_rules.json": "5bd94e0b59407cecbb311827a823a2e109a9ee5d8e26de292912b5da07af65f0",
+        "rules.json": "daed3d8ee71a5e2d7ceb54884cd1f1ffe6198913692e13b622ab4126d225d4d3"
+      }
+    },
+    {
+      "disease": "UMLS:C1719989",
+      "index": 1548185,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.0038232390070334077
+        },
+        "aragorn_rules": {
+          "nodes": 1,
+          "edges": 0,
+          "drug_nodes": 0,
+          "validation_pairs": 1,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 2.8166255690011894
+        }
+      },
+      "completed_walks": 0,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "9170261caa89e6bd79080c63178a4053fb1966e5f55e1974ac0884724b15aaad",
+        "aragorn_rules.json": "9170261caa89e6bd79080c63178a4053fb1966e5f55e1974ac0884724b15aaad",
+        "rules.json": "26f37d0812617f0a70e68a31cdbf92a1b1206f50929fbd10f80b8ff1843b8522"
+      }
+    },
+    {
+      "disease": "UMLS:C5848476",
+      "index": 1572225,
+      "strategies": {
+        "gandalf_walks": {
+          "nodes": 1980,
+          "edges": 2594,
+          "drug_nodes": 366,
+          "validation_pairs": 2,
+          "answers_reached": 1,
+          "answer_coverage": 0.5,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 0.0687152500031516
+        },
+        "aragorn_rules": {
+          "nodes": 4,
+          "edges": 3,
+          "drug_nodes": 3,
+          "validation_pairs": 2,
+          "answers_reached": 0,
+          "answer_coverage": 0.0,
+          "answers_returned_as_rule_drugs": 0,
+          "retrieval_seconds": 3.1747011379993637
+        }
+      },
+      "completed_walks": 978,
+      "attempted_walks": 1000,
+      "rule_status_counts": {
+        "Success": 19
+      },
+      "artifact_sha256": {
+        "gandalf_walks.json": "548a5716ea32f96c00c3152190744735eb60f847b6f5567aec6bd799ae4f6e37",
+        "aragorn_rules.json": "ff9878ad714a81bd36158ed233cc6b3a65ca5fcc4aa31511a806e33c2648b61e",
+        "rules.json": "683ead458ad4ea248c37e574d5a52bec95e37ea425c9a3e62e11b700e822ec30"
+      }
+    }
+  ],
+  "source_report_sha256": {
+    "summary.json": "0541982c4eaa129285ce7df4d735ece296ebac504ad878d5b11271d3f6ab3555",
+    "settings.json": "2fc97193462a2a4ecb14272b08463970d74dcd9d41e5b5226ff13d589eeee5d5",
+    "cohort.json": "7e7f90d79782798720134e3971e1befe06cb4790b38378940fce3564ad7031e1",
+    "mask_verification.json": "724634e541d8428d6635a675fafcae4caf21b817becd8b6e4583bbfe4542c7c2",
+    "context_verification.json": "3c5943edeae8093382ed652989055c91fc1be89735fe3f151972dc52dc8f6e7e",
+    "output_verification.json": "68a390fa4538e06c3361f58de23d3baa7dc2d046e8353b38bad0dcc90ed5a011",
+    "per_disease.csv": "0289b60ccb6edf9c92b766d3c34f17d51b6850a536374a881d29340c91b60f80"
+  },
+  "limitations": [
+    "ARAGORN templates executed by Gandalf lookup; not live ARAGORN/Retriever backend parity.",
+    "Upper edge cap is shared; realized sizes and search budgets are unequal.",
+    "Coverage is endpoint presence, not ranking quality or clinical efficacy.",
+    "CPU RSS contains shared pages; parent and child peaks are not additive.",
+    "driver_elapsed_seconds and load_mask_seconds refer to the final resumed invocation; retrieval totals include all diseases."
+  ]
+}

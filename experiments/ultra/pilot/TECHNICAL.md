@@ -1,8 +1,14 @@
 # Pilot technical guide
 
-Return to the [four-experiment overview and run commands](README.md).
-This guide contains setup, detailed sampling rules, output formats, verification,
-and provenance. Reported evaluation results live in the README and linked records.
+Return to the [four-study index and run guides](README.md).
+This guide primarily documents the **historical sampling and Drug-only runs**
+(original experiments 1–5). Numbered experiment references use those original
+IDs. It contains setup, sampling rules, output formats, verification, and provenance.
+
+For the current 22,918-pair / 1,117,832-candidate task, use the
+[chemical/drug baseline](chemical_disease/README.md) and
+[fine-tuning guide](chemical_finetune/README.md). Later retrieval protocols are
+in the [Study 3 guides](README.md#study-3-sampling-and-retrieval).
 
 ## Setup and required inputs
 
@@ -216,7 +222,7 @@ bash experiments/ultra/scripts/gpu_python.sh -B \
 
 ### Resume or smoke-test full-graph 3g
 
-Repeat the [experiment 4 command](README.md#run-both-directions) with `--resume`.
+Repeat the [experiment 4 command](HISTORICAL_RUNS.md#run-both-directions) with `--resume`.
 The runner checks input/checkpoint/code/runtime settings and saved score hashes;
 changed settings require a new output directory. It reconstructs category-based
 candidates using [reference_candidates.py](reference_candidates.py) in the
@@ -249,7 +255,7 @@ experiments/ultra/.venv/bin/python -B experiments/ultra/scripts/verify_full_grap
 ```
 
 Unit checks cover sampled splitting/masking and bidirectional filtering, tied
-ranks, incomplete runs, corrupted scores, and resume settings. These 14 checks
+ranks, incomplete runs, corrupted scores, and resume settings. These 22 checks
 run with the CPU model environment and pinned ULTRA checkout, without graph
 data or model inference:
 
@@ -353,8 +359,10 @@ The [source audit](studies/evidence/full-graph-ultra-inspection/summary.json) ve
 all eligible explicit treatment pairs against the independent raw-data inventory.
 Strict Drug targets comprise 18,079 pairs across 3,538 diseases. The broader
 Drug/SmallMolecule/ChemicalEntity population has 22,918 pairs across 3,901 diseases;
-it was inspected but not used for the full-graph split. Counts use graph IDs,
-without a new entity-resolution procedure.
+it was not used for this historical Drug-only split. It is now the target
+population for the [current chemical/drug baseline](chemical_disease/README.md)
+and its fine-tuning follow-up. Counts use graph IDs without a new entity-resolution
+procedure. The subgroup results below describe the historical Drug-only run.
 
 The pair split permits diseases with few treatments: 1,657 Drug-treated diseases
 have one known pair and 544 have two. Masking isolates 64 graph nodes, including
@@ -384,3 +392,13 @@ The earlier treatment-prediction workflow remains archived at
 `../output/archive/treatment-pilot-20261008/`. The intervening graph-wide sampling
 pilot was removed. This pilot reuses only the earlier cohort's disease IDs and
 names; all new walks use Gandalf's native implementation and the full graph.
+
+## Fine-tuning protocol
+
+[Experiment 5](finetune/README.md) adds training-only Drug negatives, native
+all-direct-connection masking, optimizer-state resume, and validation-based
+selection with the pretrained model eligible. The completed 1,000-step run
+selected step 1,000, reaching test MRR 0.1673 and Hits@10 0.3350 on the same
+1,809 pairs as Experiment 3. See the
+[retained study record](studies/full_graph_ultra4g_finetuned.json) for exact
+metrics, timing scopes, artifact hashes, and the exploratory-test limitation.

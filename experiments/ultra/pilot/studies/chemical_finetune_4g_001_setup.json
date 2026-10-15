@@ -1,0 +1,45 @@
+{
+  "experiment": 11,
+  "status": "Training, validation, test and independent verification completed",
+  "launcher": {
+    "pid": 175041,
+    "output": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_finetune_4g_001",
+    "log": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_finetune_4g_001.log",
+    "status_file": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_finetune_4g_001.status.json",
+    "launched_unix": 1791931305.3750074
+  },
+  "training_config": {
+    "steps": 1000,
+    "validate_every": 250,
+    "patience": 3,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "num_negative": 256,
+    "adversarial_temperature": 1.0,
+    "seed": 1024
+  },
+  "prepared_dataset": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_disease_4g_001",
+  "split": {
+    "visible": 18334,
+    "validation": 2291,
+    "test": 2293
+  },
+  "candidates": 1117832,
+  "starts_from": "Original pretrained 4g; not the Experiment 5 fine-tuned checkpoint",
+  "smoke": {
+    "optimizer_steps": 2,
+    "weights_changed": true,
+    "validation_queries": 2,
+    "validation_complete": false,
+    "model_selection_performed": false,
+    "test_evaluated": false,
+    "training_seconds": 8.573253212991403
+  },
+  "pretrained_score_parity": {
+    "queries": 2,
+    "max_absolute_score_difference": 0.0
+  },
+  "protocol_tests_passed": 8,
+  "results_record": "chemical_finetune_4g_001_results.json",
+  "selected_step": 1000
+}

@@ -1,0 +1,225 @@
+{
+  "comparison": {
+    "complete": true,
+    "experiment": 9,
+    "graph": "Tier 0",
+    "pretrained_checkpoint": "4g",
+    "candidates": 1417973,
+    "preparation": {
+      "complete": true,
+      "nodes": 1670341,
+      "treats_records_all_types": 33634,
+      "all_unique_treats_pairs": 28983,
+      "selected_pairs": 28983,
+      "pair_splits": {
+        "visible": 23186,
+        "validation": 2898,
+        "test": 2899
+      },
+      "candidates": 1417973,
+      "distinct_treatment_subjects": 5037,
+      "distinct_target_objects": 5065,
+      "candidate_scope": "chemical-protein",
+      "target_scope": "all",
+      "chemical_candidates": 1117832,
+      "protein_candidates": 300141,
+      "queries_by_split": {
+        "visible": 4565,
+        "validation": 1429,
+        "test": 1458
+      },
+      "target_category_pair_counts": {
+        "Disease": 23318,
+        "Other": 5665
+      },
+      "original_unique_connections": 27927289,
+      "removed_connections": 13926,
+      "removed_by_predicate": {
+        "biolink:treats": 5797,
+        "biolink:treats_or_applied_or_studied_to_treat": 2057,
+        "biolink:applied_to_treat": 1496,
+        "biolink:in_clinical_trials_for": 3310,
+        "biolink:has_side_effect": 319,
+        "biolink:contributes_to": 155,
+        "biolink:correlated_with": 202,
+        "biolink:affects": 167,
+        "biolink:disrupts": 43,
+        "biolink:related_to": 229,
+        "biolink:causes": 58,
+        "biolink:contraindicated_in": 58,
+        "biolink:predisposes_to_condition": 14,
+        "biolink:positively_correlated_with": 11,
+        "biolink:studied_to_treat": 4,
+        "biolink:negatively_correlated_with": 2,
+        "biolink:produces": 2,
+        "biolink:associated_with": 1,
+        "biolink:exacerbates_condition": 1
+      },
+      "remaining_connections": 27913363,
+      "edges_with_inverses": 55826726,
+      "isolated_candidates": 56,
+      "all_heldout_direct_connections_absent": true,
+      "all_visible_targets_retained": true,
+      "config_sha256": "9c09feddbfbe00713ffd6e8570b1d6f45fe0c0c90fc82fc3894ef66d36d01edd",
+      "dataset_sha256": {
+        "candidates.json": "ae04134eaad3ce4148ecd55cb2a333674b83fbc7ae16be01464f56937a37e698",
+        "labels.json": "01131e4b51e00c5054ebb3ec1cfa19db36b6e667587f9cff38b934ee78b31566",
+        "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+        "triples.npy": "f7f7ae33e704c3bf91616410f24189adbfc7df9e75b92fdcd4479da8bf4cd497"
+      },
+      "preparation_seconds": 46.668406146985944
+    },
+    "settings_sha256": "e638fb581eb7039740d413116c2007840cb5d855d0fe449b96af99c5cd7cf5d1",
+    "results": {
+      "validation": {
+        "split": "validation",
+        "complete": true,
+        "scored_queries": 1429,
+        "total_queries": 1429,
+        "evaluated_pairs": 2898,
+        "ultra": {
+          "answers": 2898,
+          "mrr": 0.08095895282314769,
+          "hits_at_1": 0.044513457556935816,
+          "hits_at_3": 0.07936507936507936,
+          "hits_at_10": 0.15148378191856451,
+          "top_10_answers": 439,
+          "diseases": 1429,
+          "disease_macro_mrr": 0.08324658515403853
+        },
+        "candidates_per_query": 1417973,
+        "inference_seconds": 2000.9315489521105,
+        "answer_ranks_sha256": "47145e9c61682fce1ffac1e6fa892fa6e1973767299ff84eb883ab461484397e"
+      },
+      "test": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1458,
+        "total_queries": 1458,
+        "evaluated_pairs": 2899,
+        "ultra": {
+          "answers": 2899,
+          "mrr": 0.08276772163343661,
+          "hits_at_1": 0.041393583994480856,
+          "hits_at_3": 0.08140738185581235,
+          "hits_at_10": 0.15384615384615385,
+          "top_10_answers": 446,
+          "diseases": 1458,
+          "disease_macro_mrr": 0.08469638922471258
+        },
+        "candidates_per_query": 1417973,
+        "inference_seconds": 2042.7581193173246,
+        "answer_ranks_sha256": "cc9e3cdbdd555819c0ea68ca0ed16df8ec04686f4f012cbcebdac3850bef95df"
+      }
+    },
+    "tier0_experiment3": {
+      "validation": {
+        "answers": 1807,
+        "mrr": 0.10574815363561749,
+        "hits_at_1": 0.05644714997232983,
+        "hits_at_3": 0.10348644161593802,
+        "hits_at_10": 0.19203099059214168,
+        "top_10_answers": 347,
+        "diseases": 986,
+        "disease_macro_mrr": 0.10277716684831123
+      },
+      "test": {
+        "answers": 1809,
+        "mrr": 0.10683563486210765,
+        "hits_at_1": 0.05749032614704257,
+        "hits_at_3": 0.1011608623548922,
+        "hits_at_10": 0.20066334991708126,
+        "top_10_answers": 363,
+        "diseases": 977,
+        "disease_macro_mrr": 0.10405564666631878
+      }
+    },
+    "limitations": [
+      "Same source KG as Experiment 3, but expanded labels, new split and broader candidate pool; differences cannot be attributed to one change.",
+      "Previously inspected graphs and historical test labels; exploratory evaluation."
+    ]
+  },
+  "provenance": {
+    "validation": {
+      "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "settings_sha256": "e638fb581eb7039740d413116c2007840cb5d855d0fe449b96af99c5cd7cf5d1",
+      "peak_gpu_allocated_bytes": 7774959104,
+      "peak_gpu_reserved_bytes": 10160701440,
+      "relation_graph_sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+      "complete": true
+    },
+    "test": {
+      "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "settings_sha256": "e638fb581eb7039740d413116c2007840cb5d855d0fe449b96af99c5cd7cf5d1",
+      "peak_gpu_allocated_bytes": 7774959104,
+      "peak_gpu_reserved_bytes": 10160701440,
+      "relation_graph_sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+      "complete": true
+    }
+  },
+  "independent_preparation_verification": {
+    "complete": true,
+    "raw_treats_records": 33634,
+    "deduplicated_pairs": 28983,
+    "pair_splits": {
+      "visible": 23186,
+      "validation": 2898,
+      "test": 2899
+    },
+    "candidates": 1417973,
+    "all_raw_treats_pairs_in_split": true,
+    "exact_seed731_split": true,
+    "all_eligible_category_nodes_are_candidates": true,
+    "all_target_subjects_in_candidate_pool": true,
+    "no_heldout_direct_pair_in_either_direction": true,
+    "prepared_file_hashes_verified": true
+  },
+  "score_verification": {
+    "complete": true,
+    "splits": {
+      "validation": {
+        "pairs": 2898,
+        "queries": 1429,
+        "candidates": 1417973,
+        "independent_metrics": {
+          "mrr": 0.08095895282314769,
+          "hits_at_1": 0.044513457556935816,
+          "hits_at_3": 0.07936507936507936,
+          "hits_at_10": 0.15148378191856451,
+          "top_10_answers": 439
+        },
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true
+      },
+      "test": {
+        "pairs": 2899,
+        "queries": 1458,
+        "candidates": 1417973,
+        "independent_metrics": {
+          "mrr": 0.08276772163343661,
+          "hits_at_1": 0.041393583994480856,
+          "hits_at_3": 0.08140738185581235,
+          "hits_at_10": 0.15384615384615385,
+          "top_10_answers": 446
+        },
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true
+      }
+    }
+  },
+  "verifier_sha256": "cd00cb5a35761730fe11c3950768c2351d6474fcf2f589961db41b8dbafc5e88",
+  "workflow_status": {
+    "exit_code": 0,
+    "started_unix": 1791918928.4084973,
+    "finished_unix": 1791923388.7316744,
+    "complete": true
+  },
+  "relation_graph": {
+    "sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+    "triples_sha256": "f7f7ae33e704c3bf91616410f24189adbfc7df9e75b92fdcd4479da8bf4cd497",
+    "seconds": 250.91142533499806,
+    "edges": 33144
+  }
+}

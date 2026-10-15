@@ -1,47 +1,27 @@
-# ULTRA treatment-prediction study
+# ULTRA treatment-prediction pilot
 
 We use **Gandalf** to access and sample the Translator knowledge graph, and
-**ULTRA** to rank missing treatment links. The study asks how well known
-Drug–Disease relationships can be recovered and whether a smaller sampled graph
-can preserve useful prediction context.
+**ULTRA** to rank missing treatment links. The pilot is organized into four
+studies, with follow-up runs grouped under the question they address.
 
-## Start here
+## Studies
 
-| Document | Contents |
-|---|---|
-| [Pilot study](pilot/README.md) | Four experiments, results, takeaways, run commands, and runtimes |
-| [Setup](SETUP.md) | Dependencies, CPU/GPU environments, graph-store building, and a CPU benchmark check |
-| [Technical guide](pilot/TECHNICAL.md) | Split/masking rules, output formats, resume, verification, and provenance |
-| [Data notebooks](notebooks/README.md) | Graph overview, treatment-pair inventory, sources, and knowledge levels |
-
-## Completed work
-
-All ULTRA evaluations use pretrained checkpoints with **no fine-tuning**.
-**MRR and Hits@k are fractions from 0 to 1.**
-
-| Experiment | Scope | Main result |
+| Study | Scope | Main finding |
 |---|---|---|
-| 1. Gandalf sampling and coverage | 1,000 three-step walk attempts from each of 20 diseases | 19,484 nodes; 46,868 distinct directed connections |
-| 2. ULTRA 4g on the sampled graph | Disease → drug; 49 validation pairs | MRR **0.0949**, Hits@10 **0.1837**; test not evaluated |
-| 3. ULTRA 4g on the full graph | Disease → drug; 1,809 test pairs | MRR **0.1068**, Hits@10 **0.2007** |
-| 4. ULTRA 3g on the full graph | Both directions; the same 1,809 test pairs | Combined MRR **0.1037**, Hits@10 **0.1921** |
+| [1. Full-graph treatment prediction](pilot/README.md#study-1-full-graph-treatment-prediction) | Target definitions, pretrained checkpoints, and fine-tuning | On the current chemical/drug task, fine-tuning improves test MRR from **0.0825 to 0.1231** and Hits@10 from **0.1618 to 0.2202** |
+| [2. Direct-edge context](pilot/README.md#study-2-direct-edge-context) | Remove all direct Drug–Disease connections; reuse both 4g checkpoints | On the older Drug-only task, fine-tuned test MRR falls from **0.1673 to 0.0723** |
+| [3. Sampling and retrieval](pilot/README.md#study-3-sampling-and-retrieval) | Native Gandalf walks, ARAGORN-style rules, model scoring, and retrieval diagnostics | Retrieved graphs underperform the full graph in validation; later coverage analyses explain what context is available |
+| [4. MechRepoNet reference](pilot/README.md#study-4-mechreponet-reference) | Pretrained 4g with proper held-out pair masking | Test MRR **0.2193**, Hits@10 **0.3797**, with different targets and candidates from Tier 0 |
 
-The 3g test results are **0.0765 MRR** for disease→drug and **0.1310 MRR** for
-drug→disease. Its combined result averages 3,618 directional predictions over
-1,809 unique pairs. See the [pilot results](pilot/README.md) and
-[exact 3g study record](pilot/studies/full_graph_ultra3g_bidirectional.json).
+**MRR and Hits@k are fractions.** The [pilot index](pilot/README.md) contains
+all result tables, follow-ups, original experiment IDs, and links to run commands.
+The inspected test sets remain exploratory; these metrics measure recovery of
+graph assertions, not clinical efficacy.
 
-The full-graph 4g run also completed validation: MRR **0.1057**, Hits@10
-**0.1920** on 1,807 pairs. Its
-[validation](pilot/studies/evidence/full-graph-ultra/run_001/validation/metrics.json) and
-[test](pilot/studies/evidence/full-graph-ultra/run_001/test/metrics.json) metric reports are retained in the repository; their raw scores and ranks
-remain available locally. Original temporary 3g scores were deleted; the
-recorded aggregates and permanent rerun code are retained.
+## Current graph and evaluation
 
-## Graph and evaluation data
-
-Source: **Translator KG `2026_06_21`**, also called `tier0-20260621` in the xDTD
-configuration. Source URLs and checksums are in [download.json](download.json).
+Source: **Translator KG `2026_06_21`** (`tier0-20260621`). Source URLs and
+checksums are in [download.json](download.json).
 
 | Measurement | Count |
 |---|---:|
@@ -50,62 +30,55 @@ configuration. Source URLs and checksums are in [download.json](download.json).
 | Stored edge/evidence records | 28,709,074 |
 | Unique directed triples before masking | 27,927,289 |
 | Original predicates | 60 |
-| Explicit Drug–Disease `treats` pairs | 18,079 |
+| Deduplicated chemical/drug → `treats` → Disease pairs | 22,918 |
+| Visible / validation / test pairs | 18,334 / 2,291 / 2,293 |
+| Chemical/drug candidates ranked per disease | 1,117,832 |
 
-The full-graph split has **14,463 visible, 1,807 validation, and 1,809 test pairs**.
-All direct connections between validation/test pairs are removed across
-predicates and directions before inference. The masked graph contains
-27,917,681 directed connections, or 55,835,362 after ULTRA adds inverses.
+Subjects must have a Drug, ChemicalEntity, or SmallMolecule category; targets
+must have a Disease category. Every direct connection between a held-out pair
+is masked across predicates and directions, leaving **27,916,156 directed
+connections** before ULTRA adds inverses. Other known answers are filtered from
+ranking competitors. Candidates include eligible nodes without known treatments.
 
-Disease→drug evaluation ranks **5,326 Drug candidates**. The 3g reverse task
-ranks **51,707 Disease candidates**. Known answers across all splits are filtered
-from ranking competitors. The sampled experiment uses its own smaller split
-and a broader chemical/drug candidate population; see the [protocols](pilot/TECHNICAL.md#split-and-ranking-protocols).
+The current pretrained and fine-tuned runs share this graph, split, and pool
+(original experiments 10 and 11). Earlier Drug-only runs used **18,079 pairs
+and 5,326 candidates**; those historical settings are explicitly labeled in the
+pilot index. Their scores are not a matched comparison with the current task.
 
-## Run an experiment
+## Run and inspect
 
-Commands run from the repository root. The graph, environments, and checkpoints
-are already available on the current machine. For a fresh machine, follow
-[setup instructions](SETUP.md) first. The exact 3g reference additionally needs
-the original frozen inputs; see [fresh-clone limits](SETUP.md#fresh-clone-reproducibility).
+| Document | Use |
+|---|---|
+| [Setup](SETUP.md) | Dependencies, CPU/GPU environments, graph building, and fresh-clone requirements |
+| [Current pretrained baseline](pilot/chemical_disease/README.md) | Prepare, run, and verify the chemical/drug evaluation |
+| [Current fine-tuning workflow](pilot/chemical_finetune/README.md) | Train, select by validation, evaluate test, and verify |
+| [Pilot index](pilot/README.md) | All four studies and their run guides |
+| [Historical commands](pilot/HISTORICAL_RUNS.md) | Initial sampling and original full-graph pretrained runs |
+| [Technical guide](pilot/TECHNICAL.md) | Historical protocols, output formats, resume, and provenance |
+| [Notebooks](notebooks/README.md) | Graph inventories and executed retrieval/metapath analysis |
 
-To rerun the full-graph 3g reference in both directions and retain raw outputs:
-
-```bash
-bash experiments/ultra/scripts/gpu_python.sh -B -u \
-  experiments/ultra/pilot/run_full_graph_reference.py \
-  --output experiments/ultra/pilot/results/full_graph_3g_001
-```
-
-Choose a new output directory, or add `--resume` to continue that run. Expected
-runtime is **15–16 minutes on the A6000**, based on the original runs. The runner
-saves scores, per-pair ranks, and final metrics. Commands for sampling, sampled
-ULTRA, and full-graph 4g are in the [pilot README](pilot/README.md).
+Commands run from the repository root. Choose new output directories unless
+resuming. The current fine-tuned test run takes about **1.40 seconds per disease
+query** against all candidates and **7.76 GB** peak allocated GPU memory on an
+A6000. The full fine-tuning workflow takes **3.54 hours**, including validation,
+test, and verification, with **29.07 GB** peak training memory.
 
 ## Files and outputs
 
-Paths below are relative to `experiments/ultra/`.
+Paths are relative to `experiments/ultra/`. Script and result paths retain their
+original names so previous runs remain reproducible.
 
 | Location | Contents |
 |---|---|
-| `data/tier0-20260621/` | Source archive, metadata, and extracted graph |
+| `data/tier0-20260621/` | Source graph archive and metadata |
 | `output/gandalf/full-store/` | Verified Gandalf graph and properties |
 | `output/overview/`, `output/treatment_pairs/`, `output/resources/` | Data-inspection outputs |
-| `output/full-graph-ultra/run_001/` | Frozen full-graph inputs and original 4g validation/test results |
-| `pilot/results/` | Sampling runs, sampled evaluations, and new bidirectional reruns |
-| [pilot/studies/](pilot/studies/) | Retained aggregate study records |
+| `output/full-graph-ultra/run_001/` | Historical Drug-only frozen inputs and pretrained 4g outputs |
+| `pilot/results/` | Prepared datasets, checkpoints, scores, ranks, and diagnostics |
+| `pilot/aragorn_service_parity/results/` | Captured service responses and support traces |
+| [pilot/studies/](pilot/studies/) | Retained aggregate result records and provenance |
 
-Bulk data, run directories, vendor code, and virtual environments stay local
-and are ignored by Git. Code, notebooks, documentation, aggregate records, and
-[small original reports](pilot/studies/evidence/README.md) are included for GitHub. [Output formats and retention details](pilot/TECHNICAL.md#run-management-and-output-files).
-
-## What we learned and next step
-
-ULTRA 4g outperformed 3g for drug prediction on the same full graph and test
-pairs. Comparing sampled and full-graph scores does not isolate graph size,
-because targets and candidate pools changed.
-
-Next, compare full and sampled context with **identical targets, candidates,
-checkpoint, and ranking rules**, masking held-out pairs **before** Gandalf walks.
-Use validation to choose settings; the inspected test split is exploratory.
-These metrics measure recovery of graph assertions, not clinical efficacy.
+Bulk data, raw run outputs, vendor code, and environments are ignored by Git.
+Documentation, code, notebooks, aggregate records, and
+[small original reports](pilot/studies/evidence/README.md) are retained for GitHub.
+A fresh clone needs the local inputs described in [setup](SETUP.md#fresh-clone-reproducibility).

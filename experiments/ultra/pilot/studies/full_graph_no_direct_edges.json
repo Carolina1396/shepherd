@@ -1,0 +1,149 @@
+{
+  "experiment": 6,
+  "comparison": {
+    "complete": true,
+    "experiment": 6,
+    "split": "test",
+    "pairs": 1809,
+    "preparation": {
+      "num_nodes": 1670341,
+      "source_connections": 27917681,
+      "removed_connections": 578319,
+      "remaining_connections": 27339362,
+      "edges_with_inverses": 54678724,
+      "removed_by_predicate": {
+        "biolink:affects": 4925,
+        "biolink:applied_to_treat": 50435,
+        "biolink:causes": 7229,
+        "biolink:coexists_with": 23,
+        "biolink:contraindicated_in": 17422,
+        "biolink:contributes_to": 54788,
+        "biolink:correlated_with": 29409,
+        "biolink:diagnoses": 2,
+        "biolink:disrupts": 1294,
+        "biolink:exacerbates_condition": 27,
+        "biolink:has_part": 23,
+        "biolink:has_side_effect": 55556,
+        "biolink:in_clinical_trials_for": 145914,
+        "biolink:in_preclinical_trials_for": 19,
+        "biolink:located_in": 13,
+        "biolink:negatively_correlated_with": 128,
+        "biolink:occurs_in": 32,
+        "biolink:positively_correlated_with": 975,
+        "biolink:predisposes_to_condition": 1001,
+        "biolink:produces": 81,
+        "biolink:related_to": 7357,
+        "biolink:studied_to_treat": 101,
+        "biolink:treats": 14463,
+        "biolink:treats_or_applied_or_studied_to_treat": 187102
+      },
+      "drug_nodes": 5326,
+      "disease_nodes": 51707,
+      "isolated_nodes_after": 3169,
+      "newly_isolated_nodes": 3105,
+      "isolated_drugs_after": 1299,
+      "isolated_diseases_after": 1870,
+      "source_triples_sha256": "d7203bc004e13e144a8b5e904827a0175724da5433e07d71c6b982df39915af6",
+      "categories_sha256": "cc8d5f11b70ea4dffa058808afea56f244a1f8739b31fc7acbc910302130117f",
+      "triples_sha256": "f9bd4e9c5a30601d6f6bb1e4fa1e0667341cb217c7cafc745a046ac731fb8af4",
+      "preparation_seconds": 20.89196653700128,
+      "verification": "Zero direct Drug-Disease connections remain in either direction under any predicate. All nodes and candidates retained."
+    },
+    "original_context_test": {
+      "pretrained_4g": {
+        "answers": 1809,
+        "mrr": 0.10683563486210765,
+        "hits_at_1": 0.05749032614704257,
+        "hits_at_3": 0.1011608623548922,
+        "hits_at_10": 0.20066334991708126,
+        "top_10_answers": 363,
+        "diseases": 977,
+        "disease_macro_mrr": 0.10405564666631878
+      },
+      "finetuned_4g": {
+        "answers": 1809,
+        "mrr": 0.16734623580100672,
+        "hits_at_1": 0.087893864013267,
+        "hits_at_3": 0.16749585406301823,
+        "hits_at_10": 0.33499170812603646,
+        "top_10_answers": 606,
+        "diseases": 977,
+        "disease_macro_mrr": 0.164525601515505
+      }
+    },
+    "no_direct_drug_disease_edges": {
+      "pretrained_4g": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 977,
+        "total_queries": 977,
+        "evaluated_pairs": 1809,
+        "ultra": {
+          "answers": 1809,
+          "mrr": 0.039303533131322656,
+          "hits_at_1": 0.014925373134328358,
+          "hits_at_3": 0.038695411829740185,
+          "hits_at_10": 0.06965174129353234,
+          "top_10_answers": 126,
+          "diseases": 977,
+          "disease_macro_mrr": 0.0363590095968131
+        },
+        "candidates_per_query": 5326,
+        "inference_seconds": 1343.871899937054,
+        "answer_ranks_sha256": "f39e354a4ad861bec8e7ea5183c426ee17751b4140d2561d36ec996270f82e47"
+      },
+      "finetuned_4g": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 977,
+        "total_queries": 977,
+        "evaluated_pairs": 1809,
+        "ultra": {
+          "answers": 1809,
+          "mrr": 0.07231428208633267,
+          "hits_at_1": 0.037589828634604756,
+          "hits_at_3": 0.07186290768380321,
+          "hits_at_10": 0.1404090657822001,
+          "top_10_answers": 254,
+          "diseases": 977,
+          "disease_macro_mrr": 0.06675107623710444
+        },
+        "candidates_per_query": 5326,
+        "inference_seconds": 1344.7547498410058,
+        "answer_ranks_sha256": "1ccdbfc7a0fd9c074a9a5aaafe64c038028432d896ccb7a0a576c8b69013e04e"
+      }
+    },
+    "checkpoint_sha256": {
+      "pretrained_4g": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "finetuned_4g": "ec4a58dc577f308473b41eafad68299062780f524426669d2956518909cb8e5c"
+    },
+    "settings_sha256": "a4a1dde61af19f3919577f1ea88a907a4e44df7e3134339434718c936a807d60"
+  },
+  "provenance": {
+    "pretrained_4g": {
+      "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "settings_sha256": "a4a1dde61af19f3919577f1ea88a907a4e44df7e3134339434718c936a807d60",
+      "triples_sha256": "f9bd4e9c5a30601d6f6bb1e4fa1e0667341cb217c7cafc745a046ac731fb8af4",
+      "relation_graph_sha256": "2d63afafc752da8f4e45c19dd008a9997e1b271f6416a9847bb090e851b898c7",
+      "peak_gpu_allocated_bytes": 7614532096,
+      "complete": true
+    },
+    "finetuned_4g": {
+      "checkpoint_sha256": "ec4a58dc577f308473b41eafad68299062780f524426669d2956518909cb8e5c",
+      "settings_sha256": "a4a1dde61af19f3919577f1ea88a907a4e44df7e3134339434718c936a807d60",
+      "triples_sha256": "f9bd4e9c5a30601d6f6bb1e4fa1e0667341cb217c7cafc745a046ac731fb8af4",
+      "relation_graph_sha256": "2d63afafc752da8f4e45c19dd008a9997e1b271f6416a9847bb090e851b898c7",
+      "peak_gpu_allocated_bytes": 7614532096,
+      "complete": true
+    }
+  },
+  "relation_graph": {
+    "sha256": "2d63afafc752da8f4e45c19dd008a9997e1b271f6416a9847bb090e851b898c7",
+    "triples_sha256": "f9bd4e9c5a30601d6f6bb1e4fa1e0667341cb217c7cafc745a046ac731fb8af4",
+    "seconds": 242.83023525599856,
+    "num_nodes": 120,
+    "edges": 32848
+  },
+  "source_comparison_sha256": "015a780beb7dc8485592c2d7ab2863ca75a8ccd180e22e8dffdd79bc9a3b1eb6",
+  "verification": "Recomputed MRR and Hits@1/3/10 from both SHA-verified 1809-row rank files; 977 diseases each."
+}

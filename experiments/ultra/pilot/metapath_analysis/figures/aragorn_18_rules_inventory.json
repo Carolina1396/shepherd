@@ -1,0 +1,508 @@
+[
+  {
+    "rule_id": 0,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "g": "G"
+    },
+    "edges": [
+      {
+        "subject": "G",
+        "object": "A",
+        "label": "affects_response_to",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "G",
+        "object": "D",
+        "label": "genetic_association",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 1,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "h": "E"
+    },
+    "edges": [
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "A",
+        "object": "E",
+        "label": "similar_to",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 2,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "h": "G"
+    },
+    "edges": [
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "G",
+        "object": "D",
+        "label": "genetic_association",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "A",
+        "object": "G",
+        "label": "interacts_with",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 3,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "g": "G"
+    },
+    "edges": [
+      {
+        "subject": "G",
+        "object": "A",
+        "label": "affects\n[activity_or_abundance]",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "G",
+        "object": "D",
+        "label": "genetic_association",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 4,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "h": "G"
+    },
+    "edges": [
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "G",
+        "object": "D",
+        "label": "genetic_association",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "A",
+        "object": "G",
+        "label": "affects\n[secretion;\nincreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 5,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "h": "F"
+    },
+    "edges": [
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "A",
+        "object": "F",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "F",
+        "object": "D",
+        "label": "has_phenotype",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 6,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "h": "G"
+    },
+    "edges": [
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "G",
+        "object": "D",
+        "label": "genetic_association",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "A",
+        "object": "G",
+        "label": "affects\n[transport;\ndecreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 7,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "h": "G"
+    },
+    "edges": [
+      {
+        "subject": "A",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "G",
+        "object": "D",
+        "label": "genetic_association",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "A",
+        "object": "G",
+        "label": "affects\n[molecular_interaction;\ndecreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 8,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "P"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "P",
+        "object": "A",
+        "label": "has_output",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "P",
+        "object": "E",
+        "label": "has_output",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 9,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "f": "F"
+    },
+    "edges": [
+      {
+        "subject": "A",
+        "object": "F",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "F",
+        "object": "D",
+        "label": "has_phenotype",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "D",
+        "object": "F",
+        "label": "has_phenotype",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 10,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "I"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "I",
+        "object": "A",
+        "label": "affects\n[activity_or_abundance;\ndecreased]",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "I",
+        "object": "E",
+        "label": "affects\n[activity_or_abundance;\ndecreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 11,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "I"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "I",
+        "object": "A",
+        "label": "affects\n[metabolic_processing;\ndecreased]",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "I",
+        "object": "E",
+        "label": "affects\n[metabolic_processing;\ndecreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 12,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "I"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "I",
+        "object": "A",
+        "label": "affects\n[transport;\ndecreased]",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "I",
+        "object": "E",
+        "label": "affects\n[transport;\ndecreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 13,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "f": "F"
+    },
+    "edges": [
+      {
+        "subject": "F",
+        "object": "D",
+        "label": "positively_correlated_with",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "A",
+        "object": "F",
+        "label": "treats",
+        "query_edge": "edge_1"
+      }
+    ]
+  },
+  {
+    "rule_id": 14,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "I"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "I",
+        "object": "E",
+        "label": "affects\n[abundance;\nincreased]",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "I",
+        "object": "A",
+        "label": "affects\n[activity_or_abundance;\nincreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 15,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "I"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "I",
+        "object": "A",
+        "label": "affects\n[secretion;\nincreased]",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "I",
+        "object": "E",
+        "label": "affects\n[secretion;\nincreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 16,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "I"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "I",
+        "object": "A",
+        "label": "affects\n[activity;\nincreased]",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "I",
+        "object": "E",
+        "label": "affects\n[activity_or_abundance;\nincreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  },
+  {
+    "rule_id": 17,
+    "nodes": {
+      "$source": "A",
+      "$target": "D",
+      "e": "E",
+      "i": "I"
+    },
+    "edges": [
+      {
+        "subject": "E",
+        "object": "D",
+        "label": "treats_or_applied_\nor_studied_to_treat",
+        "query_edge": "edge_0"
+      },
+      {
+        "subject": "I",
+        "object": "A",
+        "label": "affects\n[abundance;\nincreased]",
+        "query_edge": "edge_1"
+      },
+      {
+        "subject": "I",
+        "object": "E",
+        "label": "affects\n[activity_or_abundance;\nincreased]",
+        "query_edge": "edge_2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "completed_diseases": 3901,
+  "total_diseases": 3901,
+  "expected_pairs": 22918,
+  "evaluated_pairs": 22918,
+  "completed_walks": 3536161,
+  "attempted_walks": 3901000,
+  "results": {
+    "gandalf_walks": {
+      "answer_pairs": 22918,
+      "answers_reached": 14483,
+      "answer_coverage": 0.6319486866218693,
+      "answers_bound": null,
+      "mean_edges": 1828.138169700077,
+      "empty_graphs": 237,
+      "retrieval_seconds": 125.09585702314507
+    },
+    "aragorn_rules": {
+      "answer_pairs": 22918,
+      "answers_reached": 4571,
+      "answer_coverage": 0.1994502138057422,
+      "answers_bound": 4571,
+      "mean_edges": 80.07408356831581,
+      "empty_graphs": 2907,
+      "retrieval_seconds": 12532.900122962368
+    }
+  },
+  "paired_recovery": {
+    "gandalf_only": 11068,
+    "neither": 7279,
+    "both": 3415,
+    "aragorn_only": 1156
+  },
+  "rule_status_counts": {
+    "Success": 74119
+  },
+  "bounded_rule_queries": 25,
+  "settings_sha256": "2b80966d7a890a955ecba084ed66885cd710e9a623f6e787a8a9fd7be7e60cb1",
+  "mask": {
+    "source_evidence_records": 28709074,
+    "removed_evidence_records": 27236,
+    "remaining_evidence_records": 28681838,
+    "remaining_scoped_treats_records": 0,
+    "remaining_treats_records_other_categories": 6398,
+    "exact_category_mask_verified": true,
+    "evidence_properties_preserved": true,
+    "forward_reverse_indices_verified": true
+  },
+  "saved_graphs_and_recovery_verified": true,
+  "outputs_sha256": {
+    "per_disease.csv": "05a73b3551bd244a793a020972db65528c393c912807cd267d90ea40fa0ad0ca",
+    "pair_recovery.csv": "601e43e1c39a537269edbe48da8c1c1f1d2b9e4a5a0bae4e59173f8f06083764",
+    "per_rule.csv": "55fbf98a0c12444e0a4b5d35c431dcbffbf3aa478dc81a8e10182bd41339c568"
+  }
+}

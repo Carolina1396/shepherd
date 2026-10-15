@@ -1,0 +1,218 @@
+{
+  "study_id": "full_graph_ultra4g_finetuned",
+  "completed_on": "2026-10-09",
+  "status": "training_validation_and_test_complete",
+  "local_run": "pilot/results/finetune_4g_001",
+  "config": {
+    "steps": 1000,
+    "validate_every": 250,
+    "patience": 3,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "num_negative": 256,
+    "adversarial_temperature": 1.0,
+    "seed": 1024
+  },
+  "settings": {
+    "config": {
+      "steps": 1000,
+      "validate_every": 250,
+      "patience": 3,
+      "learning_rate": 1e-05,
+      "weight_decay": 0.01,
+      "num_negative": 256,
+      "adversarial_temperature": 1.0,
+      "seed": 1024
+    },
+    "smoke_test": false,
+    "batch_size": 1,
+    "initial_checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "prepared_config_sha256": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75",
+    "dataset_sha256": {
+      "candidate_degree.npy": "189f1c6dd616e827e81258acb58484f69828dc2b021f1848b77be69d463415aa",
+      "candidates.json": "a7a9580b5634f7eb3e0bbf7dad092f4aa0029e512cd9f3c1ee87bd8c1ddcbfce",
+      "labels.json": "707f2b251e194c771e2126db57f211273ba44cca505c9e95ec494d151e7ee666",
+      "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+      "triples.npy": "d7203bc004e13e144a8b5e904827a0175724da5433e07d71c6b982df39915af6"
+    },
+    "relation_graph_sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+    "baseline_validation_sha256": "bdc252c155e8c558d68b2fcc169aca3a01e072e05645e99ba9a66b429550a71c",
+    "source_sha256": {
+      "run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+      "full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+    },
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "torch": "2.1.0+cu118",
+    "cuda": "11.8",
+    "gpu": "NVIDIA RTX A6000",
+    "ranking": "Drug heads; all-known filtered; pessimistic ties",
+    "negative_filter": "Visible training positives only; held-out labels used for evaluation filtering only",
+    "training_mask": "Native remove_one_hop=True: all direct predicates and directions for positives and sampled negatives",
+    "relation_graph": "Frozen aggregate relation graph from the held-out-masked context, as in upstream training"
+  },
+  "training": {
+    "optimizer_steps": 1000,
+    "available_training_pairs": 14463,
+    "distinct_training_pairs_used": 1000,
+    "full_passes_completed": 0,
+    "best_step": 1000,
+    "stopped_early": false
+  },
+  "checkpoint_sha256": "ec4a58dc577f308473b41eafad68299062780f524426669d2956518909cb8e5c",
+  "baseline_validation": {
+    "answers": 1807,
+    "mrr": 0.10574815363561749,
+    "hits_at_1": 0.05644714997232983,
+    "hits_at_3": 0.10348644161593802,
+    "hits_at_10": 0.19203099059214168,
+    "top_10_answers": 347,
+    "diseases": 986,
+    "disease_macro_mrr": 0.10277716684831123
+  },
+  "baseline_test": {
+    "answers": 1809,
+    "mrr": 0.10683563486210765,
+    "hits_at_1": 0.05749032614704257,
+    "hits_at_3": 0.1011608623548922,
+    "hits_at_10": 0.20066334991708126,
+    "top_10_answers": 363,
+    "diseases": 977,
+    "disease_macro_mrr": 0.10405564666631878
+  },
+  "validation": [
+    {
+      "step": 250,
+      "split": "validation",
+      "complete": true,
+      "scored_queries": 986,
+      "total_queries": 986,
+      "evaluated_pairs": 1807,
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.13670674814197342,
+        "hits_at_1": 0.07138904261206419,
+        "hits_at_3": 0.13945766463752074,
+        "hits_at_10": 0.25567238516878804,
+        "top_10_answers": 462,
+        "diseases": 986,
+        "disease_macro_mrr": 0.130949165706856
+      },
+      "candidates_per_query": 5326,
+      "inference_seconds": 1370.4212264828384,
+      "answer_ranks_sha256": "e104121efcc5538b348548daff9163d7c27a773b0fe3df8f3c4e5b48813ea40a"
+    },
+    {
+      "step": 500,
+      "split": "validation",
+      "complete": true,
+      "scored_queries": 986,
+      "total_queries": 986,
+      "evaluated_pairs": 1807,
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.15165793084492957,
+        "hits_at_1": 0.08190370780298838,
+        "hits_at_3": 0.14554510237963475,
+        "hits_at_10": 0.2949640287769784,
+        "top_10_answers": 533,
+        "diseases": 986,
+        "disease_macro_mrr": 0.14419420282753576
+      },
+      "candidates_per_query": 5326,
+      "inference_seconds": 1369.5852808672935,
+      "answer_ranks_sha256": "3a47ada0ab6609231197102945c8070895520a9e2880a2bb5bb46db88a5530c9"
+    },
+    {
+      "step": 750,
+      "split": "validation",
+      "complete": true,
+      "scored_queries": 986,
+      "total_queries": 986,
+      "evaluated_pairs": 1807,
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.15799957737641973,
+        "hits_at_1": 0.08467072495849474,
+        "hits_at_3": 0.15329275041505258,
+        "hits_at_10": 0.3060320973990039,
+        "top_10_answers": 553,
+        "diseases": 986,
+        "disease_macro_mrr": 0.15117154839390337
+      },
+      "candidates_per_query": 5326,
+      "inference_seconds": 1370.5625429786742,
+      "answer_ranks_sha256": "bba560684848b42eb089fcd24ede2a4370109aeae642e70903c06a8887ff5d35"
+    },
+    {
+      "step": 1000,
+      "split": "validation",
+      "complete": true,
+      "scored_queries": 986,
+      "total_queries": 986,
+      "evaluated_pairs": 1807,
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.16542965653593852,
+        "hits_at_1": 0.08577753182069729,
+        "hits_at_3": 0.16602102933038185,
+        "hits_at_10": 0.3209739900387382,
+        "top_10_answers": 580,
+        "diseases": 986,
+        "disease_macro_mrr": 0.1580645901929132
+      },
+      "candidates_per_query": 5326,
+      "inference_seconds": 1370.0114900302142,
+      "answer_ranks_sha256": "f4f5e344080529854ed42b52ed43b5b7f0e27bb73db6706d47a9c33c5cb7ab2c"
+    }
+  ],
+  "test": {
+    "split": "test",
+    "complete": true,
+    "scored_queries": 977,
+    "total_queries": 977,
+    "evaluated_pairs": 1809,
+    "ultra": {
+      "answers": 1809,
+      "mrr": 0.16734623580100672,
+      "hits_at_1": 0.087893864013267,
+      "hits_at_3": 0.16749585406301823,
+      "hits_at_10": 0.33499170812603646,
+      "top_10_answers": 606,
+      "diseases": 977,
+      "disease_macro_mrr": 0.164525601515505
+    },
+    "candidates_per_query": 5326,
+    "inference_seconds": 1352.4672671910375,
+    "answer_ranks_sha256": "87f018f56d70e4ccf17f8883cb4df76f9a1b9e75891176f36e724d4f2cd6c08f"
+  },
+  "timing": {
+    "training_update_seconds": 4006.643590318039,
+    "four_validation_checks_seconds": 5480.58054035902,
+    "test_inference_seconds": 1352.4672671910375,
+    "peak_training_gpu_allocated_bytes": 29072690176,
+    "scope": "Training updates include masking, forward/backward and optimizer step; validation/test inference includes score transfer. Excludes loading, checkpoint/file writes and ranking overhead; not total wall time."
+  },
+  "verification": {
+    "selected_checkpoint_hash_matches_test": true,
+    "test_score_files_hash_checked": 977,
+    "test_rank_csv_metrics_recomputed": true,
+    "test_unique_pairs": 1809
+  },
+  "source_report_sha256": {
+    "config.json": "5530a1e4a03fcf3e6c4b42b8cc22a6a3bdb0c76fdc98acec1ba32df6fdafe27f",
+    "settings.json": "dabf906c393f0d49feaff3535fe412de8d376089110a2a5775588213d6eed3ce",
+    "completed.json": "6f83ba20de565aa80607a60574ada49521b3bd8441cca711160678e2fae27db0",
+    "test/result.json": "3ac5bffb7bfc581dc97feeedb385006df2b118ce3e2959a1afa9e349e69311ae",
+    "test/metrics.json": "4544b413082a3b2ecdd9cb5f32d3193a5cb4a8202a86a0c5c4a970215bc53770",
+    "validation_step_000250/metrics.json": "a3f15def9fe2d10c9bfe7c272f9b3ab156b82a0f7fda5d59b2f644e2fd3e9121",
+    "validation_step_000500/metrics.json": "67140c279919bd8f42ab23937bf831613b3abb4596cd14324111127fd4aa114a",
+    "validation_step_000750/metrics.json": "f93dd18546b1f763f6e573561ca6f6654c7f515ef59ce9df0746b9f268390f94",
+    "validation_step_001000/metrics.json": "fb7db7db6bc2c6aa592fab6c20a6d318134daa40f9cedd36d08b2a8987b46b3f"
+  },
+  "limitations": [
+    "Exploratory evaluation on a previously inspected test split",
+    "Only 1000 distinct training pairs visited; convergence not established",
+    "Full raw checkpoints, scores and ranks remain local and ignored by Git"
+  ],
+  "provenance": "Aggregates extracted from saved run artifacts; completed.json describes training completion before the separate test command. This record includes the later completed test."
+}

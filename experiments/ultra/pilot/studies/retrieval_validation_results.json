@@ -1,0 +1,181 @@
+{
+  "experiment": "7b",
+  "comparison": {
+    "complete": true,
+    "split": "validation",
+    "pairs": 1807,
+    "diseases": 986,
+    "retrieval_contexts": {
+      "gandalf_walks/pretrained_4g": {
+        "complete": true,
+        "split": "validation",
+        "scored_queries": 986,
+        "total_queries": 986,
+        "evaluated_pairs": 1807,
+        "total_pairs": 1807,
+        "candidates_per_query": 5326,
+        "ultra": {
+          "answers": 1807,
+          "mrr": 0.04126121140633934,
+          "hits_at_1": 0.021029330381848368,
+          "hits_at_3": 0.040398450470392915,
+          "hits_at_10": 0.07969009407858328,
+          "top_10_answers": 144,
+          "diseases": 986,
+          "disease_macro_mrr": 0.04887402126808636
+        },
+        "inference_seconds": 15.764783787140914,
+        "graph_preparation_seconds": 50.36414220488223,
+        "retrieval_seconds": 46.89684370577743,
+        "peak_gpu_allocated_bytes": 31886848,
+        "peak_gpu_reserved_bytes": 46137344,
+        "answers_with_retrieved_context": 837,
+        "answer_ranks_sha256": "ede83b42ffe94d36032daafaa815831d7594e49d34b74e9f30774f99f5cb04fe"
+      },
+      "gandalf_walks/finetuned_4g": {
+        "complete": true,
+        "split": "validation",
+        "scored_queries": 986,
+        "total_queries": 986,
+        "evaluated_pairs": 1807,
+        "total_pairs": 1807,
+        "candidates_per_query": 5326,
+        "ultra": {
+          "answers": 1807,
+          "mrr": 0.04662995615201104,
+          "hits_at_1": 0.024903154399557276,
+          "hits_at_3": 0.047592695074709465,
+          "hits_at_10": 0.08467072495849474,
+          "top_10_answers": 153,
+          "diseases": 986,
+          "disease_macro_mrr": 0.05665234221475906
+        },
+        "inference_seconds": 15.229460271781136,
+        "graph_preparation_seconds": 50.36414220488223,
+        "retrieval_seconds": 46.89684370577743,
+        "peak_gpu_allocated_bytes": 31886848,
+        "peak_gpu_reserved_bytes": 46137344,
+        "answers_with_retrieved_context": 837,
+        "answer_ranks_sha256": "7e58ed8cb4b7eae80a670b3fe3477cf1da15392b3418adc471e13ced215a41a8"
+      },
+      "aragorn_rules/pretrained_4g": {
+        "complete": true,
+        "split": "validation",
+        "scored_queries": 986,
+        "total_queries": 986,
+        "evaluated_pairs": 1807,
+        "total_pairs": 1807,
+        "candidates_per_query": 5326,
+        "ultra": {
+          "answers": 1807,
+          "mrr": 0.001958707466570302,
+          "hits_at_1": 0.0,
+          "hits_at_3": 0.0011068068622025456,
+          "hits_at_10": 0.005534034311012728,
+          "top_10_answers": 10,
+          "diseases": 986,
+          "disease_macro_mrr": 0.0021597203693271964
+        },
+        "inference_seconds": 14.35814328113338,
+        "graph_preparation_seconds": 6.594625905061548,
+        "retrieval_seconds": 2966.330065323018,
+        "peak_gpu_allocated_bytes": 29089792,
+        "peak_gpu_reserved_bytes": 46137344,
+        "answers_with_retrieved_context": 63,
+        "answer_ranks_sha256": "0fc0bb329c489b422a849dca95433ea357af53b5f57e08cb4f69fd782ab6a249"
+      },
+      "aragorn_rules/finetuned_4g": {
+        "complete": true,
+        "split": "validation",
+        "scored_queries": 986,
+        "total_queries": 986,
+        "evaluated_pairs": 1807,
+        "total_pairs": 1807,
+        "candidates_per_query": 5326,
+        "ultra": {
+          "answers": 1807,
+          "mrr": 0.0019337547270120725,
+          "hits_at_1": 0.0,
+          "hits_at_3": 0.0011068068622025456,
+          "hits_at_10": 0.005534034311012728,
+          "top_10_answers": 10,
+          "diseases": 986,
+          "disease_macro_mrr": 0.0021502689979125563
+        },
+        "inference_seconds": 14.027757793926867,
+        "graph_preparation_seconds": 6.594625905061548,
+        "retrieval_seconds": 2966.330065323018,
+        "peak_gpu_allocated_bytes": 29089792,
+        "peak_gpu_reserved_bytes": 46137344,
+        "answers_with_retrieved_context": 63,
+        "answer_ranks_sha256": "e8c0d7414323376b593622b3249635398333eb9f0243a8cc9230988bb3ba6905"
+      }
+    },
+    "full_graph_reference": {
+      "pretrained_4g": {
+        "answers": 1807,
+        "mrr": 0.10574815363561749,
+        "hits_at_1": 0.05644714997232983,
+        "hits_at_3": 0.10348644161593802,
+        "hits_at_10": 0.19203099059214168,
+        "top_10_answers": 347,
+        "diseases": 986,
+        "disease_macro_mrr": 0.10277716684831123
+      },
+      "finetuned_4g": {
+        "answers": 1807,
+        "mrr": 0.16542965653593852,
+        "hits_at_1": 0.08577753182069729,
+        "hits_at_3": 0.16602102933038185,
+        "hits_at_10": 0.3209739900387382,
+        "top_10_answers": 580,
+        "diseases": 986,
+        "disease_macro_mrr": 0.1580645901929132
+      }
+    },
+    "baseline_metrics_sha256": {
+      "pretrained_4g": "bdc252c155e8c558d68b2fcc169aca3a01e072e05645e99ba9a66b429550a71c",
+      "finetuned_4g": "fb7db7db6bc2c6aa592fab6c20a6d318134daa40f9cedd36d08b2a8987b46b3f"
+    },
+    "settings_sha256": "8b45771c3bf06b4feddab0974669ca57db348a63548bffe4300cb3c39ea94f3f",
+    "test_evaluated": false
+  },
+  "retrieval_summary": {
+    "complete": true,
+    "cohort_diseases": 986,
+    "completed_diseases": 986,
+    "cohort_validation_pairs": 1807,
+    "strategies": {
+      "gandalf_walks": {
+        "evaluated_validation_pairs": 1807,
+        "answers_reached": 837,
+        "answer_coverage": 0.46319867183176533,
+        "mean_disease_answer_coverage": 0.5123907223045154,
+        "mean_nodes": 1740.7484787018257,
+        "mean_edges": 2106.3590263691685,
+        "mean_drug_nodes": 291.6470588235294,
+        "total_retrieval_seconds": 46.89684370577743,
+        "answers_returned_as_rule_drugs": 0
+      },
+      "aragorn_rules": {
+        "evaluated_validation_pairs": 1807,
+        "answers_reached": 63,
+        "answer_coverage": 0.034864416159380185,
+        "mean_disease_answer_coverage": 0.02467082444262971,
+        "mean_nodes": 107.10547667342799,
+        "mean_edges": 254.94929006085192,
+        "mean_drug_nodes": 58.640973630831645,
+        "total_retrieval_seconds": 2966.330065323018,
+        "answers_returned_as_rule_drugs": 63
+      }
+    },
+    "settings_sha256": "fbf56acdeb625380e2d8de2df5a751c97bc9fe7c76fc8a0211ed91c97ecd5a07",
+    "rule_status_counts": {
+      "Success": 18734
+    },
+    "scope": "Coverage under fixed budgets; timeouts/errors are reported, not silently treated as exhaustive rule searches. No ULTRA inference or test metrics.",
+    "driver_elapsed_seconds": 3107.377907130998,
+    "parent_peak_rss_bytes": 5444554752
+  },
+  "source_comparison_sha256": "5a60ac6b329e6ac0ffc25041b11a3dfdf73ddcf105d7a90750419b3f8e223f5c"
+}
