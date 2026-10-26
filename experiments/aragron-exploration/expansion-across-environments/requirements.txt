@@ -1,0 +1,6 @@
+# Offline analysis, notebook rendering, and optional hosted query runners.
+httpx
+pandas
+ipython
+ipykernel
+PyYAML

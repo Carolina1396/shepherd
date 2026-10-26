@@ -1,0 +1,6 @@
+# Include experiment code despite the repository-wide scripts/ rule.
+!scripts/
+output/
+publication/
+__pycache__/
+.ipynb_checkpoints/

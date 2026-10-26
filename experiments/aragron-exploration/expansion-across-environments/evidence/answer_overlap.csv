@@ -1,0 +1,61 @@
+target,target_name,environment_a,environment_b,complete_for_comparison,intersection,only_a,only_b,jaccard,identical_answer_ids
+MONDO:0008233,pheochromocytoma,development,ci_staging,True,83,[],[],1.0,True
+MONDO:0008233,pheochromocytoma,development,test,True,83,[],[],1.0,True
+MONDO:0008233,pheochromocytoma,development,production,True,83,[],[],1.0,True
+MONDO:0008233,pheochromocytoma,ci_staging,test,True,83,[],[],1.0,True
+MONDO:0008233,pheochromocytoma,ci_staging,production,True,83,[],[],1.0,True
+MONDO:0008233,pheochromocytoma,test,production,True,83,[],[],1.0,True
+MONDO:0007245,"cafe au lait spots, multiple",development,ci_staging,True,119,[],[],1.0,True
+MONDO:0007245,"cafe au lait spots, multiple",development,test,True,119,[],[],1.0,True
+MONDO:0007245,"cafe au lait spots, multiple",development,production,True,119,[],[],1.0,True
+MONDO:0007245,"cafe au lait spots, multiple",ci_staging,test,True,119,[],[],1.0,True
+MONDO:0007245,"cafe au lait spots, multiple",ci_staging,production,True,119,[],[],1.0,True
+MONDO:0007245,"cafe au lait spots, multiple",test,production,True,119,[],[],1.0,True
+MONDO:0009665,biotinidase deficiency,development,ci_staging,True,2,[],[],1.0,True
+MONDO:0009665,biotinidase deficiency,development,test,True,2,[],[],1.0,True
+MONDO:0009665,biotinidase deficiency,development,production,True,2,[],[],1.0,True
+MONDO:0009665,biotinidase deficiency,ci_staging,test,True,2,[],[],1.0,True
+MONDO:0009665,biotinidase deficiency,ci_staging,production,True,2,[],[],1.0,True
+MONDO:0009665,biotinidase deficiency,test,production,True,2,[],[],1.0,True
+HP:0001945,Fever,development,ci_staging,True,666,"[""CHEBI:15551"", ""CHEBI:15627"", ""CHEBI:15996"", ""CHEBI:16240"", ""CHEBI:16247"", ""CHEBI:16480"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:24846"", ""CHEBI:26333"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.9765395894428153,False
+HP:0001945,Fever,development,test,True,666,"[""CHEBI:15551"", ""CHEBI:15627"", ""CHEBI:15996"", ""CHEBI:16240"", ""CHEBI:16247"", ""CHEBI:16480"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:24846"", ""CHEBI:26333"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.9765395894428153,False
+HP:0001945,Fever,development,production,True,666,"[""CHEBI:15551"", ""CHEBI:15627"", ""CHEBI:15996"", ""CHEBI:16240"", ""CHEBI:16247"", ""CHEBI:16480"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:24846"", ""CHEBI:26333"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.9765395894428153,False
+HP:0001945,Fever,ci_staging,test,True,666,[],[],1.0,True
+HP:0001945,Fever,ci_staging,production,True,666,[],[],1.0,True
+HP:0001945,Fever,test,production,True,666,[],[],1.0,True
+HP:0100812,Halitosis,development,ci_staging,True,20,"[""CHEBI:15365"", ""CHEBI:15422"", ""CHEBI:15551"", ""CHEBI:15627"", ""CHEBI:16247"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:18357"", ""CHEBI:24846"", ""CHEBI:26333"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.5555555555555556,False
+HP:0100812,Halitosis,development,test,True,20,"[""CHEBI:15365"", ""CHEBI:15422"", ""CHEBI:15551"", ""CHEBI:15627"", ""CHEBI:16247"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:18357"", ""CHEBI:24846"", ""CHEBI:26333"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.5555555555555556,False
+HP:0100812,Halitosis,development,production,True,20,"[""CHEBI:15365"", ""CHEBI:15422"", ""CHEBI:15551"", ""CHEBI:15627"", ""CHEBI:16247"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:18357"", ""CHEBI:24846"", ""CHEBI:26333"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.5555555555555556,False
+HP:0100812,Halitosis,ci_staging,test,True,20,[],[],1.0,True
+HP:0100812,Halitosis,ci_staging,production,True,20,[],[],1.0,True
+HP:0100812,Halitosis,test,production,True,20,[],[],1.0,True
+MONDO:0100096,COVID-19,development,ci_staging,True,87,"[""CHEBI:15365"", ""CHEBI:15422"", ""CHEBI:15627"", ""CHEBI:16247"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:18357"", ""CHEBI:24846"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.8613861386138614,False
+MONDO:0100096,COVID-19,development,test,True,87,"[""CHEBI:15365"", ""CHEBI:15422"", ""CHEBI:15627"", ""CHEBI:16247"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:18357"", ""CHEBI:24846"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.8613861386138614,False
+MONDO:0100096,COVID-19,development,production,True,87,"[""CHEBI:15365"", ""CHEBI:15422"", ""CHEBI:15627"", ""CHEBI:16247"", ""CHEBI:17268"", ""CHEBI:18303"", ""CHEBI:18357"", ""CHEBI:24846"", ""CHEBI:28304"", ""CHEBI:28728"", ""CHEBI:28765"", ""CHEBI:37537"", ""CHEBI:49662"", ""CHEBI:566274""]",[],0.8613861386138614,False
+MONDO:0100096,COVID-19,ci_staging,test,True,87,[],[],1.0,True
+MONDO:0100096,COVID-19,ci_staging,production,True,87,[],[],1.0,True
+MONDO:0100096,COVID-19,test,production,True,87,[],[],1.0,True
+MONDO:0006632,"osteoarthritis, hand",development,ci_staging,True,7,[],[],1.0,True
+MONDO:0006632,"osteoarthritis, hand",development,test,True,7,[],[],1.0,True
+MONDO:0006632,"osteoarthritis, hand",development,production,True,7,[],[],1.0,True
+MONDO:0006632,"osteoarthritis, hand",ci_staging,test,True,7,[],[],1.0,True
+MONDO:0006632,"osteoarthritis, hand",ci_staging,production,True,7,[],[],1.0,True
+MONDO:0006632,"osteoarthritis, hand",test,production,True,7,[],[],1.0,True
+MONDO:0007256,liver carcinoma,development,ci_staging,True,452,"[""CHEBI:13389"", ""CHEBI:15552"", ""CHEBI:15553"", ""CHEBI:15627"", ""CHEBI:15647"", ""CHEBI:15843"", ""CHEBI:16356"", ""CHEBI:16422"", ""CHEBI:16827"", ""CHEBI:16828"", ""CHEBI:17115"", ""CHEBI:17489"", ""CHEBI:17855"", ""CHEBI:18303"", ""CHEBI:18421"", ""CHEBI:24261"", ""CHEBI:25940"", ""CHEBI:26333"", ""CHEBI:26338"", ""CHEBI:26708"", ""CHEBI:2719"", ""CHEBI:28790"", ""CHEBI:29191"", ""CHEBI:33697"", ""CHEBI:33699"", ""CHEBI:37550"", ""CHEBI:3892"", ""CHEBI:44811"", ""CHEBI:5931"", ""CHEBI:64583""]",[],0.9377593360995851,False
+MONDO:0007256,liver carcinoma,development,test,True,452,"[""CHEBI:13389"", ""CHEBI:15552"", ""CHEBI:15553"", ""CHEBI:15627"", ""CHEBI:15647"", ""CHEBI:15843"", ""CHEBI:16356"", ""CHEBI:16422"", ""CHEBI:16827"", ""CHEBI:16828"", ""CHEBI:17115"", ""CHEBI:17489"", ""CHEBI:17855"", ""CHEBI:18303"", ""CHEBI:18421"", ""CHEBI:24261"", ""CHEBI:25940"", ""CHEBI:26333"", ""CHEBI:26338"", ""CHEBI:26708"", ""CHEBI:2719"", ""CHEBI:28790"", ""CHEBI:29191"", ""CHEBI:33697"", ""CHEBI:33699"", ""CHEBI:37550"", ""CHEBI:3892"", ""CHEBI:44811"", ""CHEBI:5931"", ""CHEBI:64583""]",[],0.9377593360995851,False
+MONDO:0007256,liver carcinoma,development,production,True,452,"[""CHEBI:13389"", ""CHEBI:15552"", ""CHEBI:15553"", ""CHEBI:15627"", ""CHEBI:15647"", ""CHEBI:15843"", ""CHEBI:16356"", ""CHEBI:16422"", ""CHEBI:16827"", ""CHEBI:16828"", ""CHEBI:17115"", ""CHEBI:17489"", ""CHEBI:17855"", ""CHEBI:18303"", ""CHEBI:18421"", ""CHEBI:24261"", ""CHEBI:25940"", ""CHEBI:26333"", ""CHEBI:26338"", ""CHEBI:26708"", ""CHEBI:2719"", ""CHEBI:28790"", ""CHEBI:29191"", ""CHEBI:33697"", ""CHEBI:33699"", ""CHEBI:37550"", ""CHEBI:3892"", ""CHEBI:44811"", ""CHEBI:5931"", ""CHEBI:64583""]",[],0.9377593360995851,False
+MONDO:0007256,liver carcinoma,ci_staging,test,True,452,[],[],1.0,True
+MONDO:0007256,liver carcinoma,ci_staging,production,True,452,[],[],1.0,True
+MONDO:0007256,liver carcinoma,test,production,True,452,[],[],1.0,True
+MONDO:0009691,mycosis fungoides,development,ci_staging,True,28,[],[],1.0,True
+MONDO:0009691,mycosis fungoides,development,test,True,28,[],[],1.0,True
+MONDO:0009691,mycosis fungoides,development,production,True,28,[],[],1.0,True
+MONDO:0009691,mycosis fungoides,ci_staging,test,True,28,[],[],1.0,True
+MONDO:0009691,mycosis fungoides,ci_staging,production,True,28,[],[],1.0,True
+MONDO:0009691,mycosis fungoides,test,production,True,28,[],[],1.0,True
+UMLS:C0376618,Endotoxemia,development,ci_staging,True,2,[],[],1.0,True
+UMLS:C0376618,Endotoxemia,development,test,True,2,[],[],1.0,True
+UMLS:C0376618,Endotoxemia,development,production,True,2,[],[],1.0,True
+UMLS:C0376618,Endotoxemia,ci_staging,test,True,2,[],[],1.0,True
+UMLS:C0376618,Endotoxemia,ci_staging,production,True,2,[],[],1.0,True
+UMLS:C0376618,Endotoxemia,test,production,True,2,[],[],1.0,True

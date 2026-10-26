@@ -1,0 +1,5 @@
+environment,rule_evaluations,expanded,returned,rejected,empty,incomplete,error,unknown,returned_with_issues
+development,180,180,27,80,73,0,0,0,0
+ci_staging,180,180,27,80,73,0,0,0,0
+test,180,180,27,80,73,0,0,0,0
+production,180,180,27,80,73,0,0,0,0

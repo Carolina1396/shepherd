@@ -1,0 +1,89 @@
+{
+  "description": "Ten fixed disease/phenotype targets; open chemical, inferred treats; real hosted ARAGORN lookup expansion and merging. Convenience cohort, not representative coverage.",
+  "environments": [
+    {
+      "name": "development",
+      "base_url": "https://shepherd.renci.org/aragorn"
+    },
+    {
+      "name": "ci_staging",
+      "base_url": "https://shepherd.ci.transltr.io/aragorn"
+    },
+    {
+      "name": "test",
+      "base_url": "https://shepherd.test.transltr.io/aragorn"
+    },
+    {
+      "name": "production",
+      "base_url": "https://shepherd.transltr.io/aragorn"
+    }
+  ],
+  "targets": [
+    {
+      "id": "MONDO:0008233",
+      "name": "pheochromocytoma",
+      "selection": "Existing positive rule 6 example"
+    },
+    {
+      "id": "MONDO:0007245",
+      "name": "cafe au lait spots, multiple",
+      "selection": "Existing positive rule 10 example"
+    },
+    {
+      "id": "MONDO:0009665",
+      "name": "biotinidase deficiency",
+      "selection": "Existing positive rule 11 example"
+    },
+    {
+      "id": "HP:0001945",
+      "name": "Fever",
+      "selection": "Existing positive rule 14 example"
+    },
+    {
+      "id": "HP:0100812",
+      "name": "Halitosis",
+      "selection": "Existing positive rule 17 example"
+    },
+    {
+      "id": "MONDO:0100096",
+      "name": "COVID-19",
+      "selection": "Top incoming gene-condition record count within [10, 50], among Disease nodes"
+    },
+    {
+      "id": "MONDO:0006632",
+      "name": "osteoarthritis, hand",
+      "selection": "Top incoming gene-condition record count within [10, 50], among Disease nodes"
+    },
+    {
+      "id": "MONDO:0007256",
+      "name": "liver carcinoma",
+      "selection": "Next distinct target in the existing seeded 20-pair holdout cohort; no masking in this experiment."
+    },
+    {
+      "id": "MONDO:0009691",
+      "name": "mycosis fungoides",
+      "selection": "Next distinct target in the existing seeded 20-pair holdout cohort; no masking in this experiment."
+    },
+    {
+      "id": "UMLS:C0376618",
+      "name": "Endotoxemia",
+      "selection": "Next distinct target in the existing seeded 20-pair holdout cohort; no masking in this experiment."
+    }
+  ],
+  "timeout_seconds": 120,
+  "workflow": [
+    {
+      "id": "aragorn.lookup"
+    }
+  ],
+  "parameters": {
+    "tier": 0,
+    "tiers": [
+      0
+    ],
+    "tier_fallback": false,
+    "timeout": 120,
+    "log_level": "DEBUG",
+    "bypass_cache": true
+  }
+}
