@@ -21,6 +21,8 @@ The folders describe follow-up coverage:
 
 The machine-readable, one-row-per-rule tracker is [status.csv](status.csv).
 
+[BIOLINK_ROOT_CAUSE.md](BIOLINK_ROOT_CAUSE.md) traces each failure to a Biolink model change (rules 1, 3, 4, 5, 7, 8) or to graph coverage (rules 2, 9, 12, 13, 16).
+
 ## Required workflow for each investigation
 
 Use [INVESTIGATION_TEMPLATE.md](INVESTIGATION_TEMPLATE.md) and change one condition at a time:

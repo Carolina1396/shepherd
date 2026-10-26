@@ -1,0 +1,212 @@
+{
+  "checked_utc": "2026-10-17T00:16:28.474588+00:00",
+  "local_experiment_bug": {
+    "missing_import": "attributes.yaml",
+    "effect": "Gandalf catches schema lookup errors and falls back to literal predicates and qualifier values.",
+    "superseded_run": "output/gandalf-comparison/run_001",
+    "corrected_run": "output/gandalf-comparison/run_002",
+    "verified_expansion": {
+      "version": "4.4.2",
+      "attributes_sha256": "7bc9e8a415341f940537d0f0c42d2b9aef2005bdddfac5bac5cbaa4fa981fba2",
+      "imported_files": {
+        "Biolink-Model": {
+          "path": "/home/agonzalez/shepherd-myara/experiments/aragron-exploration/output/biolink-4.4.2-complete/biolink-model.yaml",
+          "sha256": "b6a1320772a92d69e84b8c700cd6386dffe45ed635c8197d61e22b6a6fa3b35e"
+        },
+        "attributes": {
+          "path": "/home/agonzalez/shepherd-myara/experiments/aragron-exploration/output/biolink-4.4.2-complete/attributes.yaml",
+          "sha256": "7bc9e8a415341f940537d0f0c42d2b9aef2005bdddfac5bac5cbaa4fa981fba2"
+        },
+        "linkml:types": {
+          "path": "/home/agonzalez/shepherd-myara/experiments/ultra/.venv/lib/python3.11/site-packages/linkml_runtime/linkml_model/model/schema/types.yaml",
+          "sha256": "1c79b264397bec0eadb404d22e9b163458f1b889809b3b482ecc39c98743fe00"
+        }
+      },
+      "bmt_version": "1.5.0",
+      "linkml_runtime_version": "1.11.1",
+      "treats_expansion": [
+        "biolink:ameliorates_condition",
+        "biolink:preventative_for_condition",
+        "biolink:treats"
+      ],
+      "qualifier_expansion": [
+        "abundance",
+        "activity",
+        "activity_or_abundance",
+        "expression",
+        "synthesis"
+      ],
+      "positively_correlated_with_symmetric": true,
+      "superclass_of_inverse": "biolink:subclass_of",
+      "helper_sha256": "5881ba22d4ff5c48fddf3d0e18531f0f889a813425d101c33d6b9d34f1533fa1"
+    }
+  },
+  "shepherd": {
+    "local_head": "546dec3fde93fbba40a960160f67e849cbb77f64",
+    "local_upstream_base": "e05fa93",
+    "main_head": "28bc61780955db4e7ff989d39af9f9d137aa8150",
+    "devel_head": "0853f1c045f64621831bbeca10b99621a8aa9196",
+    "latest_release": "v2.0.1",
+    "main_ahead_of_local_base": 21,
+    "devel_ahead_of_local_base": 50,
+    "rule_file_sha256": "19182519fff4e0deaad4125e01da8ee97b7608ea81ef1d7086c2e184b2b9e5e8",
+    "upstream_rule_hashes": {
+      "main": "19182519fff4e0deaad4125e01da8ee97b7608ea81ef1d7086c2e184b2b9e5e8",
+      "devel": "19182519fff4e0deaad4125e01da8ee97b7608ea81ef1d7086c2e184b2b9e5e8",
+      "release": "19182519fff4e0deaad4125e01da8ee97b7608ea81ef1d7086c2e184b2b9e5e8"
+    },
+    "rules_identical": true
+  },
+  "gandalf": {
+    "local_commit": "3fbaded1c922de3d61ff2af17694264d13b221f5",
+    "main_commit": "e055cea7e61f26d8bf9b15ef7455caf4bafaa11e",
+    "devel_commit": "45d11c4930a3f5a59642b0fb300ec5387a0a70bb",
+    "main_ahead": 5,
+    "devel_ahead": 25,
+    "corrected_comparison_lookups_per_version": 252,
+    "version_differences": [],
+    "devel_status": "Not compared: current development requires a rebuild of the old edge_ids.lmdb graph store."
+  },
+  "matching_outcomes": {
+    "exact_distinct": {
+      "absent": 115,
+      "present": 11
+    },
+    "gandalf": {
+      "absent": 114,
+      "present": 12
+    },
+    "gandalf_subclasses": {
+      "absent": 114,
+      "present": 12
+    }
+  },
+  "changed_target_rule_cases": [
+    {
+      "target": "HP:0100812",
+      "rule": 11,
+      "exact": "absent",
+      "gandalf": "present",
+      "gandalf_subclasses": "present"
+    }
+  ],
+  "published_data": {
+    "local_release": "2026_06_21",
+    "latest_release_manifest": {
+      "source": "translator_kg",
+      "source_version": null,
+      "source_download_date": null,
+      "transform_version": null,
+      "babel_version": "2025sep1",
+      "node_normalizer_version": "elasticsearch-1.0.0",
+      "normalization_code_version": "1.4.0",
+      "normalization_conflation": true,
+      "normalization_strict": true,
+      "merging_code_version": null,
+      "biolink_version": "4.4.4",
+      "build_version": "e9b3bbf40381",
+      "build_date": "2026-10-04T06:39:14Z",
+      "release_version": "1.0.3",
+      "release_date": "2026-10-04T07:04:02Z",
+      "data": "https://kgx-storage.ci.transltr.io/releases/translator_kg/1.0.3/"
+    },
+    "latest_metadata_node_count": 1791421,
+    "latest_metadata_edge_count": 28954736,
+    "latest_metadata_predicate_counts": {
+      "biolink:genetic_association": {
+        "records": 336904,
+        "records_with_gene_endpoint": 0
+      },
+      "biolink:gene_associated_with_condition": {
+        "records": 183456,
+        "records_with_gene_endpoint": 183456
+      },
+      "biolink:condition_associated_with_gene": {
+        "records": 183456,
+        "records_with_gene_endpoint": 183456
+      },
+      "biolink:affects_response_to": {
+        "records": 0,
+        "records_with_gene_endpoint": 0
+      },
+      "biolink:similar_to": {
+        "records": 0,
+        "records_with_gene_endpoint": 0
+      },
+      "biolink:has_output": {
+        "records": 0,
+        "records_with_gene_endpoint": 0
+      }
+    },
+    "source": "https://kgx-storage.ci.transltr.io/releases/translator_kg/1.0.3/graph-metadata.json",
+    "limitation": "New release metadata was inspected; its full graph was not downloaded or queried."
+  },
+  "biolink_comparison": {
+    "predicates": [],
+    "qualifiers": [],
+    "categories": []
+  },
+  "known_upstream_issue": {
+    "number": 157,
+    "title": "Remove invalid predicate from Aragorn rules",
+    "state": "open",
+    "created_at": "2026-09-11T18:01:51Z",
+    "html_url": "https://github.com/BioPack-team/shepherd/issues/157",
+    "body": "affects_response_to isn't valid anymore @cbizon "
+  },
+  "interpretation": "A local experiment setup bug disabled semantic expansion. Correcting it changes at least one target-rule outcome. Independently, unchanged upstream rules require predicates and typed edges absent even from newer published graph metadata; this supports a rule-to-graph vocabulary/coverage mismatch.",
+  "sources": [
+    "https://github.com/BioPack-team/shepherd/issues/157",
+    "https://github.com/BioPack-team/shepherd/blob/0853f1c045f64621831bbeca10b99621a8aa9196/workers/aragorn_lookup/rules_with_types_cleaned_finalized.json",
+    "https://github.com/ranking-agent/gandalf/blob/3fbaded1c922de3d61ff2af17694264d13b221f5/gandalf/search/expanders.py",
+    "https://github.com/ranking-agent/gandalf/compare/3fbaded1c922de3d61ff2af17694264d13b221f5...e055cea7e61f26d8bf9b15ef7455caf4bafaa11e",
+    "https://kgx-storage.ci.transltr.io/releases/translator_kg/latest-release.json",
+    "https://kgx-storage.ci.transltr.io/releases/translator_kg/1.0.3/graph-metadata.json",
+    "https://shepherd.renci.org/aragorn/openapi.json",
+    "https://ncatstranslator.github.io/TranslatorTechnicalDocumentation/architecture/ara/aragorn/"
+  ],
+  "live_renci_development_endpoint": {
+    "url": "https://shepherd.renci.org/aragorn/openapi.json",
+    "info": {
+      "title": "Shepherd Aragorn",
+      "version": "2.0.1",
+      "x-translator": {
+        "biolink-version": "4.4.4",
+        "component": "ARA",
+        "team": [
+          "DOGSLED"
+        ],
+        "infores": "infores:shepherd-aragorn"
+      },
+      "x-trapi": {
+        "version": "2.0.0",
+        "operations": [
+          "lookup",
+          "score",
+          "sort_results_score",
+          "filter_results_top_n",
+          "filter_kgraph_orphans"
+        ]
+      },
+      "contact": {
+        "email": "max@covar.com",
+        "name": "Max Wang",
+        "x-id": "https://github.com/maximusunc",
+        "x-role": "responsible developer"
+      },
+      "description": "<img src=\"/static/favicon.png\" width=\"200px\"><br /><br />Shepherd: Translator Autonomous Relay Agent Platform"
+    },
+    "servers": [
+      {
+        "url": "/aragorn"
+      },
+      {
+        "description": "Default server",
+        "url": "https://shepherd.renci.org/aragorn",
+        "x-maturity": "development",
+        "x-location": "RENCI"
+      }
+    ],
+    "limitation": "OpenAPI reports service/protocol versions; the deployed retrieval backend graph release and production/test configuration were not verified."
+  }
+}
