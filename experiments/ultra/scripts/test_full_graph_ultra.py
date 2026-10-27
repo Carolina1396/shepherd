@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from full_graph_common import filtered_rank, hidden_pair_mask, split_pairs, summarize
+from full_graph_common import evaluation_edge_mask, filtered_rank, held_out_edge_mask, hidden_pair_mask, split_pairs, summarize
 
 
 class ProtocolTests(unittest.TestCase):
@@ -26,12 +26,59 @@ class ProtocolTests(unittest.TestCase):
         self.assertEqual(filtered_rank(scores, 1, {0, 1, 2}), 1)
         self.assertEqual(filtered_rank(scores, 3, {3}), 4)
 
+    def test_masking_variants_keep_visible_pairs_and_indirect_context(self):
+        # Predicate 0 is treats. Hidden pairs include validation and test.
+        triples = np.array([[1, 0, 2], [2, 0, 1], [1, 1, 2], [2, 2, 1],
+                            [3, 0, 4], [4, 1, 3],
+                            [1, 0, 5], [1, 1, 5], [5, 2, 1], [2, 1, 5]])
+        for mode, expected in (
+            ("all-direct", [True, True, True, True, True, True, False, False, False, False]),
+            ("treats-only", [True, True, False, False, True, False, False, False, False, False]),
+        ):
+            with self.subTest(mode=mode):
+                mask = held_out_edge_mask(triples[:, 0], triples[:, 1], triples[:, 2],
+                                         {(1, 2), (3, 4)}, 6, 0, mode)
+                np.testing.assert_array_equal(mask, expected)
+                self.assertFalse(held_out_edge_mask(triples[:, 0], triples[:, 1], triples[:, 2],
+                                                    set(), 6, 0, mode).any())
+        with self.assertRaises(ValueError):
+            held_out_edge_mask(triples[:, 0], triples[:, 1], triples[:, 2], {(1, 2)}, 6, 0, "unknown")
+
     def test_pair_and_disease_weighting(self):
         rows = [{"disease": "a", "rank": 1}, {"disease": "a", "rank": 1}, {"disease": "b", "rank": 10}]
         metrics = summarize(rows, "rank")
         self.assertAlmostEqual(metrics["mrr"], .7)
         self.assertAlmostEqual(metrics["disease_macro_mrr"], .55)
         self.assertEqual(metrics["top_10_answers"], 3)
+
+    def test_remove_treats_from_all_target_splits_but_not_outside_pairs(self):
+        # Hidden (1, 2), visible (3, 4), outside (1, 5); treats is predicate 0.
+        triples = np.array([[1, 0, 2], [2, 0, 1], [1, 1, 2],
+                            [3, 0, 4], [4, 0, 3], [3, 1, 4], [4, 2, 3],
+                            [1, 0, 5], [5, 0, 1]])
+        expected = {
+            "all-direct": [True, True, True, False, False, False, False, False, False],
+            "treats-only": [True, True, False, False, False, False, False, False, False],
+            "treats-only-all-splits": [True, True, False, True, True, False, False, False, False],
+            "all-direct-no-visible-treats": [True, True, True, True, True, False, False, False, False],
+        }
+        for mode, mask in expected.items():
+            with self.subTest(mode=mode):
+                actual = evaluation_edge_mask(triples[:, 0], triples[:, 1], triples[:, 2],
+                                              {(1, 2)}, {(3, 4)}, 6, 0, mode)
+                np.testing.assert_array_equal(actual, mask)
+
+    def test_variant_4_bidirectional_hidden_edges_and_empty_splits(self):
+        triples = np.array([[1, 0, 2], [2, 1, 1], [3, 0, 4], [4, 2, 3], [5, 0, 6]])
+        for hidden, visible, expected in (
+            ({(1, 2)}, {(3, 4)}, [True, True, True, False, False]),
+            (set(), {(3, 4)}, [False, False, True, False, False]),
+            ({(1, 2)}, set(), [True, True, False, False, False]),
+            (set(), set(), [False, False, False, False, False]),
+        ):
+            np.testing.assert_array_equal(
+                evaluation_edge_mask(triples[:, 0], triples[:, 1], triples[:, 2],
+                                     hidden, visible, 7, 0, "all-direct-no-visible-treats"), expected)
 
 
 if __name__ == "__main__":

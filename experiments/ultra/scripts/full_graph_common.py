@@ -38,6 +38,27 @@ def hidden_pair_mask(heads, tails, hidden, num_nodes):
     return (positions < len(keys)) & (keys[np.minimum(positions, len(keys) - 1)] == query)
 
 
+def held_out_edge_mask(heads, relations, tails, hidden, num_nodes, target, mode):
+    """Select held-out edges to remove before inverse-edge augmentation."""
+    if mode not in ("all-direct", "treats-only"):
+        raise ValueError(f"Unknown masking mode: {mode}")
+    remove = hidden_pair_mask(heads, tails, hidden, num_nodes)
+    if mode == "treats-only":
+        remove &= relations == target
+    return remove
+
+
+def evaluation_edge_mask(heads, relations, tails, hidden, visible, num_nodes, target, mode):
+    """Mask target pairs, optionally removing visible treatment context too."""
+    if mode == "treats-only-all-splits":
+        return held_out_edge_mask(heads, relations, tails, hidden | visible,
+                                  num_nodes, target, "treats-only")
+    if mode == "all-direct-no-visible-treats":
+        return (held_out_edge_mask(heads, relations, tails, hidden, num_nodes, target, "all-direct")
+                | held_out_edge_mask(heads, relations, tails, visible, num_nodes, target, "treats-only"))
+    return held_out_edge_mask(heads, relations, tails, hidden, num_nodes, target, mode)
+
+
 def filtered_rank(scores, target, known):
     keep = np.ones(len(scores), dtype=bool)
     keep[list(known)] = False

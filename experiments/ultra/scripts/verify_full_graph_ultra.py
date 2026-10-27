@@ -27,6 +27,11 @@ def main():
     run = args.dataset.resolve()
     prep = json.loads((run / "preparation.json").read_text())
     config = json.loads((run / "config.json").read_text())
+    masking = config.get("masking", "all-direct")
+    assert masking in ("all-direct", "treats-only", "treats-only-all-splits", "all-direct-no-visible-treats")
+    remove_visible_treats = masking in ("treats-only-all-splits", "all-direct-no-visible-treats")
+    remove_all_hidden_edges = masking in ("all-direct", "all-direct-no-visible-treats")
+    assert prep.get("masking", "all-direct") == masking
     assert sha(run / "config.json") == prep["config_sha256"]
     for name, expected in prep["dataset_sha256"].items():
         assert sha(run / "data" / name) == expected
@@ -61,27 +66,65 @@ def main():
     assert np.all(actual[1:] > actual[:-1]), "Triples must be sorted and unique"
     assert not len(np.setdiff1d(actual, original, assume_unique=True))
     removed = np.setdiff1d(original, actual, assume_unique=True)
-    assert len(removed) == prep["removed_connections"] == 9608
+    assert len(removed) == prep["removed_connections"]
+    target = predicates.index("biolink:treats")
+    if masking == "all-direct":
+        assert len(removed) == 9608
+    elif masking == "all-direct-no-visible-treats":
+        assert len(removed) == 9608 + 14463
+    else:
+        assert np.all((removed // n) % p == target)
+    assert dict(Counter(predicates[int((k // n) % p)] for k in removed)) == prep["removed_connections_by_predicate"]
     hidden = {frozenset((r["drug_index"], r["disease_index"])) for r in labels if r["split"] != "visible"}
-    assert all(frozenset((int(k // (n * p)), int(k % n))) in hidden for k in removed)
+    masked_pairs = ({frozenset((r["drug_index"], r["disease_index"])) for r in labels}
+                    if remove_visible_treats else hidden)
+    assert all(frozenset((int(k // (n * p)), int(k % n))) in masked_pairs for k in removed)
+    # Non-treats removals are allowed only for hidden pairs under all-direct masking.
+    assert all(remove_all_hidden_edges and frozenset((int(k // (n * p)), int(k % n))) in hidden
+               for k in removed if int((k // n) % p) != target)
     # Search both source adjacency slices, independently of the preparation mask.
-    for pair in hidden:
+    for pair in masked_pairs:
         h, t = tuple(pair)
-        for source, target in ((h, t), (t, h)):
+        for source, neighbor in ((h, t), (t, h)):
             left, right = np.searchsorted(triples[:, 0], [source, source + 1])
-            assert not np.any(triples[left:right, 2] == target)
+            pair_edges = triples[left:right][triples[left:right, 2] == neighbor]
+            if remove_all_hidden_edges and pair in hidden:
+                assert not len(pair_edges)
+            else:
+                assert not np.any(pair_edges[:, 1] == target)
     reference_visible = {(r["drug_index"], r["disease_index"]) for r in labels if r["split"] == "visible"}
     target = predicates.index("biolink:treats")
     treatment_edges = triples[triples[:, 1] == target]
     actual_pairs = set(map(tuple, treatment_edges[:, [0, 2]]))
-    assert reference_visible <= actual_pairs
+    if remove_visible_treats:
+        assert not (reference_visible & actual_pairs)
+    else:
+        assert reference_visible <= actual_pairs
+    visible_diseases = set() if remove_visible_treats else {r["disease"] for r in labels if r["split"] == "visible"}
+    assert all(r["disease_has_visible_treatment"] == (r["disease"] in visible_diseases) for r in labels)
     expected_degree = np.bincount(treatment_edges[:, 0], minlength=n)[[r["index"] for r in candidates]]
     np.testing.assert_array_equal(expected_degree, np.load(run / "data/candidate_degree.npy"))
     report = {"passed": True, "split_counts": dict(Counter(r["split"] for r in labels)),
               "exact_seeded_global_split_verified": True, "candidate_pool_matches_native_drug_categories": True,
-              "model_graph_is_exact_source_subset": True, "all_and_only_hidden_direct_connections_removed": True,
-              "connections_removed": len(removed), "visible_targets_retained": True,
+              "model_graph_is_exact_source_subset": True, "masking": masking,
+              "masking_policy_verified": True,
+              "connections_removed": len(removed), "visible_targets_retained": not remove_visible_treats,
+              "visible_target_treats_removed": remove_visible_treats,
               "degree_baseline_recomputed": True, "test_metrics_computed": (run / "test/metrics.json").exists()}
+    if masking == "all-direct":
+        report["all_and_only_hidden_direct_connections_removed"] = True
+    elif masking == "treats-only":
+        report["all_and_only_hidden_treats_connections_removed"] = True
+        report["other_direct_connections_retained"] = True
+    elif masking == "treats-only-all-splits":
+        report["all_and_only_target_pair_treats_connections_removed"] = True
+        report["other_direct_connections_retained"] = True
+        report["treats_outside_target_pairs_retained"] = True
+    else:
+        report["all_hidden_direct_connections_removed"] = True
+        report["all_visible_target_treats_removed"] = True
+        report["visible_other_direct_connections_retained"] = True
+        report["treats_outside_target_pairs_retained"] = True
     if not args.preparation_only:
         output = run / args.split
         metrics = json.loads((output / "metrics.json").read_text())

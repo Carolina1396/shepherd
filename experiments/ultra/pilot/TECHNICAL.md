@@ -1,6 +1,6 @@
 # Pilot technical guide
 
-Return to the [four-experiment overview and run commands](README.md).
+Return to the [two-experiment overview and run commands](README.md).
 This guide contains setup, detailed sampling rules, output formats, verification,
 and provenance. Reported evaluation results live in the README and linked records.
 
@@ -131,7 +131,7 @@ and [`recovery/per_disease.csv`](studies/evidence/sampling/disease_001/recovery/
 
 ## Split and ranking protocols
 
-### Sampled graph: experiment 2
+### Sampled graph: experiment 1
 
 Only the 535 explicit cohort treatment edges actually traversed by the walks
 are split. Although 741 of 777 reference pairs have both endpoints somewhere
@@ -153,7 +153,7 @@ uses outgoing visible treatment degree.
 [run_ultra.py](run_ultra.py) uses unchanged pretrained ULTRA on CPU, without
 training. The sampled study's test split remains unevaluated.
 
-### Full graph: experiments 3 and 4
+### Full graph: experiment 2
 
 The source is Translator KG `2026_06_21`, accessed through Gandalf. The full
 model vocabulary has 1,670,341 nodes and 60 original predicates. Sort all 18,079
@@ -162,7 +162,8 @@ unique explicit Drug–Disease `treats` pairs by CURIE, shuffle with
 validation pairs, and reserve the remainder for test. This gives
 14,463 / 1,807 / 1,809 pairs. It is a pair split, not a disease-disjoint split.
 
-Remove every direct connection between validation/test pairs under all
+The original evaluations use `--masking all-direct` (the default):
+remove every direct connection between validation/test pairs under all
 predicates and in both directions. This removes 9,608 connections, leaving
 27,917,681 before inverse augmentation and 55,835,362 afterward. Build the
 relation graph from that masked graph. All candidates remain eligible,
@@ -170,8 +171,8 @@ including those isolated by masking. Other known answers across all splits
 are excluded from competitors during ranking; they are not restored to the
 graph. Ties use pessimistic ranks.
 
-Experiment 3 evaluates disease→drug with 4g, using 5,326 Drug candidates.
-Experiment 4 uses 3g and adds drug→disease, using 51,707 Disease candidates.
+Within experiment 2, the 4g evaluation predicts disease→drug using 5,326 Drug
+candidates. The 3g evaluation adds drug→disease using 51,707 Disease candidates.
 The 1,809 test pairs span 977 disease queries and 910 drug queries. The combined
 result equally weights both directions: 3,618 directional predictions over
 1,809 unique pairs. Validation was not evaluated in the retained 3g reference.
@@ -180,6 +181,54 @@ All of these ULTRA runs use zero training epochs. The source/checkpoint hashes
 and exact 3g metrics are in the
 [study record](studies/full_graph_ultra3g_bidirectional.json); the original
 full-graph inputs are under `../output/full-graph-ultra/run_001/`.
+
+The additional full-graph 4g variant uses `--masking treats-only`. It removes only
+`biolink:treats` connections between held-out pairs, in both directions, while
+retaining all other direct predicates. Visible pairs remain unchanged in variants
+1 and 2. Splits, candidates, filtering, and the 4g checkpoint stay fixed. Masking
+precedes inverse augmentation and relation-graph construction; the new variant
+requires its own output directory, relation graph, and inference scores.
+Preparation records the mode in `config.json` and `preparation.json`.
+Verification checks that all and only edges selected by that mode were removed;
+old datasets without a mode field are interpreted as `all-direct`.
+This variant completed validation and test on 2026-10-16. It removes 3,616
+`treats` edges, retaining 5,992 additional direct edges compared with all-direct
+masking. Both evaluations passed independent verification, and the comparison
+audit confirmed identical split membership, candidates, checkpoint, runtime
+settings, and degree-baseline results. Raw scores and ranks remain under
+`../output/full-graph-ultra/treats_only_001/`. See
+[results, commands, and interpretation](README.md#ultra-4g-treats-only-masking) and
+the [exact comparison record](studies/full_graph_treats_only_comparison.json).
+
+Variant 3 uses `--masking treats-only-all-splits`. It removes `biolink:treats`
+in both directions for all 18,079 target pairs, including the 14,463 visible
+pairs. Other predicates and the 10,904 `treats` connections outside the target
+pairs are retained. Compared with variant 2, the only graph difference is the
+removal of those 14,463 visible treatment edges. Split membership, candidates,
+checkpoint, and filtered ranking remain fixed; the treatment-degree baseline
+is recomputed from the new graph. `disease_has_visible_treatment` is false for
+all target rows, since no visible target treatment edges remain, even though
+the labels still record the original visible split. The new graph has
+27,909,210 connections before inverses and 55,818,420 after inverses.
+Preparation, the direct comparison with variant 2, and validation/test evaluation
+passed independent verification. Variant 3 completed on 2026-10-16; test MRR is
+0.1411 and Hits@10 is 0.2786. Raw scores and ranks remain under
+`../output/full-graph-ultra/treats_all_splits_001/`. See
+[variant 3](README.md#variant-3-remove-treats-from-all-target-splits) and the
+[exact comparison record](studies/full_graph_variant_3_comparison.json).
+
+Variant 4 uses `--masking all-direct-no-visible-treats`: remove only `treats`
+from visible target pairs, and all direct edges from validation/test pairs,
+in both directions. It removes 24,071 connections: 18,079 target `treats` plus
+5,992 other held-out direct edges. The graph retains 27,903,218 connections
+before inverses, 55,806,436 afterward, and 10,904 `treats` outside the target
+pairs. The degree baseline is identical to variant 3's. Preparation and the
+comparisons against variants 1 and 3 passed independent verification.
+Validation completed under `../output/full-graph-ultra/all_direct_no_visible_treats_001/`
+and passed independent rank verification: MRR 0.0344, Hits@10 0.0647, 117 top-10
+answers out of 1,807. Test is not evaluated. See
+[variant 4](README.md#variant-4-remove-visible-treats-and-all-held-out-direct-edges)
+and the [paired four-way comparison](studies/full_graph_variant_4_comparison.json).
 
 ## Run management and output files
 
@@ -216,7 +265,7 @@ bash experiments/ultra/scripts/gpu_python.sh -B \
 
 ### Resume or smoke-test full-graph 3g
 
-Repeat the [experiment 4 command](README.md#run-both-directions) with `--resume`.
+Repeat the [full-graph 3g command](README.md#run-both-directions) with `--resume`.
 The runner checks input/checkpoint/code/runtime settings and saved score hashes;
 changed settings require a new output directory. It reconstructs category-based
 candidates using [reference_candidates.py](reference_candidates.py) in the
@@ -248,8 +297,8 @@ experiments/ultra/.venv/bin/python -B experiments/ultra/scripts/verify_full_grap
 experiments/ultra/.venv/bin/python -B experiments/ultra/scripts/verify_full_graph_ultra.py --split test
 ```
 
-Unit checks cover sampled splitting/masking and bidirectional filtering, tied
-ranks, incomplete runs, corrupted scores, and resume settings. These 14 checks
+Unit checks cover sampled splitting/masking, all four full-graph masking modes,
+bidirectional filtering, tied ranks, incomplete runs, corrupted scores, and resume settings. These checks
 run with the CPU model environment and pinned ULTRA checkout, without graph
 data or model inference:
 

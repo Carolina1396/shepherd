@@ -1,9 +1,9 @@
 data/
 __pycache__/
-.venv/
-.venv-model/
-.venv-model-gpu/
-vendor/
+.venv
+.venv-model
+.venv-model-gpu
+vendor
 .cache/
 output/
 .ipynb_checkpoints/
