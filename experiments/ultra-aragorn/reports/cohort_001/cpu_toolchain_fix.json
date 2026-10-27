@@ -1,0 +1,4 @@
+{
+  "reason": "CPU scoring attempted CUDA extension compilation when outside sandbox; explicitly hide GPUs for CPU runs. Model computation unchanged. Failed queries will be retried using cached retrieval.",
+  "timestamp": "2026-10-27T22:58:11.318288+00:00"
+}

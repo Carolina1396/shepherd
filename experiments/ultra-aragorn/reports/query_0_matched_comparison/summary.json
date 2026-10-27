@@ -1,0 +1,52 @@
+{
+  "aragorn_response_sha256": null,
+  "code_sha256": "4a5000ff2502bc6032e1c95c9e4339201bdbe94acdd0c2a8d26fc05b8dc40cc0",
+  "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+  "identity_candidates": 25,
+  "metrics": {
+    "ultra": {
+      "answer_mrr": null,
+      "conditional_answer_mrr": null,
+      "cutoffs": {
+        "1": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "10": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "20": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "5": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        }
+      },
+      "eligible_nevershow": 1,
+      "eligible_topanswers": 0,
+      "flagged_labels": 1,
+      "positive_retrieval_coverage": null
+    }
+  },
+  "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+  "normalization_options": {
+    "conflate": true,
+    "drug_chemical_conflate": true
+  },
+  "normalization_sha256": "e1013c9e9dae5a8d7d46e87283805abbe5f6d684666a355c5e4a49cba017b0ac",
+  "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+  "qid": 0,
+  "raw_candidates": 25,
+  "scope": "Query 0 smoke comparison, not a cohort benchmark.",
+  "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+  "status": "awaiting_aragorn_scores",
+  "ultra_summary_sha256": "a94720b4805e5780b3e565dc52b769a677710123329fda3b4319d03734bdf395",
+  "unresolved_candidate_ids": []
+}

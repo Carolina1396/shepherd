@@ -1,0 +1,57 @@
+{
+  "collapsed_records": 14,
+  "conflicting_query_answers": 6,
+  "corrections": [
+    {
+      "field": "message.query_graph.nodes.SN.categories",
+      "original": [
+        null
+      ],
+      "qid": 25,
+      "submitted": [
+        "biolink:ChemicalEntity"
+      ]
+    }
+  ],
+  "exact_duplicate_records": 9,
+  "labels_without_conflicts": {
+    "Acceptable": 32,
+    "BadButForgivable": 10,
+    "NeverShow": 240,
+    "TopAnswer": 46
+  },
+  "limitations": [
+    "Source suite historical equivalence with hyi is unconfirmed.",
+    "Conflicting labels require review before aggregate evaluation.",
+    "Unresolved IDs must not be silently scored as retrieval misses.",
+    "Use this normalization configuration for returned candidates and preserve alias matches."
+  ],
+  "normalized_ids": 317,
+  "prepared_answer_groups": 334,
+  "queries": 48,
+  "queries_with_unconflicted_topanswer": 19,
+  "retrieval_submissions": 0,
+  "sha256": {
+    "labels/expected_answers_treats.csv": "dffe75e4e9046c5943b8dadf2a6ea2fac4cf1495dae90c43d767fc1ad3982743",
+    "prepared/conflicts.json": "d02e26c96101e6cbc973b4a4179b714af2b712c666c514afbf0ca86faad31828",
+    "prepared/expected_answers.json": "d66804ecbcb7b55473dd90f1be1386c55e7b39a2a34f75e976f68ab252cc270f",
+    "prepared/identities.json": "414650bd046ecd5c891bffc8cb780205bacfe148c7c54a17b22c143630304c1a",
+    "prepared/normalization_cache.json": "04abf738e12fea60dfc60bb96ec6b49d70103aee92ce5798f25d16f7c39ebec9",
+    "prepared/normalization_response.json": "9dd429722983c8e1831776a461cccfc8cd352b388d52a82e35834f4c1a58a039",
+    "prepared/queries.json": "18dcc220229a49527190865086795261b15d31b42d9595d072936a76650a42dc",
+    "prepared/unresolved_answers.json": "7f4bccf8beb1edb0a921e53e2c4afaf209918173817b7ea60e3deaaa3bb44956",
+    "queries/hyi_treats.json": "84acb0f586398b46f5083f7653510013b2a9a0aa6db1b17df05bd3b3ef69078a",
+    "scripts/prepare_inputs.py": "bdcfb29f02aac48d2669e62a578556357b70e24ed2ab785886455800dec9bf1c"
+  },
+  "source_label_records": 348,
+  "status": "prepared_with_review_items",
+  "unresolved_ids": [
+    "CHEMBL:2109042",
+    "MONDO:0800029",
+    "NCIT:C38065",
+    "NCIT:C61727",
+    "PUBCHEM.COMPOUND:",
+    "UNNI:R581OT55EA"
+  ],
+  "unresolved_query_answers": 12
+}

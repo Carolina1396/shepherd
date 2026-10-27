@@ -1,0 +1,59 @@
+{
+  "endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+  "original_graph_and_auxiliary_evidence_preserved_in_request": true,
+  "binding_ids_preserved": true,
+  "original_response_triples_preserved": true,
+  "added_edges": 29,
+  "added_predicates": [
+    "biolink:occurs_together_in_literature_with"
+  ],
+  "inspection": {
+    "endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+    "evidence_note": "Same retrieval input. Standard ARAGORN workflow adds OmniCorp literature evidence; comparison is of complete scorers, not identical feature representations.",
+    "matched_candidate_ids": true,
+    "problem_logs": [],
+    "qid": 0,
+    "reference_issues": [],
+    "response_sha256": "459686e7f39843545f062c68abbb762a650d7b8c325fe185682eb91a575e11c1",
+    "results_with_finite_scores": 25,
+    "scored_candidates": 25,
+    "scored_edges": 142,
+    "scored_nodes": 30,
+    "scoring_complete": true,
+    "source_candidates": 25,
+    "source_edges": 113,
+    "source_nodes": 30,
+    "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+    "total_results": 25
+  },
+  "attempt": {
+    "automatic_retries": 0,
+    "elapsed_seconds": 1.5049563639913686,
+    "endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+    "finished_at": "2026-10-27T22:50:11.926201+00:00",
+    "http_status": 200,
+    "qid": 0,
+    "request_sha256": "25d1f9cf99a05cf520e0ee6cb42285baae53d1d3ff6f363965720e4b55a8ca31",
+    "response_headers": {
+      "Connection": "close",
+      "Content-Length": "343429",
+      "Content-Type": "application/json",
+      "Date": "Tue, 27 Oct 2026 22:50:11 GMT",
+      "vary": "Origin"
+    },
+    "response_sha256": "459686e7f39843545f062c68abbb762a650d7b8c325fe185682eb91a575e11c1",
+    "retrieval_endpoint": "https://shepherd.renci.org/aragorn/query",
+    "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+    "started_at": "2026-10-27T22:50:10.420185+00:00",
+    "timeout_seconds": 600,
+    "workflow": [
+      {
+        "id": "aragorn.omnicorp"
+      },
+      {
+        "id": "aragorn.score"
+      }
+    ]
+  },
+  "format_diagnostic": "Version-preserving TRAPI 2.0 request returned HTTP 200 with no scores. Legacy binding lists, omitted version metadata, and DEBUG parameter returned scores. This diagnostic changed more than one formatting field; exact root cause not isolated."
+}

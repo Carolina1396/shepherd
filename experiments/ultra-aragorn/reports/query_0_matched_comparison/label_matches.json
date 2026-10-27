@@ -1,0 +1,82 @@
+[
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:11520894",
+    "qid": 0,
+    "ranks": {
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_328"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:11520894"
+    ],
+    "source_names": [
+      "Ridaforolimus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_name_identity_mismatch",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:9168"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:5284616",
+    "qid": 0,
+    "ranks": {
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_327"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5284616"
+    ],
+    "source_names": [
+      "Sirolimus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0116660",
+    "qid": 0,
+    "ranks": {
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_329"
+    ],
+    "source_ids": [
+      "UMLS:C0116660"
+    ],
+    "source_names": [
+      "ESTROSTEP Fe (Norethindrone Acetate and Ethinyl Estradiol)"
+    ],
+    "source_record_count": 1
+  }
+]

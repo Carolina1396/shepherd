@@ -1,0 +1,142 @@
+[
+  {
+    "conflict": true,
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16236",
+    "qid": 12,
+    "source_asset_ids": [
+      "Asset_195",
+      "Asset_196"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:702"
+    ],
+    "source_names": [
+      "Ethanol"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": true,
+    "expected_output": null,
+    "labels": [
+      "BadButForgivable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:18248",
+    "qid": 14,
+    "source_asset_ids": [
+      "Asset_1",
+      "Asset_17"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:23925"
+    ],
+    "source_names": [
+      "Iron (PUBCHEM)"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": true,
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:49200",
+    "qid": 17,
+    "source_asset_ids": [
+      "Asset_255",
+      "Asset_608"
+    ],
+    "source_ids": [
+      "MESH:D054328"
+    ],
+    "source_names": [
+      "Proton pump inhibitors"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": true,
+    "expected_output": null,
+    "labels": [
+      "BadButForgivable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "resolved",
+    "preferred_id": "MONDO:0018958",
+    "qid": 17,
+    "source_asset_ids": [
+      "Asset_626",
+      "Asset_627"
+    ],
+    "source_ids": [
+      "MONDO:0018958"
+    ],
+    "source_names": [
+      "nemaline"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": true,
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "BadButForgivable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "resolved",
+    "preferred_id": "DRUGBANK:DB09337",
+    "qid": 21,
+    "source_asset_ids": [
+      "Asset_188",
+      "Asset_189",
+      "Asset_190"
+    ],
+    "source_ids": [
+      "UMLS:C3536832"
+    ],
+    "source_names": [
+      "Air"
+    ],
+    "source_record_count": 3
+  },
+  {
+    "conflict": true,
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D053260",
+    "qid": 81,
+    "source_asset_ids": [
+      "Asset_68",
+      "Asset_69"
+    ],
+    "source_ids": [
+      "MESH:D053260"
+    ],
+    "source_names": [
+      "Soot"
+    ],
+    "source_record_count": 2
+  }
+]

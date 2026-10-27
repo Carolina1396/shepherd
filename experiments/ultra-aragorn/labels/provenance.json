@@ -1,0 +1,33 @@
+{
+  "source": {
+    "repository": "https://github.com/TranslatorSRI/Tests",
+    "commit": "90d4c7b497427850665971d9fad62d3fdbdc178f",
+    "path": "test_suites/sprint_6_tests.json",
+    "sha256": "5708ee0cd0227af8c38271dfddcae77a8d246aec9aa5d03ea2a3b299bbd73f42",
+    "note": "Source suite matches query order, predicates, categories and qualifiers. Exact historical suite version used by hyi is unconfirmed. Output IDs are original source IDs, not node-normalized. Records are test assets, not necessarily unique answers. Unlabeled candidates are unknown, not negative."
+  },
+  "queries": 85,
+  "asset_records": 653,
+  "labels": {
+    "NeverShow": 435,
+    "Acceptable": 99,
+    "TopAnswer": 102,
+    "BadButForgivable": 17
+  },
+  "treats_asset_records": 348,
+  "treats_labels": {
+    "NeverShow": 252,
+    "Acceptable": 36,
+    "TopAnswer": 47,
+    "BadButForgivable": 13
+  },
+  "input_id_mismatches": [
+    {
+      "qid": 43,
+      "source_input": "PUBCHEM.COMPOUND:187",
+      "query_input": "CHEBI:15355",
+      "status": "identifier equivalence not verified"
+    }
+  ],
+  "treats_queries_with_topanswer": 19
+}

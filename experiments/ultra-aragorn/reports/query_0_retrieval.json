@@ -1,0 +1,146 @@
+{
+  "qid": 0,
+  "disease": "MONDO:0011705",
+  "endpoint": "https://shepherd.renci.org/aragorn/query",
+  "http_status": 200,
+  "elapsed_seconds": 39.5589945029933,
+  "request_sha256": "59ac2db858ff49dbd2f2e860b3b9f07c76ff707d7823366caf33960366ce273a",
+  "response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+  "audit": {
+    "auxiliary_graphs": 34,
+    "bound_edges_with_support_graphs": 25,
+    "bound_edges_without_support_graphs": 3,
+    "candidate_ids": [
+      "CHEBI:15354",
+      "CHEBI:15366",
+      "CHEBI:168243",
+      "CHEBI:17234",
+      "CHEBI:28874",
+      "CHEBI:36002",
+      "CHEBI:39867",
+      "CHEBI:45713",
+      "CHEBI:47458",
+      "CHEBI:60648",
+      "CHEBI:6413",
+      "CHEBI:6538",
+      "CHEBI:68478",
+      "CHEBI:7726",
+      "CHEBI:79699",
+      "CHEBI:84040",
+      "CHEBI:85164",
+      "CHEBI:9150",
+      "CHEBI:9168",
+      "PUBCHEM.COMPOUND:134812764",
+      "PUBCHEM.COMPOUND:135423438",
+      "PUBCHEM.COMPOUND:54671203",
+      "UMLS:C0962969",
+      "UNII:2S9ZZM9Q9V",
+      "UNII:PQX0D8J21J"
+    ],
+    "candidates": 25,
+    "description": null,
+    "edges": 113,
+    "edges_with_support_graphs": 25,
+    "exposed_metadata": {
+      "biolink_version": "4.4.4",
+      "parameters": {
+        "gandalf": true
+      },
+      "schema_version": "2.0.0"
+    },
+    "inspection_script_sha256": "b69ca4baad616ba364af9073dc3b422cf939bad12697457bd9c55746cfbe7624",
+    "nodes": 30,
+    "note": "Structural audit only; successful HTTP and complete references do not prove all internal rule lookups succeeded.",
+    "predicates": {
+      "biolink:affects": 3,
+      "biolink:applied_to_treat": 3,
+      "biolink:has_phenotype": 5,
+      "biolink:in_clinical_trials_for": 52,
+      "biolink:subclass_of": 1,
+      "biolink:treats": 31,
+      "biolink:treats_or_applied_or_studied_to_treat": 18
+    },
+    "problem_logs": [
+      {
+        "level": "ERROR",
+        "message": "[39c7e315] Validation Error: Edge `edge_0` has invalid predicates: ['biolink:affects_response_to']",
+        "timestamp": "2026-10-27T21:10:19.425+00:00"
+      },
+      {
+        "level": "ERROR",
+        "message": "[39c7e315] Due to the 1 above validation error(s), your query terminates.",
+        "timestamp": "2026-10-27T21:10:19.429+00:00"
+      },
+      {
+        "level": "WARNING",
+        "message": "[9d8d28fd] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+        "timestamp": "2026-10-27T21:10:19.462+00:00"
+      },
+      {
+        "level": "WARNING",
+        "message": "[98a24c51] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+        "timestamp": "2026-10-27T21:10:19.528+00:00"
+      },
+      {
+        "level": "WARNING",
+        "message": "[2fe8ad31] MetaEdges could not be found for the following QEdge(s): ['edge_1', 'edge_2']",
+        "timestamp": "2026-10-27T21:10:19.562+00:00"
+      },
+      {
+        "level": "WARNING",
+        "message": "[47b27fab] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+        "timestamp": "2026-10-27T21:10:19.635+00:00"
+      },
+      {
+        "level": "WARNING",
+        "message": "[a887d8c0] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+        "timestamp": "2026-10-27T21:10:19.873+00:00"
+      },
+      {
+        "level": "WARNING",
+        "message": "[94ce8815] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+        "timestamp": "2026-10-27T21:10:19.961+00:00"
+      },
+      {
+        "level": "WARNING",
+        "message": "[5cef0c91] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+        "timestamp": "2026-10-27T21:10:19.999+00:00"
+      }
+    ],
+    "qid": 0,
+    "reference_issues": [],
+    "response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+    "results": 25,
+    "status": null,
+    "support_graph_references": 34
+  },
+  "expected_answer_alias_matches": [
+    {
+      "names": [
+        "Ridaforolimus"
+      ],
+      "label": "Acceptable",
+      "matched_candidate_ids": [],
+      "name_only_matches_not_identity_verified": []
+    },
+    {
+      "names": [
+        "Sirolimus"
+      ],
+      "label": "TopAnswer",
+      "matched_candidate_ids": [],
+      "name_only_matches_not_identity_verified": [
+        "CHEBI:9168"
+      ]
+    },
+    {
+      "names": [
+        "ESTROSTEP Fe (Norethindrone Acetate and Ethinyl Estradiol)"
+      ],
+      "label": "NeverShow",
+      "matched_candidate_ids": [],
+      "name_only_matches_not_identity_verified": []
+    }
+  ],
+  "interpretation": "Successful response with rule-level errors/warnings. Label checks use frozen aliases, not a new candidate normalization pass. No ULTRA scoring performed. Sirolimus appears by name as CHEBI:9168, but does not match the frozen expected-answer aliases. Candidate normalization and identity reconciliation are still required; no retrieval recall conclusion is drawn."
+}

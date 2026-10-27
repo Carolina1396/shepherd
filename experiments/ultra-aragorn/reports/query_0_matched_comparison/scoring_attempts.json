@@ -1,0 +1,72 @@
+[
+  {
+    "automatic_retries": 0,
+    "elapsed_seconds": 0.028539400023873895,
+    "endpoint": "https://shepherd.renci.org/aragorn/query",
+    "error": "URLError(gaierror(-3, 'Temporary failure in name resolution'))",
+    "finished_at": "2026-10-27T22:00:50.820260+00:00",
+    "qid": 0,
+    "request_sha256": "80406d443d9d45074a2f540fe4e6130bc8b3d52a9c3aba2e7d36a197ade99141",
+    "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+    "started_at": "2026-10-27T22:00:50.790733+00:00",
+    "timeout_seconds": 600,
+    "workflow": [
+      {
+        "id": "aragorn.omnicorp"
+      },
+      {
+        "id": "aragorn.score"
+      }
+    ]
+  },
+  {
+    "automatic_retries": 0,
+    "elapsed_seconds": 0.6883020700188354,
+    "endpoint": "https://shepherd.renci.org/aragorn/query",
+    "error": "HTTP Error 503: Service Unavailable",
+    "finished_at": "2026-10-27T22:01:00.118896+00:00",
+    "http_status": 503,
+    "qid": 0,
+    "request_sha256": "80406d443d9d45074a2f540fe4e6130bc8b3d52a9c3aba2e7d36a197ade99141",
+    "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+    "started_at": "2026-10-27T22:00:59.429521+00:00",
+    "timeout_seconds": 600,
+    "workflow": [
+      {
+        "id": "aragorn.omnicorp"
+      },
+      {
+        "id": "aragorn.score"
+      }
+    ],
+    "response_body": {
+      "status": "ERROR",
+      "description": "Unable to accept query: failed to persist initial query state (datastore unavailable). Please retry shortly."
+    }
+  },
+  {
+    "automatic_retries": 0,
+    "elapsed_seconds": 0.6308875200338662,
+    "endpoint": "https://shepherd.renci.org/aragorn/query",
+    "error": "HTTP Error 503: Service Unavailable",
+    "finished_at": "2026-10-27T22:10:13.644263+00:00",
+    "http_status": 503,
+    "qid": 0,
+    "request_sha256": "80406d443d9d45074a2f540fe4e6130bc8b3d52a9c3aba2e7d36a197ade99141",
+    "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+    "started_at": "2026-10-27T22:10:13.012372+00:00",
+    "timeout_seconds": 600,
+    "workflow": [
+      {
+        "id": "aragorn.omnicorp"
+      },
+      {
+        "id": "aragorn.score"
+      }
+    ],
+    "response_body": {
+      "status": "ERROR",
+      "description": "Unable to accept query: failed to persist initial query state (datastore unavailable). Please retry shortly."
+    }
+  }
+]

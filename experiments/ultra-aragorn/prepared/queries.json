@@ -1,0 +1,2021 @@
+{
+  "endpoint": "https://shepherd.renci.org/aragorn/query",
+  "queries": [
+    {
+      "qid": 0,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0011705"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 1,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0016063"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 3,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0018493"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 6,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005301"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 10,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0010808"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 12,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0001505"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 14,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0011426"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 16,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0018911"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 17,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0007186"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 20,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0018328"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 21,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0006497"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 22,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0004260"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 23,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0009265"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 24,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005015"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 25,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0020333"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 27,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005260"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 28,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0800029"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 31,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0008251"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 32,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0043233"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 33,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0001475"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 34,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0015364"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 35,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0009746"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 36,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0019173"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 37,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0016575"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 38,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0004784"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 40,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0015564"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 44,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0018982"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 46,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0010794"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 47,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0100096"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 48,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0100345"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 49,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0018956"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 52,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0004975"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 54,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0018958"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 55,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0009061"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 57,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005575"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 60,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0004979"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 61,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0001119"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 62,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0007743"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 63,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005393"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 64,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0017314"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 67,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005361"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 69,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0019600"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 72,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005799"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 76,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0009290"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 77,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0004758"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 80,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005357"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 81,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0007147"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    },
+    {
+      "qid": 82,
+      "request": {
+        "message": {
+          "query_graph": {
+            "edges": {
+              "e0": {
+                "knowledge_type": "inferred",
+                "object": "ON",
+                "predicates": [
+                  "biolink:treats"
+                ],
+                "subject": "SN"
+              }
+            },
+            "nodes": {
+              "ON": {
+                "categories": [
+                  "biolink:Disease"
+                ],
+                "ids": [
+                  "MONDO:0005267"
+                ]
+              },
+              "SN": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            }
+          }
+        },
+        "parameters": {
+          "gandalf": true
+        },
+        "workflow": [
+          {
+            "id": "aragorn.lookup"
+          }
+        ]
+      }
+    }
+  ]
+}

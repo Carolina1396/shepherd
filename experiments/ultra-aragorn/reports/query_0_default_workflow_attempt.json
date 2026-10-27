@@ -1,0 +1,17 @@
+{
+  "qid": 0,
+  "endpoint": "https://shepherd.renci.org/aragorn/query",
+  "workflow": "omitted: use default retrieval and ranking",
+  "http_status": 503,
+  "response": {
+    "status": "ERROR",
+    "description": "Unable to accept query: failed to persist initial query state (datastore unavailable). Please retry shortly."
+  },
+  "server_date": "Tue, 27 Oct 2026 22:43:29 GMT",
+  "sha256": {
+    "request.json": "83794dc20bef7515af5bc7418bf6e0b4317fed7713f9674c8bb896e33a1a485d",
+    "response.json": "9c0a30c2cfec724ff2e8611124c52d3b067b15da51a19ff93227b45028963c0a",
+    "headers.txt": "a3ffbcd8ac51496c60b0cbfebfa8502a8355e9a99d8de5309cde59554d6bb383"
+  },
+  "conclusion": "Simple default-workflow query also rejected at intake. Failure is not specific to resubmitting a cached graph or explicitly selecting scoring operations. Root server exception remains unknown."
+}

@@ -1,0 +1,4595 @@
+[
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/smoke_002/aragorn_ci_legacy_001",
+    "candidates": 25,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_000/comparison",
+    "elapsed_seconds": 0.7305664949817583,
+    "identities": 25,
+    "qid": 0,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/smoke_002",
+    "reused_query0": true,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/smoke_002/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "459686e7f39843545f062c68abbb762a650d7b8c325fe185682eb91a575e11c1",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 25,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "e1013c9e9dae5a8d7d46e87283805abbe5f6d684666a355c5e4a49cba017b0ac",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 0,
+      "raw_candidates": 25,
+      "retrieval_endpoint": "https://shepherd.renci.org/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "a94720b4805e5780b3e565dc52b769a677710123329fda3b4319d03734bdf395",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_001/aragorn_01",
+    "candidates": 29,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_001/comparison",
+    "elapsed_seconds": 7.038763231015764,
+    "identities": 29,
+    "qid": 1,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_001/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_001/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "8f5673fe2a0cb044df1299aeb1ca15fea4b0ba1abb14edbd7989d9217528457f",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 29,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 29,
+          "eligible_topanswers": 0,
+          "flagged_labels": 4,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 29,
+          "eligible_topanswers": 0,
+          "flagged_labels": 4,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "66fbe303dc56b9c349afda274f5358cd610b7cf049b93bd842f3f0381ad80593",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 1,
+      "raw_candidates": 29,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "20458bd3d05264167fc9ade03ff45714c0e7a8b71382d7998805fc42daa34688",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "a179dc147f69b289e612a4013b4e03eabfcb5a560aa490302befed44eff5ad34",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_003/aragorn_01",
+    "candidates": 128,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_003/comparison",
+    "elapsed_seconds": 7.031760813028086,
+    "identities": 128,
+    "qid": 3,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_003/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_003/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "279b75f8f11fcb72c567dd7ae5d8166d8112f3e68d468d3675f9086cc75e1178",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 128,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 9,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 2,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 2,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 9,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "d3573c33f090885a888908fba9e7ae701836a065a0c4f206ec5ededdb62f3a00",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 3,
+      "raw_candidates": 128,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "3321cfb88d9cd5609a9c140c275b6910f24ebefbbdbb3754cc85ed88d88730cd",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "e8dcfff2b52595ca88e1acf7f0ccc2d5e01781488b26ec67035931c6719a2d6d",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_006/aragorn_01",
+    "candidates": 390,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_006/comparison",
+    "elapsed_seconds": 9.833312617032789,
+    "identities": 390,
+    "qid": 6,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_006/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_006/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "3faae5a59c3a5cd4017515b9b08a74557c06dc444e52a15eeb083cfb25d531c6",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 390,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.022727272727272728,
+          "conditional_answer_mrr": 0.022727272727272728,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 23,
+          "eligible_topanswers": 1,
+          "flagged_labels": 2,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.16666666666666666,
+          "conditional_answer_mrr": 0.16666666666666666,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 23,
+          "eligible_topanswers": 1,
+          "flagged_labels": 2,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "9a5425d8276e8a644ce55e4b719433051a5fff52e635b78e6b78f731410cb93a",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 6,
+      "raw_candidates": 390,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "9fd9a63e0c7eae1c5172c40150b720969bd2dadffd90560c93c7dc9686e3a464",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "c512e794815099c8a267da64017173c2dab4f9c9a32395f826898fdf2703ae0c",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_010/aragorn_01",
+    "candidates": 22,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_010/comparison",
+    "elapsed_seconds": 6.0442045670351945,
+    "identities": 22,
+    "qid": 10,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_010/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_010/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "75a97cf45d9268bed6464c25276a2ab30f3f3415a7c5097675b6373c5acd1c5b",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 22,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 17,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 17,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "a7c5d41f4577e19b5c51a0e3ea1d98d9628a7b6c968be1536899ba6bfddb6cac",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 10,
+      "raw_candidates": 22,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "2b49589d099e418547076fa5982a6b6f94918ac08f556e927fffc41e8746a07f",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "d28aa2b80be29b8bdfc45d6d9fd5c7628c8d971f4b88bfdf58f2fcaaee08038c",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_012/aragorn_01",
+    "candidates": 125,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_012/comparison",
+    "elapsed_seconds": 7.470128413988277,
+    "identities": 125,
+    "qid": 12,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_012/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_012/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "7a06465569bd94d34d86d131b2083a1a12a750693f5727e86e52aeca66456dbf",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 125,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 15,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 15,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "6d6bd9db58940b0f470f510af9fc13de104180d3f989b79f707149c1bac85127",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 12,
+      "raw_candidates": 125,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "219d556d94850b7c06cef36949a97274ca7920bb3c53b29322bb2f7bc0728423",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "f5281145fe47fdcbe32f7c909ec298b192cc58fc3292e3e9a642d44602bff8fd",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_014/aragorn_01",
+    "candidates": 24,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_014/comparison",
+    "elapsed_seconds": 29.105270439002197,
+    "identities": 24,
+    "qid": 14,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_014/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_014/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "418fdd16bacb852cd38d9302bfcdd5862055add9abb9b9bd5162ed5413775614",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 24,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.0,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 17,
+          "eligible_topanswers": 3,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": 0.0
+        },
+        "ultra": {
+          "answer_mrr": 0.0,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 17,
+          "eligible_topanswers": 3,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": 0.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "77ddcfde5e659d9c3022cd12d9bd403f2f068bd0a1c3f726a5a1c037cdcc8aab",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 14,
+      "raw_candidates": 24,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "3c81b7ce6e77efb84fa0a883e3b7f42adf32ef192abf9268b454c0b0d2e8c672",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "86a3a9d8791485bec901c06987b8689197a701c1674d1661ae6d85db2c3b8217",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_016/aragorn_01",
+    "candidates": 218,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_016/comparison",
+    "elapsed_seconds": 12.476826848986093,
+    "identities": 218,
+    "qid": 16,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_016/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_016/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "91a7ec25dad1fd2f1bcd0f10e28c457661970a31960a7bc30dd3ce99286a7933",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 218,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 7,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 7,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "6b2ee975fe1a87cc790773a9afdb42f82321b9f80dc913623e748216c2e34e6a",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 16,
+      "raw_candidates": 218,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "e8328882c3661595542b1f4a063e6e88a1af4435d164fd890dc680343ab992dd",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "f937558b1b4e27b445c4c1d4165c1c84e2a8fb0ebcfe35c17ae82eed313ba0ad",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_017/aragorn_01",
+    "candidates": 537,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_017/comparison",
+    "elapsed_seconds": 16.484383243019693,
+    "identities": 537,
+    "qid": 17,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_017/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 10,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_017/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "2b2c66e733b20387e55ed189360ea5e0b7f5a9adef35d6f9157d791a6521aea4",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 537,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.07241872208251518,
+          "conditional_answer_mrr": 0.0804652467583502,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.1
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 5,
+              "topanswer_recall": 0.5
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.1
+            }
+          },
+          "eligible_nevershow": 20,
+          "eligible_topanswers": 10,
+          "flagged_labels": 5,
+          "positive_retrieval_coverage": 0.9
+        },
+        "ultra": {
+          "answer_mrr": 0.010114526122857582,
+          "conditional_answer_mrr": 0.011238362358730648,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 20,
+          "eligible_topanswers": 10,
+          "flagged_labels": 5,
+          "positive_retrieval_coverage": 0.9
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "220e8304fbb162ad0ff0e5d4d70ff229e2e23a85f0124697645b5e991c419fd2",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 17,
+      "raw_candidates": 537,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "1897e0a2df05f9512cb13e10527fe079e8e357ae3a65279280f68c2fb09218a9",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "81b5057b2b66ec3ec9bd7594aeeecf160ebfb1cf4287db7a32d1eb3b35442fc0",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_020/aragorn_01",
+    "candidates": 68,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_020/comparison",
+    "elapsed_seconds": 9.521077344019432,
+    "identities": 68,
+    "qid": 20,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_020/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_020/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "863dd6b1800e5932abc579cc28eb9d767613263eebf988818363a1cfc928cedd",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 68,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.05990426788124156,
+          "conditional_answer_mrr": 0.05990426788124156,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.25
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.25
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 4,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.19318181818181818,
+          "conditional_answer_mrr": 0.19318181818181818,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.25
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 4,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.25
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 4,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "830779707a2f5bbf0e0fcedfbdf4a696baafebd6962667eeb09a21f8952dd75c",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 20,
+      "raw_candidates": 68,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "2b86a81c47781f54c7e2650613a4cf9fe9275240667fbd2f3e531e812118c7e7",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "9eaca0500a632344a2a102e127e560c7cc3a9c7346f5cf628e50436a357f9bb6",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_021/aragorn_01",
+    "candidates": 105,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_021/comparison",
+    "elapsed_seconds": 9.620269434002694,
+    "identities": 105,
+    "qid": 21,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_021/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_021/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "b31f3d8271d8e3ee5c971f8049f7215383453b5aea6f74c40a257072c04baafb",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 105,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 3,
+          "eligible_topanswers": 0,
+          "flagged_labels": 2,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 3,
+          "eligible_topanswers": 0,
+          "flagged_labels": 2,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "e0730ea5eb96ed6aa722fb43f550d1330afe1a1c2cfaa6ed953de3e5d2cfece7",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 21,
+      "raw_candidates": 105,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "fcc1088d722091fb243408ff4b27314d73392c48bef80d9e0fdac9eba119a7c4",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "8400bc0174ed589d2019197aa02d25184868d37d68f6548a58d3935698a9b017",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_022/aragorn_01",
+    "candidates": 9,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_022/comparison",
+    "elapsed_seconds": 8.350789479969535,
+    "identities": 9,
+    "qid": 22,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_022/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_022/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "e3862d1ba38d3b760fb461fefae67c181385bcaf3f5bd9f227635e0b7a012466",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 9,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 31,
+          "eligible_topanswers": 0,
+          "flagged_labels": 3,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 31,
+          "eligible_topanswers": 0,
+          "flagged_labels": 3,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "0115905fb177fe5ce16ce857c103062a3654155545c47122f1b6e52a2e071dd6",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 22,
+      "raw_candidates": 9,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "48cb25ceba396848fcd19e9131c6ecb86d5a0fca52fd48388b64d91658cafe37",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "3012f978d217e7c18a0bec1bc15cb8f49b3713001136ba813324e8f39ff04dc3",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_023/aragorn_01",
+    "candidates": 14,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_023/comparison",
+    "elapsed_seconds": 20.48400600597961,
+    "identities": 14,
+    "qid": 23,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_023/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_023/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "055b112382749de106c415608dc3106a58123d0d1a334323d6dd7d7df0898d8d",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 14,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.4166666666666667,
+          "conditional_answer_mrr": 0.5208333333333334,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.2
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 4,
+              "topanswer_recall": 0.8
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 4,
+              "topanswer_recall": 0.8
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 4,
+              "topanswer_recall": 0.8
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 5,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.8
+        },
+        "ultra": {
+          "answer_mrr": 0.32,
+          "conditional_answer_mrr": 0.4,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.2
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 4,
+              "topanswer_recall": 0.8
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 4,
+              "topanswer_recall": 0.8
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 4,
+              "topanswer_recall": 0.8
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 5,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.8
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "ae24dcf4d0eec24898468a6e89498a1329f019532e1c48ae22ceae42ceb6bbb8",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 23,
+      "raw_candidates": 14,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "bdcc51c1da5fa07a04c13e13a1113beb56722b9310c13c043477b700de344099",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "750b3031da1e94acd0da5096d1b6e13ec88e6d66ca9dfefd5cecb039aff20f10",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_024/aragorn_01",
+    "candidates": 4019,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_024/comparison",
+    "elapsed_seconds": 70.70988320600009,
+    "identities": 4019,
+    "qid": 24,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_024/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_024/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "66312335813f2bf8b07ecc12b318aae6543e129397162b4764898823394b6155",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 4019,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.178030303030303,
+          "conditional_answer_mrr": 0.178030303030303,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.5
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.5
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.5
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 2,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.00863326138948842,
+          "conditional_answer_mrr": 0.00863326138948842,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 2,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "b16e7fd329c4869da28a06b0f43748113bdee2bbc20c4b7c34940b98ebf3c7a0",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 24,
+      "raw_candidates": 4019,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "e38771d17150a9a798261a2f1402b80ded21b3f4afbdfe9cdc174da1035058f5",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "682aa595ca2cce70929ca07efb5eaabeba8f8fa1445996caac24c18db39fe773",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_025/aragorn_01",
+    "candidates": 29,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_025/comparison",
+    "elapsed_seconds": 10.71029533597175,
+    "identities": 29,
+    "qid": 25,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_025/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_025/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "1e6c039a5379044c24c3bf5e9099f1a36ce9b6b52372f312c93c2a3fe566e44c",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 29,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 6,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 6,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "9fa39955d12c58ae28c78408611822c45ceff3092064505ed7e6b03bdce328a3",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 25,
+      "raw_candidates": 29,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "842ae163810e9095dddb98255e50cb597424aef2617f0335534a85f2b854c62d",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "75280130da0ea4c7eca63ea48bfa8085c6fabece832966251331055cfd5f1de7",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_027/aragorn_01",
+    "candidates": 984,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_027/comparison",
+    "elapsed_seconds": 19.36983716802206,
+    "identities": 984,
+    "qid": 27,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_027/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_027/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "ca4eb8d08e663da53955fc26361220f5fad3e6b34287d67cdc9c93c97a220be1",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 984,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "8e044fcd18551671ef99d62c4e0e9cbbb944a664270311853f16d016bca7f2a3",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 27,
+      "raw_candidates": 984,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "fc155beb451a13589de776956f27c1c5570a0a778bbd8fec509e7850c558a496",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "de694c20127a7ec5a87857c62ea3730093b5cf9154207fdfc30d38cf5ce83d04",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "candidates": 0,
+    "note": "No model scores; report separately from matched ranking metrics",
+    "qid": 28,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_028/retrieval_01",
+    "service_problem_logs": 9,
+    "status": "empty_retrieval",
+    "retrieval_inspection": {
+      "auxiliary_graphs": 0,
+      "bound_edges_with_support_graphs": 0,
+      "bound_edges_without_support_graphs": 0,
+      "candidate_ids": [],
+      "candidates": 0,
+      "description": null,
+      "edges": 0,
+      "edges_with_support_graphs": 0,
+      "exposed_metadata": {},
+      "inspection_script_sha256": "1961119eb5cc38a30fc30cd44be9149872163057992521f2757d86380273d5ef",
+      "nodes": 0,
+      "note": "Structural audit only; successful HTTP and complete references do not prove all internal rule lookups succeeded.",
+      "predicates": {},
+      "problem_logs": [
+        {
+          "level": "WARNING",
+          "message": "[d9b1789e] MetaEdges could not be found for the following QEdge(s): ['edge_1', 'edge_2']",
+          "timestamp": "2026-10-27T23:01:41.185+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[70786309] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:01:41.191+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[9fec72fc] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:01:41.197+00:00"
+        },
+        {
+          "level": "ERROR",
+          "message": "[8f5a979a] Validation Error: Edge `edge_0` has invalid predicates: ['biolink:affects_response_to']",
+          "timestamp": "2026-10-27T23:01:41.198+00:00"
+        },
+        {
+          "level": "ERROR",
+          "message": "[8f5a979a] Due to the 1 above validation error(s), your query terminates.",
+          "timestamp": "2026-10-27T23:01:41.204+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[8c764f0d] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:01:41.208+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[ef62f085] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+          "timestamp": "2026-10-27T23:01:41.215+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[b48b335f] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:01:41.224+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[628e3044] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+          "timestamp": "2026-10-27T23:01:41.286+00:00"
+        }
+      ],
+      "qid": 28,
+      "reference_issues": [],
+      "response_sha256": "df5261c3bd7f7b8f4430154da03375d51107f6c92dfba3a0b7dc34e846e734b5",
+      "results": 0,
+      "status": null,
+      "support_graph_references": 0
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_031/aragorn_01",
+    "candidates": 44,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_031/comparison",
+    "elapsed_seconds": 9.951337597973179,
+    "identities": 44,
+    "qid": 31,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_031/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_031/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "862150eed4fc7ed2d5fdaefad5ab2d6f8889c952d18dfa52fa27e92220df7fe1",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 44,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "48845b879d22581539c9f1df5717ce9d929694301e26420d3e8c0521e77d2d29",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 31,
+      "raw_candidates": 44,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "b81bd0e4d998825dbd2c971c1890eefc68ce7de5014ebe9c4cccaa6093c90486",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "d6a5ecab43dc4f8145e3b9ae78c1c63f371b71646c99f0578c01d92729a8de60",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_032/aragorn_01",
+    "candidates": 118,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_032/comparison",
+    "elapsed_seconds": 11.008540290989913,
+    "identities": 118,
+    "qid": 32,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_032/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_032/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "722c9e4012e449d6f555d9755b36684cec2f70009744bdb0229803f9a08efdb1",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 118,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 5,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 5,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "b15cd5d0925a0d00d2b730a3a1477f40f911a88dcdfd2744a572b8c67fd085ce",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 32,
+      "raw_candidates": 118,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "67670fb2f44f73f5791842210dc6b1cc5b515b82bba0547352b8d1190b4c278f",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "d0e66e857fba3fedcedf674a0425927497f82264311e555a32cedf992154a193",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_033/aragorn_01",
+    "candidates": 412,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_033/comparison",
+    "elapsed_seconds": 14.854235318955034,
+    "identities": 412,
+    "qid": 33,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_033/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_033/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "dfa18503f84c21955026feedeae435c63c6cf1eca58f93cbff69725e5d2aa59c",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 412,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "57ed6517fb6fc5b1ee61442ca42d10b5ea0a97119dbb0312ddf7da9cca7b2994",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 33,
+      "raw_candidates": 412,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "ade9fd40d0b8c31b662e8676aedac439ca84460e24d46e6dafa05cdc085eaa82",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "2adf4034a61f165311cbd46ddfd855fc3894964928606cb4326d361612752af0",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_034/aragorn_01",
+    "candidates": 52,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_034/comparison",
+    "elapsed_seconds": 11.515597202000208,
+    "identities": 52,
+    "qid": 34,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_034/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_034/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "0c97095d33fe7669d14528f09a623d6c18c44880842b1e49fb09e8524c470344",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 52,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 4,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 4,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "a5cf45d3b284069abae3da0f435662c5f2049e02b9cf921228a55988be4fb60a",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 34,
+      "raw_candidates": 52,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "4fcb183c0b8de55d831bf9c5e387b24584d55fc8d566abce4f93449d73b42641",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "6e3c12a31743e7a4298d8aed8fba6ede2d986e8fc61187c6b1dac8e133c9deb2",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "candidates": 0,
+    "note": "No model scores; report separately from matched ranking metrics",
+    "qid": 35,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_035/retrieval_01",
+    "service_problem_logs": 9,
+    "status": "empty_retrieval",
+    "retrieval_inspection": {
+      "auxiliary_graphs": 0,
+      "bound_edges_with_support_graphs": 0,
+      "bound_edges_without_support_graphs": 0,
+      "candidate_ids": [],
+      "candidates": 0,
+      "description": null,
+      "edges": 0,
+      "edges_with_support_graphs": 0,
+      "exposed_metadata": {},
+      "inspection_script_sha256": "1961119eb5cc38a30fc30cd44be9149872163057992521f2757d86380273d5ef",
+      "nodes": 0,
+      "note": "Structural audit only; successful HTTP and complete references do not prove all internal rule lookups succeeded.",
+      "predicates": {},
+      "problem_logs": [
+        {
+          "level": "WARNING",
+          "message": "[6501c533] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:02:31.403+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[389db2df] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+          "timestamp": "2026-10-27T23:02:31.404+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[f4b50500] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:02:31.410+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[cbc308de] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:02:31.410+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[d2ad8bbd] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:02:31.414+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[53a88239] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+          "timestamp": "2026-10-27T23:02:31.421+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[faf4c7e1] MetaEdges could not be found for the following QEdge(s): ['edge_1', 'edge_2']",
+          "timestamp": "2026-10-27T23:02:31.443+00:00"
+        },
+        {
+          "level": "ERROR",
+          "message": "[8ab27c12] Validation Error: Edge `edge_0` has invalid predicates: ['biolink:affects_response_to']",
+          "timestamp": "2026-10-27T23:02:31.617+00:00"
+        },
+        {
+          "level": "ERROR",
+          "message": "[8ab27c12] Due to the 1 above validation error(s), your query terminates.",
+          "timestamp": "2026-10-27T23:02:31.619+00:00"
+        }
+      ],
+      "qid": 35,
+      "reference_issues": [],
+      "response_sha256": "c6480f1bae87e7809d5e451089a0bd5f626dc9afc882d721a82d656f245b1156",
+      "results": 0,
+      "status": null,
+      "support_graph_references": 0
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_036/aragorn_01",
+    "candidates": 6,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_036/comparison",
+    "elapsed_seconds": 8.233463370997924,
+    "identities": 6,
+    "qid": 36,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_036/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_036/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "dfa760a7cacf1ddb93612a65a7b89d300495e8e43b513da8c4bae7ee16a35411",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 6,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "c047f60b9a6746dbc7723e891bf0440f8d16c5a1266c41fc513fdf47bddad3d4",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 36,
+      "raw_candidates": 6,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "b5af035efa1d7654d7b371c32b89f6d812a05102a48e87a6a5ec2947649473aa",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "cce186b75bb98aaa23a2feddc98accc64f8d5af50fb105ffaff4e67cdb0278f5",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_037/aragorn_01",
+    "candidates": 639,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_037/comparison",
+    "elapsed_seconds": 12.107185818022117,
+    "identities": 639,
+    "qid": 37,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_037/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_037/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "673f75ad03bc303d0adbc9d5aa552d2410936b999d2213fa6ea4416d491a28a1",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 639,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "aac2aba2a3be5c4c0b31fe6ad97964666912e1e1cd32b7de8ad943cc44c9f697",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 37,
+      "raw_candidates": 639,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "a523df7377dae3a1832e14d5556fbe558a4dc8c5267a08a148cb8e440b6e3bf2",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "d6a39a8b83d524073ff9599406db93fb0ba4b6c64cadd02a65820281e3360d41",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_038/aragorn_01",
+    "candidates": 61,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_038/comparison",
+    "elapsed_seconds": 9.205257986963261,
+    "identities": 61,
+    "qid": 38,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_038/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_038/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "b2d36ea0b76a592632c088c62efb011ddc531db538b9e99694d7577f5a111344",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 61,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "e0f4426676ffbeaf9110710a719a88a95f8ecc5332cb77dffd2a4b8fbec2e396",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 38,
+      "raw_candidates": 61,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "fb197d131513724961bedf79397f9030bb074c3863e4f0c7144706bec318cfc6",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "2c5935d79be6125cb3e669691d7734d2545ca122db3d27a5c951c15d0a3bb62f",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_040/aragorn_01",
+    "candidates": 96,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_040/comparison",
+    "elapsed_seconds": 12.020884772005957,
+    "identities": 96,
+    "qid": 40,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_040/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_040/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "460c58e1264be4332bd4414ff76fcde3d8ac7be211be6cc9846b9412ecb38fb6",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 96,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.0,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 5,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.0
+        },
+        "ultra": {
+          "answer_mrr": 0.0,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 5,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "e7756314ef4e1e370cc92887a0daa3d7f1945eee74a44e6bfca961dd30fd4052",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 40,
+      "raw_candidates": 96,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "289f5bfe0c889ede4e724181c29646e6151b0651fdeaa3dcc8d9a2fbf2cee525",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "338352c5fdefb10dd52b7e479e94b528fa0c39f62892611f4e9ac24d775a4012",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_044/aragorn_01",
+    "candidates": 99,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_044/comparison",
+    "elapsed_seconds": 9.92111619998468,
+    "identities": 99,
+    "qid": 44,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_044/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_044/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "f2e95d4707d88e84e381350b94bd04c92ec2f36f1a807f2a83c10577b05475be",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 99,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 1.0,
+          "conditional_answer_mrr": 1.0,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.5,
+          "conditional_answer_mrr": 0.5,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "5930f107c2625bbc97f63032e8b89953e73ad85b40e9ad55ab5cf5e5804c30e9",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 44,
+      "raw_candidates": 99,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "4009f04f6ce293196f94e5d01c2f74afa85fdd520f0d2b5f4777fcb9d036ec2b",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "f0015a6848f27a27e3b78ff7d1cbd38a9b589b1ce08bb5230c28e206bdc4098c",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_046/aragorn_01",
+    "candidates": 1,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_046/comparison",
+    "elapsed_seconds": 8.740563745959662,
+    "identities": 1,
+    "qid": 46,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_046/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_046/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "383abf786f06e340fcb13da37d2cd52ea0c3b49b4ec46cc699b97bd512ac90e5",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 1,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "a798fa918d34207f2c1980f5a39b854a9660bbb56dc49f4b90243a635136d181",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 46,
+      "raw_candidates": 1,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "dbb2b2ae98c62953f9b1ea9a70f0ec5f933d35bac37b899f33c05e56ff01045d",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "49decd3e54b95bee13dcf70de50a3ef892c43b7fe71b636270a08dc9bbc9619e",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_047/aragorn_01",
+    "candidates": 427,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_047/comparison",
+    "elapsed_seconds": 14.54937925300328,
+    "identities": 427,
+    "qid": 47,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_047/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_047/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "8b4e008495a847ac7335f0ea0d97e8eaef64d0a366beea7c1e6612b5fb6dcc17",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 427,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "a232bbf93ad68733b931bfeaa158d158d931062189e6e2cc011b96f26033b72c",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 47,
+      "raw_candidates": 427,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "b0117e5d730ca64c23e7679b0d888368c7a72c04dae5afdf40d347fd997721ae",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "a61a2ec8a5dda149e2e6370721f52ef1a315db7b565be0c58e48562366903dc0",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_048/aragorn_01",
+    "candidates": 13,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_048/comparison",
+    "elapsed_seconds": 7.918468724004924,
+    "identities": 13,
+    "qid": 48,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_048/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_048/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "61687729c0e89999262304cfebf2e4b541e932076b0bfb895ef68fcdf7623d49",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 13,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.0,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 12,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.0
+        },
+        "ultra": {
+          "answer_mrr": 0.0,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 12,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "2da9bf81455a9da89c7ef8bfed7ad44124dbf2e34dcd96c5e3a64480a01f8111",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 48,
+      "raw_candidates": 13,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "232dd8e01c0d8502c4fd1601bf0cb1e7841cb7d3d11afe6272a3f1832df8f7d9",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "82f89e1ab1e1e6efe6f577836bd0bcb121e68de828dc78ee2bced7e971d49c71",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_049/aragorn_01",
+    "candidates": 608,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_049/comparison",
+    "elapsed_seconds": 12.288459259958472,
+    "identities": 608,
+    "qid": 49,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_049/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_049/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "0d7b56a7d453ae4fbd5b754e3d8f00915fb2dde139e74018bf26e6fddbd2e557",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 608,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "689cd67520f365d26df7ab9e79e5ee8b0c2e94282106c7b413612d010c994800",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 49,
+      "raw_candidates": 608,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "4aac03a7d59c479139f2deb8e9781f888b33652bf4676ca89d8348603dbf1857",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "41c14abd0937ba1643cf3ec153f5d63e81f103d39fc3464d61a8839efb9624ee",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_052/aragorn_01",
+    "candidates": 599,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_052/comparison",
+    "elapsed_seconds": 16.620104529021773,
+    "identities": 599,
+    "qid": 52,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_052/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_052/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "236181a447ae2d676a63fe3f1d144f73098b5d2ebf8a1c8ec8f34e44a870ab55",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 599,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "047a77bdf4193d826e6fa31916769892caf929393a54f20a7a0108a4ecb3cb07",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 52,
+      "raw_candidates": 599,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "bdcf60cae2f5f336d4c2835f1108c59a73258f509f0cb8531299c5eba203c6fb",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "51cc5bbce624bb6af256e45f7d9ee4df8ba57bb5909111ef8aff4fd69c0f42fb",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_054/aragorn_01",
+    "candidates": 29,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_054/comparison",
+    "elapsed_seconds": 9.67928026302252,
+    "identities": 29,
+    "qid": 54,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_054/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_054/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "7f730370f69650dd652c035850f9e7a8af18e187c05e2d13ac6e4ecfe6b8fd33",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 29,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "9d33f6dd7d42d2958fdf4bfd35652d61a384a84fb5480a5c4c21ed1ec9a5c239",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 54,
+      "raw_candidates": 29,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "7848355801e39a1f41afb151c9747c79c3b571e68ded8191d9a85513f3380b11",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "213ee0128369a2ea4231e067edefbcd893114b67d59802275e6faf1a309aea62",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_055/aragorn_01",
+    "candidates": 919,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_055/comparison",
+    "elapsed_seconds": 17.452571378962602,
+    "identities": 919,
+    "qid": 55,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_055/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_055/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "832a207ce5c4a7d4bc31416bfd7457c760cb28d6105cf9fefa29f1df7bc199cf",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 919,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.00980392156862745,
+          "conditional_answer_mrr": 0.00980392156862745,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.02127659574468085,
+          "conditional_answer_mrr": 0.02127659574468085,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "15b2697e165315e99cd373edbfe22ebebd431933a31064b17a95833a30954b66",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 55,
+      "raw_candidates": 919,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "f7744ed36069c86f3be7f2f40fce081e1a63540b532746967d96a0836b07a112",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "e07abb01ff4736a68406cac9e47cedb6a0aae7911a0f8e95fc363b074525a1b6",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_057/aragorn_01",
+    "candidates": 560,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_057/comparison",
+    "elapsed_seconds": 22.155170593003277,
+    "identities": 560,
+    "qid": 57,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_057/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_057/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "da0e70008507bcb9b9ea9de64cd725b71ee4f426da0ea2a28f58ba67d82afd1b",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 560,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.03225806451612903,
+          "conditional_answer_mrr": 0.03225806451612903,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.023255813953488372,
+          "conditional_answer_mrr": 0.023255813953488372,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "3ed043dff84a0b54307bef3f64e81eb04a58afb57965dd867401897c24d897f9",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 57,
+      "raw_candidates": 560,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "37d19d0b898ddfd07c777adb3f93266e3fc4e3f32427eefa1c5c044bbadef0f3",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "24d9190dcb652b99426b4bb45d23155956f9a96ddd579486a9d5f8c1ad3ba513",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_060/aragorn_01",
+    "candidates": 1107,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_060/comparison",
+    "elapsed_seconds": 19.891215571027715,
+    "identities": 1107,
+    "qid": 60,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_060/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_060/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "782dd16f4a9d1fc13c73e5dff4a6de176136426ff75382702d8a90760f905d39",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 1107,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.0136986301369863,
+          "conditional_answer_mrr": 0.0136986301369863,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.5,
+          "conditional_answer_mrr": 0.5,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "03eaf873f4f6eb2581f81a5e0c4392f915378d881d1d2fc5e16bdfc7fa4fbc74",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 60,
+      "raw_candidates": 1107,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "9556dbf4cd71c8bb56cf8287d4a210fd0e4b6a0ec5b85654cdde17d773286f42",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "47b5a5b61d1e9e4e29a4b5e73d0b807d2c3c2957f3c4bf1a706316bf5b7948d7",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_061/aragorn_01",
+    "candidates": 255,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_061/comparison",
+    "elapsed_seconds": 11.97924850601703,
+    "identities": 255,
+    "qid": 61,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_061/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_061/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "07030aafca53e80d5869047bc5c43cc009853061a8c8215b9fd91dae5706d57a",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 255,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.25,
+          "conditional_answer_mrr": 0.5,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.5
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.5
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.5
+            }
+          },
+          "eligible_nevershow": 4,
+          "eligible_topanswers": 2,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.5
+        },
+        "ultra": {
+          "answer_mrr": 0.041666666666666664,
+          "conditional_answer_mrr": 0.08333333333333333,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.5
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 4,
+          "eligible_topanswers": 2,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 0.5
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "327a60041a4426b41a6a008d79bad5daa5fd20531d8743f5be917a5fc3b249c8",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 61,
+      "raw_candidates": 255,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "c7f24f442a9eacadb4532352e913af3f7a38bfa4db810a972c88e8fe295e7748",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "5433994590cefa1c93613d661d5361c6d682cc57239e6c4b51034384e67cd128",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_062/aragorn_01",
+    "candidates": 499,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_062/comparison",
+    "elapsed_seconds": 16.524659810995217,
+    "identities": 499,
+    "qid": 62,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_062/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_062/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "6b32c15bde8c6b1f2256a4643dcfb81ec8ffbf4ee526f11184812fc9d91fdd14",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 499,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 1,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "87e22e2f0f939f87a456846fd0083f8578b8e32958b9f911123892e2a63bc1e5",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 62,
+      "raw_candidates": 499,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "fae14bf624fce061d1803a416f940c5b4e17a73c98e2074b1575999931abd857",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "377bfebd84e7568dee7f1d80b6bb2a3138f20bcb1f901d5782f4d6a6c94e32a1",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_063/aragorn_01",
+    "candidates": 210,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_063/comparison",
+    "elapsed_seconds": 11.226986996014602,
+    "identities": 210,
+    "qid": 63,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_063/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_063/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "932079add35988fb403ba615c99bf7ec74446e2bf5da9fd983c4b436a3f9910b",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 210,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "bf4666b54db78d3d8f60646cb27ac9776d601270b097885d3bf723493e014fb0",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 63,
+      "raw_candidates": 210,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "4c5ebc1f7385f621364a44ce5c211f0c8f6b17bb141437334fda3222cfc666f7",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "cadb0e97207c4e4c1a9155ec34030f6f12944454d2b11545d4cbfcc7d4cebbc7",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "candidates": 0,
+    "note": "No model scores; report separately from matched ranking metrics",
+    "qid": 64,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_064/retrieval_01",
+    "service_problem_logs": 9,
+    "status": "empty_retrieval",
+    "retrieval_inspection": {
+      "auxiliary_graphs": 0,
+      "bound_edges_with_support_graphs": 0,
+      "bound_edges_without_support_graphs": 0,
+      "candidate_ids": [],
+      "candidates": 0,
+      "description": null,
+      "edges": 0,
+      "edges_with_support_graphs": 0,
+      "exposed_metadata": {},
+      "inspection_script_sha256": "1961119eb5cc38a30fc30cd44be9149872163057992521f2757d86380273d5ef",
+      "nodes": 0,
+      "note": "Structural audit only; successful HTTP and complete references do not prove all internal rule lookups succeeded.",
+      "predicates": {},
+      "problem_logs": [
+        {
+          "level": "ERROR",
+          "message": "[6a9c26bc] Validation Error: Edge `edge_0` has invalid predicates: ['biolink:affects_response_to']",
+          "timestamp": "2026-10-27T23:06:17.718+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[2f3c3c0d] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+          "timestamp": "2026-10-27T23:06:17.718+00:00"
+        },
+        {
+          "level": "ERROR",
+          "message": "[6a9c26bc] Due to the 1 above validation error(s), your query terminates.",
+          "timestamp": "2026-10-27T23:06:17.719+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[157d6b88] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:06:17.723+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[355f536a] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:06:17.732+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[7082eba0] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:06:17.736+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[dd74a8e9] MetaEdges could not be found for the following QEdge(s): ['edge_1', 'edge_2']",
+          "timestamp": "2026-10-27T23:06:17.741+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[0bcde614] MetaEdges could not be found for the following QEdge(s): ['edge_1']",
+          "timestamp": "2026-10-27T23:06:17.745+00:00"
+        },
+        {
+          "level": "WARNING",
+          "message": "[22cb2432] MetaEdges could not be found for the following QEdge(s): ['edge_2']",
+          "timestamp": "2026-10-27T23:06:17.758+00:00"
+        }
+      ],
+      "qid": 64,
+      "reference_issues": [],
+      "response_sha256": "fb8263c77eb9480a5f13eb624d5b38e4ae2e8137771d89511375c29468d00b00",
+      "results": 0,
+      "status": null,
+      "support_graph_references": 0
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_067/aragorn_01",
+    "candidates": 72,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_067/comparison",
+    "elapsed_seconds": 9.712557129038032,
+    "identities": 72,
+    "qid": 67,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_067/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_067/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "fdbb07916421995603e0939ed86c421560b52655ae5cd484c838dce002ba89a1",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 72,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.3333333333333333,
+          "conditional_answer_mrr": 0.3333333333333333,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.2,
+          "conditional_answer_mrr": 0.2,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "2735895f3b2497091b7cf61933e4c3f80995b439764021754253d7e266bb2f47",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 67,
+      "raw_candidates": 72,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "b31a2ef396e8952f0929d9b602643226a8bdebea9ef5377eeda27476345cfd32",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "8e067ed879662da4715b9b2e242f9b84702908e8c88ddf5bc4db43710cd50e0c",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_069/aragorn_01",
+    "candidates": 104,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_069/comparison",
+    "elapsed_seconds": 9.991581005975604,
+    "identities": 104,
+    "qid": 69,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_069/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_069/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "869ba8e3b33024d82f6b20fa994b5ae19140f498d95b0b6c0f6f43f6d6fda64e",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 104,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "cbe0dbea816a1409a11987fca4e9ea6512ca658c89324763da6567e8368e6227",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 69,
+      "raw_candidates": 104,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "314ce1160ee064e5c6fa7ddd48fdbbd4ac61972ba2516ead4099754ae1a34a29",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "828182ee4b90cced05ed8e12c9a1597e6c80f6a33c0734f2b1866b46957e5cec",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_072/aragorn_01",
+    "candidates": 11,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_072/comparison",
+    "elapsed_seconds": 8.544483247969765,
+    "identities": 11,
+    "qid": 72,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_072/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_072/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "cddb41803892f6e96f5dd376e0e8a14f886395a6574dc6e7488b29d3febae3a2",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 11,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.48333333333333334,
+          "conditional_answer_mrr": 0.48333333333333334,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.3333333333333333
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 3,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 3,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 3,
+              "topanswer_recall": 1.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 3,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.39999999999999997,
+          "conditional_answer_mrr": 0.39999999999999997,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.3333333333333333
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 3,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 3,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 0.3333333333333333
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 3,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "7718ad0af84bd24190be169846340bd6b8e7c76a2a6af84ca6383eb27052e938",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 72,
+      "raw_candidates": 11,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "bec00a61c34cc9c25774c3e814cc0caf6dbb52f7640e0674bbc776591f541597",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "564d05d76b15d5bf85cb12b99891e11e4e60de4f054ab7f99c6abb7276e8124f",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_076/aragorn_01",
+    "candidates": 65,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_076/comparison",
+    "elapsed_seconds": 10.713687260984443,
+    "identities": 65,
+    "qid": 76,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_076/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 11,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_076/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "99eac7bb682f7801fd0b2455052e5bac851ce9e53d69203b00c6c77e787d158f",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 65,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": 0.1,
+          "conditional_answer_mrr": 0.1,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        },
+        "ultra": {
+          "answer_mrr": 0.5,
+          "conditional_answer_mrr": 0.5,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": 0.0
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 1,
+              "topanswer_recall": 1.0
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 1,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": 1.0
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "3600586ec80f2046f115905586bcb5f1b87360324dd450e6f4f755e397205d3d",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 76,
+      "raw_candidates": 65,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "ad85d17963b1b8a84304a9eac54d771b190f0772d888cb8367df8c28ccea6ebc",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "eebf685c08b47288ada991368f6ba164e78be61b4141d6a1ffbff7919d901f6f",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_077/aragorn_01",
+    "candidates": 56,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_077/comparison",
+    "elapsed_seconds": 9.35716701601632,
+    "identities": 56,
+    "qid": 77,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_077/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_077/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "2f19901369a389cf255bcd5145370d5e61d86e0028c8bf5661a401b99692fa4d",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 56,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 2,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "13142ce5616972000bb56e1f2c1f9fcd9e12cfe2b4ce945be434ca9b0601f0c2",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 77,
+      "raw_candidates": 56,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "a0fd7fe9795b2d4a43e4b51f39a3eada8d6d3e931fd4dada30fd3df5ff30bae6",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "ebc63fc0f62997f0cf56fdd211c5bb01ad20351c52a9ae6453167443646b3213",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_080/aragorn_01",
+    "candidates": 78,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_080/comparison",
+    "elapsed_seconds": 9.243853006977588,
+    "identities": 78,
+    "qid": 80,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_080/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_080/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "cf33bfabffe83785bb673aff19c3a7fd821e90a818cfc43996b8c72b3eb63672",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 78,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "0e89ef4ec8010ab7a07aef57f97a5195640d60f90458742ceeabd4b44966632a",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 80,
+      "raw_candidates": 78,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "612bf4f7afbea832cf28176a514c6383bd085d077781234e5f704514357cf842",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "d45c5ae298e8518e352db227e9f16a15bd1ecd0c954508dc37004a92fb9a9fba",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_081/aragorn_01",
+    "candidates": 302,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_081/comparison",
+    "elapsed_seconds": 11.66503086098237,
+    "identities": 302,
+    "qid": 81,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_081/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 9,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_081/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "5360f6240a112dc154d7c2d5775486e677d1db4317ce04146ba92af07f9ba178",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 302,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 0,
+          "eligible_topanswers": 0,
+          "flagged_labels": 1,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "765fafdb458d47d1d0663d00983f36338813f012912effcc26148014d310b117",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 81,
+      "raw_candidates": 302,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "11466e9fbf3d8b1c88048e912251607d0efa1f97ad77408d9bc2b8bdcb268aa6",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "b1eaaac245292817ec9a2e00c7f87b5ee6c6d78f757a3da882f13c2bd4f4fb00",
+      "unresolved_candidate_ids": []
+    }
+  },
+  {
+    "aragorn": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_082/aragorn_01",
+    "candidates": 2351,
+    "comparison": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_082/comparison",
+    "elapsed_seconds": 72.41166022303514,
+    "identities": 2351,
+    "qid": 82,
+    "retrieval": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_082/retrieval_01",
+    "reused_query0": false,
+    "service_problem_logs": 11,
+    "status": "complete",
+    "ultra": "/home/agonzalez/shepherd-myara/experiments/ultra-aragorn/results/cohort_001/query_082/retrieval_01/ultra_scores",
+    "comparison_summary": {
+      "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "aragorn_response_sha256": "eded79724452f4f5f4f4ec90b1347de9b8e58136583a1a25d4d0c46935df20bc",
+      "code_sha256": "36a6afc8fa6d68b0f52c8752be89bee9a03eb4ef23dead9c6230d4e7649e2e04",
+      "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+      "identity_candidates": 2351,
+      "metrics": {
+        "aragorn": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        },
+        "ultra": {
+          "answer_mrr": null,
+          "conditional_answer_mrr": null,
+          "cutoffs": {
+            "1": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "10": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "20": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            },
+            "5": {
+              "nevershow_hits": 0,
+              "topanswer_hits": 0,
+              "topanswer_recall": null
+            }
+          },
+          "eligible_nevershow": 1,
+          "eligible_topanswers": 0,
+          "flagged_labels": 0,
+          "positive_retrieval_coverage": null
+        }
+      },
+      "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+      "normalization_options": {
+        "conflate": true,
+        "drug_chemical_conflate": true
+      },
+      "normalization_sha256": "2b415092e655b81fb3aef3513819d3a626b6b1ba0a9c7e8f0c8d8bd9fd97200d",
+      "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+      "qid": 82,
+      "raw_candidates": 2351,
+      "retrieval_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+      "scope": "Single-query comparison; cohort aggregation must report missing/failed queries separately.",
+      "source_response_sha256": "22781187143de78ed1a2b2d0c8cfc6125fc85fba61d33659b438c7b3a469c1f9",
+      "status": "matched_scores_available",
+      "ultra_summary_sha256": "cc14b3fb199b2ef6a70a192faedff3900a066b7aaad04e902d03034eab2d938d",
+      "unresolved_candidate_ids": []
+    }
+  }
+]

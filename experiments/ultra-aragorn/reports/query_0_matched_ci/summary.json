@@ -1,0 +1,84 @@
+{
+  "aragorn_endpoint": "https://shepherd.ci.transltr.io/aragorn/query",
+  "aragorn_response_sha256": "459686e7f39843545f062c68abbb762a650d7b8c325fe185682eb91a575e11c1",
+  "code_sha256": "fbaaec9d43eba7a692c14f9743a11db46872ef84073f696f99317a19a76d8af5",
+  "evidence": "ARAGORN standard scoring includes OmniCorp overlay. ULTRA uses predicate-only retrieved graph with generated conclusions removed.",
+  "identity_candidates": 25,
+  "metrics": {
+    "aragorn": {
+      "answer_mrr": null,
+      "conditional_answer_mrr": null,
+      "cutoffs": {
+        "1": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "10": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "20": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "5": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        }
+      },
+      "eligible_nevershow": 1,
+      "eligible_topanswers": 0,
+      "flagged_labels": 1,
+      "positive_retrieval_coverage": null
+    },
+    "ultra": {
+      "answer_mrr": null,
+      "conditional_answer_mrr": null,
+      "cutoffs": {
+        "1": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "10": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "20": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        },
+        "5": {
+          "nevershow_hits": 0,
+          "topanswer_hits": 0,
+          "topanswer_recall": null
+        }
+      },
+      "eligible_nevershow": 1,
+      "eligible_topanswers": 0,
+      "flagged_labels": 1,
+      "positive_retrieval_coverage": null
+    }
+  },
+  "normalization_endpoint": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+  "normalization_options": {
+    "conflate": true,
+    "drug_chemical_conflate": true
+  },
+  "normalization_sha256": "e1013c9e9dae5a8d7d46e87283805abbe5f6d684666a355c5e4a49cba017b0ac",
+  "protocol": "Same cached retrieval and candidate IDs; maximum analysis/alias score per identity; unrounded scores; pessimistic ties; missing eligible positives contribute zero; ambiguous/conflicting labels flagged and excluded.",
+  "qid": 0,
+  "raw_candidates": 25,
+  "retrieval_endpoint": "https://shepherd.renci.org/aragorn/query",
+  "scope": "Query 0 smoke comparison, not a cohort benchmark.",
+  "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+  "status": "matched_scores_available",
+  "ultra_summary_sha256": "a94720b4805e5780b3e565dc52b769a677710123329fda3b4319d03734bdf395",
+  "unresolved_candidate_ids": []
+}

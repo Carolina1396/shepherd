@@ -1,0 +1,133 @@
+{
+  "comparison_status": "Historical context only; not matched to our candidate pool or scoring protocol. Edge rows rather than unique answers, different cohorts and tie handling; no MRR reported.",
+  "reports": [
+    {
+      "scope": "all",
+      "source": "https://github.com/hyi/ranker/blob/c245eaa8778c06879c59e9a0c90e63e48cd5fa75/results/ars/ranker_comparison_test_queries_plots/all/ranker_metrics_summary.json",
+      "dataset_summary": {
+        "sheet": "ARS",
+        "raw_rows": 24111,
+        "edge_records": 24111,
+        "distinct_query_edge_keys": 24111,
+        "duplicate_query_edge_ids": 0,
+        "duplicate_query_edge_rows": 0,
+        "has_is_direct_edge": true,
+        "scope_name": "all"
+      },
+      "metrics_at_10": {
+        "ARAGORN_RANKER": {
+          "positive_hits": 232,
+          "negative_hits": 23,
+          "false_negatives": 52,
+          "top_k_size": 7256,
+          "positive_totals": 284,
+          "negative_totals": 48,
+          "precision_micro": 0.9098039215686274,
+          "positive_recall_micro": 0.8169014084507042,
+          "f1_micro": 0.8608534322820037,
+          "negative_specificity_micro": 0.5208333333333334,
+          "negative_exposure_micro": 0.4791666666666667,
+          "positive_hits_per_group_mean": 8.285714285714286,
+          "negative_hits_per_group_mean": 1.4375,
+          "precision_macro": 0.7828262061403509,
+          "positive_recall_macro": 0.8684094392473971,
+          "f1_macro": 0.9453953953660355,
+          "negative_specificity_macro": 0.48046875,
+          "negative_exposure_macro": 0.51953125,
+          "eligible_positive_groups": 28,
+          "eligible_precision_groups": 32,
+          "eligible_f1_groups": 26,
+          "eligible_negative_groups": 16
+        },
+        "ARAX_RANKER": {
+          "positive_hits": 215,
+          "negative_hits": 7,
+          "false_negatives": 69,
+          "top_k_size": 1651,
+          "positive_totals": 284,
+          "negative_totals": 48,
+          "precision_micro": 0.9684684684684685,
+          "positive_recall_micro": 0.7570422535211268,
+          "f1_micro": 0.849802371541502,
+          "negative_specificity_micro": 0.8541666666666666,
+          "negative_exposure_micro": 0.14583333333333334,
+          "positive_hits_per_group_mean": 7.678571428571429,
+          "negative_hits_per_group_mean": 0.4375,
+          "precision_macro": 0.8256704980842912,
+          "positive_recall_macro": 0.7805741164390284,
+          "f1_macro": 0.9381414081002382,
+          "negative_specificity_macro": 0.8046875,
+          "negative_exposure_macro": 0.1953125,
+          "eligible_positive_groups": 28,
+          "eligible_precision_groups": 29,
+          "eligible_f1_groups": 24,
+          "eligible_negative_groups": 16
+        }
+      }
+    },
+    {
+      "scope": "indirect",
+      "source": "https://github.com/hyi/ranker/blob/c245eaa8778c06879c59e9a0c90e63e48cd5fa75/results/ars/ranker_comparison_test_queries_plots/indirect/ranker_metrics_summary.json",
+      "dataset_summary": {
+        "sheet": "ARS",
+        "raw_rows": 13642,
+        "edge_records": 13642,
+        "distinct_query_edge_keys": 13642,
+        "duplicate_query_edge_ids": 0,
+        "duplicate_query_edge_rows": 0,
+        "has_is_direct_edge": true,
+        "scope_name": "indirect"
+      },
+      "metrics_at_10": {
+        "ARAGORN_RANKER": {
+          "positive_hits": 43,
+          "negative_hits": 23,
+          "false_negatives": 6,
+          "top_k_size": 5407,
+          "positive_totals": 49,
+          "negative_totals": 41,
+          "precision_micro": 0.6515151515151515,
+          "positive_recall_micro": 0.8775510204081632,
+          "f1_micro": 0.7478260869565218,
+          "negative_specificity_micro": 0.43902439024390244,
+          "negative_exposure_micro": 0.5609756097560976,
+          "positive_hits_per_group_mean": 3.5833333333333335,
+          "negative_hits_per_group_mean": 1.6428571428571428,
+          "precision_macro": 0.5774410774410774,
+          "positive_recall_macro": 0.9074074074074074,
+          "f1_macro": 0.8722222222222222,
+          "negative_specificity_macro": 0.3976190476190476,
+          "negative_exposure_macro": 0.6023809523809524,
+          "eligible_positive_groups": 12,
+          "eligible_precision_groups": 18,
+          "eligible_f1_groups": 12,
+          "eligible_negative_groups": 14
+        },
+        "ARAX_RANKER": {
+          "positive_hits": 25,
+          "negative_hits": 6,
+          "false_negatives": 24,
+          "top_k_size": 605,
+          "positive_totals": 49,
+          "negative_totals": 41,
+          "precision_micro": 0.8064516129032258,
+          "positive_recall_micro": 0.5102040816326531,
+          "f1_micro": 0.625,
+          "negative_specificity_micro": 0.8536585365853658,
+          "negative_exposure_micro": 0.14634146341463414,
+          "positive_hits_per_group_mean": 2.0833333333333335,
+          "negative_hits_per_group_mean": 0.42857142857142855,
+          "precision_macro": 0.6794871794871795,
+          "positive_recall_macro": 0.6975308641975309,
+          "f1_macro": 0.9458689458689459,
+          "negative_specificity_macro": 0.794047619047619,
+          "negative_exposure_macro": 0.20595238095238094,
+          "eligible_positive_groups": 12,
+          "eligible_precision_groups": 13,
+          "eligible_f1_groups": 9,
+          "eligible_negative_groups": 14
+        }
+      }
+    }
+  ]
+}

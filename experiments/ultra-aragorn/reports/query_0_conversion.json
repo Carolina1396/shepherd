@@ -1,0 +1,61 @@
+{
+  "qid": 0,
+  "conversion": {
+    "artifacts_sha256": {
+      "candidates.json": "ecef4af3fa301a69cb8c15eca7fa92db3f64fc95e1870b48cf60b7beb4cf5aac",
+      "config.json": "b86179d0f570f006bdfdc672ec443a4ad97a93b9a0e0502fe70780c2f9103c7b",
+      "edge_index.npy": "1cc90d93b5f9653dffb63acd30eb6025020561f98418d1fe891a2a32db710339",
+      "edge_type.npy": "4f03adf525f3b6aa8b27281106b6458d30fa99ddb7476745d8c68acdcf151453",
+      "nodes.json": "3af83da8ca0da011f2b99645b6dad5f89bc379eabc9ae9dfdbfe30cc10107288",
+      "predicates.json": "b6ffc421cd507634d09d1ddbd9b2ec5893f9660ba896b1963c470f5cbffe459a",
+      "removed_edges.json": "daa6ca6079f7c8c3be41762d80b25490d17d6d7698b365738b735dd469d44dd1",
+      "triple_provenance.json": "9c4631f2293d36198f62c3df6426fb1b2548d6548cbd56e580052e398aa06f0d",
+      "triples.npy": "3b86e2df8299acd1afc234cf18de8ba31570a78d9eba9b2b8e2594ec3804cb11"
+    },
+    "candidate_identity_policy": "Preserve all returned CURIEs; cross-CURIE normalization/deduplication pending before evaluation",
+    "candidates": 25,
+    "candidates_with_direct_treats": 2,
+    "code_sha256": {
+      "convert_graph.py": "f3c53f87d9ad32222163ef1e75b58891bf83941aaa8a3fa050f6c33217cbd921",
+      "retrieve.py": "b69ca4baad616ba364af9073dc3b422cf939bad12697457bd9c55746cfbe7624"
+    },
+    "edges_with_inverses": 160,
+    "empty_graph": false,
+    "evidence_policy": "Remove support-graph conclusions and logical entailments; retain all other returned evidence",
+    "isolated_candidates": 0,
+    "nodes": 30,
+    "original_relations": 7,
+    "relations_with_inverses": 14,
+    "removed_conclusion_edges": 25,
+    "representation": "Predicate-only triples; qualifiers and evidence provenance remain in raw response",
+    "retained_evidence_records": 88,
+    "retained_predicates": {
+      "biolink:affects": 3,
+      "biolink:applied_to_treat": 3,
+      "biolink:has_phenotype": 5,
+      "biolink:in_clinical_trials_for": 52,
+      "biolink:subclass_of": 1,
+      "biolink:treats": 6,
+      "biolink:treats_or_applied_or_studied_to_treat": 18
+    },
+    "retained_records_with_qualifiers": 8,
+    "service_problem_logs": 9,
+    "source_edges": 113,
+    "source_request_sha256": "59ac2db858ff49dbd2f2e860b3b9f07c76ff707d7823366caf33960366ce273a",
+    "source_response_sha256": "690713f25036830c8392d3a8a71b802b0ba40747eda5d96923871a18cbda81a1",
+    "unique_directed_triples": 80
+  },
+  "verification": {
+    "verified": true,
+    "source_edge_partition_verified": true,
+    "triple_provenance_verified": true,
+    "inverse_arrays_verified": true,
+    "artifact_hashes_verified": true,
+    "ultra_relation_graph_built": true,
+    "relation_graph_nodes": 14,
+    "relation_graph_edges": 312,
+    "torch_version": "2.1.0+cu118",
+    "device": "cpu",
+    "model_scored": false
+  }
+}

@@ -1,0 +1,8784 @@
+[
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:11520894",
+    "qid": 0,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_328"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:11520894"
+    ],
+    "source_names": [
+      "Ridaforolimus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_name_identity_mismatch",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:9168"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:5284616",
+    "qid": 0,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_327"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5284616"
+    ],
+    "source_names": [
+      "Sirolimus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0116660",
+    "qid": 0,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_329"
+    ],
+    "source_ids": [
+      "UMLS:C0116660"
+    ],
+    "source_names": [
+      "ESTROSTEP Fe (Norethindrone Acetate and Ethinyl Estradiol)"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15377",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_274"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:962"
+    ],
+    "source_names": [
+      "Water"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16042",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_302"
+    ],
+    "source_ids": [
+      "CHEBI:16042"
+    ],
+    "source_names": [
+      "Halide anion"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:22315",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_301"
+    ],
+    "source_ids": [
+      "MESH:D000470"
+    ],
+    "source_names": [
+      "Alkaloids"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24532",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_288"
+    ],
+    "source_ids": [
+      "CHEBI:24532"
+    ],
+    "source_names": [
+      "Organic heterocyclic compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24867",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_290"
+    ],
+    "source_ids": [
+      "CHEBI:24867"
+    ],
+    "source_names": [
+      "Monoatomic ion"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24870",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_271"
+    ],
+    "source_ids": [
+      "MESH:D007477"
+    ],
+    "source_names": [
+      "Ions"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25585",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_280"
+    ],
+    "source_ids": [
+      "CHEBI:25585"
+    ],
+    "source_names": [
+      "Nonmetal atom"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25741",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_272"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:190217"
+    ],
+    "source_names": [
+      "Oxide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:26188",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_298"
+    ],
+    "source_ids": [
+      "MESH:D061065"
+    ],
+    "source_names": [
+      "Polyketides"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27081",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_283"
+    ],
+    "source_ids": [
+      "CHEBI:27081"
+    ],
+    "source_names": [
+      "Transition element atom"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27594",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_273"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5462310"
+    ],
+    "source_names": [
+      "Carbon"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33253",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_285"
+    ],
+    "source_ids": [
+      "MESH:D000071940"
+    ],
+    "source_names": [
+      "Nucleons"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33375",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_270"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:23982"
+    ],
+    "source_names": [
+      "Gadolinium"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33431",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_294"
+    ],
+    "source_ids": [
+      "CHEBI:33431"
+    ],
+    "source_names": [
+      "Elemental chlorine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33432",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_291"
+    ],
+    "source_ids": [
+      "CHEBI:33432"
+    ],
+    "source_names": [
+      "Monoatomic chlorine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33433",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_292"
+    ],
+    "source_ids": [
+      "CHEBI:33433"
+    ],
+    "source_names": [
+      "Monoatomic halogen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33434",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_289"
+    ],
+    "source_ids": [
+      "CHEBI:33434"
+    ],
+    "source_names": [
+      "Elemental halogen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33497",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_282"
+    ],
+    "source_ids": [
+      "CHEBI:33497"
+    ],
+    "source_names": [
+      "Transition element molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33562",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_284"
+    ],
+    "source_ids": [
+      "CHEBI:33562"
+    ],
+    "source_names": [
+      "F-block element atom"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33674",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_293"
+    ],
+    "source_ids": [
+      "CHEBI:33674"
+    ],
+    "source_names": [
+      "S-block molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33677",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_281"
+    ],
+    "source_ids": [
+      "CHEBI:33677"
+    ],
+    "source_names": [
+      "F-block molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33695",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_287"
+    ],
+    "source_ids": [
+      "CHEBI:33695"
+    ],
+    "source_names": [
+      "Information biomacromolecule"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33710",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_299"
+    ],
+    "source_ids": [
+      "CHEBI:33710"
+    ],
+    "source_names": [
+      "Alpha-amino-acid residue"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36916",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_275"
+    ],
+    "source_ids": [
+      "MESH:D002412"
+    ],
+    "source_names": [
+      "Cations"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36963",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_286"
+    ],
+    "source_ids": [
+      "CHEBI:36963"
+    ],
+    "source_names": [
+      "Organooxygen compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:37578",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_296"
+    ],
+    "source_ids": [
+      "CHEBI:37578"
+    ],
+    "source_names": [
+      "Halide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:49956",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_297"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:23991"
+    ],
+    "source_names": [
+      "Xenon"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50047",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_295"
+    ],
+    "source_ids": [
+      "CHEBI:50047"
+    ],
+    "source_names": [
+      "Organic amino compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:79389",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_300"
+    ],
+    "source_ids": [
+      "CHEBI:79389"
+    ],
+    "source_names": [
+      "Monovalent inorganic anion"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_276"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Electrons"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_277"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Formaldehyde"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_278"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Organic anion"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_279"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Acyl group"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27594",
+    "qid": 3,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_143"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5462310"
+    ],
+    "source_names": [
+      "Carbon"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:34385",
+    "qid": 3,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_145"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:1727"
+    ],
+    "source_names": [
+      "4-aminopyridine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36333",
+    "qid": 3,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_144"
+    ],
+    "source_ids": [
+      "MESH:D000779"
+    ],
+    "source_names": [
+      "Anesthetics, local"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:5615",
+    "qid": 3,
+    "ranks": {
+      "aragorn": 3,
+      "ultra": 5
+    },
+    "source_asset_ids": [
+      "Asset_138"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3562"
+    ],
+    "source_names": [
+      "Halothane"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6015",
+    "qid": 3,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_139"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3763"
+    ],
+    "source_names": [
+      "isoflurane"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0002932",
+    "qid": 3,
+    "ranks": {
+      "aragorn": 101,
+      "ultra": 6
+    },
+    "source_asset_ids": [
+      "Asset_146"
+    ],
+    "source_ids": [
+      "UMLS:C0002932"
+    ],
+    "source_names": [
+      "Anesthetics"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003232",
+    "qid": 3,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_147"
+    ],
+    "source_ids": [
+      "UMLS:C0003232"
+    ],
+    "source_names": [
+      "Antibiotics"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0013227",
+    "qid": 3,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_142"
+    ],
+    "source_ids": [
+      "UMLS:C0013227"
+    ],
+    "source_names": [
+      "Pharmaceutical preparations"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C1874451",
+    "qid": 3,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_148"
+    ],
+    "source_ids": [
+      "UMLS:C1874451"
+    ],
+    "source_names": [
+      "basis"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15377",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_123"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:962"
+    ],
+    "source_names": [
+      "Water"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16170",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_118"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:23931"
+    ],
+    "source_names": [
+      "Mercury"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25016",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_10"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5352425"
+    ],
+    "source_names": [
+      "lead"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27594",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_122"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5462310"
+    ],
+    "source_names": [
+      "Carbon"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:35366",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_119"
+    ],
+    "source_ids": [
+      "MESH:D005227"
+    ],
+    "source_names": [
+      "Fatty acids"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:35480",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_117"
+    ],
+    "source_ids": [
+      "MESH:D000700"
+    ],
+    "source_names": [
+      "Analgesics"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50847",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_108"
+    ],
+    "source_ids": [
+      "MESH:D000276"
+    ],
+    "source_names": [
+      "Adjuvants, immunologic"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:63115",
+    "qid": 6,
+    "ranks": {
+      "aragorn": 44,
+      "ultra": 6
+    },
+    "source_asset_ids": [
+      "Asset_8"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:107970"
+    ],
+    "source_names": [
+      "fingolimod"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "CHEMBL:2109042",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_101"
+    ],
+    "source_ids": [
+      "CHEMBL:2109042"
+    ],
+    "source_names": [
+      "Influenza vaccines"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D000086663",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_100"
+    ],
+    "source_ids": [
+      "UMLS:C5387588"
+    ],
+    "source_names": [
+      "Covid-19 vaccines"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D004365",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_121"
+    ],
+    "source_ids": [
+      "MESH:D004365"
+    ],
+    "source_names": [
+      "Drugs, chinese herbal"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D010936",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_120"
+    ],
+    "source_ids": [
+      "MESH:D010936"
+    ],
+    "source_names": [
+      "Plant extracts"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D014612",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_98"
+    ],
+    "source_ids": [
+      "MESH:D014612"
+    ],
+    "source_names": [
+      "vaccines"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003209",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_107"
+    ],
+    "source_ids": [
+      "UMLS:C0003209"
+    ],
+    "source_names": [
+      "Anti-inflammatory agents"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003232",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_114"
+    ],
+    "source_ids": [
+      "UMLS:C0003232"
+    ],
+    "source_names": [
+      "Antibiotics"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003241",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_109"
+    ],
+    "source_ids": [
+      "MESH:D000906"
+    ],
+    "source_names": [
+      "Antibodies"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003250",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_111"
+    ],
+    "source_ids": [
+      "MESH:D000911"
+    ],
+    "source_names": [
+      "Antibodies, monoclonal"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0005522",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_112"
+    ],
+    "source_ids": [
+      "UMLS:C0005522"
+    ],
+    "source_names": [
+      "Biological products"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0040616",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_110"
+    ],
+    "source_ids": [
+      "UMLS:C0040616"
+    ],
+    "source_names": [
+      "Anti-anxiety agents"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0242896",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_116"
+    ],
+    "source_ids": [
+      "UMLS:C0242896"
+    ],
+    "source_names": [
+      "Anticholinergic agents"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0242912",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_113"
+    ],
+    "source_ids": [
+      "UMLS:C0242912"
+    ],
+    "source_names": [
+      "Neuroprotective agents"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0243192",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_104"
+    ],
+    "source_ids": [
+      "UMLS:C0243192"
+    ],
+    "source_names": [
+      "Agonists"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0302837",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_106"
+    ],
+    "source_ids": [
+      "UMLS:C0302837"
+    ],
+    "source_names": [
+      "Vitamin supplementation"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0599934",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_102"
+    ],
+    "source_ids": [
+      "UMLS:C0599934"
+    ],
+    "source_names": [
+      "Vaccines, peptide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_name_identity_mismatch",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "UNII:3JB47N2Q2P"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0665297",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_9"
+    ],
+    "source_ids": [
+      "MESH:D000069442"
+    ],
+    "source_names": [
+      "natalizumab"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0699680",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_103"
+    ],
+    "source_ids": [
+      "UMLS:C0699680"
+    ],
+    "source_names": [
+      "Metric"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C1611640",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_105"
+    ],
+    "source_ids": [
+      "UMLS:C1611640"
+    ],
+    "source_names": [
+      "Therapeutic agent"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C1874451",
+    "qid": 6,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_115"
+    ],
+    "source_ids": [
+      "UMLS:C1874451"
+    ],
+    "source_names": [
+      "basis"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:10545",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_154"
+    ],
+    "source_ids": [
+      "MESH:D004583"
+    ],
+    "source_names": [
+      "Electrons"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:134179",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_167"
+    ],
+    "source_ids": [
+      "CHEBI:134179"
+    ],
+    "source_names": [
+      "Volatile organic compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15377",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_152",
+      "Asset_153"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:962"
+    ],
+    "source_names": [
+      "Hydrogen(.)",
+      "Water"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15379",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_156",
+      "Asset_165"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:977",
+      "UMLS:C0030054"
+    ],
+    "source_names": [
+      "Oxygen"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:22563",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_155"
+    ],
+    "source_ids": [
+      "MESH:D000838"
+    ],
+    "source_names": [
+      "Anions"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24471",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_158"
+    ],
+    "source_ids": [
+      "CHEBI:24471"
+    ],
+    "source_names": [
+      "Halogen molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24866",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_151"
+    ],
+    "source_ids": [
+      "MESH:D012492"
+    ],
+    "source_names": [
+      "salts"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24868",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_162"
+    ],
+    "source_ids": [
+      "CHEBI:24868"
+    ],
+    "source_names": [
+      "Organic salt"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25367",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_161"
+    ],
+    "source_ids": [
+      "CHEBI:25367"
+    ],
+    "source_names": [
+      "Molecule"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:30879",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_160"
+    ],
+    "source_ids": [
+      "MESH:D000438"
+    ],
+    "source_names": [
+      "Alcohols"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33250",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_149"
+    ],
+    "source_ids": [
+      "CHEBI:33250"
+    ],
+    "source_names": [
+      "Atom"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33252",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_150"
+    ],
+    "source_ids": [
+      "MESH:D002467"
+    ],
+    "source_names": [
+      "Cell nucleus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:35480",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_166"
+    ],
+    "source_ids": [
+      "MESH:D000700"
+    ],
+    "source_names": [
+      "Analgesics"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36094",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_164"
+    ],
+    "source_ids": [
+      "CHEBI:36094"
+    ],
+    "source_names": [
+      "Organic chloride salt"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36916",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_157"
+    ],
+    "source_ids": [
+      "MESH:D002412"
+    ],
+    "source_names": [
+      "Cations"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:51143",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_159"
+    ],
+    "source_ids": [
+      "CHEBI:51143"
+    ],
+    "source_names": [
+      "Nitrogen molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:72695",
+    "qid": 10,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_163"
+    ],
+    "source_ids": [
+      "MESH:D009930"
+    ],
+    "source_names": [
+      "Organic chemicals"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:141213",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_198"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:84098"
+    ],
+    "source_names": [
+      "Isoxaflutole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15377",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_205"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:962"
+    ],
+    "source_names": [
+      "Water"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": true,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16236",
+    "qid": 12,
+    "ranks": {
+      "aragorn": 4,
+      "ultra": 1
+    },
+    "source_asset_ids": [
+      "Asset_195",
+      "Asset_196"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:702"
+    ],
+    "source_names": [
+      "Ethanol"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16842",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_208"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:712"
+    ],
+    "source_names": [
+      "Formaldehyde"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27958",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_209"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:446220"
+    ],
+    "source_names": [
+      "Cocaine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:28201",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_199"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6758"
+    ],
+    "source_names": [
+      "Rotenone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:28794",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_210"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:323"
+    ],
+    "source_names": [
+      "Coumarin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:32888",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_200"
+    ],
+    "source_ids": [
+      "UNII:59NEE7PCAB"
+    ],
+    "source_names": [
+      "Lindane"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33216",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_204"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6623"
+    ],
+    "source_names": [
+      "Bisphenol a"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:34761",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_197"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3346"
+    ],
+    "source_names": [
+      "Fenthion"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:46195",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_202"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:1983"
+    ],
+    "source_names": [
+      "Acetaminophen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:472805",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_207"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:439501"
+    ],
+    "source_names": [
+      "Ouabain"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50594",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_203"
+    ],
+    "source_ids": [
+      "MESH:D037742"
+    ],
+    "source_names": [
+      "Nanotubes, carbon"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6129",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_206"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3826"
+    ],
+    "source_names": [
+      "Ketorolac"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6809",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_212"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:10836"
+    ],
+    "source_names": [
+      "Methamphetamine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEMBL.COMPOUND:CHEMBL2109152",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_211"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL2109152"
+    ],
+    "source_names": [
+      "Mineral oil"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0013227",
+    "qid": 12,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_201"
+    ],
+    "source_ids": [
+      "UMLS:C0013227"
+    ],
+    "source_names": [
+      "Pharmaceutical preparations"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": true,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": null,
+    "labels": [
+      "BadButForgivable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:18248",
+    "qid": 14,
+    "ranks": {
+      "aragorn": 1,
+      "ultra": 5
+    },
+    "source_asset_ids": [
+      "Asset_1",
+      "Asset_17"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:23925"
+    ],
+    "source_names": [
+      "Iron (PUBCHEM)"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:23367",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_19"
+    ],
+    "source_ids": [
+      "CHEBI:23367"
+    ],
+    "source_names": [
+      "molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24431",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_31"
+    ],
+    "source_ids": [
+      "CHEBI:24431"
+    ],
+    "source_names": [
+      "chemical entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24835",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_24"
+    ],
+    "source_ids": [
+      "MESH:D007287"
+    ],
+    "source_names": [
+      "inorganic chemicals"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24836",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_30"
+    ],
+    "source_ids": [
+      "CHEBI:24836"
+    ],
+    "source_names": [
+      "inorganic oxide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25367",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_20"
+    ],
+    "source_ids": [
+      "CHEBI:25367"
+    ],
+    "source_names": [
+      "molecule"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25806",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_21"
+    ],
+    "source_ids": [
+      "CHEBI:25806"
+    ],
+    "source_names": [
+      "oxygen molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:28201",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_62"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6758"
+    ],
+    "source_names": [
+      "Rotenone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33247",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_2"
+    ],
+    "source_ids": [
+      "CHEBI:33247"
+    ],
+    "source_names": [
+      "organic group"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33252",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_56"
+    ],
+    "source_ids": [
+      "MESH:D002467"
+    ],
+    "source_names": [
+      "cell nucleus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33285",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_25"
+    ],
+    "source_ids": [
+      "CHEBI:33285"
+    ],
+    "source_names": [
+      "heteroorganic entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33579",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_26"
+    ],
+    "source_ids": [
+      "CHEBI:33579"
+    ],
+    "source_names": [
+      "main group molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33582",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_23"
+    ],
+    "source_ids": [
+      "CHEBI:33582"
+    ],
+    "source_names": [
+      "carbon group molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33595",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_28"
+    ],
+    "source_ids": [
+      "CHEBI:33595"
+    ],
+    "source_names": [
+      "cyclic compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36357",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_22"
+    ],
+    "source_ids": [
+      "CHEBI:36357"
+    ],
+    "source_names": [
+      "polyatomic entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:37577",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_27"
+    ],
+    "source_ids": [
+      "CHEBI:37577"
+    ],
+    "source_names": [
+      "heteroatomic molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:4356",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_305"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:2973"
+    ],
+    "source_names": [
+      "Deferoxamine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:49005",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_304"
+    ],
+    "source_ids": [
+      "CHEBI:49005"
+    ],
+    "source_names": [
+      "deferasirox"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:5686",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_29"
+    ],
+    "source_ids": [
+      "MESH:D006571"
+    ],
+    "source_names": [
+      "heterocyclic compounds"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:68554",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_303"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:2972"
+    ],
+    "source_names": [
+      "deferipone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:72695",
+    "qid": 14,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_18"
+    ],
+    "source_ids": [
+      "MESH:D009930"
+    ],
+    "source_names": [
+      "Organic Chemicals"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33216",
+    "qid": 16,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_130"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6623"
+    ],
+    "source_names": [
+      "bisphenol A"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:60311",
+    "qid": 16,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_126"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:53462828"
+    ],
+    "source_names": [
+      "Thyroid hormones"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0004358",
+    "qid": 16,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_125"
+    ],
+    "source_ids": [
+      "MESH:D001323"
+    ],
+    "source_names": [
+      "Autoantibodies"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0009498",
+    "qid": 16,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_129"
+    ],
+    "source_ids": [
+      "MESH:D003165"
+    ],
+    "source_names": [
+      "Complement system proteins"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0014442",
+    "qid": 16,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_127"
+    ],
+    "source_ids": [
+      "MESH:D004798"
+    ],
+    "source_names": [
+      "Enzymes"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0034818",
+    "qid": 16,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_124"
+    ],
+    "source_ids": [
+      "MESH:D011972"
+    ],
+    "source_names": [
+      "Receptor, insulin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0140080",
+    "qid": 16,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_128"
+    ],
+    "source_ids": [
+      "MESH:D017526"
+    ],
+    "source_names": [
+      "Receptor, IGF Type 1"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:107736",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 1,
+      "ultra": 101
+    },
+    "source_asset_ids": [
+      "Asset_631"
+    ],
+    "source_ids": [
+      "CHEBI:107736"
+    ],
+    "source_names": [
+      "metoclopramide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:135931",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 110,
+      "ultra": 110
+    },
+    "source_asset_ids": [
+      "Asset_622"
+    ],
+    "source_ids": [
+      "CHEBI:135931"
+    ],
+    "source_names": [
+      "dexlansoprazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15347",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_633"
+    ],
+    "source_ids": [
+      "CHEBI:15347"
+    ],
+    "source_names": [
+      "acetone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15365",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 35,
+      "ultra": 46
+    },
+    "source_asset_ids": [
+      "Asset_632"
+    ],
+    "source_ids": [
+      "CHEBI:15365"
+    ],
+    "source_names": [
+      "aspirin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15366",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 177,
+      "ultra": 12
+    },
+    "source_asset_ids": [
+      "Asset_267"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:176"
+    ],
+    "source_names": [
+      "Acetic acid"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:15377",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 48,
+      "ultra": 337
+    },
+    "source_asset_ids": [
+      "Asset_268"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:962"
+    ],
+    "source_names": [
+      "Water"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16240",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 55,
+      "ultra": 483
+    },
+    "source_asset_ids": [
+      "Asset_250"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:784"
+    ],
+    "source_names": [
+      "Hydrogen peroxide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27594",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 94,
+      "ultra": 310
+    },
+    "source_asset_ids": [
+      "Asset_266"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5462310"
+    ],
+    "source_names": [
+      "Carbon"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:28786",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 303,
+      "ultra": 401
+    },
+    "source_asset_ids": [
+      "Asset_252"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:15938"
+    ],
+    "source_names": [
+      "Paraquat dichloride"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:29678",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_253"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:443495"
+    ],
+    "source_names": [
+      "Sodium arsenite"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:30742",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 28,
+      "ultra": 35
+    },
+    "source_asset_ids": [
+      "Asset_263"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:174"
+    ],
+    "source_names": [
+      "1,2-ethanediol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:30769",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 150,
+      "ultra": 113
+    },
+    "source_asset_ids": [
+      "Asset_265"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:311"
+    ],
+    "source_names": [
+      "Citric acid"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:3311",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 151,
+      "ultra": 288
+    },
+    "source_asset_ids": [
+      "Asset_611"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:10112"
+    ],
+    "source_names": [
+      "calcium carbonate"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:3699",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 29,
+      "ultra": 75
+    },
+    "source_asset_ids": [
+      "Asset_616"
+    ],
+    "source_ids": [
+      "CHEBI:3699"
+    ],
+    "source_names": [
+      "cimetidine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:4042",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_254"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:2912"
+    ],
+    "source_names": [
+      "Cypermethrin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:48607",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_260"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:433294"
+    ],
+    "source_names": [
+      "Lithium Chloride"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": true,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "UMLS:C0358591"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:49200",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 24,
+      "ultra": 291
+    },
+    "source_asset_ids": [
+      "Asset_255",
+      "Asset_608"
+    ],
+    "source_ids": [
+      "MESH:D054328"
+    ],
+    "source_names": [
+      "Proton pump inhibitors"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:49668",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_624"
+    ],
+    "source_ids": [
+      "CHEBI:49668"
+    ],
+    "source_names": [
+      "gefitinib"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:4975",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 14,
+      "ultra": 124
+    },
+    "source_asset_ids": [
+      "Asset_614"
+    ],
+    "source_ids": [
+      "CHEBI:4975"
+    ],
+    "source_names": [
+      "famotidine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50275",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 12,
+      "ultra": 53
+    },
+    "source_asset_ids": [
+      "Asset_620"
+    ],
+    "source_ids": [
+      "CHEBI:50275"
+    ],
+    "source_names": [
+      "esomeprazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50594",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_251"
+    ],
+    "source_ids": [
+      "MESH:D037742"
+    ],
+    "source_names": [
+      "Nanotubes, carbon"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6375",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 13,
+      "ultra": 65
+    },
+    "source_asset_ids": [
+      "Asset_619"
+    ],
+    "source_ids": [
+      "CHEBI:6375"
+    ],
+    "source_names": [
+      "lansoprazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6637",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 257,
+      "ultra": 239
+    },
+    "source_asset_ids": [
+      "Asset_613"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:73981"
+    ],
+    "source_names": [
+      "magnesium hydroxide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:7601",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 112,
+      "ultra": 100
+    },
+    "source_asset_ids": [
+      "Asset_615"
+    ],
+    "source_ids": [
+      "CHEBI:7601"
+    ],
+    "source_names": [
+      "nizatidine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:77260"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:7772",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 25,
+      "ultra": 269
+    },
+    "source_asset_ids": [
+      "Asset_618"
+    ],
+    "source_ids": [
+      "CHEBI:7772"
+    ],
+    "source_names": [
+      "omeprazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:7915",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 15,
+      "ultra": 94
+    },
+    "source_asset_ids": [
+      "Asset_621"
+    ],
+    "source_ids": [
+      "CHEBI:7915"
+    ],
+    "source_names": [
+      "pantoprazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8768",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 3,
+      "ultra": 83
+    },
+    "source_asset_ids": [
+      "Asset_623"
+    ],
+    "source_ids": [
+      "CHEBI:8768"
+    ],
+    "source_names": [
+      "rabeprazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:92246"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8776",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 49,
+      "ultra": 98
+    },
+    "source_asset_ids": [
+      "Asset_617"
+    ],
+    "source_ids": [
+      "CHEBI:8776"
+    ],
+    "source_names": [
+      "ranitidine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:53311",
+      "PUBCHEM.COMPOUND:5102882",
+      "UNII:C269C4G2ZQ"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEMBL.COMPOUND:CHEMBL2108744",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 537,
+      "ultra": 168
+    },
+    "source_asset_ids": [
+      "Asset_609"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL2108744"
+    ],
+    "source_names": [
+      "sodium alginate"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEMBL.COMPOUND:CHEMBL3545346",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_629"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL3545346"
+    ],
+    "source_names": [
+      "Azd2516"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D001786",
+    "qid": 17,
+    "ranks": {
+      "aragorn": 128,
+      "ultra": 424
+    },
+    "source_asset_ids": [
+      "Asset_259"
+    ],
+    "source_ids": [
+      "MESH:D001786"
+    ],
+    "source_names": [
+      "Blood glucose"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D014028",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_257"
+    ],
+    "source_ids": [
+      "MESH:D014028"
+    ],
+    "source_names": [
+      "Tobacco smoke pollution"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": true,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": null,
+    "labels": [
+      "BadButForgivable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MONDO:0018958",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_626",
+      "Asset_627"
+    ],
+    "source_ids": [
+      "MONDO:0018958"
+    ],
+    "source_names": [
+      "nemaline"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_269"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Oxygen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_name_identity_mismatch",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:9313"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:121494085",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_610"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:121494085"
+    ],
+    "source_names": [
+      "sucralfate"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:56842000",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_264"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:56842000"
+    ],
+    "source_names": [
+      "Talcid"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_name_identity_mismatch",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:33130"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:6336693",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_612"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6336693"
+    ],
+    "source_names": [
+      "aluminum hydroxide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003289",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_261"
+    ],
+    "source_ids": [
+      "UMLS:C0003289"
+    ],
+    "source_names": [
+      "Antidepressive agents"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0699680",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_256"
+    ],
+    "source_ids": [
+      "UMLS:C0699680"
+    ],
+    "source_names": [
+      "Metric (substance)"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C3166216",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_258"
+    ],
+    "source_ids": [
+      "UMLS:C3166216"
+    ],
+    "source_names": [
+      "Prescribed medications"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:6A901E312A",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_625"
+    ],
+    "source_ids": [
+      "UNII:6A901E312A"
+    ],
+    "source_names": [
+      "panitumumab"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:8C63R2Y02M",
+    "qid": 17,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_630"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:9823762"
+    ],
+    "source_names": [
+      "revexepride"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:38545",
+    "qid": 20,
+    "ranks": {
+      "aragorn": 65,
+      "ultra": 2
+    },
+    "source_asset_ids": [
+      "Asset_71",
+      "Asset_75"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:446157"
+    ],
+    "source_names": [
+      "Rosuvastatin"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:72297",
+    "qid": 20,
+    "ranks": {
+      "aragorn": 6,
+      "ultra": 11
+    },
+    "source_asset_ids": [
+      "Asset_72"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:9853053"
+    ],
+    "source_names": [
+      "Lomitapide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:9GJ8S4GU0M",
+    "qid": 20,
+    "ranks": {
+      "aragorn": 38,
+      "ultra": 11
+    },
+    "source_asset_ids": [
+      "Asset_73"
+    ],
+    "source_ids": [
+      "UNII:9GJ8S4GU0M"
+    ],
+    "source_names": [
+      "Mipomersen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:LKC0U3A8NJ",
+    "qid": 20,
+    "ranks": {
+      "aragorn": 32,
+      "ultra": 11
+    },
+    "source_asset_ids": [
+      "Asset_74"
+    ],
+    "source_ids": [
+      "UNII:LKC0U3A8NJ"
+    ],
+    "source_names": [
+      "Evolocumab"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:187893",
+    "qid": 21,
+    "ranks": {
+      "aragorn": 5,
+      "ultra": 14
+    },
+    "source_asset_ids": [
+      "Asset_171"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:2284"
+    ],
+    "source_names": [
+      "Baclofen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:3387",
+    "qid": 21,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_173"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:2554"
+    ],
+    "source_names": [
+      "Carbamazepine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:5855",
+    "qid": 21,
+    "ranks": {
+      "aragorn": 44,
+      "ultra": 38
+    },
+    "source_asset_ids": [
+      "Asset_170"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3672"
+    ],
+    "source_names": [
+      "Ibuprofen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEMBL.COMPOUND:CHEMBL1201569",
+    "qid": 21,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_172"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL1201569"
+    ],
+    "source_names": [
+      "Botulinum toxin type b"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": true,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "BadButForgivable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "DRUGBANK:DB09337",
+    "qid": 21,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_188",
+      "Asset_189",
+      "Asset_190"
+    ],
+    "source_ids": [
+      "UMLS:C3536832"
+    ],
+    "source_names": [
+      "Air"
+    ],
+    "source_record_count": 3
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D000336",
+    "qid": 21,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_192"
+    ],
+    "source_ids": [
+      "MESH:D000336"
+    ],
+    "source_names": [
+      "Aerosols"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "NCIT:C38065",
+    "qid": 21,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_194"
+    ],
+    "source_ids": [
+      "NCIT:C38065"
+    ],
+    "source_names": [
+      "Hyperbaric oxygen therapy"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003232",
+    "qid": 21,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_168"
+    ],
+    "source_ids": [
+      "UMLS:C0003232"
+    ],
+    "source_names": [
+      "Antibiotics"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0013227",
+    "qid": 21,
+    "ranks": {
+      "aragorn": 39,
+      "ultra": 29
+    },
+    "source_asset_ids": [
+      "Asset_169",
+      "Asset_193"
+    ],
+    "source_ids": [
+      "UMLS:C0013227"
+    ],
+    "source_names": [
+      "Pharmaceutical Preparations",
+      "Pharmaceutical preparations"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16240",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_241"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:784"
+    ],
+    "source_names": [
+      "Hydrogen peroxide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:17650",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_215"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5754"
+    ],
+    "source_names": [
+      "Hydrocortisone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:17997",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_242",
+      "Asset_246"
+    ],
+    "source_ids": [
+      "UMLS:C1306770",
+      "UMLS:C1337101"
+    ],
+    "source_names": [
+      "Nitrogen 99.7 %",
+      "Nitrogen 99.9 %"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:22563",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_224"
+    ],
+    "source_ids": [
+      "MESH:D000838"
+    ],
+    "source_names": [
+      "Anions"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:22977",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_225"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:23973"
+    ],
+    "source_names": [
+      "Cadmium"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:23367",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_231"
+    ],
+    "source_ids": [
+      "CHEBI:23367"
+    ],
+    "source_names": [
+      "Molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:23424",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_227"
+    ],
+    "source_ids": [
+      "CHEBI:23424"
+    ],
+    "source_names": [
+      "Cyanides"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24431",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_230"
+    ],
+    "source_ids": [
+      "CHEBI:24431"
+    ],
+    "source_names": [
+      "Chemical entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24433",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_239"
+    ],
+    "source_ids": [
+      "CHEBI:24433"
+    ],
+    "source_names": [
+      "Group"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24473",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_244"
+    ],
+    "source_ids": [
+      "MESH:D006219"
+    ],
+    "source_names": [
+      "Halogens"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24532",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_249"
+    ],
+    "source_ids": [
+      "CHEBI:24532"
+    ],
+    "source_names": [
+      "Organic heterocyclic compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:24835",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_229"
+    ],
+    "source_ids": [
+      "MESH:D007287"
+    ],
+    "source_names": [
+      "Inorganic chemicals"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25806",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_243"
+    ],
+    "source_ids": [
+      "CHEBI:25806"
+    ],
+    "source_names": [
+      "Oxygen molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27958",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_240"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:446220"
+    ],
+    "source_names": [
+      "Cocaine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:29678",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_223"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:443495"
+    ],
+    "source_names": [
+      "Sodium arsenite"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33250",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_237"
+    ],
+    "source_ids": [
+      "CHEBI:33250"
+    ],
+    "source_names": [
+      "Atom"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33252",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_235"
+    ],
+    "source_ids": [
+      "MESH:D002467"
+    ],
+    "source_names": [
+      "Cell nucleus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33582",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_234"
+    ],
+    "source_ids": [
+      "CHEBI:33582"
+    ],
+    "source_names": [
+      "Carbon group molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:33832",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_248"
+    ],
+    "source_ids": [
+      "CHEBI:33832"
+    ],
+    "source_names": [
+      "Organic cyclic compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36586",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_245"
+    ],
+    "source_ids": [
+      "CHEBI:36586"
+    ],
+    "source_names": [
+      "Carbonyl compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36587",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_236"
+    ],
+    "source_ids": [
+      "CHEBI:36587"
+    ],
+    "source_names": [
+      "Organic oxo compound"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36830",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_247"
+    ],
+    "source_ids": [
+      "CHEBI:36830"
+    ],
+    "source_names": [
+      "Monoanion"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36916",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_222"
+    ],
+    "source_ids": [
+      "MESH:D002412"
+    ],
+    "source_names": [
+      "Cations"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:41879",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_216"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5743"
+    ],
+    "source_names": [
+      "Dexamethasone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50860",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_233"
+    ],
+    "source_ids": [
+      "CHEBI:50860"
+    ],
+    "source_names": [
+      "Organic molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:51143",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_232"
+    ],
+    "source_ids": [
+      "CHEBI:51143"
+    ],
+    "source_names": [
+      "Nitrogen molecular entity"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:613010",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_221"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:11302220"
+    ],
+    "source_names": [
+      "Cocain-chlorhydrat"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6888",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_213"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6741"
+    ],
+    "source_names": [
+      "Methylprednisolone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8382",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_214"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5865"
+    ],
+    "source_names": [
+      "Prednisone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:9667",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_217"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:31307"
+    ],
+    "source_names": [
+      "Triamcinolone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D014028",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_218"
+    ],
+    "source_ids": [
+      "MESH:D014028"
+    ],
+    "source_names": [
+      "Tobacco smoke pollution"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_226"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Azoles"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_228"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Imidazoles"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_238"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Ions"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:132472080",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_220"
+    ],
+    "source_ids": [
+      "MESH:D037342"
+    ],
+    "source_names": [
+      "Pertussis toxin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0008356",
+    "qid": 22,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_219"
+    ],
+    "source_ids": [
+      "MESH:D002772"
+    ],
+    "source_names": [
+      "Cholera Toxin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50381",
+    "qid": 23,
+    "ranks": {
+      "aragorn": 1,
+      "ultra": 5
+    },
+    "source_asset_ids": [
+      "Asset_67"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:51634"
+    ],
+    "source_names": [
+      "Miglustat"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:82752",
+    "qid": 23,
+    "ranks": {
+      "aragorn": 4,
+      "ultra": 5
+    },
+    "source_asset_ids": [
+      "Asset_63"
+    ],
+    "source_ids": [
+      "CHEBI:82752"
+    ],
+    "source_names": [
+      "Eliglustat"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:0R4NLX88O4",
+    "qid": 23,
+    "ranks": {
+      "aragorn": 3,
+      "ultra": 5
+    },
+    "source_asset_ids": [
+      "Asset_65"
+    ],
+    "source_ids": [
+      "UNII:0R4NLX88O4"
+    ],
+    "source_names": [
+      "Taliglucerase alfa"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:23HYE36B0I",
+    "qid": 23,
+    "ranks": {
+      "aragorn": 2,
+      "ultra": 1
+    },
+    "source_asset_ids": [
+      "Asset_66"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL1201865"
+    ],
+    "source_names": [
+      "Velaglucerase-alfa"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:Q6U6J48BWY",
+    "qid": 23,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_64"
+    ],
+    "source_ids": [
+      "UNII:Q6U6J48BWY"
+    ],
+    "source_names": [
+      "Imiglucerase"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:5931",
+    "qid": 24,
+    "ranks": {
+      "aragorn": 3,
+      "ultra": 217
+    },
+    "source_asset_ids": [
+      "Asset_187"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:16137271"
+    ],
+    "source_names": [
+      "Insulin detremir"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6801",
+    "qid": 24,
+    "ranks": {
+      "aragorn": 44,
+      "ultra": 79
+    },
+    "source_asset_ids": [
+      "Asset_185"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4091"
+    ],
+    "source_names": [
+      "Metformin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:17823",
+    "qid": 25,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_88"
+    ],
+    "source_ids": [
+      "CHEBI:17823"
+    ],
+    "source_names": [
+      "calcitriol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:18295",
+    "qid": 25,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_51"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:774"
+    ],
+    "source_names": [
+      "Histamine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27300",
+    "qid": 25,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_89"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5280793"
+    ],
+    "source_names": [
+      "ergocalciferol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:34385",
+    "qid": 25,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_91"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:1727"
+    ],
+    "source_names": [
+      "4-Aminopyridine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:5855",
+    "qid": 25,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_85"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3672"
+    ],
+    "source_names": [
+      "ibuprofen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_name_identity_mismatch",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:15551"
+    ],
+    "normalization_status": "unresolved",
+    "preferred_id": "NCIT:C61727",
+    "qid": 25,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_87"
+    ],
+    "source_ids": [
+      "NCIT:C61727"
+    ],
+    "source_names": [
+      "dinoprostone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0006055",
+    "qid": 25,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_86"
+    ],
+    "source_ids": [
+      "NCIT:C163032"
+    ],
+    "source_names": [
+      "botulinum toxin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:25944",
+    "qid": 27,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_47"
+    ],
+    "source_ids": [
+      "MESH:D010575"
+    ],
+    "source_names": [
+      "Pesticides"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:39867",
+    "qid": 27,
+    "ranks": {
+      "aragorn": 41,
+      "ultra": 38
+    },
+    "source_asset_ids": [
+      "Asset_46"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3121"
+    ],
+    "source_names": [
+      "Valproic acid"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:12777",
+    "qid": 31,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_92"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:445354"
+    ],
+    "source_names": [
+      "retinol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:30879",
+    "qid": 31,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_95"
+    ],
+    "source_ids": [
+      "MESH:D000438"
+    ],
+    "source_names": [
+      "Alcohols"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:141213",
+    "qid": 32,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_83"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:84098"
+    ],
+    "source_names": [
+      "Isoxaflutole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16130",
+    "qid": 32,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_84"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3036"
+    ],
+    "source_names": [
+      "Clofenotane"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:17578",
+    "qid": 32,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_82"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:1140"
+    ],
+    "source_names": [
+      "Toluene"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:45783",
+    "qid": 32,
+    "ranks": {
+      "aragorn": 40,
+      "ultra": 3
+    },
+    "source_asset_ids": [
+      "Asset_80"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5291"
+    ],
+    "source_names": [
+      "Imatinib"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50924",
+    "qid": 32,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_81"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:216239"
+    ],
+    "source_names": [
+      "Sorafenib"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_name_identity_mismatch",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "UNII:3A58010674"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:4AWF0N6QV3",
+    "qid": 33,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_309"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:77910626"
+    ],
+    "source_names": [
+      "Pegfilgrastim"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:141213",
+    "qid": 34,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_132"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:84098"
+    ],
+    "source_names": [
+      "Isoxaflutole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MONDO:0009131",
+    "qid": 34,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_183"
+    ],
+    "source_ids": [
+      "MONDO:0009131"
+    ],
+    "source_names": [
+      "Riley-day Syndrome"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MONDO:0016028",
+    "qid": 34,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_182"
+    ],
+    "source_ids": [
+      "MONDO:0016028"
+    ],
+    "source_names": [
+      "Erythromelalgia"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0085297",
+    "qid": 34,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_131"
+    ],
+    "source_ids": [
+      "MESH:D016756"
+    ],
+    "source_names": [
+      "Immunoglobulins, intravenous"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16811",
+    "qid": 36,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_93"
+    ],
+    "source_ids": [
+      "CHEBI:16811"
+    ],
+    "source_names": [
+      "methionine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:3478",
+    "qid": 36,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_94"
+    ],
+    "source_ids": [
+      "CHEBI:3478"
+    ],
+    "source_names": [
+      "cefaclor"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "PUBCHEM.COMPOUND:2269"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:2955",
+    "qid": 37,
+    "ranks": {
+      "aragorn": 7,
+      "ultra": 65
+    },
+    "source_asset_ids": [
+      "Asset_331"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:447043"
+    ],
+    "source_names": [
+      "azithromycin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:4470",
+    "qid": 37,
+    "ranks": {
+      "aragorn": 235,
+      "ultra": 340
+    },
+    "source_asset_ids": [
+      "Asset_332"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5360696"
+    ],
+    "source_names": [
+      "dextromethorphan"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:3E3D8T1GIX",
+    "qid": 37,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_330"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:9934746"
+    ],
+    "source_names": [
+      "ensifentrine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D052638",
+    "qid": 38,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_50"
+    ],
+    "source_ids": [
+      "MESH:D052638"
+    ],
+    "source_names": [
+      "particulate matter"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:5938",
+    "qid": 40,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_306"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL1201563"
+    ],
+    "source_names": [
+      "interferon-beta 1b"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D001335",
+    "qid": 40,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_7"
+    ],
+    "source_ids": [
+      "MESH:D001335"
+    ],
+    "source_names": [
+      "Vehicle Emissions"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "PUBCHEM.COMPOUND:5284616",
+    "qid": 40,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_11"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5284616"
+    ],
+    "source_names": [
+      "sirolimus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:4F4X42SYQ6",
+    "qid": 40,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_12"
+    ],
+    "source_ids": [
+      "UNII:4F4X42SYQ6"
+    ],
+    "source_names": [
+      "rituximab"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:9013DUQ28K",
+    "qid": 40,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_13"
+    ],
+    "source_ids": [
+      "UNII:9013DUQ28K"
+    ],
+    "source_names": [
+      "anakinra"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:XRO4566Q4R",
+    "qid": 40,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_14"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL1201562"
+    ],
+    "source_names": [
+      "interferon-beta 1a"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "PUBCHEM.COMPOUND:5150939"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:50381",
+    "qid": 44,
+    "ranks": {
+      "aragorn": 1,
+      "ultra": 2
+    },
+    "source_asset_ids": [
+      "Asset_70"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:51634"
+    ],
+    "source_names": [
+      "Miglustat"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:39867",
+    "qid": 46,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_3"
+    ],
+    "source_ids": [
+      "DRUGBANK:DB00313"
+    ],
+    "source_names": [
+      "Valproic Acid"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D001463",
+    "qid": 46,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_4"
+    ],
+    "source_ids": [
+      "MESH:D001463"
+    ],
+    "source_names": [
+      "Barbiturates"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "PUBCHEM.COMPOUND:76415573"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:145994",
+    "qid": 47,
+    "ranks": {
+      "aragorn": 69,
+      "ultra": 2
+    },
+    "source_asset_ids": [
+      "Asset_502"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:121304016"
+    ],
+    "source_names": [
+      "Remdesivir"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:164200",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_44"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5564"
+    ],
+    "source_names": [
+      "Triclosan"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27300",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_37"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5280793"
+    ],
+    "source_names": [
+      "Ergocalciferol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:3131",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_39"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:2406"
+    ],
+    "source_names": [
+      "Bithionol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:36218",
+    "qid": 48,
+    "ranks": {
+      "aragorn": 5,
+      "ultra": 7
+    },
+    "source_asset_ids": [
+      "Asset_33",
+      "Asset_36"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6134"
+    ],
+    "source_names": [
+      "alpha-Lactose",
+      "beta-Lactose"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:38721",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_42"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4096"
+    ],
+    "source_names": [
+      "Methamidophos"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:45979",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_40"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5430"
+    ],
+    "source_names": [
+      "Thiabendazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:61049",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_45"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:445643"
+    ],
+    "source_names": [
+      "Tacrolimus"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6432",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_41"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:26879"
+    ],
+    "source_names": [
+      "Levamisole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6704",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_38"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4030"
+    ],
+    "source_names": [
+      "Mebendazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:81862",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_43"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:516893"
+    ],
+    "source_names": [
+      "Potassium bicarbonate"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEMBL.COMPOUND:CHEMBL2108505",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_32"
+    ],
+    "source_ids": [
+      "CHEMBL.COMPOUND:CHEMBL2108505"
+    ],
+    "source_names": [
+      "Lactase"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D010936",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_34"
+    ],
+    "source_ids": [
+      "MESH:D010936"
+    ],
+    "source_names": [
+      "Plant extracts"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D028321",
+    "qid": 48,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_35"
+    ],
+    "source_ids": [
+      "MESH:D028321"
+    ],
+    "source_names": [
+      "Plant preparations"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "PUBCHEM.COMPOUND:2269"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:2955",
+    "qid": 49,
+    "ranks": {
+      "aragorn": 4,
+      "ultra": 270
+    },
+    "source_asset_ids": [
+      "Asset_321"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:447043"
+    ],
+    "source_names": [
+      "Azithromycin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:42355",
+    "qid": 49,
+    "ranks": {
+      "aragorn": 100,
+      "ultra": 436
+    },
+    "source_asset_ids": [
+      "Asset_322"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:12560"
+    ],
+    "source_names": [
+      "Erythromycin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8499",
+    "qid": 49,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_323"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4946"
+    ],
+    "source_names": [
+      "Propranolol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0013227",
+    "qid": 52,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_57"
+    ],
+    "source_ids": [
+      "UMLS:C0013227"
+    ],
+    "source_names": [
+      "Pharmaceutical preparations"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:17895",
+    "qid": 54,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_174"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:6057"
+    ],
+    "source_names": [
+      "Tyrosine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:28119",
+    "qid": 54,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_176"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:15625"
+    ],
+    "source_names": [
+      "2,3,7,8-tetrachlorodibenzo-p-dioxin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:28876",
+    "qid": 54,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_175"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:460612"
+    ],
+    "source_names": [
+      "Melphalan"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:74947",
+    "qid": 54,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_177"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5426"
+    ],
+    "source_names": [
+      "Thalidimide"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6076",
+    "qid": 55,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_320"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:55283"
+    ],
+    "source_names": [
+      "Itraconazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:66901",
+    "qid": 55,
+    "ranks": {
+      "aragorn": 102,
+      "ultra": 47
+    },
+    "source_asset_ids": [
+      "Asset_318"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:16220172"
+    ],
+    "source_names": [
+      "Ivacaftor"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C3489797",
+    "qid": 55,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_319"
+    ],
+    "source_ids": [
+      "UMLS:C3489797"
+    ],
+    "source_names": [
+      "AZD9668"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6801",
+    "qid": 57,
+    "ranks": {
+      "aragorn": 70,
+      "ultra": 19
+    },
+    "source_asset_ids": [
+      "Asset_401"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4091"
+    ],
+    "source_names": [
+      "Metformin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:6T8C155666",
+    "qid": 57,
+    "ranks": {
+      "aragorn": 297,
+      "ultra": 272
+    },
+    "source_asset_ids": [
+      "Asset_402"
+    ],
+    "source_ids": [
+      "UNII:6T8C155666"
+    ],
+    "source_names": [
+      "Ipilimumab (Yervoy)"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:PQX0D8J21J",
+    "qid": 57,
+    "ranks": {
+      "aragorn": 31,
+      "ultra": 43
+    },
+    "source_asset_ids": [
+      "Asset_400"
+    ],
+    "source_ids": [
+      "RXCUI:1657659"
+    ],
+    "source_names": [
+      "Cetuximab (Erbitux)"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "PUBCHEM.COMPOUND:4659387"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:5134",
+    "qid": 60,
+    "ranks": {
+      "aragorn": 73,
+      "ultra": 2
+    },
+    "source_asset_ids": [
+      "Asset_315"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5311101"
+    ],
+    "source_names": [
+      "Fluticasone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8499",
+    "qid": 60,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_317"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4946"
+    ],
+    "source_names": [
+      "Propranolol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C2194286",
+    "qid": 60,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_316"
+    ],
+    "source_ids": [
+      "UMLS:C2194286"
+    ],
+    "source_names": [
+      "Albuterol (salbutamol)"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:135938",
+    "qid": 61,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_76"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:216416"
+    ],
+    "source_names": [
+      "lasofoxifene"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [
+      "CHEBI:23965"
+    ],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16469",
+    "qid": 61,
+    "ranks": {
+      "aragorn": 2,
+      "ultra": 12
+    },
+    "source_asset_ids": [
+      "Asset_78"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5757"
+    ],
+    "source_names": [
+      "estradiol"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:28901",
+    "qid": 61,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_6",
+      "Asset_77"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:2478"
+    ],
+    "source_names": [
+      "busulfan"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:59826",
+    "qid": 61,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_79"
+    ],
+    "source_ids": [
+      "MESH:D011372"
+    ],
+    "source_names": [
+      "progestin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:81526",
+    "qid": 61,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_5"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:12358480"
+    ],
+    "source_names": [
+      "hexadrin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C1874451",
+    "qid": 61,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_48"
+    ],
+    "source_ids": [
+      "UMLS:C1874451"
+    ],
+    "source_names": [
+      "basis"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:27958",
+    "qid": 62,
+    "ranks": {
+      "aragorn": 17,
+      "ultra": 159
+    },
+    "source_asset_ids": [
+      "Asset_178"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:446220"
+    ],
+    "source_names": [
+      "Cocaine"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6887",
+    "qid": 62,
+    "ranks": {
+      "aragorn": 7,
+      "ultra": 5
+    },
+    "source_asset_ids": [
+      "Asset_179"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4158"
+    ],
+    "source_names": [
+      "Methylphenidate"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8382",
+    "qid": 63,
+    "ranks": {
+      "aragorn": 8,
+      "ultra": 6
+    },
+    "source_asset_ids": [
+      "Asset_181"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5865"
+    ],
+    "source_names": [
+      "Prednisone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "unresolved",
+    "preferred_id": "UNNI:R581OT55EA",
+    "qid": 63,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_180"
+    ],
+    "source_ids": [
+      "UNNI:R581OT55EA"
+    ],
+    "source_names": [
+      "Pegloticase"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:420K487FSG",
+    "qid": 67,
+    "ranks": {
+      "aragorn": 3,
+      "ultra": 5
+    },
+    "source_asset_ids": [
+      "Asset_334"
+    ],
+    "source_ids": [
+      "UNII:420K487FSG"
+    ],
+    "source_names": [
+      "DUPILUMAB"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:16170",
+    "qid": 69,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_97"
+    ],
+    "source_ids": [
+      "CHEBI:25195"
+    ],
+    "source_names": [
+      "mercury"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:22977",
+    "qid": 69,
+    "ranks": {
+      "aragorn": 52,
+      "ultra": 83
+    },
+    "source_asset_ids": [
+      "Asset_96"
+    ],
+    "source_ids": [
+      "CHEBI:22977"
+    ],
+    "source_names": [
+      "cadmium"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:34689",
+    "qid": 72,
+    "ranks": {
+      "aragorn": 7,
+      "ultra": 10
+    },
+    "source_asset_ids": [
+      "Asset_55"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:3037"
+    ],
+    "source_names": [
+      "Dichlorophen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:45979",
+    "qid": 72,
+    "ranks": {
+      "aragorn": 4,
+      "ultra": 10
+    },
+    "source_asset_ids": [
+      "Asset_54"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5430"
+    ],
+    "source_names": [
+      "Thiabendazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:6704",
+    "qid": 72,
+    "ranks": {
+      "aragorn": 1,
+      "ultra": 1
+    },
+    "source_asset_ids": [
+      "Asset_52"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:4030"
+    ],
+    "source_names": [
+      "Mebendazole"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8654",
+    "qid": 72,
+    "ranks": {
+      "aragorn": 5,
+      "ultra": 10
+    },
+    "source_asset_ids": [
+      "Asset_53"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:708857"
+    ],
+    "source_names": [
+      "Pyrantel"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "TopAnswer",
+    "labels": [
+      "TopAnswer"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UNII:DTI67O9503",
+    "qid": 76,
+    "ranks": {
+      "aragorn": 10,
+      "ultra": 2
+    },
+    "source_asset_ids": [
+      "Asset_403"
+    ],
+    "source_ids": [
+      "UNII:DTI67O9503"
+    ],
+    "source_names": [
+      "Alglucosidase Alfa"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:63638",
+    "qid": 77,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_141"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5665"
+    ],
+    "source_names": [
+      "vigabatrin"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:8382",
+    "qid": 77,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_140"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:5865"
+    ],
+    "source_names": [
+      "prednisone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "UMLS:C0003250",
+    "qid": 80,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_628"
+    ],
+    "source_ids": [
+      "MESH:D000911"
+    ],
+    "source_names": [
+      "Antibodies, Monoclonal"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": true,
+    "evaluation_status": "flagged_source_label",
+    "expected_output": null,
+    "labels": [
+      "Acceptable",
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "MESH:D053260",
+    "qid": 81,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_68",
+      "Asset_69"
+    ],
+    "source_ids": [
+      "MESH:D053260"
+    ],
+    "source_names": [
+      "Soot"
+    ],
+    "source_record_count": 2
+  },
+  {
+    "conflict": false,
+    "evaluation_status": "eligible",
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "name_only_mismatches": [],
+    "normalization_status": "resolved",
+    "preferred_id": "CHEBI:80160",
+    "qid": 82,
+    "ranks": {
+      "aragorn": null,
+      "ultra": null
+    },
+    "source_asset_ids": [
+      "Asset_90"
+    ],
+    "source_ids": [
+      "CHEBI:80160"
+    ],
+    "source_names": [
+      "fibrinogen"
+    ],
+    "source_record_count": 1
+  }
+]

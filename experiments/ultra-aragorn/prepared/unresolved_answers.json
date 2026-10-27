@@ -1,0 +1,254 @@
+[
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "source_asset_ids": [
+      "Asset_276"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Electrons"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "source_asset_ids": [
+      "Asset_277"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Formaldehyde"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "source_asset_ids": [
+      "Asset_278"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Organic anion"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 1,
+    "source_asset_ids": [
+      "Asset_279"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Acyl group"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "unresolved",
+    "preferred_id": "CHEMBL:2109042",
+    "qid": 6,
+    "source_asset_ids": [
+      "Asset_101"
+    ],
+    "source_ids": [
+      "CHEMBL:2109042"
+    ],
+    "source_names": [
+      "Influenza vaccines"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 17,
+    "source_asset_ids": [
+      "Asset_269"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Oxygen"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "normalization_status": "unresolved",
+    "preferred_id": "NCIT:C38065",
+    "qid": 21,
+    "source_asset_ids": [
+      "Asset_194"
+    ],
+    "source_ids": [
+      "NCIT:C38065"
+    ],
+    "source_names": [
+      "Hyperbaric oxygen therapy"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 22,
+    "source_asset_ids": [
+      "Asset_226"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Azoles"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "BadButForgivable",
+    "labels": [
+      "BadButForgivable"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 22,
+    "source_asset_ids": [
+      "Asset_228"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Imidazoles"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": true,
+    "normalization_status": "unresolved",
+    "preferred_id": "PUBCHEM.COMPOUND:",
+    "qid": 22,
+    "source_asset_ids": [
+      "Asset_238"
+    ],
+    "source_ids": [
+      "PUBCHEM.COMPOUND:"
+    ],
+    "source_names": [
+      "Ions"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "NeverShow",
+    "labels": [
+      "NeverShow"
+    ],
+    "malformed_id": false,
+    "normalization_status": "unresolved",
+    "preferred_id": "NCIT:C61727",
+    "qid": 25,
+    "source_asset_ids": [
+      "Asset_87"
+    ],
+    "source_ids": [
+      "NCIT:C61727"
+    ],
+    "source_names": [
+      "dinoprostone"
+    ],
+    "source_record_count": 1
+  },
+  {
+    "conflict": false,
+    "expected_output": "Acceptable",
+    "labels": [
+      "Acceptable"
+    ],
+    "malformed_id": false,
+    "normalization_status": "unresolved",
+    "preferred_id": "UNNI:R581OT55EA",
+    "qid": 63,
+    "source_asset_ids": [
+      "Asset_180"
+    ],
+    "source_ids": [
+      "UNNI:R581OT55EA"
+    ],
+    "source_names": [
+      "Pegloticase"
+    ],
+    "source_record_count": 1
+  }
+]

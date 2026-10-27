@@ -1,0 +1,654 @@
+qid,test_case_id,asset_id,query_input_id,source_input_id,input_name,predicate,output_id,output_name,output_category,expected_output,input_id_matches
+0,TestCase_0,Asset_329,MONDO:0011705,MONDO:0011705,Lymphangioleiomyomatosis,biolink:treats,UMLS:C0116660,ESTROSTEP Fe (Norethindrone Acetate and Ethinyl Estradiol),biolink:ChemicalEntity,NeverShow,True
+0,TestCase_0,Asset_328,MONDO:0011705,MONDO:0011705,Lymphangioleiomyomatosis,biolink:treats,PUBCHEM.COMPOUND:11520894,Ridaforolimus,biolink:ChemicalEntity,Acceptable,True
+0,TestCase_0,Asset_327,MONDO:0011705,MONDO:0011705,Lymphangioleiomyomatosis,biolink:treats,PUBCHEM.COMPOUND:5284616,Sirolimus,biolink:ChemicalEntity,TopAnswer,True
+1,TestCase_1,Asset_283,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:27081,Transition element atom,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_295,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:50047,Organic amino compound,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_299,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33710,Alpha-amino-acid residue,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_276,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:,Electrons,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_298,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,MESH:D061065,Polyketides,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_277,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:,Formaldehyde,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_294,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33431,Elemental chlorine,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_282,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33497,Transition element molecular entity,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_289,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33434,Elemental halogen,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_270,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:23982,Gadolinium,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_285,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,MESH:D000071940,Nucleons,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_293,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33674,S-block molecular entity,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_302,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:16042,Halide anion,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_292,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33433,Monoatomic halogen,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_284,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33562,F-block element atom,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_271,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,MESH:D007477,Ions,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_288,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:24532,Organic heterocyclic compound,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_272,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:190217,Oxide,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_301,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,MESH:D000470,Alkaloids,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_291,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33432,Monoatomic chlorine,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_287,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33695,Information biomacromolecule,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_286,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:36963,Organooxygen compound,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_290,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:24867,Monoatomic ion,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_300,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:79389,Monovalent inorganic anion,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_273,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:5462310,Carbon,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_278,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:,Organic anion,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_297,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:23991,Xenon,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_281,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:33677,F-block molecular entity,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_274,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:962,Water,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_275,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,MESH:D002412,Cations,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_280,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:25585,Nonmetal atom,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_279,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,PUBCHEM.COMPOUND:,Acyl group,biolink:ChemicalEntity,NeverShow,True
+1,TestCase_1,Asset_296,MONDO:0016063,MONDO:0016063,Cowden Disease,biolink:treats,CHEBI:37578,Halide,biolink:ChemicalEntity,NeverShow,True
+2,TestCase_2,Asset_515,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6010,RHO,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_542,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:29126,CD274,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_554,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:7314,UBB,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_503,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,CHEMBL.TARGET:CHEMBL204,UNIPROTKB:P00734,,TopAnswer,True
+2,TestCase_2,Asset_578,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:891,CCNB1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_539,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:2919,CXCL1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_581,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:22926,ATF6,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_519,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1386,ATF2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_558,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:7311,UBA52,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_574,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:998,CDC42,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_523,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3576,CXCL8,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_535,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:348,APOE,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_562,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:285,ANGPT2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_563,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6590,SLPI,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_534,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1435,CSF1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_522,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5743,PTGS2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_575,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:4170,MCL1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_559,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3976,LIF,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_518,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1385,CREB1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_580,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:339345,NANOS2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_538,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3480,IGF1R,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_579,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:283,ANG,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_555,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:4155,MBP,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_543,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:2167,FABP4,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_514,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:4513,COX2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_548,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:595,CCND1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_509,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:27352,SGSM3,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_572,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3574,IL7,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_525,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:8720,MBTPS1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_533,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5328,PLAU,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_564,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:284,ANGPT1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_513,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1956,EGFR,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_544,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:7020,TFAP2A,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_552,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:655,BMP7,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_505,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5345,SERPINF2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_591,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:10133,OPTN,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_529,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:10891,PPARGC1A,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_587,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:857,CAV1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_568,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:100506658,OCLN,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_586,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:27295,PDLIM3,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_569,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:4843,NOS2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_528,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3717,JACK2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_590,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1958,EGR1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_504,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,CHEMBL.COMPOUND:CHEMBL2108110,Thrombin,biolink:ChemicalEntity,TopAnswer,True
+2,TestCase_2,Asset_553,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5553,PRG2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_545,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:2099,ESR1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_512,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:2335,FN1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_565,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6382,SDC1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_532,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:133522,PPARGC1B,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_524,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:9402,GRAP2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_573,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3661,IRF3,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_508,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3725,JUN,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_549,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:894,CCND2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_566,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:2048,EPHB2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_589,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5175,PCAM1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_531,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:896,CCND3,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_527,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3567,IL5,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_570,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:361,AQP4,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_585,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:80150,ASRGL1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_593,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:10928,RALBP1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_507,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:2670,GFAP,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_550,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:7316,UBC,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_546,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1843,DUSP1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_511,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6774,STAT3,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_510,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6714,SRC,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_547,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:947,CD34,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_551,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1437,CSF2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_506,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5594,MAPK1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_592,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5534,PPP3R1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_584,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:55226,NAT10,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_571,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:4214,MAP3K1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_526,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6646,SOAT1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_530,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:4803,NGF,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_567,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:10850,CCL27,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_588,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:920,CD4,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_583,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:8408,ULK1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_556,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:23409,SIRT4,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_540,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:860,RUNX2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_517,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:3596,IL13,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_560,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:10875,FGL2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_537,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:2475,MTOR,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_521,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:5604,MAP2K1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_576,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:7108,TM7SF2,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_577,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:26033,ATRNL1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_520,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6387,CXCL12,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_536,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:1901,S1PR1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_561,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6772,STAT1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_516,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:468,ATF4,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_541,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:7442,TRPV1,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_557,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:6233,RPS27A,biolink:Gene,NeverShow,True
+2,TestCase_2,Asset_582,CHEBI:142437,CHEBI:142437,Lepirudin,biolink:affects,NCBIGene:29072,SETD2,biolink:Gene,NeverShow,True
+3,TestCase_3,Asset_145,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,PUBCHEM.COMPOUND:1727,4-aminopyridine,biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_148,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,UMLS:C1874451,basis,biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_144,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,MESH:D000779,"Anesthetics, local",biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_143,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,PUBCHEM.COMPOUND:5462310,Carbon,biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_138,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,PUBCHEM.COMPOUND:3562,Halothane,biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_139,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,PUBCHEM.COMPOUND:3763,isoflurane,biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_142,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,UMLS:C0013227,Pharmaceutical preparations,biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_147,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,UMLS:C0003232,Antibiotics,biolink:ChemicalEntity,NeverShow,True
+3,TestCase_3,Asset_146,MONDO:0018493,MONDO:0018493,Malignant Hyperthermia Of Anesthesia,biolink:treats,UMLS:C0002932,Anesthetics,biolink:ChemicalEntity,NeverShow,True
+4,TestCase_4,Asset_450,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:4314,MMP3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_446,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:1435,CSF1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_485,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:80150,ASRGL1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_431,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:6776,STAT5A,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_466,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7128,TNFAIP3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_489,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:479,ATP12A,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_470,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:6403,SELP,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_427,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:958,CD40,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_426,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:11035,RIPK3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_471,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:650,BMP2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_467,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:2597,GAPDH,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_488,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:477,ATP1A2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_430,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:148327,CREB3L4,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_484,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7098,TLR3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_447,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:3479,IGF1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_451,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:25816,TNFAIP8,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_437,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:8717,TRADD,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_460,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:10010,TANK,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_476,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:200186,CRTC2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_499,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:479,ATP12A,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_421,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:3562,IL3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_456,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:55824,PAG1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_417,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:823,CAPN1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_440,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:56302,TRPV5,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_483,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7108,TM7SF2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_482,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:2641,GCG,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_441,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:3576,CXCL8,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_416,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:249,ALPL,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_457,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:6402,SELL,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_420,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:100125288,ZGLP1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_477,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:22861,NLRP1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_498,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:477,ATP1A2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_461,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:1153,CIRBP,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_436,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:6646,SOAT1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_423,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:147138,TMC8,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_474,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7130,TNFAIP6,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_462,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:23705,CADM1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_435,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:6885,MAP3K7,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_419,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:1437,CSF2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_458,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:811,CALR,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_497,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:476,ATP1A1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_478,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:2919,CXCL1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_481,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:1585,CYP11B2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_439,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7472,WNT2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_442,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:3383,ICAM1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_415,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:495,ATP4A,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_454,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:9815,GIT2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_455,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:8811,GALR2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_414,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,UMLS:C0001473,Adenosine Triphosphatases,biolink:ChemicalEntity,NeverShow,True
+4,TestCase_4,Asset_443,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:4313,MMP2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_438,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:54884,RETSAT,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_480,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:3952,LEP,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_479,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:9943,OXSR1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_459,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:285,ANGPT2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_418,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:692639,SOD,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_434,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:939,CD27,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_463,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7132,TNFRSF1A,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_475,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:5094,PCBP2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_422,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:23118,TAB2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_429,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7182,NR2C2,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_491,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:478,ATP1A3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_487,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:476,ATP1A1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_468,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:1956,EGFR,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_444,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:6401,SELE,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_501,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:478,ATP1A3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_413,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:738,VPS51,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_452,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:51330,TNFRSF12A,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_425,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:57154,SMURF1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_472,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:5428,POLG,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_464,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:51497,NELFCD,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_433,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:26330,GAPDHS,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_448,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:2308,FOXO1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_449,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:8743,TNFSF10,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_432,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:27352,SGSM3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_465,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:5806,PTX3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_473,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:22943,DKK1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_424,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:57410,SCYL1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_453,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:355,FAS,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_445,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:7311,UBA52,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_500,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:480,ATP1A4,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_486,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:10488,CREB3,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_469,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:9421,HAND1,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_490,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:480,ATP1A4,biolink:Gene,NeverShow,True
+4,TestCase_4,Asset_428,CHEBI:29103,CHEBI:29103,Potassium ion,biolink:affects,NCBIGene:4843,NOS2,biolink:Gene,NeverShow,True
+5,TestCase_5,Asset_391,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,PUBCHEM.COMPOUND:451668,decitabine,biolink:ChemicalEntity,TopAnswer,True
+5,TestCase_5,Asset_390,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,PUBCHEM.COMPOUND:9444,azacitidine,biolink:ChemicalEntity,TopAnswer,True
+5,TestCase_5,Asset_397,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,PUBCHEM.COMPOUND:26945,Hemin,biolink:ChemicalEntity,TopAnswer,True
+5,TestCase_5,Asset_396,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,UMLS:C0581820,Butyrate Derivatives,biolink:ChemicalEntity,TopAnswer,True
+5,TestCase_5,Asset_395,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,PUBCHEM.COMPOUND:23622962,arginine butyrate,biolink:ChemicalEntity,TopAnswer,True
+5,TestCase_5,Asset_394,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,PUBCHEM.COMPOUND:5222465,sodium butyrate,biolink:ChemicalEntity,TopAnswer,True
+5,TestCase_5,Asset_398,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,PUBCHEM.COMPOUND:5961,L-Glutamine,biolink:ChemicalEntity,Acceptable,True
+5,TestCase_5,Asset_393,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,PUBCHEM.COMPOUND:3657,Hydroxyurea,biolink:ChemicalEntity,Acceptable,True
+5,TestCase_5,Asset_392,NCBIGene:3043,NCBIGene:3043,HBB,biolink:affects,CHEMBL:4034633,DNMT inhibitor,,TopAnswer,True
+6,TestCase_6,Asset_112,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0005522,Biological products,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_104,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0243192,Agonists,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_10,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,PUBCHEM.COMPOUND:5352425,lead,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_108,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D000276,"Adjuvants, immunologic",biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_109,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D000906,Antibodies,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_105,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C1611640,Therapeutic agent,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_113,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0242912,Neuroprotective agents,biolink:ChemicalEntity,BadButForgivable,True
+6,TestCase_6,Asset_118,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,PUBCHEM.COMPOUND:23931,Mercury,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_122,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,PUBCHEM.COMPOUND:5462310,Carbon,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_8,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,PUBCHEM.COMPOUND:107970,fingolimod,biolink:ChemicalEntity,TopAnswer,True
+6,TestCase_6,Asset_114,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0003232,Antibiotics,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_102,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0599934,"Vaccines, peptide",biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_98,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D014612,vaccines,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_103,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0699680,Metric,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_115,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C1874451,basis,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_9,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D000069442,natalizumab,biolink:ChemicalEntity,TopAnswer,True
+6,TestCase_6,Asset_123,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,PUBCHEM.COMPOUND:962,Water,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_119,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D005227,Fatty acids,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_120,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D010936,Plant extracts,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_100,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C5387588,Covid-19 vaccines,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_116,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0242896,Anticholinergic agents,biolink:ChemicalEntity,Acceptable,True
+6,TestCase_6,Asset_117,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D000700,Analgesics,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_101,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,CHEMBL:2109042,Influenza vaccines,,NeverShow,True
+6,TestCase_6,Asset_121,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D004365,"Drugs, chinese herbal",biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_106,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0302837,Vitamin supplementation,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_110,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0040616,Anti-anxiety agents,biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_111,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,MESH:D000911,"Antibodies, monoclonal",biolink:ChemicalEntity,NeverShow,True
+6,TestCase_6,Asset_107,MONDO:0005301,MONDO:0005301,Multiple Sclerosis,biolink:treats,UMLS:C0003209,Anti-inflammatory agents,biolink:ChemicalEntity,NeverShow,True
+7,TestCase_7,Asset_407,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:71496458,osimertinib,biolink:ChemicalEntity,Acceptable,True
+7,TestCase_7,Asset_411,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:54671203,doxycycline,biolink:ChemicalEntity,BadButForgivable,True
+7,TestCase_7,Asset_493,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,UNII:DPT0O3T46P,pembrolizumab,,TopAnswer,True
+7,TestCase_7,Asset_410,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,MESH:D000076983,histone-lysine methyltransferases,biolink:ChemicalEntity,Acceptable,True
+7,TestCase_7,Asset_406,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,Substance SID: 387065587,amivantamab-vmjw,,Acceptable,True
+7,TestCase_7,Asset_495,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:3121,valproic acid,biolink:ChemicalEntity,TopAnswer,True
+7,TestCase_7,Asset_494,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:5394,temozolomide,biolink:ChemicalEntity,TopAnswer,True
+7,TestCase_7,Asset_496,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:11707110,trametinib,biolink:ChemicalEntity,TopAnswer,True
+7,TestCase_7,Asset_405,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:123631,gefitinib,biolink:ChemicalEntity,Acceptable,True
+7,TestCase_7,Asset_409,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:70693519,dacomitinib,biolink:ChemicalEntity,Acceptable,True
+7,TestCase_7,Asset_408,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:176870,erlotinib,biolink:ChemicalEntity,Acceptable,True
+7,TestCase_7,Asset_404,NCBIGene:6605,NCBIGene:6605,SMARCE1,biolink:affects,PUBCHEM.COMPOUND:15606394,afatinib,biolink:ChemicalEntity,Acceptable,True
+8,TestCase_8,Asset_368,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:156419,Cinacalcet,biolink:ChemicalEntity,TopAnswer,True
+8,TestCase_8,Asset_372,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:2554,Carbamazepine,biolink:ChemicalEntity,NeverShow,True
+8,TestCase_8,Asset_364,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:43815,Paroxetine,biolink:ChemicalEntity,TopAnswer,True
+8,TestCase_8,Asset_365,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:441074,Quinidine,biolink:ChemicalEntity,TopAnswer,True
+8,TestCase_8,Asset_373,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:4763,Phenobarbital,biolink:ChemicalEntity,NeverShow,True
+8,TestCase_8,Asset_369,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:3100,Diphenhydramine,biolink:ChemicalEntity,TopAnswer,True
+8,TestCase_8,Asset_374,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:1775,Phenytoin,biolink:ChemicalEntity,NeverShow,True
+8,TestCase_8,Asset_314,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:5452,Thioridazine,biolink:ChemicalEntity,Acceptable,True
+8,TestCase_8,Asset_363,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:3386,Fluoxetine,biolink:ChemicalEntity,TopAnswer,True
+8,TestCase_8,Asset_375,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:3663,St. John's Wort (Hypericum perforatum),biolink:ChemicalEntity,NeverShow,True
+8,TestCase_8,Asset_366,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:60835,Duloxetine,biolink:ChemicalEntity,TopAnswer,True
+8,TestCase_8,Asset_370,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:2157,Amiodarone,biolink:ChemicalEntity,TopAnswer,True
+8,TestCase_8,Asset_371,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,PUBCHEM.COMPOUND:135398735,Rifampicin,biolink:ChemicalEntity,NeverShow,True
+8,TestCase_8,Asset_367,NCBIGene:1565,NCBIGene:1565,CYP2D6,biolink:affects,CHEBI:3219,Bupropion,biolink:ChemicalEntity,TopAnswer,True
+9,TestCase_9,Asset_387,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:3410,formoterol,biolink:ChemicalEntity,TopAnswer,True
+9,TestCase_9,Asset_308,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:4946,Propranalol,biolink:ChemicalEntity,NeverShow,True
+9,TestCase_9,Asset_386,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,CHEBI:64064,salmeterol,biolink:ChemicalEntity,TopAnswer,True
+9,TestCase_9,Asset_307,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:2083,Albuterol,biolink:ChemicalEntity,TopAnswer,True
+9,TestCase_9,Asset_388,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:5403,terbutaline,biolink:ChemicalEntity,TopAnswer,True
+10,TestCase_10,Asset_153,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,PUBCHEM.COMPOUND:962,Hydrogen(.),biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_149,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,CHEBI:33250,Atom,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_165,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,UMLS:C0030054,Oxygen,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_164,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,CHEBI:36094,Organic chloride salt,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_152,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,PUBCHEM.COMPOUND:962,Water,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_159,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,CHEBI:51143,Nitrogen molecular entity,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_163,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D009930,Organic chemicals,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_155,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D000838,Anions,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_154,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D004583,Electrons,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_162,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,CHEBI:24868,Organic salt,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_158,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,CHEBI:24471,Halogen molecular entity,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_161,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,CHEBI:25367,Molecule,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_157,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D002412,Cations,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_156,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,PUBCHEM.COMPOUND:977,Oxygen,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_160,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D000438,Alcohols,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_151,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D012492,salts,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_167,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,CHEBI:134179,Volatile organic compound,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_166,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D000700,Analgesics,biolink:ChemicalEntity,NeverShow,True
+10,TestCase_10,Asset_150,MONDO:0010808,MONDO:0010808,Fatal familial insomnia,biolink:treats,MESH:D002467,Cell nucleus,biolink:ChemicalEntity,NeverShow,True
+11,TestCase_11,Asset_651,CHEBI:74947,CHEBI:74947,Thalidomide,biolink:affects,NCBIGene:5004,ORM1,biolink:Gene,Acceptable,True
+11,TestCase_11,Asset_650,CHEBI:74947,CHEBI:74947,Thalidomide,biolink:affects,NCBIGene:57167,SALL4,biolink:Gene,Acceptable,True
+11,TestCase_11,Asset_652,CHEBI:74947,CHEBI:74947,Thalidomide,biolink:affects,NCBIGene:5005,ORM2,biolink:Gene,Acceptable,True
+12,TestCase_12,Asset_201,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,UMLS:C0013227,Pharmaceutical preparations,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_200,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,UNII:59NEE7PCAB,Lindane,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_207,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:439501,Ouabain,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_196,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:702,Ethanol,biolink:ChemicalEntity,Acceptable,True
+12,TestCase_12,Asset_211,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,CHEMBL.COMPOUND:CHEMBL2109152,Mineral oil,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_210,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:323,Coumarin,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_197,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:3346,Fenthion,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_206,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:3826,Ketorolac,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_198,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:84098,Isoxaflutole,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_209,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:446220,Cocaine,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_205,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:962,Water,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_204,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:6623,Bisphenol a,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_195,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:702,Ethanol,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_212,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:10836,Methamphetamine,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_208,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:712,Formaldehyde,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_199,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:6758,Rotenone,biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_203,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,MESH:D037742,"Nanotubes, carbon",biolink:ChemicalEntity,NeverShow,True
+12,TestCase_12,Asset_202,MONDO:0001505,MONDO:0001505,alcoholic hepatitis,biolink:treats,PUBCHEM.COMPOUND:1983,Acetaminophen,biolink:ChemicalEntity,BadButForgivable,True
+13,TestCase_13,Asset_344,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:135565082,talazoparib,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_352,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,CHEBI:41774,Tamoxifen,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_348,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:637511,Cinnamaldehyde,biolink:ChemicalEntity,BadButForgivable,True
+13,TestCase_13,Asset_349,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:14423521,Ursolic aldehyde,biolink:ChemicalEntity,BadButForgivable,True
+13,TestCase_13,Asset_345,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:135565981,PARP inhibitor 2x-121,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_342,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:24958200,niraparib,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_343,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:44093,rucaparib,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_340,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:23725625,olaparib,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_341,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:11960529,veliparib,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_350,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:5702198,Cisplatin,biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_346,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:16760621,"PARP inhibitor VIII, PJ34",biolink:ChemicalEntity,Acceptable,True
+13,TestCase_13,Asset_347,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:712,formaldehyde,biolink:ChemicalEntity,BadButForgivable,True
+13,TestCase_13,Asset_351,NCBIGene:675,NCBIGene:675,BRCA2,biolink:affects,PUBCHEM.COMPOUND:426756,Carboplatin,biolink:ChemicalEntity,Acceptable,True
+14,TestCase_14,Asset_2,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:33247,organic group,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_26,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:33579,main group molecular entity,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_305,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,PUBCHEM.COMPOUND:2973,Deferoxamine,biolink:ChemicalEntity,TopAnswer,True
+14,TestCase_14,Asset_30,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:24836,inorganic oxide,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_31,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:24431,chemical entity,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_304,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:49005,deferasirox,biolink:ChemicalEntity,TopAnswer,True
+14,TestCase_14,Asset_27,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:37577,heteroatomic molecular entity,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_20,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:25367,molecule,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_303,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,PUBCHEM.COMPOUND:2972,deferipone,biolink:ChemicalEntity,TopAnswer,True
+14,TestCase_14,Asset_21,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:25806,oxygen molecular entity,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_56,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,MESH:D002467,cell nucleus,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_17,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,PUBCHEM.COMPOUND:23925,Iron (PUBCHEM),biolink:ChemicalEntity,BadButForgivable,True
+14,TestCase_14,Asset_22,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:36357,polyatomic entity,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_18,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,MESH:D009930,Organic Chemicals,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_19,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:23367,molecular entity,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_23,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:33582,carbon group molecular entity,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_62,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,PUBCHEM.COMPOUND:6758,Rotenone,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_24,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,MESH:D007287,inorganic chemicals,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_28,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:33595,cyclic compound,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_29,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,MESH:D006571,heterocyclic compounds,biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_1,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,PUBCHEM.COMPOUND:23925,Iron (PUBCHEM),biolink:ChemicalEntity,NeverShow,True
+14,TestCase_14,Asset_25,MONDO:0011426,MONDO:0011426,Aceruloplasminemia,biolink:treats,CHEBI:33285,heteroorganic entity,biolink:ChemicalEntity,NeverShow,True
+15,TestCase_15,Asset_597,CHEBI:59173,CHEBI:59173,Bivalirudin,biolink:affects,NCBIGene:4353,MPO,biolink:Gene,TopAnswer,True
+15,TestCase_15,Asset_596,CHEBI:59173,CHEBI:59173,Bivalirudin,biolink:affects,CHEMBL.TARGET:CHEMBL204,UNIPROTKB:P00734,,TopAnswer,True
+15,TestCase_15,Asset_595,CHEBI:59173,CHEBI:59173,Bivalirudin,biolink:affects,UMLS:C0040018,Thrombin,biolink:ChemicalEntity,TopAnswer,True
+15,TestCase_15,Asset_594,CHEBI:59173,CHEBI:59173,Bivalirudin,biolink:affects,NCBIGene:2147,F2,biolink:Gene,TopAnswer,True
+16,TestCase_16,Asset_128,MONDO:0018911,MONDO:0018911,Maturity-onset Diabetes Of The Young,biolink:treats,MESH:D017526,"Receptor, IGF Type 1",biolink:ChemicalEntity,NeverShow,True
+16,TestCase_16,Asset_124,MONDO:0018911,MONDO:0018911,Maturity-onset Diabetes Of The Young,biolink:treats,MESH:D011972,"Receptor, insulin",biolink:ChemicalEntity,NeverShow,True
+16,TestCase_16,Asset_125,MONDO:0018911,MONDO:0018911,Maturity-onset Diabetes Of The Young,biolink:treats,MESH:D001323,Autoantibodies,biolink:ChemicalEntity,NeverShow,True
+16,TestCase_16,Asset_129,MONDO:0018911,MONDO:0018911,Maturity-onset Diabetes Of The Young,biolink:treats,MESH:D003165,Complement system proteins,biolink:ChemicalEntity,NeverShow,True
+16,TestCase_16,Asset_130,MONDO:0018911,MONDO:0018911,Maturity-onset Diabetes Of The Young,biolink:treats,PUBCHEM.COMPOUND:6623,bisphenol A,biolink:ChemicalEntity,NeverShow,True
+16,TestCase_16,Asset_126,MONDO:0018911,MONDO:0018911,Maturity-onset Diabetes Of The Young,biolink:treats,PUBCHEM.COMPOUND:53462828,Thyroid hormones,biolink:ChemicalEntity,NeverShow,True
+16,TestCase_16,Asset_127,MONDO:0018911,MONDO:0018911,Maturity-onset Diabetes Of The Young,biolink:treats,MESH:D004798,Enzymes,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_256,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,UMLS:C0699680,Metric (substance),biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_610,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:121494085,sucralfate,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_630,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:9823762,revexepride,biolink:ChemicalEntity,BadButForgivable,True
+17,TestCase_17,Asset_260,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:433294,Lithium Chloride,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_626,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,MONDO:0018958,nemaline,biolink:Disease,NeverShow,True
+17,TestCase_17,Asset_627,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,MONDO:0018958,nemaline,biolink:Disease,BadButForgivable,True
+17,TestCase_17,Asset_631,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:107736,metoclopramide,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_261,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,UMLS:C0003289,Antidepressive agents,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_611,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:10112,calcium carbonate,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_257,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,MESH:D014028,Tobacco smoke pollution,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_266,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:5462310,Carbon,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_620,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:50275,esomeprazole,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_250,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:784,Hydrogen peroxide,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_616,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:3699,cimetidine,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_617,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:8776,ranitidine,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_251,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,MESH:D037742,"Nanotubes, carbon",biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_621,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:7915,pantoprazole,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_267,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:176,Acetic acid,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_618,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:7772,omeprazole,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_622,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:135931,dexlansoprazole,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_264,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:56842000,Talcid,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_614,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:4975,famotidine,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_252,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:15938,Paraquat dichloride,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_268,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:962,Water,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_269,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:,Oxygen,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_253,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:443495,Sodium arsenite,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_615,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:7601,nizatidine,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_265,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:311,Citric acid,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_623,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:8768,rabeprazole,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_619,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:6375,lansoprazole,biolink:ChemicalEntity,TopAnswer,True
+17,TestCase_17,Asset_612,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:6336693,aluminum hydroxide,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_254,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:2912,Cypermethrin,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_608,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,MESH:D054328,Proton pump inhibitors,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_258,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,UMLS:C3166216,Prescribed medications,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_624,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:49668,gefitinib,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_632,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:15365,aspirin,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_633,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEBI:15347,acetone,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_263,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:174,"1,2-ethanediol",biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_625,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,UNII:6A901E312A,panitumumab,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_609,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEMBL.COMPOUND:CHEMBL2108744,sodium alginate,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_259,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,MESH:D001786,Blood glucose,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_629,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,CHEMBL.COMPOUND:CHEMBL3545346,Azd2516,biolink:ChemicalEntity,Acceptable,True
+17,TestCase_17,Asset_255,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,MESH:D054328,Proton pump inhibitors,biolink:ChemicalEntity,NeverShow,True
+17,TestCase_17,Asset_613,MONDO:0007186,MONDO:0007186,Gastroesophageal Reflux Disease,biolink:treats,PUBCHEM.COMPOUND:73981,magnesium hydroxide,biolink:ChemicalEntity,Acceptable,True
+18,TestCase_18,Asset_606,CHEBI:41774,CHEBI:41774,Tamoxifen,biolink:affects,NCBIGene:41957,AKT,biolink:Gene,Acceptable,True
+18,TestCase_18,Asset_607,CHEBI:41774,CHEBI:41774,Tamoxifen,biolink:affects,NCBIGene:2852,GPER-1,biolink:Gene,Acceptable,True
+18,TestCase_18,Asset_601,CHEBI:41774,CHEBI:41774,Tamoxifen,biolink:affects,NCBIGene:843632,pS2,biolink:Gene,Acceptable,True
+18,TestCase_18,Asset_602,CHEBI:41774,CHEBI:41774,Tamoxifen,biolink:affects,NCBIGene:1956,EGFR,biolink:Gene,Acceptable,True
+18,TestCase_18,Asset_603,CHEBI:41774,CHEBI:41774,Tamoxifen,biolink:affects,NCBIGene:1509,CTSD,biolink:Gene,Acceptable,True
+18,TestCase_18,Asset_604,CHEBI:41774,CHEBI:41774,Tamoxifen,biolink:affects,NCBIGene:43951,ER,biolink:Gene,Acceptable,True
+18,TestCase_18,Asset_605,CHEBI:41774,CHEBI:41774,Tamoxifen,biolink:affects,NCBIGene:35292,PR,biolink:Gene,Acceptable,True
+19,TestCase_19,Asset_313,NCBIGene:1080,NCBIGene:1080,CFTR (human),biolink:affects,PUBCHEM.COMPOUND:16220172,Ivacaftor,biolink:ChemicalEntity,Acceptable,True
+20,TestCase_20,Asset_71,MONDO:0018328,MONDO:0018328,Homozygous Familial Hypercholesterolemia,biolink:treats,PUBCHEM.COMPOUND:446157,Rosuvastatin,biolink:ChemicalEntity,TopAnswer,True
+20,TestCase_20,Asset_75,MONDO:0018328,MONDO:0018328,Homozygous Familial Hypercholesterolemia,biolink:treats,PUBCHEM.COMPOUND:446157,Rosuvastatin,biolink:ChemicalEntity,TopAnswer,True
+20,TestCase_20,Asset_74,MONDO:0018328,MONDO:0018328,Homozygous Familial Hypercholesterolemia,biolink:treats,UNII:LKC0U3A8NJ,Evolocumab,biolink:ChemicalEntity,TopAnswer,True
+20,TestCase_20,Asset_73,MONDO:0018328,MONDO:0018328,Homozygous Familial Hypercholesterolemia,biolink:treats,UNII:9GJ8S4GU0M,Mipomersen,biolink:ChemicalEntity,TopAnswer,True
+20,TestCase_20,Asset_72,MONDO:0018328,MONDO:0018328,Homozygous Familial Hypercholesterolemia,biolink:treats,PUBCHEM.COMPOUND:9853053,Lomitapide,biolink:ChemicalEntity,TopAnswer,True
+21,TestCase_21,Asset_190,MONDO:0006497,MONDO:0006497,Cerebral Palsy,biolink:treats,UMLS:C3536832,Air,biolink:ChemicalEntity,Acceptable,True
+21,TestCase_21,Asset_169,MONDO:0006497,MONDO:0006497,Cerebral palsy,biolink:treats,UMLS:C0013227,Pharmaceutical preparations,biolink:ChemicalEntity,NeverShow,True
+21,TestCase_21,Asset_173,MONDO:0006497,MONDO:0006497,Cerebral palsy,biolink:treats,PUBCHEM.COMPOUND:2554,Carbamazepine,biolink:ChemicalEntity,Acceptable,True
+21,TestCase_21,Asset_172,MONDO:0006497,MONDO:0006497,Cerebral palsy,biolink:treats,CHEMBL.COMPOUND:CHEMBL1201569,Botulinum toxin type b,biolink:ChemicalEntity,Acceptable,True
+21,TestCase_21,Asset_168,MONDO:0006497,MONDO:0006497,Cerebral palsy,biolink:treats,UMLS:C0003232,Antibiotics,biolink:ChemicalEntity,NeverShow,True
+21,TestCase_21,Asset_194,MONDO:0006497,MONDO:0006497,Cerebral Palsy,biolink:treats,NCIT:C38065,Hyperbaric oxygen therapy,,Acceptable,True
+21,TestCase_21,Asset_192,MONDO:0006497,MONDO:0006497,Cerebral Palsy,biolink:treats,MESH:D000336,Aerosols,biolink:ChemicalEntity,NeverShow,True
+21,TestCase_21,Asset_188,MONDO:0006497,MONDO:0006497,Cerebral Palsy,biolink:treats,UMLS:C3536832,Air,biolink:ChemicalEntity,NeverShow,True
+21,TestCase_21,Asset_171,MONDO:0006497,MONDO:0006497,Cerebral palsy,biolink:treats,PUBCHEM.COMPOUND:2284,Baclofen,biolink:ChemicalEntity,Acceptable,True
+21,TestCase_21,Asset_170,MONDO:0006497,MONDO:0006497,Cerebral palsy,biolink:treats,PUBCHEM.COMPOUND:3672,Ibuprofen,biolink:ChemicalEntity,BadButForgivable,True
+21,TestCase_21,Asset_189,MONDO:0006497,MONDO:0006497,Cerebral Palsy,biolink:treats,UMLS:C3536832,Air,biolink:ChemicalEntity,BadButForgivable,True
+21,TestCase_21,Asset_193,MONDO:0006497,MONDO:0006497,Cerebral Palsy,biolink:treats,UMLS:C0013227,Pharmaceutical Preparations,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_240,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:446220,Cocaine,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_217,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:31307,Triamcinolone,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_237,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:33250,Atom,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_221,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:11302220,Cocain-chlorhydrat,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_220,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D037342,Pertussis toxin,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_236,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:36587,Organic oxo compound,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_216,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:5743,Dexamethasone,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_241,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:784,Hydrogen peroxide,biolink:ChemicalEntity,BadButForgivable,True
+22,TestCase_22,Asset_231,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:23367,Molecular entity,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_227,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:23424,Cyanides,biolink:ChemicalEntity,BadButForgivable,True
+22,TestCase_22,Asset_246,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,UMLS:C1337101,Nitrogen 99.7 %,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_247,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:36830,Monoanion,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_226,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:,Azoles,biolink:ChemicalEntity,BadButForgivable,True
+22,TestCase_22,Asset_230,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:24431,Chemical entity,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_248,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:33832,Organic cyclic compound,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_225,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:23973,Cadmium,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_233,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:50860,Organic molecular entity,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_213,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:6741,Methylprednisolone,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_244,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D006219,Halogens,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_229,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D007287,Inorganic chemicals,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_228,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:,Imidazoles,biolink:ChemicalEntity,BadButForgivable,True
+22,TestCase_22,Asset_245,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:36586,Carbonyl compound,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_232,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:51143,Nitrogen molecular entity,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_224,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D000838,Anions,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_249,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:24532,Organic heterocyclic compound,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_215,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:5754,Hydrocortisone,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_242,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,UMLS:C1306770,Nitrogen 99.9 %,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_239,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:24433,Group,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_219,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D002772,Cholera Toxin,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_223,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:443495,Sodium arsenite,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_235,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D002467,Cell nucleus,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_234,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:33582,Carbon group molecular entity,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_222,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D002412,Cations,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_218,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,MESH:D014028,Tobacco smoke pollution,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_238,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:,Ions,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_243,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,CHEBI:25806,Oxygen molecular entity,biolink:ChemicalEntity,NeverShow,True
+22,TestCase_22,Asset_214,MONDO:0004260,MONDO:0004260,Peptic Ulcer Perforation,biolink:treats,PUBCHEM.COMPOUND:5865,Prednisone,biolink:ChemicalEntity,NeverShow,True
+23,TestCase_23,Asset_67,MONDO:0009265,MONDO:0009265,Gaucher Disease type1,biolink:treats,PUBCHEM.COMPOUND:51634,Miglustat,biolink:ChemicalEntity,TopAnswer,True
+23,TestCase_23,Asset_66,MONDO:0009265,MONDO:0009265,Gaucher Disease type1,biolink:treats,CHEMBL.COMPOUND:CHEMBL1201865,Velaglucerase-alfa,biolink:ChemicalEntity,TopAnswer,True
+23,TestCase_23,Asset_63,MONDO:0009265,MONDO:0009265,Gaucher Disease type1,biolink:treats,CHEBI:82752,Eliglustat,biolink:ChemicalEntity,TopAnswer,True
+23,TestCase_23,Asset_65,MONDO:0009265,MONDO:0009265,Gaucher Disease type1,biolink:treats,UNII:0R4NLX88O4,Taliglucerase alfa,biolink:ChemicalEntity,TopAnswer,True
+23,TestCase_23,Asset_64,MONDO:0009265,MONDO:0009265,Gaucher Disease type1,biolink:treats,UNII:Q6U6J48BWY,Imiglucerase,biolink:ChemicalEntity,TopAnswer,True
+24,TestCase_24,Asset_187,MONDO:0005015,MONDO:0005015,Diabetes Mellitus,biolink:treats,PUBCHEM.COMPOUND:16137271,Insulin detremir,biolink:ChemicalEntity,TopAnswer,True
+24,TestCase_24,Asset_185,MONDO:0005015,MONDO:0005015,Diabetes Mellitus,biolink:treats,PUBCHEM.COMPOUND:4091,Metformin,biolink:ChemicalEntity,TopAnswer,True
+25,TestCase_25,Asset_88,MONDO:0020333,MONDO:0020333,Aggressive Systemic Mastocytosis,biolink:treats,CHEBI:17823,calcitriol,biolink:ChemicalEntity,NeverShow,True
+25,TestCase_25,Asset_51,MONDO:0020333,MONDO:0020333,Aggressive Systemic Mastocytosis,biolink:treats,PUBCHEM.COMPOUND:774,Histamine,biolink:ChemicalEntity,NeverShow,True
+25,TestCase_25,Asset_85,MONDO:0020333,MONDO:0020333,Aggressive Systemic Mastocytosis,biolink:treats,PUBCHEM.COMPOUND:3672,ibuprofen,biolink:ChemicalEntity,NeverShow,True
+25,TestCase_25,Asset_89,MONDO:0020333,MONDO:0020333,Aggressive Systemic Mastocytosis,biolink:treats,PUBCHEM.COMPOUND:5280793,ergocalciferol,biolink:ChemicalEntity,NeverShow,True
+25,TestCase_25,Asset_86,MONDO:0020333,MONDO:0020333,Aggressive Systemic Mastocytosis,biolink:treats,NCIT:C163032,botulinum toxin,,NeverShow,True
+25,TestCase_25,Asset_91,MONDO:0020333,MONDO:0020333,Aggressive Systemic Mastocytosis,biolink:treats,PUBCHEM.COMPOUND:1727,4-Aminopyridine,biolink:ChemicalEntity,NeverShow,True
+25,TestCase_25,Asset_87,MONDO:0020333,MONDO:0020333,Aggressive Systemic Mastocytosis,biolink:treats,NCIT:C61727,dinoprostone,,NeverShow,True
+26,TestCase_26,Asset_647,CHEBI:50692,CHEBI:50692,Mifepristone,biolink:affects,NCBIGene:355,FAS,biolink:Gene,Acceptable,True
+26,TestCase_26,Asset_649,CHEBI:50692,CHEBI:50692,Mifepristone,biolink:affects,GTOPDB:1160,HCG,biolink:ChemicalEntity,Acceptable,True
+26,TestCase_26,Asset_648,CHEBI:50692,CHEBI:50692,Mifepristone,biolink:affects,NCBIGene:14103,FASL,biolink:Gene,Acceptable,True
+27,TestCase_27,Asset_47,MONDO:0005260,MONDO:0005260,Autism,biolink:treats,MESH:D010575,Pesticides,biolink:ChemicalEntity,NeverShow,True
+27,TestCase_27,Asset_46,MONDO:0005260,MONDO:0005260,Autism,biolink:treats,PUBCHEM.COMPOUND:3121,Valproic acid,biolink:ChemicalEntity,NeverShow,True
+28,TestCase_28,Asset_325,MONDO:0800029,MONDO:0800029,Interstitial lung disease 2,biolink:treats,PUBCHEM.COMPOUND:11671467,Fostamatinib,biolink:ChemicalEntity,Acceptable,True
+28,TestCase_28,Asset_324,MONDO:0800029,MONDO:0800029,Interstitial lung disease 2,biolink:treats,PUBCHEM.COMPOUND:40632,Pirfenidone,biolink:ChemicalEntity,TopAnswer,True
+28,TestCase_28,Asset_326,MONDO:0800029,MONDO:0800029,Interstitial lung disease 2,biolink:treats,PUBCHEM.COMPOUND:90420193,GLPG1690 (Ziritaxestat),biolink:ChemicalEntity,Acceptable,True
+29,TestCase_29,Asset_667,CHEBI:5558,CHEBI:5558,Guafacine,biolink:affects,NCBIGene:150,ADRA2A,biolink:Gene,Acceptable,True
+30,TestCase_30,Asset_333,CHEBI:4672,CHEBI:4672,Docetaxel,biolink:affects,NCBIGene:596,BCL2,biolink:Gene,Acceptable,True
+31,TestCase_31,Asset_92,MONDO:0008251,MONDO:0008251,familial pityriasis rubra pilaris,biolink:treats,PUBCHEM.COMPOUND:445354,retinol,biolink:ChemicalEntity,BadButForgivable,True
+31,TestCase_31,Asset_95,MONDO:0008251,MONDO:0008251,familial pityriasis rubra pilaris,biolink:treats,MESH:D000438,Alcohols,biolink:ChemicalEntity,NeverShow,True
+32,TestCase_32,Asset_84,MONDO:0043233,MONDO:0043233,Exfoliative Dermatitis,biolink:treats,PUBCHEM.COMPOUND:3036,Clofenotane,biolink:ChemicalEntity,NeverShow,True
+32,TestCase_32,Asset_82,MONDO:0043233,MONDO:0043233,Exfoliative Dermatitis,biolink:treats,PUBCHEM.COMPOUND:1140,Toluene,biolink:ChemicalEntity,NeverShow,True
+32,TestCase_32,Asset_83,MONDO:0043233,MONDO:0043233,Exfoliative Dermatitis,biolink:treats,PUBCHEM.COMPOUND:84098,Isoxaflutole,biolink:ChemicalEntity,NeverShow,True
+32,TestCase_32,Asset_80,MONDO:0043233,MONDO:0043233,Exfoliative Dermatitis,biolink:treats,PUBCHEM.COMPOUND:5291,Imatinib,biolink:ChemicalEntity,NeverShow,True
+32,TestCase_32,Asset_81,MONDO:0043233,MONDO:0043233,Exfoliative Dermatitis,biolink:treats,PUBCHEM.COMPOUND:216239,Sorafenib,biolink:ChemicalEntity,NeverShow,True
+33,TestCase_33,Asset_309,MONDO:0001475,MONDO:0001475,Neutropenia,biolink:treats,PUBCHEM.COMPOUND:77910626,Pegfilgrastim,biolink:ChemicalEntity,TopAnswer,True
+34,TestCase_34,Asset_132,MONDO:0015364,MONDO:0015364,Hereditary Sensory And Autonomic Neuropathy Type,biolink:treats,PUBCHEM.COMPOUND:84098,Isoxaflutole,biolink:ChemicalEntity,NeverShow,True
+34,TestCase_34,Asset_182,MONDO:0015364,MONDO:0015364,Hereditary Sensory And Autonomic Neuropathy,biolink:treats,MONDO:0016028,Erythromelalgia,biolink:Disease,NeverShow,True
+34,TestCase_34,Asset_183,MONDO:0015364,MONDO:0015364,Hereditary Sensory And Autonomic Neuropathy,biolink:treats,MONDO:0009131,Riley-day Syndrome,biolink:Disease,NeverShow,True
+34,TestCase_34,Asset_131,MONDO:0015364,MONDO:0015364,Hereditary Sensory And Autonomic Neuropathy Type,biolink:treats,MESH:D016756,"Immunoglobulins, intravenous",biolink:ChemicalEntity,NeverShow,True
+35,TestCase_35,Asset_133,MONDO:0009746,MONDO:0009746,Hereditary sensory and autonomic neuropathy type 4,biolink:treats,PUBCHEM.COMPOUND:5462310,Carbon,biolink:ChemicalEntity,NeverShow,True
+35,TestCase_35,Asset_134,MONDO:0009746,MONDO:0009746,Hereditary sensory and autonomic neuropathy type 4,biolink:treats,UNII:E211KPY694,Botulinum toxin type a,biolink:ChemicalEntity,NeverShow,True
+35,TestCase_35,Asset_137,MONDO:0009746,MONDO:0009746,Hereditary sensory and autonomic neuropathy type 4,biolink:treats,PUBCHEM.COMPOUND:4096,Methamidophos,biolink:ChemicalEntity,NeverShow,True
+36,TestCase_36,Asset_93,MONDO:0019173,MONDO:0019173,Rabies,biolink:treats,CHEBI:16811,methionine,biolink:ChemicalEntity,NeverShow,True
+36,TestCase_36,Asset_94,MONDO:0019173,MONDO:0019173,Rabies,biolink:treats,CHEBI:3478,cefaclor,biolink:ChemicalEntity,NeverShow,True
+37,TestCase_37,Asset_332,MONDO:0016575,MONDO:0016575,Primary ciliary dyskinesia,biolink:treats,PUBCHEM.COMPOUND:5360696,dextromethorphan,biolink:ChemicalEntity,NeverShow,True
+37,TestCase_37,Asset_331,MONDO:0016575,MONDO:0016575,Primary ciliary dyskinesia,biolink:treats,PUBCHEM.COMPOUND:447043,azithromycin,biolink:ChemicalEntity,Acceptable,True
+37,TestCase_37,Asset_330,MONDO:0016575,MONDO:0016575,Primary ciliary dyskinesia,biolink:treats,PUBCHEM.COMPOUND:9934746,ensifentrine,biolink:ChemicalEntity,Acceptable,True
+38,TestCase_38,Asset_50,MONDO:0004784,MONDO:0004784,Allergic Asthma,biolink:treats,MESH:D052638,particulate matter,biolink:ChemicalEntity,NeverShow,True
+39,TestCase_39,Asset_666,NCBIGene:1742,NCBIGene:1742,DLG4 (human),biolink:affects,CHEBI:5558,Guanfacine,biolink:ChemicalEntity,Acceptable,True
+40,TestCase_40,Asset_11,MONDO:0015564,MONDO:0015564,Castleman Disease,biolink:treats,PUBCHEM.COMPOUND:5284616,sirolimus,biolink:ChemicalEntity,TopAnswer,True
+40,TestCase_40,Asset_14,MONDO:0015564,MONDO:0015564,Castleman Disease,biolink:treats,CHEMBL.COMPOUND:CHEMBL1201562,interferon-beta 1a,biolink:ChemicalEntity,TopAnswer,True
+40,TestCase_40,Asset_7,MONDO:0015564,MONDO:0015564,Castleman Disease,biolink:treats,MESH:D001335,Vehicle Emissions,biolink:ChemicalEntity,NeverShow,True
+40,TestCase_40,Asset_12,MONDO:0015564,MONDO:0015564,Castleman Disease,biolink:treats,UNII:4F4X42SYQ6,rituximab,biolink:ChemicalEntity,TopAnswer,True
+40,TestCase_40,Asset_13,MONDO:0015564,MONDO:0015564,Castleman Disease,biolink:treats,UNII:9013DUQ28K,anakinra,biolink:ChemicalEntity,TopAnswer,True
+40,TestCase_40,Asset_306,MONDO:0015564,MONDO:0015564,Castleman Disease,biolink:treats,CHEMBL.COMPOUND:CHEMBL1201563,interferon-beta 1b,biolink:ChemicalEntity,TopAnswer,True
+41,TestCase_41,Asset_646,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:4023,LPL,biolink:Gene,Acceptable,True
+41,TestCase_41,Asset_641,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:123,PLIN2,biolink:Gene,Acceptable,True
+41,TestCase_41,Asset_640,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:8310,ACOX3,biolink:Gene,Acceptable,True
+41,TestCase_41,Asset_637,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:948,CD36,biolink:Gene,TopAnswer,True
+41,TestCase_41,Asset_643,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:11343,MGLL,biolink:Gene,Acceptable,True
+41,TestCase_41,Asset_638,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:2171,FABP5,biolink:Gene,TopAnswer,True
+41,TestCase_41,Asset_639,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:2180,ACSL,biolink:Gene,Acceptable,True
+41,TestCase_41,Asset_642,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:51129,ANGPTL4,biolink:Gene,Acceptable,True
+41,TestCase_41,Asset_645,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:5166,PDK4,biolink:Gene,Acceptable,True
+41,TestCase_41,Asset_644,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:364,AQP7,biolink:Gene,Acceptable,True
+42,TestCase_42,Asset_353,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:44093,Captopril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_358,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:107807,Perindopril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_354,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:5388962,Enalapril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_355,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:55891,Fosinopril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_359,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:54892,Quinapril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_360,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:5484727,Trandolapril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_356,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:5362119,Lisinopril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_357,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:5362129,Ramipril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_361,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:91270,Moexipril,biolink:ChemicalEntity,TopAnswer,True
+42,TestCase_42,Asset_311,NCBIGene:1636,NCBIGene:1636,ACE,biolink:affects,PUBCHEM.COMPOUND:5362124,Benazapril,biolink:ChemicalEntity,TopAnswer,True
+43,TestCase_43,Asset_492,CHEBI:15355,PUBCHEM.COMPOUND:187,Acetylcholine,biolink:affects,UMLS:C0083536,NG-NITROARGININE METHYL ESTER,biolink:ChemicalEntity,NeverShow,False
+44,TestCase_44,Asset_70,MONDO:0018982,MONDO:0018982,Niemann-Pick type C,biolink:treats,PUBCHEM.COMPOUND:51634,Miglustat,biolink:ChemicalEntity,TopAnswer,True
+45,TestCase_46,Asset_312,NCBIGene:4609,NCBIGene:4609,"MYC proto-oncogene, bHLH transcription factor",biolink:affects,MONDO:0004992,cancer,biolink:Disease,NeverShow,True
+46,TestCase_47,Asset_3,MONDO:0010794,MONDO:0010794,NARP Syndrome,biolink:treats,DRUGBANK:DB00313,Valproic Acid,biolink:ChemicalEntity,NeverShow,True
+46,TestCase_47,Asset_4,MONDO:0010794,MONDO:0010794,NARP Syndrome,biolink:treats,MESH:D001463,Barbiturates,biolink:ChemicalEntity,NeverShow,True
+47,TestCase_48,Asset_502,MONDO:0100096,MONDO:0100096,COVID-19,biolink:treats,PUBCHEM.COMPOUND:121304016,Remdesivir,biolink:ChemicalEntity,Acceptable,True
+48,TestCase_49,Asset_41,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:26879,Levamisole,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_36,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:6134,alpha-Lactose,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_37,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:5280793,Ergocalciferol,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_40,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:5430,Thiabendazole,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_38,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:4030,Mebendazole,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_43,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:516893,Potassium bicarbonate,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_34,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,MESH:D010936,Plant extracts,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_35,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,MESH:D028321,Plant preparations,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_42,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:4096,Methamidophos,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_39,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:2406,Bithionol,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_32,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,CHEMBL.COMPOUND:CHEMBL2108505,Lactase,biolink:ChemicalEntity,TopAnswer,True
+48,TestCase_49,Asset_45,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:445643,Tacrolimus,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_44,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:5564,Triclosan,biolink:ChemicalEntity,NeverShow,True
+48,TestCase_49,Asset_33,MONDO:0100345,MONDO:0100345,Lactose intolerance,biolink:treats,PUBCHEM.COMPOUND:6134,beta-Lactose,biolink:ChemicalEntity,NeverShow,True
+49,TestCase_50,Asset_323,MONDO:0018956,MONDO:0018956,Idiopathic bronchiectasis,biolink:treats,PUBCHEM.COMPOUND:4946,Propranolol,biolink:ChemicalEntity,NeverShow,True
+49,TestCase_50,Asset_322,MONDO:0018956,MONDO:0018956,Idiopathic bronchiectasis,biolink:treats,PUBCHEM.COMPOUND:12560,Erythromycin,biolink:ChemicalEntity,Acceptable,True
+49,TestCase_50,Asset_321,MONDO:0018956,MONDO:0018956,Idiopathic bronchiectasis,biolink:treats,PUBCHEM.COMPOUND:447043,Azithromycin,biolink:ChemicalEntity,Acceptable,True
+50,TestCase_51,Asset_636,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,CHEBI:5931,Insulin,biolink:ChemicalEntity,Acceptable,True
+50,TestCase_51,Asset_635,CHEBI:167574,CHEBI:167574,Semaglutide,biolink:affects,NCBIGene:2740,GLP1R,biolink:Gene,TopAnswer,True
+51,TestCase_52,Asset_661,CHEBI:34648,CHEBI:34648,clofibric acid,biolink:affects,NCBIGene:5465,PPARA,biolink:Gene,TopAnswer,True
+52,TestCase_53,Asset_57,MONDO:0004975,MONDO:0004975,Alzheimer Disease,biolink:treats,UMLS:C0013227,Pharmaceutical preparations,biolink:ChemicalEntity,NeverShow,True
+53,TestCase_54,Asset_335,NCBIGene:673,NCBIGene:673,BRAF (human),biolink:affects,PUBCHEM.COMPOUND:44462760,dabrafenib,biolink:ChemicalEntity,Acceptable,True
+54,TestCase_55,Asset_175,MONDO:0018958,MONDO:0018958,Nemaline myopathy,biolink:treats,PUBCHEM.COMPOUND:460612,Melphalan,biolink:ChemicalEntity,Acceptable,True
+54,TestCase_55,Asset_174,MONDO:0018958,MONDO:0018958,Nemaline myopathy,biolink:treats,PUBCHEM.COMPOUND:6057,Tyrosine,biolink:ChemicalEntity,Acceptable,True
+54,TestCase_55,Asset_177,MONDO:0018958,MONDO:0018958,Nemaline myopathy,biolink:treats,PUBCHEM.COMPOUND:5426,Thalidimide,biolink:ChemicalEntity,Acceptable,True
+54,TestCase_55,Asset_176,MONDO:0018958,MONDO:0018958,Nemaline myopathy,biolink:treats,PUBCHEM.COMPOUND:15625,"2,3,7,8-tetrachlorodibenzo-p-dioxin",biolink:ChemicalEntity,NeverShow,True
+55,TestCase_56,Asset_319,MONDO:0009061,MONDO:0009061,Cystic fibrosis,biolink:treats,UMLS:C3489797,AZD9668,biolink:ChemicalEntity,Acceptable,True
+55,TestCase_56,Asset_318,MONDO:0009061,MONDO:0009061,Cystic fibrosis,biolink:treats,PUBCHEM.COMPOUND:16220172,Ivacaftor,biolink:ChemicalEntity,TopAnswer,True
+55,TestCase_56,Asset_320,MONDO:0009061,MONDO:0009061,Cystic fibrosis,biolink:treats,PUBCHEM.COMPOUND:55283,Itraconazole,biolink:ChemicalEntity,NeverShow,True
+56,TestCase_57,Asset_378,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:4946,propranolol,biolink:ChemicalEntity,TopAnswer,True
+56,TestCase_57,Asset_381,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:2249,atenolol,biolink:ChemicalEntity,TopAnswer,True
+56,TestCase_57,Asset_380,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:2585,carvedilol,biolink:ChemicalEntity,TopAnswer,True
+56,TestCase_57,Asset_379,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:4171,metoprolol,biolink:ChemicalEntity,TopAnswer,True
+56,TestCase_57,Asset_383,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:3682,"ICI-118,551",biolink:ChemicalEntity,TopAnswer,True
+56,TestCase_57,Asset_382,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,PUBCHEM.COMPOUND:18026,Butaxamine,biolink:ChemicalEntity,Acceptable,True
+56,TestCase_57,Asset_384,NCBIGene:154,NCBIGene:154,ADRB2,biolink:affects,ChEBI:35530,Beta-Blockers (Inhibitors),,TopAnswer,True
+57,TestCase_58,Asset_401,MONDO:0005575,MONDO:0005575,Colorectal Cancer,biolink:treats,PUBCHEM.COMPOUND:4091,Metformin,biolink:ChemicalEntity,Acceptable,True
+57,TestCase_58,Asset_400,MONDO:0005575,MONDO:0005575,Colorectal Cancer,biolink:treats,RXCUI:1657659,Cetuximab (Erbitux),,TopAnswer,True
+57,TestCase_58,Asset_402,MONDO:0005575,MONDO:0005575,Colorectal Cancer,biolink:treats,UNII:6T8C155666,Ipilimumab (Yervoy),biolink:ChemicalEntity,Acceptable,True
+58,TestCase_59,Asset_339,CHEBI:82752,CHEBI:82752,Eliglustat,biolink:affects,NCBI:2629,GBA1,,Acceptable,True
+59,TestCase_60,Asset_657,CHEBI:27744,CHEBI:27744,Glyphosate,biolink:affects,NCBIGene:816,CAMK2B,biolink:Gene,Acceptable,True
+59,TestCase_60,Asset_656,CHEBI:27744,CHEBI:27744,Glyphosate,biolink:affects,NCBIGene:815,CAMK2A,biolink:Gene,Acceptable,True
+59,TestCase_60,Asset_655,CHEBI:27744,CHEBI:27744,Glyphosate,biolink:affects,NCBIGene:7476,Wnt7a,biolink:Gene,Acceptable,True
+59,TestCase_60,Asset_654,CHEBI:27744,CHEBI:27744,Glyphosate,biolink:affects,NCBIGene:7474,Wnt5a,biolink:Gene,Acceptable,True
+59,TestCase_60,Asset_653,CHEBI:27744,CHEBI:27744,Glyphosate,biolink:affects,NCBIGene:89780,Wnt3a,biolink:Gene,Acceptable,True
+60,TestCase_61,Asset_315,MONDO:0004979,MONDO:0004979,Asthma,biolink:treats,PUBCHEM.COMPOUND:5311101,Fluticasone,biolink:ChemicalEntity,TopAnswer,True
+60,TestCase_61,Asset_317,MONDO:0004979,MONDO:0004979,Asthma,biolink:treats,PUBCHEM.COMPOUND:4946,Propranolol,biolink:ChemicalEntity,NeverShow,True
+60,TestCase_61,Asset_316,MONDO:0004979,MONDO:0004979,Asthma,biolink:treats,UMLS:C2194286,Albuterol (salbutamol),biolink:ChemicalEntity,Acceptable,True
+61,TestCase_62,Asset_77,MONDO:0001119,MONDO:0001119,Premature Menopause,biolink:treats,PUBCHEM.COMPOUND:2478,busulfan,biolink:ChemicalEntity,NeverShow,True
+61,TestCase_62,Asset_76,MONDO:0001119,MONDO:0001119,Premature Menopause,biolink:treats,PUBCHEM.COMPOUND:216416,lasofoxifene,biolink:ChemicalEntity,NeverShow,True
+61,TestCase_62,Asset_5,MONDO:0001119,MONDO:0001119,Premature Menopause,biolink:treats,PUBCHEM.COMPOUND:12358480,hexadrin,biolink:ChemicalEntity,NeverShow,True
+61,TestCase_62,Asset_79,MONDO:0001119,MONDO:0001119,Premature Menopause,biolink:treats,MESH:D011372,progestin,biolink:ChemicalEntity,TopAnswer,True
+61,TestCase_62,Asset_6,MONDO:0001119,MONDO:0001119,Premature Menopause,biolink:treats,PUBCHEM.COMPOUND:2478,busulfan,biolink:ChemicalEntity,NeverShow,True
+61,TestCase_62,Asset_78,MONDO:0001119,MONDO:0001119,Premature Menopause,biolink:treats,PUBCHEM.COMPOUND:5757,estradiol,biolink:ChemicalEntity,TopAnswer,True
+61,TestCase_62,Asset_48,MONDO:0001119,MONDO:0001119,Premature Menopause,biolink:treats,UMLS:C1874451,basis,biolink:ChemicalEntity,NeverShow,True
+62,TestCase_63,Asset_179,MONDO:0007743,MONDO:0007743,ADHD,biolink:treats,PUBCHEM.COMPOUND:4158,Methylphenidate,biolink:ChemicalEntity,Acceptable,True
+62,TestCase_63,Asset_178,MONDO:0007743,MONDO:0007743,ADHD,biolink:treats,PUBCHEM.COMPOUND:446220,Cocaine,biolink:ChemicalEntity,NeverShow,True
+63,TestCase_64,Asset_180,MONDO:0005393,MONDO:0005393,Gout,biolink:treats,UNNI:R581OT55EA,Pegloticase,,Acceptable,True
+63,TestCase_64,Asset_181,MONDO:0005393,MONDO:0005393,Gout,biolink:treats,PUBCHEM.COMPOUND:5865,Prednisone,biolink:ChemicalEntity,Acceptable,True
+64,TestCase_65,Asset_60,MONDO:0017314,MONDO:0017314,Ehlers-Danlos Syndrome,biolink:treats,PUBCHEM.COMPOUND:73415823,Gadopentetate dimeglumine,biolink:ChemicalEntity,NeverShow,True
+64,TestCase_65,Asset_99,MONDO:0017314,MONDO:0017314,Ehlers-Danlos Syndrome,biolink:treats,CHEBI:2567,alendronic acid,biolink:ChemicalEntity,NeverShow,True
+64,TestCase_65,Asset_59,MONDO:0017314,MONDO:0017314,Ehlers-Danlos Syndrome,biolink:treats,UNII:1BJ477IO2L,Gadobutrol,biolink:ChemicalEntity,NeverShow,True
+64,TestCase_65,Asset_58,MONDO:0017314,MONDO:0017314,Ehlers-Danlos Syndrome,biolink:treats,PUBCHEM.COMPOUND:24847884,Omniscan,biolink:ChemicalEntity,NeverShow,True
+64,TestCase_65,Asset_49,MONDO:0017314,MONDO:0017314,Ehlers-Danlos Syndrome,biolink:treats,PUBCHEM.COMPOUND:4158,methylphenidate,biolink:ChemicalEntity,NeverShow,True
+65,TestCase_66,Asset_338,NCBIGene:6524,NCBIGene:6524,SLC5A2 (human),biolink:affects,PUBCHEM.COMPOUND:24812758,canagliflozin,biolink:ChemicalEntity,TopAnswer,True
+66,TestCase_67,Asset_135,NCBIGene:8653,NCBIGene:8653,DDX3Y,biolink:affects,UMLS:C0311474,dna double stranded,biolink:ChemicalEntity,NeverShow,True
+66,TestCase_67,Asset_136,NCBIGene:8653,NCBIGene:8653,DDX3Y,biolink:affects,UMLS:C1328819,Small molecule,biolink:ChemicalEntity,NeverShow,True
+66,TestCase_67,Asset_376,NCBIGene:8653,NCBIGene:8653,DDX3Y,biolink:affects,PUBCHEM.COMPOUND:31703,Doxorubicin,biolink:ChemicalEntity,Acceptable,True
+66,TestCase_67,Asset_377,NCBIGene:8653,NCBIGene:8653,DDX3Y,biolink:affects,PUBCHEM.COMPOUND:46184988,RK-33,biolink:ChemicalEntity,Acceptable,True
+67,TestCase_68,Asset_334,MONDO:0005361,MONDO:0005361,Eosinophilic Esophagitis,biolink:treats,UNII:420K487FSG,DUPILUMAB,biolink:ChemicalEntity,TopAnswer,True
+68,TestCase_69,Asset_660,NCBIGene:51297,NCBIGene:51297,BPIFA1,biolink:affects,CHEBI:16482,Naphthalene,biolink:ChemicalEntity,Acceptable,True
+69,TestCase_70,Asset_96,MONDO:0019600,MONDO:0019600,Xeroderma Pigmentosum,biolink:treats,CHEBI:22977,cadmium,biolink:ChemicalEntity,NeverShow,True
+69,TestCase_70,Asset_97,MONDO:0019600,MONDO:0019600,Xeroderma Pigmentosum,biolink:treats,CHEBI:25195,mercury,biolink:ChemicalEntity,NeverShow,True
+70,TestCase_71,Asset_659,CHEBI:27744,CHEBI:27744,Glyphosate,biolink:affects,NCBIGene:10381,TUBB3,biolink:Gene,Acceptable,True
+70,TestCase_71,Asset_658,CHEBI:27744,CHEBI:27744,Glyphosate,biolink:affects,NCBIGene:2596,GAP43,biolink:Gene,Acceptable,True
+71,TestCase_72,Asset_337,NCBIGene:8972,NCBIGene:8972,MGAM (human),biolink:affects,PUBCHEM.COMPOUND:41774,Acarbose,biolink:ChemicalEntity,TopAnswer,True
+72,TestCase_73,Asset_55,MONDO:0005799,MONDO:0005799,Hookworm Infectious Disease,biolink:treats,PUBCHEM.COMPOUND:3037,Dichlorophen,biolink:ChemicalEntity,BadButForgivable,True
+72,TestCase_73,Asset_54,MONDO:0005799,MONDO:0005799,Hookworm Infectious Disease,biolink:treats,PUBCHEM.COMPOUND:5430,Thiabendazole,biolink:ChemicalEntity,TopAnswer,True
+72,TestCase_73,Asset_53,MONDO:0005799,MONDO:0005799,Hookworm Infectious Disease,biolink:treats,PUBCHEM.COMPOUND:708857,Pyrantel,biolink:ChemicalEntity,TopAnswer,True
+72,TestCase_73,Asset_52,MONDO:0005799,MONDO:0005799,Hookworm Infectious Disease,biolink:treats,PUBCHEM.COMPOUND:4030,Mebendazole,biolink:ChemicalEntity,TopAnswer,True
+73,TestCase_74,Asset_399,NCBIGene:79001,NCBIGene:79001,VKORC1,biolink:affects,PUBCHEM.COMPOUND:54678486,warfarin,biolink:ChemicalEntity,TopAnswer,True
+74,TestCase_75,Asset_663,RXCUI:151392,RXCUI:151392,Augmentin (amoxicillin and clavulanate) - clavulanate (CHEBI:2676),biolink:affects,NCBIGene:471948,HLA Class I (NCBIGene:471948),biolink:Gene,Acceptable,True
+74,TestCase_75,Asset_664,RXCUI:151392,RXCUI:151392,Augmentin (amoxicillin and clavulanate) - clavulanata (NCBIGene:2676),biolink:affects,NCBIGene:100495492,HLA Class II,biolink:Gene,Acceptable,True
+75,TestCase_76,Asset_634,CHEBI:170007,CHEBI:170007,Nirmatrelvir,biolink:affects,NCBIGene:1576,CYP3A4,biolink:Gene,Acceptable,True
+76,TestCase_77,Asset_403,MONDO:0009290,MONDO:0009290,Glycogen Storage Disease Ii,biolink:treats,UNII:DTI67O9503,Alglucosidase Alfa,biolink:ChemicalEntity,TopAnswer,True
+77,TestCase_78,Asset_141,MONDO:0004758,MONDO:0004758,scotoma,biolink:treats,PUBCHEM.COMPOUND:5665,vigabatrin,biolink:ChemicalEntity,NeverShow,True
+77,TestCase_78,Asset_140,MONDO:0004758,MONDO:0004758,scotoma,biolink:treats,PUBCHEM.COMPOUND:5865,prednisone,biolink:ChemicalEntity,NeverShow,True
+78,TestCase_79,Asset_662,CHEBI:34911,CHEBI:34911,permethrin,biolink:affects,NCBIGene:5465,PPARA,biolink:Gene,TopAnswer,True
+79,TestCase_80,Asset_336,NCBIGene:8654,NCBIGene:8654,PDE5A (human),biolink:affects,PUBCHEM.COMPOUND:135398744,Sildenafil,biolink:ChemicalEntity,TopAnswer,True
+80,TestCase_81,Asset_628,MONDO:0005357,MONDO:0005357,Creutzfeldt Jacob Disease,biolink:treats,MESH:D000911,"Antibodies, Monoclonal",biolink:ChemicalEntity,Acceptable,True
+81,TestCase_82,Asset_69,MONDO:0007147,MONDO:0007147,Obstructive Sleep Apnea,biolink:treats,MESH:D053260,Soot,biolink:ChemicalEntity,Acceptable,True
+81,TestCase_82,Asset_68,MONDO:0007147,MONDO:0007147,Obstructive Sleep Apnea,biolink:treats,MESH:D053260,Soot,biolink:ChemicalEntity,NeverShow,True
+82,TestCase_83,Asset_90,MONDO:0005267,MONDO:0005267,Heart Disorder,biolink:treats,CHEBI:80160,fibrinogen,biolink:ChemicalEntity,NeverShow,True
+83,TestCase_84,Asset_665,NCBIGene:3845,NCBIGene:3845,KRAS,biolink:affects,PUBCHEM.COMPOUND:156124857,KRASG12D inhibitor MRTX1133,biolink:ChemicalEntity,TopAnswer,True
+84,TestCase_85,Asset_310,CHEBI:51209,CHEBI:51209,Pseudoephedrine,biolink:affects,NCBIGene:3558,interleukin-2,biolink:Gene,Acceptable,True
