@@ -1,0 +1,258 @@
+{
+  "completed_at": "2026-10-16T18:20:24.594391-07:00",
+  "experiment": "2. Full graph",
+  "split": "validation",
+  "checkpoint": "ULTRA 4g",
+  "direction": "disease_to_drug",
+  "pairs": 1807,
+  "diseases": 986,
+  "candidate_drugs": 5326,
+  "training_epochs": 0,
+  "test_evaluated_for_variant_4": false,
+  "variant_definitions": {
+    "variant_1": {
+      "visible": "keep all edges",
+      "validation_test": "remove all direct edges"
+    },
+    "variant_2": {
+      "visible": "keep all edges",
+      "validation_test": "remove only treats"
+    },
+    "variant_3": {
+      "visible": "remove only treats",
+      "validation_test": "remove only treats"
+    },
+    "variant_4": {
+      "visible": "remove only treats",
+      "validation_test": "remove all direct edges"
+    }
+  },
+  "results": {
+    "variant_1": {
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.10574815363561749,
+        "hits_at_1": 0.05644714997232983,
+        "hits_at_3": 0.10348644161593802,
+        "hits_at_10": 0.19203099059214168,
+        "top_10_answers": 347,
+        "diseases": 986,
+        "disease_macro_mrr": 0.10277716684831123
+      },
+      "degree_baseline": {
+        "answers": 1807,
+        "mrr": 0.06005842802592819,
+        "hits_at_1": 0.03763143331488655,
+        "hits_at_3": 0.054233536247924735,
+        "hits_at_10": 0.0996126175982291,
+        "top_10_answers": 180,
+        "diseases": 986,
+        "disease_macro_mrr": 0.0616629372382203
+      },
+      "metrics_sha256": "bdc252c155e8c558d68b2fcc169aca3a01e072e05645e99ba9a66b429550a71c",
+      "ranks_sha256": "cd10737bb023d742593eba7e62145137c8747bc03be041a5ac27c183fdcf6426"
+    },
+    "variant_2": {
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.1872093229492779,
+        "hits_at_1": 0.11344770337576093,
+        "hits_at_3": 0.1953514111787493,
+        "hits_at_10": 0.33757609297177643,
+        "top_10_answers": 610,
+        "diseases": 986,
+        "disease_macro_mrr": 0.22259806005617247
+      },
+      "degree_baseline": {
+        "answers": 1807,
+        "mrr": 0.06005842802592819,
+        "hits_at_1": 0.03763143331488655,
+        "hits_at_3": 0.054233536247924735,
+        "hits_at_10": 0.0996126175982291,
+        "top_10_answers": 180,
+        "diseases": 986,
+        "disease_macro_mrr": 0.0616629372382203
+      },
+      "metrics_sha256": "de6cffd11d999ab70724d819376ff1e76c0a6185bdaf07c592bb7019be76eabc",
+      "ranks_sha256": "c9b2777eaa548ddfd657ec5424ab18f5b107f3ce675bb5032a2c3dc4a2d49feb"
+    },
+    "variant_3": {
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.1452492176210256,
+        "hits_at_1": 0.07969009407858328,
+        "hits_at_3": 0.1510791366906475,
+        "hits_at_10": 0.280022136137244,
+        "top_10_answers": 506,
+        "diseases": 986,
+        "disease_macro_mrr": 0.19677495640426526
+      },
+      "degree_baseline": {
+        "answers": 1807,
+        "mrr": 0.03214778046436357,
+        "hits_at_1": 0.01549529607083564,
+        "hits_at_3": 0.02877697841726619,
+        "hits_at_10": 0.04925290536801328,
+        "top_10_answers": 89,
+        "diseases": 986,
+        "disease_macro_mrr": 0.03736997376283332
+      },
+      "metrics_sha256": "722e863a3ac2c5bf1ae0bed0fc7b24494ea468dab8ee8f6b7b851096867138a6",
+      "ranks_sha256": "95b9870c0d6f566b3feb3b1f0e1b1005e6c044f56a480ec524cb88189f649d30"
+    },
+    "variant_4": {
+      "ultra": {
+        "answers": 1807,
+        "mrr": 0.034429217433133215,
+        "hits_at_1": 0.011068068622025456,
+        "hits_at_3": 0.023796347537354733,
+        "hits_at_10": 0.06474820143884892,
+        "top_10_answers": 117,
+        "diseases": 986,
+        "disease_macro_mrr": 0.04136328836799704
+      },
+      "degree_baseline": {
+        "answers": 1807,
+        "mrr": 0.03214778046436357,
+        "hits_at_1": 0.01549529607083564,
+        "hits_at_3": 0.02877697841726619,
+        "hits_at_10": 0.04925290536801328,
+        "top_10_answers": 89,
+        "diseases": 986,
+        "disease_macro_mrr": 0.03736997376283332
+      },
+      "metrics_sha256": "e7dc59fa68a2602fa857eef039c409c2808a549ac48436c0153a074b3f2a4b18",
+      "ranks_sha256": "6ada52e6d5bba5506a6cb98a6990534ef377cbc5f0ae08a098c2c47f29051eab"
+    }
+  },
+  "runtime_settings_match": true,
+  "graph_comparison": {
+    "passed": true,
+    "variant": 4,
+    "comparisons": {
+      "variant_1": {
+        "identical_split_membership_candidates_checkpoint": true,
+        "variant_4_graph_is_subset": true,
+        "additional_removed_edges": 14463,
+        "only_visible_treats_removed": true,
+        "baseline_config_sha256": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75"
+      },
+      "variant_3": {
+        "identical_split_membership_candidates_checkpoint": true,
+        "variant_4_graph_is_subset": true,
+        "additional_removed_edges": 5992,
+        "only_other_hidden_direct_edges_removed": true,
+        "baseline_config_sha256": "c47122ccb51b21d6acdfbab58518848f65b6587276c4dd266f6ea1403fccf6e4"
+      }
+    },
+    "variant_4_config_sha256": "438c685a768723d737dd8919091b152417807a496c6ad994b2e625f9e686cd6e"
+  },
+  "paired_effects": {
+    "visible_treats_effect_without_other_direct_edges_V1_minus_V4": {
+      "mrr": {
+        "estimate": 0.07131893620248408,
+        "ci95": [
+          0.05871054035891895,
+          0.08490651894722293
+        ]
+      },
+      "hits_at_10": {
+        "estimate": 0.12728278915329277,
+        "ci95": [
+          0.10718084084065764,
+          0.1478568440389427
+        ]
+      }
+    },
+    "visible_treats_effect_with_other_direct_edges_V2_minus_V3": {
+      "mrr": {
+        "estimate": 0.041960105328251895,
+        "ci95": [
+          0.026448873840434314,
+          0.057163480854475285
+        ]
+      },
+      "hits_at_10": {
+        "estimate": 0.057553956834532405,
+        "ci95": [
+          0.03344256249083713,
+          0.0803280185056911
+        ]
+      }
+    },
+    "other_direct_edges_effect_with_visible_treats_V2_minus_V1": {
+      "mrr": {
+        "estimate": 0.08146116931365985,
+        "ci95": [
+          0.07175108362611657,
+          0.0929129582733942
+        ]
+      },
+      "hits_at_10": {
+        "estimate": 0.14554510237963475,
+        "ci95": [
+          0.1276572742955722,
+          0.1642353859514898
+        ]
+      }
+    },
+    "other_direct_edges_effect_without_visible_treats_V3_minus_V4": {
+      "mrr": {
+        "estimate": 0.11082000018789204,
+        "ci95": [
+          0.099399986158035,
+          0.12449810632392518
+        ]
+      },
+      "hits_at_10": {
+        "estimate": 0.21527393469839512,
+        "ci95": [
+          0.1945826423438364,
+          0.23875478927203062
+        ]
+      }
+    },
+    "interaction_V2_minus_V3_minus_V1_plus_V4": {
+      "mrr": {
+        "estimate": -0.029358830874232182,
+        "ci95": [
+          -0.037721078757214976,
+          -0.02089085326287255
+        ]
+      },
+      "hits_at_10": {
+        "estimate": -0.06972883231876036,
+        "ci95": [
+          -0.08754802760826859,
+          -0.05205348875640519
+        ]
+      }
+    }
+  },
+  "paired_rank_transitions": {
+    "variant_4_vs_1": {
+      "rank_improved_pairs": 613,
+      "rank_worsened_pairs": 1156,
+      "rank_unchanged_pairs": 38,
+      "entered_top_10": 18,
+      "left_top_10": 248,
+      "net_top_10_change": -230
+    },
+    "variant_4_vs_3": {
+      "rank_improved_pairs": 93,
+      "rank_worsened_pairs": 1660,
+      "rank_unchanged_pairs": 54,
+      "entered_top_10": 0,
+      "left_top_10": 389,
+      "net_top_10_change": -389
+    }
+  },
+  "uncertainty": {
+    "method": "paired disease-cluster percentile bootstrap; pair-weighted metrics",
+    "replicates": 2000,
+    "seed": 20261016,
+    "confidence_level": 0.95,
+    "scope": "Exploratory disease-resampling intervals conditional on this fixed graph and split; not split or graph-release uncertainty; no multiple-comparison adjustment"
+  },
+  "analysis_script_sha256": "f8ec1c0f45a56ce1aae42dea71ef4f46b421c945c09a8e53fe4fff3062ef5866"
+}

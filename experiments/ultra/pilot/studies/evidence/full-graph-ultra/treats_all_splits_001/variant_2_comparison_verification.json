@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "baseline_variant": 2,
+  "new_variant": 3,
+  "identical_split_membership": true,
+  "identical_candidates": true,
+  "identical_checkpoint_and_model_version": true,
+  "variant_3_graph_is_subset_of_variant_2": true,
+  "additional_removed_edges": 14463,
+  "additional_removed_predicate": "biolink:treats",
+  "all_and_only_visible_target_treats_removed": true,
+  "other_direct_edges_unchanged": true,
+  "treats_outside_target_pairs_unchanged": true,
+  "remaining_treats_connections": 10904,
+  "degree_baseline_recomputed_for_new_graph": true,
+  "config_sha256": {
+    "variant_2": "748e20b21a83cf57584c849f439d8d0a22d66439e175fc6ce7a2c471a958d1d7",
+    "variant_3": "c47122ccb51b21d6acdfbab58518848f65b6587276c4dd266f6ea1403fccf6e4"
+  }
+}

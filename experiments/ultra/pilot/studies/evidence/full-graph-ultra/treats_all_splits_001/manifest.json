@@ -1,0 +1,76 @@
+{
+  "copied_at": "2026-10-16T17:21:18.554970-07:00",
+  "scope": "Byte-identical reports from completed full-graph variant 3. Raw scores, ranks, graph tensors, and environments remain local.",
+  "files": [
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/config.json",
+      "published_path": "config.json",
+      "sha256": "c47122ccb51b21d6acdfbab58518848f65b6587276c4dd266f6ea1403fccf6e4"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/preparation.json",
+      "published_path": "preparation.json",
+      "sha256": "b57b678dddafb315346b59a7d1f8b644f1a8d7c155bc3b2e5f39fb214ed7c663"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/preparation_verification.json",
+      "published_path": "preparation_verification.json",
+      "sha256": "1ea5387dbfcafb8eaea069c6838a8601e1b6dddbcfd6a296733c0647a849325b"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/variant_2_comparison_verification.json",
+      "published_path": "variant_2_comparison_verification.json",
+      "sha256": "4d93e8fde4d26cd992909fe4a72b911e070b4465725abd74953b17313ecb9cc9"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/validation_verification.json",
+      "published_path": "validation_verification.json",
+      "sha256": "7d27cc3aa74055ab7e8c7363c9d55c8df4503f5cfee339950f7b83863c8e6981"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/test_verification.json",
+      "published_path": "test_verification.json",
+      "sha256": "3deeef0d6532d3bb753e0bea5e9cb8676f3dd111d4dfdc5e6c583b0ab89fc0f7"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/relation_graph.json",
+      "published_path": "relation_graph.json",
+      "sha256": "5977c98ec2fea4820e646670dcb898521edf3cf98bd972673ce61b0d12132999"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/validation/metrics.json",
+      "published_path": "validation/metrics.json",
+      "sha256": "722e863a3ac2c5bf1ae0bed0fc7b24494ea468dab8ee8f6b7b851096867138a6"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/validation/benchmark.json",
+      "published_path": "validation/benchmark.json",
+      "sha256": "38448c85571864d25569c8ce832175f43e5bdc8062af2ffb8c5e7765eb3dcba8"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/validation/settings.json",
+      "published_path": "validation/settings.json",
+      "sha256": "da5793869c49afdeb8e5845505ba3cdb5ffcaa21b444082336c02c2a050f74eb"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/test/metrics.json",
+      "published_path": "test/metrics.json",
+      "sha256": "371aba5e3043c20139f2be88a67357c4531efa58a52354e20d222a12d178bab0"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/test/benchmark.json",
+      "published_path": "test/benchmark.json",
+      "sha256": "7a4f3303f56cb7852550b0bcb25eeb0f5c2041697c32ed0a1dd52157aa902ad3"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/test/settings.json",
+      "published_path": "test/settings.json",
+      "sha256": "03b19149264e44e85eef7096bdd56c56488abef4a1c52bc040ec7acc6d38eb68"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_all_splits_001/test/reused_validation_scores.json",
+      "published_path": "test/reused_validation_scores.json",
+      "sha256": "8998630bccadd08e4dcfcac875994b0575b3e478130e67366c6f548f61c27959"
+    }
+  ]
+}

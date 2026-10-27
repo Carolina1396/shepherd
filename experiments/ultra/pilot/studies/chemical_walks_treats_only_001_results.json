@@ -1,0 +1,187 @@
+{
+  "complete": true,
+  "completed_diseases": 1707,
+  "total_diseases": 1707,
+  "settings_sha256": "2bd159c754e87b574b4ac0e32a0101723437c250ced817f1149151bd011c9726",
+  "policy": "treats_only",
+  "source_graph": {
+    "policy": "treats_only",
+    "nodes": 1670341,
+    "active_nodes": 1670277,
+    "isolated_nodes": 64,
+    "unique_directed_connections": 27922705,
+    "source_unique_directed_connections": 27927289,
+    "removed_unique_connections": 4584,
+    "removed_by_predicate": {
+      "biolink:treats": 4584
+    },
+    "evidence_records": 28703670,
+    "removed_evidence_records": 5404,
+    "candidate_nodes": 1117832,
+    "active_candidates": 1117797,
+    "isolated_candidates": 35,
+    "heldout_pairs": 4584,
+    "all_visible_treats_retained": true,
+    "exact_mask_verified": true,
+    "reverse_index_verified": true,
+    "matches_experiment11_triples": false
+  },
+  "attempted_walks": 1707000,
+  "completed_walks": 1625801,
+  "walk_sampling_seconds": 38.14940877360641,
+  "results": {
+    "gandalf_walks": {
+      "validation": {
+        "diseases": 1145,
+        "answer_pairs": 2291,
+        "expected_answer_pairs": 2291,
+        "answers_reached": 1533,
+        "answer_coverage": 0.66914011348756,
+        "mean_disease_answer_coverage": 0.7654938325037153,
+        "empty_graphs": 16,
+        "graphs_at_cap": 0,
+        "graph_sizes": {
+          "nodes": {
+            "mean": 1737.8794759825328,
+            "median": 1734.0,
+            "min": 1,
+            "max": 2596
+          },
+          "edges": {
+            "mean": 2101.3676855895196,
+            "median": 2091.0,
+            "min": 0,
+            "max": 2922
+          },
+          "candidate_nodes": {
+            "mean": 583.6986899563319,
+            "median": 556.0,
+            "min": 0,
+            "max": 1128
+          }
+        }
+      },
+      "test": {
+        "diseases": 1122,
+        "answer_pairs": 2293,
+        "expected_answer_pairs": 2293,
+        "answers_reached": 1564,
+        "answer_coverage": 0.6820758831225469,
+        "mean_disease_answer_coverage": 0.7715123670661017,
+        "empty_graphs": 18,
+        "graphs_at_cap": 0,
+        "graph_sizes": {
+          "nodes": {
+            "mean": 1746.1363636363637,
+            "median": 1727.5,
+            "min": 1,
+            "max": 2596
+          },
+          "edges": {
+            "mean": 2112.8894830659538,
+            "median": 2082.5,
+            "min": 0,
+            "max": 2922
+          },
+          "candidate_nodes": {
+            "mean": 580.7611408199643,
+            "median": 554.0,
+            "min": 0,
+            "max": 1128
+          }
+        }
+      }
+    },
+    "aragorn_rules": {
+      "validation": {
+        "diseases": 1145,
+        "answer_pairs": 2291,
+        "expected_answer_pairs": 2291,
+        "answers_reached": 455,
+        "answer_coverage": 0.19860323003055436,
+        "mean_disease_answer_coverage": 0.14953866392041523,
+        "empty_graphs": 190,
+        "graphs_at_cap": 21,
+        "graph_sizes": {
+          "nodes": {
+            "mean": 91.70655021834061,
+            "median": 15.0,
+            "min": 1,
+            "max": 2214
+          },
+          "edges": {
+            "mean": 217.4174672489083,
+            "median": 14.0,
+            "min": 0,
+            "max": 3000
+          },
+          "candidate_nodes": {
+            "mean": 80.79912663755458,
+            "median": 12.0,
+            "min": 0,
+            "max": 2172
+          }
+        }
+      },
+      "test": {
+        "diseases": 1122,
+        "answer_pairs": 2293,
+        "expected_answer_pairs": 2293,
+        "answers_reached": 506,
+        "answer_coverage": 0.22067160924552987,
+        "mean_disease_answer_coverage": 0.15730709834125395,
+        "empty_graphs": 181,
+        "graphs_at_cap": 24,
+        "graph_sizes": {
+          "nodes": {
+            "mean": 99.24420677361854,
+            "median": 15.0,
+            "min": 1,
+            "max": 2214
+          },
+          "edges": {
+            "mean": 236.0374331550802,
+            "median": 14.5,
+            "min": 0,
+            "max": 3000
+          },
+          "candidate_nodes": {
+            "mean": 87.55704099821747,
+            "median": 12.0,
+            "min": 0,
+            "max": 2172
+          }
+        }
+      }
+    }
+  },
+  "paired_recovery": {
+    "validation": {
+      "both": 340,
+      "walk_only": 1193,
+      "aragorn_only": 115,
+      "neither": 643,
+      "either_method": 1648,
+      "either_method_coverage": 0.7193365342645133,
+      "note": "Set union of answers from two separate graphs; not a merged graph subject to one 3000-edge cap."
+    },
+    "test": {
+      "both": 376,
+      "walk_only": 1188,
+      "aragorn_only": 130,
+      "neither": 599,
+      "either_method": 1694,
+      "either_method_coverage": 0.7387701700828608,
+      "note": "Set union of answers from two separate graphs; not a merged graph subject to one 3000-edge cap."
+    }
+  },
+  "verification": {
+    "saved_graph_hashes_checked": true,
+    "coverage_recomputed": true,
+    "both_methods_checked_against_masked_graph": true,
+    "heldout_treats_absent": true
+  },
+  "scope": "Graph-present retrieval coverage; fixed three-hop, 1000-attempt, 3000-connection budget. Test is exploratory. No ULTRA ranking or model selection. One random seed.",
+  "elapsed_seconds_this_invocation": 132.87705339101376,
+  "peak_rss_bytes": 7431634944
+}

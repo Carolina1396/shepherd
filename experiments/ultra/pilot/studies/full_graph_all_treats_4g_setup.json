@@ -1,0 +1,636 @@
+{
+  "experiment": 9,
+  "status": "Completed validation and test; final results retained separately",
+  "run_directory": "experiments/ultra/pilot/results/all_treats_4g_001",
+  "config": {
+    "checkpoint": "vendor/ULTRA/ckpts/ultra_4g.pth",
+    "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "experiment": 9,
+    "num_nodes": 1670341,
+    "num_relations": 60,
+    "target_predicate": "biolink:treats",
+    "target_scope": "all",
+    "candidate_scope": "chemical-protein",
+    "split_seed": 731,
+    "pair_splits": {
+      "visible": 23186,
+      "validation": 2898,
+      "test": 2899
+    },
+    "training_epochs": 0,
+    "ranking": "Predict treatment subject given object; fixed candidate pool; all-known filtering; pessimistic ties",
+    "mask": "All direct held-out pair connections, all predicates, both directions, before inverse/relation graph construction",
+    "legacy_field_names": "drug and disease fields mean subject and object; endpoint categories need not be Drug/Disease"
+  },
+  "preparation": {
+    "complete": true,
+    "nodes": 1670341,
+    "treats_records_all_types": 33634,
+    "all_unique_treats_pairs": 28983,
+    "selected_pairs": 28983,
+    "pair_splits": {
+      "visible": 23186,
+      "validation": 2898,
+      "test": 2899
+    },
+    "candidates": 1417973,
+    "distinct_treatment_subjects": 5037,
+    "distinct_target_objects": 5065,
+    "candidate_scope": "chemical-protein",
+    "target_scope": "all",
+    "chemical_candidates": 1117832,
+    "protein_candidates": 300141,
+    "queries_by_split": {
+      "visible": 4565,
+      "validation": 1429,
+      "test": 1458
+    },
+    "target_category_pair_counts": {
+      "Disease": 23318,
+      "Other": 5665
+    },
+    "original_unique_connections": 27927289,
+    "removed_connections": 13926,
+    "removed_by_predicate": {
+      "biolink:treats": 5797,
+      "biolink:treats_or_applied_or_studied_to_treat": 2057,
+      "biolink:applied_to_treat": 1496,
+      "biolink:in_clinical_trials_for": 3310,
+      "biolink:has_side_effect": 319,
+      "biolink:contributes_to": 155,
+      "biolink:correlated_with": 202,
+      "biolink:affects": 167,
+      "biolink:disrupts": 43,
+      "biolink:related_to": 229,
+      "biolink:causes": 58,
+      "biolink:contraindicated_in": 58,
+      "biolink:predisposes_to_condition": 14,
+      "biolink:positively_correlated_with": 11,
+      "biolink:studied_to_treat": 4,
+      "biolink:negatively_correlated_with": 2,
+      "biolink:produces": 2,
+      "biolink:associated_with": 1,
+      "biolink:exacerbates_condition": 1
+    },
+    "remaining_connections": 27913363,
+    "edges_with_inverses": 55826726,
+    "isolated_candidates": 56,
+    "all_heldout_direct_connections_absent": true,
+    "all_visible_targets_retained": true,
+    "config_sha256": "9c09feddbfbe00713ffd6e8570b1d6f45fe0c0c90fc82fc3894ef66d36d01edd",
+    "dataset_sha256": {
+      "candidates.json": "ae04134eaad3ce4148ecd55cb2a333674b83fbc7ae16be01464f56937a37e698",
+      "labels.json": "01131e4b51e00c5054ebb3ec1cfa19db36b6e667587f9cff38b934ee78b31566",
+      "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+      "triples.npy": "f7f7ae33e704c3bf91616410f24189adbfc7df9e75b92fdcd4479da8bf4cd497"
+    },
+    "preparation_seconds": 46.668406146985944
+  },
+  "independent_verification": {
+    "complete": true,
+    "raw_treats_records": 33634,
+    "deduplicated_pairs": 28983,
+    "pair_splits": {
+      "visible": 23186,
+      "validation": 2898,
+      "test": 2899
+    },
+    "candidates": 1417973,
+    "all_raw_treats_pairs_in_split": true,
+    "exact_seed731_split": true,
+    "all_eligible_category_nodes_are_candidates": true,
+    "all_target_subjects_in_candidate_pool": true,
+    "no_heldout_direct_pair_in_either_direction": true,
+    "prepared_file_hashes_verified": true
+  },
+  "endpoint_audit": {
+    "records": 33634,
+    "unique_pairs": 28983,
+    "subjects": 5037,
+    "targets": 5065,
+    "split": {
+      "visible": 23186,
+      "validation": 2898,
+      "test": 2899
+    },
+    "endpoint_types": [
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:Drug",
+          "biolink:MolecularEntity",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 15610
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:Drug",
+          "biolink:MolecularEntity",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 3848
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:MolecularEntity",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 3359
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:Drug",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 2469
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 1027
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:MolecularEntity",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 708
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:Drug",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 554
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 396
+      },
+      {
+        "head": [
+          "biolink:BiologicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:GeneOrGeneProduct",
+          "biolink:GeneProductMixin",
+          "biolink:MacromolecularMachineMixin",
+          "biolink:NamedThing",
+          "biolink:Polypeptide",
+          "biolink:Protein",
+          "biolink:ThingWithTaxon"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 378
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 353
+      },
+      {
+        "head": [
+          "biolink:BiologicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:GeneOrGeneProduct",
+          "biolink:GeneProductMixin",
+          "biolink:MacromolecularMachineMixin",
+          "biolink:NamedThing",
+          "biolink:Polypeptide",
+          "biolink:Protein",
+          "biolink:ThingWithTaxon"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 103
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 76
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:MolecularEntity",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 45
+      },
+      {
+        "head": [
+          "biolink:BiologicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:Gene",
+          "biolink:GeneOrGeneProduct",
+          "biolink:GeneProductMixin",
+          "biolink:GenomicEntity",
+          "biolink:MacromolecularMachineMixin",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:Polypeptide",
+          "biolink:Protein",
+          "biolink:ThingWithTaxon"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 22
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:ComplexMolecularMixture",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 9
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:MolecularEntity",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:NamedThing",
+          "biolink:OrganismTaxon"
+        ],
+        "pairs": 7
+      },
+      {
+        "head": [
+          "biolink:BiologicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:Gene",
+          "biolink:GeneOrGeneProduct",
+          "biolink:GeneProductMixin",
+          "biolink:GenomicEntity",
+          "biolink:MacromolecularMachineMixin",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:Polypeptide",
+          "biolink:Protein",
+          "biolink:ThingWithTaxon"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 7
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:MolecularEntity",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 5
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:Disease",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 3
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:ComplexMolecularMixture",
+          "biolink:NamedThing",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:DiseaseOrPhenotypicFeature",
+          "biolink:NamedThing",
+          "biolink:PhenotypicFeature",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 2
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:Drug",
+          "biolink:MolecularEntity",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:BiologicalEntity",
+          "biolink:BiologicalProcess",
+          "biolink:BiologicalProcessOrActivity",
+          "biolink:NamedThing",
+          "biolink:Occurrent",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:ThingWithTaxon"
+        ],
+        "pairs": 1
+      },
+      {
+        "head": [
+          "biolink:ChemicalEntity",
+          "biolink:ChemicalEntityOrGeneOrGeneProduct",
+          "biolink:ChemicalEntityOrProteinOrPolypeptide",
+          "biolink:ChemicalMixture",
+          "biolink:ChemicalOrDrugOrTreatment",
+          "biolink:Drug",
+          "biolink:MolecularEntity",
+          "biolink:MolecularMixture",
+          "biolink:NamedThing",
+          "biolink:OntologyClass",
+          "biolink:PhysicalEssence",
+          "biolink:PhysicalEssenceOrOccurrent",
+          "biolink:SmallMolecule"
+        ],
+        "tail": [
+          "biolink:NamedThing",
+          "biolink:OrganismTaxon"
+        ],
+        "pairs": 1
+      }
+    ],
+    "subjects_outside_chemical_drug": 155,
+    "extra_subject_categories": {
+      "('biolink:BiologicalEntity', 'biolink:ChemicalEntityOrGeneOrGeneProduct', 'biolink:ChemicalEntityOrProteinOrPolypeptide', 'biolink:GeneOrGeneProduct', 'biolink:GeneProductMixin', 'biolink:MacromolecularMachineMixin', 'biolink:NamedThing', 'biolink:Polypeptide', 'biolink:Protein', 'biolink:ThingWithTaxon')": 143,
+      "('biolink:BiologicalEntity', 'biolink:ChemicalEntityOrGeneOrGeneProduct', 'biolink:ChemicalEntityOrProteinOrPolypeptide', 'biolink:Gene', 'biolink:GeneOrGeneProduct', 'biolink:GeneProductMixin', 'biolink:GenomicEntity', 'biolink:MacromolecularMachineMixin', 'biolink:NamedThing', 'biolink:OntologyClass', 'biolink:PhysicalEssence', 'biolink:PhysicalEssenceOrOccurrent', 'biolink:Polypeptide', 'biolink:Protein', 'biolink:ThingWithTaxon')": 12
+    },
+    "reverse_pair_overlap": 0,
+    "self_pairs": 0
+  },
+  "interpretation": "All unique treats pairs, including protein subjects and non-Disease targets; broader candidate pool than Experiment 3; no fine-tuning.",
+  "launcher": {
+    "pid": 145663,
+    "log": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/all_treats_4g_001/run.log",
+    "workflow": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/all_treats_4g_001/workflow.py"
+  },
+  "smoke_benchmark": {
+    "validation": {
+      "inference_seconds": 1.7572842439985834,
+      "peak_gpu_allocated_bytes": 7774959104
+    },
+    "test": {
+      "inference_seconds": 1.3656894439918688,
+      "peak_gpu_allocated_bytes": 7774959104
+    }
+  },
+  "results_record": "full_graph_all_treats_4g_results.json"
+}

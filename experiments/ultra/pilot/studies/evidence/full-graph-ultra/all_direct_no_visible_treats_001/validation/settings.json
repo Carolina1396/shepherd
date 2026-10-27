@@ -1,0 +1,15 @@
+{
+  "config_sha256": "438c685a768723d737dd8919091b152417807a496c6ad994b2e625f9e686cd6e",
+  "preparation_sha256": "deacb9b79246eceb053409c3e9caa235e5fa29098d1cbc313ecc20732edecba6",
+  "runner_sha256": "82411281244d7b2ed6e9f0168066b320b4a794d38bb11c57d783e1f1410a31ac",
+  "common_sha256": "424708fe7264c0f89b0f0a020614e175508719ced105d5ad3e04b9838db7bcd9",
+  "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+  "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+  "torch": "2.1.0+cu118",
+  "cuda": "11.8",
+  "gpu": "NVIDIA RTX A6000",
+  "batch_size": 1,
+  "training_epochs": 0,
+  "split": "validation",
+  "reuse_validation_scores": false
+}

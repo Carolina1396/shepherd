@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "baseline_path": "/home/agonzalez/shepherd/experiments/ultra/output/full-graph-ultra/run_001",
+  "variant_path": "experiments/ultra/output/full-graph-ultra/treats_only_001",
+  "identical_split_membership": true,
+  "identical_candidates_and_baseline_degrees": true,
+  "identical_checkpoint_and_model_version": true,
+  "baseline_graph_is_subset": true,
+  "extra_direct_edges": 5992,
+  "extra_edges_by_predicate": {
+    "biolink:treats_or_applied_or_studied_to_treat": 1720,
+    "biolink:applied_to_treat": 1257,
+    "biolink:in_clinical_trials_for": 2044,
+    "biolink:affects": 139,
+    "biolink:contributes_to": 120,
+    "biolink:has_side_effect": 237,
+    "biolink:correlated_with": 125,
+    "biolink:disrupts": 22,
+    "biolink:related_to": 201,
+    "biolink:contraindicated_in": 61,
+    "biolink:causes": 39,
+    "biolink:predisposes_to_condition": 8,
+    "biolink:studied_to_treat": 5,
+    "biolink:positively_correlated_with": 11,
+    "biolink:negatively_correlated_with": 2,
+    "biolink:produces": 1
+  },
+  "pairs_with_extra_direct_edges": {
+    "visible": 0,
+    "validation": 1408,
+    "test": 1411
+  },
+  "config_sha256": {
+    "baseline": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75",
+    "variant": "748e20b21a83cf57584c849f439d8d0a22d66439e175fc6ce7a2c471a958d1d7"
+  }
+}

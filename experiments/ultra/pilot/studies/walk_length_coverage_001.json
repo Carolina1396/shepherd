@@ -1,0 +1,88 @@
+{
+  "experiment": "7 walk-length coverage comparison",
+  "comparison": {
+    "complete": true,
+    "diseases": 986,
+    "validation_pairs": 1807,
+    "lengths": {
+      "3": {
+        "answers_reached": 837,
+        "answer_coverage": 0.46319867183176533,
+        "mean_disease_answer_coverage": 0.5123907223045154,
+        "mean_nodes": 1740.7484787018257,
+        "mean_edges": 2106.3590263691685,
+        "mean_drug_nodes": 291.6470588235294,
+        "graphs_at_cap": 0,
+        "completed_walks": 932018,
+        "attempted_walks": 986000,
+        "retrieval_seconds": 22.449755339999683
+      },
+      "6": {
+        "answers_reached": 781,
+        "answer_coverage": 0.43220807969009406,
+        "mean_disease_answer_coverage": 0.48040142469655656,
+        "mean_nodes": 2454.7271805273836,
+        "mean_edges": 2897.814401622718,
+        "mean_drug_nodes": 316.63793103448273,
+        "graphs_at_cap": 498,
+        "completed_walks": 884575,
+        "attempted_walks": 986000,
+        "retrieval_seconds": 49.17144157906296
+      }
+    },
+    "answers_reached_both": 567,
+    "answers_gained_at_6": 214,
+    "answers_lost_at_6": 270,
+    "three_hop_exact_reproduction_diseases": 986,
+    "settings_sha256": "b32aca7256c53a85cdb4107dad582e805afe53e2809dfbd65dbe3e5815663c6d",
+    "elapsed_seconds_this_invocation": 156.0661635169963,
+    "parent_peak_rss_bytes": 5426806784,
+    "model_evaluation": false,
+    "test_evaluation": false
+  },
+  "verification": {
+    "complete": true,
+    "graphs_independently_checked": 1972,
+    "artifact_hashes_verified": 1972,
+    "all_heldout_pairs_absent": true,
+    "coverage_recomputed": true,
+    "pair_gains_losses_recomputed": true,
+    "three_hop_graphs_reproduced_exactly": 986
+  },
+  "settings": {
+    "experiment": "7 walk-length coverage comparison",
+    "split": "validation",
+    "walk_lengths": [
+      3,
+      6
+    ],
+    "diseases": 986,
+    "pairs": 1807,
+    "attempts": 1000,
+    "edge_cap": 3000,
+    "candidate_drugs": 5326,
+    "seed": 7317,
+    "baseline_settings_sha256": "fbf56acdeb625380e2d8de2df5a751c97bc9fe7c76fc8a0211ed91c97ecd5a07",
+    "baseline_cohort_sha256": "35af55745df6674a8c566dcfbbbd9bf9325b2cabd7c08152ea1bb95e4646a49a",
+    "baseline_summary_sha256": "0ec938a6904fc449218aa17e7c1aae6a57811c972fd927e2ed2305102854e1ad",
+    "source_sha256": {
+      "compare_walk_lengths.py": "58990bde51e84eb0f48d7b76e88076e5c0f6dcdbb4619d274f3f64982aa3fd35",
+      "run.py": "4eda8acccea5b77e2bbad4ebfaeb009cb87c6b9fe9c1c1b4fd270cd674e41e69",
+      "masked_graph.py": "99083bf40eeca247478f905cc901f2aae73145a8030157aef1281261623f92b4",
+      "full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+    },
+    "gandalf_commit": "3fbaded1c922de3d61ff2af17694264d13b221f5",
+    "sampling": "Unchanged native Gandalf walk; same seed per disease for each length; whole-walk cap; no label-guided selection",
+    "mask": "All 3616 validation/test pairs; all direct predicates and both directions before traversal",
+    "model_evaluation": false,
+    "test_evaluation": false
+  },
+  "mask_verification": {
+    "all_heldout_pairs_absent": true,
+    "hidden_pairs": 3616,
+    "removed_evidence_records": 11521,
+    "load_mask_seconds": 16.85484505399654
+  },
+  "source_comparison_sha256": "c3699f09b8bb6a881b266856c1cbb65a5d15d930b28999b8a0874b8a5dba386f",
+  "per_disease_csv_sha256": "6be27a2fbe953b56c5b06e00e210b4ec6272bfad81ef95d7460f928a235198cc"
+}

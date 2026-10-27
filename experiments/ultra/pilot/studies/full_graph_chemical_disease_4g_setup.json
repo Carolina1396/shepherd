@@ -1,0 +1,129 @@
+{
+  "experiment": 10,
+  "status": "Completed validation and test; independent score verification passed",
+  "run_directory": "experiments/ultra/pilot/results/chemical_disease_4g_001",
+  "config": {
+    "checkpoint": "vendor/ULTRA/ckpts/ultra_4g.pth",
+    "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "experiment": 10,
+    "num_nodes": 1670341,
+    "num_relations": 60,
+    "target_predicate": "biolink:treats",
+    "target_scope": "chemical-disease",
+    "candidate_scope": "chemical",
+    "split_seed": 731,
+    "pair_splits": {
+      "visible": 18334,
+      "validation": 2291,
+      "test": 2293
+    },
+    "training_epochs": 0,
+    "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+    "mask": "All direct held-out pair connections, all predicates, both directions, before inverse/relation graph construction",
+    "legacy_field_names": "drug means subject with Drug, ChemicalEntity or SmallMolecule category; disease requires Disease category"
+  },
+  "preparation": {
+    "complete": true,
+    "nodes": 1670341,
+    "treats_records_all_types": 33634,
+    "all_unique_treats_pairs": 28983,
+    "eligible_treats_records": 27236,
+    "selected_pairs": 22918,
+    "pair_splits": {
+      "visible": 18334,
+      "validation": 2291,
+      "test": 2293
+    },
+    "candidates": 1117832,
+    "distinct_treatment_subjects": 4556,
+    "distinct_target_objects": 3901,
+    "candidate_scope": "chemical",
+    "target_scope": "chemical-disease",
+    "chemical_candidates": 1117832,
+    "protein_candidates": 300141,
+    "queries_by_split": {
+      "visible": 3487,
+      "validation": 1145,
+      "test": 1122
+    },
+    "target_category_pair_counts": {
+      "Disease": 22918
+    },
+    "original_unique_connections": 27927289,
+    "removed_connections": 11133,
+    "removed_by_predicate": {
+      "biolink:treats": 4584,
+      "biolink:treats_or_applied_or_studied_to_treat": 1843,
+      "biolink:applied_to_treat": 1313,
+      "biolink:in_clinical_trials_for": 2451,
+      "biolink:affects": 133,
+      "biolink:related_to": 192,
+      "biolink:contributes_to": 120,
+      "biolink:correlated_with": 124,
+      "biolink:has_side_effect": 215,
+      "biolink:contraindicated_in": 56,
+      "biolink:studied_to_treat": 4,
+      "biolink:causes": 44,
+      "biolink:disrupts": 33,
+      "biolink:predisposes_to_condition": 9,
+      "biolink:negatively_correlated_with": 2,
+      "biolink:in_preclinical_trials_for": 1,
+      "biolink:positively_correlated_with": 9
+    },
+    "remaining_connections": 27916156,
+    "edges_with_inverses": 55832312,
+    "isolated_candidates": 54,
+    "all_heldout_direct_connections_absent": true,
+    "all_visible_targets_retained": true,
+    "source_inventory_sha256": "0745e2d0d4fd1b60a98d20b63e067f993279d3ce36e29b8999d6a52994becbc4",
+    "source_code_sha256": {
+      "prepare.py": "eab3fb14c9776bee7e0d38ed2730533d75b738ec399aac3740ffe689e3eef1cb",
+      "full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+    },
+    "config_sha256": "5682e1bf550d3f048673d881a995f249193fb0e75e393590d795aadcda70a59b",
+    "dataset_sha256": {
+      "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+      "labels.json": "6fedc5cff9e2033ec4df2aee27dda18d5579a9075378bb7bd5ed8036cd074b3e",
+      "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+      "triples.npy": "dd99dcbc29778ae332d68f1bd3eeaac1c6fc68470f737d8e07802336368b67ac"
+    },
+    "preparation_seconds": 40.8454608470056
+  },
+  "independent_verification": {
+    "complete": true,
+    "raw_treats_records": 33634,
+    "deduplicated_pairs": 22918,
+    "pair_splits": {
+      "visible": 18334,
+      "validation": 2291,
+      "test": 2293
+    },
+    "candidates": 1117832,
+    "all_eligible_treats_pairs_in_split": true,
+    "all_targets_have_Disease_category": true,
+    "exact_seed731_split": true,
+    "all_eligible_category_nodes_are_candidates": true,
+    "all_target_subjects_in_candidate_pool": true,
+    "no_heldout_direct_pair_in_either_direction": true,
+    "prepared_file_hashes_verified": true
+  },
+  "treatment_definition": "Subject has Drug OR ChemicalEntity OR SmallMolecule; predicate is treats; object has Disease; deduplicate subject/object IDs",
+  "score_reuse": "No scores from earlier experiments; fresh inference on newly masked full graph",
+  "launcher": {
+    "pid": 168504,
+    "log": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_disease_4g_001/run.log",
+    "workflow": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_disease_4g_001/workflow.py"
+  },
+  "smoke_benchmark": {
+    "validation": {
+      "inference_seconds": 1.7921734730043681,
+      "peak_gpu_allocated_bytes": 7761143296
+    },
+    "test": {
+      "inference_seconds": 1.3653149029996712,
+      "peak_gpu_allocated_bytes": 7761143296
+    }
+  },
+  "results_record": "full_graph_chemical_disease_4g_results.json"
+}

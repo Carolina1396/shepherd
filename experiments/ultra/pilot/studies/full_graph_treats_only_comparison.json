@@ -1,0 +1,165 @@
+{
+  "completed_on": "2026-10-16",
+  "experiment": "2. Full graph",
+  "checkpoint": "ULTRA 4g",
+  "direction": "disease_to_drug",
+  "baseline_masking": "all-direct",
+  "variant_masking": "treats-only",
+  "protocol": "Visible pairs retain every edge. Held-out pairs lose only biolink:treats in both directions; all other predicates remain. Inverses and relation graph are built after masking.",
+  "pair_splits": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "candidate_drugs": 5326,
+  "training_epochs": 0,
+  "ties": "pessimistic",
+  "filter": "All known explicit Drug-Disease treats pairs across all splits",
+  "graph_comparison": {
+    "passed": true,
+    "baseline_path": "/home/agonzalez/shepherd/experiments/ultra/output/full-graph-ultra/run_001",
+    "variant_path": "experiments/ultra/output/full-graph-ultra/treats_only_001",
+    "identical_split_membership": true,
+    "identical_candidates_and_baseline_degrees": true,
+    "identical_checkpoint_and_model_version": true,
+    "baseline_graph_is_subset": true,
+    "extra_direct_edges": 5992,
+    "extra_edges_by_predicate": {
+      "biolink:treats_or_applied_or_studied_to_treat": 1720,
+      "biolink:applied_to_treat": 1257,
+      "biolink:in_clinical_trials_for": 2044,
+      "biolink:affects": 139,
+      "biolink:contributes_to": 120,
+      "biolink:has_side_effect": 237,
+      "biolink:correlated_with": 125,
+      "biolink:disrupts": 22,
+      "biolink:related_to": 201,
+      "biolink:contraindicated_in": 61,
+      "biolink:causes": 39,
+      "biolink:predisposes_to_condition": 8,
+      "biolink:studied_to_treat": 5,
+      "biolink:positively_correlated_with": 11,
+      "biolink:negatively_correlated_with": 2,
+      "biolink:produces": 1
+    },
+    "pairs_with_extra_direct_edges": {
+      "visible": 0,
+      "validation": 1408,
+      "test": 1411
+    },
+    "config_sha256": {
+      "baseline": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75",
+      "variant": "748e20b21a83cf57584c849f439d8d0a22d66439e175fc6ce7a2c471a958d1d7"
+    }
+  },
+  "results": {
+    "validation": {
+      "all_direct": {
+        "answers": 1807,
+        "mrr": 0.10574815363561749,
+        "hits_at_1": 0.05644714997232983,
+        "hits_at_3": 0.10348644161593802,
+        "hits_at_10": 0.19203099059214168,
+        "top_10_answers": 347,
+        "diseases": 986,
+        "disease_macro_mrr": 0.10277716684831123
+      },
+      "treats_only": {
+        "answers": 1807,
+        "mrr": 0.1872093229492779,
+        "hits_at_1": 0.11344770337576093,
+        "hits_at_3": 0.1953514111787493,
+        "hits_at_10": 0.33757609297177643,
+        "top_10_answers": 610,
+        "diseases": 986,
+        "disease_macro_mrr": 0.22259806005617247
+      },
+      "unchanged_degree_baseline": {
+        "answers": 1807,
+        "mrr": 0.06005842802592819,
+        "hits_at_1": 0.03763143331488655,
+        "hits_at_3": 0.054233536247924735,
+        "hits_at_10": 0.0996126175982291,
+        "top_10_answers": 180,
+        "diseases": 986,
+        "disease_macro_mrr": 0.0616629372382203
+      },
+      "absolute_delta": {
+        "mrr": 0.0814611693136604,
+        "hits_at_1": 0.0570005534034311,
+        "hits_at_3": 0.09186496956281127,
+        "hits_at_10": 0.14554510237963475,
+        "top_10_answers": 263
+      },
+      "relative_mrr_gain": 0.7703318357155988,
+      "runtime_settings_match": true,
+      "baseline_metrics_sha256": "bdc252c155e8c558d68b2fcc169aca3a01e072e05645e99ba9a66b429550a71c",
+      "variant_metrics_sha256": "de6cffd11d999ab70724d819376ff1e76c0a6185bdaf07c592bb7019be76eabc"
+    },
+    "test": {
+      "all_direct": {
+        "answers": 1809,
+        "mrr": 0.10683563486210765,
+        "hits_at_1": 0.05749032614704257,
+        "hits_at_3": 0.1011608623548922,
+        "hits_at_10": 0.20066334991708126,
+        "top_10_answers": 363,
+        "diseases": 977,
+        "disease_macro_mrr": 0.10405564666631878
+      },
+      "treats_only": {
+        "answers": 1809,
+        "mrr": 0.18072094192893873,
+        "hits_at_1": 0.1044776119402985,
+        "hits_at_3": 0.18629076838032063,
+        "hits_at_10": 0.33499170812603646,
+        "top_10_answers": 606,
+        "diseases": 977,
+        "disease_macro_mrr": 0.20947927067813263
+      },
+      "unchanged_degree_baseline": {
+        "answers": 1809,
+        "mrr": 0.055177122020727325,
+        "hits_at_1": 0.03427307904919845,
+        "hits_at_3": 0.04754007739082366,
+        "hits_at_10": 0.08568269762299613,
+        "top_10_answers": 155,
+        "diseases": 977,
+        "disease_macro_mrr": 0.05297639886804796
+      },
+      "absolute_delta": {
+        "mrr": 0.07388530706683108,
+        "hits_at_1": 0.04698728579325594,
+        "hits_at_3": 0.08512990602542843,
+        "hits_at_10": 0.1343283582089552,
+        "top_10_answers": 243
+      },
+      "relative_mrr_gain": 0.6915792391012097,
+      "runtime_settings_match": true,
+      "baseline_metrics_sha256": "521f444209124bb2a7ceeb448d11beb662bb292246547db9aee8badb9b4150ac",
+      "variant_metrics_sha256": "d0dd31f353229564567cf24860f2a974473cdde5a21f2a45de8ae324a0096e24"
+    }
+  },
+  "runtime": {
+    "gpu": "NVIDIA RTX A6000",
+    "batch_size": 1,
+    "initial_graph_model_setup_seconds": 361.2,
+    "validation_inference_seconds": 1369.11864912475,
+    "new_test_inference_seconds": 729.5717290458851,
+    "reused_validation_queries": 452,
+    "new_test_queries": 525,
+    "peak_gpu_allocated_bytes": 7711388160
+  },
+  "raw_outputs": "output/full-graph-ultra/treats_only_001/",
+  "limitations": [
+    "Other direct treatment-related predicates remain visible by design.",
+    "The previously inspected test split is exploratory.",
+    "Metrics measure graph-assertion recovery, not clinical efficacy."
+  ],
+  "implementation_sha256": {
+    "prepare_full_graph_ultra.py": "e96cfc41d27f57c083f13776f036a1a3262b2e5b95b5062fafa94924acffff9d",
+    "full_graph_common.py": "e2ef91b00273c9d9db9cc32bd799c8c943ee2a85ccb8721e63a4cae90ad7e277",
+    "run_full_graph_ultra.py": "82411281244d7b2ed6e9f0168066b320b4a794d38bb11c57d783e1f1410a31ac",
+    "verify_full_graph_ultra.py": "0b35974a56a5a84f6769e706fbffa05b57fabd67139efc9a8e0b046f7599d075"
+  }
+}

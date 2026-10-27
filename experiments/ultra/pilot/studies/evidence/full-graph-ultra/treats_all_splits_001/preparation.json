@@ -1,0 +1,49 @@
+{
+  "masking": "treats-only-all-splits",
+  "nodes": 1670341,
+  "candidate_drugs": 5326,
+  "diseases": 3538,
+  "stored_records": 28709074,
+  "original_unique_connections": 27927289,
+  "model_connections_before_inverses": 27909210,
+  "removed_connections": 18079,
+  "removed_connections_by_predicate": {
+    "biolink:treats": 18079
+  },
+  "pair_splits": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "remaining_treats_connections": 10904,
+  "visible_target_treats_removed": true,
+  "isolated_nodes_after_mask": 123,
+  "isolated_candidate_drugs": 2,
+  "validation_isolated_drug_pairs": 0,
+  "validation_isolated_disease_pairs": 21,
+  "validation_diseases": 986,
+  "validation_pairs_without_visible_treatment_for_disease": 1807,
+  "source_inventory_sha256": "0745e2d0d4fd1b60a98d20b63e067f993279d3ce36e29b8999d6a52994becbc4",
+  "config_sha256": "c47122ccb51b21d6acdfbab58518848f65b6587276c4dd266f6ea1403fccf6e4",
+  "dataset_sha256": {
+    "candidate_degree.npy": "32bc472055d61ca699352f870c9e247061b0f1c9c61675fc89a00b229896f5dd",
+    "candidates.json": "a7a9580b5634f7eb3e0bbf7dad092f4aa0029e512cd9f3c1ee87bd8c1ddcbfce",
+    "labels.json": "79373b3d6f126932ccfd67f3868d1dcfbb944fe3e32f44eeaef7de7301160092",
+    "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+    "triples.npy": "3e41a69347c01f6058ed3c374dd859f820485fbd1a6f7f31b0f108b0306c1ba6"
+  },
+  "checks": [
+    "source inventory equals full Gandalf target pairs",
+    "exact disjoint global split",
+    "visible target treats removed",
+    "only biolink:treats connections of visible, validation, and test target pairs removed in both directions; other direct predicates and treats outside the target pairs retained"
+  ],
+  "limitations": [
+    "Graph assertions are not clinically adjudicated treatments",
+    "Indirect clues through equivalent or related entities may remain",
+    "Previously explored pairs may occur in this broader exploratory split",
+    "Other direct held-out pair predicates, including treatment-related assertions, remain visible by design",
+    "Treats edges outside the 18,079 target pairs remain; this is not global predicate removal"
+  ],
+  "preparation_seconds": 163.17529158399975
+}

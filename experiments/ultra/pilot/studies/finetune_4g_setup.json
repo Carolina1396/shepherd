@@ -1,0 +1,101 @@
+{
+  "experiment": 5,
+  "status": "setup_verified_full_training_pending",
+  "verified_on": "2026-10-09",
+  "run_directory": "pilot/results/finetune_4g_smoke_002",
+  "protocol_tests_passed": 19,
+  "gpu": "NVIDIA RTX A6000",
+  "pretrained_parity": {
+    "queries": 2,
+    "max_absolute_score_difference": 0.0
+  },
+  "smoke": {
+    "optimizer_steps": 2,
+    "weights_changed": true,
+    "validation_queries": 2,
+    "validation_complete": false,
+    "model_selection_performed": false,
+    "test_evaluated": false,
+    "training_seconds": 8.579646782949567
+  },
+  "steps": [
+    {
+      "step": 1,
+      "loss": 0.9468384981155396,
+      "gradient_norm": 16.81660848878742,
+      "seconds": 4.100070519372821,
+      "peak_gpu_allocated_bytes": 29062087168,
+      "peak_gpu_reserved_bytes": 30211571712,
+      "drug": "UNII:90ZX3Q3FR7",
+      "disease": "UMLS:C0406317"
+    },
+    {
+      "step": 2,
+      "loss": 0.366100549697876,
+      "gradient_norm": 17.265631043173958,
+      "seconds": 4.479576263576746,
+      "peak_gpu_allocated_bytes": 29063483392,
+      "peak_gpu_reserved_bytes": 30211571712,
+      "drug": "CHEBI:29007",
+      "disease": "MONDO:0001316"
+    }
+  ],
+  "resume": {
+    "paused_after_step": 1,
+    "completed_step": 2,
+    "first_step_record_unchanged": true,
+    "optimizer_state_step_verified": 2,
+    "changed_parameter_tensors": {
+      "relation_model": 30,
+      "entity_model": 52
+    }
+  },
+  "full_validation_evaluated": false,
+  "test_evaluated": false,
+  "performance_improvement_established": false,
+  "settings": {
+    "config": {
+      "steps": 1000,
+      "validate_every": 250,
+      "patience": 3,
+      "learning_rate": 1e-05,
+      "weight_decay": 0.01,
+      "num_negative": 256,
+      "adversarial_temperature": 1.0,
+      "seed": 1024
+    },
+    "smoke_test": true,
+    "batch_size": 1,
+    "initial_checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "prepared_config_sha256": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75",
+    "dataset_sha256": {
+      "candidate_degree.npy": "189f1c6dd616e827e81258acb58484f69828dc2b021f1848b77be69d463415aa",
+      "candidates.json": "a7a9580b5634f7eb3e0bbf7dad092f4aa0029e512cd9f3c1ee87bd8c1ddcbfce",
+      "labels.json": "707f2b251e194c771e2126db57f211273ba44cca505c9e95ec494d151e7ee666",
+      "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+      "triples.npy": "d7203bc004e13e144a8b5e904827a0175724da5433e07d71c6b982df39915af6"
+    },
+    "relation_graph_sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+    "baseline_validation_sha256": "bdc252c155e8c558d68b2fcc169aca3a01e072e05645e99ba9a66b429550a71c",
+    "source_sha256": {
+      "run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+      "full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+    },
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "torch": "2.1.0+cu118",
+    "cuda": "11.8",
+    "gpu": "NVIDIA RTX A6000",
+    "ranking": "Drug heads; all-known filtered; pessimistic ties",
+    "negative_filter": "Visible training positives only; held-out labels used for evaluation filtering only",
+    "training_mask": "Native remove_one_hop=True: all direct predicates and directions for positives and sampled negatives",
+    "relation_graph": "Frozen aggregate relation graph from the held-out-masked context, as in upstream training"
+  },
+  "artifact_sha256": {
+    "settings.json": "4dedbec1d05a621091cc10a2bf6df49ce55a3a58c2aa55bc4e3b7acdc652e6e8",
+    "last.pt": "89ca6e4135c25aa010e56efa53640669c478851a35d3e00b07994279c2a8feb2",
+    "parity.json": "2e08e700bafaf94a68b11fc7078b81f47eec46f044de288f1f09a5a17601fdd4",
+    "smoke.json": "c0c75c7375750cbeef8e79fec42723f1d3fb921c0418192612cdbeafb38c0622",
+    "validation_step_000002/partial.json": "bac044408d73e6be33d66cb5ffe528796fa8ae54286d82c5b7abfc9c2e4308a4"
+  },
+  "note": "Setup verification only. Checkpoints and partial raw scores remain in the ignored local run directory; no full fine-tuning result is claimed."
+}

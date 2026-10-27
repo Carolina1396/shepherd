@@ -1,0 +1,19 @@
+{
+  "num_nodes": 1670341,
+  "num_relations": 60,
+  "target_predicate": "biolink:treats",
+  "masking": "treats-only-all-splits",
+  "candidate_category": "biolink:Drug",
+  "disease_category": "biolink:Disease",
+  "split_seed": 731,
+  "pair_splits": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "training_epochs": 0,
+  "checkpoint": "vendor/ULTRA/ckpts/ultra_4g.pth",
+  "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+  "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+  "protocol": "Global disjoint Drug-Disease treats pair split; full graph context with only biolink:treats connections of visible, validation, and test target pairs removed in both directions; other direct predicates and treats outside the target pairs retained; fixed Drug-only candidates; filtered pessimistic head ranks"
+}

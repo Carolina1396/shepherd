@@ -1,0 +1,189 @@
+{
+  "experiment": 11,
+  "complete": true,
+  "run_directory": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_finetune_4g_001",
+  "training": {
+    "optimizer_steps": 1000,
+    "training_pairs_available": 18334,
+    "full_passes_completed": 0,
+    "best_step": 1000,
+    "best_validation_mrr": 0.12576268574405514,
+    "pretrained_validation_mrr": 0.08681898576586203,
+    "checkpoint_sha256": "7e5819e6c46a451e3bec005e63831ac468ad6849cebaebb27d0b1bc429149804",
+    "training_seconds": 3999.29099706994,
+    "test_evaluated": false,
+    "stopped_early": false
+  },
+  "settings": {
+    "experiment": 11,
+    "prepared_dataset": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_disease_4g_001",
+    "config": {
+      "steps": 1000,
+      "validate_every": 250,
+      "patience": 3,
+      "learning_rate": 1e-05,
+      "weight_decay": 0.01,
+      "num_negative": 256,
+      "adversarial_temperature": 1.0,
+      "seed": 1024
+    },
+    "smoke_test": false,
+    "batch_size": 1,
+    "initial_checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "prepared_config_sha256": "5682e1bf550d3f048673d881a995f249193fb0e75e393590d795aadcda70a59b",
+    "dataset_sha256": {
+      "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+      "labels.json": "6fedc5cff9e2033ec4df2aee27dda18d5579a9075378bb7bd5ed8036cd074b3e",
+      "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+      "triples.npy": "dd99dcbc29778ae332d68f1bd3eeaac1c6fc68470f737d8e07802336368b67ac"
+    },
+    "relation_graph_sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+    "baseline_validation_sha256": "5650de76d5b90b76fc8bbf8cbe242c62c6a9a80999df4bd5764c2972e8a87412",
+    "source_sha256": {
+      "pilot/chemical_finetune/run.py": "a5c88df56d6a7e3d72f7aed408a08305412a93658005dca5ee0d5df1347bb015",
+      "pilot/chemical_finetune/sampling.py": "34973e426ac2df886085904989b306dea4dae1ea22c597d2403a6d180b62e088",
+      "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+      "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+    },
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "torch": "2.1.0+cu118",
+    "cuda": "11.8",
+    "gpu": "NVIDIA RTX A6000",
+    "ranking": "Chemical/drug heads; all-known filtered; pessimistic ties",
+    "negative_filter": "Visible training positives only; uniform rejection sampling with replacement over all chemical/drug candidates; held-out labels used for evaluation filtering only",
+    "training_mask": "Native remove_one_hop=True: all direct predicates and directions for positives and sampled negatives",
+    "relation_graph": "Frozen aggregate relation graph from the held-out-masked context, as in upstream training"
+  },
+  "score_verification": {
+    "complete": true,
+    "splits": {
+      "validation": {
+        "pairs": 2291,
+        "queries": 1145,
+        "candidates": 1117832,
+        "independent_metrics": {
+          "mrr": 0.12576268574405514,
+          "hits_at_1": 0.07245744216499345,
+          "hits_at_3": 0.12483631601920558,
+          "hits_at_10": 0.22697512003491924,
+          "top_10_answers": 520
+        },
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true
+      },
+      "test": {
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "independent_metrics": {
+          "mrr": 0.12310353989043603,
+          "hits_at_1": 0.06846925425207152,
+          "hits_at_3": 0.12123855211513301,
+          "hits_at_10": 0.22023549934583514,
+          "top_10_answers": 505
+        },
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true
+      }
+    }
+  },
+  "results": {
+    "validation": {
+      "split": "validation",
+      "complete": true,
+      "scored_queries": 1145,
+      "total_queries": 1145,
+      "evaluated_pairs": 2291,
+      "ultra": {
+        "answers": 2291,
+        "mrr": 0.12576268574405514,
+        "hits_at_1": 0.07245744216499345,
+        "hits_at_3": 0.12483631601920558,
+        "hits_at_10": 0.22697512003491924,
+        "top_10_answers": 520,
+        "diseases": 1145,
+        "disease_macro_mrr": 0.12430445750430989
+      },
+      "candidates_per_query": 1117832,
+      "inference_seconds": 1603.7486840771453,
+      "answer_ranks_sha256": "c520f8dae96d5f416f76c4e8b65f379527e745be4b00e4cf94f7bb9844f17cdd"
+    },
+    "test": {
+      "split": "test",
+      "complete": true,
+      "scored_queries": 1122,
+      "total_queries": 1122,
+      "evaluated_pairs": 2293,
+      "ultra": {
+        "answers": 2293,
+        "mrr": 0.12310353989043603,
+        "hits_at_1": 0.06846925425207152,
+        "hits_at_3": 0.12123855211513301,
+        "hits_at_10": 0.22023549934583514,
+        "top_10_answers": 505,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.1313315081603556
+      },
+      "candidates_per_query": 1117832,
+      "inference_seconds": 1568.1127692750015,
+      "answer_ranks_sha256": "fd3481047b3f62a20158bdb028f20a9fe0601260a19a6d4d6c06265a549151e7"
+    }
+  },
+  "pretrained_experiment10": {
+    "validation": {
+      "split": "validation",
+      "complete": true,
+      "scored_queries": 1145,
+      "total_queries": 1145,
+      "evaluated_pairs": 2291,
+      "ultra": {
+        "answers": 2291,
+        "mrr": 0.08681898576586203,
+        "hits_at_1": 0.04845045831514622,
+        "hits_at_3": 0.08075076385857705,
+        "hits_at_10": 0.16368398079441293,
+        "top_10_answers": 375,
+        "diseases": 1145,
+        "disease_macro_mrr": 0.08661562853928408
+      },
+      "candidates_per_query": 1117832,
+      "inference_seconds": 1599.1826448129577,
+      "answer_ranks_sha256": "b56e744328810c0da49f87d23794a31832bd989000afa18010f1ba6a1e393b88"
+    },
+    "test": {
+      "split": "test",
+      "complete": true,
+      "scored_queries": 1122,
+      "total_queries": 1122,
+      "evaluated_pairs": 2293,
+      "ultra": {
+        "answers": 2293,
+        "mrr": 0.08254217166345866,
+        "hits_at_1": 0.04143044047099869,
+        "hits_at_3": 0.08198866114260794,
+        "hits_at_10": 0.16179677278674226,
+        "top_10_answers": 371,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.08882841852204812
+      },
+      "candidates_per_query": 1117832,
+      "inference_seconds": 1568.4687137021392,
+      "answer_ranks_sha256": "fdff3e8aface58e1c7dfbbbadcaeea20bc62cb58ef22428000e8a1d2d3ad1011"
+    }
+  },
+  "training_peak_gpu_allocated_bytes": 29071624704,
+  "test_resources": {
+    "peak_gpu_allocated_bytes": 7762518528,
+    "peak_gpu_reserved_bytes": 9688842240
+  },
+  "workflow_sha256": "0449aee7c02b4e3b7e8ead518c9d018523768d7d776fee1cea2cf4783882e774",
+  "workflow_status": {
+    "started_unix": 1791931305.7016494,
+    "complete": true,
+    "phase": "complete",
+    "exit_code": 0,
+    "finished_unix": 1791944032.994853
+  }
+}

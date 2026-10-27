@@ -1,0 +1,76 @@
+{
+  "copied_on": "2026-10-16",
+  "scope": "Byte-identical reports from the completed treats-only run. Raw scores, ranks, graph tensors, and environments remain local.",
+  "files": [
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/config.json",
+      "published_path": "config.json",
+      "sha256": "748e20b21a83cf57584c849f439d8d0a22d66439e175fc6ce7a2c471a958d1d7"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/preparation.json",
+      "published_path": "preparation.json",
+      "sha256": "2516ff9beff12cee87369a814093237f2d0239f95d0a33e564a46ca7a569c526"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/preparation_verification.json",
+      "published_path": "preparation_verification.json",
+      "sha256": "36eb93f28d2d2757e915c9d41251269f77c2d9b0c796d3e39c48d34cf1bbcdc1"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/baseline_comparison_verification.json",
+      "published_path": "baseline_comparison_verification.json",
+      "sha256": "8888ccd2dfbff4d00d670804160092ec2d923350813b0cdaf24544a735ee16b0"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/validation_verification.json",
+      "published_path": "validation_verification.json",
+      "sha256": "e19ee1210e61094fad57ad5ddc8336ae3cf3aca91e9bef45dd792cbbca702ae6"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/test_verification.json",
+      "published_path": "test_verification.json",
+      "sha256": "a1de59307ef004737c46ab1bde5efb18c572678b2084716e1e83055d335ff183"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/relation_graph.json",
+      "published_path": "relation_graph.json",
+      "sha256": "160fcf6d38ee2b597f049c76b3d61e8ccb3cc1ef1ddb380dcda8649ce57b15e7"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/validation/metrics.json",
+      "published_path": "validation/metrics.json",
+      "sha256": "de6cffd11d999ab70724d819376ff1e76c0a6185bdaf07c592bb7019be76eabc"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/validation/benchmark.json",
+      "published_path": "validation/benchmark.json",
+      "sha256": "c74c8098b5e190c55d31b9f342f683d30a188aacf46ab9e1c117d6143cc3f77c"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/validation/settings.json",
+      "published_path": "validation/settings.json",
+      "sha256": "9b14e8625d6cd030cb73499b32e377ea0418a23dbea23a51660648bfcd4dabb9"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/test/metrics.json",
+      "published_path": "test/metrics.json",
+      "sha256": "d0dd31f353229564567cf24860f2a974473cdde5a21f2a45de8ae324a0096e24"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/test/benchmark.json",
+      "published_path": "test/benchmark.json",
+      "sha256": "2dc61a0cae78eea1ddcfd2d1ad606effa5fd65fb844b83e14ccd97cd39223b75"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/test/settings.json",
+      "published_path": "test/settings.json",
+      "sha256": "15f10503c61a1b0eb552fd33b5dd998305172b8cf02e6a4e747439e1edd202c6"
+    },
+    {
+      "source_local_path": "output/full-graph-ultra/treats_only_001/test/reused_validation_scores.json",
+      "published_path": "test/reused_validation_scores.json",
+      "sha256": "cf6bd946ae2ea2ece30dbcdafce4ac6e79089a05bb8f37252433bfb79cdcdb08"
+    }
+  ]
+}

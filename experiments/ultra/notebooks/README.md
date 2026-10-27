@@ -1,6 +1,6 @@
 # ULTRA analysis notebooks
 
-Read the notebooks in order. All three have saved outputs from successful runs.
+Read the notebooks in order. Executed notebooks retain their outputs for inspection.
 
 ## 01 — Graph overview
 
@@ -52,3 +52,34 @@ treatment-pair filter. Change `SOURCE` to explore a resource's predicates and
 Full tables and cached counts are saved in `../output/resources/`. These describe
 source contributions and recorded claim types; they do not establish evidence
 quality or usefulness for link prediction.
+
+## 04 — ARAGORN rules and Gandalf walk metapaths
+
+[04_aragorn_gandalf_metapaths.ipynb](04_aragorn_gandalf_metapaths.ipynb) analyses
+the frozen chemical-disease retrieval comparison under the **treats-only** mask.
+It shows overall recovery and each method's top five patterns, ranked by distinct
+expected answer pairs recovered. Gandalf rows show observed walk prefixes;
+ARAGORN rows show complete rule motifs, including qualifiers and extra branches.
+
+Change `SPLIT` or `TOP_N` to inspect another split or more patterns. Rule IDs are
+zero-based and row counts overlap. Graph recovery is not ranked model accuracy.
+
+The preparation script exactly replays all 1,707 frozen disease queries and
+verifies their graph unions and completed-walk counts. Cached CSV/JSON analysis
+is in `../pilot/results/chemical_metapaths_001/`, including all 18 templates and
+the detailed audits. The short notebook reads verified cached results and needs
+pandas and IPython; preparation uses the existing experiment `.venv`.
+See [reproduction details](../pilot/metapath_analysis/README.md).
+
+## 05 — Recovery after globally removing scoped treats edges
+
+[05_global_treats_recovery.ipynb](05_global_treats_recovery.ipynb) compares Gandalf
+and local ARAGORN on one graph with **every exact `biolink:treats` record between
+Disease and Drug/ChemicalEntity/SmallMolecule removed in both directions**.
+It evaluates all unique original chemical-to-Disease treatment pairs together,
+including the former training pairs. Other predicates remain available.
+
+The notebook shows mask verification, overall recovery, overlap, rule execution
+status and contributions, and individual target outcomes. Run All starts or resumes
+the complete experiment when results are missing; completed results are cached.
+See the [protocol and reproduction commands](../pilot/global_treats_recovery/README.md).

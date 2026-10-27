@@ -1,0 +1,245 @@
+{
+  "completed_at": "2026-10-16T17:21:18.554970-07:00",
+  "timezone": "America/Los_Angeles",
+  "experiment": "2. Full graph",
+  "checkpoint": "ULTRA 4g",
+  "direction": "disease_to_drug",
+  "primary_comparison": "variant_3 minus variant_2",
+  "variants": {
+    "variant_1": {
+      "visible_pairs": "keep all edges",
+      "validation_test_pairs": "remove treats and all other direct edges",
+      "masking": "all-direct"
+    },
+    "variant_2": {
+      "visible_pairs": "keep all edges",
+      "validation_test_pairs": "remove only treats; keep other direct edges",
+      "masking": "treats-only"
+    },
+    "variant_3": {
+      "visible_pairs": "remove only treats; keep other direct edges",
+      "validation_test_pairs": "remove only treats; keep other direct edges",
+      "masking": "treats-only-all-splits"
+    }
+  },
+  "scope": "Removal applies in both directions to the 18,079 target Drug-Disease pairs, before inverse augmentation. Treats edges outside these pairs remain.",
+  "pair_splits": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "candidate_drugs": 5326,
+  "training_epochs": 0,
+  "ties": "pessimistic",
+  "filter": "Known explicit Drug-Disease treats pairs across all splits",
+  "graph_comparison": {
+    "passed": true,
+    "baseline_variant": 2,
+    "new_variant": 3,
+    "identical_split_membership": true,
+    "identical_candidates": true,
+    "identical_checkpoint_and_model_version": true,
+    "variant_3_graph_is_subset_of_variant_2": true,
+    "additional_removed_edges": 14463,
+    "additional_removed_predicate": "biolink:treats",
+    "all_and_only_visible_target_treats_removed": true,
+    "other_direct_edges_unchanged": true,
+    "treats_outside_target_pairs_unchanged": true,
+    "remaining_treats_connections": 10904,
+    "degree_baseline_recomputed_for_new_graph": true,
+    "config_sha256": {
+      "variant_2": "748e20b21a83cf57584c849f439d8d0a22d66439e175fc6ce7a2c471a958d1d7",
+      "variant_3": "c47122ccb51b21d6acdfbab58518848f65b6587276c4dd266f6ea1403fccf6e4"
+    }
+  },
+  "results": {
+    "validation": {
+      "variant_1": {
+        "ultra": {
+          "answers": 1807,
+          "mrr": 0.10574815363561749,
+          "hits_at_1": 0.05644714997232983,
+          "hits_at_3": 0.10348644161593802,
+          "hits_at_10": 0.19203099059214168,
+          "top_10_answers": 347,
+          "diseases": 986,
+          "disease_macro_mrr": 0.10277716684831123
+        },
+        "degree_baseline": {
+          "answers": 1807,
+          "mrr": 0.06005842802592819,
+          "hits_at_1": 0.03763143331488655,
+          "hits_at_3": 0.054233536247924735,
+          "hits_at_10": 0.0996126175982291,
+          "top_10_answers": 180,
+          "diseases": 986,
+          "disease_macro_mrr": 0.0616629372382203
+        }
+      },
+      "variant_2": {
+        "ultra": {
+          "answers": 1807,
+          "mrr": 0.1872093229492779,
+          "hits_at_1": 0.11344770337576093,
+          "hits_at_3": 0.1953514111787493,
+          "hits_at_10": 0.33757609297177643,
+          "top_10_answers": 610,
+          "diseases": 986,
+          "disease_macro_mrr": 0.22259806005617247
+        },
+        "degree_baseline": {
+          "answers": 1807,
+          "mrr": 0.06005842802592819,
+          "hits_at_1": 0.03763143331488655,
+          "hits_at_3": 0.054233536247924735,
+          "hits_at_10": 0.0996126175982291,
+          "top_10_answers": 180,
+          "diseases": 986,
+          "disease_macro_mrr": 0.0616629372382203
+        }
+      },
+      "variant_3": {
+        "ultra": {
+          "answers": 1807,
+          "mrr": 0.1452492176210256,
+          "hits_at_1": 0.07969009407858328,
+          "hits_at_3": 0.1510791366906475,
+          "hits_at_10": 0.280022136137244,
+          "top_10_answers": 506,
+          "diseases": 986,
+          "disease_macro_mrr": 0.19677495640426526
+        },
+        "degree_baseline": {
+          "answers": 1807,
+          "mrr": 0.03214778046436357,
+          "hits_at_1": 0.01549529607083564,
+          "hits_at_3": 0.02877697841726619,
+          "hits_at_10": 0.04925290536801328,
+          "top_10_answers": 89,
+          "diseases": 986,
+          "disease_macro_mrr": 0.03736997376283332
+        }
+      },
+      "variant_3_minus_variant_2": {
+        "mrr": -0.041960105328252284,
+        "hits_at_1": -0.03375760929717765,
+        "hits_at_3": -0.04427227448810181,
+        "hits_at_10": -0.057553956834532405,
+        "top_10_answers": -104
+      },
+      "relative_mrr_change": -0.2241346994221055,
+      "variant_2_and_3_runtime_settings_match": true,
+      "metrics_sha256": {
+        "variant_1": "bdc252c155e8c558d68b2fcc169aca3a01e072e05645e99ba9a66b429550a71c",
+        "variant_2": "de6cffd11d999ab70724d819376ff1e76c0a6185bdaf07c592bb7019be76eabc",
+        "variant_3": "722e863a3ac2c5bf1ae0bed0fc7b24494ea468dab8ee8f6b7b851096867138a6"
+      }
+    },
+    "test": {
+      "variant_1": {
+        "ultra": {
+          "answers": 1809,
+          "mrr": 0.10683563486210765,
+          "hits_at_1": 0.05749032614704257,
+          "hits_at_3": 0.1011608623548922,
+          "hits_at_10": 0.20066334991708126,
+          "top_10_answers": 363,
+          "diseases": 977,
+          "disease_macro_mrr": 0.10405564666631878
+        },
+        "degree_baseline": {
+          "answers": 1809,
+          "mrr": 0.055177122020727325,
+          "hits_at_1": 0.03427307904919845,
+          "hits_at_3": 0.04754007739082366,
+          "hits_at_10": 0.08568269762299613,
+          "top_10_answers": 155,
+          "diseases": 977,
+          "disease_macro_mrr": 0.05297639886804796
+        }
+      },
+      "variant_2": {
+        "ultra": {
+          "answers": 1809,
+          "mrr": 0.18072094192893873,
+          "hits_at_1": 0.1044776119402985,
+          "hits_at_3": 0.18629076838032063,
+          "hits_at_10": 0.33499170812603646,
+          "top_10_answers": 606,
+          "diseases": 977,
+          "disease_macro_mrr": 0.20947927067813263
+        },
+        "degree_baseline": {
+          "answers": 1809,
+          "mrr": 0.055177122020727325,
+          "hits_at_1": 0.03427307904919845,
+          "hits_at_3": 0.04754007739082366,
+          "hits_at_10": 0.08568269762299613,
+          "top_10_answers": 155,
+          "diseases": 977,
+          "disease_macro_mrr": 0.05297639886804796
+        }
+      },
+      "variant_3": {
+        "ultra": {
+          "answers": 1809,
+          "mrr": 0.14108965973290918,
+          "hits_at_1": 0.07462686567164178,
+          "hits_at_3": 0.14262023217247097,
+          "hits_at_10": 0.27860696517412936,
+          "top_10_answers": 504,
+          "diseases": 977,
+          "disease_macro_mrr": 0.1822868712167503
+        },
+        "degree_baseline": {
+          "answers": 1809,
+          "mrr": 0.02807546803748152,
+          "hits_at_1": 0.014372581536760642,
+          "hits_at_3": 0.02211166390270868,
+          "hits_at_10": 0.04256495301271421,
+          "top_10_answers": 77,
+          "diseases": 977,
+          "disease_macro_mrr": 0.028291052095939535
+        }
+      },
+      "variant_3_minus_variant_2": {
+        "mrr": -0.039631282196029544,
+        "hits_at_1": -0.02985074626865672,
+        "hits_at_3": -0.043670536207849664,
+        "hits_at_10": -0.056384742951907096,
+        "top_10_answers": -102
+      },
+      "relative_mrr_change": -0.21929546057596883,
+      "variant_2_and_3_runtime_settings_match": true,
+      "metrics_sha256": {
+        "variant_1": "521f444209124bb2a7ceeb448d11beb662bb292246547db9aee8badb9b4150ac",
+        "variant_2": "d0dd31f353229564567cf24860f2a974473cdde5a21f2a45de8ae324a0096e24",
+        "variant_3": "371aba5e3043c20139f2be88a67357c4531efa58a52354e20d222a12d178bab0"
+      }
+    }
+  },
+  "runtime": {
+    "gpu": "NVIDIA RTX A6000",
+    "batch_size": 1,
+    "initial_graph_model_setup_seconds": 270.1,
+    "validation_inference_seconds": 1581.320597789001,
+    "new_test_inference_seconds": 841.646364207003,
+    "reused_validation_queries": 452,
+    "new_test_queries": 525,
+    "peak_gpu_allocated_bytes": 7706962944
+  },
+  "raw_outputs": "output/full-graph-ultra/treats_all_splits_001/",
+  "limitations": [
+    "Other direct treatment-related predicates remain visible.",
+    "Treats edges outside the target pairs remain.",
+    "The previously inspected test split is exploratory.",
+    "Metrics measure graph-assertion recovery, not clinical efficacy.",
+    "The degree baseline changes with the graph; visible-treatment subgroups are not directly comparable because all visible target treats were removed."
+  ],
+  "implementation_sha256": {
+    "prepare_full_graph_ultra.py": "fa6e05ee7179422ffc56ab71a578e21ee6fc6c9c7891bc84bc5d13940de63446",
+    "full_graph_common.py": "4b8b07d8db87fdf6db30ab7e0e5e8e9e4b8b9a84354c4e50dbb0cd8920616208",
+    "run_full_graph_ultra.py": "82411281244d7b2ed6e9f0168066b320b4a794d38bb11c57d783e1f1410a31ac",
+    "verify_full_graph_ultra.py": "919e66fef1c249b8cc15bec51f5a6e6c4bee600e7dd5c0982947400235e332a6"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "masking": "all-direct-no-visible-treats",
+  "nodes": 1670341,
+  "candidate_drugs": 5326,
+  "diseases": 3538,
+  "stored_records": 28709074,
+  "original_unique_connections": 27927289,
+  "model_connections_before_inverses": 27903218,
+  "removed_connections": 24071,
+  "removed_connections_by_predicate": {
+    "biolink:treats": 18079,
+    "biolink:treats_or_applied_or_studied_to_treat": 1720,
+    "biolink:applied_to_treat": 1257,
+    "biolink:in_clinical_trials_for": 2044,
+    "biolink:affects": 139,
+    "biolink:contributes_to": 120,
+    "biolink:has_side_effect": 237,
+    "biolink:correlated_with": 125,
+    "biolink:disrupts": 22,
+    "biolink:related_to": 201,
+    "biolink:contraindicated_in": 61,
+    "biolink:causes": 39,
+    "biolink:predisposes_to_condition": 8,
+    "biolink:studied_to_treat": 5,
+    "biolink:positively_correlated_with": 11,
+    "biolink:negatively_correlated_with": 2,
+    "biolink:produces": 1
+  },
+  "pair_splits": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "remaining_treats_connections": 10904,
+  "visible_target_treats_removed": true,
+  "isolated_nodes_after_mask": 169,
+  "isolated_candidate_drugs": 8,
+  "validation_isolated_drug_pairs": 1,
+  "validation_isolated_disease_pairs": 38,
+  "validation_diseases": 986,
+  "validation_pairs_without_visible_treatment_for_disease": 1807,
+  "source_inventory_sha256": "0745e2d0d4fd1b60a98d20b63e067f993279d3ce36e29b8999d6a52994becbc4",
+  "config_sha256": "438c685a768723d737dd8919091b152417807a496c6ad994b2e625f9e686cd6e",
+  "dataset_sha256": {
+    "candidate_degree.npy": "32bc472055d61ca699352f870c9e247061b0f1c9c61675fc89a00b229896f5dd",
+    "candidates.json": "a7a9580b5634f7eb3e0bbf7dad092f4aa0029e512cd9f3c1ee87bd8c1ddcbfce",
+    "labels.json": "453dc5da9b50b4adf571b090be80bdb33f41e961c6d150e5bd58eb2acd18566d",
+    "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+    "triples.npy": "a709ade1ec14b5ab0ca95800b3674d3a2c7664a19c1cf757a77ff2d0b6b24c62"
+  },
+  "checks": [
+    "source inventory equals full Gandalf target pairs",
+    "exact disjoint global split",
+    "visible target treats removed",
+    "all direct validation/test pair connections and only biolink:treats connections of visible target pairs removed in both directions; visible non-treats connections and treats outside target pairs retained"
+  ],
+  "limitations": [
+    "Graph assertions are not clinically adjudicated treatments",
+    "Indirect clues through equivalent or related entities may remain",
+    "Previously explored pairs may occur in this broader exploratory split",
+    "Treats edges outside the 18,079 target pairs remain; this is not global predicate removal"
+  ],
+  "preparation_seconds": 34.78130308299842
+}

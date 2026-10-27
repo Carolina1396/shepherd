@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "split_counts": {
+    "visible": 14463,
+    "validation": 1807,
+    "test": 1809
+  },
+  "exact_seeded_global_split_verified": true,
+  "candidate_pool_matches_native_drug_categories": true,
+  "model_graph_is_exact_source_subset": true,
+  "masking": "all-direct-no-visible-treats",
+  "masking_policy_verified": true,
+  "connections_removed": 24071,
+  "visible_targets_retained": false,
+  "visible_target_treats_removed": true,
+  "degree_baseline_recomputed": true,
+  "test_metrics_computed": false,
+  "all_hidden_direct_connections_removed": true,
+  "all_visible_target_treats_removed": true,
+  "visible_other_direct_connections_retained": true,
+  "treats_outside_target_pairs_retained": true,
+  "validation_pairs_independently_ranked": 1807,
+  "validation_diseases": 986
+}

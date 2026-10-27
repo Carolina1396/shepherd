@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "variant": 4,
+  "comparisons": {
+    "variant_1": {
+      "identical_split_membership_candidates_checkpoint": true,
+      "variant_4_graph_is_subset": true,
+      "additional_removed_edges": 14463,
+      "only_visible_treats_removed": true,
+      "baseline_config_sha256": "774837021d064331df02830ae69553b71a75adde214dacced6e9a6a6cc440a75"
+    },
+    "variant_3": {
+      "identical_split_membership_candidates_checkpoint": true,
+      "variant_4_graph_is_subset": true,
+      "additional_removed_edges": 5992,
+      "only_other_hidden_direct_edges_removed": true,
+      "baseline_config_sha256": "c47122ccb51b21d6acdfbab58518848f65b6587276c4dd266f6ea1403fccf6e4"
+    }
+  },
+  "variant_4_config_sha256": "438c685a768723d737dd8919091b152417807a496c6ad994b2e625f9e686cd6e"
+}
