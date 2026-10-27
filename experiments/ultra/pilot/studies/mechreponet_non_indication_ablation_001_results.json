@@ -1,0 +1,352 @@
+{
+  "name": "MechRepoNet 4g: remove non-indication direct chemical\u2013disease context",
+  "study": 4,
+  "date": "2026-10-21",
+  "run_directory": "experiments/ultra/pilot/results/mechreponet_non_indication_ablation_001",
+  "comparison": {
+    "complete": true,
+    "experiment": "8_non_indication_ablation",
+    "graph": "MechRepoNet",
+    "pretrained_checkpoint": "4g",
+    "candidate_compounds": 40413,
+    "preparation": {
+      "complete": true,
+      "nodes": 249553,
+      "candidate_compounds": 40413,
+      "disease_nodes": 13932,
+      "eligible_pairs": 3439,
+      "pair_splits": {
+        "visible": 2751,
+        "validation": 343,
+        "test": 345
+      },
+      "queries_by_split": {
+        "visible": 785,
+        "validation": 232,
+        "test": 244
+      },
+      "original_edge_records": 9650411,
+      "original_unique_connections": 9650411,
+      "removed_connections": 89988,
+      "removed_by_predicate": {
+        "indication": 688,
+        "treats_CtD": 65009,
+        "palliates_CplD": 2087,
+        "marker_or_mechanism_CmD": 20924,
+        "prevents_CpvD": 1280
+      },
+      "remaining_connections": 9560423,
+      "edges_with_inverses": 19120846,
+      "non_target_indication_records_by_categories": {
+        "ChemicalSubstance -> Pathway": 103,
+        "AnatomicalEntity -> Disease": 1,
+        "ChemicalSubstance -> PhenotypicFeature": 109,
+        "MacromolecularMachine -> PhenotypicFeature": 1,
+        "ChemicalSubstance -> MacromolecularMachine": 12
+      },
+      "isolated_candidate_compounds": 2717,
+      "all_heldout_direct_connections_absent": true,
+      "all_visible_indication_pairs_retained": true,
+      "source_files": {
+        "/home/agonzalez/git/ULTRA/kg-datasets/MechRepoNet/raw/graph.txt.backup": "2d5b710d1f8cc41e7b2923931b12b71768c734aea01a79d1f3d65c9696921bb0",
+        "/home/agonzalez/data_KG/MIND_nodes/nodes.csv": "3f576f4786967879b4009c44f5020eb3db722fce486c76b36a334bc9e5a234d4"
+      },
+      "source_code_sha256": {
+        "prepare_ablation.py": "8b7590b7ccad531a027eb17b1f3ea7d738e1465e3641097ded3a41134761310a",
+        "full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+      },
+      "config_sha256": "ffc850d77c05773cde2ec0924d63d9e42daf866cf1a1858394b2860ae08353ca",
+      "dataset_sha256": {
+        "candidates.json": "2e571939f796285543db181d79eac9d6e75c90cd03855613406e7ef6cf22b359",
+        "labels.json": "948ce4e3d81d71a20aa920ae8b7fb3b14690c6892bd26f54409b499d35d20e2e",
+        "nodes.json": "e306d612412b4f4a3ff97f7102d7e8ecb4fda06ce0b0a4df2967d6c89c6c0740",
+        "predicates.json": "14d602ec2582c04ea020270101b915918c3b9815fa5d9ccca618b5ed4e52cd38",
+        "triples.npy": "e1eb20076a1dbf52449c39fb1a4cd9252098306235b233d4f23840b180f4c51e"
+      },
+      "preparation_seconds": 7.492950317973737,
+      "baseline_path": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/mechreponet_4g_001",
+      "baseline_preparation_sha256": "f96bbb88314a11c0312a5fd8a5db744f92a2cad4a58ef7b4c3982f077bce0394",
+      "baseline_dataset_sha256": {
+        "candidates.json": "2e571939f796285543db181d79eac9d6e75c90cd03855613406e7ef6cf22b359",
+        "labels.json": "b1fabb27006bcad6d3a239aca68a361baf9ad05fac68c858acfaa14399909d68",
+        "nodes.json": "e306d612412b4f4a3ff97f7102d7e8ecb4fda06ce0b0a4df2967d6c89c6c0740",
+        "predicates.json": "14d602ec2582c04ea020270101b915918c3b9815fa5d9ccca618b5ed4e52cd38",
+        "triples.npy": "9e2edf483b80db1e8785acc0e840761b054202734555bba55478c0a41dc4fb3f"
+      },
+      "baseline_remaining_connections": 9649723,
+      "additional_removed_connections": 89300,
+      "additional_removed_by_predicate": {
+        "treats_CtD": 65009,
+        "palliates_CplD": 2087,
+        "marker_or_mechanism_CmD": 20924,
+        "prevents_CpvD": 1280
+      },
+      "remaining_indication_connections": 2977,
+      "all_non_indication_chemical_disease_connections_absent": true,
+      "all_baseline_indication_connections_retained": true
+    },
+    "settings_sha256": "ff4675870a31a580531bd3dc8b2b49f65141cb120026ebb7496ba0696a9c4486",
+    "results": {
+      "validation": {
+        "split": "validation",
+        "complete": true,
+        "scored_queries": 232,
+        "total_queries": 232,
+        "evaluated_pairs": 343,
+        "ultra": {
+          "answers": 343,
+          "mrr": 0.25540000518190664,
+          "hits_at_1": 0.1836734693877551,
+          "hits_at_3": 0.2944606413994169,
+          "hits_at_10": 0.4110787172011662,
+          "top_10_answers": 141,
+          "diseases": 232,
+          "disease_macro_mrr": 0.2506654291027849
+        },
+        "candidates_per_query": 40413,
+        "inference_seconds": 138.94731117336778,
+        "answer_ranks_sha256": "a72ab384e3ad9e9d4e50fd6718c08663a13c4443ece0d3bf94da816c8dcb0931"
+      },
+      "test": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 244,
+        "total_queries": 244,
+        "evaluated_pairs": 345,
+        "ultra": {
+          "answers": 345,
+          "mrr": 0.24041713538651263,
+          "hits_at_1": 0.17391304347826086,
+          "hits_at_3": 0.2811594202898551,
+          "hits_at_10": 0.3681159420289855,
+          "top_10_answers": 127,
+          "diseases": 244,
+          "disease_macro_mrr": 0.2243660361348795
+        },
+        "candidates_per_query": 40413,
+        "inference_seconds": 46.34470855968539,
+        "answer_ranks_sha256": "e42175644167b48472374738e7105f8abdcd064b4dd54f192c8bebcc30d74dcb"
+      }
+    },
+    "tier0_experiment3": {
+      "validation": {
+        "answers": 1807,
+        "mrr": 0.10574815363561749,
+        "hits_at_1": 0.05644714997232983,
+        "hits_at_3": 0.10348644161593802,
+        "hits_at_10": 0.19203099059214168,
+        "top_10_answers": 347,
+        "diseases": 986,
+        "disease_macro_mrr": 0.10277716684831123
+      },
+      "test": {
+        "answers": 1809,
+        "mrr": 0.10683563486210765,
+        "hits_at_1": 0.05749032614704257,
+        "hits_at_3": 0.1011608623548922,
+        "hits_at_10": 0.20066334991708126,
+        "top_10_answers": 363,
+        "diseases": 977,
+        "disease_macro_mrr": 0.10405564666631878
+      }
+    },
+    "limitations": [
+      "Controlled context ablation with fixed checkpoint, labels and candidates; no retraining.",
+      "Previously inspected validation/test splits; exploratory evaluation."
+    ],
+    "context_ablation": "Remove all non-indication ChemicalSubstance\u2013Disease edges in both directions; retain visible indications",
+    "baseline_results": {
+      "validation": {
+        "answers": 343,
+        "mrr": 0.27273246118086797,
+        "hits_at_1": 0.1924198250728863,
+        "hits_at_3": 0.29737609329446063,
+        "hits_at_10": 0.4314868804664723,
+        "top_10_answers": 148,
+        "diseases": 232,
+        "disease_macro_mrr": 0.27578528501430793
+      },
+      "test": {
+        "answers": 345,
+        "mrr": 0.21927574624107662,
+        "hits_at_1": 0.1391304347826087,
+        "hits_at_3": 0.2318840579710145,
+        "hits_at_10": 0.37971014492753624,
+        "top_10_answers": 131,
+        "diseases": 244,
+        "disease_macro_mrr": 0.2084707283590167
+      }
+    },
+    "changes": {
+      "validation": {
+        "mrr": -0.017332455998961327,
+        "hits_at_1": -0.008746355685131185,
+        "hits_at_3": -0.002915451895043719,
+        "hits_at_10": -0.020408163265306145,
+        "top_10_answers": -7
+      },
+      "test": {
+        "mrr": 0.021141389145436007,
+        "hits_at_1": 0.03478260869565217,
+        "hits_at_3": 0.04927536231884058,
+        "hits_at_10": -0.011594202898550732,
+        "top_10_answers": -4
+      }
+    }
+  },
+  "settings": {
+    "experiment": "8_non_indication_ablation",
+    "protocol_reference": "Experiment 3",
+    "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+    "preparation_sha256": "5cb5935aae493b996b53ce0603ce8fe997b0977dd9b4202abd0b8f0d7c537115",
+    "training_epochs": 0,
+    "seed": 1024,
+    "source_sha256": {
+      "pilot/mechreponet/run.py": "c54401808977ba972bb79f73dd3ff8d2507926fb341bef41075d5798eeb543d7",
+      "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+      "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+    },
+    "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+    "torch": "2.1.0+cu118",
+    "cuda": "11.8",
+    "gpu": "NVIDIA RTX A6000",
+    "ranking": "Given disease, rank all connected ChemicalSubstance nodes; all-known filtering and pessimistic ties",
+    "batch_size": 1,
+    "splits": [
+      "validation",
+      "test"
+    ],
+    "selection": "Fixed pretrained checkpoint; validation does not select a model or change settings"
+  },
+  "preparation_verification": {
+    "complete": true,
+    "raw_source_hashes_verified": true,
+    "entire_graph_matches_independent_raw_reconstruction": true,
+    "split_independently_reconstructed": true,
+    "unchanged_nodes_candidates_and_predicates": true,
+    "heldout_pairs": 688,
+    "removed_connections": {
+      "heldout:indication": 688,
+      "ablation:treats_CtD": 65009,
+      "ablation:palliates_CplD": 2087,
+      "ablation:prevents_CpvD": 1280,
+      "ablation:marker_or_mechanism_CmD": 20924
+    },
+    "retained_indication_categories": {
+      "ChemicalSubstance -> Pathway": 103,
+      "AnatomicalEntity -> Disease": 1,
+      "ChemicalSubstance -> Disease": 2751,
+      "ChemicalSubstance -> PhenotypicFeature": 109,
+      "MacromolecularMachine -> PhenotypicFeature": 1,
+      "ChemicalSubstance -> MacromolecularMachine": 12
+    },
+    "remaining_connections": 9560423,
+    "isolated_candidates": 2717
+  },
+  "score_verification": {
+    "complete": true,
+    "splits": {
+      "validation": {
+        "pairs": 343,
+        "queries": 232,
+        "candidates": 40413,
+        "independent_metrics": {
+          "mrr": 0.25540000518190664,
+          "hits_at_1": 0.1836734693877551,
+          "hits_at_3": 0.2944606413994169,
+          "hits_at_10": 0.4110787172011662,
+          "top_10_answers": 141
+        },
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true
+      },
+      "test": {
+        "pairs": 345,
+        "queries": 244,
+        "candidates": 40413,
+        "independent_metrics": {
+          "mrr": 0.24041713538651263,
+          "hits_at_1": 0.17391304347826086,
+          "hits_at_3": 0.2811594202898551,
+          "hits_at_10": 0.3681159420289855,
+          "top_10_answers": 127
+        },
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true
+      }
+    }
+  },
+  "paired_rank_changes": {
+    "validation": {
+      "baseline_rank_hash_verified": true,
+      "improved": 87,
+      "worsened": 195,
+      "unchanged": 61,
+      "baseline_top1": 66,
+      "ablation_top1": 63,
+      "entered_top10": 22,
+      "left_top10": 29,
+      "validation_mrr_relative_change": -0.06355112964520554
+    },
+    "test": {
+      "baseline_rank_hash_verified": true,
+      "improved": 91,
+      "worsened": 202,
+      "unchanged": 52,
+      "baseline_top1": 48,
+      "ablation_top1": 60,
+      "entered_top10": 24,
+      "left_top10": 28,
+      "test_mrr_relative_change": 0.09641462636817431
+    }
+  },
+  "isolated_targets": {
+    "visible": {
+      "isolated_chemical_answers": 0,
+      "isolated_disease_answers": 0
+    },
+    "validation": {
+      "isolated_chemical_answers": 1,
+      "isolated_disease_answers": 3
+    },
+    "test": {
+      "isolated_chemical_answers": 2,
+      "isolated_disease_answers": 3
+    }
+  },
+  "resources": {
+    "validation": {
+      "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "settings_sha256": "ff4675870a31a580531bd3dc8b2b49f65141cb120026ebb7496ba0696a9c4486",
+      "peak_gpu_allocated_bytes": 2098513920,
+      "peak_gpu_reserved_bytes": 2264924160,
+      "relation_graph_sha256": "adebe4d4fd2657a02a6248adfff033d5919f741a6a7c53b3c39d89caf26282aa",
+      "complete": true
+    },
+    "test": {
+      "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+      "settings_sha256": "ff4675870a31a580531bd3dc8b2b49f65141cb120026ebb7496ba0696a9c4486",
+      "peak_gpu_allocated_bytes": 2098513920,
+      "peak_gpu_reserved_bytes": 2264924160,
+      "relation_graph_sha256": "adebe4d4fd2657a02a6248adfff033d5919f741a6a7c53b3c39d89caf26282aa",
+      "complete": true
+    }
+  },
+  "relation_graph": {
+    "sha256": "adebe4d4fd2657a02a6248adfff033d5919f741a6a7c53b3c39d89caf26282aa",
+    "triples_sha256": "e1eb20076a1dbf52449c39fb1a4cd9252098306235b233d4f23840b180f4c51e",
+    "seconds": 86.23456350201741,
+    "edges": 9248
+  },
+  "timing_note": "Validation inference includes first-call CUDA extension compilation; test does not.",
+  "verification_source_sha256": {
+    "pilot/mechreponet/verify_ablation.py": "01e3dcb684ad258c8eba2d55eb8193fcd7aaa076608ad7320454d8d7daf669f2",
+    "pilot/chemical_disease/verify_results.py": "005152c7fdf40d59bdefba14915d0867085787ecfe13520865c9729294778404"
+  },
+  "regression_tests": {
+    "passed": 4,
+    "command": "python -B -m unittest discover -s experiments/ultra/pilot/mechreponet -p 'test_*.py' -v"
+  }
+}

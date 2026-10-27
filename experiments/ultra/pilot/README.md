@@ -47,6 +47,13 @@ verification; peak training memory is **29.07 GB**.
 [Exact pretrained results](studies/full_graph_chemical_disease_4g_results.json) ·
 [Exact fine-tuned results](studies/chemical_finetune_4g_001_results.json).
 
+**Controlled masking follow-up:** an eight-condition matrix holds the current
+chemical/drug labels, split, candidates, pretrained 4g checkpoint, and A6000
+hardware fixed while varying direct `treats` and other edges for visible and
+held-out labeled pairs. Held-out `treats` are always removed; unlabeled pairs
+remain unchanged. [Protocol](masking_matrix/README.md) ·
+[Live verified test results](masking_matrix/RESULTS.md).
+
 Earlier variants explain how we reached this definition. Their different
 targets and candidate pools prevent a direct comparison with the current task.
 
@@ -141,6 +148,14 @@ external MechRepoNet/PrimeKG benchmark runs are background references, not
 additional pilot studies.
 [Protocol, resources, and commands](mechreponet/README.md) (original **8**) ·
 [Exact results](studies/mechreponet_ultra4g_masked.json).
+
+**Follow-up: remove other direct chemical–disease context.** Keep all 2,751
+visible indications and remove 89,300 non-`indication` ChemicalSubstance–Disease
+edges. With the same checkpoint, split, and candidates, validation MRR changes
+from **0.2727 to 0.2554**, and test MRR from **0.2193 to 0.2404**. Hits@10 falls
+on both splits: **0.4315 to 0.4111** validation and **0.3797 to 0.3681** test.
+This is a mixed result, not a consistent improvement from removing context.
+[Protocol and verified results](mechreponet/NON_INDICATION_ABLATION.md).
 
 ## Run and locate outputs
 

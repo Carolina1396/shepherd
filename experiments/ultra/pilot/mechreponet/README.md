@@ -60,6 +60,12 @@ preparation regression tests passed.
 
 [Exact results, input hashes, and verification](../studies/mechreponet_ultra4g_masked.json).
 
+**Context-removal follow-up:** removing the 89,300 non-`indication` direct
+ChemicalSubstance–Disease edges while retaining visible indications gives
+validation MRR **0.2554** / Hits@10 **0.4111**, and test MRR **0.2404** /
+Hits@10 **0.3681**. Test MRR increases but top-10 recovery falls from 131 to 127;
+validation also declines. [Protocol, matched results, and commands](NON_INDICATION_ABLATION.md).
+
 ## Data and masking
 
 Use the same original background graph as the older MechRepoNet benchmark:

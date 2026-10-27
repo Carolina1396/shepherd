@@ -17,6 +17,9 @@ studies, with follow-up runs grouped under the question they address.
 all result tables, follow-ups, original experiment IDs, and links to run commands.
 The Drug-only masking variants 1–4 are in
 [pilot/DRUG_ONLY_VARIANTS.md](pilot/DRUG_ONLY_VARIANTS.md).
+The [MechRepoNet context-removal follow-up](pilot/mechreponet/NON_INDICATION_ABLATION.md)
+keeps visible indications and removes other direct chemical–disease edges:
+test MRR rises to **0.2404**, while Hits@10 falls to **0.3681**; validation declines.
 The inspected test sets remain exploratory; these metrics measure recovery of
 graph assertions, not clinical efficacy.
 

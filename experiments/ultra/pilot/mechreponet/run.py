@@ -43,7 +43,7 @@ def main():
     assert torch.cuda.is_available(),'Use scripts/gpu_python.sh'
     torch.set_num_threads(8);torch.manual_seed(1024)
     code=[Path(__file__),ROOT/'pilot/finetune/run.py',ROOT/'scripts/full_graph_common.py']
-    settings={'experiment':8,'protocol_reference':'Experiment 3','checkpoint_sha256':cfg['checkpoint_sha256'],
+    settings={'experiment':cfg.get('experiment',8),'protocol_reference':'Experiment 3','checkpoint_sha256':cfg['checkpoint_sha256'],
               'preparation_sha256':digest(prepared/'preparation.json'),'training_epochs':0,'seed':1024,
               'source_sha256':{str(p.relative_to(ROOT)):digest(p) for p in code},'ultra_commit':cfg['ultra_commit'],
               'torch':torch.__version__,'cuda':torch.version.cuda,'gpu':torch.cuda.get_device_name(0),
@@ -92,11 +92,18 @@ def main():
     complete=all(r['complete'] for r in reports.values())
     if complete:
         assert all(r['evaluated_pairs']==cfg['pair_splits'][s] for s,r in reports.items())
-        save(out/'comparison.json',{'complete':True,'experiment':8,'graph':'MechRepoNet','pretrained_checkpoint':'4g',
+        comparison={'complete':True,'experiment':cfg.get('experiment',8),'graph':'MechRepoNet','pretrained_checkpoint':'4g',
              'candidate_compounds':len(candidates),'preparation':manifest,'settings_sha256':digest(out/'settings.json'),
              'results':{s:{k:v for k,v in r.items() if k!='score_files_sha256'} for s,r in reports.items()},
              'tier0_experiment3':{s:read(ROOT/f'output/full-graph-ultra/run_001/{s}/metrics.json')['ultra'] for s in reports},
-             'limitations':['Different KG, evaluation pairs and candidate category/count; protocol comparison, not a controlled graph-only effect.','Previously inspected graphs and historical test labels; exploratory evaluation.']})
+             'limitations':['Different KG, evaluation pairs and candidate category/count; protocol comparison, not a controlled graph-only effect.','Previously inspected graphs and historical test labels; exploratory evaluation.']}
+        if 'context_ablation' in cfg:
+            comparison.update(context_ablation=cfg['context_ablation'],baseline_results=cfg['baseline_results'],
+                changes={s:{k:reports[s]['ultra'][k]-cfg['baseline_results'][s][k]
+                    for k in ['mrr','hits_at_1','hits_at_3','hits_at_10','top_10_answers']} for s in reports},
+                limitations=['Controlled context ablation with fixed checkpoint, labels and candidates; no retraining.',
+                             'Previously inspected validation/test splits; exploratory evaluation.'])
+        save(out/'comparison.json',comparison)
     save(out/'progress.json',{'complete':complete,'scored_queries':{s:r['scored_queries'] for s,r in reports.items()}})
     print('Complete' if complete else 'Partial smoke run; resume without --max-queries.',flush=True)
 

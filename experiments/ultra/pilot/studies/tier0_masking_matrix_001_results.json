@@ -1,0 +1,1327 @@
+{
+  "name": "Tier 0 full-graph pretrained 4g labeled-pair masking matrix",
+  "complete": true,
+  "completed_conditions": 8,
+  "suite_path": "/home/agonzalez/shepherd-ultra-progress/experiments/ultra/pilot/results/tier0_masking_matrix_001",
+  "suite_sha256": "daf466a79141b307ee11ec794ddfa79f54843e9193546e75984669e434da214a",
+  "protocol": {
+    "complete": true,
+    "name": "Tier 0 labeled-pair masking matrix",
+    "baseline": "/home/agonzalez/shepherd/experiments/ultra/pilot/results/chemical_disease_4g_001",
+    "source_store": "/home/agonzalez/shepherd/experiments/ultra/output/gandalf/full-store",
+    "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+    "source_unique_connections": 27927289,
+    "baseline_dataset_sha256": {
+      "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+      "labels.json": "6fedc5cff9e2033ec4df2aee27dda18d5579a9075378bb7bd5ed8036cd074b3e",
+      "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+      "triples.npy": "dd99dcbc29778ae332d68f1bd3eeaac1c6fc68470f737d8e07802336368b67ac"
+    },
+    "baseline_preparation_sha256": "fe3d0f2d8b694c479755e0a4744c94d445f2f4c4da90f014c9587ded418b1de2",
+    "baseline_test_metrics_sha256": "3fbaa25f251b70307815a6901a44f420493966022e08ffb0567d938b9e000ca8",
+    "baseline_test": {
+      "answers": 2293,
+      "mrr": 0.08254217166345866,
+      "hits_at_1": 0.04143044047099869,
+      "hits_at_3": 0.08198866114260794,
+      "hits_at_10": 0.16179677278674226,
+      "top_10_answers": 371,
+      "diseases": 1122,
+      "disease_macro_mrr": 0.08882841852204812
+    },
+    "nodes": 1670341,
+    "candidates": 1117832,
+    "pairs": 22918,
+    "pair_splits": {
+      "visible": 18334,
+      "validation": 2291,
+      "test": 2293
+    },
+    "groups": {
+      "unlabeled": {
+        "treats": 6065,
+        "other": 27864986
+      },
+      "visible": {
+        "treats": 18334,
+        "other": 26771
+      },
+      "heldout": {
+        "treats": 4584,
+        "other": 6549
+      }
+    },
+    "conditions": {
+      "1": {
+        "visible_treats": true,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "2": {
+        "visible_treats": true,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "3": {
+        "visible_treats": true,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "4": {
+        "visible_treats": true,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "5": {
+        "visible_treats": false,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "6": {
+        "visible_treats": false,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "7": {
+        "visible_treats": false,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "8": {
+        "visible_treats": false,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      }
+    },
+    "evaluation": "Test only; validation and test edges masked together; no selection or training",
+    "baseline_reconstructed_exactly": true,
+    "split_independently_reconstructed": true,
+    "source_code_sha256": {
+      "prepare.py": "0acf9fa5a9e2f2bf3210b38c7fa14e4c42dfbda6fb43afb30688577af9865203",
+      "common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca"
+    },
+    "preparation_seconds": 142.7256789880339
+  },
+  "conditions": [
+    {
+      "condition": 1,
+      "policy": {
+        "visible_treats": true,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified_existing_baseline",
+      "test": {
+        "answers": 2293,
+        "mrr": 0.08254217166345866,
+        "hits_at_1": 0.04143044047099869,
+        "hits_at_3": 0.08198866114260794,
+        "hits_at_10": 0.16179677278674226,
+        "top_10_answers": 371,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.08882841852204812
+      },
+      "source": "full_graph_chemical_disease_4g_results.json",
+      "removed_connections": 11133,
+      "remaining_connections": 27916156
+    },
+    {
+      "condition": 2,
+      "policy": {
+        "visible_treats": true,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified",
+      "preparation": {
+        "complete": true,
+        "condition": 2,
+        "policy": {
+          "visible_treats": true,
+          "visible_other": true,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+        "original_unique_connections": 27927289,
+        "remaining_connections": 27922705,
+        "removed_connections": 4584,
+        "removed_by_predicate": {
+          "biolink:treats": 4584
+        },
+        "edges_with_inverses": 55845410,
+        "isolated_candidates": 35,
+        "config_sha256": "8d57f776531df7653a646a156737e5315a0722c54da6d840b646b676e7427cce",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6cc428e8328964abaf374f319121ea0007e4358c34923942659600a78ba7613f",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "ad7d5f805ae73d9e635e6622280f173bbbf420fff3e7e0416b0454b9e82b5d11"
+        }
+      },
+      "test": {
+        "answers": 2293,
+        "mrr": 0.14701081542150515,
+        "hits_at_1": 0.08242477104230266,
+        "hits_at_3": 0.15481901439162668,
+        "hits_at_10": 0.27780200610553857,
+        "top_10_answers": 637,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.18949521067277417
+      },
+      "metrics": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1122,
+        "total_queries": 1122,
+        "evaluated_pairs": 2293,
+        "ultra": {
+          "answers": 2293,
+          "mrr": 0.14701081542150515,
+          "hits_at_1": 0.08242477104230266,
+          "hits_at_3": 0.15481901439162668,
+          "hits_at_10": 0.27780200610553857,
+          "top_10_answers": 637,
+          "diseases": 1122,
+          "disease_macro_mrr": 0.18949521067277417
+        },
+        "candidates_per_query": 1117832,
+        "inference_seconds": 1566.859562106547,
+        "answer_ranks_sha256": "b1bc78fea0b305b4d7b20ca39fde49594eec1be00170ee94ef6aef96ec67df63"
+      },
+      "verification": {
+        "complete": true,
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true,
+        "independent_metrics": {
+          "mrr": 0.14701081542150515,
+          "hits_at_1": 0.08242477104230266,
+          "hits_at_3": 0.15481901439162668,
+          "hits_at_10": 0.27780200610553857,
+          "top_10_answers": 637,
+          "disease_macro_mrr": 0.18949521067277417
+        },
+        "metrics_sha256": "198dbd816b22596b4f65a918e7282a7221777a928a87c9978cd9df716adb41b5",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6cc428e8328964abaf374f319121ea0007e4358c34923942659600a78ba7613f",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "ad7d5f805ae73d9e635e6622280f173bbbf420fff3e7e0416b0454b9e82b5d11"
+        },
+        "verifier_sha256": "5009c37de85ea59021f8a2b8717c30a2752d426bef2fed8344695b78e7bf2444"
+      },
+      "preparation_verification": {
+        "complete": true,
+        "all_saved_triples_independently_checked": true,
+        "unlabeled_pair_edges_unchanged": true,
+        "all_heldout_treats_absent": true,
+        "fixed_nodes_candidates_and_label_splits": true,
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6cc428e8328964abaf374f319121ea0007e4358c34923942659600a78ba7613f",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "ad7d5f805ae73d9e635e6622280f173bbbf420fff3e7e0416b0454b9e82b5d11"
+        },
+        "remaining_connections": 27922705,
+        "seconds": 13.193035515025258
+      },
+      "settings": {
+        "experiment": "Tier 0 masking matrix",
+        "condition": 2,
+        "parity_check": false,
+        "policy": {
+          "visible_treats": true,
+          "visible_other": true,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "preparation_sha256": "899775eb8509b354743b001374e6a526d4db67d0f3fd15ea36b7306f50942a78",
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+        "source_sha256": {
+          "pilot/masking_matrix/run.py": "db03f4136daccaf454fd4049b45d4459892d6ef6b4e6cdd88a8501e00a6583fe",
+          "pilot/masking_matrix/common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca",
+          "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+          "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+        },
+        "torch": "2.1.0+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA RTX A6000",
+        "seed": 1024,
+        "training_epochs": 0,
+        "batch_size": 1,
+        "splits": [
+          "test"
+        ],
+        "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+        "selection": "Fixed pretrained checkpoint; no model selection"
+      },
+      "provenance": {
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "settings_sha256": "85c63a8016347fd46b0cb7210beeb0decd97da930b31fd59c84a4c7745863ef8",
+        "relation_graph_sha256": "3697dd1dff82db9c4daeac41b546cacdea4a53cb7cce40c534bd7986085e9eff",
+        "peak_gpu_allocated_bytes": 7765042176,
+        "peak_gpu_reserved_bytes": 9711910912,
+        "complete": true
+      },
+      "relation_graph": {
+        "sha256": "3697dd1dff82db9c4daeac41b546cacdea4a53cb7cce40c534bd7986085e9eff",
+        "triples_sha256": "ad7d5f805ae73d9e635e6622280f173bbbf420fff3e7e0416b0454b9e82b5d11",
+        "seconds": 266.4498323070002,
+        "edges": 33152
+      }
+    },
+    {
+      "condition": 3,
+      "policy": {
+        "visible_treats": true,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified",
+      "preparation": {
+        "complete": true,
+        "condition": 3,
+        "policy": {
+          "visible_treats": true,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": false,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+        "original_unique_connections": 27927289,
+        "remaining_connections": 27889385,
+        "removed_connections": 37904,
+        "removed_by_predicate": {
+          "biolink:treats": 4584,
+          "biolink:treats_or_applied_or_studied_to_treat": 9247,
+          "biolink:applied_to_treat": 6648,
+          "biolink:contributes_to": 640,
+          "biolink:has_side_effect": 1129,
+          "biolink:in_clinical_trials_for": 12399,
+          "biolink:affects": 687,
+          "biolink:correlated_with": 670,
+          "biolink:contraindicated_in": 284,
+          "biolink:disrupts": 155,
+          "biolink:related_to": 1098,
+          "biolink:causes": 219,
+          "biolink:predisposes_to_condition": 53,
+          "biolink:studied_to_treat": 18,
+          "biolink:positively_correlated_with": 59,
+          "biolink:negatively_correlated_with": 6,
+          "biolink:in_preclinical_trials_for": 1,
+          "biolink:exacerbates_condition": 2,
+          "biolink:located_in": 1,
+          "biolink:has_part": 2,
+          "biolink:produces": 2
+        },
+        "edges_with_inverses": 55778770,
+        "isolated_candidates": 54,
+        "config_sha256": "85ab8270187a6e68f4a2f94f4eee775e89659e5d3d7ab43ab92122eb11e41c0c",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6fedc5cff9e2033ec4df2aee27dda18d5579a9075378bb7bd5ed8036cd074b3e",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "7b0cf4346a1cea3d31d4169bf1e594cbfbacf106a6d20dd59721ed2472473d6e"
+        }
+      },
+      "test": {
+        "answers": 2293,
+        "mrr": 0.08327217146570647,
+        "hits_at_1": 0.042302660270388134,
+        "hits_at_3": 0.08460532054077627,
+        "hits_at_10": 0.15569123419101613,
+        "top_10_answers": 357,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.08608611453003222
+      },
+      "metrics": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1122,
+        "total_queries": 1122,
+        "evaluated_pairs": 2293,
+        "ultra": {
+          "answers": 2293,
+          "mrr": 0.08327217146570647,
+          "hits_at_1": 0.042302660270388134,
+          "hits_at_3": 0.08460532054077627,
+          "hits_at_10": 0.15569123419101613,
+          "top_10_answers": 357,
+          "diseases": 1122,
+          "disease_macro_mrr": 0.08608611453003222
+        },
+        "candidates_per_query": 1117832,
+        "inference_seconds": 1564.6853682544897,
+        "answer_ranks_sha256": "6711bb21ba161a926587573c0316c8fd540f6d24ea24bda379f4958b2829e30c"
+      },
+      "verification": {
+        "complete": true,
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true,
+        "independent_metrics": {
+          "mrr": 0.08327217146570647,
+          "hits_at_1": 0.042302660270388134,
+          "hits_at_3": 0.08460532054077627,
+          "hits_at_10": 0.15569123419101613,
+          "top_10_answers": 357,
+          "disease_macro_mrr": 0.08608611453003222
+        },
+        "metrics_sha256": "91873cd576c2fb6966b5568176903decae9a3eba8d1e5604a3197ae2e0936497",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6fedc5cff9e2033ec4df2aee27dda18d5579a9075378bb7bd5ed8036cd074b3e",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "7b0cf4346a1cea3d31d4169bf1e594cbfbacf106a6d20dd59721ed2472473d6e"
+        },
+        "verifier_sha256": "5009c37de85ea59021f8a2b8717c30a2752d426bef2fed8344695b78e7bf2444"
+      },
+      "preparation_verification": {
+        "complete": true,
+        "all_saved_triples_independently_checked": true,
+        "unlabeled_pair_edges_unchanged": true,
+        "all_heldout_treats_absent": true,
+        "fixed_nodes_candidates_and_label_splits": true,
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6fedc5cff9e2033ec4df2aee27dda18d5579a9075378bb7bd5ed8036cd074b3e",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "7b0cf4346a1cea3d31d4169bf1e594cbfbacf106a6d20dd59721ed2472473d6e"
+        },
+        "remaining_connections": 27889385,
+        "seconds": 13.376368285040371
+      },
+      "settings": {
+        "experiment": "Tier 0 masking matrix",
+        "condition": 3,
+        "parity_check": false,
+        "policy": {
+          "visible_treats": true,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": false,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "preparation_sha256": "ec3f88723ec13d93fad285202a2d86cf52ce8b8a1c2dbd05e4c6102d9d96d7da",
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+        "source_sha256": {
+          "pilot/masking_matrix/run.py": "db03f4136daccaf454fd4049b45d4459892d6ef6b4e6cdd88a8501e00a6583fe",
+          "pilot/masking_matrix/common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca",
+          "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+          "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+        },
+        "torch": "2.1.0+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA RTX A6000",
+        "seed": 1024,
+        "training_epochs": 0,
+        "batch_size": 1,
+        "splits": [
+          "test"
+        ],
+        "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+        "selection": "Fixed pretrained checkpoint; no model selection"
+      },
+      "provenance": {
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "settings_sha256": "863e0f934d517a14c6bd43dc80b00459e10577e837f4b7629d80ad9c78c85d37",
+        "relation_graph_sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+        "peak_gpu_allocated_bytes": 7759644672,
+        "peak_gpu_reserved_bytes": 9684647936,
+        "complete": true
+      },
+      "relation_graph": {
+        "sha256": "0958e184ddd5f30b5586bfed0659aeca78a1f51c5665655a39e06c6bd519ddb5",
+        "triples_sha256": "7b0cf4346a1cea3d31d4169bf1e594cbfbacf106a6d20dd59721ed2472473d6e",
+        "seconds": 255.9171563470154,
+        "edges": 33144
+      }
+    },
+    {
+      "condition": 4,
+      "policy": {
+        "visible_treats": true,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified",
+      "preparation": {
+        "complete": true,
+        "condition": 4,
+        "policy": {
+          "visible_treats": true,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+        "original_unique_connections": 27927289,
+        "remaining_connections": 27895934,
+        "removed_connections": 31355,
+        "removed_by_predicate": {
+          "biolink:treats": 4584,
+          "biolink:treats_or_applied_or_studied_to_treat": 7404,
+          "biolink:applied_to_treat": 5335,
+          "biolink:contributes_to": 520,
+          "biolink:has_side_effect": 914,
+          "biolink:in_clinical_trials_for": 9948,
+          "biolink:affects": 554,
+          "biolink:correlated_with": 546,
+          "biolink:contraindicated_in": 228,
+          "biolink:disrupts": 122,
+          "biolink:related_to": 906,
+          "biolink:causes": 175,
+          "biolink:predisposes_to_condition": 44,
+          "biolink:studied_to_treat": 14,
+          "biolink:positively_correlated_with": 50,
+          "biolink:exacerbates_condition": 2,
+          "biolink:negatively_correlated_with": 4,
+          "biolink:located_in": 1,
+          "biolink:has_part": 2,
+          "biolink:produces": 2
+        },
+        "edges_with_inverses": 55791868,
+        "isolated_candidates": 35,
+        "config_sha256": "6e0c06a84d1e50c1bfff27d5389c1f7157458f2b5523a5d40bfd68aca162cbd0",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6cc428e8328964abaf374f319121ea0007e4358c34923942659600a78ba7613f",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "5a40dd9803afd127b7847c7bc62be0a20a01a2ef3036e0d2e7815b01be2ba965"
+        }
+      },
+      "test": {
+        "answers": 2293,
+        "mrr": 0.14569101321123804,
+        "hits_at_1": 0.0832969908416921,
+        "hits_at_3": 0.15263846489315308,
+        "hits_at_10": 0.2660270388137811,
+        "top_10_answers": 610,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.18604564655457273
+      },
+      "metrics": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1122,
+        "total_queries": 1122,
+        "evaluated_pairs": 2293,
+        "ultra": {
+          "answers": 2293,
+          "mrr": 0.14569101321123804,
+          "hits_at_1": 0.0832969908416921,
+          "hits_at_3": 0.15263846489315308,
+          "hits_at_10": 0.2660270388137811,
+          "top_10_answers": 610,
+          "diseases": 1122,
+          "disease_macro_mrr": 0.18604564655457273
+        },
+        "candidates_per_query": 1117832,
+        "inference_seconds": 1570.1103203201783,
+        "answer_ranks_sha256": "b00fea8417126163611ed7736b50e2cd8b17683933e3a7340fdd543eeeea58b1"
+      },
+      "verification": {
+        "complete": true,
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true,
+        "independent_metrics": {
+          "mrr": 0.14569101321123804,
+          "hits_at_1": 0.0832969908416921,
+          "hits_at_3": 0.15263846489315308,
+          "hits_at_10": 0.2660270388137811,
+          "top_10_answers": 610,
+          "disease_macro_mrr": 0.18604564655457273
+        },
+        "metrics_sha256": "6ac1540657e2e9b6b8610c22f735d10ee5c28d251d13e077895413d49811cfb1",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6cc428e8328964abaf374f319121ea0007e4358c34923942659600a78ba7613f",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "5a40dd9803afd127b7847c7bc62be0a20a01a2ef3036e0d2e7815b01be2ba965"
+        },
+        "verifier_sha256": "5009c37de85ea59021f8a2b8717c30a2752d426bef2fed8344695b78e7bf2444"
+      },
+      "preparation_verification": {
+        "complete": true,
+        "all_saved_triples_independently_checked": true,
+        "unlabeled_pair_edges_unchanged": true,
+        "all_heldout_treats_absent": true,
+        "fixed_nodes_candidates_and_label_splits": true,
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "6cc428e8328964abaf374f319121ea0007e4358c34923942659600a78ba7613f",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "5a40dd9803afd127b7847c7bc62be0a20a01a2ef3036e0d2e7815b01be2ba965"
+        },
+        "remaining_connections": 27895934,
+        "seconds": 13.450969952042215
+      },
+      "settings": {
+        "experiment": "Tier 0 masking matrix",
+        "condition": 4,
+        "parity_check": false,
+        "policy": {
+          "visible_treats": true,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "preparation_sha256": "0bcccf1528191fe1e81c90245228aa5ea289458468a77c1ea324a3c80975cdf9",
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+        "source_sha256": {
+          "pilot/masking_matrix/run.py": "db03f4136daccaf454fd4049b45d4459892d6ef6b4e6cdd88a8501e00a6583fe",
+          "pilot/masking_matrix/common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca",
+          "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+          "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+        },
+        "torch": "2.1.0+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA RTX A6000",
+        "seed": 1024,
+        "training_epochs": 0,
+        "batch_size": 1,
+        "splits": [
+          "test"
+        ],
+        "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+        "selection": "Fixed pretrained checkpoint; no model selection"
+      },
+      "provenance": {
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "settings_sha256": "bb13a8b34deb663a1b5147ed9ceb2f07ecdbcd2ce8bff13e0d268cff0f6be30a",
+        "relation_graph_sha256": "3697dd1dff82db9c4daeac41b546cacdea4a53cb7cce40c534bd7986085e9eff",
+        "peak_gpu_allocated_bytes": 7760010752,
+        "peak_gpu_reserved_bytes": 9684647936,
+        "complete": true
+      },
+      "relation_graph": {
+        "sha256": "3697dd1dff82db9c4daeac41b546cacdea4a53cb7cce40c534bd7986085e9eff",
+        "triples_sha256": "5a40dd9803afd127b7847c7bc62be0a20a01a2ef3036e0d2e7815b01be2ba965",
+        "seconds": 253.7805972819915,
+        "edges": 33152
+      }
+    },
+    {
+      "condition": 5,
+      "policy": {
+        "visible_treats": false,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified",
+      "preparation": {
+        "complete": true,
+        "condition": 5,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": true,
+          "heldout_treats": false,
+          "heldout_other": false,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+        "original_unique_connections": 27927289,
+        "remaining_connections": 27897822,
+        "removed_connections": 29467,
+        "removed_by_predicate": {
+          "biolink:treats": 22918,
+          "biolink:treats_or_applied_or_studied_to_treat": 1843,
+          "biolink:applied_to_treat": 1313,
+          "biolink:in_clinical_trials_for": 2451,
+          "biolink:affects": 133,
+          "biolink:related_to": 192,
+          "biolink:contributes_to": 120,
+          "biolink:correlated_with": 124,
+          "biolink:has_side_effect": 215,
+          "biolink:contraindicated_in": 56,
+          "biolink:studied_to_treat": 4,
+          "biolink:causes": 44,
+          "biolink:disrupts": 33,
+          "biolink:predisposes_to_condition": 9,
+          "biolink:negatively_correlated_with": 2,
+          "biolink:in_preclinical_trials_for": 1,
+          "biolink:positively_correlated_with": 9
+        },
+        "edges_with_inverses": 55795644,
+        "isolated_candidates": 202,
+        "config_sha256": "52976b2f38b087158a4e1289c3ac2fa9d931c81b38be1683c3e3fa68a1daf47e",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "b8bc32ce2e9b9692ec63b074a7bef81af5c239e318199fcfc7d9d2c6e0673f22",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "31df5887400d071af343e4f3a4dbc24ea36da56c86ae053245f09bae75c99bd7"
+        }
+      },
+      "test": {
+        "answers": 2293,
+        "mrr": 0.025733593971750436,
+        "hits_at_1": 0.006105538595726123,
+        "hits_at_3": 0.022241604884430877,
+        "hits_at_10": 0.051897078063672046,
+        "top_10_answers": 119,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.02802177531088584
+      },
+      "metrics": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1122,
+        "total_queries": 1122,
+        "evaluated_pairs": 2293,
+        "ultra": {
+          "answers": 2293,
+          "mrr": 0.025733593971750436,
+          "hits_at_1": 0.006105538595726123,
+          "hits_at_3": 0.022241604884430877,
+          "hits_at_10": 0.051897078063672046,
+          "top_10_answers": 119,
+          "diseases": 1122,
+          "disease_macro_mrr": 0.02802177531088584
+        },
+        "candidates_per_query": 1117832,
+        "inference_seconds": 1569.3893125576433,
+        "answer_ranks_sha256": "da02231205d123a4e251ed91010d105a7b9fbe0af0a9efb4940727153a56d7e7"
+      },
+      "verification": {
+        "complete": true,
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true,
+        "independent_metrics": {
+          "mrr": 0.025733593971750436,
+          "hits_at_1": 0.006105538595726123,
+          "hits_at_3": 0.022241604884430877,
+          "hits_at_10": 0.051897078063672046,
+          "top_10_answers": 119,
+          "disease_macro_mrr": 0.02802177531088584
+        },
+        "metrics_sha256": "afe43c8a091804b350ffefd2aa875363972c622ade794367971a4d8e37a15117",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "b8bc32ce2e9b9692ec63b074a7bef81af5c239e318199fcfc7d9d2c6e0673f22",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "31df5887400d071af343e4f3a4dbc24ea36da56c86ae053245f09bae75c99bd7"
+        },
+        "verifier_sha256": "5009c37de85ea59021f8a2b8717c30a2752d426bef2fed8344695b78e7bf2444"
+      },
+      "preparation_verification": {
+        "complete": true,
+        "all_saved_triples_independently_checked": true,
+        "unlabeled_pair_edges_unchanged": true,
+        "all_heldout_treats_absent": true,
+        "fixed_nodes_candidates_and_label_splits": true,
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "b8bc32ce2e9b9692ec63b074a7bef81af5c239e318199fcfc7d9d2c6e0673f22",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "31df5887400d071af343e4f3a4dbc24ea36da56c86ae053245f09bae75c99bd7"
+        },
+        "remaining_connections": 27897822,
+        "seconds": 13.260959820996504
+      },
+      "settings": {
+        "experiment": "Tier 0 masking matrix",
+        "condition": 5,
+        "parity_check": false,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": true,
+          "heldout_treats": false,
+          "heldout_other": false,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "preparation_sha256": "d2c48572729f44b487c4bbb7c7d1a44d10eceba0aebf3a88c171185d028545cd",
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+        "source_sha256": {
+          "pilot/masking_matrix/run.py": "db03f4136daccaf454fd4049b45d4459892d6ef6b4e6cdd88a8501e00a6583fe",
+          "pilot/masking_matrix/common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca",
+          "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+          "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+        },
+        "torch": "2.1.0+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA RTX A6000",
+        "seed": 1024,
+        "training_epochs": 0,
+        "batch_size": 1,
+        "splits": [
+          "test"
+        ],
+        "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+        "selection": "Fixed pretrained checkpoint; no model selection"
+      },
+      "provenance": {
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "settings_sha256": "b1e906bc9d5e0ed38a6da9708c44dd1064c460b397867c36d81e6d2cacf06952",
+        "relation_graph_sha256": "db6e694ecbb881ed5f140fa0a89339163e1d72ba726b52ea944ce7291eb0d55d",
+        "peak_gpu_allocated_bytes": 7760116736,
+        "peak_gpu_reserved_bytes": 9684647936,
+        "complete": true
+      },
+      "relation_graph": {
+        "sha256": "db6e694ecbb881ed5f140fa0a89339163e1d72ba726b52ea944ce7291eb0d55d",
+        "triples_sha256": "31df5887400d071af343e4f3a4dbc24ea36da56c86ae053245f09bae75c99bd7",
+        "seconds": 254.3110418089782,
+        "edges": 33096
+      }
+    },
+    {
+      "condition": 6,
+      "policy": {
+        "visible_treats": false,
+        "visible_other": true,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified",
+      "preparation": {
+        "complete": true,
+        "condition": 6,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": true,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+        "original_unique_connections": 27927289,
+        "remaining_connections": 27904371,
+        "removed_connections": 22918,
+        "removed_by_predicate": {
+          "biolink:treats": 22918
+        },
+        "edges_with_inverses": 55808742,
+        "isolated_candidates": 183,
+        "config_sha256": "303a3eb118946131a6960c14731c6e3b44408a98119abf868e0351efd0f48356",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "5ab4d6188b977ce79bdb7c66c91bf1ea8600292d341a432b3c2cd2e1698f942e",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "756208550e831d7358180e693fc0c7fdfcedbd4f7823512a31a0119df0c07883"
+        }
+      },
+      "test": {
+        "answers": 2293,
+        "mrr": 0.09565960528210948,
+        "hits_at_1": 0.04666375926733537,
+        "hits_at_3": 0.09681639773222853,
+        "hits_at_10": 0.18752725686873092,
+        "top_10_answers": 430,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.13817809622903107
+      },
+      "metrics": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1122,
+        "total_queries": 1122,
+        "evaluated_pairs": 2293,
+        "ultra": {
+          "answers": 2293,
+          "mrr": 0.09565960528210948,
+          "hits_at_1": 0.04666375926733537,
+          "hits_at_3": 0.09681639773222853,
+          "hits_at_10": 0.18752725686873092,
+          "top_10_answers": 430,
+          "diseases": 1122,
+          "disease_macro_mrr": 0.13817809622903107
+        },
+        "candidates_per_query": 1117832,
+        "inference_seconds": 1566.864942279528,
+        "answer_ranks_sha256": "fb0469994cfdcd4fd073ae50f3815697892d8c51b309fa4b9877d09491917971"
+      },
+      "verification": {
+        "complete": true,
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true,
+        "independent_metrics": {
+          "mrr": 0.09565960528210948,
+          "hits_at_1": 0.04666375926733537,
+          "hits_at_3": 0.09681639773222853,
+          "hits_at_10": 0.18752725686873092,
+          "top_10_answers": 430,
+          "disease_macro_mrr": 0.13817809622903107
+        },
+        "metrics_sha256": "1e80ddbd82ae4a696090a943166486b8c4c019e0e9c348513573685da1cc28b4",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "5ab4d6188b977ce79bdb7c66c91bf1ea8600292d341a432b3c2cd2e1698f942e",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "756208550e831d7358180e693fc0c7fdfcedbd4f7823512a31a0119df0c07883"
+        },
+        "verifier_sha256": "5009c37de85ea59021f8a2b8717c30a2752d426bef2fed8344695b78e7bf2444"
+      },
+      "preparation_verification": {
+        "complete": true,
+        "all_saved_triples_independently_checked": true,
+        "unlabeled_pair_edges_unchanged": true,
+        "all_heldout_treats_absent": true,
+        "fixed_nodes_candidates_and_label_splits": true,
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "5ab4d6188b977ce79bdb7c66c91bf1ea8600292d341a432b3c2cd2e1698f942e",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "756208550e831d7358180e693fc0c7fdfcedbd4f7823512a31a0119df0c07883"
+        },
+        "remaining_connections": 27904371,
+        "seconds": 13.33038524899166
+      },
+      "settings": {
+        "experiment": "Tier 0 masking matrix",
+        "condition": 6,
+        "parity_check": false,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": true,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "preparation_sha256": "dfc2cc57c5834d6316b9255ebc835279b7a0f8e41a204cfbd4ff0e3aaa17f444",
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+        "source_sha256": {
+          "pilot/masking_matrix/run.py": "db03f4136daccaf454fd4049b45d4459892d6ef6b4e6cdd88a8501e00a6583fe",
+          "pilot/masking_matrix/common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca",
+          "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+          "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+        },
+        "torch": "2.1.0+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA RTX A6000",
+        "seed": 1024,
+        "training_epochs": 0,
+        "batch_size": 1,
+        "splits": [
+          "test"
+        ],
+        "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+        "selection": "Fixed pretrained checkpoint; no model selection"
+      },
+      "provenance": {
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "settings_sha256": "67913be43d30d3eaa0d982ab848cab729f81d78153c053c20e3c3d2c644eb5a3",
+        "relation_graph_sha256": "0a4c38ddf747e36c73e72112aa84579dd78f5326691f1aa560d0d1e19dda32db",
+        "peak_gpu_allocated_bytes": 7760483328,
+        "peak_gpu_reserved_bytes": 9684647936,
+        "complete": true
+      },
+      "relation_graph": {
+        "sha256": "0a4c38ddf747e36c73e72112aa84579dd78f5326691f1aa560d0d1e19dda32db",
+        "triples_sha256": "756208550e831d7358180e693fc0c7fdfcedbd4f7823512a31a0119df0c07883",
+        "seconds": 255.54776240797946,
+        "edges": 33104
+      }
+    },
+    {
+      "condition": 7,
+      "policy": {
+        "visible_treats": false,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": false,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified",
+      "preparation": {
+        "complete": true,
+        "condition": 7,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": false,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+        "original_unique_connections": 27927289,
+        "remaining_connections": 27871051,
+        "removed_connections": 56238,
+        "removed_by_predicate": {
+          "biolink:treats": 22918,
+          "biolink:treats_or_applied_or_studied_to_treat": 9247,
+          "biolink:applied_to_treat": 6648,
+          "biolink:contributes_to": 640,
+          "biolink:has_side_effect": 1129,
+          "biolink:in_clinical_trials_for": 12399,
+          "biolink:affects": 687,
+          "biolink:correlated_with": 670,
+          "biolink:contraindicated_in": 284,
+          "biolink:disrupts": 155,
+          "biolink:related_to": 1098,
+          "biolink:causes": 219,
+          "biolink:predisposes_to_condition": 53,
+          "biolink:studied_to_treat": 18,
+          "biolink:positively_correlated_with": 59,
+          "biolink:negatively_correlated_with": 6,
+          "biolink:in_preclinical_trials_for": 1,
+          "biolink:exacerbates_condition": 2,
+          "biolink:located_in": 1,
+          "biolink:has_part": 2,
+          "biolink:produces": 2
+        },
+        "edges_with_inverses": 55742102,
+        "isolated_candidates": 317,
+        "config_sha256": "1b954db5adb9ab6a97f3ce91e11c8dd8bdc9c021180fa045ce41aaaa6288477e",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "ac217cfee40a72a1ac2481729ddc4da4329a587cb312e94c12e0aa1154eed7c3",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "127a2a24b53e92db48bb507c2fd9c52160a100fd5a7d6f6d16ca0a69d323665a"
+        }
+      },
+      "test": {
+        "answers": 2293,
+        "mrr": 0.01786814882643721,
+        "hits_at_1": 0.0039249890972525075,
+        "hits_at_3": 0.01264718709114697,
+        "hits_at_10": 0.03488879197557784,
+        "top_10_answers": 80,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.02016300962608982
+      },
+      "metrics": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1122,
+        "total_queries": 1122,
+        "evaluated_pairs": 2293,
+        "ultra": {
+          "answers": 2293,
+          "mrr": 0.01786814882643721,
+          "hits_at_1": 0.0039249890972525075,
+          "hits_at_3": 0.01264718709114697,
+          "hits_at_10": 0.03488879197557784,
+          "top_10_answers": 80,
+          "diseases": 1122,
+          "disease_macro_mrr": 0.02016300962608982
+        },
+        "candidates_per_query": 1117832,
+        "inference_seconds": 1566.970722073398,
+        "answer_ranks_sha256": "d1a83e14b677f20b9a340fe6ec6ba65b7da1a3e6c32318f2f3568b90b22ba0f1"
+      },
+      "verification": {
+        "complete": true,
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true,
+        "independent_metrics": {
+          "mrr": 0.01786814882643721,
+          "hits_at_1": 0.0039249890972525075,
+          "hits_at_3": 0.01264718709114697,
+          "hits_at_10": 0.03488879197557784,
+          "top_10_answers": 80,
+          "disease_macro_mrr": 0.02016300962608982
+        },
+        "metrics_sha256": "34cb1e00502f8bbf0b67228a91a76497180e1df9523d33137ec65f59b1052a84",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "ac217cfee40a72a1ac2481729ddc4da4329a587cb312e94c12e0aa1154eed7c3",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "127a2a24b53e92db48bb507c2fd9c52160a100fd5a7d6f6d16ca0a69d323665a"
+        },
+        "verifier_sha256": "5009c37de85ea59021f8a2b8717c30a2752d426bef2fed8344695b78e7bf2444"
+      },
+      "preparation_verification": {
+        "complete": true,
+        "all_saved_triples_independently_checked": true,
+        "unlabeled_pair_edges_unchanged": true,
+        "all_heldout_treats_absent": true,
+        "fixed_nodes_candidates_and_label_splits": true,
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "ac217cfee40a72a1ac2481729ddc4da4329a587cb312e94c12e0aa1154eed7c3",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "127a2a24b53e92db48bb507c2fd9c52160a100fd5a7d6f6d16ca0a69d323665a"
+        },
+        "remaining_connections": 27871051,
+        "seconds": 13.279458045959473
+      },
+      "settings": {
+        "experiment": "Tier 0 masking matrix",
+        "condition": 7,
+        "parity_check": false,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": false,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "preparation_sha256": "133a1b7b312c657b8c531c13520bcd8ea92458d55490a3ebd94761934190d6bd",
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+        "source_sha256": {
+          "pilot/masking_matrix/run.py": "db03f4136daccaf454fd4049b45d4459892d6ef6b4e6cdd88a8501e00a6583fe",
+          "pilot/masking_matrix/common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca",
+          "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+          "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+        },
+        "torch": "2.1.0+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA RTX A6000",
+        "seed": 1024,
+        "training_epochs": 0,
+        "batch_size": 1,
+        "splits": [
+          "test"
+        ],
+        "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+        "selection": "Fixed pretrained checkpoint; no model selection"
+      },
+      "provenance": {
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "settings_sha256": "6391a8efe5a4cdce209bad5f56bebad651f53b825e3f7064d40eab923e51c3f7",
+        "relation_graph_sha256": "db6e694ecbb881ed5f140fa0a89339163e1d72ba726b52ea944ce7291eb0d55d",
+        "peak_gpu_allocated_bytes": 7757105152,
+        "peak_gpu_reserved_bytes": 9684647936,
+        "complete": true
+      },
+      "relation_graph": {
+        "sha256": "db6e694ecbb881ed5f140fa0a89339163e1d72ba726b52ea944ce7291eb0d55d",
+        "triples_sha256": "127a2a24b53e92db48bb507c2fd9c52160a100fd5a7d6f6d16ca0a69d323665a",
+        "seconds": 258.0014937450178,
+        "edges": 33096
+      }
+    },
+    {
+      "condition": 8,
+      "policy": {
+        "visible_treats": false,
+        "visible_other": false,
+        "heldout_treats": false,
+        "heldout_other": true,
+        "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+      },
+      "status": "verified",
+      "preparation": {
+        "complete": true,
+        "condition": 8,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "source_triples_sha256": "41a964bddef7cac2f7cbc3b347732cd178ddb3705621f3c1c06693011820026b",
+        "original_unique_connections": 27927289,
+        "remaining_connections": 27877600,
+        "removed_connections": 49689,
+        "removed_by_predicate": {
+          "biolink:treats": 22918,
+          "biolink:treats_or_applied_or_studied_to_treat": 7404,
+          "biolink:applied_to_treat": 5335,
+          "biolink:contributes_to": 520,
+          "biolink:has_side_effect": 914,
+          "biolink:in_clinical_trials_for": 9948,
+          "biolink:affects": 554,
+          "biolink:correlated_with": 546,
+          "biolink:contraindicated_in": 228,
+          "biolink:disrupts": 122,
+          "biolink:related_to": 906,
+          "biolink:causes": 175,
+          "biolink:predisposes_to_condition": 44,
+          "biolink:studied_to_treat": 14,
+          "biolink:positively_correlated_with": 50,
+          "biolink:exacerbates_condition": 2,
+          "biolink:negatively_correlated_with": 4,
+          "biolink:located_in": 1,
+          "biolink:has_part": 2,
+          "biolink:produces": 2
+        },
+        "edges_with_inverses": 55755200,
+        "isolated_candidates": 280,
+        "config_sha256": "0d3856a90b4f7b1853a4ad279e7efe42bfc3c021d2b449f76f990b84d947e763",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "eddd2e6488934963b0e9176476eac1cec6ed8dc316ac0caab03c8a297dad022b",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "14f4ed491d241ace0d76ad8de17712eb97b3494531fe8d905fd55f64459686b9"
+        }
+      },
+      "test": {
+        "answers": 2293,
+        "mrr": 0.08356163945039273,
+        "hits_at_1": 0.04143044047099869,
+        "hits_at_3": 0.08286088094199738,
+        "hits_at_10": 0.15787178368948976,
+        "top_10_answers": 362,
+        "diseases": 1122,
+        "disease_macro_mrr": 0.12497580799379472
+      },
+      "metrics": {
+        "split": "test",
+        "complete": true,
+        "scored_queries": 1122,
+        "total_queries": 1122,
+        "evaluated_pairs": 2293,
+        "ultra": {
+          "answers": 2293,
+          "mrr": 0.08356163945039273,
+          "hits_at_1": 0.04143044047099869,
+          "hits_at_3": 0.08286088094199738,
+          "hits_at_10": 0.15787178368948976,
+          "top_10_answers": 362,
+          "diseases": 1122,
+          "disease_macro_mrr": 0.12497580799379472
+        },
+        "candidates_per_query": 1117832,
+        "inference_seconds": 1565.3686611717567,
+        "answer_ranks_sha256": "93753fcae7eae9ac7c3cae9dbb31fe8e74d73f0e5cd58aafcc2af7fd537f548a"
+      },
+      "verification": {
+        "complete": true,
+        "pairs": 2293,
+        "queries": 1122,
+        "candidates": 1117832,
+        "all_score_hashes_verified": true,
+        "all_ranks_recomputed": true,
+        "complete_pair_coverage": true,
+        "independent_metrics": {
+          "mrr": 0.08356163945039273,
+          "hits_at_1": 0.04143044047099869,
+          "hits_at_3": 0.08286088094199738,
+          "hits_at_10": 0.15787178368948976,
+          "top_10_answers": 362,
+          "disease_macro_mrr": 0.12497580799379472
+        },
+        "metrics_sha256": "d1921400d5dd0a35e4536c6cc46f5fbb8774644a4146ecdfe4c666b942bc80a1",
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "eddd2e6488934963b0e9176476eac1cec6ed8dc316ac0caab03c8a297dad022b",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "14f4ed491d241ace0d76ad8de17712eb97b3494531fe8d905fd55f64459686b9"
+        },
+        "verifier_sha256": "5009c37de85ea59021f8a2b8717c30a2752d426bef2fed8344695b78e7bf2444"
+      },
+      "preparation_verification": {
+        "complete": true,
+        "all_saved_triples_independently_checked": true,
+        "unlabeled_pair_edges_unchanged": true,
+        "all_heldout_treats_absent": true,
+        "fixed_nodes_candidates_and_label_splits": true,
+        "dataset_sha256": {
+          "candidates.json": "6c852cc038dedeb26f09f740bb5d1b55d9678ae821edbadadba5a92032b3672e",
+          "labels.json": "eddd2e6488934963b0e9176476eac1cec6ed8dc316ac0caab03c8a297dad022b",
+          "predicates.json": "7b41ef300ae1cb72fff0b89ea4b29e42d6ea0093bc1552ea065ab0552d166a7e",
+          "triples.npy": "14f4ed491d241ace0d76ad8de17712eb97b3494531fe8d905fd55f64459686b9"
+        },
+        "remaining_connections": 27877600,
+        "seconds": 13.274164877017029
+      },
+      "settings": {
+        "experiment": "Tier 0 masking matrix",
+        "condition": 8,
+        "parity_check": false,
+        "policy": {
+          "visible_treats": false,
+          "visible_other": false,
+          "heldout_treats": false,
+          "heldout_other": true,
+          "scope": "Labeled endpoint pairs only; both directions; unlabeled pairs unchanged"
+        },
+        "preparation_sha256": "a3a298536237f3ee4ef048e5f8c23360e2389e28397b0d2273a78eafaaecb345",
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "ultra_commit": "427966ad8ed60420eef034063d44f3153addff90",
+        "source_sha256": {
+          "pilot/masking_matrix/run.py": "db03f4136daccaf454fd4049b45d4459892d6ef6b4e6cdd88a8501e00a6583fe",
+          "pilot/masking_matrix/common.py": "1d228d942aa3ef25567c03728f8955a2e6ef9bdecef13d65ff1bdd970ef3ccca",
+          "pilot/finetune/run.py": "1fca5b27380c2eec65768657e25caf774506b2f95899da70597e6724ec0fe2b4",
+          "scripts/full_graph_common.py": "a6064a39073cde9afc7a5082aad1c921557f6c13884ba7f21ad56c7ca284630a"
+        },
+        "torch": "2.1.0+cu118",
+        "cuda": "11.8",
+        "gpu": "NVIDIA RTX A6000",
+        "seed": 1024,
+        "training_epochs": 0,
+        "batch_size": 1,
+        "splits": [
+          "test"
+        ],
+        "ranking": "Predict chemical/drug subject given Disease object; fixed chemical/drug candidates; all-known filtering; pessimistic ties",
+        "selection": "Fixed pretrained checkpoint; no model selection"
+      },
+      "provenance": {
+        "checkpoint_sha256": "48a046e708adf5632d87c30eacae01f5f51466b2301effdc2cb42358d22854e0",
+        "settings_sha256": "af4978462bc14c6dbe8aba2667c60d71bb57b521ec0624bec65f5e8523ea119c",
+        "relation_graph_sha256": "0a4c38ddf747e36c73e72112aa84579dd78f5326691f1aa560d0d1e19dda32db",
+        "peak_gpu_allocated_bytes": 7757680640,
+        "peak_gpu_reserved_bytes": 9684647936,
+        "complete": true
+      },
+      "relation_graph": {
+        "sha256": "0a4c38ddf747e36c73e72112aa84579dd78f5326691f1aa560d0d1e19dda32db",
+        "triples_sha256": "14f4ed491d241ace0d76ad8de17712eb97b3494531fe8d905fd55f64459686b9",
+        "seconds": 255.52796495496295,
+        "edges": 33104
+      }
+    }
+  ],
+  "baseline_parity": {
+    "complete": true,
+    "queries": 2,
+    "max_absolute_score_difference": 0.0,
+    "all_answer_ranks_match": true,
+    "settings_sha256": "1c92fc0dbe0ba0335c0585c71fad39d828720ba0e3b8ae1ab6290f65933e0118"
+  },
+  "interpretation": "Only labeled-pair direct context changes. Single existing split; exploratory, no model selection."
+}
