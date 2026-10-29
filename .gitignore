@@ -186,3 +186,4 @@ cython_debug/
 # Publish the ULTRA experiment code; keep the scorer experiment local.
 /experiments/scorer/
 !/experiments/ultra/scripts/
+!/experiments/ultra-aragorn/scripts/

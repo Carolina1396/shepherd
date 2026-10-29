@@ -57,14 +57,86 @@ tests passed, and independent checks verified all 45 comparisons' source hashes,
 finite scores, pessimistic ranks, normalized-label uniqueness, and aggregate MRR.
 Full raw graphs remain in ignored `results/`; compact reports are retained here.
 
+### Top-10 correct-answer overlap
+
+The two systems recover different subsets of the **42 eligible TopAnswers**.
+Each count below represents a query–normalized-answer pair, using the existing
+pessimistic ranks and excluding flagged labels. “Both” means the answer appears
+somewhere in each system's top 10, **not necessarily at the same rank**.
+
+| Top-10 membership | TopAnswers | Interpretation |
+|---|---:|---|
+| Both systems | 10 | Both rank the answer at 10 or better. |
+| ARAGORN only | 4 | ARAGORN ranks it at 10 or better; ULTRA ranks it below 10. |
+| ULTRA only | 3 | ULTRA ranks it at 10 or better; ARAGORN ranks it below 10. |
+| Neither | 25 | Neither puts it in the top 10: 13 rank below 10 in both, and 12 are absent from the shared retrieved candidates. |
+
+Thus ARAGORN gets **10 + 4 = 14**, ULTRA gets **10 + 3 = 13**, and the union
+contains **17/42 (40.5%)** correct query–answer pairs. ULTRA contributes three
+additional hits over ARAGORN's **14/42 (33.3%)**, a 21.4% relative increase in
+hits. The seven disagreements are:
+
+| Query | TopAnswer | ARAGORN rank | ULTRA rank |
+|---|---|---:|---:|
+| 006 | Fingolimod | 44 | **6** |
+| 020 | Rosuvastatin | 65 | **2** |
+| 060 | Fluticasone | 73 | **2** |
+| 017 | Rabeprazole | **3** | 83 |
+| 020 | Lomitapide | **6** | 11 |
+| 024 | Insulin detemir | **3** | 217 |
+| 061 | Estradiol | **2** | 12 |
+
+This shows complementary correct hits on this cohort and supports testing a
+combined ranking. ULTRA's unique hits come from deep in ARAGORN's ranking,
+rather than just across the cutoff. It does not establish that a combined
+**top 10** would improve: the union can contain more than ten candidates per
+query, and a fusion method must retain those complementary hits. Combining
+rankers also cannot recover the 12 positives missing from retrieval.
+
+Source: [expected-answer matches and ranks](reports/cohort_001/label_matches.json),
+cross-checked against [candidate ranks](reports/cohort_001/comparison.csv).
+
 ### Running the full treatment cohort
 
+From a fresh clone, use Linux, Python 3.11, and a working C++ compiler (for
+ULTRA's native extension). Run these commands from the repository root; skip
+cloning or creating environments that already exist:
+
 ```bash
-python -B -u experiments/ultra-aragorn/scripts/run_cohort.py
+mkdir -p experiments/ultra/vendor
+git clone https://github.com/DeepGraphLearning/ULTRA.git experiments/ultra/vendor/ULTRA
+git -C experiments/ultra/vendor/ULTRA checkout --detach 427966ad8ed60420eef034063d44f3153addff90
+python3.11 -m venv experiments/ultra/.venv-model
+experiments/ultra/.venv-model/bin/python -m pip install torch==2.1.0 --index-url https://download.pytorch.org/whl/cpu
+experiments/ultra/.venv-model/bin/python -m pip install -r experiments/ultra/requirements-model.txt torch-scatter==2.1.2 -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+```
+
+The pinned upstream checkout includes `ckpts/ultra_4g.pth`; the scorer verifies
+its SHA-256 before loading. This experiment uses hosted retrieval, so it does
+not require the full Tier 0 archive or a local Gandalf store. Benchmark labels,
+prepared queries, and frozen preparation normalization are committed here.
+
+Run the offline regression checks, then start a one-query live smoke run:
+
+```bash
+experiments/ultra/.venv-model/bin/python -m unittest discover -s experiments/ultra-aragorn/scripts -p 'test_*.py' -v
+experiments/ultra/.venv-model/bin/python -B -u experiments/ultra-aragorn/scripts/run_cohort.py --output experiments/ultra-aragorn/results/cohort_new --max-new 1
+```
+
+The live run sends requests to Shepherd CI and Node Normalizer and requires
+network access to both services. Resume the same output to process the remaining
+queries:
+
+```bash
+experiments/ultra/.venv-model/bin/python -B -u experiments/ultra-aragorn/scripts/run_cohort.py --output experiments/ultra-aragorn/results/cohort_new
 ```
 
 The runner processes the 48 prepared treatment queries sequentially and resumes
-cached work. Each new query uses CI retrieval, then submits that exact cached
+cached work. It uses the current Python interpreter for model scoring by default;
+`--model-python /path/to/python` selects another environment. Query 0 is retrieved
+normally on a fresh run. The optional `--reuse-query0` flag requires the historical
+local `results/smoke_002/` artifacts and reproduces the original run's exception.
+Each new query uses CI retrieval, then submits that exact cached
 message to CI with only `aragorn.omnicorp` and `aragorn.score`, using the verified
 legacy binding format. ULTRA scores the converted retrieval graph locally on CPU
 with the frozen 4g checkpoint. Neither scoring path uses benchmark labels.
@@ -75,6 +147,11 @@ per hosted stage, retains failed requests, and skips completed or empty queries
 on resume. Its `summary.json`, `comparison.csv`, and `label_matches.json` aggregate
 completed comparisons. Empty retrievals and failed stages remain explicit; their
 queries are excluded from the matched-ranking metric denominator.
+
+The committed reports preserve the original results, but the full raw retrieval
+cache is not committed. A fresh live run can differ as hosted graphs and services
+change. Use a new output directory after code or settings changes; historical
+`cohort_001` settings intentionally will not match the updated runner.
 
 Answer MRR averages reciprocal rank over eligible **TopAnswer labels**, assigning
 zero to eligible answers missing from a matched query's candidates. It is not the
