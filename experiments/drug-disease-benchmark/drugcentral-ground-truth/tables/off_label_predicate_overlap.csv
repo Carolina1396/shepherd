@@ -1,0 +1,15 @@
+predicate,unique_pairs,percent_of_drugcentral_off_label_treats
+treats_or_applied_or_studied_to_treat,766,44.95
+in_clinical_trials_for,490,28.76
+applied_to_treat,460,27.00
+has_side_effect,89,5.22
+related_to,81,4.75
+correlated_with,54,3.17
+affects,37,2.17
+contributes_to,35,2.05
+disrupts,16,0.94
+causes,10,0.59
+positively_correlated_with,10,0.59
+contraindicated_in,5,0.29
+predisposes_to_condition,2,0.12
+studied_to_treat,1,0.06

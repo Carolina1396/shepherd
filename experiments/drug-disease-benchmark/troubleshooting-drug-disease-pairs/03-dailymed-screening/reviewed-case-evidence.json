@@ -1,0 +1,1533 @@
+[
+  {
+    "review": {
+      "pair_index": 0,
+      "drug": "Voriconazole",
+      "condition": "esophageal candidiasis",
+      "disposition": "label_support_with_restrictions",
+      "set_ids": [
+        "08d08721-1f4c-478a-8abf-d9c402d50553"
+      ],
+      "notes": "Section 1.3 explicitly indicates treatment of esophageal candidiasis in adults and pediatric patients 2 years and older. The condition also occurs in adverse-reaction trial-population discussion. Such a safety-section mention does not contradict the indication. Review is limited to this label."
+    },
+    "graph_pair": {
+      "subject": "CHEBI:10023",
+      "object": "MONDO:0001648",
+      "drug_name": "Voriconazole",
+      "condition_name": "esophageal candidiasis",
+      "drugcentral_edge": {
+        "id": "38239d75-bfa3-48d4-bf7c-25d89645d1bc",
+        "category": [
+          "biolink:ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation"
+        ],
+        "subject": "CHEBI:10023",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0001648",
+        "sources": [
+          {
+            "id": "infores:drugcentral",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:drugcentral",
+            "resource_role": "primary_knowledge_source",
+            "source_record_urls": [
+              "https://drugcentral.org/drugcard/2846#druguse"
+            ]
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "original_subject": "DrugCentral:2846",
+        "original_object": "UMLS:C0239295"
+      },
+      "multiomics_edge": {
+        "id": "28ac7bb7-65ca-3a33-ba87-748e57ab32fd",
+        "category": [
+          "biolink:EntityToDiseaseAssociation"
+        ],
+        "subject": "CHEBI:10023",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0001648",
+        "publications": [
+          "dailymed:dailymed:08d08721-1f4c-478a-8abf-d9c402d50553",
+          "dailymed:dailymed:16a80777-f1f3-45bb-a312-998b07767fe3",
+          "dailymed:dailymed:171272c7-d76e-4352-81bc-fcb40386d7d0",
+          "dailymed:dailymed:25eb8d91-5abd-4fdb-a331-dacc960a95d9",
+          "dailymed:dailymed:2b262849-9a29-44a2-9b9d-2378f771379c",
+          "dailymed:dailymed:3266cf9b-e648-1ff2-e063-6394a90a0487",
+          "dailymed:dailymed:35098192-3bcb-9111-e063-6394a90ae8ea",
+          "dailymed:dailymed:393a81ba-7d51-450e-8d20-23287767c002",
+          "dailymed:dailymed:3af8cfe6-1c0d-4b57-ae31-05cffa64132e",
+          "dailymed:dailymed:49dcf3ae-6d6b-46fe-a88e-ec65f2de332e",
+          "dailymed:dailymed:4cbac6ad-0faa-4181-a830-27a9f1536b7a",
+          "dailymed:dailymed:4fe672ff-2cef-4f88-ab85-5a4b586da20d",
+          "dailymed:dailymed:511fa110-e4cc-4498-80db-03b7cddb1d5a",
+          "dailymed:dailymed:53ecce53-57b8-4af1-b4ac-7d37eb25711f",
+          "dailymed:dailymed:67c174da-41b8-4738-8a22-dd814b8e96b8",
+          "dailymed:dailymed:711e5a1b-8c40-4b18-9f4f-12c8ab351012",
+          "dailymed:dailymed:75fcbea8-8eeb-4528-b7d9-a059dd25da83",
+          "dailymed:dailymed:796cad15-2aef-4823-917d-17b822a6916e",
+          "dailymed:dailymed:7f2e0784-8e48-f565-e053-2991aa0a0746",
+          "dailymed:dailymed:8379ac92-53cd-46db-8642-017f11830a86",
+          "dailymed:dailymed:9a81e485-7f26-45b6-bfd7-6114afb7def9",
+          "dailymed:dailymed:9d5b9457-ac38-4f17-854d-e394c00e273c",
+          "dailymed:dailymed:aa18d6fa-8a5c-4c69-b4db-6ae578165d7d",
+          "dailymed:dailymed:b38165a5-d8d4-4579-a49a-fbe92e764089",
+          "dailymed:dailymed:b3b67028-f8a0-4a93-9e73-9e8940c22c4a",
+          "dailymed:dailymed:b4c934c0-c1bb-4b0a-bc32-fb9e77ef65fc",
+          "dailymed:dailymed:b8de04a0-238d-4e0b-b0d9-7f7878b149d4",
+          "dailymed:dailymed:bda70104-d84b-4d3f-9ca0-5f4f1ca816ad",
+          "dailymed:dailymed:c6b444dd-7ad9-4fb2-a444-2f3ece8a8353",
+          "dailymed:dailymed:ce3ef5cf-3087-4d92-9d94-9eb8287228db",
+          "dailymed:dailymed:d962d459-254f-4b78-ae28-7d9ec5d4e4d5",
+          "dailymed:dailymed:dac26bcd-7a59-401f-9f66-a0649767cece",
+          "dailymed:dailymed:e2b3c0b3-02a6-45c3-a8ea-05d210dc9108",
+          "dailymed:dailymed:e37525e8-afb4-4583-b2de-af4aab9040d7",
+          "dailymed:dailymed:e648a0e4-f324-49dc-a8f6-cf25ff3b2dfe",
+          "dailymed:dailymed:e698e5c7-f4a5-2beb-e053-2995a90a256b",
+          "dailymed:dailymed:ed6624a9-0b73-4a21-bf13-a8add2081d02",
+          "dailymed:dailymed:f6a1a792-141b-42e8-8bd1-884e4408eb8a",
+          "dailymed:dailymed:fceb92c5-5269-46e2-ac5f-547b2f77953d",
+          "dailymed:dailymed:fff10d69-e334-42bd-baed-7d9d5feef6aa"
+        ],
+        "sources": [
+          {
+            "id": "infores:multiomics-drugapprovals",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:multiomics-drugapprovals",
+            "resource_role": "primary_knowledge_source",
+            "upstream_resource_ids": [
+              "infores:dailymed",
+              "infores:faers"
+            ],
+            "source_record_urls": [
+              "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=28ac7bb7-65ca-3a33-ba87-748e57ab32fd"
+            ]
+          },
+          {
+            "id": "infores:faers",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:faers",
+            "resource_role": "supporting_data_source"
+          },
+          {
+            "id": "infores:dailymed",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:dailymed",
+            "resource_role": "supporting_data_source"
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "FDA_regulatory_approvals": [
+          "NDA021266"
+        ],
+        "original_subject": "CHEBI:10023",
+        "original_object": "MONDO:0001648"
+      }
+    },
+    "label_evidence": [
+      {
+        "set_id": "08d08721-1f4c-478a-8abf-d9c402d50553",
+        "metadata": {
+          "set_id": "08d08721-1f4c-478a-8abf-d9c402d50553",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/08d08721-1f4c-478a-8abf-d9c402d50553.xml",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-03T03:51:27.433653+00:00",
+          "sha256": "e74c08d98283f9cec3e4e9ab1e560c8131f9e1a95ac7d4d98929d740914a2f41",
+          "bytes": 628873,
+          "title": "These highlights do not include all the information needed to use VFEND safely and effectively. See full prescribing information for VFEND. VFEND ® (voriconazole) for injection, for intravenous use Initial U.S. Approval: 2002",
+          "version": "33",
+          "effective_time": "20260320",
+          "status": "ok"
+        },
+        "indication_sections": [
+          {
+            "group": "indication",
+            "code": "34067-9",
+            "title": "1 INDICATIONS AND USAGE",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.1 Invasive Aspergillosis",
+            "text": "VFEND is indicated in adults and pediatric patients (2 years of age and older) for the treatment of invasive aspergillosis (IA). In clinical trials, the majority of isolates recovered were Aspergillus fumigatus . There was a small number of cases of culture-proven disease due to species of Aspergillus other than A. fumigatus [see Clinical Studies (14.1 , 14.5) and Microbiology (12.4) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.2 Candidemia in Non-neutropenic Patients and Other Deep Tissue Candida Infections",
+            "text": "VFEND is indicated in adults and pediatric patients (2 years of age and older) for the treatment of candidemia in non-neutropenic patients and the following Candida infections: disseminated infections in skin and infections in abdomen, kidney, bladder wall, and wounds [see Clinical Studies (14.2 , 14.5) and Microbiology (12.4) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.3 Esophageal Candidiasis",
+            "text": "VFEND is indicated in adults and pediatric patients (2 years of age and older) for the treatment of esophageal candidiasis (EC) [see Clinical Studies (14.3 , 14.5) and Microbiology (12.4) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.4 Scedosporiosis and Fusariosis",
+            "text": "VFEND is indicated for the treatment of serious fungal infections caused by Scedosporium apiospermum (asexual form of Pseudallescheria boydii ) and Fusarium spp. including Fusarium solani , in adults and pediatric patients (2 years of age and older) intolerant of, or refractory to, other therapy [see Clinical Studies (14.4) and Microbiology (12.4) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.5 Usage",
+            "text": "Specimens for fungal culture and other relevant laboratory studies (including histopathology) should be obtained prior to therapy to isolate and identify causative organism(s). Therapy may be instituted before the results of the cultures and other laboratory studies are known. However, once these results become available, antifungal therapy should be adjusted accordingly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "review": {
+      "pair_index": 12,
+      "drug": "Ciprofloxacin",
+      "condition": "arthropathy",
+      "disposition": "matched_passage_is_adverse_effect_not_indication",
+      "set_ids": [
+        "043e4beb-5dc0-2fdb-e063-6294a90afded"
+      ],
+      "notes": "The matching passage inside section 1.11 discusses arthropathy and histopathological changes in weight-bearing joints of juvenile animals as adverse effects. It does not establish treatment of generic arthropathy. Bone/joint infections are separately listed as indications, so concept granularity and the original DrugCentral assertion also need review. This is a verified misleading text match, not a completed adjudication of all 261 cited labels or all possible uses."
+    },
+    "graph_pair": {
+      "subject": "CHEBI:100241",
+      "object": "MONDO:0006816",
+      "drug_name": "Ciprofloxacin",
+      "condition_name": "arthropathy",
+      "drugcentral_edge": {
+        "id": "edaf297e-b35c-433a-9229-7e2657e901c9",
+        "category": [
+          "biolink:ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation"
+        ],
+        "subject": "CHEBI:100241",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0006816",
+        "sources": [
+          {
+            "id": "infores:drugcentral",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:drugcentral",
+            "resource_role": "primary_knowledge_source",
+            "source_record_urls": [
+              "https://drugcentral.org/drugcard/659#druguse"
+            ]
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "original_subject": "DrugCentral:659",
+        "original_object": "UMLS:C0157749"
+      },
+      "multiomics_edge": {
+        "id": "1b1e8462-a2cb-3d12-b28f-0b69c5f4642f",
+        "category": [
+          "biolink:EntityToDiseaseAssociation"
+        ],
+        "subject": "CHEBI:100241",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0006816",
+        "publications": [
+          "dailymed:dailymed:043e4beb-5dc0-2fdb-e063-6294a90afded",
+          "dailymed:dailymed:0769aef5-962b-4f6b-ab4c-80e08cd7a790",
+          "dailymed:dailymed:084020fe-6571-4fb3-a13e-937615432fe8",
+          "dailymed:dailymed:0887e666-a64b-47f2-bc1c-eda3e8b889b2",
+          "dailymed:dailymed:0a9891a2-fd39-47b0-adb2-2ed8392b6aff",
+          "dailymed:dailymed:0c355077-7361-41d0-9e82-eb31beaf5daa",
+          "dailymed:dailymed:0ce2221d-940f-4c07-ba2e-fccb491f6b9b",
+          "dailymed:dailymed:0f553cbe-bb0b-283e-e054-00144ff88e88",
+          "dailymed:dailymed:0f6d5417-f674-4b6e-8cc1-88c3f3cf6574",
+          "dailymed:dailymed:0fac4466-fbe5-49d2-96e3-e3ac2739bd5b",
+          "dailymed:dailymed:1057be77-00bb-4839-be3d-c8e11ae531a2",
+          "dailymed:dailymed:1496ea0f-1419-c809-e063-6294a90a0b43",
+          "dailymed:dailymed:15755a35-e29a-47c1-89ab-e6645bb3ade9",
+          "dailymed:dailymed:159454fc-11c7-36b9-e054-00144ff88e88",
+          "dailymed:dailymed:17435f05-f04d-e792-e063-6294a90af145",
+          "dailymed:dailymed:178dc379-e2b8-4b47-9f0c-3fc7fb435c36",
+          "dailymed:dailymed:18414c5a-8153-44f7-b27a-90c290af0a23",
+          "dailymed:dailymed:19df63de-9f44-40ce-9a4f-0c96345b8a23",
+          "dailymed:dailymed:1b189dba-0493-c9b4-e063-6294a90a7d1e",
+          "dailymed:dailymed:1b54c195-71ba-2523-e063-6294a90ada73",
+          "dailymed:dailymed:1bb1d26e-fad0-4338-8948-3f095d5817a6",
+          "dailymed:dailymed:1cb05412-372e-4b49-92e1-532caa05f38f",
+          "dailymed:dailymed:1cf7cc57-0577-3ec9-e063-6294a90ae4a9",
+          "dailymed:dailymed:1d4392ca-6765-494c-bf1f-df6e89964efe",
+          "dailymed:dailymed:1dca6149-00ca-480e-a887-6861e40803b9",
+          "dailymed:dailymed:1e2a799d-da6a-0bf1-e054-00144ff8d46c",
+          "dailymed:dailymed:1e815845-5336-4b5f-975a-39d79b30cd10",
+          "dailymed:dailymed:1edcad8e-6918-453b-e054-00144ff8d46c",
+          "dailymed:dailymed:201f5cea-f2b5-42c2-a0ef-b1af4c7a3662",
+          "dailymed:dailymed:238284a8-b38e-82af-e063-6394a90a79e1",
+          "dailymed:dailymed:23dbc8a8-556c-40a5-a3fe-cd1f32300402",
+          "dailymed:dailymed:2457520c-ff99-415b-a640-83bae2aa4586",
+          "dailymed:dailymed:24760182-4be8-9f43-e063-6294a90a269e",
+          "dailymed:dailymed:2491e6a9-3415-43b9-b31b-67331f52806a",
+          "dailymed:dailymed:24c43000-7620-3869-e063-6394a90a9631",
+          "dailymed:dailymed:26a51ac8-82dc-7614-e063-6394a90a5412",
+          "dailymed:dailymed:2730ec3d-e1a4-3cbc-e054-00144ff8d46c",
+          "dailymed:dailymed:288ea7b2-ecf2-e8e0-e063-6294a90a306a",
+          "dailymed:dailymed:295265e9-dc9d-4692-8aa6-83ee3c15f7b5",
+          "dailymed:dailymed:29980caf-43b4-4efe-a310-bf52150cc6a6",
+          "dailymed:dailymed:2b3b6a9f-259c-4736-b88f-f49d1eb64286",
+          "dailymed:dailymed:2b8288a2-18bf-423c-b175-33174be729d4",
+          "dailymed:dailymed:2c39e226-68c0-b0e5-e063-6394a90adc07",
+          "dailymed:dailymed:2d324cb1-8567-55e5-e063-6294a90aa5d9",
+          "dailymed:dailymed:2d6ad813-7773-9e20-e063-6294a90a112d",
+          "dailymed:dailymed:2e1addcf-6d5b-46c8-812b-558fd847f005",
+          "dailymed:dailymed:2efbda2a-fc97-b7c5-e063-6294a90a362d",
+          "dailymed:dailymed:2f123a2c-3f94-ca2d-e063-6394a90aff68",
+          "dailymed:dailymed:2fff7a38-2c4e-d343-e063-6294a90aca3c",
+          "dailymed:dailymed:30caadee-3255-e0e3-e063-6294a90a8061",
+          "dailymed:dailymed:3134401f-72a3-6c37-e063-6294a90a8fa9",
+          "dailymed:dailymed:3253a41f-4f0a-5d83-e063-6294a90a890c",
+          "dailymed:dailymed:348e810c-e572-f3d2-e063-6394a90a0855",
+          "dailymed:dailymed:351b41db-622f-a1eb-e063-6294a90a5667",
+          "dailymed:dailymed:36d6c27d-45dc-3081-e063-6394a90a87e9",
+          "dailymed:dailymed:37527eca-115e-4582-88cd-bba851ac6069",
+          "dailymed:dailymed:3ab54ca0-1b12-d0f5-e063-6394a90a9575",
+          "dailymed:dailymed:3ac4ceb5-46ed-4128-a991-0d919611d482",
+          "dailymed:dailymed:3b0af0f2-1d33-1ffe-e063-6394a90aca7c",
+          "dailymed:dailymed:3b3c0874-90b7-deda-e063-6394a90a7802",
+          "dailymed:dailymed:3b3d22dc-df09-4910-8c9b-1204eeedbd68",
+          "dailymed:dailymed:3b9b15f7-354b-4049-982b-f6f31751a885",
+          "dailymed:dailymed:3c4fc96d-9017-5802-e054-00144ff88e88",
+          "dailymed:dailymed:3c611c8c-deed-4904-93f7-f75a2147fbf7",
+          "dailymed:dailymed:3e4402d4-e0d3-9846-3e81-ed46f34137fe",
+          "dailymed:dailymed:3e463126-78a9-4ec5-904c-0424a64d8ae8",
+          "dailymed:dailymed:3f021061-55f3-4108-a386-0647b0c5f01a",
+          "dailymed:dailymed:4144009e-e956-4fec-b5b7-a4950168e055",
+          "dailymed:dailymed:4171a441-8719-5977-e054-00144ff88e88",
+          "dailymed:dailymed:4213db46-f17e-48f5-aa18-114b2b814370",
+          "dailymed:dailymed:42542f65-84a7-fdab-e063-6394a90a1095",
+          "dailymed:dailymed:429e98d2-6da4-559f-e054-00144ff88e88",
+          "dailymed:dailymed:42c00a53-66db-4c8b-b5db-ccb9d02e5344",
+          "dailymed:dailymed:4351272b-b996-423f-afcc-e79aa6dc7dd0",
+          "dailymed:dailymed:4425d454-210d-4b9f-88ad-6b32a9e0d3bd",
+          "dailymed:dailymed:44b6cefc-7638-4437-95e7-8f239f66a9d4",
+          "dailymed:dailymed:44e5582d-fff1-0ec9-e054-00144ff88e88",
+          "dailymed:dailymed:463654f2-76a0-4f08-b9e4-9218c05155e5",
+          "dailymed:dailymed:46dedf2c-26de-0f46-e054-00144ff88e88",
+          "dailymed:dailymed:47d1e4c5-f669-4aca-9e8c-0d6bb833b859",
+          "dailymed:dailymed:489c5c7d-75e3-4b98-b7d5-3c61e2f98adf",
+          "dailymed:dailymed:4972e902-e042-e947-e063-6394a90a1b70",
+          "dailymed:dailymed:4af3894a-8945-4b2d-bdf6-a83bbd415b89",
+          "dailymed:dailymed:4ce6888c-e639-4a0c-8490-2a78bcaa41e9",
+          "dailymed:dailymed:4d5afeff-3917-43e1-9d12-d70ccab00dcc",
+          "dailymed:dailymed:4dd69fb7-802a-4278-a730-c722a3ca3521",
+          "dailymed:dailymed:4e74496f-4dca-4471-be32-c0a14bc62750",
+          "dailymed:dailymed:4e7bef83-aa63-3a6b-e054-00144ff88e88",
+          "dailymed:dailymed:4edc4fda-7834-46cc-a0ed-22f117e6e10b",
+          "dailymed:dailymed:4f600112-168a-4a58-9914-7c01f71894da",
+          "dailymed:dailymed:4fa9482a-ee88-1afd-e054-00144ff8d46c",
+          "dailymed:dailymed:4fe686e7-b9bb-7450-e054-00144ff8d46c",
+          "dailymed:dailymed:505d0a1e-6cfd-6b9d-e054-00144ff88e88",
+          "dailymed:dailymed:563e576e-6966-4f8d-91bb-0a1a951de324",
+          "dailymed:dailymed:5723eaf9-8659-4730-b792-4e4c33690ccb",
+          "dailymed:dailymed:58014e0a-f065-4154-8bf4-9f1374051635",
+          "dailymed:dailymed:5af16acc-51ce-41ed-b1c4-6b3fb38ef515",
+          "dailymed:dailymed:5b3a75f7-9cc2-48a7-9b2e-35f666bdc992",
+          "dailymed:dailymed:5bab9397-b9f3-d309-e053-2991aa0a6612",
+          "dailymed:dailymed:5f4e80a1-0225-63dd-e053-2991aa0aa7fb",
+          "dailymed:dailymed:5fd60635-4b68-15e3-e053-2991aa0ab23a",
+          "dailymed:dailymed:60cbce40-4969-42a3-9645-2158261375ef",
+          "dailymed:dailymed:641729a3-6dd3-3a2f-e053-2991aa0a015e",
+          "dailymed:dailymed:64d0b20a-cecd-474e-a0a1-8f8853500def",
+          "dailymed:dailymed:67547699-e22b-435d-b7a4-23800a63f26c",
+          "dailymed:dailymed:686a2ae7-dbc1-ccbf-e053-2991aa0a5525",
+          "dailymed:dailymed:6971a958-08f0-4712-bf5f-47fe4f76b863",
+          "dailymed:dailymed:69df48cc-76b6-428e-891a-c25e07d785f8",
+          "dailymed:dailymed:6a70db6c-ae68-49e5-8a4a-b5cd1d4840bd",
+          "dailymed:dailymed:6a935846-3c97-4517-bc4e-2377f673285e",
+          "dailymed:dailymed:6b5fe0aa-c74f-42f3-a84a-1cb16009aa80",
+          "dailymed:dailymed:6c64aa79-d087-4568-904c-3a0638b91e69",
+          "dailymed:dailymed:6d029ad2-a1e8-4c11-a5eb-e2257c6a0ddb",
+          "dailymed:dailymed:6d8d72fe-e89c-4e08-9ca1-ec64c4890205",
+          "dailymed:dailymed:6e37322b-89d3-4b66-8e1b-c4ad79eed173",
+          "dailymed:dailymed:6eb40dff-8278-b4b0-e053-2991aa0a4168",
+          "dailymed:dailymed:6f41228b-974a-443b-a313-2fbb3d845915",
+          "dailymed:dailymed:6fd3da0b-7428-ac8f-e053-2a91aa0aed9f",
+          "dailymed:dailymed:6fecbc15-915c-4434-b9e3-cfc1aa33a1ba",
+          "dailymed:dailymed:7030109d-5ce0-43f1-a5ed-16a3562acd40",
+          "dailymed:dailymed:7041828f-d4ec-4813-bcac-cb335c6c312a",
+          "dailymed:dailymed:7049f870-6741-4a67-8033-398c36126a06",
+          "dailymed:dailymed:739f14fe-1aa6-4880-ab68-4ab5c839eab8",
+          "dailymed:dailymed:74e2dd24-5c6e-4dde-a2ab-f2d2e61734d8",
+          "dailymed:dailymed:76dedf59-46be-1be0-e053-2991aa0a1c36",
+          "dailymed:dailymed:7a6fdd1a-ce9b-46de-a309-3364a99ad4ca",
+          "dailymed:dailymed:7a7cc017-fc08-3118-e053-2991aa0ad7af",
+          "dailymed:dailymed:7c6e428b-305f-477e-a758-753d2ea5a060",
+          "dailymed:dailymed:7e071d73-2139-480c-b964-835d69352044",
+          "dailymed:dailymed:82d568d3-9637-4a21-a56e-cc9dc210dee4",
+          "dailymed:dailymed:888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0",
+          "dailymed:dailymed:88ee9c0e-aa2a-47ce-b649-25bfa6fc8a7b",
+          "dailymed:dailymed:8916b85c-9004-4e26-a34d-b0e6a65e6a24",
+          "dailymed:dailymed:8bca6829-da32-42fe-b2b7-4bdfb9a89e43",
+          "dailymed:dailymed:8c353bf4-f26b-4ab8-9694-aa9f10dfe965",
+          "dailymed:dailymed:8cb3b13b-9cee-faa7-e053-2a95a90a0bfb",
+          "dailymed:dailymed:8d02d47c-37f7-4d30-ace0-1f986eb2b228",
+          "dailymed:dailymed:8d6ec3ee-2205-4d78-bc48-d39f371797c1",
+          "dailymed:dailymed:8eef4f14-e7ef-41be-be57-7993b333e8a9",
+          "dailymed:dailymed:8f4d4bbb-a8f5-492f-8b2a-22be57719ac9",
+          "dailymed:dailymed:8f6e4a86-5fc1-45b1-adab-25a81f93cb05",
+          "dailymed:dailymed:9015a6de-4042-686e-e053-2995a90ad6ea",
+          "dailymed:dailymed:905503ef-4277-44ca-aa4a-5a969a041e16",
+          "dailymed:dailymed:91b43a11-ccc9-47c0-8bf0-761d59db23ba",
+          "dailymed:dailymed:964d002d-782e-1b3c-e053-2a95a90ae6d6",
+          "dailymed:dailymed:98e0ab79-51be-457a-aaf0-262b44ea86f9",
+          "dailymed:dailymed:99918613-7936-47dd-8565-9cd6c0cc22e3",
+          "dailymed:dailymed:99a81fda-81dc-40b3-b55a-165b6e4ca4ee",
+          "dailymed:dailymed:9adbfd58-04d8-0e4b-e053-2995a90a86bd",
+          "dailymed:dailymed:9d04904f-872b-4e1c-9bc7-e012f42ce584",
+          "dailymed:dailymed:9d83b127-ef13-4b2c-aa30-0f54937dc240",
+          "dailymed:dailymed:9dac97a5-c992-4601-af93-138bfe2302a8",
+          "dailymed:dailymed:9ee1f252-a64e-4b72-a6f7-60298e827222",
+          "dailymed:dailymed:9f00ae9d-8707-4275-9eba-2ed72db8aea1",
+          "dailymed:dailymed:a05035e1-f941-4f7c-9321-91dd50ab149b",
+          "dailymed:dailymed:a093ca6e-9963-4eea-b60d-6e2f148192ec",
+          "dailymed:dailymed:a0eda476-1625-4e9e-bb76-4f1cf05562f0",
+          "dailymed:dailymed:a2ffa81a-86c5-40b9-8fa0-c889801ef479",
+          "dailymed:dailymed:a57066d7-dc2c-d2d0-b003-d9143fcca1c5",
+          "dailymed:dailymed:a5ecc693-b8fd-4a7a-8040-e56f801c9353",
+          "dailymed:dailymed:a6181900-4a14-426c-80e9-c73f8a820514",
+          "dailymed:dailymed:a7e5174a-dd01-6050-e053-2a95a90add3f",
+          "dailymed:dailymed:a914512b-9a4a-4c53-ab7a-2e2b1ea8a012",
+          "dailymed:dailymed:a974ef05-1cc3-4cbc-a0b4-36b46ed107c9",
+          "dailymed:dailymed:ab16bacd-f73f-462e-82b2-b0abb1c49cec",
+          "dailymed:dailymed:ab62a277-750d-4380-b2bd-f9700eebb128",
+          "dailymed:dailymed:ab6d1d20-a4a3-a357-e053-2a95a90a6e1d",
+          "dailymed:dailymed:ac87e3c7-1e51-4dd1-8b75-dec6536810e3",
+          "dailymed:dailymed:acb03e72-ce94-58c5-e053-2a95a90a683a",
+          "dailymed:dailymed:ad114052-9af5-c940-1ca2-0f0904c55eb6",
+          "dailymed:dailymed:ae77a5c0-a2ae-770c-e053-2a95a90a6a96",
+          "dailymed:dailymed:b0136d72-0869-2da0-e053-2995a90af70a",
+          "dailymed:dailymed:b064286b-fedc-be68-e053-2995a90aae52",
+          "dailymed:dailymed:b08afc40-cfb0-4808-aa0b-b8a2b6008dd8",
+          "dailymed:dailymed:b116b1da-a7ab-3e2e-e053-2995a90a5cd8",
+          "dailymed:dailymed:b281a5c0-5f3e-4e6f-86ac-ed7794aac64c",
+          "dailymed:dailymed:b283d662-9be1-49c7-be03-cb21055314c1",
+          "dailymed:dailymed:b4c17302-590f-4de0-ad57-8bb050d9aa8a",
+          "dailymed:dailymed:b57529e5-c106-464e-8637-dc02871031f7",
+          "dailymed:dailymed:b6dcfcef-d4ec-4463-a6b5-192cd8c7c0c3",
+          "dailymed:dailymed:b9803596-c093-463f-e053-2a95a90a0234",
+          "dailymed:dailymed:b996e81b-36ec-4ad7-a7c4-bc6700a06648",
+          "dailymed:dailymed:bb2edaca-6cf2-4100-83f5-8ce142f68e59",
+          "dailymed:dailymed:bce3b80a-a048-48e3-97bc-0cc631fb7d30",
+          "dailymed:dailymed:be3a7290-3bc7-2e5a-e053-2a95a90ade1f",
+          "dailymed:dailymed:bf0558dc-c32d-5a81-e053-2995a90ac1e6",
+          "dailymed:dailymed:bf52e242-199b-4206-e053-2a95a90a1eb7",
+          "dailymed:dailymed:bf8d4359-a850-97b7-e053-2a95a90aa66a",
+          "dailymed:dailymed:c08b37c3-5f01-47ed-9508-02813bbd008b",
+          "dailymed:dailymed:c0a7c783-8c8e-e0fc-e053-2a95a90a9548",
+          "dailymed:dailymed:c12b316f-811c-48b6-a320-d314991aa74f",
+          "dailymed:dailymed:c14a40f7-6cd7-49c2-9e66-27cbff612257",
+          "dailymed:dailymed:c2d8dcc9-23b0-75bb-e053-2995a90a02c8",
+          "dailymed:dailymed:c32ccb5f-b9d7-0aff-e053-2995a90afe6d",
+          "dailymed:dailymed:c3cffc88-5eb3-6e18-e053-2995a90a1423",
+          "dailymed:dailymed:c4022360-6081-451e-806e-4632a05c6e57",
+          "dailymed:dailymed:c4310110-a701-0bf2-e053-2995a90a1486",
+          "dailymed:dailymed:c4311673-23c7-2099-e053-2a95a90ad3f1",
+          "dailymed:dailymed:c47250c2-bece-46b5-8b3b-b7c97d9005d8",
+          "dailymed:dailymed:c4eecdf8-9e50-4e44-aca1-b9c19317d52a",
+          "dailymed:dailymed:c527d138-e32c-418f-9573-a3d8a796279f",
+          "dailymed:dailymed:c7bc0d20-526c-48ea-b23a-cea9eb7080ff",
+          "dailymed:dailymed:c7cea146-f179-5620-e053-2995a90acf83",
+          "dailymed:dailymed:c8acca31-8d44-34a2-e053-2995a90ac20f",
+          "dailymed:dailymed:c9108da9-c271-4e9e-a035-8dd3019e8cf3",
+          "dailymed:dailymed:ca3c5dd5-d15c-62ea-e053-2995a90a2417",
+          "dailymed:dailymed:ca8f9570-3237-e269-e053-2995a90a49ba",
+          "dailymed:dailymed:cbbbf939-3219-4515-a48e-ca264daa4d07",
+          "dailymed:dailymed:cc67ac0a-91b9-4867-a88d-b798e660f33b",
+          "dailymed:dailymed:cc768d3e-a7cc-46a2-ae6d-0f5eb2f05406",
+          "dailymed:dailymed:cef015d0-b228-42b3-9b9b-eda2045d15dd",
+          "dailymed:dailymed:cfc1963b-7a48-4129-b747-897a9d6de14c",
+          "dailymed:dailymed:cfda82e4-8660-447e-a881-b87165a31e9a",
+          "dailymed:dailymed:cfe9e173-1d3a-4455-a9d3-fb953bebbe37",
+          "dailymed:dailymed:d10f7c93-a08b-4e9c-bfa2-6646e3ea21bd",
+          "dailymed:dailymed:d17b0e87-b555-4dfb-e053-2a95a90aa5ef",
+          "dailymed:dailymed:d23e359d-6d12-38f6-e053-2a95a90a0a88",
+          "dailymed:dailymed:d275175c-691a-4d09-bbb7-50ee819e6727",
+          "dailymed:dailymed:d290a840-6c60-435f-a46b-6d9ef7b9e5f3",
+          "dailymed:dailymed:d358eb18-f4d0-e9ba-e053-2a95a90a435d",
+          "dailymed:dailymed:d39b4230-1026-f2be-e053-2995a90a9b6f",
+          "dailymed:dailymed:d40f0560-fc57-4f00-9f6d-ae7e2a274330",
+          "dailymed:dailymed:d4730085-b38e-43ce-bb51-2532da0a3e2b",
+          "dailymed:dailymed:d54a97d5-3664-4ca5-bffd-8366c7255b73",
+          "dailymed:dailymed:d5e185c5-c9a3-4219-9dbf-ba328d22dded",
+          "dailymed:dailymed:d5e8cc10-aa34-436c-bf09-16f0e8fafde2",
+          "dailymed:dailymed:d6bd5021-cf56-4c8a-b5a0-bbc8919740af",
+          "dailymed:dailymed:d88a22f4-2f61-17f2-e053-2995a90acd14",
+          "dailymed:dailymed:d8b21832-b74f-4f85-a304-b907c9e01e72",
+          "dailymed:dailymed:d9c8fcd9-bbe2-4ae7-bc44-74abd507d770",
+          "dailymed:dailymed:da86ea21-084a-4a78-94fb-840391e5f1f6",
+          "dailymed:dailymed:de0b9579-fb85-e1ce-e053-2a95a90aeecb",
+          "dailymed:dailymed:df24efa3-c9a0-4f40-92ce-cc71c708931b",
+          "dailymed:dailymed:e0e2020d-3b3a-47b7-b08f-660d623da385",
+          "dailymed:dailymed:e1afd2dd-6f01-4798-a9d8-0125c38f1e42",
+          "dailymed:dailymed:e237dd23-faf3-1765-e053-2a95a90ae62d",
+          "dailymed:dailymed:e2902d14-16bb-46a9-a45a-4f1f9b0ecf4a",
+          "dailymed:dailymed:e38987d4-31de-429b-a81d-1ed23c1b0a55",
+          "dailymed:dailymed:e659af2b-b240-4afe-894e-962ae9c3d87f",
+          "dailymed:dailymed:e797d0eb-eabb-432a-8053-64eff753f1b0",
+          "dailymed:dailymed:e81341c6-0e25-4860-adda-2d3cebe88d62",
+          "dailymed:dailymed:ebf6f608-01bc-4867-a747-833120b87dd9",
+          "dailymed:dailymed:ec337816-4f48-4d04-b91d-60f9f5f634da",
+          "dailymed:dailymed:ec43739e-7154-45a7-add7-bfb8fb779be8",
+          "dailymed:dailymed:ef07c7f4-4ccf-44f6-aee9-add6d3b0b9d2",
+          "dailymed:dailymed:ef468722-68cd-440b-afd7-2285029db41f",
+          "dailymed:dailymed:f03f5ae4-e698-417c-b033-b59249768fe2",
+          "dailymed:dailymed:f2044f0a-9839-5289-e053-2995a90aa13d",
+          "dailymed:dailymed:f2292c33-f3e2-4093-bbda-373ea33f9c9c",
+          "dailymed:dailymed:f2937a87-2e10-3728-e053-2a95a90a9eb9",
+          "dailymed:dailymed:f3c2de8f-ed0e-6d08-e053-2a95a90a44b1",
+          "dailymed:dailymed:f3c3181e-4e52-3070-e053-2a95a90aa92f",
+          "dailymed:dailymed:f406e796-17d9-4465-b8a7-00d966a4ba74",
+          "dailymed:dailymed:f45294bd-e01b-4e21-af82-c788ec73f79a",
+          "dailymed:dailymed:f67d727f-b9ca-aec0-e053-2995a90aab69",
+          "dailymed:dailymed:f6debb60-d885-230b-e053-6394a90ad73a",
+          "dailymed:dailymed:f80ab01d-2533-1b4c-e053-6294a90a6e6a",
+          "dailymed:dailymed:f818ed31-c746-4171-afdf-57a75434e5f1",
+          "dailymed:dailymed:fa32aafd-e3f5-4be6-9413-c7663c1c2cec",
+          "dailymed:dailymed:fbcd32c0-bcfd-4cc7-8e81-6612bc0cfc45",
+          "dailymed:dailymed:ff7bf21e-6ea9-4c1d-8448-3dda03f772e9"
+        ],
+        "sources": [
+          {
+            "id": "infores:multiomics-drugapprovals",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:multiomics-drugapprovals",
+            "resource_role": "primary_knowledge_source",
+            "upstream_resource_ids": [
+              "infores:dailymed",
+              "infores:faers"
+            ],
+            "source_record_urls": [
+              "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=1b1e8462-a2cb-3d12-b28f-0b69c5f4642f"
+            ]
+          },
+          {
+            "id": "infores:faers",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:faers",
+            "resource_role": "supporting_data_source"
+          },
+          {
+            "id": "infores:dailymed",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:dailymed",
+            "resource_role": "supporting_data_source"
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "FDA_regulatory_approvals": [
+          "NDA020780"
+        ],
+        "original_subject": "CHEBI:100241",
+        "original_object": "MONDO:0006816"
+      }
+    },
+    "label_evidence": [
+      {
+        "set_id": "043e4beb-5dc0-2fdb-e063-6294a90afded",
+        "metadata": {
+          "set_id": "043e4beb-5dc0-2fdb-e063-6294a90afded",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/043e4beb-5dc0-2fdb-e063-6294a90afded.xml",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-03T03:51:04.537099+00:00",
+          "sha256": "6d402019eba8bc23c10171e355980233721abd6ea6598a70d8ec5df04edcb839",
+          "bytes": 335673,
+          "title": "These highlights do not include all the information needed to use CIPROFLOXACIN TABLETS safely and effectively. See full prescribing information for CIPROFLOXACIN TABLETS. CIPROFLOXACIN tablet, for oral use Initial U.S. Approval: 1987",
+          "version": "1",
+          "effective_time": "20230831",
+          "status": "ok"
+        },
+        "indication_sections": [
+          {
+            "group": "indication",
+            "code": "34067-9",
+            "title": "1 INDICATIONS AND USAGE",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.1 Skin and Skin Structure Infections",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of skin and skin structure infections caused by Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae, Proteus mirabilis, Proteus vulgaris, Providencia stuartii, Morganella morganii, Citrobacter freundii, Pseudomonas aeruginosa, methicillin-­susceptible Staphylococcus aureus, methicillin-susceptible Staphylococcus epidermidis, or Streptococcus pyogenes."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.2 Bone and Joint Infections",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of bone and joint infections caused by Enterobacter cloacae, Serratia marcescens , or Pseudomonas aeruginosa."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.3 Complicated Intra-Abdominal Infections",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of complicated intra-abdominal infections (used in combination with metronidazole) caused by Escherichia coli, Pseudomonas aeruginosa, Proteus mirabilis, Klebsiella pneumoniae, or Bacteroides fragilis."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.4 Infectious Diarrhea",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of infectious diarrhea caused by Escherichia coli (enterotoxigenic isolates), Campylobacter jejuni, Shigella boydii † , Shigella dysenteriae, Shigella flexneri or Shigella sonnei † when antibacterial therapy is indicated. † Although treatment of infections due to this organism in this organ system demonstrated a clinically significant outcome, efficacy was studied in fewer than 10 patients."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.5 Typhoid Fever (Enteric Fever)",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of typhoid fever (enteric fever) caused by Salmonella typhi . The efficacy of ciprofloxacin in the eradication of the chronic typhoid carrier state has not been demonstrated."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.6 Uncomplicated Cervical and Urethral Gonorrhea",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of uncomplicated cervical and urethral gonorrhea due to Neisseria gonorrhoeae [see Warnings and Precautions (5.17) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.7 Inhalational Anthrax (Post-Exposure)",
+            "text": "Ciprofloxacin tablets are indicated in adults and pediatric patients from birth to 17 years of age for inhalational anthrax (post-exposure) to reduce the incidence or progression of disease following exposure to aerosolized Bacillus anthracis . Ciprofloxacin serum concentrations achieved in humans served as a surrogate endpoint reasonably likely to predict clinical benefit and provided the initial basis for approval of this indication. 1 Supportive clinical information for ciprofloxacin for anthrax post-exposure prophylaxis was obtained during the anthrax bioterror attacks of October 2001 [see Clinical Studies (14.2) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.8 Plague",
+            "text": "Ciprofloxacin tablets are indicated for treatment of plague, including pneumonic and septicemic plague, due to Yersinia pestis (Y. pestis) and prophylaxis for plague in adults and pediatric patients from birth to 17 years of age. Efficacy studies of ciprofloxacin could not be conducted in humans with plague for feasibility reasons. Therefore this indication is based on an efficacy study conducted in animals only [see Clinical Studies (14.3) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.9 Chronic Bacterial Prostatitis",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of chronic bacterial prostatitis caused by Escherichia coli or Proteus mirabilis ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.10 Lower Respiratory Tract Infections",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of lower respiratory tract infections caused by Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae, Proteus mirabilis, Pseudomonas aeruginosa, Haemophilus influenzae, Haemophilus parainfluenzae, or Streptococcus pneumoniae. Ciprofloxacin tablets are not a drug of first choice in the treatment of presumed or confirmed pneumonia secondary to Streptococcus pneumoniae . Ciprofloxacin tablets are indicated for the treatment of acute exacerbations of chronic bronchitis (AECB) caused by Moraxella catarrhalis. Because fluoroquinolones, including ciprofloxacin tablets, have been associated with serious adverse reactions [see Warnings and Precautions (5.1 to 5.16) ] and for some patients AECB is self-limiting, reserve ciprofloxacin tablets for treatment of AECB in patients who have no alternative treatment options."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.11 Urinary Tract Infections",
+            "text": "Urinary Tract Infections in Adults Ciprofloxacin tablets are indicated in adult patients for treatment of urinary tract infections caused by Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae, Serratia marcescens, Proteus mirabilis, Providencia rettgeri, Morganella morganii, Citrobacter koseri, Citrobacter freundii, Pseudomonas aeruginosa, methicillin-susceptible Staphylococcus epidermidis, Staphylococcus saprophyticus, or Enterococcus faecalis. Acute Uncomplicated Cystitis Ciprofloxacin tablets are indicated in adult female patients for treatment of acute uncomplicated cystitis caused by Escherichia coli or Staphylococcus saprophyticus. Because fluoroquinolones, including ciprofloxacin tablets, have been associated with serious adverse reactions [see Warnings and Precautions (5.1 to 5.16) ] and for some patients acute uncomplicated cystitis is self-limiting, reserve ciprofloxacin tablets for treatment of acute uncomplicated cystitis in patients who have no alternative treatment options. Complicated Urinary Tract Infection and Pyelonephritis in Pediatric Patients Ciprofloxacin tablets are indicated in pediatric patients aged one to 17 years of age for treatment of complicated urinary tract infections (cUTI) and pyelonephritis due to Escherichia coli [see Use in Specific Populations (8.4) ]. Although effective in clinical trials, ciprofloxacin tablets are not a drug of first choice in the pediatric population due to an increased incidence of adverse reactions compared to controls, including reactions related to joints and/or surrounding tissues. Ciprofloxacin tablets, like other fluoroquinolones, is associated with arthropathy and histopathological changes in weight-bearing joints of juvenile animals [see Warnings and Precautions (5.13) , Adverse Reactions (6.1) , Use in Specific Populations (8.4) and Nonclinical Toxicology (13.2) ] ."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.12 Acute Sinusitis",
+            "text": "Ciprofloxacin tablets are indicated in adult patients for treatment of acute sinusitis caused by Haemophilus influenzae, Streptococcus pneumoniae, or Moraxella catarrhalis . Because fluoroquinolones, including ciprofloxacin tablets, have been associated with serious adverse reactions [see Warnings and Precautions (5.1 to 5.16) ] and for some patients acute sinusitis is self-limiting, reserve ciprofloxacin tablets for treatment of acute sinusitis in patients who have no alternative treatment options."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.13 Usage",
+            "text": "To reduce the development of drug-resistant bacteria and maintain the effectiveness of ciprofloxacin tablets and other antibacterial drugs, ciprofloxacin tablets should be used only to treat or prevent infections that are proven or strongly suspected to be caused by susceptible bacteria. When culture and susceptibility information are available, they should be considered in selecting or modifying antibacterial therapy. In the absence of such data, local epidemiology and susceptibility patterns may contribute to the empiric selection of therapy. If anaerobic organisms are suspected of contributing to the infection, appropriate therapy should be administered. Appropriate culture and susceptibility tests should be performed before treatment in order to isolate and identify organisms causing infection and to determine their susceptibility to ciprofloxacin. Therapy with ciprofloxacin tablets may be initiated before results of these tests are known; once results become available appropriate therapy should be continued. As with other drugs, some isolates of Pseudomonas aeruginosa may develop resistance fairly rapidly during treatment with ciprofloxacin. Culture and susceptibility testing performed periodically during therapy will provide information not only on the therapeutic effect of the antimicrobial agent but also on the possible emergence of bacterial resistance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "review": {
+      "pair_index": 18,
+      "drug": "Diltiazem",
+      "condition": "atrial fibrillation",
+      "disposition": "label_support_with_restrictions",
+      "set_ids": [
+        "3f2942d7-f4d0-2d77-e063-6294a90a74ad"
+      ],
+      "notes": "The injection label explicitly indicates temporary control of rapid ventricular rate in atrial fibrillation/flutter, but contraindicates use when an accessory bypass tract is present (e.g. WPW). The same condition can appear in both indication and contraindication contexts. Formulation, treatment purpose and patient restrictions matter."
+    },
+    "graph_pair": {
+      "subject": "CHEBI:101278",
+      "object": "MONDO:0004981",
+      "drug_name": "Diltiazem",
+      "condition_name": "atrial fibrillation",
+      "drugcentral_edge": {
+        "id": "3ddac7b4-a9e9-4a02-bac6-37c4509fadf0",
+        "category": [
+          "biolink:ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation"
+        ],
+        "subject": "CHEBI:101278",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0004981",
+        "sources": [
+          {
+            "id": "infores:drugcentral",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:drugcentral",
+            "resource_role": "primary_knowledge_source",
+            "source_record_urls": [
+              "https://drugcentral.org/drugcard/897#druguse"
+            ]
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "original_subject": "DrugCentral:897",
+        "original_object": "UMLS:C0004238"
+      },
+      "multiomics_edge": {
+        "id": "b3d51486-0b10-3275-9a4a-da210de44bd5",
+        "category": [
+          "biolink:EntityToPhenotypicFeatureAssociation"
+        ],
+        "subject": "CHEBI:101278",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0004981",
+        "publications": [
+          "dailymed:dailymed:3f2942d7-f4d0-2d77-e063-6294a90a74ad",
+          "dailymed:dailymed:453b73bd-c52d-4d72-a0b3-47588e723e0b",
+          "dailymed:dailymed:5e36488b-8f2d-4dc9-b803-af1829e6fdd0",
+          "dailymed:dailymed:734beeef-3968-4137-af2c-276e8a9317df",
+          "dailymed:dailymed:7d8e8b1e-f67b-57d2-e053-2991aa0a8d12",
+          "dailymed:dailymed:8bae87a5-2137-467e-a1ad-79b2bc075e07",
+          "dailymed:dailymed:99c5813f-1ffe-0eaa-e053-2a95a90a751b",
+          "dailymed:dailymed:9d51c0f6-26b7-4220-83fb-4e736b289e64",
+          "dailymed:dailymed:9f69371d-3ede-285d-e053-2a95a90a6e42",
+          "dailymed:dailymed:bba03666-ff4f-4bf6-fa92-78e1ec2d9073",
+          "dailymed:dailymed:f8d962ab-6cd4-43a1-a8fa-fb6548ac2a08",
+          "dailymed:dailymed:fbd7ee32-fabe-06e7-e053-6294a90a63e0"
+        ],
+        "sources": [
+          {
+            "id": "infores:multiomics-drugapprovals",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:multiomics-drugapprovals",
+            "resource_role": "primary_knowledge_source",
+            "upstream_resource_ids": [
+              "infores:dailymed",
+              "infores:faers"
+            ],
+            "source_record_urls": [
+              "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=b3d51486-0b10-3275-9a4a-da210de44bd5"
+            ]
+          },
+          {
+            "id": "infores:faers",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:faers",
+            "resource_role": "supporting_data_source"
+          },
+          {
+            "id": "infores:dailymed",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:dailymed",
+            "resource_role": "supporting_data_source"
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "FDA_regulatory_approvals": [
+          "ANDA072838"
+        ],
+        "original_subject": "CHEBI:101278",
+        "original_object": "MONDO:0004981"
+      }
+    },
+    "label_evidence": [
+      {
+        "set_id": "3f2942d7-f4d0-2d77-e063-6294a90a74ad",
+        "metadata": {
+          "set_id": "3f2942d7-f4d0-2d77-e063-6294a90a74ad",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/3f2942d7-f4d0-2d77-e063-6294a90a74ad.xml",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-03T03:52:06.152001+00:00",
+          "sha256": "68df0f1e9ee18e686b6fba5439fad9696a9b033d682116191418f275fec2205d",
+          "bytes": 85172,
+          "title": "Diltiazem Hydrochloride Injection",
+          "version": "1",
+          "effective_time": "20250918",
+          "status": "ok"
+        },
+        "indication_sections": [
+          {
+            "group": "indication",
+            "code": "34067-9",
+            "title": "INDICATIONS AND USAGE",
+            "text": "Diltiazem hydrochloride injection is indicated for the following:"
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "INDICATIONS AND USAGE / Atrial Fibrillation or Atrial Flutter",
+            "text": "Temporary control of rapid ventricular rate in atrial fibrillation or atrial flutter. It should not be used in patients with atrial fibrillation or atrial flutter associated with an accessory bypass tract such as in Wolff-Parkinson-White (WPW) syndrome or short PR syndrome."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "INDICATIONS AND USAGE / Paroxysmal Supraventricular Tachycardia",
+            "text": "Rapid conversion of paroxysmal supraventricular tachycardias (PSVT) to sinus rhythm. This includes AV nodal reentrant tachycardias and reciprocating tachycardias associated with an extranodal accessory pathway such as the WPW syndrome or short PR syndrome. Unless otherwise contraindicated, appropriate vagal maneuvers should be attempted prior to administration of diltiazem hydrochloride injection. The use of diltiazem hydrochloride injection should be undertaken with caution when the patient is compromised hemodynamically or is taking other drugs that decrease any or all of the following: peripheral resistance, myocardial filling, myocardial contractility, or electrical impulse propagation in the myocardium. For either indication and particularly when employing continuous intravenous infusion, the setting should include continuous monitoring of the ECG and frequent measurement of blood pressure. A defibrillator and emergency equipment should be readily available. In domestic controlled trials in patients with atrial fibrillation or atrial flutter, bolus administration of diltiazem hydrochloride injection was effective in reducing heart rate by at least 20% in 95% of patients. Diltiazem hydrochloride injection rarely converts atrial fibrillation or atrial flutter to normal sinus rhythm. Following administration of one or two intravenous bolus doses of diltiazem injection, response usually occurs within 3 minutes and maximal heart rate reduction generally occurs in 2 to 7 minutes. Heart rate reduction may last from 1 to 3 hours. If hypotension occurs, it is generally short-lived, but may last from 1 to 3 hours. A 24-hour continuous infusion of diltiazem injection in the treatment of atrial fibrillation or atrial flutter maintained at least a 20% heart rate reduction during the infusion in 83% of patients. Upon discontinuation of infusion, heart rate reduction may last from 0.5 hours to more than 10 hours (median duration 7 hours). Hypotension, if it occurs, may be similarly persistent. In the controlled clinical trials, 3.2% of patients required some form of intervention (typically, use of intravenous fluids or the Trendelenburg position) for blood pressure support following diltiazem hydrochloride injection. In domestic controlled trials, bolus administration of diltiazem hydrochloride injection was effective in converting PSVT to normal sinus rhythm in 88% of patients within 3 minutes of the first or second bolus dose. Symptoms associated with the arrhythmia were improved in conjunction with decreased heart rate or conversion to normal sinus rhythm following administration of diltiazem hydrochloride injection."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "review": {
+      "pair_index": 158,
+      "drug": "Liothyronine",
+      "condition": "congenital hypothyroidism",
+      "disposition": "broader_indication_plus_condition_specific_dosing",
+      "set_ids": [
+        "4a8f7bf4-fa8f-4cde-9be2-11d5a4e6f07f"
+      ],
+      "notes": "The indications text describes replacement/supplemental therapy for hypothyroidism of any etiology, subject to exceptions, while dosage has an explicit Congenital Hypothyroidism subsection. The precise phrase also appears under pediatric precautions. The automated safety-without-indication-name category is a wording/hierarchy limitation, not a demonstrated wrong indication."
+    },
+    "graph_pair": {
+      "subject": "CHEBI:18258",
+      "object": "MONDO:0018612",
+      "drug_name": "Liothyronine",
+      "condition_name": "congenital hypothyroidism",
+      "drugcentral_edge": {
+        "id": "2dadd4b9-d5c7-48dc-93b0-62748922b586",
+        "category": [
+          "biolink:ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation"
+        ],
+        "subject": "CHEBI:18258",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0018612",
+        "sources": [
+          {
+            "id": "infores:drugcentral",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:drugcentral",
+            "resource_role": "primary_knowledge_source",
+            "source_record_urls": [
+              "https://drugcentral.org/drugcard/1585#druguse"
+            ]
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "original_subject": "DrugCentral:1585",
+        "original_object": "UMLS:C0010308"
+      },
+      "multiomics_edge": {
+        "id": "e024eddc-8d09-304a-8351-74e043bf5683",
+        "category": [
+          "biolink:EntityToDiseaseAssociation"
+        ],
+        "subject": "CHEBI:18258",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0018612",
+        "publications": [
+          "dailymed:dailymed:4a8f7bf4-fa8f-4cde-9be2-11d5a4e6f07f",
+          "dailymed:dailymed:818ae20e-9909-41ec-a0a9-4b6e9e86e794",
+          "dailymed:dailymed:a42269e2-227b-4009-a19b-dc3f7aec8374",
+          "dailymed:dailymed:bc225ead-22b5-444e-9254-01c6250a1175",
+          "dailymed:dailymed:d4e23cbd-2e01-46c2-a690-0b87158d7003",
+          "dailymed:dailymed:f882d34f-6b9f-4d9d-8a3e-3054ba91c506",
+          "dailymed:dailymed:fecd164d-1344-4d2f-97a7-ebe972470d2b"
+        ],
+        "sources": [
+          {
+            "id": "infores:multiomics-drugapprovals",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:multiomics-drugapprovals",
+            "resource_role": "primary_knowledge_source",
+            "upstream_resource_ids": [
+              "infores:dailymed",
+              "infores:faers"
+            ],
+            "source_record_urls": [
+              "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=e024eddc-8d09-304a-8351-74e043bf5683"
+            ]
+          },
+          {
+            "id": "infores:faers",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:faers",
+            "resource_role": "supporting_data_source"
+          },
+          {
+            "id": "infores:dailymed",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:dailymed",
+            "resource_role": "supporting_data_source"
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "FDA_regulatory_approvals": [
+          "ANDA091382"
+        ],
+        "original_subject": "CHEBI:18258",
+        "original_object": "MONDO:0018612"
+      }
+    },
+    "label_evidence": [
+      {
+        "set_id": "4a8f7bf4-fa8f-4cde-9be2-11d5a4e6f07f",
+        "metadata": {
+          "set_id": "4a8f7bf4-fa8f-4cde-9be2-11d5a4e6f07f",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/4a8f7bf4-fa8f-4cde-9be2-11d5a4e6f07f.xml",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-03T03:51:15.900545+00:00",
+          "sha256": "e03cb7edc45f89dd3c5b712ad4d14fc1ba348ba7e8b38b045cef0eb9eab4372f",
+          "bytes": 62725,
+          "title": "Liothyronine Sodium Tablets, USP",
+          "version": "1",
+          "effective_time": "20140109",
+          "status": "ok"
+        },
+        "indication_sections": [
+          {
+            "group": "indication",
+            "code": "34067-9",
+            "title": "INDICATIONS AND USAGE",
+            "text": "Thyroid hormone drugs are indicated: As replacement or supplemental therapy in patients with hypothyroidism of any etiology, except transient hypothyroidism during the recovery phase of subacute thyroiditis. This category includes cretinism, myxedema and ordinary hypothyroidism in patients of any age (pediatric patients, adults, the elderly), or state (including pregnancy); primary hypothyroidism resulting from functional deficiency, primary atrophy, partial or total absence of thyroid gland, or the effects of surgery, radiation, or drugs, with or without the presence of goiter; and secondary (pituitary) or tertiary (hypothalamic) hypothyroidism (see WARNINGS ). As pituitary thyroid-stimulating hormone (TSH) suppressants, in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules, subacute or chronic lymphocytic thyroiditis (Hashimoto's) and multinodular goiter. As diagnostic agents in suppression tests to differentiate suspected mild hyperthyroidism or thyroid gland autonomy. Liothyronine Sodium Tablets, USP can be used in patients allergic to desiccated thyroid or thyroid extract derived from pork or beef."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "review": {
+      "pair_index": 1183,
+      "drug": "Aflibercept",
+      "condition": "retinopathy of prematurity",
+      "disposition": "indication_heading_support",
+      "set_ids": [
+        "f96cfd69-da34-41ee-90a9-610a4655cd1c"
+      ],
+      "notes": "Retinopathy of prematurity is an indication subsection heading beneath EYLEA is indicated for the treatment of, and has condition-specific dosing. Retaining title-only sections fixes an initial automated false negative."
+    },
+    "graph_pair": {
+      "subject": "UNII:15C2VL427D",
+      "object": "MONDO:0006952",
+      "drug_name": "Aflibercept",
+      "condition_name": "retinopathy of prematurity",
+      "drugcentral_edge": {
+        "id": "49b3065b-ea86-4a15-908d-84a968ff6a28",
+        "category": [
+          "biolink:ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation"
+        ],
+        "subject": "UNII:15C2VL427D",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0006952",
+        "sources": [
+          {
+            "id": "infores:drugcentral",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:drugcentral",
+            "resource_role": "primary_knowledge_source",
+            "source_record_urls": [
+              "https://drugcentral.org/drugcard/4916#druguse"
+            ]
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "original_subject": "DrugCentral:4916",
+        "original_object": "UMLS:C0035344"
+      },
+      "multiomics_edge": {
+        "id": "6c0a2f29-9b08-358d-9633-71a03115ed25",
+        "category": [
+          "biolink:EntityToDiseaseAssociation"
+        ],
+        "subject": "UNII:15C2VL427D",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0006952",
+        "publications": [
+          "dailymed:dailymed:f96cfd69-da34-41ee-90a9-610a4655cd1c"
+        ],
+        "sources": [
+          {
+            "id": "infores:multiomics-drugapprovals",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:multiomics-drugapprovals",
+            "resource_role": "primary_knowledge_source",
+            "upstream_resource_ids": [
+              "infores:dailymed",
+              "infores:faers"
+            ],
+            "source_record_urls": [
+              "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=6c0a2f29-9b08-358d-9633-71a03115ed25"
+            ]
+          },
+          {
+            "id": "infores:faers",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:faers",
+            "resource_role": "supporting_data_source"
+          },
+          {
+            "id": "infores:dailymed",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:dailymed",
+            "resource_role": "supporting_data_source"
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "FDA_regulatory_approvals": [
+          "BLA125387"
+        ],
+        "original_subject": "UNII:15C2VL427D",
+        "original_object": "MONDO:0006952"
+      }
+    },
+    "label_evidence": [
+      {
+        "set_id": "f96cfd69-da34-41ee-90a9-610a4655cd1c",
+        "metadata": {
+          "set_id": "f96cfd69-da34-41ee-90a9-610a4655cd1c",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/f96cfd69-da34-41ee-90a9-610a4655cd1c.xml",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-03T03:53:58.531070+00:00",
+          "sha256": "0d2dd2c68c39b37d43f8da61d8b9243bb3934b2cfaef4873bee57e31d7532dc3",
+          "bytes": 246812,
+          "title": "These highlights do not include all the information needed to use EYLEA safely and effectively. See full prescribing information for EYLEA. EYLEA ® (aflibercept) injection, for intravitreal use Initial U.S. Approval: 2011",
+          "version": "41",
+          "effective_time": "20260707",
+          "status": "ok"
+        },
+        "indication_sections": [
+          {
+            "group": "indication",
+            "code": "34067-9",
+            "title": "1 INDICATIONS AND USAGE",
+            "text": "EYLEA is indicated for the treatment of:"
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.1 Neovascular (Wet) Age-Related Macular Degeneration (AMD)",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.2 Macular Edema Following Retinal Vein Occlusion (RVO)",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.3 Diabetic Macular Edema (DME)",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.4 Diabetic Retinopathy (DR)",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.5 Retinopathy of Prematurity (ROP)",
+            "text": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "review": {
+      "pair_index": 362,
+      "drug": "Carvedilol",
+      "condition": "heart failure",
+      "disposition": "label_support_with_restrictions",
+      "set_ids": [
+        "010290af-81f4-0037-e063-6394a90a4638"
+      ],
+      "notes": "Section 1.1 explicitly indicates treatment of mild to severe chronic heart failure of ischemic or cardiomyopathic origin. Section 5.4 warns that worsening heart failure or fluid retention may occur during dose up-titration. This is direct evidence that the condition can legitimately occur in both indications and warnings."
+    },
+    "graph_pair": {
+      "subject": "CHEBI:3441",
+      "object": "MONDO:0005252",
+      "drug_name": "Carvedilol",
+      "condition_name": "heart failure",
+      "drugcentral_edge": {
+        "id": "721e4657-0d44-4c21-885b-f8093c2c319b",
+        "category": [
+          "biolink:ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation"
+        ],
+        "subject": "CHEBI:3441",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0005252",
+        "sources": [
+          {
+            "id": "infores:drugcentral",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:drugcentral",
+            "resource_role": "primary_knowledge_source",
+            "source_record_urls": [
+              "https://drugcentral.org/drugcard/522#druguse"
+            ]
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "original_subject": "DrugCentral:522",
+        "original_object": "UMLS:C0264716"
+      },
+      "multiomics_edge": {
+        "id": "34d8a5a5-fc59-3d35-a8bb-3d3583ae1998",
+        "category": [
+          "biolink:EntityToDiseaseAssociation"
+        ],
+        "subject": "CHEBI:3441",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0005252",
+        "publications": [
+          "dailymed:dailymed:010290af-81f4-0037-e063-6394a90a4638",
+          "dailymed:dailymed:03b7c07c-14ba-40c8-8c0a-8dfa4a10f580",
+          "dailymed:dailymed:07c619c6-4a0c-445e-94fa-664a54f68a39",
+          "dailymed:dailymed:0930965b-80e3-4a0c-bffc-14ac32a47894",
+          "dailymed:dailymed:0bfea06d-7abe-407a-80a4-d15d373569f7",
+          "dailymed:dailymed:0db9d532-d62c-46c5-b4b9-855d78d01314",
+          "dailymed:dailymed:0e98593a-8424-48c8-acc0-671f4b566aee",
+          "dailymed:dailymed:157f64c6-2c21-4056-b643-79047ca237a9",
+          "dailymed:dailymed:196536eb-8b94-45da-a2f3-f554d6bf88e9",
+          "dailymed:dailymed:1be1b5d2-eb2c-1d02-e063-6294a90adbba",
+          "dailymed:dailymed:1da0dc6d-1f09-4888-a04f-c6a8170e2b7b",
+          "dailymed:dailymed:1ddff189-1848-4186-bca9-063e4ea7fd1f",
+          "dailymed:dailymed:1e453c21-a8a8-dc54-5591-74c972d41727",
+          "dailymed:dailymed:205291ba-86a7-43e1-be47-bc75df1921f9",
+          "dailymed:dailymed:205da5d0-05d9-440d-bb5a-b30b826900ab",
+          "dailymed:dailymed:21191d89-16f6-49a8-9394-f31d0950deea",
+          "dailymed:dailymed:213f1d2e-65a4-4cad-91e9-85c0fc65ac94",
+          "dailymed:dailymed:25566ff0-3747-4f32-8d4f-de0dfbbb5530",
+          "dailymed:dailymed:264a3dc1-596c-43ab-a20c-65c80ab22f2a",
+          "dailymed:dailymed:266d7b94-2953-4831-e063-6394a90a3f33",
+          "dailymed:dailymed:26ba6154-ddb8-9d37-e063-6394a90a1ef9",
+          "dailymed:dailymed:26d05a5b-8f28-5913-e063-6394a90a8b39",
+          "dailymed:dailymed:2be8635b-5733-1ed4-e054-00144ff88e88",
+          "dailymed:dailymed:2fb46fe1-9b7b-4718-9327-2471af22f0b7",
+          "dailymed:dailymed:32098c09-7580-4975-a3e1-31b619c04c69",
+          "dailymed:dailymed:325dae60-01ce-a120-e063-6294a90a2ef2",
+          "dailymed:dailymed:33dfcf29-19d6-46ba-b8ed-d59d2226ad07",
+          "dailymed:dailymed:354d1689-53f9-42d3-8308-08b6d9a04404",
+          "dailymed:dailymed:36230cc8-e808-4f74-a27d-4367eecd21f7",
+          "dailymed:dailymed:3697789e-ed17-4433-af94-e8ea19d8e04d",
+          "dailymed:dailymed:3724c7f1-dd2a-4bc9-b388-17238d663860",
+          "dailymed:dailymed:39cf31cc-8f3d-4919-a93a-f997ad6850dc",
+          "dailymed:dailymed:3b56e0d0-82d7-4512-849f-2b72d7bae36e",
+          "dailymed:dailymed:3c8d54e6-835c-4fa7-b13b-b798916cfed3",
+          "dailymed:dailymed:3e7c98c1-6573-4f7b-8aab-07da4045e6c1",
+          "dailymed:dailymed:3eb4fd8e-1027-4d24-8f2f-12e9dcfe6231",
+          "dailymed:dailymed:3f193c24-7204-4249-bbef-713090cff100",
+          "dailymed:dailymed:40a98410-9568-4278-959e-ca3517a9b119",
+          "dailymed:dailymed:441dda59-c3c4-d3c6-e063-6394a90a98dc",
+          "dailymed:dailymed:444ee05c-571a-4ea6-8763-af05d252df56",
+          "dailymed:dailymed:444ee05c-571a-4ea6-8763-af05d252df56",
+          "dailymed:dailymed:45233e64-26ee-4117-a896-24363b435fc2",
+          "dailymed:dailymed:454054f1-0730-41b3-844a-c7b65f1b47c5",
+          "dailymed:dailymed:462a9678-d2cd-d2b8-e063-6294a90a0139",
+          "dailymed:dailymed:473d1684-944c-4a65-aef4-6379f97a0178",
+          "dailymed:dailymed:494be2b0-1458-481f-e054-00144ff88e88",
+          "dailymed:dailymed:49afdf89-0bed-71da-e054-00144ff88e88",
+          "dailymed:dailymed:4d56592a-d9be-441c-9200-eab9018ec312",
+          "dailymed:dailymed:4f997a0b-a4c9-4be8-9add-8d90c1c465e5",
+          "dailymed:dailymed:506005f3-d79d-4de1-8bd2-71ade18b8d47",
+          "dailymed:dailymed:52785a22-ddca-4f5b-8579-5974df2a9a4e",
+          "dailymed:dailymed:52a672a8-db98-4acf-99d5-62eb2977e767",
+          "dailymed:dailymed:55a19ff1-f8c1-4cf0-8711-9bfa32756de9",
+          "dailymed:dailymed:5a5a9e29-1954-47a2-baa2-b34594130869",
+          "dailymed:dailymed:5c34847d-68f9-4967-81c8-a2297a6acb7f",
+          "dailymed:dailymed:5eeeaeee-9698-493f-9aa7-d13068147208",
+          "dailymed:dailymed:62408fc0-65d5-42f6-91a3-2c13f7697b39",
+          "dailymed:dailymed:63065e30-4a50-42b0-9622-a393923c1e98",
+          "dailymed:dailymed:64ba2b17-989e-443c-8277-9649489b5ce8",
+          "dailymed:dailymed:669ec7f8-f27d-4048-a784-00ca903cc658",
+          "dailymed:dailymed:683bd1c4-fb9d-46cc-9bd4-6a6e455cadfb",
+          "dailymed:dailymed:68c275e8-992a-4520-8065-ab6d615d89cc",
+          "dailymed:dailymed:77084f11-0750-44cd-a208-f38b3f62a1a1",
+          "dailymed:dailymed:786e8ad3-a8d7-41e6-e053-2991aa0a32c7",
+          "dailymed:dailymed:7a103502-c809-41ae-93a3-f7485605d0fe",
+          "dailymed:dailymed:7a7d3ca1-05b0-4c7e-aefa-492cc441585d",
+          "dailymed:dailymed:7aae1a4a-5d0e-4b19-9e4c-55707a9bb184",
+          "dailymed:dailymed:7b2638f5-8975-4259-be52-0da5c263bcc0",
+          "dailymed:dailymed:7cc14b86-0833-4c3c-91f3-7963d7052fd5",
+          "dailymed:dailymed:7d485d38-5d43-4a54-bc63-82734035c66a",
+          "dailymed:dailymed:81bc612d-5674-45b9-a1f5-2cb4fa625747",
+          "dailymed:dailymed:84ee5fbf-7299-4b8a-e053-2a91aa0aa159",
+          "dailymed:dailymed:8640adde-d071-44a4-97d0-fa8a8548debe",
+          "dailymed:dailymed:8a82149f-aade-2a9b-e053-2995a90a9daf",
+          "dailymed:dailymed:8ccf07f5-78fb-76da-e053-2a95a90a0090",
+          "dailymed:dailymed:8d3937b4-e0dd-4165-9825-bbf5020d79f9",
+          "dailymed:dailymed:8da1445a-1d21-4c4f-aa55-da9957bf8cb1",
+          "dailymed:dailymed:947baca7-f9c8-4821-b47b-53c45288613e",
+          "dailymed:dailymed:95300809-be15-461e-904e-b56aba676975",
+          "dailymed:dailymed:9959f5d7-c363-4b8d-b8b9-7b45a8cb9aa9",
+          "dailymed:dailymed:99f4bdbc-ed07-4c98-a119-94588e53f2ef",
+          "dailymed:dailymed:9b21829b-9a54-4e78-9f44-05456da5ef73",
+          "dailymed:dailymed:9bab0a6b-8ed4-46e4-8326-2f9e3c87559b",
+          "dailymed:dailymed:a1344411-fc64-4233-89ba-e90a1953e150",
+          "dailymed:dailymed:a27a7950-66d3-4894-8527-2345bb1c7ebc",
+          "dailymed:dailymed:a307296e-6c6e-4922-ba52-02192726ac34",
+          "dailymed:dailymed:a449c394-d9bf-3eec-e053-2995a90aec11",
+          "dailymed:dailymed:a570b8ea-530d-4565-a091-bb9dbe4a6d8d",
+          "dailymed:dailymed:a6ab5da0-8f22-491d-b007-85d9d4901828",
+          "dailymed:dailymed:a7bfd0fc-054b-7397-e053-2a95a90ae3e2",
+          "dailymed:dailymed:a84e7ab5-bd6a-44a0-bc57-a61b7bc96dc5",
+          "dailymed:dailymed:a9314bc0-fd5d-477b-bef5-3bee532774c0",
+          "dailymed:dailymed:a97a2467-7525-467c-8969-38246903690c",
+          "dailymed:dailymed:aae2bafd-460b-4d0c-8d13-8ab0ce6425f7",
+          "dailymed:dailymed:ab8aa773-0ed1-4d59-a1bb-f46cf882644f",
+          "dailymed:dailymed:ac14846e-423a-37c4-e053-2a95a90a3cdd",
+          "dailymed:dailymed:ad96f237-1e3a-45ff-9c47-fed3544dc943",
+          "dailymed:dailymed:add1ee3d-fca4-4301-b871-7dda6eda7bb7",
+          "dailymed:dailymed:b0887c72-bc6a-010d-e053-2995a90aab8d",
+          "dailymed:dailymed:b0d55eaa-7869-4d07-a92a-85ea0c598462",
+          "dailymed:dailymed:b23021d4-c00a-e0ef-eb93-1dc824ae56ca",
+          "dailymed:dailymed:b4647b22-9a70-4259-a8f6-fac0ce1ac5c5",
+          "dailymed:dailymed:b4e700f8-d0e0-4ad5-93b5-e935389a96e3",
+          "dailymed:dailymed:bbf4dd22-f1e3-4101-89fb-31f5df3bfbc4",
+          "dailymed:dailymed:bcfe4b84-500e-4b93-ba20-aa7c4297b0ae",
+          "dailymed:dailymed:bd0f2596-a192-4b0e-836f-4a09816408a4",
+          "dailymed:dailymed:be5f4eed-742a-4257-98ff-633111dc877d",
+          "dailymed:dailymed:c0202d0f-2ffc-45f2-a98d-5f05ac1eaa85",
+          "dailymed:dailymed:c03bd9d7-1e0b-49da-a14a-32e712dc3a2d",
+          "dailymed:dailymed:c133b9c7-ab1a-e517-e053-2995a90a517a",
+          "dailymed:dailymed:c462ce0b-486d-4599-ba60-b836781779d3",
+          "dailymed:dailymed:c4a21f67-7812-4634-beba-f8e85c63c5f2",
+          "dailymed:dailymed:cc3a9614-3017-4775-988e-6e5bd4621b70",
+          "dailymed:dailymed:cd7e7c34-6958-47be-a1c1-f1ed948e2687",
+          "dailymed:dailymed:ce9623f8-6cea-45e0-a15c-2dd78690f2a7",
+          "dailymed:dailymed:cea10014-72b0-4190-a391-733c8912efe0",
+          "dailymed:dailymed:d0089df4-37c8-41de-810c-14c9dc06f0c3",
+          "dailymed:dailymed:d3625d78-6eb6-41fe-8f6f-664965c104c4",
+          "dailymed:dailymed:d5822e3c-413c-4c7e-bbec-d0d42d2028ba",
+          "dailymed:dailymed:d5a28e57-7304-4e23-98a3-bae14d8ed25f",
+          "dailymed:dailymed:d6f8af0e-660e-191c-e053-2995a90a45fc",
+          "dailymed:dailymed:d7669550-adcc-4e70-83b1-c28ce75e7fda",
+          "dailymed:dailymed:d7736758-ad06-4ddb-bdf0-eda27a0acae5",
+          "dailymed:dailymed:d7d6bfff-fbb6-4a1f-aa13-babbb9a1e878",
+          "dailymed:dailymed:da2696ba-f4be-4626-9abe-fe33f36361b1",
+          "dailymed:dailymed:da830b08-1cdd-4d36-a068-c376fd7763c4",
+          "dailymed:dailymed:da8a670b-a9ce-445f-af31-7588c6c67e29",
+          "dailymed:dailymed:da8b8c20-0130-4aa9-924d-4a4f28c3f767",
+          "dailymed:dailymed:db5d9e64-46b3-92d3-e053-2995a90a74bc",
+          "dailymed:dailymed:dbec7c4b-3db7-4c9d-b5da-e72050ee5743",
+          "dailymed:dailymed:dc6a2d33-aa04-4a04-9cde-901b744d24ca",
+          "dailymed:dailymed:dd818d91-cddf-474f-aa68-43e416da8b8e",
+          "dailymed:dailymed:dd8b2a3f-c2fa-4859-84a1-c02f2b608748",
+          "dailymed:dailymed:df600dde-8ef9-52e3-e053-2a95a90a2dc0",
+          "dailymed:dailymed:df7415ac-e475-19c9-e053-2995a90afa71",
+          "dailymed:dailymed:e0ae5bed-1cb4-45d6-befe-dfc68edb9b34",
+          "dailymed:dailymed:e285434f-d831-b6e7-e053-2995a90a1ab2",
+          "dailymed:dailymed:e31271aa-259b-caa6-e053-2995a90a0fcd",
+          "dailymed:dailymed:e3f463b5-2743-4a4a-a90a-bf1ee10a5458",
+          "dailymed:dailymed:e5e766e3-ef75-4100-e053-2995a90a510f",
+          "dailymed:dailymed:e68c9b18-e7fd-45f7-a8f5-1d815e32680b",
+          "dailymed:dailymed:e843534e-47a2-46e3-92bb-d079467be606",
+          "dailymed:dailymed:ea60885e-a8c3-4120-97dd-a59ae2251b8b",
+          "dailymed:dailymed:eb892787-edd0-4ab6-aef2-2d0216384395",
+          "dailymed:dailymed:ec6d8d73-9d18-4a9e-ae0c-0ea12059e78e",
+          "dailymed:dailymed:ed11cd4e-d7c9-8446-e053-2995a90afd6e",
+          "dailymed:dailymed:ed60e2e4-6eda-4728-aec4-263b821e4ed8",
+          "dailymed:dailymed:ee848543-12fb-446c-86db-bf2322ec986f",
+          "dailymed:dailymed:f0617fa4-1e87-48fa-947a-e4249153a947",
+          "dailymed:dailymed:f0f443b6-64cd-4dbf-b726-e6be16cd7459",
+          "dailymed:dailymed:f2a0407c-2e05-60eb-e053-2a95a90abc99",
+          "dailymed:dailymed:f3c32b56-e63d-55c2-e053-2a95a90a8f4c",
+          "dailymed:dailymed:f5572c43-61fe-459f-a40a-5cd7f26d1ec4",
+          "dailymed:dailymed:f5969d18-46c7-4f35-9668-2fd4f6bbeb17",
+          "dailymed:dailymed:fa6b4014-e9d7-4074-95fc-4b48d91da83b",
+          "dailymed:dailymed:fcb1de7c-1878-1835-e053-6294a90abe95",
+          "dailymed:dailymed:fcb1f03f-0629-96c3-e053-6394a90a7d2a",
+          "dailymed:dailymed:fcb2025f-11a1-ea73-e053-6394a90a61cb",
+          "dailymed:dailymed:fd8313e3-7b77-4e44-b2f8-9f504cf1da9f",
+          "dailymed:dailymed:fdb12700-116b-4203-8d74-9a94b9401fe6",
+          "dailymed:dailymed:fe462198-32ae-4f6c-befc-acb97fb017c9",
+          "dailymed:dailymed:fe4aa7f0-6ef2-4a95-8a64-5e3365f10474",
+          "dailymed:dailymed:ffbedcce-0d64-4aed-9e65-09448d71ca91"
+        ],
+        "sources": [
+          {
+            "id": "infores:multiomics-drugapprovals",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:multiomics-drugapprovals",
+            "resource_role": "primary_knowledge_source",
+            "upstream_resource_ids": [
+              "infores:dailymed",
+              "infores:faers"
+            ],
+            "source_record_urls": [
+              "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=34d8a5a5-fc59-3d35-a8bb-3d3583ae1998"
+            ]
+          },
+          {
+            "id": "infores:faers",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:faers",
+            "resource_role": "supporting_data_source"
+          },
+          {
+            "id": "infores:dailymed",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:dailymed",
+            "resource_role": "supporting_data_source"
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "FDA_regulatory_approvals": [
+          "ANDA077614"
+        ],
+        "original_subject": "CHEBI:3441",
+        "original_object": "MONDO:0005252"
+      }
+    },
+    "label_evidence": [
+      {
+        "set_id": "010290af-81f4-0037-e063-6394a90a4638",
+        "metadata": {
+          "set_id": "010290af-81f4-0037-e063-6394a90a4638",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/010290af-81f4-0037-e063-6394a90a4638.xml",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-03T03:51:37.787256+00:00",
+          "sha256": "5f477e93603951c7905abc6941e69ad0bbd1e95ea5cf5f46417bf5d210a477eb",
+          "bytes": 189239,
+          "title": "These highlights do not include all the information needed to use CARVEDILOL TABLETS safely and effectively. See full prescribing information for CARVEDILOL TABLETS. CARVEDILOL tablets, for oral use Initial U.S. Approval: 1995",
+          "version": "5",
+          "effective_time": "20260511",
+          "status": "ok"
+        },
+        "indication_sections": [
+          {
+            "group": "indication",
+            "code": "34067-9",
+            "title": "1 INDICATIONS AND USAGE",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "",
+            "title": "1 INDICATIONS AND USAGE / 1.1 Heart Failure",
+            "text": "Carvedilol tablets are indicated for the treatment of mild-to-severe chronic heart failure of ischemic or cardiomyopathic origin, usually in addition to diuretics, ACE inhibitors, and digitalis, to increase survival and, also, to reduce the risk of hospitalization [see Drug Interactions ( 7.4 ), Clinical Studies ( 14.1 )] ."
+          },
+          {
+            "group": "indication",
+            "code": "",
+            "title": "1 INDICATIONS AND USAGE / 1.2 Left Ventricular Dysfunction following Myocardial Infarction",
+            "text": "Carvedilol tablets are indicated to reduce cardiovascular mortality in clinically stable patients who have survived the acute phase of a myocardial infarction and have a left ventricular ejection fraction of less than or equal to 40% (with or without symptomatic heart failure) [see Clinical Studies ( 14.2 )] ."
+          },
+          {
+            "group": "indication",
+            "code": "",
+            "title": "1 INDICATIONS AND USAGE / 1.3 Hypertension",
+            "text": "Carvedilol tablets are indicated for the management of essential hypertension [see Clinical Studies ( 14.3 , 14.4 )] . It can be used alone or in combination with other antihypertensive agents, especially thiazide-type diuretics [see Drug Interactions ( 7.2 )] ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "review": {
+      "pair_index": 1320,
+      "drug": "Selpercatinib",
+      "condition": "medullary thyroid gland carcinoma",
+      "disposition": "label_support_with_restrictions",
+      "set_ids": [
+        "7fa848ba-a59c-4144-9f52-64d090f4d828"
+      ],
+      "notes": "Section 1.2 explicitly indicates treatment of advanced/metastatic medullary thyroid cancer with a RET mutation, in adults and pediatric patients 2 years and older requiring systemic therapy. The lexical screen matches carcinoma in warnings but lacks the cancer synonym in indications. This is a terminology false negative, not evidence of an invalid indication."
+    },
+    "graph_pair": {
+      "subject": "UNII:CEGM9YBNGD",
+      "object": "MONDO:0015277",
+      "drug_name": "Selpercatinib",
+      "condition_name": "medullary thyroid gland carcinoma",
+      "drugcentral_edge": {
+        "id": "05bad434-cbeb-4ba3-a456-c2ad07abdfcc",
+        "category": [
+          "biolink:ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation"
+        ],
+        "subject": "UNII:CEGM9YBNGD",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0015277",
+        "sources": [
+          {
+            "id": "infores:drugcentral",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:drugcentral",
+            "resource_role": "primary_knowledge_source",
+            "source_record_urls": [
+              "https://drugcentral.org/drugcard/5393#druguse"
+            ]
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "original_subject": "DrugCentral:5393",
+        "original_object": "UMLS:C0238462"
+      },
+      "multiomics_edge": {
+        "id": "710df1ae-175a-3470-9d5a-f2d3cb2dd570",
+        "category": [
+          "biolink:EntityToDiseaseAssociation"
+        ],
+        "subject": "UNII:CEGM9YBNGD",
+        "predicate": "biolink:treats",
+        "object": "MONDO:0015277",
+        "publications": [
+          "dailymed:dailymed:7fa848ba-a59c-4144-9f52-64d090f4d828"
+        ],
+        "sources": [
+          {
+            "id": "infores:multiomics-drugapprovals",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:multiomics-drugapprovals",
+            "resource_role": "primary_knowledge_source",
+            "upstream_resource_ids": [
+              "infores:dailymed",
+              "infores:faers"
+            ],
+            "source_record_urls": [
+              "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=710df1ae-175a-3470-9d5a-f2d3cb2dd570"
+            ]
+          },
+          {
+            "id": "infores:faers",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:faers",
+            "resource_role": "supporting_data_source"
+          },
+          {
+            "id": "infores:dailymed",
+            "category": [
+              "biolink:RetrievalSource"
+            ],
+            "resource_id": "infores:dailymed",
+            "resource_role": "supporting_data_source"
+          }
+        ],
+        "knowledge_level": "knowledge_assertion",
+        "agent_type": "manual_validation_of_automated_agent",
+        "clinical_approval_status": "approved_for_condition",
+        "FDA_regulatory_approvals": [
+          "NDA213246"
+        ],
+        "original_subject": "UNII:CEGM9YBNGD",
+        "original_object": "MONDO:0015277"
+      }
+    },
+    "label_evidence": [
+      {
+        "set_id": "7fa848ba-a59c-4144-9f52-64d090f4d828",
+        "metadata": {
+          "set_id": "7fa848ba-a59c-4144-9f52-64d090f4d828",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/7fa848ba-a59c-4144-9f52-64d090f4d828.xml",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-03T03:52:02.353879+00:00",
+          "sha256": "8a61171953d7720062a3a10ca8dbd3774f8dccdad986615e02397229c5a045f2",
+          "bytes": 576014,
+          "title": "These highlights do not include all the information needed to use RETEVMO safely and effectively. See full prescribing information for RETEVMO. RETEVMO ® (selpercatinib) capsules, for oral use RETEVMO ® (selpercatinib) tablets, for oral use Initial U.S. Approval: 2020",
+          "version": "25",
+          "effective_time": "20260911",
+          "status": "ok"
+        },
+        "indication_sections": [
+          {
+            "group": "indication",
+            "code": "34067-9",
+            "title": "1 INDICATIONS AND USAGE",
+            "text": ""
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.1 RET Fusion-Positive Non-Small Cell Lung Cancer",
+            "text": "RETEVMO ® is indicated for the treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with a rearranged during transfection (RET) gene fusion, as detected by an FDA-approved test."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.2 RET -Mutant Medullary Thyroid Cancer",
+            "text": "RETEVMO is indicated for the treatment of adult and pediatric patients 2 years of age and older with advanced or metastatic medullary thyroid cancer (MTC) with a RET mutation, as detected by an FDA-approved test, who require systemic therapy."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.3 RET Fusion-Positive Thyroid Cancer",
+            "text": "RETEVMO is indicated for the treatment of adult and pediatric patients 2 years of age and older with advanced or metastatic thyroid cancer with a RET gene fusion, as detected by an FDA-approved test, who require systemic therapy and who are radioactive iodine-refractory (if radioactive iodine is appropriate)."
+          },
+          {
+            "group": "indication",
+            "code": "42229-5",
+            "title": "1 INDICATIONS AND USAGE / 1.4 Other RET Fusion-Positive Solid Tumors",
+            "text": "RETEVMO is indicated for the treatment of adult and pediatric patients 2 years of age and older with locally advanced or metastatic solid tumors with a RET gene fusion, as detected by an FDA-approved test, that have progressed on or following prior systemic treatment or who have no satisfactory alternative treatment options."
+          }
+        ]
+      }
+    ]
+  }
+]

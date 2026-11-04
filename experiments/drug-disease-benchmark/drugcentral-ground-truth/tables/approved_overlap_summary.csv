@@ -1,0 +1,8 @@
+metric,unique_pairs,percent_of_drugcentral_approved_treats
+drugcentral_treats_pairs,7903,100.00
+other_treats_pairs,2367,29.95
+non_treats_pairs,4239,53.64
+either_overlap_pairs,4348,55.02
+both_overlap_pairs,2258,28.57
+no_other_edge_pairs,3555,44.98
+other_known_source_any_predicate_pairs,4348,55.02

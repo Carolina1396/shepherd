@@ -1,0 +1,649 @@
+"""``dakp_pipeline`` Airflow DAG — the full pipeline task graph (Airflow-native).
+
+This is the **only** orchestrator (the former pure-Python pipeline runner is retired). The heavy
+parsing/extraction runs as **native Airflow Go SDK
+bundle workers** (``go/cmd/dakp-bundle``): the DailyMed/FAERS/Drugs@FDA ``extract_*`` tasks are
+``@task.stub(queue="golang")`` declarations whose Go implementations the ExecutableCoordinator
+forks per task instance; the EMA tasks (``extract_ema`` for the medicines xlsx,
+``extract_ema_smpc`` for the product-information PDFs) and the Canada Vigilance parse
+(``extract_canada_vigilance``) are plain Python ``@task``s (polars / pypdf parse in-process). Every other stage (acquisition, assertion shaping, Tablassert handoff,
+legacy TSV export, release publishing, GLiNER2 NER export) is a real Python TaskFlow task
+reusing the existing stage modules.
+
+Tasks pass ``list[ArtifactRef]`` manifests over XCom (serialized to JSON dicts via
+:mod:`dakp_pipeline.io.xcom` so the native Go workers read/write the same manifests); heavy bytes
+move through the BLAKE3 content-addressed filesystem store. Run config (workdir / fixtures /
+limits) comes from the ``dakp_config`` Airflow Variable, set by the one-command orchestrator
+(``dakp up``) and shared by the Python tasks and the Go bundle.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import timedelta
+from typing import Any
+
+from airflow.sdk import TaskGroup, Variable, dag, task
+from pendulum import datetime
+
+from dakp_pipeline.logging_setup import logger, stats, step
+
+# --- DAG-level constants ---------------------------------------------------------
+
+DAG_ID = "dakp_pipeline"
+
+#: Queue routed to the Go coordinator (airflow.cfg: [sdk] queue_to_coordinator = {"golang": "go"}).
+GO_QUEUE = "golang"
+#: Pool bounding concurrent source downloads (network I/O).
+DOWNLOAD_POOL = "dakp_download"
+#: Pool bounding concurrent raw->interim parses (CPU I/O) — the Go extract stubs run here. The CLI
+#: sizes it to 4 slots; the three extracts use the default 1 slot each, so DailyMed, FAERS, and
+#: Drugs@FDA all extract concurrently. The streaming FAERS rewrite (plans/fix-faers-memory.md)
+#: dropped extract_faers peak RSS from ≫50 GB to ~6-15 GB, removing the memory pressure that
+#: previously forced the two heavy extracts to serialize via weighted pool slots.
+EXTRACT_POOL = "dakp_extract"
+#: Pool serializing the two GLiNER-mining shape tasks (1 slot, provisioned by the CLI): each
+#: shape task spawns up to one worker per GPU, and concurrent shape tasks would oversubscribe
+#: the cards. FAERS observed-use shaping does not use this pool because it bypasses NER. A scheduler
+#: hint only — the per-device flock in ``ner/ner.py`` (:func:`_acquire_gpu_lock`) is the hard
+#: one-model-per-GPU guarantee.
+NER_MINING_POOL = "ner_mining"
+
+#: Airflow Variable (JSON) holding the per-run config (workdir / fixture_root / threads / limits).
+CONFIG_VARIABLE = "dakp_config"
+
+_DAG_DOC_MD = """
+### DAKP build stages
+
+The DAG is organized into six visual TaskGroups while preserving the historical task IDs:
+
+1. **acquire** — network/model acquisition, bounded by `dakp_download`.
+2. **extract** — native Go SDK stubs on the `golang` queue (DailyMed/FAERS/Drugs@FDA) plus the
+   plain-Python EMA xlsx parse, bounded by `dakp_extract`.
+3. **shape** — Python assertion-table shaping over artifact manifests; the two DailyMed GLiNER-mining
+   tasks serialize on the 1-slot `ner_mining` pool so concurrent shape tasks can't
+   oversubscribe the GPUs (the per-device flock in `ner/ner.py` is the hard guarantee). FAERS
+   observed-use shaping bypasses NER and goes directly to intervention mapping.
+4. **tablassert** — config generation and optional real Tablassert KGX handoff.
+5. **export** — retrofit the KGX pair into the legacy DAKP TSV schema and publish the final
+   ndjson/tsv pair plus the Tablassert RIG under the legacy `drug_approvals_kg_*_v<version>`
+   names (skipped when the handoff was deferred — no fullmap means no KGX to convert).
+6. **ner-export** — export the GLiNER2 training-data bundle (RelMedNER `TrainingExample`
+   Avro records + their gliner2 NDJSON projection) from the DailyMed + FAERS + EMA extracts.
+   Scheduled AFTER the shape stage so the `dakp-nercache` store warmed by assertion mining
+   serves the export's own GLiNER inference mostly from cache; runs on the `ner_mining`
+   pool like the other GLiNER consumers.
+
+The `dakp_extract` pool has 4 slots; each extract consumes the default 1 slot, so DailyMed, FAERS,
+and Drugs@FDA all extract concurrently. (The streaming FAERS rewrite — plans/fix-faers-memory.md —
+dropped `extract_faers` peak RSS from ≫50 GB to ~6-15 GB, so the two heavy extracts no longer need
+to be serialized under the 50 GB memory budget.)
+"""
+
+_ACQUIRE_DOC_MD = """Acquire raw source/model artifacts and return small `ArtifactRef` manifests via XCom."""
+_EXTRACT_DOC_MD = """Native Go SDK bundle extraction; heavy payloads stay in the content-addressed store."""
+_SHAPE_DOC_MD = """Shape interim artifacts into DAKP assertion TSVs without moving table bytes through XCom."""
+_TABLASSERT_DOC_MD = """Generate Tablassert configs and optionally run the installed Tablassert CLI."""
+_EXPORT_DOC_MD = """Convert the Tablassert KGX ndjson pair into the legacy DAKP `.nodes.tsv` / `.edges.tsv` schema, then publish the ndjson/tsv pair and the Tablassert `.RIG.yaml` under the legacy `drug_approvals_kg_*_v<version>` names."""
+_NER_EXPORT_DOC_MD = """Export the GLiNER2 training-data bundle (`dakp.ner.export.v1`: RelMedNER-compatible Avro + gliner2 NDJSON) from the DailyMed + FAERS + EMA extracts."""
+
+
+@dataclass(frozen=True)
+class AcquireOutputs:
+    """Task handles produced by the acquisition stage."""
+
+    dailymed: Any
+    faers: Any
+    drugsfda: Any
+    ema: Any
+    smpc: Any
+    canada_vigilance: Any
+    ner_models: Any
+
+
+@dataclass(frozen=True)
+class ExtractOutputs:
+    """Task handles produced by the extraction stage (Go stubs + the Python EMA parses)."""
+
+    dailymed: Any
+    faers: Any
+    drugsfda: Any
+    ema: Any
+    smpc: Any
+    canada_vigilance: Any
+
+
+@dataclass(frozen=True)
+class AssertionOutputs:
+    """Task handles produced by the assertion-shaping stage."""
+
+    approved: Any
+    uses: Any
+    contraindications: Any
+
+
+@dataclass(frozen=True)
+class TablassertOutputs:
+    """Task handles produced by the Tablassert handoff stage."""
+
+    configs: Any
+    kgx: Any
+
+
+def _cfg() -> dict[str, Any]:  # pragma: no cover - reads the Airflow Variable at task runtime
+    """Read the per-run config dict from the ``dakp_config`` Variable."""
+    return Variable.get(CONFIG_VARIABLE, deserialize_json=True)  # type: ignore[no-any-return]
+
+
+def _ctx() -> Any:  # pragma: no cover - builds the context at task runtime
+    """Build the per-task ``TaskContext`` from the ``dakp_config`` Variable."""
+    from dakp_pipeline import runtime
+
+    return runtime.build_context_from_config(_cfg())
+
+
+def _refs_to_xcom(refs: Any) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+    """Serialize ArtifactRefs for XCom, importing the serializer only inside task execution."""
+    from dakp_pipeline.io.xcom import refs_to_xcom
+
+    return refs_to_xcom(refs)
+
+
+def _refs_from_xcom(items: Any) -> list[Any]:  # pragma: no cover - body executes only under the Airflow task runtime
+    """Deserialize ArtifactRefs from XCom, importing the serializer only inside task execution."""
+    from dakp_pipeline.io.xcom import refs_from_xcom
+
+    return refs_from_xcom(items)
+
+
+def _build_acquire_stage() -> AcquireOutputs:
+    """Create the acquisition TaskGroup and return its task handles."""
+    with TaskGroup(group_id="acquire", prefix_group_id=False, tooltip="Acquire raw inputs", doc_md=_ACQUIRE_DOC_MD):
+
+        @task(
+            pool=DOWNLOAD_POOL,
+            execution_timeout=_ACQUIRE_TIMEOUT,
+            doc_md="Download/cache DailyMed SPL artifacts; pushes ONE refs-file `ArtifactRef` over XCom (the per-member SPL refs live in a single store JSON, not inline).",
+        )
+        def acquire_dailymed() -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import acquire
+            from dakp_pipeline.sources import dailymed
+
+            ctx = _ctx()
+            with step(logger, "task acquire_dailymed"):
+                refs = acquire.acquire_dailymed(ctx)
+                # Single-file handoff: one ref per SPL member would be tens of thousands of XCom
+                # dicts (Execution-API ReadTimeouts under real data); publish the list as one
+                # store JSON and push only its sentinel ref.
+                refs_file = dailymed.write_refs_manifest(ctx, refs)
+                stats(logger, "task acquire_dailymed", output_refs=len(refs), refs_file=str(refs_file.uri))
+                return _refs_to_xcom([refs_file])
+
+        @task(
+            pool=DOWNLOAD_POOL,
+            execution_timeout=_ACQUIRE_TIMEOUT,
+            doc_md="Download/cache FAERS quarterly ASCII artifacts; returns `ArtifactRef` manifests only.",
+        )
+        def acquire_faers() -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import acquire
+
+            ctx = _ctx()
+            with step(logger, "task acquire_faers"):
+                refs = acquire.acquire_faers(ctx)
+                stats(logger, "task acquire_faers", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        @task(
+            pool=DOWNLOAD_POOL,
+            execution_timeout=_ACQUIRE_TIMEOUT,
+            doc_md="Download/cache the Drugs@FDA data-files ZIP; returns `ArtifactRef` manifests only.",
+        )
+        def acquire_drugsfda() -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import acquire
+
+            ctx = _ctx()
+            with step(logger, "task acquire_drugsfda"):
+                refs = acquire.acquire_drugsfda(ctx)
+                stats(logger, "task acquire_drugsfda", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        @task(
+            pool=DOWNLOAD_POOL,
+            execution_timeout=_ACQUIRE_TIMEOUT,
+            doc_md="Download/cache the EMA centrally-authorised medicines xlsx; returns `ArtifactRef` manifests only.",
+        )
+        def acquire_ema() -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import acquire
+
+            ctx = _ctx()
+            with step(logger, "task acquire_ema"):
+                refs = acquire.acquire_ema(ctx)
+                stats(logger, "task acquire_ema", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        @task(
+            pool=DOWNLOAD_POOL,
+            execution_timeout=_ACQUIRE_TIMEOUT,
+            doc_md=(
+                "Download/cache the EMA EPAR documents report and its English human "
+                "product-information (SmPC) PDFs; returns `ArtifactRef` manifests only."
+            ),
+        )
+        def acquire_ema_smpc() -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import acquire
+
+            ctx = _ctx()
+            with step(logger, "task acquire_ema_smpc"):
+                refs = acquire.acquire_ema_smpc(ctx)
+                stats(logger, "task acquire_ema_smpc", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        @task(
+            pool=DOWNLOAD_POOL,
+            execution_timeout=_ACQUIRE_TIMEOUT,
+            doc_md=("Download/cache Health Canada's Canada Vigilance data-extract ZIP (monthly full dump); returns `ArtifactRef` manifests only."),
+        )
+        def acquire_canada_vigilance() -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import acquire
+
+            ctx = _ctx()
+            with step(logger, "task acquire_canada_vigilance"):
+                refs = acquire.acquire_canada_vigilance(ctx)
+                stats(logger, "task acquire_canada_vigilance", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        @task(
+            pool=DOWNLOAD_POOL,
+            execution_timeout=_ACQUIRE_TIMEOUT,
+            doc_md="Ensure the production GLiNER checkpoint is cached before contraindication mining.",
+        )
+        def acquire_ner_models() -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import acquire
+
+            ctx = _ctx()
+            with step(logger, "task acquire_ner_models"):
+                refs = acquire.acquire_ner_models(ctx)
+                stats(logger, "task acquire_ner_models", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        return AcquireOutputs(
+            dailymed=acquire_dailymed(),
+            faers=acquire_faers(),
+            drugsfda=acquire_drugsfda(),
+            ema=acquire_ema(),
+            smpc=acquire_ema_smpc(),
+            canada_vigilance=acquire_canada_vigilance(),
+            ner_models=acquire_ner_models(),
+        )
+
+
+def _build_extract_stage(raw: AcquireOutputs) -> ExtractOutputs:
+    """Create the extraction TaskGroup (native Go stubs + the Python EMA parse) and return its task handles."""
+    with TaskGroup(group_id="extract", prefix_group_id=False, tooltip="Native Go extraction", doc_md=_EXTRACT_DOC_MD):
+        # No Python body: the ExecutableCoordinator forks the Go bundle, which reads the upstream
+        # acquire_* ArtifactRefs from XCom, parses with internal/{dailymed,faers,drugsfda}, writes
+        # the interim parquet + TSV handoff into the store, and pushes output ArtifactRefs as XCom.
+        @task.stub(queue=GO_QUEUE, pool=EXTRACT_POOL, doc_md=_EXTRACT_DOC_MD)
+        def extract_dailymed(raw_refs: Any) -> list[dict[str, Any]]: ...
+
+        @task.stub(queue=GO_QUEUE, pool=EXTRACT_POOL, doc_md=_EXTRACT_DOC_MD)
+        def extract_faers(raw_refs: Any) -> list[dict[str, Any]]: ...
+
+        @task.stub(queue=GO_QUEUE, pool=EXTRACT_POOL, doc_md=_EXTRACT_DOC_MD)
+        def extract_drugsfda(raw_refs: Any) -> list[dict[str, Any]]: ...
+
+        # The EMA registry parse is small (a ~1 MB xlsx), so it stays a plain Python task
+        # running beside the Go stubs in the same extract pool (1 slot).
+        @task(pool=EXTRACT_POOL, doc_md="Parse the EMA medicines xlsx into the interim `ema_registry.parquet` (polars).")
+        def extract_ema(raw_refs: Any) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline.extract import ema_registry
+
+            ctx = _ctx()
+            with step(logger, "task extract_ema"):
+                refs = ema_registry.extract(_refs_from_xcom(raw_refs), ctx)
+                stats(logger, "task extract_ema", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        @task(pool=EXTRACT_POOL, doc_md="Parse the crawled EMA SmPC PDFs into the interim `smpc_sections.parquet` (pypdf).")
+        def extract_ema_smpc(raw_refs: Any) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline.extract import ema_smpc
+
+            ctx = _ctx()
+            with step(logger, "task extract_ema_smpc"):
+                refs = ema_smpc.extract(_refs_from_xcom(raw_refs), ctx)
+                stats(logger, "task extract_ema_smpc", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        @task(pool=EXTRACT_POOL, doc_md="Parse the Canada Vigilance extract into the interim `cv_indications.parquet` (polars).")
+        def extract_canada_vigilance(raw_refs: Any) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline.extract import canada_vigilance
+
+            ctx = _ctx()
+            with step(logger, "task extract_canada_vigilance"):
+                refs = canada_vigilance.extract(_refs_from_xcom(raw_refs), ctx)
+                stats(logger, "task extract_canada_vigilance", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        return ExtractOutputs(
+            dailymed=extract_dailymed(raw.dailymed),
+            faers=extract_faers(raw.faers),
+            drugsfda=extract_drugsfda(raw.drugsfda),
+            ema=extract_ema(raw.ema),
+            smpc=extract_ema_smpc(raw.smpc),
+            canada_vigilance=extract_canada_vigilance(raw.canada_vigilance),
+        )
+
+
+def _build_shape_stage(extracts: ExtractOutputs, ner_models: Any) -> AssertionOutputs:
+    """Create the assertion-shaping TaskGroup and return assertion task handles."""
+    with TaskGroup(group_id="shape", prefix_group_id=False, tooltip="Shape assertion tables", doc_md=_SHAPE_DOC_MD):
+
+        @task(
+            pool=NER_MINING_POOL,
+            execution_timeout=_SHAPE_TIMEOUT,
+            doc_md="Shape FDA/EMA-approved treatment assertions from DailyMed, Drugs@FDA, FAERS, and the EMA registry refs.",
+        )
+        def shape_treatment_tables(
+            dm_ext: Any, drugsfda_ext: Any, faers_ext: Any, ema_ext: Any, smpc_ext: Any, ner_models_ref: Any
+        ) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            # ``ner_models_ref`` is an ordering dependency: the production NER lazily loads the
+            # GLiNER weights cached by acquire_ner_models, so corroboration mining runs after
+            # acquisition (the model refs aren't inputs).
+            del ner_models_ref
+            from dakp_pipeline.assertions import approved_treats
+            from dakp_pipeline.assertions.evidence import cached_shape_outputs
+            from dakp_pipeline.io.contracts import TaskContext
+            from dakp_pipeline.ner.ner import DiseaseNER
+
+            ctx = _ctx()
+            with step(logger, "task shape_treatment_tables"):
+                dailymed_refs, drugsfda_refs, faers_refs = _refs_from_xcom(dm_ext), _refs_from_xcom(drugsfda_ext), _refs_from_xcom(faers_ext)
+                ema_refs, smpc_refs = _refs_from_xcom(ema_ext), _refs_from_xcom(smpc_ext)
+                stats(
+                    logger,
+                    "task shape_treatment_tables",
+                    dailymed_refs=len(dailymed_refs),
+                    drugsfda_refs=len(drugsfda_refs),
+                    faers_refs=len(faers_refs),
+                    ema_refs=len(ema_refs),
+                    smpc_refs=len(smpc_refs),
+                )
+                # Indications are precision-first: false-positive treatment edges are more
+                # harmful than missed weak corroboration.
+                ner = DiseaseNER.for_indications(offline=False, workdir=ctx.workdir)
+                ctx = TaskContext(workdir=ctx.workdir, fixture_root=ctx.fixture_root, params={**ctx.params, "ner": ner})
+                in_refs = [*dailymed_refs, *drugsfda_refs, *faers_refs, *ema_refs, *smpc_refs]
+                # Already-done skip: identical inputs + config fingerprint => return the
+                # previously registered outputs without re-running the shaper.
+                cached = cached_shape_outputs("shape_approved_treats", in_refs, ctx)
+                if cached is not None:
+                    stats(logger, "task shape_treatment_tables", skipped=True, cached_refs=len(cached))
+                    return _refs_to_xcom(cached)
+                out = approved_treats.transform(in_refs, ctx)
+                stats(logger, "task shape_treatment_tables", output_refs=len(out))
+                return _refs_to_xcom(out)
+
+        @task(
+            execution_timeout=_SHAPE_TIMEOUT,
+            doc_md="Shape FAERS observed-use assertions from FAERS cases + DailyMed/Drugs@FDA refs, cross-referenced with the approved-treats table for the approval status. FAERS text bypasses NER and goes directly to intervention mapping.",
+        )
+        def shape_faers_use_tables(
+            faers_ext: Any, dm_ext: Any, drugsfda_ext: Any, approved: Any, cv_ext: Any = None
+        ) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline.assertions import observed_uses
+            from dakp_pipeline.assertions.evidence import cached_shape_outputs
+
+            ctx = _ctx()
+            with step(logger, "task shape_faers_use_tables"):
+                faers_refs, dailymed_refs = _refs_from_xcom(faers_ext), _refs_from_xcom(dm_ext)
+                drugsfda_refs, approved_refs = _refs_from_xcom(drugsfda_ext), _refs_from_xcom(approved)
+                cv_refs = _refs_from_xcom(cv_ext) if cv_ext is not None else []
+                stats(
+                    logger,
+                    "task shape_faers_use_tables",
+                    faers_refs=len(faers_refs),
+                    dailymed_refs=len(dailymed_refs),
+                    drugsfda_refs=len(drugsfda_refs),
+                    approved_refs=len(approved_refs),
+                    cv_refs=len(cv_refs),
+                )
+                # FAERS indications are intentionally not sent through NER: their compact values
+                # are retained as raw condition text for downstream mapping. Drugs@FDA is the
+                # authoritative FDA application register: it expands the
+                # prefix-stripped FAERS application numbers back to their FDA form (BLA125514).
+                in_refs = [*faers_refs, *dailymed_refs, *drugsfda_refs, *approved_refs, *cv_refs]
+                # Already-done skip: identical inputs + config fingerprint => cached outputs.
+                cached = cached_shape_outputs("shape_faers_applied_to_treat", in_refs, ctx)
+                if cached is not None:
+                    stats(logger, "task shape_faers_use_tables", skipped=True, cached_refs=len(cached))
+                    return _refs_to_xcom(cached)
+                out = observed_uses.transform(in_refs, ctx)
+                stats(logger, "task shape_faers_use_tables", output_refs=len(out))
+                return _refs_to_xcom(out)
+
+        @task(
+            pool=NER_MINING_POOL,
+            execution_timeout=_SHAPE_TIMEOUT,
+            doc_md="Mine contraindication assertions from DailyMed + Drugs@FDA + EMA SmPC refs after production NER models are cached.",
+        )
+        def shape_contraindication_tables(
+            dm_ext: Any, drugsfda_ext: Any, smpc_ext: Any, ema_ext: Any, ner_models_ref: Any
+        ) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            # ``ner_models_ref`` is an ordering dependency: the production NER lazily loads the
+            # GLiNER weights cached by acquire_ner_models, so mining runs after acquisition (the
+            # model refs aren't inputs). The shaper owns its internal multi-pass section mining
+            # and 4-GPU dispatch; the DAG needs DailyMed refs (the mined SPL sections),
+            # Drugs@FDA refs (the FDA application register that expands approval numbers to their
+            # display form), EMA refs (the medicines registry resolving SmPC subjects) + EMA SmPC
+            # refs (the mined EU product-information sections), and model-cache ordering.
+            del ner_models_ref
+            from dakp_pipeline.assertions import contraindications
+            from dakp_pipeline.assertions.evidence import cached_shape_outputs
+            from dakp_pipeline.io.contracts import TaskContext
+            from dakp_pipeline.ner.ner import DiseaseNER
+
+            ctx = _ctx()
+            # Production composite NER (curated gazetteer anchors + GLiNER2 recall) mines
+            # contraindication diseases far beyond any fixed gazetteer. It loads the GLiNER2
+            # checkpoint acquire_ner_models cached under the workdir. Offline tests inject their
+            # own deterministic backend (or fall back to the gazetteer); this production wiring is
+            # DAG-only. Keep ``contraindications.transform`` as a runtime module lookup so tests and
+            # concurrent indication-parser work can monkeypatch the module attribute.
+            with step(logger, "task shape_contraindication_tables"):
+                dailymed_refs, drugsfda_refs = _refs_from_xcom(dm_ext), _refs_from_xcom(drugsfda_ext)
+                smpc_refs, ema_refs = _refs_from_xcom(smpc_ext), _refs_from_xcom(ema_ext)
+                in_refs = [*dailymed_refs, *drugsfda_refs, *smpc_refs, *ema_refs]
+                stats(
+                    logger,
+                    "task shape_contraindication_tables",
+                    dailymed_refs=len(dailymed_refs),
+                    drugsfda_refs=len(drugsfda_refs),
+                    smpc_refs=len(smpc_refs),
+                    ema_refs=len(ema_refs),
+                )
+                # A missed contraindication is more harmful than retaining a low-confidence
+                # candidate, so this task uses the lower contraindication acceptance point.
+                ner = DiseaseNER.for_contraindications(offline=False, workdir=ctx.workdir)
+                ctx = TaskContext(workdir=ctx.workdir, fixture_root=ctx.fixture_root, params={**ctx.params, "ner": ner})
+                # Already-done skip: identical inputs + config fingerprint => cached outputs.
+                cached = cached_shape_outputs("shape_contraindications", in_refs, ctx)
+                if cached is not None:
+                    stats(logger, "task shape_contraindication_tables", skipped=True, cached_refs=len(cached))
+                    return _refs_to_xcom(cached)
+                out = contraindications.transform(in_refs, ctx)
+                stats(logger, "task shape_contraindication_tables", output_refs=len(out))
+                return _refs_to_xcom(out)
+
+        # The observed-uses task consumes the produced approved-treats table (approval-status
+        # cross-reference), so it runs after shape_treatment_tables.
+        approved = shape_treatment_tables(extracts.dailymed, extracts.drugsfda, extracts.faers, extracts.ema, extracts.smpc, ner_models)
+        return AssertionOutputs(
+            approved=approved,
+            uses=shape_faers_use_tables(extracts.faers, extracts.dailymed, extracts.drugsfda, approved, extracts.canada_vigilance),
+            contraindications=shape_contraindication_tables(extracts.dailymed, extracts.drugsfda, extracts.smpc, extracts.ema, ner_models),
+        )
+
+
+def _build_tablassert_stage(assertions: AssertionOutputs) -> TablassertOutputs:
+    """Create the Tablassert handoff TaskGroup and return its task handles."""
+    with TaskGroup(group_id="tablassert", prefix_group_id=False, tooltip="Tablassert handoff", doc_md=_TABLASSERT_DOC_MD):
+
+        @task(doc_md="Generate Graph/table YAML configs for the assertion TSVs.")
+        def generate_tablassert_configs(
+            approved: Any, uses: Any, contra: Any
+        ) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import tablassert
+
+            ctx = _ctx()
+            with step(logger, "task generate_tablassert_configs"):
+                refs = [*_refs_from_xcom(approved), *_refs_from_xcom(uses), *_refs_from_xcom(contra)]
+                stats(logger, "task generate_tablassert_configs", assertion_refs=len(refs))
+                out = tablassert.generate(refs, ctx)
+                stats(logger, "task generate_tablassert_configs", output_refs=len(out))
+                return _refs_to_xcom(out)
+
+        @task(
+            doc_md="Run the installed Tablassert CLI when a fullmap is configured (the emitted KGX is validated against the DAKP contract — violations fail the task); otherwise emit a deferred handoff report."
+        )
+        def run_tablassert(
+            approved: Any, uses: Any, contra: Any, configs: Any
+        ) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from dakp_pipeline import tablassert
+
+            ctx = _ctx()
+            with step(logger, "task run_tablassert"):
+                assertion_refs = [*_refs_from_xcom(approved), *_refs_from_xcom(uses), *_refs_from_xcom(contra)]
+                config_refs = _refs_from_xcom(configs)
+                stats(logger, "task run_tablassert", assertion_refs=len(assertion_refs), config_refs=len(config_refs))
+                out = tablassert.run(assertion_refs, config_refs, ctx)
+                stats(logger, "task run_tablassert", output_refs=len(out))
+                return _refs_to_xcom(out)
+
+        configs = generate_tablassert_configs(assertions.approved, assertions.uses, assertions.contraindications)
+        kgx = run_tablassert(assertions.approved, assertions.uses, assertions.contraindications, configs)
+        return TablassertOutputs(configs=configs, kgx=kgx)
+
+
+def _build_export_stage(tablassert_outputs: TablassertOutputs) -> None:
+    """Create the legacy-export TaskGroup (legacy TSV retrofit + release publish)."""
+    with TaskGroup(group_id="export", prefix_group_id=False, tooltip="Legacy export + release naming", doc_md=_EXPORT_DOC_MD):
+
+        @task(doc_md="Retrofit the KGX ndjson pair into the legacy DAKP TSV pair; skipped when the Tablassert handoff was deferred.")
+        def export_legacy_tsv(kgx_refs: Any) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from airflow.sdk.exceptions import AirflowSkipException
+
+            from dakp_pipeline import legacy_tsv
+
+            ctx = _ctx()
+            with step(logger, "task export_legacy_tsv"):
+                refs = legacy_tsv.export(_refs_from_xcom(kgx_refs), ctx)
+                stats(logger, "task export_legacy_tsv", output_refs=len(refs))
+                if not refs:  # deferred handoff: no build-kg ran, no KGX to convert — SKIP, not fail
+                    raise AirflowSkipException("Tablassert handoff was deferred (no fullmap); nothing to retrofit into the legacy TSV schema")
+                return _refs_to_xcom(refs)
+
+        @task(
+            doc_md="Publish the final ndjson/tsv pair + the Tablassert `.RIG.yaml` under the legacy `drug_approvals_kg_*_v<version>` names; skipped on a deferred handoff."
+        )
+        def publish_release_artifacts(
+            kgx_refs: Any, legacy_refs: Any
+        ) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            from airflow.sdk.exceptions import AirflowSkipException
+
+            from dakp_pipeline import release
+
+            ctx = _ctx()
+            with step(logger, "task publish_release_artifacts"):
+                refs = release.publish(_refs_from_xcom(kgx_refs), _refs_from_xcom(legacy_refs), ctx)
+                stats(logger, "task publish_release_artifacts", output_refs=len(refs))
+                if not refs:  # deferred handoff: nothing built — SKIP, not fail
+                    raise AirflowSkipException("Tablassert handoff was deferred (no fullmap); nothing to publish under the legacy names")
+                return _refs_to_xcom(refs)
+
+        legacy = export_legacy_tsv(tablassert_outputs.kgx)
+        publish_release_artifacts(tablassert_outputs.kgx, legacy)
+
+
+def _build_ner_export_stage(extracts: ExtractOutputs, shape_tasks: AssertionOutputs, ner_models: Any) -> Any:
+    """Create the NER-export TaskGroup and return its task handle.
+
+    The export is a GLiNER consumer, so it runs on the NER pool and AFTER the shape stage
+    (its ``contraindications`` handle is a real input dependency): assertion mining warms the
+    ``dakp-nercache`` mention store first, and the export's re-extraction of the same section
+    texts then lands mostly on cache hits. The shape-table refs themselves are NOT inputs —
+    the export consumes the DailyMed + FAERS + EMA interim extracts directly; the shape
+    dependency exists purely to reuse warm-cache mining.
+    """
+    with TaskGroup(group_id="ner-export", prefix_group_id=False, tooltip="GLiNER2 training-data export", doc_md=_NER_EXPORT_DOC_MD):
+
+        @task(
+            pool=NER_MINING_POOL,
+            execution_timeout=_SHAPE_TIMEOUT,
+            doc_md="Export the GLiNER2 training-data bundle after the shape stage warmed the mention cache.",
+        )
+        def export_ner_training_data(
+            dm_ext: Any, faers_ext: Any, ema_ext: Any, ner_models_ref: Any, shape_dep: Any
+        ) -> list[dict[str, Any]]:  # pragma: no cover - body executes only under the Airflow task runtime
+            # ``ner_models_ref`` orders this task after model acquisition (the GLiNER weights are
+            # cached under the workdir before any consumer runs); ``shape_dep`` orders it after
+            # the shape stage so its mining is cache-served. Neither is a data input.
+            del ner_models_ref, shape_dep
+            from dakp_pipeline import ner_export
+            from dakp_pipeline.io.contracts import TaskContext
+            from dakp_pipeline.ner.ner import DiseaseNER
+
+            ctx = _ctx()
+            with step(logger, "task export_ner_training_data"):
+                dailymed_refs, faers_refs, ema_refs = _refs_from_xcom(dm_ext), _refs_from_xcom(faers_ext), _refs_from_xcom(ema_ext)
+                stats(logger, "task export_ner_training_data", dailymed_refs=len(dailymed_refs), faers_refs=len(faers_refs), ema_refs=len(ema_refs))
+                # Production composite NER (curated gazetteer anchors + GLiNER2 recall) at the
+                # recall-first acceptance point: training rows want coverage. Offline tests
+                # inject their own deterministic backend via ctx.params["ner"].
+                ner = DiseaseNER.for_contraindications(offline=False, workdir=ctx.workdir)
+                ctx = TaskContext(workdir=ctx.workdir, fixture_root=ctx.fixture_root, params={**ctx.params, "ner": ner})
+                refs = ner_export.export([*dailymed_refs, *faers_refs, *ema_refs], ctx)
+                stats(logger, "task export_ner_training_data", output_refs=len(refs))
+                return _refs_to_xcom(refs)
+
+        return export_ner_training_data(extracts.dailymed, extracts.faers, extracts.ema, ner_models, shape_tasks.contraindications)
+
+
+#: Stage budgets (US stall-recovery): no task may run unbounded. Shaping gets the headroom
+#: because a cold contraindication mine is ~3.5 h on four P100s; acquisition is bounded at the
+#: slowest observed upstream snapshot; everything else sits at the 2 h default. A timed-out task
+#: retries once (5 min later) before the task fails — the two-tier NER cache makes the retry
+#: resume from completed work instead of re-mining.
+_DEFAULT_ARGS: dict[str, Any] = {"retries": 1, "retry_delay": timedelta(minutes=5), "execution_timeout": timedelta(hours=2)}
+_ACQUIRE_TIMEOUT = timedelta(hours=1)
+_SHAPE_TIMEOUT = timedelta(hours=8)
+_DAGRUN_TIMEOUT = timedelta(hours=12)
+
+
+@dag(
+    dag_id=DAG_ID,
+    start_date=datetime(2026, 1, 1),
+    schedule=None,
+    catchup=False,
+    tags=["dakp", "drug-approvals"],
+    doc_md=_DAG_DOC_MD,
+    default_args=_DEFAULT_ARGS,
+    dagrun_timeout=_DAGRUN_TIMEOUT,
+)
+def dakp_build() -> None:  # pragma: no cover - Airflow task graph; task bodies execute only under an Airflow runtime
+    """Full DAKP build DAG: acquire -> extract (native Go) -> shape -> Tablassert handoff -> legacy TSV export.
+
+    The GLiNER2 NER export runs after assertion shaping, consumes DailyMed + FAERS + EMA
+    extracts, and emits RelMedNER-compatible Avro plus gliner2 NDJSON training data.
+    """
+    acquired = _build_acquire_stage()
+    extracted = _build_extract_stage(acquired)
+    assertions = _build_shape_stage(extracted, acquired.ner_models)
+    _build_ner_export_stage(extracted, assertions, acquired.ner_models)
+    tablassert_outputs = _build_tablassert_stage(assertions)
+    _build_export_stage(tablassert_outputs)
+
+
+# Register the DAG (Airflow scans the dags folder for module-level DAGs).
+dag_obj: Any = dakp_build()
+
+__all__ = ["CONFIG_VARIABLE", "DAG_ID", "DOWNLOAD_POOL", "EXTRACT_POOL", "GO_QUEUE", "NER_MINING_POOL", "dag_obj", "dakp_build"]

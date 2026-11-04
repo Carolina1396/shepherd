@@ -1,0 +1,32 @@
+[
+  {
+    "file": "09bce4c4-96af-4b8b-8d92-86e330fef348.xml.gz",
+    "set_id": "09bce4c4-96af-4b8b-8d92-86e330fef348",
+    "xml_sha256": "0654c82c80b22e46f2adc624fd48304c1671be0d4333624be7ef0ecdbb30fdf1",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09bce4c4-96af-4b8b-8d92-86e330fef348"
+  },
+  {
+    "file": "0dab5a4f-5d4a-4154-9a91-6fef4800865d.xml.gz",
+    "set_id": "0dab5a4f-5d4a-4154-9a91-6fef4800865d",
+    "xml_sha256": "3d91042493ca01cc8e87b59634118001885072f911269f0bdd464c34c5f89bff",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0dab5a4f-5d4a-4154-9a91-6fef4800865d"
+  },
+  {
+    "file": "1b63177f-17e5-4b5a-8924-7023efe016aa.xml.gz",
+    "set_id": "1b63177f-17e5-4b5a-8924-7023efe016aa",
+    "xml_sha256": "0efcd058c7a1adc70228b199c5242897fdb1be8fd953d14b0dd2395554702567",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b63177f-17e5-4b5a-8924-7023efe016aa"
+  },
+  {
+    "file": "28886273-a71a-46ea-e063-6394a90ac11d.xml.gz",
+    "set_id": "28886273-a71a-46ea-e063-6394a90ac11d",
+    "xml_sha256": "2f0b801a085b4b50f6a01131c8eb9938d5ba3d459c9db67f20e47d157728f730",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28886273-a71a-46ea-e063-6394a90ac11d"
+  },
+  {
+    "file": "3e9f369c-3361-467a-907a-52295baeb3ea.xml.gz",
+    "set_id": "3e9f369c-3361-467a-907a-52295baeb3ea",
+    "xml_sha256": "c7c9edaa4bad50a21cf535fbdd239b9168a8223717451a48698ef80fa86a129a",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e9f369c-3361-467a-907a-52295baeb3ea"
+  }
+]

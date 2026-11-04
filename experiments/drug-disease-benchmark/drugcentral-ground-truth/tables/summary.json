@@ -1,0 +1,127 @@
+{
+  "input_file": "drug_disease_edges.tsv.gz",
+  "input_sha256": "b748af93662091628022562d6e8f66634ee7edb64a726268c4d15ed1c07bda48",
+  "approval_input_file": "treats_approval.csv",
+  "approval_input_sha256": "411b5c9807028875fc10bcdfb8aaefd20ad66a1116e26e199d9cf4121bfc40e4",
+  "scope": "All DrugCentral treats statuses; includes phenotype conditions; exact normalized pairs in either direction",
+  "notes": [
+    "Overlap means another predicate or a non-DrugCentral treats record for the same pair.",
+    "Duplicate records do not increase pair counts. Breakdown rows are not mutually exclusive.",
+    "Unknown-source treats records count as additional treats evidence and appear as unknown.",
+    "The extract has no approval-status column; these are not approved-only statistics.",
+    "Approval counts come from the matching treats_approval.csv and reflect source assertions, not independent validation.",
+    "Status counts may overlap if a pair has multiple statuses; their sum alone does not prove a partition."
+  ],
+  "counts": {
+    "drugcentral_treats_pairs": 9608,
+    "other_treats_pairs": 2541,
+    "non_treats_pairs": 5169,
+    "either_overlap_pairs": 5281,
+    "both_overlap_pairs": 2429,
+    "no_other_edge_pairs": 4327,
+    "other_known_source_any_predicate_pairs": 5281
+  },
+  "drugcentral_approval_status_pairs": {
+    "approved_for_condition": 7903,
+    "off_label_use": 1704,
+    "not_provided": 1
+  },
+  "approval_status_count_sum": 9608,
+  "approval_status_count_sum_matches_total": true,
+  "other_treats_sources": {
+    "multiomics-drugapprovals": 1469,
+    "clinicaltrials-kp": 1161,
+    "drug-repurposing-hub": 737,
+    "ttd": 606
+  },
+  "non_treats_predicates": {
+    "treats_or_applied_or_studied_to_treat": 4161,
+    "in_clinical_trials_for": 3297,
+    "applied_to_treat": 2504,
+    "related_to": 575,
+    "has_side_effect": 413,
+    "affects": 316,
+    "correlated_with": 267,
+    "contributes_to": 177,
+    "causes": 67,
+    "disrupts": 67,
+    "contraindicated_in": 39,
+    "positively_correlated_with": 29,
+    "predisposes_to_condition": 8,
+    "studied_to_treat": 8,
+    "has_part": 2,
+    "in_preclinical_trials_for": 1,
+    "negatively_correlated_with": 1
+  },
+  "approved_only": {
+    "raw_edges_file": "/home/agonzalez/shepherd/experiments/ultra/data/tier0-1.0.4/raw/edges.jsonl",
+    "counts": {
+      "drugcentral_treats_pairs": 7903,
+      "other_treats_pairs": 2367,
+      "non_treats_pairs": 4239,
+      "either_overlap_pairs": 4348,
+      "both_overlap_pairs": 2258,
+      "no_other_edge_pairs": 3555,
+      "other_known_source_any_predicate_pairs": 4348
+    },
+    "other_treats_sources": {
+      "multiomics-drugapprovals": 1408,
+      "clinicaltrials-kp": 1050,
+      "drug-repurposing-hub": 722,
+      "ttd": 593
+    },
+    "non_treats_predicates": {
+      "treats_or_applied_or_studied_to_treat": 3394,
+      "in_clinical_trials_for": 2806,
+      "applied_to_treat": 2043,
+      "related_to": 493,
+      "has_side_effect": 324,
+      "affects": 279,
+      "correlated_with": 213,
+      "contributes_to": 142,
+      "causes": 57,
+      "disrupts": 51,
+      "contraindicated_in": 34,
+      "positively_correlated_with": 19,
+      "studied_to_treat": 7,
+      "predisposes_to_condition": 6,
+      "has_part": 2,
+      "in_preclinical_trials_for": 1,
+      "negatively_correlated_with": 1
+    }
+  },
+  "off_label_only": {
+    "raw_edges_file": "/home/agonzalez/shepherd/experiments/ultra/data/tier0-1.0.4/raw/edges.jsonl",
+    "counts": {
+      "drugcentral_treats_pairs": 1704,
+      "other_treats_pairs": 173,
+      "non_treats_pairs": 929,
+      "either_overlap_pairs": 932,
+      "both_overlap_pairs": 170,
+      "no_other_edge_pairs": 772,
+      "other_known_source_any_predicate_pairs": 932
+    },
+    "other_treats_sources": {
+      "clinicaltrials-kp": 110,
+      "multiomics-drugapprovals": 60,
+      "drug-repurposing-hub": 15,
+      "ttd": 13
+    },
+    "non_treats_predicates": {
+      "treats_or_applied_or_studied_to_treat": 766,
+      "in_clinical_trials_for": 490,
+      "applied_to_treat": 460,
+      "has_side_effect": 89,
+      "related_to": 81,
+      "correlated_with": 54,
+      "affects": 37,
+      "contributes_to": 35,
+      "disrupts": 16,
+      "causes": 10,
+      "positively_correlated_with": 10,
+      "contraindicated_in": 5,
+      "predisposes_to_condition": 2,
+      "studied_to_treat": 1
+    }
+  }
+}

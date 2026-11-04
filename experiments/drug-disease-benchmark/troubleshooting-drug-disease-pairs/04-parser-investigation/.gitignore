@@ -1,0 +1,9 @@
+# These two original labels are required for the offline reproduction.
+!fixtures/
+!fixtures/*.xml
+__pycache__/
+# Preserve every original file in the pinned upstream snapshot, including fixtures.
+!upstream/**
+upstream/**/__pycache__/
+upstream/**/*.pyc
+.venv-parser/

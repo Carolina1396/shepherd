@@ -1,0 +1,2705 @@
+{
+  "HP:0000103": [
+    "Polyuria"
+  ],
+  "HP:0000217": [
+    "Xerostomia",
+    "xerostomia"
+  ],
+  "HP:0000989": [
+    "Pruritic Disorder",
+    "Pruritic disorder",
+    "Pruritus"
+  ],
+  "HP:0001257": [
+    "Muscle Spasticity",
+    "Spasticity"
+  ],
+  "HP:0001742": [
+    "Nasal Congestion",
+    "Nasal congestion",
+    "Nasal congestion (finding)",
+    "Nasal obstruction present (finding)"
+  ],
+  "HP:0002069": [
+    "Bilateral tonic-clonic seizure",
+    "Tonic-Clonic Seizure",
+    "Tonic-Clonic Seizures"
+  ],
+  "HP:0002094": [
+    "Dyspnea",
+    "Have Shortness of Breath Question",
+    "shortness of breath"
+  ],
+  "HP:0002140": [
+    "Ischemic Stroke",
+    "Ischemic stroke"
+  ],
+  "HP:0002149": [
+    "Hyperuricemia"
+  ],
+  "HP:0002783": [
+    "Lower Respiratory Tract Infection",
+    "Lower respiratory tract infection",
+    "Recurrent chest infections",
+    "Recurrent lower respiratory tract infection",
+    "Recurrent lower respiratory tract infections"
+  ],
+  "HP:0002829": [
+    "Arthralgia",
+    "Arthritic pain"
+  ],
+  "HP:0003124": [
+    "Hypercholesterolemia",
+    "Serum cholesterol raised"
+  ],
+  "HP:0005202": [
+    "Helicobacter Pylori Infection",
+    "Helicobacter pylori infection",
+    "Infection caused by Helicobacter pylori"
+  ],
+  "HP:0011499": [
+    "Mydriasis"
+  ],
+  "HP:0012735": [
+    "Cough",
+    "Coughing"
+  ],
+  "HP:0030828": [
+    "Asthmatic breath sounds",
+    "Wheezing"
+  ],
+  "HP:0031217": [
+    "Hot Flashes",
+    "Hot flashes",
+    "Hot flushes"
+  ],
+  "HP:0031417": [
+    "Rhinorrhea"
+  ],
+  "MONDO:0000004": [
+    "Adrenal Insufficiency",
+    "Adrenal cortical hypofunction",
+    "Adrenal gland hypofunction",
+    "Adrenal insufficiency",
+    "Adrenocortical Insufficiency",
+    "adrenal cortical hypofunction",
+    "adrenocortical insufficiency",
+    "obsolete_adrenocortical insufficiency"
+  ],
+  "MONDO:0000022": [
+    "Bedwetting",
+    "Enuresis nocturna",
+    "Nocturnal Enuresis",
+    "nocturnal enuresis"
+  ],
+  "MONDO:0000190": [
+    "Ventricular Fibrillation",
+    "Ventricular fibrillation",
+    "obsolete_ventricular fibrillation",
+    "ventricular fibrillation"
+  ],
+  "MONDO:0000565": [
+    "Infective Endocarditis",
+    "Infective endocarditis",
+    "infective endocarditis"
+  ],
+  "MONDO:0000694": [
+    "Seasonal Affective Disorder",
+    "seasonal affective disorder"
+  ],
+  "MONDO:0000705": [
+    "Antibiotic-Associated Colitis",
+    "Clostridium Enterocolitis",
+    "Clostridium difficile Colitis",
+    "Clostridium difficile colitis",
+    "Enteritis, Pseudomembranous",
+    "Enterocolitis, Pseudomembranous",
+    "pseudomembranous colitis"
+  ],
+  "MONDO:0000744": [
+    "Lung Abscess",
+    "Lung abscess",
+    "lung abscess",
+    "obsolete_Lung Abscess"
+  ],
+  "MONDO:0000879": [
+    "Candidiasis, Cutaneous",
+    "Cutaneous Candidiasis",
+    "cutaneous candidiasis"
+  ],
+  "MONDO:0000918": [
+    "Endometritis",
+    "endometritis",
+    "obsolete_Endometritis"
+  ],
+  "MONDO:0001039": [
+    "Chronic tonsillitis",
+    "Recurrent tonsillitis",
+    "Tonsillitis",
+    "tonsillitis"
+  ],
+  "MONDO:0001068": [
+    "Adult Rickets",
+    "Osteomalacia",
+    "osteomalacia"
+  ],
+  "MONDO:0001103": [
+    "Giardiasis",
+    "giardiasis"
+  ],
+  "MONDO:0001126": [
+    "Gastric Ulcer",
+    "Gastric ulcer",
+    "Stomach Ulcer",
+    "gastric ulcer",
+    "obsolete_gastric ulcer"
+  ],
+  "MONDO:0001220": [
+    "Hypoparathyroidism",
+    "hypoparathyroidism",
+    "obsolete_hypoparathyroidism"
+  ],
+  "MONDO:0001247": [
+    "Phobia, Social",
+    "Social Anxiety Disorder",
+    "obsolete_social anxiety disorder",
+    "social phobia"
+  ],
+  "MONDO:0001266": [
+    "Ergotism",
+    "Erysipelas",
+    "erysipelas",
+    "obsolete_erysipelas"
+  ],
+  "MONDO:0001356": [
+    "Anemia, Iron-Deficiency",
+    "Asiderotic anemia",
+    "Iron deficiency anemia",
+    "Iron-Deficiency Anemia",
+    "Other specified iron deficiency anemias",
+    "iron deficiency anemia"
+  ],
+  "MONDO:0001358": [
+    "Bronchial Diseases",
+    "Bronchial Spasm",
+    "Bronchospasm",
+    "bronchial disease",
+    "bronchial disorder",
+    "obsolete_bronchial disease"
+  ],
+  "MONDO:0001382": [
+    "Hepatorenal Syndrome",
+    "hepatorenal syndrome"
+  ],
+  "MONDO:0001405": [
+    "Dermatophytosis of Groin and Perianal Area",
+    "Dermatophytosis of groin and perianal area",
+    "Tinea cruris",
+    "dermatophytosis of groin and perianal area",
+    "tinea cruris"
+  ],
+  "MONDO:0001410": [
+    "Atrophic Vaginitis",
+    "Postmenopausal atrophic vaginitis",
+    "postmenopausal atrophic vaginitis"
+  ],
+  "MONDO:0001444": [
+    "Chagas Disease",
+    "Chagas disease"
+  ],
+  "MONDO:0001461": [
+    "Dermatophytosis of the body",
+    "Tinea corporis (disorder)",
+    "tinea corporis"
+  ],
+  "MONDO:0001466": [
+    "Punctate keratitis",
+    "punctate epithelial keratoconjunctivitis"
+  ],
+  "MONDO:0001509": [
+    "Endocrine exophthalmos",
+    "Graves Ophthalmopathy",
+    "endocrine exophthalmos"
+  ],
+  "MONDO:0001516": [
+    "Muscular Atrophy, Spinal",
+    "Spinal Muscular Atrophy",
+    "Spinal muscular atrophy",
+    "obsolete_spinal muscular atrophy",
+    "spinal muscular atrophy"
+  ],
+  "MONDO:0001517": [
+    "Dysentery",
+    "dysentery",
+    "obsolete_dysentery"
+  ],
+  "MONDO:0001628": [
+    "Cellulitis and abscess of unspecified digit",
+    "Onychomycosis",
+    "tinea unguium"
+  ],
+  "MONDO:0001648": [
+    "Candida Esophagitis",
+    "Candida esophagitis",
+    "Candidiasis of esophagus",
+    "esophageal candidiasis"
+  ],
+  "MONDO:0001673": [
+    "Diarrhea",
+    "Diarrheal disorder",
+    "diarrhea",
+    "diarrheal disease"
+  ],
+  "MONDO:0001780": [
+    "Premature Ejaculation",
+    "Premature ejaculation",
+    "premature ejaculation"
+  ],
+  "MONDO:0001875": [
+    "Epicondylitis",
+    "Lateral Epicondylitis",
+    "Tennis Elbow",
+    "epicondylitis",
+    "obsolete_epicondylitis"
+  ],
+  "MONDO:0001889": [
+    "Disorder of endocrine ovary",
+    "Other ovarian failure",
+    "Ovarian Failure",
+    "Ovarian failure",
+    "obsolete_ovarian dysfunction",
+    "ovarian dysfunction"
+  ],
+  "MONDO:0001942": [
+    "Generalized Anxiety Disorder",
+    "generalized anxiety disorder",
+    "obsolete_generalized anxiety disorder"
+  ],
+  "MONDO:0002009": [
+    "Depressive Disorder, Major",
+    "Major Depressive Disorder",
+    "Major Depressive Disorder, Recurrent, Unspecified",
+    "Major depression, single episode",
+    "Recurrent major depression",
+    "Single Episode of Major Depressive Disorder",
+    "Unipolar Depression",
+    "major depressive disorder",
+    "obsolete_unipolar depression"
+  ],
+  "MONDO:0002026": [
+    "Candidiasis",
+    "candidiasis"
+  ],
+  "MONDO:0002050": [
+    "Depression",
+    "Depressive Disorder",
+    "Depressive disorder",
+    "Depressive episode, unspecified",
+    "Mental Depression",
+    "depressive disorder"
+  ],
+  "MONDO:0002087": [
+    "Malignant Neoplasm of Specified Parts of Peritoneum",
+    "Malignant Peritoneal Neoplasm",
+    "Malignant neoplasm of peritoneum",
+    "Malignant neoplasm of specified parts of peritoneum",
+    "peritoneum cancer"
+  ],
+  "MONDO:0002154": [
+    "Trichomonas Infection",
+    "Trichomonas Infections",
+    "trichomoniasis"
+  ],
+  "MONDO:0002177": [
+    "Hyperinsulinemia",
+    "Hyperinsulinism",
+    "hyperinsulinism"
+  ],
+  "MONDO:0002203": [
+    "Constipation",
+    "Dyschezia",
+    "constipation disorder"
+  ],
+  "MONDO:0002258": [
+    "Chronic pharyngitis and nasopharyngitis",
+    "Pharyngitis",
+    "pharyngitis"
+  ],
+  "MONDO:0002268": [
+    "Dyspepsia",
+    "dyspepsia",
+    "obsolete_dyspepsia"
+  ],
+  "MONDO:0002400": [
+    "Synovitis",
+    "obsolete_synovitis",
+    "synovitis"
+  ],
+  "MONDO:0002471": [
+    "Bursitis",
+    "bursitis"
+  ],
+  "MONDO:0002508": [
+    "Acute gingivitis",
+    "Gingivitis",
+    "gingivitis"
+  ],
+  "MONDO:0002522": [
+    "Fibrous histiocytoma of tendon sheath",
+    "Giant Cell Tumor of Tendon Sheath",
+    "Tenosynovial Giant Cell Tumor",
+    "obsolete_Tenosynovial Giant Cell Tumor",
+    "tenosynovial giant cell tumor"
+  ],
+  "MONDO:0002771": [
+    "Pulmonary Fibrosis",
+    "Pulmonary fibrosis",
+    "obsolete_pulmonary fibrosis",
+    "pulmonary fibrosis"
+  ],
+  "MONDO:0002885": [
+    "Erythrasma",
+    "Infection caused by Corynebacterium minutissimum",
+    "erythrasma"
+  ],
+  "MONDO:0002897": [
+    "Secondary Syphilis",
+    "Syphilis, secondary",
+    "secondary syphilis"
+  ],
+  "MONDO:0003009": [
+    "Hyperaldosteronism",
+    "Increased circulating aldosterone concentration",
+    "hyperaldosteronism",
+    "obsolete_hyperaldosteronism",
+    "primary hyperaldosteronism"
+  ],
+  "MONDO:0003014": [
+    "Irritation of nose",
+    "Nasal inflammation",
+    "Rhinitis",
+    "obsolete_rhinitis",
+    "rhinitis"
+  ],
+  "MONDO:0003085": [
+    "Keratitis",
+    "keratitis",
+    "obsolete_keratitis"
+  ],
+  "MONDO:0003781": [
+    "Bronchitis",
+    "bronchitis",
+    "obsolete_bronchitis"
+  ],
+  "MONDO:0004126": [
+    "Thyroiditis",
+    "thyroiditis"
+  ],
+  "MONDO:0004277": [
+    "Gonococcal Infection",
+    "Gonorrhea",
+    "gonorrhea"
+  ],
+  "MONDO:0004425": [
+    "Hyperthyroidism",
+    "hyperthyroidism",
+    "obsolete_hyperthyroidism"
+  ],
+  "MONDO:0004497": [
+    "Syphilis, tertiary",
+    "Tertiary Syphilis",
+    "tertiary syphilis"
+  ],
+  "MONDO:0004525": [
+    "Scabies",
+    "Scabies infestation",
+    "scabies"
+  ],
+  "MONDO:0004574": [
+    "Anemia due to vitamin B>6< deficiency",
+    "Pyridoxine Deficiency",
+    "Reduced circulating vitamin B6 circulating",
+    "Vitamin B 6 Deficiency",
+    "Vitamin B6 Deficiency",
+    "pyridoxine deficiency anemia"
+  ],
+  "MONDO:0004592": [
+    "Impetigo",
+    "Impetigo Contagiosa",
+    "impetigo"
+  ],
+  "MONDO:0004609": [
+    "Herpes Simplex",
+    "Herpes Simplex Virus Infection",
+    "Herpes simplex infection",
+    "herpes simplex",
+    "herpes simplex infectious disease",
+    "obsolete_Herpes simplex infection"
+  ],
+  "MONDO:0004652": [
+    "Bacterial Pneumonia",
+    "Pneumonia, Bacterial",
+    "bacterial pneumonia",
+    "obsolete_bacterial pneumonia"
+  ],
+  "MONDO:0004668": [
+    "Fasciola hepatica infection",
+    "Fascioliasis",
+    "Fasciolosis",
+    "fascioliasis",
+    "obsolete_Fascioliasis"
+  ],
+  "MONDO:0004691": [
+    "Autosomal Dominant Polycystic Kidney Disease",
+    "Polycystic Kidney, Autosomal Dominant",
+    "autosomal dominant polycystic kidney disease",
+    "obsolete_Autosomal dominant polycystic kidney disease"
+  ],
+  "MONDO:0004728": [
+    "Macular edema due to diabetes mellitus",
+    "diabetic macular edema",
+    "obsolete_diabetic macular edema"
+  ],
+  "MONDO:0004737": [
+    "Homocystinuria",
+    "homocystinuria"
+  ],
+  "MONDO:0004781": [
+    "Acute Myocardial Infarction",
+    "Acute myocardial infarction",
+    "acute myocardial infarction",
+    "obsolete_acute myocardial infarction"
+  ],
+  "MONDO:0004795": [
+    "Infectious Otitis Externa",
+    "Infective otitis externa",
+    "Otitis Externa",
+    "Otitis externa",
+    "obsolete_otitis externa",
+    "otitis externa"
+  ],
+  "MONDO:0004822": [
+    "Bronchiectasis",
+    "bronchiectasis"
+  ],
+  "MONDO:0004849": [
+    "Emphysema",
+    "Other Emphysema",
+    "Other emphysema",
+    "Pathological accumulation of air in tissues",
+    "Pulmonary Emphysema",
+    "obsolete_emphysema",
+    "pulmonary emphysema"
+  ],
+  "MONDO:0004855": [
+    "Tenosynovitis",
+    "obsolete_tenosynovitis",
+    "tenosynovitis"
+  ],
+  "MONDO:0004857": [
+    "Tendinitis",
+    "Tendonitis",
+    "tendinitis"
+  ],
+  "MONDO:0004872": [
+    "Hemorrhoid",
+    "Hemorrhoids",
+    "hemorrhoid",
+    "obsolete_hemorrhoid"
+  ],
+  "MONDO:0004944": [
+    "Neurosyphilis",
+    "neurosyphilis",
+    "tertiary neurosyphilis"
+  ],
+  "MONDO:0004946": [
+    "Hypoglycemia",
+    "hypoglycemia"
+  ],
+  "MONDO:0004948": [
+    "B-cell chronic lymphocytic leukemia",
+    "Chronic Lymphocytic Leukemia",
+    "Chronic lymphatic leukemia",
+    "Leukemia, Lymphocytic, Chronic, B-Cell",
+    "chronic lymphocytic leukemia",
+    "obsolete_chronic lymphocytic leukemia"
+  ],
+  "MONDO:0004963": [
+    "Precursor T-Cell Lymphoblastic Leukemia-Lymphoma",
+    "T Acute Lymphoblastic Leukemia",
+    "T-cell acute lymphoblastic leukemia",
+    "T-cell acute lymphoblastic leukemias",
+    "obsolete_T-cell acute lymphoblastic leukemia"
+  ],
+  "MONDO:0004967": [
+    "Acute Lymphoblastic Leukemia",
+    "Acute lymphoblastic leukemia",
+    "Acute lymphocytic leukemia",
+    "L2 Acute Lymphoblastic Leukemia",
+    "Precursor Cell Lymphoblastic Leukemia Lymphoma",
+    "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+    "acute lymphoblastic leukemia",
+    "obsolete_acute lymphoblastic leukemia"
+  ],
+  "MONDO:0004975": [
+    "Alzheimer Disease",
+    "Alzheimer disease",
+    "Alzheimer's Disease",
+    "Alzheimer's disease"
+  ],
+  "MONDO:0004976": [
+    "Amyotrophic Lateral Sclerosis",
+    "Amyotrophic lateral sclerosis",
+    "amyotrophic lateral sclerosis"
+  ],
+  "MONDO:0004979": [
+    "Asthma",
+    "asthma"
+  ],
+  "MONDO:0004980": [
+    "Atopic dermatitis",
+    "Baby eczema",
+    "Besnier's prurigo",
+    "Dermatitis, Atopic",
+    "Dermatitis, Atopic, 1",
+    "Eczema",
+    "Eczema, Infantile",
+    "atopic dermatitis",
+    "atopic eczema",
+    "obsolete_atopic eczema"
+  ],
+  "MONDO:0004981": [
+    "Atrial Fibrillation",
+    "Atrial fibrillation",
+    "atrial fibrillation",
+    "obsolete_atrial fibrillation"
+  ],
+  "MONDO:0004985": [
+    "Bipolar Disorder",
+    "Bipolar affective disorder",
+    "Mixed bipolar I disorder",
+    "bipolar disorder"
+  ],
+  "MONDO:0004989": [
+    "Breast Carcinoma",
+    "Breast carcinoma",
+    "breast carcinoma",
+    "obsolete_breast carcinoma"
+  ],
+  "MONDO:0005002": [
+    "Chronic Airflow Obstruction",
+    "Chronic Obstructive Airway Disease",
+    "Chronic Obstructive Pulmonary Disease",
+    "Chronic pulmonary obstruction",
+    "PULMONARY DISEASE, CHRONIC OBSTRUCTIVE, RATE OF DECLINE OF LUNG FUNCTION IN",
+    "Pulmonary Disease, Chronic Obstructive",
+    "chronic obstructive pulmonary disease",
+    "obsolete_chronic obstructive pulmonary disease"
+  ],
+  "MONDO:0005011": [
+    "Crohn Disease",
+    "Crohn disease",
+    "Crohn's disease",
+    "obsolete_Crohn's disease"
+  ],
+  "MONDO:0005015": [
+    "Diabetes Mellitus",
+    "Diabetes mellitus",
+    "diabetes mellitus",
+    "obsolete_diabetes mellitus"
+  ],
+  "MONDO:0005016": [
+    "Diabetic Nephropathies",
+    "Diabetic Nephropathy",
+    "diabetic kidney disease",
+    "obsolete_diabetic nephropathy"
+  ],
+  "MONDO:0005027": [
+    "Epilepsy",
+    "Epileptic Seizures",
+    "Seizure",
+    "Seizure Disorder",
+    "Seizures",
+    "convulsion",
+    "epilepsy",
+    "obsolete_epilepsy"
+  ],
+  "MONDO:0005041": [
+    "Glaucoma",
+    "glaucoma"
+  ],
+  "MONDO:0005044": [
+    "Hypertension",
+    "Hypertensive disease",
+    "Increase in blood pressure",
+    "hypertension",
+    "hypertensive disorder",
+    "obsolete_hypertension"
+  ],
+  "MONDO:0005045": [
+    "Cardiomyopathy, Hypertrophic",
+    "Hypertrophic Cardiomyopathy",
+    "Hypertrophic cardiomyopathy",
+    "Hypertrophic obstructive cardiomyopathy",
+    "hypertrophic cardiomyopathy",
+    "obsolete_hypertrophic cardiomyopathy"
+  ],
+  "MONDO:0005052": [
+    "Irritable Bowel Syndrome",
+    "irritable bowel syndrome",
+    "obsolete_irritable bowel syndrome"
+  ],
+  "MONDO:0005055": [
+    "Anal Kaposi Sarcoma",
+    "Cardiac Kaposi Sarcoma",
+    "Cardiac Kaposi's Sarcoma",
+    "Central Nervous System Kaposi Sarcoma",
+    "Conjunctival Kaposi Sarcoma",
+    "Corneal Kaposi Sarcoma",
+    "Esophageal Kaposi Sarcoma",
+    "Gallbladder Kaposi Sarcoma",
+    "Gallbladder Kaposi's Sarcoma",
+    "Gastric Kaposi Sarcoma",
+    "Gastric Kaposi's Sarcoma",
+    "Kaposi Sarcoma",
+    "Kaposi's Sarcoma of Soft Tissue",
+    "Kaposi's sarcoma",
+    "Kaposi's sarcoma of conjunctiva",
+    "Kaposi's sarcoma of cornea",
+    "Kaposi's sarcoma of esophagus",
+    "Kaposi's sarcoma of lung",
+    "Kaposi's sarcoma of lymph nodes",
+    "Kaposi's sarcoma of palate",
+    "Kaposi's sarcoma of penis",
+    "Kaposi's sarcoma of skin",
+    "Kaposi's sarcoma of soft tissue",
+    "Kaposi's sarcoma, gastrointestinal sites",
+    "Lung Kaposi Sarcoma",
+    "Lymphadenopathic Kaposi Sarcoma",
+    "Palate Kaposi Sarcoma",
+    "Penile Kaposi Sarcoma",
+    "Prostate Kaposi Sarcoma",
+    "Sarcoma, Kaposi",
+    "Skin Kaposi Sarcoma",
+    "obsolete_Kaposi's sarcoma"
+  ],
+  "MONDO:0005058": [
+    "Leiomyosarcoma",
+    "leiomyosarcoma",
+    "obsolete_leiomyosarcoma"
+  ],
+  "MONDO:0005068": [
+    "Myocardial Infarction",
+    "Myocardial infarction",
+    "myocardial infarction",
+    "obsolete_myocardial infarction"
+  ],
+  "MONDO:0005076": [
+    "Periodontitis",
+    "Periodontosis",
+    "obsolete_periodontitis",
+    "periodontitis",
+    "periodontosis"
+  ],
+  "MONDO:0005077": [
+    "Pertussis",
+    "Whooping Cough",
+    "obsolete_whooping cough",
+    "pertussis"
+  ],
+  "MONDO:0005083": [
+    "Psoriasiform Dermatitis",
+    "Psoriasiform dermatitis",
+    "Psoriasis",
+    "obsolete_psoriasis",
+    "psoriasis"
+  ],
+  "MONDO:0005086": [
+    "Carcinoma, Renal Cell",
+    "Renal Cell Carcinoma",
+    "Renal cell carcinoma",
+    "obsolete_renal cell carcinoma",
+    "renal cell carcinoma"
+  ],
+  "MONDO:0005090": [
+    "SCHIZOPHRENIA WITH OR WITHOUT AN AFFECTIVE DISORDER",
+    "Schizophrenia",
+    "schizophrenia"
+  ],
+  "MONDO:0005096": [
+    "Carcinoma, Squamous Cell",
+    "Malignant Squamous Cell Neoplasm",
+    "Squamous Cell Carcinoma",
+    "Squamous cell carcinoma",
+    "obsolete_squamous cell carcinoma",
+    "squamous cell carcinoma"
+  ],
+  "MONDO:0005098": [
+    "Cerebrovascular accident",
+    "Stroke",
+    "obsolete_stroke",
+    "stroke disorder"
+  ],
+  "MONDO:0005099": [
+    "Subarachnoid Hemorrhage",
+    "Subarachnoid hemorrhage",
+    "obsolete_subarachnoid hemorrhage",
+    "subarachnoid hemorrhage"
+  ],
+  "MONDO:0005101": [
+    "Chronic left-sided ulcerative colitis",
+    "Colitis, Ulcerative",
+    "Ulcerative Colitis",
+    "Ulcerative colitis",
+    "obsolete_ulcerative colitis",
+    "ulcerative colitis"
+  ],
+  "MONDO:0005105": [
+    "Melanoma",
+    "melanoma",
+    "obsolete_melanoma"
+  ],
+  "MONDO:0005109": [
+    "HIV Infection",
+    "HIV Infections",
+    "HIV infectious disease",
+    "human immunodeficiency virus infectious disease",
+    "obsolete_HIV infection"
+  ],
+  "MONDO:0005112": [
+    "Malignant Pleural Mesothelioma",
+    "Pleural Malignant Mesothelioma",
+    "Pleural mesothelioma",
+    "malignant pleural mesothelioma",
+    "obsolete_malignant pleural mesothelioma"
+  ],
+  "MONDO:0005119": [
+    "Anthrax",
+    "Anthrax disease",
+    "anthrax disease",
+    "anthrax infection",
+    "obsolete_anthrax infection"
+  ],
+  "MONDO:0005124": [
+    "Leprosy",
+    "leprosy",
+    "obsolete_leprosy"
+  ],
+  "MONDO:0005132": [
+    "Cytomegaloviral Infection",
+    "Cytomegalovirus Infections",
+    "cytomegalovirus infection",
+    "obsolete_cytomegalovirus infection"
+  ],
+  "MONDO:0005133": [
+    "Endometriosis",
+    "endometriosis",
+    "obsolete_endometriosis"
+  ],
+  "MONDO:0005136": [
+    "Malaria",
+    "malaria",
+    "obsolete_malaria"
+  ],
+  "MONDO:0005146": [
+    "Post-Traumatic Stress Disorder",
+    "Posttraumatic stress symptom",
+    "Stress Disorders, Post-Traumatic",
+    "obsolete_post-traumatic stress disorder",
+    "post-traumatic stress disorder"
+  ],
+  "MONDO:0005147": [
+    "Diabetes Mellitus, Insulin-Dependent",
+    "Diabetes Mellitus, Type 1",
+    "Type 1 Diabetes Mellitus",
+    "Type I diabetes mellitus",
+    "type 1 diabetes mellitus"
+  ],
+  "MONDO:0005148": [
+    "Diabetes Mellitus, Non-Insulin-Dependent",
+    "Diabetes Mellitus, Type 2",
+    "Type 2 Diabetes Mellitus",
+    "Type II diabetes mellitus",
+    "type 2 diabetes mellitus"
+  ],
+  "MONDO:0005149": [
+    "Hypertension, Pulmonary",
+    "Pulmonary Arterial Hypertension",
+    "Pulmonary Hypertension",
+    "Pulmonary arterial hypertension",
+    "pulmonary hypertension"
+  ],
+  "MONDO:0005150": [
+    "Age related macular degeneration",
+    "Age-Related Macular Degeneration",
+    "age related macular degeneration",
+    "age-related macular degeneration",
+    "obsolete_age-related macular degeneration"
+  ],
+  "MONDO:0005173": [
+    "Actinic Keratosis",
+    "Actinic keratosis",
+    "Actinic porokeratosis",
+    "Keratosis, Actinic",
+    "actinic keratosis",
+    "obsolete_actinic keratosis"
+  ],
+  "MONDO:0005178": [
+    "Degenerative polyarthritis",
+    "Osteoarthritis",
+    "Osteoarthrosis, localized, not specified whether primary or secondary",
+    "osteoarthritis"
+  ],
+  "MONDO:0005180": [
+    "Parkinson Disease",
+    "Parkinson disease",
+    "Parkinson's disease"
+  ],
+  "MONDO:0005191": [
+    "Malignant melanoma, metastatic",
+    "Metastatic Melanoma",
+    "Metastatic melanoma",
+    "metastatic melanoma",
+    "obsolete_metastatic melanoma"
+  ],
+  "MONDO:0005233": [
+    "Carcinoma, Non-Small-Cell Lung",
+    "Lung Non-Small Cell Carcinoma",
+    "Non-Small Cell Lung Carcinoma",
+    "Non-small cell lung carcinoma",
+    "lung non-small cell carcinoma",
+    "non-small cell lung carcinoma",
+    "obsolete_non-small cell lung carcinoma"
+  ],
+  "MONDO:0005246": [
+    "Bone Infection",
+    "Chronic osteomyelitis",
+    "Infection of bone",
+    "Osteomyelitis",
+    "obsolete_osteomyelitis",
+    "osteomyelitis"
+  ],
+  "MONDO:0005247": [
+    "Bacterial urinary infection",
+    "Urinary Tract Infection",
+    "bacterial urinary tract infection"
+  ],
+  "MONDO:0005249": [
+    "Pneumonia",
+    "obsolete_pneumonia",
+    "pneumonia"
+  ],
+  "MONDO:0005252": [
+    "Heart Failure",
+    "Myocardial Failure",
+    "heart failure",
+    "obsolete_heart failure"
+  ],
+  "MONDO:0005266": [
+    "Diabetic Retinopathy",
+    "diabetic retinopathy",
+    "obsolete_diabetic retinopathy"
+  ],
+  "MONDO:0005277": [
+    "Intermittent migraine headaches",
+    "Migraine",
+    "Migraine Disorders",
+    "Migraine Variant",
+    "migraine",
+    "migraine disorder"
+  ],
+  "MONDO:0005279": [
+    "Pulmonary Embolism",
+    "Pulmonary embolism",
+    "obsolete_pulmonary embolism",
+    "pulmonary embolism"
+  ],
+  "MONDO:0005280": [
+    "Prostatitis",
+    "obsolete_prostatitis",
+    "prostatitis"
+  ],
+  "MONDO:0005294": [
+    "Arterial Occlusive Diseases",
+    "Arterial disease of legs",
+    "Occlusive vascular disease",
+    "Peripheral Arterial Diseases",
+    "Peripheral Vascular Diseases",
+    "Peripheral Vascular Disorder",
+    "Peripheral angiopathy in diseases classified elsewhere",
+    "Peripheral arterial stenosis",
+    "obsolete_peripheral vascular disease",
+    "peripheral vascular disease"
+  ],
+  "MONDO:0005295": [
+    "Intermittent Claudication",
+    "Intermittent claudication",
+    "intermittent claudication",
+    "intermittent vascular claudication",
+    "obsolete_intermittent vascular claudication"
+  ],
+  "MONDO:0005297": [
+    "Non-Gonococcal Urethritis",
+    "Nonspecific urethritis",
+    "Urethritis",
+    "non-gonococcal urethritis (NGU)",
+    "obsolete_urethritis",
+    "urethritis"
+  ],
+  "MONDO:0005298": [
+    "Osteoporosis",
+    "Osteoporosis, Age-Related",
+    "Osteoporosis, Senile",
+    "obsolete_osteoporosis",
+    "osteoporosis"
+  ],
+  "MONDO:0005300": [
+    "Chronic Kidney Disease",
+    "Chronic Kidney Diseases",
+    "Chronic kidney disease",
+    "Kidney Failure, Chronic",
+    "Progressive renal failure",
+    "chronic kidney disease",
+    "obsolete_chronic kidney disease"
+  ],
+  "MONDO:0005301": [
+    "Multiple Sclerosis",
+    "multiple sclerosis",
+    "multiple sclerosis symptom measurement"
+  ],
+  "MONDO:0005302": [
+    "Attention Deficit Disorder",
+    "Attention Deficit Disorder with Hyperactivity",
+    "Attention Deficit Hyperactivity Disorder, Inattentive Type",
+    "Attention deficit hyperactivity disorder",
+    "Attention deficit hyperactivity disorder, predominantly inattentive type",
+    "Minimal Brain Dysfunction",
+    "attention deficit hyperactivity disorder",
+    "attention deficit hyperactivity disorder, inattentive type"
+  ],
+  "MONDO:0005306": [
+    "Ankylosing Spondylitis",
+    "Ankylosing spondylitis",
+    "Spondylitis, Ankylosing",
+    "Spondylosis Deformans",
+    "ankylosing spondylitis",
+    "obsolete_ankylosing spondylitis"
+  ],
+  "MONDO:0005314": [
+    "Multiple Sclerosis, Relapsing-Remitting",
+    "Relapsing-Remitting Multiple Sclerosis",
+    "obsolete_relapsing-remitting multiple sclerosis",
+    "relapsing-remitting multiple sclerosis"
+  ],
+  "MONDO:0005316": [
+    "Bacterial Vaginosis",
+    "Vaginosis, Bacterial",
+    "bacterial vaginosis",
+    "obsolete_bacterial vaginosis"
+  ],
+  "MONDO:0005324": [
+    "Hay fever",
+    "Rhinitis, Allergic, Seasonal",
+    "Seasonal Allergic Rhinitis",
+    "Seasonal allergy",
+    "obsolete_seasonal allergic rhinitis",
+    "seasonal allergic rhinitis"
+  ],
+  "MONDO:0005328": [
+    "Abnormality of the eye",
+    "Congenital Eye Disorder",
+    "Disorder of eye",
+    "Eye Abnormalities",
+    "Eye Diseases",
+    "Eye Disorder",
+    "Other degenerative disorders of globe",
+    "eye disease",
+    "eye disorder",
+    "globe disease",
+    "obsolete_eye disease"
+  ],
+  "MONDO:0005338": [
+    "Advanced open-angle glaucoma",
+    "Glaucoma, Open-Angle",
+    "Open Angle Glaucoma",
+    "Secondary open-angle glaucoma with pigment dispersion",
+    "obsolete_open-angle glaucoma",
+    "open-angle glaucoma",
+    "primary open angle glaucoma"
+  ],
+  "MONDO:0005340": [
+    "Alopecia Areata",
+    "Patchy alopecia",
+    "alopecia areata",
+    "obsolete_alopecia areata"
+  ],
+  "MONDO:0005361": [
+    "Eosinophilic Esophagitis",
+    "Eosinophilic esophagitis",
+    "eosinophilic esophagitis",
+    "obsolete_eosinophilic esophagitis"
+  ],
+  "MONDO:0005362": [
+    "Erectile Dysfunction",
+    "Erectile dysfunction",
+    "Impotence",
+    "erectile dysfunction",
+    "impotence",
+    "obsolete_erectile dysfunction"
+  ],
+  "MONDO:0005366": [
+    "Hepatitis B, Chronic",
+    "chronic hepatitis B virus infection",
+    "obsolete_chronic hepatitis B virus infection"
+  ],
+  "MONDO:0005377": [
+    "Nephrotic Syndrome",
+    "Nephrotic syndrome",
+    "nephrotic syndrome",
+    "obsolete_nephrotic syndrome"
+  ],
+  "MONDO:0005383": [
+    "Panic Disorder",
+    "obsolete_panic disorder",
+    "panic disorder"
+  ],
+  "MONDO:0005388": [
+    "Biliary Cirrhosis",
+    "Biliary cirrhosis",
+    "Liver Cirrhosis, Biliary",
+    "Primary Biliary Cholangitis",
+    "Primary Biliary Cirrhosis",
+    "biliary liver cirrhosis",
+    "obsolete_primary biliary cirrhosis",
+    "primary biliary cholangitis"
+  ],
+  "MONDO:0005391": [
+    "Restless Leg Syndrome",
+    "Restless Legs Syndrome",
+    "Restless legs",
+    "obsolete_restless legs syndrome",
+    "restless legs syndrome"
+  ],
+  "MONDO:0005393": [
+    "Arthritis, Gouty",
+    "Gout",
+    "gout",
+    "obsolete_gout"
+  ],
+  "MONDO:0005397": [
+    "Goiter",
+    "goiter",
+    "obsolete_goiter"
+  ],
+  "MONDO:0005412": [
+    "Curling Ulcer",
+    "Duodenal Ulcer",
+    "Duodenal ulcer",
+    "duodenal ulcer",
+    "obsolete_duodenal ulcer"
+  ],
+  "MONDO:0005420": [
+    "Hypothyroidism",
+    "hypothyroidism",
+    "obsolete_hypothyroidism"
+  ],
+  "MONDO:0005433": [
+    "Alcohol withdrawal syndrome",
+    "alcohol withdrawal",
+    "obsolete_alcohol withdrawal"
+  ],
+  "MONDO:0005439": [
+    "Hypercholesterolemia, Familial",
+    "Hyperlipoproteinemia Type II",
+    "Hyperlipoproteinemia, Type II",
+    "Increased LDL cholesterol concentration",
+    "Low density lipoprotein increased",
+    "familial hypercholesterolemia",
+    "obsolete_familial hypercholesterolemia"
+  ],
+  "MONDO:0005445": [
+    "Kala-Azar",
+    "Leishmaniasis, Visceral",
+    "obsolete_visceral Leishmaniasis",
+    "visceral leishmaniasis"
+  ],
+  "MONDO:0005446": [
+    "Asian Desert Cutaneous Leishmaniasis",
+    "Asian desert cutaneous leishmaniasis",
+    "Cutaneous Leishmaniasis",
+    "Leishmaniasis, Cutaneous",
+    "Urban cutaneous leishmaniasis",
+    "cutaneous leishmaniasis",
+    "obsolete_cutaneous Leishmaniasis"
+  ],
+  "MONDO:0005447": [
+    "Malignant Testicular Neoplasm",
+    "Malignant neoplasm of testis",
+    "Testicular Neoplasms",
+    "obsolete_testicular carcinoma",
+    "testicular cancer"
+  ],
+  "MONDO:0005452": [
+    "Bulimia Nervosa",
+    "bulimia nervosa",
+    "obsolete_bulimia nervosa"
+  ],
+  "MONDO:0005459": [
+    "African Trypanosomiasis",
+    "Trypanosomiasis, African",
+    "human African trypanosomiasis",
+    "obsolete_human african trypanosomiasis",
+    "sleeping sickness"
+  ],
+  "MONDO:0005480": [
+    "Contact Dermatitis",
+    "Contact dermatitis",
+    "Dermatitis, Contact",
+    "contact dermatitis",
+    "obsolete_contact dermatitis"
+  ],
+  "MONDO:0005487": [
+    "Cyclic schizophrenia",
+    "Schizoaffective Disorder",
+    "obsolete_schizoaffective disorder",
+    "schizoaffective disorder"
+  ],
+  "MONDO:0005492": [
+    "Nettle rash",
+    "Other specified urticaria",
+    "Urticaria",
+    "Welts",
+    "Wheal",
+    "obsolete_urticaria",
+    "urticaria"
+  ],
+  "MONDO:0005494": [
+    "Triple Negative Breast Neoplasms",
+    "Triple-Negative Breast Carcinoma",
+    "obsolete_triple-negative breast cancer",
+    "triple-negative breast cancer",
+    "triple-negative breast carcinoma"
+  ],
+  "MONDO:0005504": [
+    "Corynebacterium Infections",
+    "Diphtheria",
+    "Diphtheria due to Corynebacterium diphtheriae",
+    "diphtheria",
+    "obsolete_diphtheria"
+  ],
+  "MONDO:0005520": [
+    "Rickets",
+    "obsolete_rickets",
+    "rickets"
+  ],
+  "MONDO:0005526": [
+    "Tetanus",
+    "obsolete_tetanus",
+    "tetanus"
+  ],
+  "MONDO:0005538": [
+    "Proctitis",
+    "obsolete_proctitis",
+    "proctitis"
+  ],
+  "MONDO:0005542": [
+    "Acute Coronary Syndrome",
+    "Acute coronary syndrome",
+    "acute coronary syndrome",
+    "obsolete_acute coronary syndrome"
+  ],
+  "MONDO:0005546": [
+    "Fibromyalgia",
+    "Fibromyositis",
+    "fibromyalgia",
+    "obsolete_fibromyalgia"
+  ],
+  "MONDO:0005555": [
+    "Cycloplegia",
+    "cycloplegia",
+    "obsolete_cycloplegia"
+  ],
+  "MONDO:0005556": [
+    "Lupus Glomerulonephritis",
+    "Lupus Nephritis",
+    "Lupus nephritis",
+    "lupus nephritis",
+    "obsolete_lupus nephritis"
+  ],
+  "MONDO:0005582": [
+    "Binge Eating",
+    "Binge eating disorder",
+    "Binge-Eating Disorder",
+    "Bulimia",
+    "binge eating disorder",
+    "obsolete_binge eating"
+  ],
+  "MONDO:0005607": [
+    "Bronchitis, Chronic",
+    "Chronic Bronchitis",
+    "Chronic bronchitis",
+    "chronic bronchitis",
+    "obsolete_chronic bronchitis"
+  ],
+  "MONDO:0005609": [
+    "Herpes Zoster",
+    "Herpes zoster (disorder)",
+    "herpes zoster",
+    "obsolete_Herpes Zoster"
+  ],
+  "MONDO:0005619": [
+    "Typhoid Fever",
+    "obsolete_typhoid fever",
+    "typhoid fever"
+  ],
+  "MONDO:0005642": [
+    "Allergic Conjunctivitis",
+    "Allergic conjunctivitis",
+    "Atopic Conjunctivitis",
+    "Conjunctivitis, Allergic",
+    "allergic conjunctivitis",
+    "atopic conjunctivitis",
+    "obsolete_allergic conjunctivitis"
+  ],
+  "MONDO:0005647": [
+    "Anogenital Human Papillomavirus Infection",
+    "Anogenital human papillomavirus infection",
+    "Condyloma Acuminatum",
+    "Condylomata Acuminata",
+    "Genital warts",
+    "anogenital human papillomavirus infection",
+    "anogenital venereal wart",
+    "obsolete_anogenital venereal wart"
+  ],
+  "MONDO:0005654": [
+    "Ascariasis",
+    "ascariasis",
+    "obsolete_ascariasis"
+  ],
+  "MONDO:0005657": [
+    "Aspergillosis",
+    "aspergillosis",
+    "obsolete_aspergillosis"
+  ],
+  "MONDO:0005672": [
+    "Blastomycosis",
+    "Gilchrist Disease",
+    "North American Blastomycosis",
+    "blastomycosis",
+    "obsolete_blastomycosis"
+  ],
+  "MONDO:0005683": [
+    "Brucellosis",
+    "brucellosis",
+    "obsolete_brucellosis"
+  ],
+  "MONDO:0005700": [
+    "Chicken Pox",
+    "Chickenpox",
+    "chickenpox",
+    "obsolete_chickenpox"
+  ],
+  "MONDO:0005706": [
+    "Coccidioidomycosis",
+    "Primary extrapulmonary coccidioidomycosis",
+    "coccidioidomycosis",
+    "obsolete_coccidioidomycosis"
+  ],
+  "MONDO:0005709": [
+    "Acute Nasopharyngitis",
+    "Common Cold",
+    "Infectious Rhinitis",
+    "common cold",
+    "obsolete_common cold"
+  ],
+  "MONDO:0005714": [
+    "Congenital Syphilis",
+    "Syphilis, Congenital",
+    "congenital syphilis",
+    "obsolete_congenital syphilis"
+  ],
+  "MONDO:0005723": [
+    "Cryptococcal Meningitis",
+    "Cryptococcal meningitis",
+    "Meningitis, Cryptococcal",
+    "obsolete_cryptococcal meningitis"
+  ],
+  "MONDO:0005724": [
+    "Cryptococcosis",
+    "Infection by Cryptococcus neoformans",
+    "cryptococcosis",
+    "obsolete_cryptococcosis"
+  ],
+  "MONDO:0005746": [
+    "Enterobiasis",
+    "Oxyuriasis",
+    "enterobiasis",
+    "obsolete_enterobiasis"
+  ],
+  "MONDO:0005770": [
+    "Genital Herpes",
+    "Herpes Genitalis",
+    "genital herpes",
+    "obsolete_genital herpes"
+  ],
+  "MONDO:0005812": [
+    "Influenza",
+    "Influenza, Human",
+    "Orthomyxoviridae Infections",
+    "influenza",
+    "obsolete_influenza"
+  ],
+  "MONDO:0005822": [
+    "Latent Syphilis",
+    "Syphilis, Latent",
+    "latent syphilis",
+    "obsolete_latent syphilis"
+  ],
+  "MONDO:0005855": [
+    "Molluscum Contagiosum",
+    "Molluscum contagiosum",
+    "molluscum contagiosum",
+    "obsolete_molluscum contagiosum"
+  ],
+  "MONDO:0005884": [
+    "Opisthorchiasis",
+    "obsolete_opisthorchiasis",
+    "opisthorchiasis"
+  ],
+  "MONDO:0005886": [
+    "Candidiasis, Oral",
+    "Oral Candidiasis",
+    "Oral candidiasis",
+    "obsolete_oral candidiasis",
+    "oral candidiasis"
+  ],
+  "MONDO:0005915": [
+    "Malassezia furfur Infection",
+    "Tinea Versicolor",
+    "obsolete_pityriasis versicolor",
+    "pityriasis versicolor"
+  ],
+  "MONDO:0005921": [
+    "Malaria, Vivax",
+    "Plasmodium vivax malaria",
+    "Vivax Malaria",
+    "obsolete_Plasmodium vivax malaria"
+  ],
+  "MONDO:0005952": [
+    "Scarlet Fever",
+    "Streptococcal sore throat with scarlatina",
+    "obsolete_scarlet fever",
+    "scarlet fever"
+  ],
+  "MONDO:0005972": [
+    "Pneumococcal Pneumonia",
+    "Pneumonia, Pneumococcal",
+    "Streptococcal pneumonia",
+    "Streptococcus pneumonia",
+    "obsolete_streptococcal pneumonia",
+    "streptococcal pneumonia"
+  ],
+  "MONDO:0005974": [
+    "Disseminated strongyloidiasis",
+    "Strongyloidiasis",
+    "obsolete_strongyloidiasis",
+    "strongyloidiasis"
+  ],
+  "MONDO:0005976": [
+    "Syphilis",
+    "obsolete_syphilis",
+    "syphilis"
+  ],
+  "MONDO:0005984": [
+    "Tinea Pedis",
+    "obsolete_tinea pedis",
+    "tinea pedis"
+  ],
+  "MONDO:0005989": [
+    "Toxoplasmosis",
+    "obsolete_toxoplasmosis",
+    "toxoplasmosis"
+  ],
+  "MONDO:0005996": [
+    "Infection by Trichuris trichiura",
+    "Trichuriasis",
+    "obsolete_trichuriasis",
+    "trichuriasis"
+  ],
+  "MONDO:0006004": [
+    "Rhinitis, Vasomotor",
+    "Vasomotor Rhinitis",
+    "obsolete_vasomotor rhinitis",
+    "vasomotor rhinitis"
+  ],
+  "MONDO:0006014": [
+    "Candidiasis, Vulvovaginal",
+    "Vulvovaginal Candidiasis",
+    "obsolete_vulvovaginal candidiasis",
+    "vulvovaginal candidiasis"
+  ],
+  "MONDO:0006021": [
+    "Angina Pectoris, Variant",
+    "Prinzmetal angina",
+    "Variant Angina",
+    "obsolete_Prinzmetal's angina"
+  ],
+  "MONDO:0006031": [
+    "Chronic Sinusitis",
+    "Chronic rhinosinusitis",
+    "Chronic sinus disease",
+    "Chronic sinusitis",
+    "chronic rhinosinusitis",
+    "obsolete_chronic rhinosinusitis"
+  ],
+  "MONDO:0006032": [
+    "Cystitis",
+    "Urinary bladder inflammation",
+    "cystitis",
+    "obsolete_cystitis"
+  ],
+  "MONDO:0006047": [
+    "Adenocarcinoma of pancreas",
+    "Pancreatic Adenocarcinoma",
+    "Pancreatic adenocarcinoma",
+    "obsolete_pancreatic adenocarcinoma",
+    "pancreatic adenocarcinoma"
+  ],
+  "MONDO:0006052": [
+    "Pulmonary Tuberculosis",
+    "Pulmonary tuberculosis",
+    "Tuberculosis, Pulmonary",
+    "obsolete_pulmonary tuberculosis",
+    "pulmonary tuberculosis"
+  ],
+  "MONDO:0006115": [
+    "Blast Crisis",
+    "Blast Phase",
+    "Blast Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive",
+    "blast phase chronic myelogenous leukemia, BCR-ABL1 positive",
+    "obsolete_Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive"
+  ],
+  "MONDO:0006468": [
+    "Anaplastic thyroid carcinoma",
+    "Thyroid Carcinoma, Anaplastic",
+    "Thyroid Gland Anaplastic Carcinoma",
+    "anaplastic thyroid carcinoma",
+    "obsolete_Thyroid Gland Undifferentiated (Anaplastic) Carcinoma",
+    "thyroid gland undifferentiated (anaplastic) carcinoma"
+  ],
+  "MONDO:0006500": [
+    "Hemangioma",
+    "hemangioma",
+    "obsolete_hemangioma"
+  ],
+  "MONDO:0006545": [
+    "Erythema Multiforme",
+    "erythema multiforme",
+    "obsolete_erythema multiforme"
+  ],
+  "MONDO:0006547": [
+    "Eruption of skin (disorder)",
+    "Exanthem",
+    "Exanthema",
+    "Skin Rash",
+    "Skin rash",
+    "exanthem",
+    "obsolete_exanthem"
+  ],
+  "MONDO:0006552": [
+    "Folliculitis",
+    "folliculitis",
+    "obsolete_folliculitis"
+  ],
+  "MONDO:0006554": [
+    "Granuloma Annulare",
+    "granuloma annulare",
+    "obsolete_granuloma annulare"
+  ],
+  "MONDO:0006572": [
+    "Lichen Planus",
+    "lichen planus",
+    "obsolete_lichen planus"
+  ],
+  "MONDO:0006594": [
+    "Pemphigus",
+    "obsolete_pemphigus",
+    "pemphigus"
+  ],
+  "MONDO:0006604": [
+    "Blushing",
+    "Face goes red",
+    "Facial erythema",
+    "Rosacea",
+    "Ruddy face",
+    "obsolete_rosacea",
+    "rosacea"
+  ],
+  "MONDO:0006608": [
+    "Dermatitis, Seborrheic",
+    "Dysseborrheic dermatitis",
+    "Seborrheic Dermatitis",
+    "Seborrheic dermatitis",
+    "obsolete_seborrheic dermatitis",
+    "seborrheic dermatitis"
+  ],
+  "MONDO:0006642": [
+    "Alcohol Withdrawal Delirium",
+    "alcohol withdrawal delirium",
+    "obsolete_alcohol withdrawal delirium"
+  ],
+  "MONDO:0006651": [
+    "Acute Anterior Uveitis",
+    "Acute anterior uveitis",
+    "Anterior Uveitis",
+    "Anterior uveitis",
+    "Uveitis, Anterior",
+    "anterior uveitis",
+    "obsolete_anterior uveitis"
+  ],
+  "MONDO:0006668": [
+    "Bacterial Conjunctivitis",
+    "Bacterial conjunctivitis",
+    "Conjunctivitis, Bacterial",
+    "bacterial conjunctivitis",
+    "obsolete_bacterial conjunctivitis"
+  ],
+  "MONDO:0006670": [
+    "Bacterial Meningitis",
+    "Meningitis, Bacterial",
+    "bacterial meningitis",
+    "obsolete_bacterial meningitis"
+  ],
+  "MONDO:0006733": [
+    "Dry Eye Syndrome",
+    "Dry Eye Syndromes",
+    "Keratoconjunctivitis Sicca",
+    "dry eye syndrome",
+    "keratoconjunctivitis sicca",
+    "obsolete_dry eye syndrome"
+  ],
+  "MONDO:0006805": [
+    "Angina, Unstable",
+    "Myocardial Preinfarction Syndrome",
+    "Unstable Angina",
+    "angina unstable",
+    "intermediate coronary syndrome",
+    "obsolete_intermediate coronary syndrome"
+  ],
+  "MONDO:0006814": [
+    "Iritis",
+    "iritis",
+    "obsolete_iritis"
+  ],
+  "MONDO:0006816": [
+    "Arthropathy",
+    "Arthropathy associated with infection",
+    "Joint Diseases",
+    "Joint Infection",
+    "arthropathy",
+    "obsolete_joint disease"
+  ],
+  "MONDO:0006823": [
+    "Klinefelter Syndrome",
+    "Klinefelter syndrome",
+    "obsolete_Klinefelter's syndrome"
+  ],
+  "MONDO:0006875": [
+    "Ocular Hypertension",
+    "obsolete_ocular hypertension",
+    "ocular hypertension"
+  ],
+  "MONDO:0006946": [
+    "Chronic Kidney Disease-Mineral and Bone Disorder",
+    "Chronic kidney disease mineral and bone disorder",
+    "Renal Osteodystrophy",
+    "Renal rickets",
+    "obsolete_renal osteodystrophy",
+    "renal osteodystrophy"
+  ],
+  "MONDO:0006952": [
+    "Retinopathy of Prematurity",
+    "Retinopathy of prematurity",
+    "obsolete_retinopathy of prematurity",
+    "retinopathy of prematurity"
+  ],
+  "MONDO:0006955": [
+    "Rheumatic Heart Disease",
+    "obsolete_rheumatic heart disease",
+    "rheumatic heart disease"
+  ],
+  "MONDO:0006964": [
+    "Hyperparathyroidism, Secondary",
+    "Secondary Hyperparathyroidism",
+    "Secondary hyperparathyroidism",
+    "obsolete_secondary hyperparathyroidism",
+    "secondary hyperparathyroidism"
+  ],
+  "MONDO:0007079": [
+    "Addictive alcohol use",
+    "Alcohol Dependence",
+    "Alcohol Use Disorder",
+    "Alcohol use disorder, moderate",
+    "Alcohol use disorder, moderate, in early remission",
+    "Alcohol use disorder, moderate, in sustained remission",
+    "Alcohol use disorder, moderate, with alcohol-induced bipolar or related disorder",
+    "Alcohol use disorder, moderate, with alcohol-induced depressive disorder",
+    "Alcohol use disorder, moderate, with alcohol-induced major neurocognitive disorder, amnestic-confabulatory type",
+    "Alcohol use disorder, moderate, with alcohol-induced major neurocognitive disorder, nonamnestic-confabulatory type",
+    "Alcohol use disorder, moderate, with alcohol-induced mild neurocognitive disorder",
+    "Alcohol use disorder, severe",
+    "Alcohol use disorder, severe, in early remission",
+    "Alcohol use disorder, severe, in sustained remission",
+    "Alcohol use disorder, severe, with alcohol-induced bipolar or related disorder",
+    "Alcohol use disorder, severe, with alcohol-induced depressive disorder",
+    "Alcohol use disorder, severe, with alcohol-induced major neurocognitive disorder, amnestic-confabulatory type",
+    "Alcohol use disorder, severe, with alcohol-induced major neurocognitive disorder, nonamnestic-confabulatory type",
+    "Alcohol use disorder, severe, with alcohol-induced mild neurocognitive disorder",
+    "Alcoholic Intoxication, Chronic",
+    "Personal history of alcohol use disorder",
+    "alcohol dependence",
+    "alcohol use disorder in the elderly",
+    "alcohol use disorder measurement",
+    "alcohol use with alcohol induced psychotic disorder",
+    "alcohol use with alcohol-induced disorder",
+    "primary alcohol use disorder",
+    "primary vs secondary alcohol use disorder",
+    "secondary alcohol use disorder"
+  ],
+  "MONDO:0007147": [
+    "Obstructive Sleep Apnea",
+    "Obstructive Sleep Apnea Syndrome",
+    "Obstructive sleep apnea",
+    "Sleep Apnea, Obstructive",
+    "obsolete_obstructive sleep apnea",
+    "obstructive sleep apnea",
+    "obstructive sleep apnea syndrome"
+  ],
+  "MONDO:0007186": [
+    "Gastroesophageal Reflux",
+    "Gastroesophageal Reflux Disease",
+    "Gastroesophageal reflux",
+    "Gastroesophageal reflux disease",
+    "Heartburn",
+    "gastroesophageal reflux disease",
+    "obsolete_gastroesophageal reflux disease"
+  ],
+  "MONDO:0007243": [
+    "Atypical Burkitt/Burkitt-Like Lymphoma",
+    "Burkitt Lymphoma",
+    "Burkitt lymphoma",
+    "Burkitt-like lymphoma",
+    "obsolete_Burkitts lymphoma"
+  ],
+  "MONDO:0007256": [
+    "Carcinoma, Hepatocellular",
+    "Hepatoblastoma Caused By Somatic Mutation",
+    "Hepatocellular Carcinoma",
+    "Hepatocellular carcinoma",
+    "Increased hepatocellular carcinoma risk",
+    "Increased incidence of hepatocellular carcinoma",
+    "Liver carcinoma",
+    "hepatocellular carcinoma",
+    "liver carcinoma",
+    "obsolete_hepatocellular carcinoma"
+  ],
+  "MONDO:0007318": [
+    "Alagille Syndrome",
+    "Alagille syndrome"
+  ],
+  "MONDO:0007576": [
+    "Malignant Esophageal Neoplasm",
+    "Malignant Neoplasm of the Lower Third of the Esophagus",
+    "Malignant Neoplasm of the Middle Third of the Esophagus",
+    "Malignant Neoplasm of the Upper Third of the Esophagus",
+    "Malignant neoplasm of esophagus",
+    "Malignant neoplasm of lower third of esophagus",
+    "Malignant neoplasm of middle third of esophagus",
+    "Malignant neoplasm of other specified part of esophagus",
+    "Malignant neoplasm of upper third of esophagus",
+    "esophageal cancer"
+  ],
+  "MONDO:0007661": [
+    "Chronic Motor Tics",
+    "Gilles de la Tourette syndrome",
+    "Tourette Syndrome",
+    "Tourette syndrome",
+    "obsolete_Tourette syndrome"
+  ],
+  "MONDO:0007699": [
+    "Hashimoto Disease",
+    "Hashimoto Thyroiditis",
+    "Hashimoto thyroiditis",
+    "autoimmune thyroiditis",
+    "obsolete_Hashimoto's thyroiditis"
+  ],
+  "MONDO:0007727": [
+    "Periodic fever, familial, autosomal dominant",
+    "TNF receptor 1-associated periodic fever syndrome",
+    "TNF receptor-associated periodic fever syndrome (TRAPS)",
+    "TNF receptor\u2013associated periodic syndrome",
+    "Tumor Necrosis Factor Receptor 1-Associated Periodic Syndrome"
+  ],
+  "MONDO:0007915": [
+    "Lupus Erythematosus, Systemic",
+    "Systemic Lupus Erythematosus",
+    "Systemic lupus erythematosus",
+    "systemic lupus erythematosus"
+  ],
+  "MONDO:0008015": [
+    "Motion Sickness",
+    "motion sickness"
+  ],
+  "MONDO:0008090": [
+    "Cyclic Neutropenia",
+    "Cyclic neutropenia",
+    "Cyclically decreased total neutrophil count",
+    "cyclic hematopoiesis"
+  ],
+  "MONDO:0008114": [
+    "Compulsion",
+    "Compulsive Behavior",
+    "Compulsive behaviors",
+    "Obsessive Compulsive Disorder",
+    "Obsessive compulsive behavior",
+    "Obsessive-Compulsive Disorder",
+    "obsessive-compulsive disorder",
+    "obsolete_obsessive-compulsive disorder"
+  ],
+  "MONDO:0008159": [
+    "Osteoporosis, Postmenopausal",
+    "obsolete_postmenopausal osteoporosis",
+    "postmenopausal osteoporosis"
+  ],
+  "MONDO:0008170": [
+    "Malignant Ovarian Neoplasm",
+    "Malignant neoplasm of ovary",
+    "Ovarian Neoplasms",
+    "ovarian cancer"
+  ],
+  "MONDO:0008228": [
+    "Anemia, Pernicious",
+    "Pernicious Anemia",
+    "obsolete_pernicious anemia",
+    "pernicious anemia"
+  ],
+  "MONDO:0008300": [
+    "Prader-Willi Syndrome",
+    "Prader-Willi syndrome",
+    "Prader-Willi-Like Syndrome Associated With Chromosome 6"
+  ],
+  "MONDO:0008315": [
+    "Malignant Prostate Neoplasm",
+    "Malignant neoplasm of prostate",
+    "Prostate cancer",
+    "Prostatic Neoplasms",
+    "prostate cancer"
+  ],
+  "MONDO:0008383": [
+    "Arthritis, Rheumatoid",
+    "Proliferative arthritis",
+    "Rheumatoid Arthritis",
+    "Rheumatoid arthritis",
+    "obsolete_rheumatoid arthritis",
+    "rheumatoid arthritis"
+  ],
+  "MONDO:0008433": [
+    "Lung Small Cell Carcinoma",
+    "Small Cell Lung Carcinoma",
+    "Small cell carcinoma of lung",
+    "Small cell lung carcinoma",
+    "lung oat cell carcinoma",
+    "lung small cell carcinoma",
+    "obsolete_small cell lung carcinoma",
+    "small cell lung carcinoma"
+  ],
+  "MONDO:0008538": [
+    "Cranial Arteritis",
+    "Giant Cell Arteritis",
+    "Temporal Arteritis",
+    "obsolete_temporal arteritis",
+    "temporal arteritis"
+  ],
+  "MONDO:0008599": [
+    "Trigeminal Neuralgia",
+    "Trigeminal neuralgia",
+    "obsolete_trigeminal neuralgia",
+    "trigeminal neuralgia"
+  ],
+  "MONDO:0008638": [
+    "Varicose Vein",
+    "Varicose Veins",
+    "Varicose veins",
+    "Varicosity",
+    "varicose disease",
+    "varicose veins"
+  ],
+  "MONDO:0008667": [
+    "Von Hippel-Lindau Syndrome",
+    "von Hippel-Lindau Disease",
+    "von Hippel-Lindau disease"
+  ],
+  "MONDO:0008753": [
+    "Alkaptonuria",
+    "Ochronosis, hereditary",
+    "alkaptonuria"
+  ],
+  "MONDO:0008903": [
+    "Malignant Lung Neoplasm",
+    "Malignant Neoplasm of Middle Lobe, Bronchus or Lung",
+    "Malignant neoplasm of lower lobe, bronchus or lung",
+    "Malignant neoplasm of lung",
+    "Malignant neoplasm of middle lobe, bronchus or lung",
+    "Malignant neoplasm of other parts of bronchus or lung",
+    "Malignant neoplasm of upper lobe, bronchus or lung",
+    "lung cancer"
+  ],
+  "MONDO:0009047": [
+    "Cryptorchidism",
+    "Undescended Testes",
+    "cryptorchidism",
+    "obsolete_cryptorchidism"
+  ],
+  "MONDO:0009061": [
+    "Cystic Fibrosis",
+    "cystic fibrosis"
+  ],
+  "MONDO:0009067": [
+    "Cystinuria",
+    "Cystinuria, Type A-B",
+    "cystinuria"
+  ],
+  "MONDO:0009114": [
+    "Congenital Sucrase-Isomaltase Deficiency",
+    "Deficiency of beta-fructofuranosidase",
+    "Sucrase-isomaltase deficiency, congenital",
+    "congenital sucrase-isomaltase deficiency"
+  ],
+  "MONDO:0009174": [
+    "COMPLEMENT HYPERACTIVATION, ANGIOPATHIC THROMBOSIS, AND PROTEIN-LOSING ENTEROPATHY",
+    "Protein-Losing Enteropathies",
+    "Protein-losing enteropathy",
+    "protein-losing enteropathy"
+  ],
+  "MONDO:0009265": [
+    "Gaucher Disease, Type 1",
+    "Gaucher disease type I",
+    "Gaucher's disease type I"
+  ],
+  "MONDO:0009348": [
+    "Classic Hodgkin Lymphoma",
+    "Hodgkin Disease",
+    "Hodgkin lymphoma",
+    "Hodgkin sarcoma",
+    "Hodgkin's Granuloma",
+    "Hodgkin's Paragranuloma",
+    "Hodgkin's Sarcoma",
+    "classic Hodgkin lymphoma"
+  ],
+  "MONDO:0009412": [
+    "Ascorbic Acid Deficiency",
+    "Decreased circulating vitamin C concentration",
+    "Scurvy",
+    "Vitamin C Deficiency",
+    "obsolete_scurvy",
+    "scurvy"
+  ],
+  "MONDO:0009561": [
+    "Alpha-Mannosidosis",
+    "Mannosidase Deficiency Diseases",
+    "Mannosidosis",
+    "alpha-Mannosidosis",
+    "alpha-mannosidosis"
+  ],
+  "MONDO:0009661": [
+    "Maroteaux-Lamy Syndrome",
+    "Mucopolysaccharidosis VI",
+    "mucopolysaccharidosis VI",
+    "mucopolysaccharidosis type 6"
+  ],
+  "MONDO:0009662": [
+    "Mucopolysaccharidosis VII",
+    "Sly Syndrome",
+    "mucopolysaccharidosis type 7",
+    "mucopolysaccharidosis type VII"
+  ],
+  "MONDO:0009688": [
+    "Myasthenia Gravis",
+    "myasthenia gravis",
+    "myasthenia gravis without acute exacerbation",
+    "obsolete_Myasthenia gravis"
+  ],
+  "MONDO:0009691": [
+    "Mycosis Fungoides",
+    "mycosis fungoides",
+    "obsolete_mycosis fungoides"
+  ],
+  "MONDO:0009693": [
+    "Multiple Myeloma",
+    "Multiple myeloma",
+    "multiple myeloma",
+    "obsolete_multiple myeloma",
+    "plasma cell myeloma"
+  ],
+  "MONDO:0009718": [
+    "Myxedema",
+    "myxedema",
+    "obsolete_myxedema"
+  ],
+  "MONDO:0009891": [
+    "Chronic erythremia",
+    "Polycythemia Vera",
+    "acquired polycythemia vera",
+    "obsolete_polycythemia vera",
+    "polycythemia vera"
+  ],
+  "MONDO:0010030": [
+    "Sicca Syndrome",
+    "Sjogren Syndrome",
+    "Sjogren syndrome",
+    "Sjogren's Syndrome",
+    "Sjogren's syndrome",
+    "obsolete_Sjogren syndrome"
+  ],
+  "MONDO:0010096": [
+    "Drug-induced tardive dyskinesia",
+    "Tardive Dyskinesia",
+    "Tardive dyskinesia",
+    "tardive dyskinesia"
+  ],
+  "MONDO:0010161": [
+    "Tyrosinemia Type I",
+    "Tyrosinemia, Type I",
+    "tyrosinemia type I"
+  ],
+  "MONDO:0010200": [
+    "Hepatolenticular Degeneration",
+    "Wilson disease"
+  ],
+  "MONDO:0010526": [
+    "Angiokeratoma Corporis Diffusum",
+    "Angiokeratoma corporis diffusum",
+    "Fabry Disease",
+    "Fabry Disease, Cardiac Variant",
+    "Fabry disease"
+  ],
+  "MONDO:0010602": [
+    "Factor VIII Deficiency",
+    "Hemophilia A",
+    "Reduced factor VIII activity",
+    "factor VIII deficiency",
+    "hemophilia A"
+  ],
+  "MONDO:0010674": [
+    "Hunter Syndrome",
+    "Mucopolysaccharidosis II",
+    "mucopolysaccharidosis II",
+    "mucopolysaccharidosis type 2"
+  ],
+  "MONDO:0010679": [
+    "Duchenne Muscular Dystrophy",
+    "Duchenne muscular dystrophy",
+    "Muscular Dystrophy, Duchenne"
+  ],
+  "MONDO:0010726": [
+    "Rett Syndrome",
+    "Rett Syndrome, Preserved Speech Variant",
+    "Rett Syndrome, Zappella Variant",
+    "Rett syndrome"
+  ],
+  "MONDO:0010811": [
+    "Benign Prostatic Hyperplasia",
+    "Benign fibroma of prostate",
+    "Benign myoma of prostate",
+    "Benign prostatic hyperplasia",
+    "Prostatic Hyperplasia",
+    "Prostatic Hypertrophy",
+    "benign prostatic hyperplasia",
+    "obsolete_benign prostatic hyperplasia",
+    "prostatic hypertrophy"
+  ],
+  "MONDO:0011382": [
+    "Anemia, Sickle Cell",
+    "Sickle Cell Disease",
+    "sickle cell anemia",
+    "sickle cell disease"
+  ],
+  "MONDO:0011429": [
+    "Acute polyarticular juvenile rheumatoid arthritis",
+    "Arthritis, Juvenile",
+    "Juvenile Idiopathic Arthritis",
+    "Juvenile arthritis",
+    "Juvenile rheumatoid arthritis",
+    "Monoarticular juvenile rheumatoid arthritis",
+    "Oligoarticular Still Disease",
+    "Pauciarticular JRA",
+    "juvenile idiopathic arthritis",
+    "obsolete_juvenile idiopathic arthritis",
+    "systemic juvenile rheumatoid arthritis"
+  ],
+  "MONDO:0011438": [
+    "Acne",
+    "Acne Vulgaris",
+    "Acne varioliformis",
+    "acne",
+    "obsolete_acne"
+  ],
+  "MONDO:0011719": [
+    "Gastrointestinal Autonomic Nerve Tumor",
+    "Gastrointestinal Stromal Sarcoma",
+    "Gastrointestinal Stromal Tumor",
+    "Gastrointestinal Stromal Tumor of Uncertain Malignant Potential",
+    "Gastrointestinal Stromal Tumors",
+    "Gastrointestinal stroma tumor",
+    "Gastrointestinal stromal tumor, uncertain malignant potential",
+    "Malignant Gastrointestinal Stromal Tumor",
+    "Plexosarcoma",
+    "gastrointestinal stromal tumor"
+  ],
+  "MONDO:0011776": [
+    "CINCA Syndrome",
+    "CINCA syndrome",
+    "Chronic Infantile Neurological Cutaneous and Articular Syndrome",
+    "Chronic Infantile Neurological, Cutaneous, and Articular Syndrome"
+  ],
+  "MONDO:0011786": [
+    "Allergic Rhinitis",
+    "Allergic rhinitis",
+    "Allergic rhinitis (disorder)",
+    "Atopic Rhinitis",
+    "Atopic rhinitis",
+    "Nasal allergies",
+    "Rhinitis, Allergic",
+    "allergic rhinitis",
+    "obsolete_allergic rhinitis"
+  ],
+  "MONDO:0011827": [
+    "Ductus Arteriosus, Patent",
+    "Patent Ductus Arteriosus",
+    "Patent ductus arteriosus",
+    "patent ductus arteriosus"
+  ],
+  "MONDO:0011849": [
+    "Arthritis, Psoriatic",
+    "Psoriatic Arthritis",
+    "obsolete_psoriatic arthritis",
+    "psoriatic arthritis"
+  ],
+  "MONDO:0011934": [
+    "Dermatofibrosarcoma",
+    "Dermatofibrosarcoma Protuberans",
+    "Giant Cell Fibroblastoma",
+    "dermatofibrosarcoma protuberans"
+  ],
+  "MONDO:0011989": [
+    "Leishmaniasis",
+    "leishmaniasis",
+    "obsolete_Leishmaniasis"
+  ],
+  "MONDO:0011996": [
+    "Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+    "Chronic Myeloid Leukemia, BCR-ABL1 Positive",
+    "Chronic Myeloid Leukemia, Philadelphia Chromosome Positive, BCR-ABL1 Positive",
+    "Chronic myelogenous leukemia",
+    "LEUKEMIA, PHILADELPHIA CHROMOSOME-POSITIVE, RESISTANT TO IMATANIB",
+    "Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
+    "Philadelphia chromosome positive chronic myelogenous leukemia",
+    "chronic myelogenous leukemia, BCR-ABL1 positive",
+    "chronic myeloid leukemia",
+    "obsolete_chronic myelogenous leukemia"
+  ],
+  "MONDO:0012105": [
+    "Granulomatosis with Polyangiitis",
+    "Granulomatosis with polyangiitis",
+    "Pauci-Immune Glomerulonephritis associated with Granulomatosis with Polyangiitis",
+    "Pauci-immune Glomerulonephritis associated with Granulomatosis with Polyangiitis",
+    "granulomatosis with polyangiitis",
+    "obsolete_Granulomatosis with Polyangiitis"
+  ],
+  "MONDO:0012521": [
+    "Encephalitis, Herpes Simplex",
+    "Herpes Simplex Encephalitis",
+    "Herpes encephalitis",
+    "Herpes simplex encephalitis",
+    "herpes simplex encephalitis"
+  ],
+  "MONDO:0012817": [
+    "Ewing Sarcoma",
+    "Ewing sarcoma",
+    "Ewings sarcoma",
+    "Localized Ewing Sarcoma",
+    "Localized Ewing Sarcoma/Peripheral Primitive Neuroectodermal Tumor",
+    "Localized Peripheral Primitive Neuroectodermal Tumor",
+    "Localized tumors of the Ewing's family",
+    "Sarcoma, Ewing",
+    "obsolete_Ewing sarcoma"
+  ],
+  "MONDO:0012883": [
+    "Acute Promyelocytic Leukemia",
+    "Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA",
+    "Acute promyelocytic leukemia",
+    "Leukemia, Promyelocytic, Acute",
+    "acute promyelocytic leukemia",
+    "acute promyelocytic leukemia with PML-RARA",
+    "obsolete_acute promyelocytic leukemia"
+  ],
+  "MONDO:0013600": [
+    "Insomnia",
+    "Sleep Initiation and Maintenance Disorders",
+    "Sleeplessness",
+    "insomnia",
+    "obsolete_insomnia"
+  ],
+  "MONDO:0015075": [
+    "Malignant epithelial neoplasm of thyroid",
+    "Thyroid Gland Carcinoma",
+    "Thyroid carcinoma",
+    "obsolete_thyroid carcinoma",
+    "thyroid gland carcinoma"
+  ],
+  "MONDO:0015129": [
+    "Addison Disease",
+    "Addison's Disease",
+    "Addison's disease",
+    "Hypoadrenocorticism, Familial",
+    "Hypoadrenocorticism, familial",
+    "Primary adrenal insufficiency",
+    "Primary adrenocortical insufficiency",
+    "chronic primary adrenal insufficiency"
+  ],
+  "MONDO:0015229": [
+    "Bardet-Biedl Syndrome",
+    "Bardet-Biedl syndrome"
+  ],
+  "MONDO:0015243": [
+    "ALLERGIC BRONCHOPULMONARY ASPERGILLOSIS, FAMILIAL",
+    "Allergic Bronchopulmonary Aspergillosis",
+    "Aspergillosis, Allergic Bronchopulmonary",
+    "allergic bronchopulmonary aspergillosis",
+    "obsolete_allergic bronchopulmonary aspergillosis"
+  ],
+  "MONDO:0015254": [
+    "Other specified schistosomiasis",
+    "Schistosomiasis",
+    "obsolete_schistosomiasis",
+    "schistosomiasis"
+  ],
+  "MONDO:0015277": [
+    "Medullary carcinoma of thyroid",
+    "Medullary thyroid carcinoma",
+    "Thyroid Gland Medullary Carcinoma",
+    "Thyroid Gland Medullary Carcinoma with Amyloid Stroma",
+    "Thyroid cancer, medullary",
+    "medullary thyroid carcinoma",
+    "medullary thyroid gland carcinoma"
+  ],
+  "MONDO:0015288": [
+    "Dendritic Keratitis",
+    "Keratitis, Dendritic",
+    "Keratitis, Herpetic",
+    "herpes simplex virus keratitis",
+    "obsolete_Herpes simplex virus keratitis"
+  ],
+  "MONDO:0015290": [
+    "Neurotrophic keratitis",
+    "neurotrophic keratopathy"
+  ],
+  "MONDO:0015541": [
+    "Familial Hemophagocytic Lymphocytosis",
+    "hereditary hemophagocytic lymphohistiocytosis"
+  ],
+  "MONDO:0015564": [
+    "Angiofollicular ganglionic hyperplasia",
+    "Angiolymphoid hyperplasia",
+    "Castleman Disease",
+    "Castleman disease"
+  ],
+  "MONDO:0015614": [
+    "Dermatitis Herpetiformis",
+    "dermatitis herpetiformis",
+    "obsolete_dermatitis herpetiformis"
+  ],
+  "MONDO:0015687": [
+    "Chronic Eosinophilic Leukemia, Not Otherwise Specified",
+    "Chronic eosinophilic leukemia",
+    "Pdgfra-Associated Chronic Eosinophilic Leukemia",
+    "chronic eosinophilic leukemia"
+  ],
+  "MONDO:0015762": [
+    "Progressive Familial Intrahepatic Cholestasis",
+    "Progressive intrahepatic cholestasis (disorder)",
+    "progressive familial intrahepatic cholestasis"
+  ],
+  "MONDO:0015898": [
+    "Adrenogenital Syndrome",
+    "Adrenogenital disorder",
+    "Adrenogenital syndrome",
+    "adrenogenital syndrome"
+  ],
+  "MONDO:0015908": [
+    "Chromoblastomycosis",
+    "chromoblastomycosis",
+    "chromomycosis",
+    "obsolete_chromoblastomycosis"
+  ],
+  "MONDO:0015943": [
+    "Churg-Strauss Syndrome",
+    "Churg-Strauss syndrome",
+    "Eosinophilic Granulomatosis with Polyangiitis",
+    "Eosinophilic granulomatosis with polyangiitis",
+    "eosinophilic granulomatosis with polyangiitis",
+    "obsolete_Churg-Strauss syndrome"
+  ],
+  "MONDO:0016244": [
+    "Atypical Hemolytic Uremic Syndrome",
+    "atypical hemolytic-uremic syndrome"
+  ],
+  "MONDO:0016372": [
+    "Glossopharyngeal Neuralgia",
+    "glossopharyngeal neuralgia"
+  ],
+  "MONDO:0016426": [
+    "Fusariosis",
+    "fusariosis",
+    "obsolete_fusariosis"
+  ],
+  "MONDO:0016532": [
+    "Lennox Gastaut Syndrome",
+    "Lennox-Gastaut Syndrome",
+    "Lennox-Gastaut syndrome",
+    "MACROCEPHALY AND EPILEPTIC ENCEPHALOPATHY"
+  ],
+  "MONDO:0016543": [
+    "Hyperphenylalaninaemia",
+    "Hyperphenylalaninemia",
+    "Hyperphenylalaninemia, Non-Phenylketonuric",
+    "hyperphenylalaninemia due to tetrahydrobiopterin deficiency"
+  ],
+  "MONDO:0016586": [
+    "Mastocytosis, Systemic",
+    "Systemic Mastocytosis",
+    "systemic mastocytosis"
+  ],
+  "MONDO:0016684": [
+    "Anaplastic Astrocytoma",
+    "Anaplastic Astrocytoma, Not Otherwise Specified",
+    "Anaplastic astrocytoma",
+    "anaplastic astrocytoma",
+    "obsolete_anaplastic astrocytoma"
+  ],
+  "MONDO:0017137": [
+    "Onchocerciasis",
+    "obsolete_onchocerciasis",
+    "onchocerciasis"
+  ],
+  "MONDO:0017387": [
+    "Epithelioid Sarcoma",
+    "Sarcoma, Epithelioid",
+    "epithelioid sarcoma"
+  ],
+  "MONDO:0017604": [
+    "Marginal Zone B-Cell Lymphoma",
+    "Marginal Zone Lymphoma",
+    "marginal zone lymphoma",
+    "obsolete_marginal zone B-cell lymphoma"
+  ],
+  "MONDO:0017853": [
+    "Alveolitis, Extrinsic Allergic",
+    "Extrinsic Allergic Alveolitis",
+    "Extrinsic allergic alveolitis",
+    "Hypersensitivity pneumonitis",
+    "extrinsic allergic alveolitis",
+    "hypersensitivity pneumonitis"
+  ],
+  "MONDO:0018088": [
+    "Familial Mediterranean Fever",
+    "familial Mediterranean fever"
+  ],
+  "MONDO:0018097": [
+    "Epileptic spasm",
+    "Salaam Seizures",
+    "Spasms, Infantile",
+    "West Syndrome",
+    "West syndrome",
+    "infantile spasms"
+  ],
+  "MONDO:0018150": [
+    "Gaucher Disease",
+    "Gaucher disease",
+    "Gaucher's disease"
+  ],
+  "MONDO:0018153": [
+    "Erdheim-Chester Disease",
+    "Erdheim-Chester disease",
+    "obsolete_Erdheim-Chester disease"
+  ],
+  "MONDO:0018177": [
+    "Glioblastoma",
+    "Glioblastoma Multiforme",
+    "Glioblastoma multiforme",
+    "Glioblastoma, Not Otherwise Specified",
+    "glioblastoma",
+    "obsolete_glioblastoma multiforme"
+  ],
+  "MONDO:0018229": [
+    "Stevens-Johnson Syndrome",
+    "Stevens-Johnson syndrome",
+    "obsolete_Stevens-Johnson syndrome"
+  ],
+  "MONDO:0018301": [
+    "Chronic interstitial cystitis",
+    "Cystitis, Interstitial",
+    "Interstitial Cystitis",
+    "chronic interstitial cystitis",
+    "interstitial cystitis",
+    "obsolete_interstitial cystitis"
+  ],
+  "MONDO:0018312": [
+    "Histoplasmosis",
+    "histoplasmosis",
+    "obsolete_histoplasmosis"
+  ],
+  "MONDO:0018493": [
+    "Malignant Hyperthermia",
+    "Malignant Hyperthermia Syndrome",
+    "Malignant hyperpyrexia due to anesthesia",
+    "Malignant hyperthermia",
+    "malignant hyperthermia",
+    "malignant hyperthermia of anesthesia"
+  ],
+  "MONDO:0018555": [
+    "Hypogonadism, Isolated Hypogonadotropic",
+    "Hypogonadotropic Hypogonadism",
+    "Hypogonadotropic hypogonadism",
+    "Isolated Hypogonadotropic Hypogonadism",
+    "hypogonadotropic hypogonadism"
+  ],
+  "MONDO:0018612": [
+    "Congenital Hypothyroidism",
+    "Congenital Iodine Deficiency Hypothyroidism",
+    "Congenital Iodine Deficiency Syndrome",
+    "Congenital hypothyroidism",
+    "Congenital iodine deficiency syndrome",
+    "congenital hypothyroidism"
+  ],
+  "MONDO:0018876": [
+    "Lymphoma, Mantle-Cell",
+    "Malignant lymphomatous polyposis",
+    "Mantle Cell Lymphoma",
+    "Mantle cell lymphoma",
+    "Multifocal Lymphomatous Polyposis",
+    "mantle cell lymphoma",
+    "obsolete_Mantle cell lymphoma"
+  ],
+  "MONDO:0018896": [
+    "Purpura, Thrombotic Thrombocytopenic",
+    "Thrombotic Thrombocytopenic Purpura",
+    "thrombotic thrombocytopenic purpura"
+  ],
+  "MONDO:0018905": [
+    "Diffuse Large B-Cell Lymphoma",
+    "Diffuse Large B-Cell Lymphoma, Not Otherwise Specified",
+    "Lymphoma, Large B-Cell, Diffuse",
+    "diffuse large B-cell lymphoma",
+    "obsolete_diffuse large B-cell lymphoma"
+  ],
+  "MONDO:0018906": [
+    "Follicular Lymphoma",
+    "Follicular lymphoma",
+    "Lymphoma, Follicular",
+    "follicular lymphoma"
+  ],
+  "MONDO:0018908": [
+    "Lymphoma, Non-Hodgkin",
+    "Malignant lymphoma - small cleaved cell",
+    "Malignant lymphoma, lymphocytic - poorly differentiated",
+    "Non-Hodgkin Lymphoma",
+    "Non-Hodgkin lymphoma",
+    "non-Hodgkin lymphoma",
+    "obsolete_non-Hodgkins lymphoma"
+  ],
+  "MONDO:0018935": [
+    "Hairy Cell Leukemia",
+    "Leukemia, Hairy Cell",
+    "hairy cell leukemia",
+    "obsolete_hairy cell leukemia"
+  ],
+  "MONDO:0018944": [
+    "Gestational Trophoblastic Neoplasms",
+    "Gestational Trophoblastic Tumor",
+    "Recurrent Gestational Trophoblastic Tumor",
+    "gestational trophoblastic neoplasm"
+  ],
+  "MONDO:0019065": [
+    "Amyloid deposition",
+    "Amyloidosis",
+    "amyloidosis",
+    "obsolete_amyloidosis"
+  ],
+  "MONDO:0019087": [
+    "Adult Cholangiocarcinoma",
+    "Cholangiocarcinoma",
+    "cholangiocarcinoma",
+    "obsolete_cholangiocarcinoma"
+  ],
+  "MONDO:0019100": [
+    "Neuromyelitis Optica",
+    "Subacute myelo-optic neuropathy",
+    "neuromyelitis optica",
+    "obsolete_neuromyelitis optica"
+  ],
+  "MONDO:0019122": [
+    "Idiopathic acute eosinophilic pneumonitis",
+    "Loeffler syndrome",
+    "Loffler Syndrome",
+    "Simple Pulmonary Eosinophilia",
+    "idiopathic acute eosinophilic pneumonia"
+  ],
+  "MONDO:0019124": [
+    "Microscopic Polyangiitis",
+    "Microscopic Polyarteritis",
+    "microscopic polyangiitis",
+    "obsolete_microscopic polyangiitis"
+  ],
+  "MONDO:0019136": [
+    "Mucormycosis",
+    "Phycomycosis",
+    "Zygomycosis",
+    "mucormycosis",
+    "obsolete_mucormycosis"
+  ],
+  "MONDO:0019198": [
+    "Ophthalmia, Sympathetic",
+    "obsolete_sympathetic ophthalmia",
+    "sympathetic ophthalmia"
+  ],
+  "MONDO:0019338": [
+    "Sarcoidosis",
+    "sarcoidosis"
+  ],
+  "MONDO:0019360": [
+    "Rickettsialpox",
+    "rickettsialpox"
+  ],
+  "MONDO:0019402": [
+    "Beta Thalassemia",
+    "beta Thalassemia",
+    "beta thalassemia",
+    "beta-Thalassemia"
+  ],
+  "MONDO:0019434": [
+    "Juvenile-Onset Still Disease",
+    "Rheumatoid Arthritis, Systemic Juvenile",
+    "Still Disease",
+    "Systemic Juvenile Idiopathic Arthritis",
+    "Systemic onset juvenile chronic arthritis",
+    "obsolete_systemic juvenile idiopathic arthritis",
+    "systemic-onset juvenile idiopathic arthritis"
+  ],
+  "MONDO:0019499": [
+    "Turner Syndrome",
+    "Turner syndrome",
+    "XO Syndrome"
+  ],
+  "MONDO:0019610": [
+    "Zollinger Ellison Syndrome",
+    "Zollinger-Ellison Syndrome",
+    "Zollinger-Ellison syndrome",
+    "obsolete_Zollinger-Ellison Syndrome"
+  ],
+  "MONDO:0019623": [
+    "Angioedemas, Hereditary",
+    "Hereditary Angioedema",
+    "hereditary angioedema"
+  ],
+  "MONDO:0019632": [
+    "Bannwarth syndrome",
+    "Borrelia Burgdorferi Infection",
+    "Lyme Disease",
+    "Lyme Neuroborreliosis",
+    "Lyme disease",
+    "obsolete_Lyme disease"
+  ],
+  "MONDO:0019801": [
+    "Addisonian crisis",
+    "Adrenal Crisis",
+    "acute adrenal insufficiency"
+  ],
+  "MONDO:0019933": [
+    "Acromegaly",
+    "Elevated circulating growth hormone concentration",
+    "Growth hormone excess",
+    "acromegaly",
+    "obsolete_acromegaly"
+  ],
+  "MONDO:0020108": [
+    "Anemia, Hemolytic, Autoimmune",
+    "Autoimmune Hemolytic Anemia",
+    "Autoimmune hemolytic anemia",
+    "autoimmune hemolytic anemia",
+    "obsolete_Anemia, Hemolytic, Autoimmune"
+  ],
+  "MONDO:0020283": [
+    "Uveitis",
+    "obsolete_uveitis",
+    "uveitis"
+  ],
+  "MONDO:0020333": [
+    "Aggressive Systemic Mastocytosis",
+    "aggressive systemic mastocytosis"
+  ],
+  "MONDO:0020334": [
+    "Leukemia, Mast-Cell",
+    "Mast Cell Leukemia",
+    "mast cell leukemia",
+    "mast-cell leukemia",
+    "obsolete_mast-cell leukemia"
+  ],
+  "MONDO:0020480": [
+    "Combined molybdoflavoprotein enzyme deficiency",
+    "Molybdenum Cofactor Deficiency",
+    "Molybdenum cofactor deficiency",
+    "molybdenum cofactor deficiency",
+    "sulfite oxidase deficiency due to molybdenum cofactor deficiency"
+  ],
+  "MONDO:0020547": [
+    "Chronic Graft Versus Host Disease",
+    "Chronic graft-versus-host disease",
+    "chronic graft versus host disease"
+  ],
+  "MONDO:0020696": [
+    "Decreased circulating vitamin B12 concentration",
+    "Vitamin B 12 Deficiency",
+    "Vitamin B12 Deficiency",
+    "obsolete_vitamin B12 deficiency",
+    "vitamin B12 deficiency"
+  ],
+  "MONDO:0021107": [
+    "Narcolepsy",
+    "narcolepsy"
+  ],
+  "MONDO:0021187": [
+    "Hyperlipidemia",
+    "Hyperlipidemias",
+    "hyperlipidemia"
+  ],
+  "MONDO:0021667": [
+    "Neuralgia",
+    "Paroxysmal Nerve Pain",
+    "neuralgia",
+    "obsolete_neuralgia"
+  ],
+  "MONDO:0021680": [
+    "Streptococcal Infection",
+    "Streptococcal Infections",
+    "obsolete_streptococcal infection",
+    "streptococcal infection"
+  ],
+  "MONDO:0022205": [
+    "Pustular psoriasis",
+    "pustular psoriasis"
+  ],
+  "MONDO:0024275": [
+    "Amebic Colitis",
+    "Amebic colitis",
+    "Dysentery, Amebic",
+    "amebic dysentery"
+  ],
+  "MONDO:0024343": [
+    "Scurfiness of scalp",
+    "pityriasis simplex"
+  ],
+  "MONDO:0033821": [
+    "Fungal Keratitis",
+    "Fungal keratitis",
+    "fungal keratitis"
+  ],
+  "MONDO:0041052": [
+    "Neuralgia, Postherpetic",
+    "Post-Herpetic Neuralgia",
+    "Postherpetic neuralgia",
+    "postherpetic neuralgia"
+  ],
+  "MONDO:0041656": [
+    "Acute ST segment elevation myocardial infarction (disorder)",
+    "ST Elevation Myocardial Infarction",
+    "ST segment elevation myocardial infarction",
+    "ST-elevation myocardial infarction"
+  ],
+  "MONDO:0042233": [
+    "Disseminated Candidiasis",
+    "Systemic candidiasis",
+    "disseminated candidiasis"
+  ],
+  "MONDO:0043233": [
+    "Dermatitis, Exfoliative",
+    "Erythroderma",
+    "Exfoliative dermatitis",
+    "Red scaly skin caused by inflammatory skin disease",
+    "exfoliative dermatitis",
+    "obsolete_exfoliative dermatitis"
+  ],
+  "MONDO:0043537": [
+    "Cluster Headache",
+    "Cluster headache",
+    "cluster headache syndrome"
+  ],
+  "MONDO:0043653": [
+    "Cold Sore",
+    "Herpes Labialis",
+    "herpes labialis"
+  ],
+  "MONDO:0043789": [
+    "Serum Sickness",
+    "serum sickness"
+  ],
+  "MONDO:0044212": [
+    "Chronic Spontaneous Urticaria",
+    "Chronic urticaria",
+    "chronic idiopathic urticaria",
+    "chronic spontaneous urticaria"
+  ],
+  "MONDO:0100096": [
+    "COVID-19",
+    "COVID-19 Infection",
+    "COVID-19 Virus Disease"
+  ],
+  "MONDO:0100135": [
+    "Developmental and Epileptic Encephalopathy 6A",
+    "Dravet Syndrome",
+    "Dravet syndrome",
+    "Infantile Severe Myoclonic Epilepsy"
+  ],
+  "MONDO:0100244": [
+    "Hemoglobinuria, Paroxysmal",
+    "Paroxysmal Nocturnal Hemoglobinuria",
+    "Paroxysmal nocturnal hemoglobinuria",
+    "paroxysmal nocturnal hemoglobinuria"
+  ],
+  "MONDO:0100339": [
+    "Friedreich Ataxia",
+    "Friedreich ataxia"
+  ],
+  "MONDO:0100342": [
+    "Malignant Glioma",
+    "high grade glioma",
+    "malignant glioma"
+  ],
+  "MONDO:0100347": [
+    "Carcinoid Syndrome",
+    "Malignant Carcinoid Syndrome",
+    "carcinoid syndrome",
+    "obsolete_carcinoid syndrome"
+  ],
+  "MONDO:0600008": [
+    "Cytokine Release Syndrome",
+    "cytokine release syndrome"
+  ],
+  "MONDO:0700217": [
+    "Neonatal Sepsis",
+    "Neonatal sepsis",
+    "Sepsis of the newborn",
+    "neonatal sepsis"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "85054ee5-59df-307e-b791-58907cd98f2d",
+  "category": [
+    "biolink:EntityToDiseaseAssociation"
+  ],
+  "subject": "CHEBI:77733",
+  "predicate": "biolink:treats",
+  "object": "MONDO:0005252",
+  "publications": [
+    "dailymed:dailymed:006cf920-04ae-0b53-cb91-85481972abc2",
+    "dailymed:dailymed:02203683-e846-8ff9-e063-6394a90a9353",
+    "dailymed:dailymed:05b1c51a-5fa6-421e-8cbf-6fa1bcf3a60c",
+    "dailymed:dailymed:05d865d6-0582-46f1-a1fc-6df60d70b93c",
+    "dailymed:dailymed:0742cf97-601b-4c13-a6c3-1a6a616ed292",
+    "dailymed:dailymed:0b00ec93-0bb3-4181-a6ef-45206f0621f7",
+    "dailymed:dailymed:0fcd8102-2376-2adf-e054-00144ff88e88",
+    "dailymed:dailymed:18f6d349-8c5c-4443-ac65-16bf6619ecdc",
+    "dailymed:dailymed:19cb23bd-cc6d-45fc-a1fc-b4130ea460a6",
+    "dailymed:dailymed:1e6ea5f2-7b3c-4a6f-a449-6af037261dab",
+    "dailymed:dailymed:2712ab16-122b-4f44-a687-e2cb3c04019e",
+    "dailymed:dailymed:2c951668-be17-464f-bf2b-055b046effd4",
+    "dailymed:dailymed:2f232216-db62-4dc6-a5a7-9139d7ac7589",
+    "dailymed:dailymed:2f839b5c-b8e7-40df-887f-7df94326fc7b",
+    "dailymed:dailymed:3283bba6-05dd-3766-e063-6394a90ada69",
+    "dailymed:dailymed:343724eb-e80b-4729-80e7-6b8028713ea1",
+    "dailymed:dailymed:34ebe927-ef58-4799-8a9e-3e8a8d6f4728",
+    "dailymed:dailymed:3bee2d26-138c-4641-a217-a38d3d657461",
+    "dailymed:dailymed:3c215e6c-d85a-4102-a1c2-f00fa3169a55",
+    "dailymed:dailymed:3c215e6c-d85a-4102-a1c2-f00fa3169a55",
+    "dailymed:dailymed:3f14442c-8178-0bad-e054-00144ff8d46c",
+    "dailymed:dailymed:418751ec-5a65-48cb-b8a8-87172b7183d0",
+    "dailymed:dailymed:4ac4f9c0-2591-0db9-e054-00144ff88e88",
+    "dailymed:dailymed:4e14ecee-0ca1-66f0-e054-00144ff8d46c",
+    "dailymed:dailymed:4f188702-bdac-44e1-b11c-e9af08346843",
+    "dailymed:dailymed:4f2ef5e8-a11f-4123-af41-95f4ed7377d6",
+    "dailymed:dailymed:4ffa579e-1d85-4b3b-ae06-6a9334e0f9e1",
+    "dailymed:dailymed:522bafc3-4352-4840-b296-e399202c4162",
+    "dailymed:dailymed:5467dad4-f3ba-4036-b5f4-4d2d4d5abc34",
+    "dailymed:dailymed:5501208c-aa2b-47aa-89f7-87f4d4a73fd0",
+    "dailymed:dailymed:5dc5f087-c8da-4ed0-b532-ae44508958aa",
+    "dailymed:dailymed:5f665d08-e1e4-422a-88c2-d8834abf9e1a",
+    "dailymed:dailymed:62c3aadf-412e-41a5-9e57-2c48d962f90a",
+    "dailymed:dailymed:660a83a9-60be-42d5-bc70-fe384e93beaa",
+    "dailymed:dailymed:79e35076-86e5-4fbd-9ad1-d45a5120dd38",
+    "dailymed:dailymed:7b321aa1-1b53-26d5-e053-2991aa0a1373",
+    "dailymed:dailymed:81c9a5ea-ceab-4a5d-ba01-1aa4a74b6365",
+    "dailymed:dailymed:87f25fef-a8f0-44b2-bc85-3970dad87ebb",
+    "dailymed:dailymed:89092aba-2186-ac09-e053-2a95a90ab4cc",
+    "dailymed:dailymed:8a7002e7-e01f-43f9-e053-2a95a90a7191",
+    "dailymed:dailymed:8f549319-bbd9-4255-89fb-94cb9372517e",
+    "dailymed:dailymed:8ff38ce7-5126-41fb-ab4d-73a42c1c5617",
+    "dailymed:dailymed:9d529fe3-7b5c-4dde-9a8c-440a969df359",
+    "dailymed:dailymed:9d529fe3-7b5c-4dde-9a8c-440a969df359",
+    "dailymed:dailymed:a0343397-897b-46d6-943f-a87e07e1de10",
+    "dailymed:dailymed:a32f346e-71cf-cc11-e053-2a95a90ae88c",
+    "dailymed:dailymed:a58f5f77-7e88-d622-e053-2a95a90a0d35",
+    "dailymed:dailymed:a6de732a-fe48-486d-bb05-0a9fff6f42d7",
+    "dailymed:dailymed:a9cc4b42-184c-587e-e053-2995a90aa6d5",
+    "dailymed:dailymed:adc77fea-db39-aac5-e053-2995a90ad458",
+    "dailymed:dailymed:af1249b0-e889-4f02-bdc2-54862de0545e",
+    "dailymed:dailymed:b0eeada4-1010-4c11-b408-29f9a1af23c0",
+    "dailymed:dailymed:b800f810-0a23-4eb0-9ef2-da3979e084a5",
+    "dailymed:dailymed:ba1bf1ae-9347-4d17-998b-14bf7b5984ce",
+    "dailymed:dailymed:c635f442-2349-4820-877a-a42e5f0a44b5",
+    "dailymed:dailymed:c70967ed-57df-0921-e053-2995a90a7b9b",
+    "dailymed:dailymed:c7a54ee0-80c0-4c7e-a6a3-cb60142f860c",
+    "dailymed:dailymed:c86084bc-33aa-eece-5a96-6c0dad2d1a32",
+    "dailymed:dailymed:cbf00b1c-4767-4d3d-b590-6dfe7425d282",
+    "dailymed:dailymed:d23c757d-39f8-48c3-ba63-df2cbe58c516",
+    "dailymed:dailymed:d4a6c046-81fe-4b2a-9cb0-adb3f037eec7",
+    "dailymed:dailymed:db990ce1-b193-4a81-e053-2a95a90a627b",
+    "dailymed:dailymed:e07b3574-9259-4f64-a9ae-f4e0e64800b6",
+    "dailymed:dailymed:e08c07bf-58b4-6fa2-e053-2a95a90aca32",
+    "dailymed:dailymed:e36e485f-fbed-4e30-9a63-984931f2e54e",
+    "dailymed:dailymed:e3c896c5-52d5-7771-e053-2995a90a30db",
+    "dailymed:dailymed:ebc9a09a-7b5f-4df6-ace7-31185d469b28",
+    "dailymed:dailymed:ed182ebe-8299-4680-9dea-ef79d30db683",
+    "dailymed:dailymed:ed1e0c14-3571-43f9-88fc-5a4d2b598263",
+    "dailymed:dailymed:f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
+    "dailymed:dailymed:f2f059a1-0cf9-a5d6-e053-2a95a90a3dab",
+    "dailymed:dailymed:f3b3580a-4e6b-402f-bf88-f3157d9139b1",
+    "dailymed:dailymed:f7814f9a-e589-4041-e053-6294a90a29e3",
+    "dailymed:dailymed:f88dfe56-08bc-46b1-8f05-f886a16a89bc",
+    "dailymed:dailymed:f9399858-fd7a-4b73-8759-3e5bf3af2666",
+    "dailymed:dailymed:fb4e343d-5b31-4d6a-81b9-f814ed612950",
+    "dailymed:dailymed:fd1b433f-1895-4af0-9d1f-3901c6d34c20",
+    "dailymed:dailymed:fdb7cd57-d33c-f5a3-e053-6294a90aff31",
+    "dailymed:dailymed:fe0583bf-9986-e01e-e053-6294a90a0b26",
+    "dailymed:dailymed:fe05b8d8-fdee-903b-e053-6394a90a2e05",
+    "dailymed:dailymed:febce7aa-7f5a-e0c1-e053-6394a90aebc4"
+  ],
+  "sources": [
+    {
+      "id": "infores:multiomics-drugapprovals",
+      "category": [
+        "biolink:RetrievalSource"
+      ],
+      "resource_id": "infores:multiomics-drugapprovals",
+      "resource_role": "primary_knowledge_source",
+      "upstream_resource_ids": [
+        "infores:dailymed",
+        "infores:faers"
+      ],
+      "source_record_urls": [
+        "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=85054ee5-59df-307e-b791-58907cd98f2d"
+      ]
+    },
+    {
+      "id": "infores:faers",
+      "category": [
+        "biolink:RetrievalSource"
+      ],
+      "resource_id": "infores:faers",
+      "resource_role": "supporting_data_source"
+    },
+    {
+      "id": "infores:dailymed",
+      "category": [
+        "biolink:RetrievalSource"
+      ],
+      "resource_id": "infores:dailymed",
+      "resource_role": "supporting_data_source"
+    }
+  ],
+  "knowledge_level": "knowledge_assertion",
+  "agent_type": "manual_validation_of_automated_agent",
+  "clinical_approval_status": "approved_for_condition",
+  "FDA_regulatory_approvals": [
+    "NDA018925"
+  ],
+  "original_subject": "CHEBI:77733",
+  "original_object": "MONDO:0005252"
+}

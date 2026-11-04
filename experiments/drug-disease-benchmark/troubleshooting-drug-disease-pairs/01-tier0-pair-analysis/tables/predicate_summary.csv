@@ -1,0 +1,40 @@
+direction,predicate,edges,unique_pairs,primary_knowledge_sources
+drug->disease,biolink:in_clinical_trials_for,620245,618762,clinicaltrials-kp=616137; ttd=3903; drug-repurposing-hub=205
+drug->disease,biolink:treats_or_applied_or_studied_to_treat,354731,329934,text-mining-provider-targeted=273460; semmeddb=43750; ctd=37467; drug-repurposing-hub=54
+drug->disease,biolink:has_side_effect,138291,138291,sider=138291
+drug->disease,biolink:contributes_to,99977,99977,text-mining-provider-targeted=99977
+drug->disease,biolink:correlated_with,67562,67528,ctd=66042; icees-kg=1520
+drug->disease,biolink:applied_to_treat,65254,65254,faers=65254
+drug->disease,biolink:treats,58848,53176,clinicaltrials-kp=38129; drugcentral=9608; multiomics-drugapprovals=5095; drug-repurposing-hub=3563; ttd=2453
+drug->disease,biolink:related_to,23181,23181,semmeddb=23181
+drug->disease,biolink:contraindicated_in,22859,22125,drugcentral=18954; medi=3905
+drug->disease,biolink:causes,20260,20260,semmeddb=20260
+drug->disease,biolink:affects,13661,13661,semmeddb=13661
+drug->disease,biolink:disrupts,3312,3312,semmeddb=3312
+drug->disease,biolink:predisposes_to_condition,3033,3033,semmeddb=3033
+drug->disease,biolink:positively_correlated_with,2791,2791,ctd=2410; icees-kg=345; cohd=36
+disease->drug,biolink:correlated_with,1728,1728,icees-kg=1728
+drug->disease,biolink:studied_to_treat,1645,1645,ttd=1645
+disease->drug,biolink:positively_correlated_with,574,574,icees-kg=548; cohd=26
+drug->disease,biolink:negatively_correlated_with,367,367,ctd=303; icees-kg=62; cohd=2
+disease->drug,biolink:produces,310,310,semmeddb=310
+drug->disease,biolink:in_preclinical_trials_for,275,275,ttd=215; drug-repurposing-hub=60
+disease->drug,biolink:related_to,256,256,semmeddb=256
+drug->disease,biolink:located_in,155,155,semmeddb=155
+disease->drug,biolink:coexists_with,87,87,semmeddb=87
+disease->drug,biolink:negatively_correlated_with,71,71,icees-kg=71
+disease->drug,biolink:has_part,61,61,semmeddb=61
+drug->disease,biolink:coexists_with,59,59,semmeddb=59
+disease->drug,biolink:occurs_in,39,39,semmeddb=39
+disease->drug,biolink:located_in,39,39,semmeddb=39
+disease->drug,biolink:affects,38,38,semmeddb=38
+drug->disease,biolink:exacerbates_condition,33,33,semmeddb=33
+disease->drug,biolink:has_input,29,29,semmeddb=29
+disease->drug,biolink:interacts_with,20,20,semmeddb=20
+drug->disease,biolink:interacts_with,16,16,semmeddb=16
+disease->drug,biolink:contributes_to,15,15,text-mining-provider-targeted=15
+drug->disease,biolink:diagnoses,9,9,drug-repurposing-hub=8; drugcentral=1
+drug->disease,biolink:ameliorates_condition,5,5,drug-repurposing-hub=5
+drug->disease,biolink:has_chemical_role,1,1,drug-repurposing-hub=1
+drug->disease,biolink:has_part,1,1,semmeddb=1
+drug->disease,biolink:produces,1,1,semmeddb=1

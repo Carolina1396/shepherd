@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/downloadzipfile.cfm?setId=1b63177f-17e5-4b5a-8924-7023efe016aa",
+    "file": "raw/naproxen-label.zip",
+    "download_completed_utc": "2026-11-02T19:57:26.520442+00:00",
+    "bytes": 291502,
+    "sha256": "b3229afdef6d1de81ce0e5f40a52475d9cc209cb911a4d44f41c13e8e79b4465",
+    "response_headers": "raw/naproxen-label.zip.headers"
+  },
+  {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1b63177f-17e5-4b5a-8924-7023efe016aa/history.json",
+    "file": "raw/naproxen-history.json",
+    "download_completed_utc": "2026-11-02T19:57:27.059448+00:00",
+    "bytes": 901,
+    "sha256": "865010dcd7071738894a0b20bba5163ba868403f2d47360a4843deac73a7d9aa",
+    "response_headers": "raw/naproxen-history.json.headers"
+  },
+  {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/spl-resources-all-drug-labels.cfm",
+    "file": "raw/bulk-downloads.html",
+    "download_completed_utc": "2026-11-02T19:57:26.869442+00:00",
+    "bytes": 112804,
+    "sha256": "9be8629d2b0cab7096b6ad0aa4167fd7e620ecdfe3df426e347ca866948b87f9",
+    "response_headers": "raw/bulk-downloads.html.headers"
+  }
+]

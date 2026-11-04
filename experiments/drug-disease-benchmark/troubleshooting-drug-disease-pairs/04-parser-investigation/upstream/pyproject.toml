@@ -1,0 +1,361 @@
+[project]
+name = "dakp-pipeline"
+version = "1.25.0"
+description = "Drug Approvals Knowledge Provider (DAKP) rebuild: reproducible, content-addressed pipeline producing DailyMed / Drugs@FDA / FAERS / MEDI treatment and contraindication assertion tables for Tablassert."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "ISB" }, { name = "Skye Lane Goetz", email = "sgoetz@isbscience.org" }]
+license = { text = "Apache-2.0" }
+keywords = [
+    "knowledge graph",
+    "ncats translator",
+    "drug approvals",
+    "dailymed",
+    "faers",
+    "etl pipeline",
+]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+# Runtime dependencies (see plans/airflow-native-go-workers.md). Everything the pipeline needs
+# is a HARD dependency installed by ONE command (`uv sync`, or `make install`) — there are no
+# optional extras. Airflow 3 is the only orchestrator (the DAG drives the pipeline and the Go
+# extractors run as native Airflow Go SDK bundle workers); the biomedical NER backend (the
+# GLiNER2 checkpoint) and the Tablassert KG build are required for a full
+# production run. `gliner2` is
+# still imported lazily (no torch at module load) and the mock profile + tests never touch the
+# network or Tablassert, but a single `uv sync` now materializes the whole production runtime.
+# Tablassert is pinned to the `[qc]` variant because the production KG build runs
+# `tablassert build-kg --qc` (the SapBERT embedding audit from 12.0 plus 13.0's stage-7
+# fail-the-build assertions on the final NDJSON: empty-or-null-values, unnamed-nodes,
+# unidentified-nodes, incomplete-edges). The >= 18.1.0 floor closes the category-vocabulary
+# hole behind the v1.11.2 35-edge bare-`biolink:Association` leak: the config `Categories`
+# enum now names every category the fullmap emits (a curated `CATEGORY_OVERRIDES` table covers
+# biolink mixins like `GenomicEntity` that the Entity-subclass scan can't derive), so
+# `category_override` pins resolve instead of silently falling back to `biolink:Association`;
+# `filter_and_rank` drops categories the vocabulary can't name when `avoid` is set (an allow-list
+# by complement only names what the enum knows); and `--qc` fails the build on any edge demoted
+# to bare `biolink:Association` when a section declares a `category_override`. DAKP's
+# `run_tablassert` contract gate re-validates the emitted pair independently of all three.
+# The 18.0.0 floor it supersedes retains `original_*` edge fields and deterministically
+# aggregates distinct values during collision merges as sorted pipe-delimited strings; the
+# obsolete `--no-original` option and API parameters are removed. The 17.0.0 (#142) `--threads` /
+# `threads` removal remains part of the supported contract, so DAKP passes no worker count
+# anywhere, and 17.0.1 (#145) fixes the fullmap resolver to retain every CURIE tied on a term's
+# best ranking tier instead of keeping one arbitrary winner — a DAKP mention that maps equally
+# well to several CURIEs now expands to one edge per tied CURIE rather than silently shipping
+# whichever the sort surfaced. The release-mode low-case drop for `applied_to_treat` applies automatically under `--release` (#123, 16.1 —
+# renamed to read `number_of_cases` in 16.6.0 (#137); minimum lowered 25 -> 10 in 16.7.0
+# (#141)), and the generated graph config emits `uuid_on_collision: merge` (#126, 16.2 —
+# edges deriving one id merge: list-valued evidence unions sorted, scalars first-wins;
+# Tablassert's Graph model is `extra="forbid"`, so 16.2 was the hard floor). The FAERS table
+# also annotates `case_ids` onto the `supporting_case_ids` edge extra: on Tablassert >= 16.6
+# the merge unions those lists and recomputes `number_of_cases` as the exact union size (the
+# extra unique cases of mention-variant rows are added, not dropped first-wins) and strips
+# the carrier before the final NDJSON. The 16.0 floor was
+# required: the emitted configs use
+# `statement.category_override` (SkyeAv/Tablassert#118, 15.0) to pin
+# `EntityToDiseaseAssociation` / `EntityToPhenotypicFeatureAssociation` per object category, and
+# the canonical `regulatory_approvals` edge slot is declared NATIVELY on those pinned classes by
+# biolink-model 4.4.5, which renamed the FDA-specific `FDA_regulatory_approvals` to it, so it
+# survives `prune_to_class` instead of being nulled and rescued into the pruned column. Tablassert
+# 18.0 had carried the slot there ahead of the model through a class-scoped `CLASS_FIELD_OVERRIDES`
+# grant and retired that grant when 4.4.5 landed. Both are emitted UNCONDITIONALLY, with no compat
+# probe. The contraindication table's nullable `disease_context_qualifier` survives the same way:
+# 4.4.5's mixin consolidation attaches it to the whole disease/phenotype association family, where
+# 15.1's `CLASS_FIELD_OVERRIDES` (#120) had granted it to the pinned classes while Biolink declared
+# it only on the chemical-to-disease lineage. 16.0's `uuid_fields` (#122) pins edge identity to the resolved
+# statement; the generated config declares it UNCONDITIONALLY (see
+# `dakp_pipeline.tablassert.UUID_FIELDS`). The generated
+# provenance override likewise emits `ManualProvenance.upstream_source_record_urls`
+# (SkyeAv/Tablassert#104, added in 12.1), and the generated
+# `avoid:`/`prioritize:` lists assume the biolink-model 4.4.5 category names (13.0 renames
+# `AffinityMeasurement` -> `ProteinLigandAssayResult`; regenerate tables/*.yaml on any Biolink
+# churn, never hand-edit). 13.0 also reworks the inlined supporting study (Study.id is the
+# publication CURIE or config stem, no `#` composition; study metadata lands as typed
+# `Study.study_*` fields) and makes `effect_size` a real float Association slot — neither
+# touches DAKP's emitted config, only KG content. 19.0's `CLASS_FIELD_OVERRIDES` (#188) granted the
+# sparse qualifier stack (`anatomical_context_qualifier`, `sex_qualifier`,
+# `population_context_qualifier`, `frequency_qualifier`, `temporal_context_qualifier`) to the two
+# pinned classes so those qualifiers survive `prune_to_class` on the edge; 19.5.1's biolink-model
+# 4.4.5 then attached `anatomical_context_qualifier` and `frequency_qualifier` to the whole
+# disease/phenotype family natively (as it did `disease_context_qualifier`, noted above) and added
+# `sex_qualifier` to `EntityToPhenotypicFeatureAssociation`, so Tablassert dropped those four
+# grants. 19.7.0's biolink-model 4.4.6 then attached `population_context_qualifier` to both
+# pinned classes natively, so Tablassert dropped that grant too; still granted, still deliberately
+# ahead of the model: `temporal_context_qualifier` on both pinned classes, `sex_qualifier` on
+# `EntityToDiseaseAssociation`. Fullmaps must be
+# `tablassert.fullmap.v6` redb files: 19.0 rebased level-one normalization onto stemmed,
+# deduped, byte-sorted tokens, which changed the RECORDS key SPACE, so a v5 database is not an
+# older layout of the same data and its keys can never be hit by a normalized query; v1-v5 are
+# rejected on read (rebuild with `tablassert build-fullmap`). 19.3.0 moves the whole pipeline onto
+# the polars 2.0 streaming engine and makes `pyarrow` a Tablassert core dependency, output parity
+# preserved; that is what forces the polars floor below. 19.4.0 audits every enum-ranged qualifier
+# column against its closed Biolink vocabulary during the build and fails the build with
+# `qualifier-vocabulary-violation`. None of DAKP's six qualifier slots is enum-ranged (they are
+# CURIE-ranged and entity-resolved through the fullmap), so the audit cannot fire on a DAKP build,
+# and `tests/unit/test_tablassert_configs.py::test_dakp_qualifiers_are_not_enum_ranged` keeps it
+# that way. 19.5.0 adds `parquet` as a table source kind; DAKP ships TSV.
+# 20.0.0 removes the experimental agent / GEPA-optimize / distillation surfaces (DAKP never
+# invoked them: the runner shells out to `build-kg` only) and swaps the QC stage-4 checkpoint to
+# RENCI's Babel-fine-tuned SapBERT, moving its cache dir `.tablassert/sapbert/` ->
+# `.tablassert/sapbert-babel/` (one re-download; stale `sapbert/` dirs can be deleted).
+# 21.0.0 folds `validate-infores` into `validate-kgx` (no DAKP change: the runner contract gate
+# invokes `validate` / `validate-kgx`, never the removed command), re-homes DERIVED-path
+# `source_record_urls` onto the supporting entry matching the publication repository (DAKP
+# declares an explicit `provenance.override` per section, and override sections stay
+# byte-identical), and renames the inlined supporting Study to `<config.yaml> SECTION <n>` (KG
+# content only, no config change). 22.0.0 removes the `no_map` node mode DAKP never declared and
+# blocks the generic probe-key blocklist in its NORMALIZED forms, so a cell holding `expression`,
+# `variable`, `exposure`, `not applicable`, or `p_value` no longer resolves to a UMLS concept.
+# 22.0.1 stages the dedup output before publishing, so a failed `build-kg` dedup pass can no
+# longer destroy the previously published graph. 22.1.0 re-enables `species_context_qualifier`
+# as a declarable CURIE-ranged qualifier on every association class and adds
+# `NodeEncoding.taxon_from`; DAKP's species context wiring depends on both.
+dependencies = [
+    # Bundles a statically-linked aria2c binary (PyPI dist `aria2`, import name `aria2c`) so the
+    # FAERS + Drugs@FDA fetchers get multi-connection downloads with no separate system install.
+    # Only 0.0.1b0 is published, hence the explicit pre-release pin. aria2c is GPLv2 but runs as a
+    # separate subprocess (not linked), so it does not affect this project's Apache-2.0 license;
+    # disable at runtime with DAKP_ARIA2=0 to fall back to stdlib urllib downloads.
+    "aria2>=0.0.1b0",
+    "apache-airflow>=3,<4",
+    "blake3>=1.0.0",
+    "cyclopts>=4",
+    # Avro models + writer for the `ner_export` GLiNER2 training-data bundle. The models in
+    # `dakp_pipeline.ner_export` mirror RelMedNER's `relmedner.models` TrainingExample tree
+    # field-for-field under the same Avro namespace (`relmedner.ingests`), so the exported
+    # `examples.avro` is schema-compatible with RelMedNER's own `build-dataset` output (pinned
+    # by the committed schema snapshot `tests/eval/ner_training_schema.json`). The `[pydantic]`
+    # extra is required for `dataclasses_avroschema.pydantic.AvroBaseModel`; fastavro is the
+    # record writer (also dataclasses-avroschema's serialization backend, pinned explicitly
+    # because the export imports it directly).
+    "dataclasses-avroschema[pydantic]>=0.70.9",
+    "fastavro>=1.12",
+    # GLiNER2 (import name `gliner2`) is the NER production backend: `AutoExtractor` loads the
+    # boundary checkpoint and extracts schema-conditioned zero-shot entities. Deliberately the
+    # BASE package, NOT `gliner2[local]`: the `[local]` extra hard-pins `transformers<5,>=4.38`
+    # and `torch<3`, and transformers 4.x is unresolvable next to `tablassert[qc]`, whose
+    # sentence-transformers 5.6 requires transformers 5.x. gliner2's base deps are only
+    # pydantic/requests/tqdm/urllib3 — torch + transformers arrive through the explicit cu126
+    # torch pin below and tablassert[qc] instead, so the runtime still has everything the
+    # extractor needs without a version conflict. Imported lazily by
+    # `dakp_pipeline.ner.ner._load_model` (no torch at module load). The >=2.1 floor is the
+    # first release with the GLiNER2.5 boundary architecture (`BoundaryExtractor`, selected
+    # automatically by `AutoExtractor` from the checkpoint's `architecture` field) that the
+    # shipped `fastino/gliner2.5-base-v1` checkpoint requires; 2.0.0 only knows the span
+    # architecture and cannot load it.
+    "gliner2>=2.1,<3",
+    "huggingface_hub>=0.24",
+    "loguru>=0.7.3",
+    # Required by gliner2's own import chain but NOT declared as a base dependency: `AutoExtractor
+    # .from_pretrained` -> `gliner2.inference.engine` -> `inference.runtime` -> `training.trainer`
+    # does an unconditional top-level `from peft import PeftModel`, so loading any local checkpoint
+    # fails with ModuleNotFoundError unless peft is present (gliner2 2.0.0 declares it only under the
+    # `[local]`/`[train]` extras). Added directly instead of taking `gliner2[local]` because that
+    # extra caps `transformers<5` (see the gliner2 entry above); peft's own constraint is unpinned,
+    # so transformers 5.x + torch 2.8 cu126 stay intact. peft also pulls `accelerate`.
+    "peft>=0.10,<1",
+    "pendulum>=3",
+    # tablassert >=19.3.0 requires `polars>=2.0.0rc2` (19.2.0 was the last on polars 1.x), so the
+    # tablassert floor below forces the polars 2.0 prerelease; pinned here explicitly so the
+    # lock's prerelease is a stated choice, not a transitive surprise. Gate (wenceslaus, branch
+    # lock): unit + integration green, and the run_tablassert parity build vs the 1.15.0 manifest.
+    # Capped below 3 because DAKP builds frames directly (`assertions/*`, `legacy_tsv`, `runtime`,
+    # `extract/ema_registry`'s `pl.read_excel`).
+    "polars>=2.0.0rc2,<3",
+    "pydantic>=2.12.0",
+    # `[cli]` and `[log]` became OPTIONAL in 19.0: the `tablassert` console script `DAKP`'s runner
+    # shells out to now preflights the `[cli]` extra (cyclopts + rich) and exits before importing
+    # the app without it, and logging is a silent no-op without `[log]` (loguru), so a build would
+    # emit no progress or warning logs at all. Both are load-bearing for `run_tablassert`, hence
+    # explicit. `[qc]` still backs the `--qc` audit. 22.1.0 is the floor because the species
+    # context qualifier DAKP emits (`species_context_qualifier`, a CURIE-ranged slot on every
+    # association) is declarable only from there, and `NodeEncoding.taxon_from` (per-row
+    # taxon-scoped resolution) lands in the same release; see the version-coupling notes above.
+    "tablassert[cli,log,qc]>=22.1.0,<23",
+    # torch is transitive (sentence-transformers via tablassert[qc]; gliner2 needs it too but
+    # only declares it under the `[local]`/`[train]` extras we do not use) but pinned here so
+    # the CUDA wheel selection is explicit. Two hardware constraints of the build host
+    # (wenceslaus: 4x Tesla P100-PCIE-16GB, compute capability 6.0, CUDA 12.8 driver) force it:
+    # (1) the default PyPI wheels are built for CUDA 13 (+cu130) and refuse to initialize on a
+    # CUDA 12.8 driver ("driver too old, found version 12080"); (2) PyTorch removed Maxwell and
+    # Pascal kernels from its CUDA 12.8/12.9 binaries starting with release 2.8 (July 2025
+    # packaging policy), so every torch >=2.8 from the cu128 index — and cuDNN >=9.19 in
+    # general — hard-fails on the P100s ("sm_60 is not compatible", "cuDNN ... SM < 7.5").
+    # Only the cu126 wheel line still ships sm_60 kernels with a P100-compatible cuDNN (9.10);
+    # a CUDA 12.6 runtime runs fine on the 12.8 driver. Hence torch 2.8.x from the cu126 index.
+    # See [tool.uv.sources] / [[tool.uv.index]] below.
+    "torch>=2.8,<2.9",
+    # Calamine engine behind `pl.read_excel` (the EMA medicines XLSX). Tablassert >= 19.3.0 requires
+    # >= 0.21.0, so a lower DAKP floor would only ever be resolved away.
+    "fastexcel>=0.21.0",
+    # Text layer of the EMA product-information (SmPC) PDFs (`extract.ema_smpc`). Pure Python, no
+    # system libraries, BSD-3-Clause (Apache-2.0 compatible). Verified on a live EMA document:
+    # pypdf 6.19.0 recovers the QRD headings (`4.1 Therapeutic indications`, `4.3 Contraindications`).
+    "pypdf>=6.19,<7",
+]
+
+[dependency-groups]
+test = [
+    "pytest>=9.0.0",
+    "pytest-cov>=7.1.0",
+    "pytest-xdist>=3.8.0",
+]
+typecheck = [
+    "pyright>=1.1.411",
+]
+# The EXACT set both syncing CI jobs (python-type, python-test) install, so they share one
+# warm uv cache instead of racing to save mutually-useless ones (astral-sh/setup-uv keys its
+# cache on uv.lock). Excludes ruff/pre-commit: the CI lint and pre-commit jobs sync the dev
+# group instead. Modeled on ../Tablassert/pyproject.toml.
+ci = [
+    { include-group = "test" },
+    { include-group = "typecheck" },
+]
+# Superset for local development, so `uv sync --group dev` still installs everything.
+dev = [
+    { include-group = "ci" },
+    "pre-commit>=4.5.1",
+    "ruff>=0.15.6",
+    # Postgres driver for pointing AIRFLOW__DATABASE__SQL_ALCHEMY_CONN at a real metadata db
+    # (sqlite WAL still deadlocks the scheduler under full-run write load; see wenceslaus runs).
+    "psycopg2-binary>=2.9.13",
+    # Airflow 3's execution-API server accesses the metadata db through the async engine even
+    # when the sync conn is psycopg2.
+    "asyncpg>=0.30.0",
+]
+
+[project.scripts]
+dakp = "dakp_pipeline.cli:app"
+
+# Pull torch from the official PyTorch cu126 wheel index (CUDA 12.6 builds) instead of PyPI,
+# whose torch wheels are +cu130 and require a CUDA >= 13 driver. The cu126 line is the LAST
+# wheel line with kernels for our Tesla P100s (sm_60): PyTorch dropped Maxwell/Pascal from its
+# cu128/cu129 binaries starting with release 2.8. `explicit = true` keeps this index scoped to
+# torch only; everything else still resolves from PyPI.
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dakp_pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# `-n auto` runs the suite in parallel across all cores via pytest-xdist (pytest-cov combines the
+# per-worker coverage data, so the 100% branch gate below still holds). `--cov=dakp_pipeline` is
+# baked in so the fail_under gate runs on every invocation. The package name is EXPLICIT: bare
+# `--cov` takes an optional path VALUE, so under pytest-cov >= 7 it silently swallowed the first
+# positional argument of a targeted run (`pytest tests/unit/test_x.py` -> the path became the
+# coverage source and testpaths kicked in, running the whole 1145-test suite instead of one
+# file). Heavy imports (Airflow) are deferred to fixtures so per-worker collection stays cheap
+# (see tests/unit/conftest.py).
+addopts = "-q -n auto --cov=dakp_pipeline"
+# CI-only hangs (2026-09-23: python-test wedged ~1h twice on identical trees that pass in ~1 min
+# locally) used to be undiagnosable because live runner logs are unavailable. With this set,
+# pytest's faulthandler dumps every thread's stack into the job log after 10 minutes, naming the
+# stuck test.
+faulthandler_timeout = 600
+markers = ["network: tests that require internet access"]
+
+[tool.coverage.run]
+source = ["src/dakp_pipeline"]
+branch = true
+# Measure `spawn`-started child processes too. The per-GPU NER workers
+# (`assertions/ner_dispatch._mine_shard`) and the worker logging setup they call
+# (`logging_setup.configure_worker_logging`) run ONLY in a child, so without this their tests
+# would pass while the lines read as uncovered. `parallel` gives each process its own data file
+# and `sigterm` flushes on termination; pytest-cov combines them, exactly as it already does for
+# the xdist workers. The `COVERAGE_PROCESS_START` env var (set in `tests/conftest.py`) is what
+# arms the `coverage.process_startup()` hook in the installed `.pth` file.
+parallel = true
+sigterm = true
+concurrency = ["multiprocessing", "thread"]
+
+[tool.coverage.report]
+# 90: the suite is near-exhaustive, but subprocess-pump style branches in the runner boundary
+# (e.g. ``tablassert._pump`` stream dedup) are only exercised by the integration job's real
+# subprocess runs; a hard 100 turned one partial branch there into a red main. 90 keeps the
+# gate meaningful (a dropped test file costs far more than 10 points) without gating on
+# environment-dependent last-percent branches.
+fail_under = 90
+precision = 1
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "if typing.TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "raise AssertionError",
+    "\\.\\.\\.",
+    "@overload",
+    # Airflow @task bodies only execute inside an Airflow runtime (optional dep, not
+    # installed in CI); the underlying stage callables are tested directly instead.
+    "def _airflow_only",
+]
+
+[tool.ruff]
+line-length = 150
+indent-width = 4
+target-version = "py312"
+src = ["src", "tests"]
+extend-exclude = [
+    # Generated runtime workdir (pipeline output + scratch); never lint it.
+    "tmp",
+]
+
+[tool.ruff.lint]
+select = [
+    "E4",  # pycodestyle E4xx
+    "E7",  # pycodestyle E7xx
+    "E9",  # pycodestyle E9xx
+    "F",   # pyflakes
+    "RUF100", # stale noqa
+    "B",   # flake8-bugbear
+    "SIM", # flake8-simplify
+    "C4",  # flake8-comprehensions
+    "PT",  # flake8-pytest-style
+    "RUF", # ruff-specific
+    "TID", # flake8-tidy-imports
+    "I",   # isort
+    "PIE", # flake8-pie
+    "RET", # flake8-return
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E731",  # allow lambda assignments (used in monkeypatchable stubs / tests)
+]
+
+[tool.ruff.lint.isort]
+# Align with `format.skip-magic-trailing-comma = true` (avoids ruff incompatibility warning).
+split-on-trailing-comma = false
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = true
+
+[tool.pyright]
+# `.github` holds the CI unit-shard selector: real Python the workflow depends on, so it is
+# typechecked like the rest of the tree.
+include = ["src", "tests", ".github"]
+exclude = ["tmp", ".venv"]
+pythonVersion = "3.12"
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+reportMissingTypeStubs = false
+reportUnusedImport = true
+reportUnusedVariable = true
+reportDuplicateImport = true

@@ -1,0 +1,158 @@
+[
+  {
+    "set_id": "09bce4c4-96af-4b8b-8d92-86e330fef348",
+    "status": "ok",
+    "sha256": "0654c82c80b22e46f2adc624fd48304c1671be0d4333624be7ef0ecdbb30fdf1",
+    "title": "HYDROCHLOROTHIAZIDE CAPSULES",
+    "indication_sections": 1,
+    "nested_sections": [
+      {
+        "code": "42232-9",
+        "title": "Usage in Pregnancy:",
+        "path": "INDICATIONS AND USAGE / 42229-5 / Usage in Pregnancy:",
+        "indication_path": "INDICATIONS AND USAGE",
+        "warning_code": false,
+        "warning_heading": false
+      }
+    ],
+    "nested_coded_warning": false,
+    "nested_warning_by_code_or_heading": false,
+    "nested_safety": true
+  },
+  {
+    "set_id": "0dab5a4f-5d4a-4154-9a91-6fef4800865d",
+    "status": "ok",
+    "sha256": "3d91042493ca01cc8e87b59634118001885072f911269f0bdd464c34c5f89bff",
+    "title": "",
+    "indication_sections": 1,
+    "nested_sections": [
+      {
+        "code": "42232-9",
+        "title": "",
+        "path": "34089-3 / 34089-3 / 43679-0 / 34067-9 / 42232-9",
+        "indication_path": "34089-3 / 34089-3 / 43679-0 / 34067-9",
+        "warning_code": false,
+        "warning_heading": false
+      }
+    ],
+    "nested_coded_warning": false,
+    "nested_warning_by_code_or_heading": false,
+    "nested_safety": true
+  },
+  {
+    "set_id": "1b63177f-17e5-4b5a-8924-7023efe016aa",
+    "status": "ok",
+    "sha256": "0efcd058c7a1adc70228b199c5242897fdb1be8fd953d14b0dd2395554702567",
+    "title": "Rite Aid Corporation Naproxen Sodium Tablets, 220 mg Drug Facts",
+    "indication_sections": 1,
+    "nested_sections": [
+      {
+        "code": "34071-1",
+        "title": "Warnings",
+        "path": "Uses / Warnings",
+        "indication_path": "Uses",
+        "warning_code": true,
+        "warning_heading": true
+      },
+      {
+        "code": "50570-1",
+        "title": "Do not use",
+        "path": "Uses / Do not use",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      },
+      {
+        "code": "50569-3",
+        "title": "Ask a doctor before use if",
+        "path": "Uses / Ask a doctor before use if",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      },
+      {
+        "code": "50568-5",
+        "title": "Ask a doctor or pharmacist before use if you are",
+        "path": "Uses / Ask a doctor or pharmacist before use if you are",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      },
+      {
+        "code": "50567-7",
+        "title": "When using this product",
+        "path": "Uses / When using this product",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      },
+      {
+        "code": "50566-9",
+        "title": "Stop use and ask a doctor if",
+        "path": "Uses / Stop use and ask a doctor if",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      },
+      {
+        "code": "53414-9",
+        "title": "If pregnant or breast-feeding,",
+        "path": "Uses / If pregnant or breast-feeding,",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      },
+      {
+        "code": "50565-1",
+        "title": "Keep out of reach of children.",
+        "path": "Uses / Keep out of reach of children.",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      }
+    ],
+    "nested_coded_warning": true,
+    "nested_warning_by_code_or_heading": true,
+    "nested_safety": true
+  },
+  {
+    "set_id": "28886273-a71a-46ea-e063-6394a90ac11d",
+    "status": "ok",
+    "sha256": "2f0b801a085b4b50f6a01131c8eb9938d5ba3d459c9db67f20e47d157728f730",
+    "title": "Drug Facts",
+    "indication_sections": 1,
+    "nested_sections": [
+      {
+        "code": "50567-7",
+        "title": "When using this product",
+        "path": "Uses / Uses / When using this product",
+        "indication_path": "Uses",
+        "warning_code": false,
+        "warning_heading": false
+      }
+    ],
+    "nested_coded_warning": false,
+    "nested_warning_by_code_or_heading": false,
+    "nested_safety": true
+  },
+  {
+    "set_id": "3e9f369c-3361-467a-907a-52295baeb3ea",
+    "status": "ok",
+    "sha256": "c7c9edaa4bad50a21cf535fbdd239b9168a8223717451a48698ef80fa86a129a",
+    "title": "Premjact Male Genital Desensitizer Spray",
+    "indication_sections": 1,
+    "nested_sections": [
+      {
+        "code": "34071-1",
+        "title": "",
+        "path": "55106-9 / 55105-1 / 50565-1 / 34067-9 / 34071-1",
+        "indication_path": "55106-9 / 55105-1 / 50565-1 / 34067-9",
+        "warning_code": true,
+        "warning_heading": false
+      }
+    ],
+    "nested_coded_warning": true,
+    "nested_warning_by_code_or_heading": true,
+    "nested_safety": true
+  }
+]

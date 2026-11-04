@@ -1,0 +1,9 @@
+{
+  "url": "https://nodenormalization-sri.renci.org/get_normalized_nodes",
+  "method": "POST",
+  "request_file": "nodenorm-request.json",
+  "response_file": "nodenorm-response.json",
+  "retrieved_utc": "2026-11-03T03:51:55.616477+00:00",
+  "sha256": "7d92a8d7dbc2292fd824cc223312f6669c0c71acf531be531761e0140c92517a",
+  "alias_policy": "Only labels for equivalent identifiers already present in the Tier 0 node equivalent_identifiers list; no new equivalence groups are adopted."
+}

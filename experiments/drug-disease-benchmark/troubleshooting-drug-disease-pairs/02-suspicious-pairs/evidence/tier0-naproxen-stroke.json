@@ -1,0 +1,53 @@
+{
+  "id": "960846c6-bad8-3429-92d8-1d4bbf8632f7",
+  "category": [
+    "biolink:EntityToPhenotypicFeatureAssociation"
+  ],
+  "subject": "CHEBI:7476",
+  "predicate": "biolink:treats",
+  "object": "MONDO:0005098",
+  "publications": [
+    "dailymed:dailymed:1b63177f-17e5-4b5a-8924-7023efe016aa"
+  ],
+  "sources": [
+    {
+      "id": "infores:multiomics-drugapprovals",
+      "category": [
+        "biolink:RetrievalSource"
+      ],
+      "resource_id": "infores:multiomics-drugapprovals",
+      "resource_role": "primary_knowledge_source",
+      "upstream_resource_ids": [
+        "infores:dailymed",
+        "infores:faers"
+      ],
+      "source_record_urls": [
+        "https://db.systemsbiology.net/gestalt/cgi-pub/KGinfo.pl?id=960846c6-bad8-3429-92d8-1d4bbf8632f7"
+      ]
+    },
+    {
+      "id": "infores:faers",
+      "category": [
+        "biolink:RetrievalSource"
+      ],
+      "resource_id": "infores:faers",
+      "resource_role": "supporting_data_source"
+    },
+    {
+      "id": "infores:dailymed",
+      "category": [
+        "biolink:RetrievalSource"
+      ],
+      "resource_id": "infores:dailymed",
+      "resource_role": "supporting_data_source"
+    }
+  ],
+  "knowledge_level": "knowledge_assertion",
+  "agent_type": "manual_validation_of_automated_agent",
+  "clinical_approval_status": "approved_for_condition",
+  "FDA_regulatory_approvals": [
+    "NDA018164"
+  ],
+  "original_subject": "CHEBI:7476",
+  "original_object": "MONDO:0005098"
+}

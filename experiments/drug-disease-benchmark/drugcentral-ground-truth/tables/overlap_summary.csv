@@ -1,0 +1,8 @@
+metric,unique_pairs,percent_of_drugcentral_treats
+drugcentral_treats_pairs,9608,100.00
+other_treats_pairs,2541,26.45
+non_treats_pairs,5169,53.80
+either_overlap_pairs,5281,54.96
+both_overlap_pairs,2429,25.28
+no_other_edge_pairs,4327,45.04
+other_known_source_any_predicate_pairs,5281,54.96

@@ -1,0 +1,1148 @@
+{
+  "repository": "https://github.com/glusman-team/dakp",
+  "commit": "d0456b3db7468ef3e9c17a7beab01c506249225d",
+  "archive_url": "https://codeload.github.com/glusman-team/dakp/tar.gz/d0456b3db7468ef3e9c17a7beab01c506249225d",
+  "archive_sha256": "081e01c940f3733dd3bb922eb737296acef4ed5a844964dca035e6c88f6cd3b4",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "4db75f154bd34f5eba6ef4b5666b251747aedb96eb834b80fa4e10a98001f769"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "81dbd223fc7e57af8f3975a1265bafdc9f370548008d93037d82c3c525ea03bd"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sha256": "eefd73a40d34d04109fe2c6d39b082eb9c4c74f0e8a785cd4d2c40b95313c813"
+    },
+    {
+      "path": ".github/actions/detect-pyproject-version-change/action.yml",
+      "sha256": "169d16a50c91dadc196463b4f0f890d373940e7218bcff3a8b3e8d9149d7de1e"
+    },
+    {
+      "path": ".github/ci/select_unit_shard.py",
+      "sha256": "041936abe74cd563b3b6a166c86f35cd54a325e44d1b9759bacc2d2f5a560bbd"
+    },
+    {
+      "path": ".github/ci/unit-test-durations.json",
+      "sha256": "7dcad08a5eee38b7293f6885954c0aff4a597c0200c0e9d5ccb7213044d88f15"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "b482e34fa9f3219f605ce6894896d4aef4d93da381c1b59c75a3268f5d0c0dce"
+    },
+    {
+      "path": ".github/workflows/tag-version.yml",
+      "sha256": "9cfe27caeda1d7fee17a653f016fd973e280bd5ff578f3d907db77d92aca8c6b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "509d5fa2cb7c005dd8f9af76f1b21b3273e9127736148ab8dd40031b7c784532"
+    },
+    {
+      "path": ".pi/skills/dakp-release/SKILL.md",
+      "sha256": "3aa63b0b669d7d95122db89b37703a3adfaa51063964faabc8ad212da26732f5"
+    },
+    {
+      "path": ".pi/skills/dakp-verify/SKILL.md",
+      "sha256": "de9dc995cb8bea8e15786cb75557f1f9ed0add410fe1ef3c75197c870df5e876"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "sha256": "7b45a06f1b7306fb1d50729cceb7f309846f48ea6e26a5058c646ceb079ac273"
+    },
+    {
+      "path": ".python-version",
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "fd4f9312098bd2156f067566ade1d534f4fc4554a2af8dacc47877b7f3a1b16c"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "d0a78134a8057f3dd9af87afa2606767ec476f8df068318b8904e9bb6e1dc74d"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "7c35163790cbefe133b553e6d78e1cfb9f1b8a2fe17a7e8ea2f94e3a01ca8bbd"
+    },
+    {
+      "path": "Makefile",
+      "sha256": "8d706c9668340e62851cd1473b097a46643f3ad608bbe109aaeaf07488dcbb5c"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "df3a3db58405514bc143bf7f4913b9e2ca163d7c88b708960763e69b985617d7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f0c9568ce411c96a9394f61d6bc4be8b51dc3a3f2aa8e20b74422f9318ce4ada"
+    },
+    {
+      "path": "go/.gitignore",
+      "sha256": "ec039c03c41a7253cc62f7d30ad404e0f2743e8d78c035766d4c4a4126a362d1"
+    },
+    {
+      "path": "go/README.md",
+      "sha256": "1995c344ed33791d8b1c5a5901824bd8c5a8944573ade7dc289c1e34916970e7"
+    },
+    {
+      "path": "go/cmd/dakp-bundle/main.go",
+      "sha256": "479d5c52a0272478cfe2e64c97545b4b24e88914099be78954daec3651ba1b8c"
+    },
+    {
+      "path": "go/cmd/dakp-nercache/main.go",
+      "sha256": "f8f7c76d0984ec02182a50788e813b6f5d281a798d71dcd78cc685e11e109ea4"
+    },
+    {
+      "path": "go/cmd/dakp-worker/dailymed.go",
+      "sha256": "017440bdf11ed4b2d5d955d172dda98a12c1303cd7921a3c768d69f6948d8ad5"
+    },
+    {
+      "path": "go/cmd/dakp-worker/drugsfda.go",
+      "sha256": "50c91e62db5fde8692f74b777ff99d49f51dc0fb7fae23d6e02176e0c42cc9f8"
+    },
+    {
+      "path": "go/cmd/dakp-worker/faers.go",
+      "sha256": "b784549cb9c83325bd8ac7b1e1dfe582de3e26797185c1db8bf9943a0828b1d9"
+    },
+    {
+      "path": "go/cmd/dakp-worker/hash.go",
+      "sha256": "0477de8fd1b08441391ca9f19042c2c5bf5183a6725e32b1badb8d8356147b76"
+    },
+    {
+      "path": "go/cmd/dakp-worker/hash_test.go",
+      "sha256": "15dd632965fa0aba78945fa728b283a2adbf0fc1543eb32b7e514e363e969314"
+    },
+    {
+      "path": "go/cmd/dakp-worker/main.go",
+      "sha256": "5717197513a3ae53d8db7947afc7ef96924fddc56150ec94ffff7332a0d20841"
+    },
+    {
+      "path": "go/go.mod",
+      "sha256": "e147f2fd4be85dc180d00c5b8ef96a911935eed6ef09c1baff1359190a76397f"
+    },
+    {
+      "path": "go/go.sum",
+      "sha256": "528e5eb91b49d3de29973231eaeaa79dbda4caecca8c0d7bee196115d5e14daf"
+    },
+    {
+      "path": "go/internal/airflow/artifactref.go",
+      "sha256": "1b53867938faa67266e319b32421509e1a5a7bea9a6510d77c8636e0314f0f6f"
+    },
+    {
+      "path": "go/internal/airflow/artifactref_test.go",
+      "sha256": "16850dcc03af9cea3cbea76f8d4b84f52ee025fd0f99fb350d77c1907fd88c3e"
+    },
+    {
+      "path": "go/internal/airflow/extract_dailymed.go",
+      "sha256": "a3f4003c92986268a6388e0dafdea6c6de39b461a4344b1eabd8bf8652a88c8d"
+    },
+    {
+      "path": "go/internal/airflow/extract_dailymed_test.go",
+      "sha256": "05b6e50fa8217514ecb304340f1e745a796799d4167ab008bb6972e52f845d20"
+    },
+    {
+      "path": "go/internal/airflow/extract_drugsfda.go",
+      "sha256": "ad775f7fb71905bd96257b1bc882dddede90f0ca1f68ab0d4ed3914f4b1a260b"
+    },
+    {
+      "path": "go/internal/airflow/extract_drugsfda_test.go",
+      "sha256": "63db09d2deadceab4e742dae5f88b08b9466cd1746eda6c620693d4716ed88c5"
+    },
+    {
+      "path": "go/internal/airflow/extract_faers.go",
+      "sha256": "794a4bfdf5ae2293595adda0233f46428e2f27f0e76db3022bbfcb8047caafc0"
+    },
+    {
+      "path": "go/internal/airflow/extract_faers_scale_test.go",
+      "sha256": "6a0b6bade04e2b63d6f49fbb1aacff57bb832349dccbb5fbfe4e41231a997cd2"
+    },
+    {
+      "path": "go/internal/airflow/extract_faers_test.go",
+      "sha256": "86a5321d913123749c1b6cf391809669807abba4922056bc446fb5f33801abcd"
+    },
+    {
+      "path": "go/internal/airflow/faers_stream.go",
+      "sha256": "e7e1cc79ae1d8068048d4317fe41df5f08aa1a3458e855917178d5c444bc0642"
+    },
+    {
+      "path": "go/internal/airflow/faers_stream_test.go",
+      "sha256": "62a9a50233ffe976be233c8fd9c3a6ac3aa1e68e2e933c9eb19954c0bafb053b"
+    },
+    {
+      "path": "go/internal/airflow/log.go",
+      "sha256": "63e70042d54df938192c1ae269c1e2b241283dde597ab5074405108c5230e099"
+    },
+    {
+      "path": "go/internal/airflow/opindex.go",
+      "sha256": "5631f1361b78a7df6c202cabba7b9030df641bf2404a0904fde948b7efe21564"
+    },
+    {
+      "path": "go/internal/airflow/opindex_test.go",
+      "sha256": "f942da5fbaa5150472bcd01b174e2b12a36dbc0b1621ea296cb021e163eb7c56"
+    },
+    {
+      "path": "go/internal/airflow/parquet.go",
+      "sha256": "c8d2699f95e45c1cf017630bd4eb9be1ab556413c3dcf4b28317982fbda2c2a4"
+    },
+    {
+      "path": "go/internal/airflow/parquet_test.go",
+      "sha256": "f159171f474b3d423fe1601ea7d34d2c7b9fd71a14f64fcae56eb167bcca2e76"
+    },
+    {
+      "path": "go/internal/airflow/stage.go",
+      "sha256": "0a60c84bfbf8ff9a273c279766309ba6adacd9385ce85d130070afeb38e2bc8f"
+    },
+    {
+      "path": "go/internal/airflow/store.go",
+      "sha256": "3b5fdbdc90c0aa051e15433f58b3fd0f60248af5c4ab6504948040511b787960"
+    },
+    {
+      "path": "go/internal/airflow/store_test.go",
+      "sha256": "ce2878bbd8ff9ddb7c4bbc1d220c22cb9f79e6467e22feb1d14ee66ac7451d60"
+    },
+    {
+      "path": "go/internal/blake3store/blake3store.go",
+      "sha256": "07e94221bfa64d2272ff3ae0026c300ad5faa03b769ec439c02fdc1db7628c10"
+    },
+    {
+      "path": "go/internal/blake3store/blake3store_bench_test.go",
+      "sha256": "e96fab0a97270dbdc22281dc6314fea0fce7656c6b8f743991596f00efb1a978"
+    },
+    {
+      "path": "go/internal/blake3store/blake3store_test.go",
+      "sha256": "da024e8e974c7a6a07923347b8deeed39e2881faf1dfd2a51461511411aac7b5"
+    },
+    {
+      "path": "go/internal/blake3store/manifest.go",
+      "sha256": "70e3d7ddad088f2e209c442bf56302d16b9e4d36f11c252387bcb00d3e96e6ff"
+    },
+    {
+      "path": "go/internal/blake3store/manifest_test.go",
+      "sha256": "ff533cbe19af7774417f13aeef89c180ef5b2cc48813b5ba84d7cb586dd78a2a"
+    },
+    {
+      "path": "go/internal/blake3store/testdata/manifest_full.json",
+      "sha256": "7b38378fb477cc71844fc11b96e9a30de025ef0bc68947d8075af4e161694ddc"
+    },
+    {
+      "path": "go/internal/blake3store/testdata/manifest_minimal.json",
+      "sha256": "5a1f5e082c849775db8d67687e93ece8539f250a7288813a346cebd151177b15"
+    },
+    {
+      "path": "go/internal/blake3store/testdata/tree/a.txt",
+      "sha256": "b6a98d9ce9a2d9149288fa3df42d377c3e42737afdcdaf714e33c0a100b51060"
+    },
+    {
+      "path": "go/internal/blake3store/testdata/tree/b.txt",
+      "sha256": "5da8f23decf397b13f4f55b6fb8a61936238bfe08ed9d901132974f1beccc45c"
+    },
+    {
+      "path": "go/internal/blake3store/testdata/tree/sub/c.txt",
+      "sha256": "999d1d048ee9123272dd9b718680551c83e867935b47c2650e6906dc22674e47"
+    },
+    {
+      "path": "go/internal/blake3store/testdata/tree/sub/nested/d.txt",
+      "sha256": "673953e0ad7fc53247f4feadc2c2d4506396840d1f8796526f48d47333ac7652"
+    },
+    {
+      "path": "go/internal/blake3store/tree_warm_linux.go",
+      "sha256": "0979744b092fe57685d87b3c0a88e736964af12fbbdece078e51c4d70e60b0eb"
+    },
+    {
+      "path": "go/internal/blake3store/tree_warm_other.go",
+      "sha256": "3db961af9246d7b43c361a40e0d473815c0aba94918f3485d45c2690da9310a5"
+    },
+    {
+      "path": "go/internal/dailymed/dailymed.go",
+      "sha256": "3d799efeced2e723fca34be893dccb3d9b4243be0619e8e78100721c827b3503"
+    },
+    {
+      "path": "go/internal/dailymed/dailymed_test.go",
+      "sha256": "df615897cc86fade9dbfbaccbf671bd3cc1010ab18dcd0a7033fbf962d510958"
+    },
+    {
+      "path": "go/internal/dailymed/testdata/dailymed_spl.xml.gz",
+      "sha256": "9370707761ace9616b2e8affe49a0f67529f9f6c8422474b42efc71a2a3a250a"
+    },
+    {
+      "path": "go/internal/dailymed/testdata/golden/spl_approvals.tsv",
+      "sha256": "5ccd12bea54bee2aaa0fb3dd5a68d269bdd1e23b0a33c0ecf29ccdc6c432677f"
+    },
+    {
+      "path": "go/internal/dailymed/testdata/golden/spl_documents.tsv",
+      "sha256": "218352456e82931e4835d3149b869626efbd7ad7cb2415955f26c8a91fa0762b"
+    },
+    {
+      "path": "go/internal/dailymed/testdata/golden/spl_ingredients.tsv",
+      "sha256": "fbd0907a5972602269cac51c4d06cc7b39c5f0ce9acb7eac580ccd2fed113915"
+    },
+    {
+      "path": "go/internal/dailymed/testdata/golden/spl_sections.tsv",
+      "sha256": "e6e751a92797915981e448d2bf3c6aab2c488db6fffdd29d9a6b7609780e1bab"
+    },
+    {
+      "path": "go/internal/dailymed/testdata/golden/spl_sets.tsv",
+      "sha256": "354c8341d76c270139842be95f8ab5e3ef9ed5c13ecf1ce6d49951ec72b44fdd"
+    },
+    {
+      "path": "go/internal/dailymed/testdata/hl7v3_spl.xml.gz",
+      "sha256": "1a490a2aa02f495035b610b7ee9912b61ab479ee3c37990b12894333a0887fb1"
+    },
+    {
+      "path": "go/internal/drugsfda/drugsfda.go",
+      "sha256": "832aa3583d50045226c3b3bca810ca090163a475da38bc8b62bce91a986ed21b"
+    },
+    {
+      "path": "go/internal/drugsfda/drugsfda_test.go",
+      "sha256": "8d00a51280c0ee1062e289b0aee5ccfa867b0d81380a449b03cf7d7755a0900f"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/dirty/Submissions.txt",
+      "sha256": "ca83bfd33d1941efef8bbb7ecef6d162b4f7200fd928dd3c57361ac3290f1015"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/drugsfda_applications.tsv",
+      "sha256": "29aa2148afcecff455556697e2eb1b6bc462606d7714f86c4dc522c33a144ada"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/drugsfda_products.tsv",
+      "sha256": "18bc465ff23c500f7bb058f567c2334a2d5f9233e51aa3d2705af3553b264df8"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/drugsfda_submissions.tsv",
+      "sha256": "23d3cdcd91af28e13fd4d39da6e4cb92f7f5c1a4db180af5e02615505a6890ce"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/golden/drugsfda_applications.tsv",
+      "sha256": "5e7f240c0fba92368161089fc6fee2175b08e2fe55a07ff4299e76247c07c749"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/golden/drugsfda_lookups.tsv",
+      "sha256": "5e6abbc62d64cdd40a2977a2d64eb3bf0906fb923679b990b9d86a7ddb855e8e"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/golden/drugsfda_products.tsv",
+      "sha256": "8bda0d620c5e70458caf3f2732e81e9235bb4023f9c45f0701004c8250c2b900"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/golden/drugsfda_submissions.tsv",
+      "sha256": "a775a5d7d9bac18945e41664218fd9f60ea39024ad819955b8aa48d16c892074"
+    },
+    {
+      "path": "go/internal/drugsfda/testdata/golden/drugsfda_submissions_cp1252.tsv",
+      "sha256": "1c9e69201a50b4c35ee3f07fbbb3507e34664b29d04890199fc328457fd45935"
+    },
+    {
+      "path": "go/internal/faers/faers.go",
+      "sha256": "84c9c43859eed5877fe5550b2060fefec12530f548cbeb3003a383659657765b"
+    },
+    {
+      "path": "go/internal/faers/faers_test.go",
+      "sha256": "d25ce40348a11d2cffb8cdaf94fc0aea1f6311ec2670b5f4e0725c2a8bcbe8f1"
+    },
+    {
+      "path": "go/internal/faers/testdata/DELETE24Q3.txt",
+      "sha256": "dabc08df3f6d0b8d3857e8c684a26a449eb9e4b1df405b31e3d9e019ba23bc7e"
+    },
+    {
+      "path": "go/internal/faers/testdata/DEMO24Q2.txt",
+      "sha256": "40283eb80ca6db3bc562bee8c031e9bcc79d37fceee2d97394872806f7786401"
+    },
+    {
+      "path": "go/internal/faers/testdata/DEMO24Q3.txt",
+      "sha256": "d82258c595b568f81e11794bdcf8b91b8bd11afe5ba2644da78a1b9b6856fdd2"
+    },
+    {
+      "path": "go/internal/faers/testdata/DRUG24Q2.txt",
+      "sha256": "5912fabaefebd30f86c679712fe9076e140ceb43bbfa70e30ab5b814a2b1d58c"
+    },
+    {
+      "path": "go/internal/faers/testdata/DRUG24Q3.txt",
+      "sha256": "59b63b8a56fa4551c5b94de435b632d0f82c7120dde744046cb24800871a71ce"
+    },
+    {
+      "path": "go/internal/faers/testdata/INDI24Q2.txt",
+      "sha256": "64b5d600f72cb21089fa7cebd3b49ca999d612686b5aef29529b459946e59a9e"
+    },
+    {
+      "path": "go/internal/faers/testdata/INDI24Q3.txt",
+      "sha256": "f0a3b5aca9d5422d61ae8e41968c8120119de62d392d85f87edde04510aee49d"
+    },
+    {
+      "path": "go/internal/faers/testdata/REAC24Q2.txt",
+      "sha256": "7466082c5bcebd3cbc32dcbf41d00a307500655593ffdb77036732f9565e62b4"
+    },
+    {
+      "path": "go/internal/faers/testdata/REAC24Q3.txt",
+      "sha256": "2f677e8d1aa74b6b265014557d4fbee8b5267b7e566d1f3a8a624d69530f57af"
+    },
+    {
+      "path": "go/internal/faers/testdata/RPSR24Q2.txt",
+      "sha256": "2ce552479a4ee3944b43309d341f4b604869a0921bac8b391e847acdc65cca6b"
+    },
+    {
+      "path": "go/internal/faers/testdata/RPSR24Q3.txt",
+      "sha256": "a2d807f6342a107c366308389e80e54e3a3ce63d3c524b85a02db9ae8c485c2c"
+    },
+    {
+      "path": "go/internal/nercache/nercache.go",
+      "sha256": "406a777c794d0c49cff35f7eef70529d09198ae6b87adc3f231e3dde7c96b6d6"
+    },
+    {
+      "path": "go/internal/nercache/nercache_test.go",
+      "sha256": "50bd4e6e48b667da52bcbd5acaad8345880da531e05fc571118cdd91e8f60f14"
+    },
+    {
+      "path": "go/internal/pipeline/pipeline.go",
+      "sha256": "c9a58bc6cb2552cb7959af569f306c199ec9015dc9546caa46486ff48758feab"
+    },
+    {
+      "path": "go/internal/pipeline/pipeline_test.go",
+      "sha256": "0fe2a3db53d98266ea92ec7f69e23cfa5fcc65b59cf9c6671234d3b21dcb703e"
+    },
+    {
+      "path": "go/internal/registry/registry.go",
+      "sha256": "d62c8b38c70961578f5286576e787d515ce54df25e80e29661a235097972b255"
+    },
+    {
+      "path": "go/internal/registry/registry_test.go",
+      "sha256": "704014fb5284e03c80f7fe8efbdf86d4beb81b75231f3ff8ade6319539d032d7"
+    },
+    {
+      "path": "plans/ema-source.md",
+      "sha256": "a5e452120167ca0aaa6be3d403a4dca4023186c48d31addaaa8c6743875994c6"
+    },
+    {
+      "path": "plans/ner-all-gpus.md",
+      "sha256": "d4b162f10548068ffe953d2ff484f6a8761a709d000e3ccbbccdec0a0c39d211"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "243c867ce2da3542404343b8bfb18f1492e2447b817690bfc76c3baa1b9554e3"
+    },
+    {
+      "path": "src/dakp_pipeline/__init__.py",
+      "sha256": "84f8d46f854b65e70b1d9e403c7e632ace393ba275a1c56bdf6a83dd61d36c71"
+    },
+    {
+      "path": "src/dakp_pipeline/acquire.py",
+      "sha256": "715cbed80019677683baf664d1a71a3b089b0ddb9893d8d2ebb24337ef85b195"
+    },
+    {
+      "path": "src/dakp_pipeline/approval_reconciliation.py",
+      "sha256": "9a8fa1404dea454908cbb31d2fb0366b288602a4adb5fcb583f19754b7412a83"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/__init__.py",
+      "sha256": "352c90c4e66c582fd5e792e3d69cae0bc69cad9d2867b3ebeb33691c497975de"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/approved_treats.py",
+      "sha256": "64854ae1a2f8409163d548c64be56ece6a25d061bf8a3ab7fb2e326d6ff70a62"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/contexts.py",
+      "sha256": "580657bac973bf6d1a0f41b06210222aceb64e51fd224636a89e04a21be63c3c"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/contraindications.py",
+      "sha256": "26e143f307fec69b6b5a0a1bb090e5aee0f70dae02f21f35e4d4f978cbf028d7"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/evidence.py",
+      "sha256": "458a121579678f86a29f059f4cb7e25fc017f7426401447fbc466c15baf75902"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/ner_dispatch.py",
+      "sha256": "a6fac1ec6c80aa63d23293c661a0e0837267c660ae99b99d7bc043cc61ad2f95"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/observed_uses.py",
+      "sha256": "4ddc89595aab799fff8ddb78744a0456ee0211ce093737c3f2ec3fc90d618d69"
+    },
+    {
+      "path": "src/dakp_pipeline/assertions/species.py",
+      "sha256": "2b24a7c3eb789893dabe261104929b00bec467b7c26d0962aab73ed6abc4bf69"
+    },
+    {
+      "path": "src/dakp_pipeline/cli.py",
+      "sha256": "d0d595d7853373d58612c787536f0599b9919128aa1939df5e5c2fcbddd977d8"
+    },
+    {
+      "path": "src/dakp_pipeline/dags/__init__.py",
+      "sha256": "9218d848aa3cfcb361a81e782818524067871b9672c99b2460342654992cb616"
+    },
+    {
+      "path": "src/dakp_pipeline/dags/dakp_build.py",
+      "sha256": "04734f7f1d36d415f3389b57f29cddd5e776f97082e70cda668b8766621fe2bf"
+    },
+    {
+      "path": "src/dakp_pipeline/extract/__init__.py",
+      "sha256": "352206a99b37f822ce4997e1fd2251ae68a21f908dc79b5fc5ec89af4525fc5c"
+    },
+    {
+      "path": "src/dakp_pipeline/extract/canada_vigilance.py",
+      "sha256": "5625dd6707186c0822da4d7347962b212b385c8b473ab08a96023f1234af9848"
+    },
+    {
+      "path": "src/dakp_pipeline/extract/drugsfda_products.py",
+      "sha256": "dce7cf9f7d1e0a9ed70541e3eba7d10d39adffaadf32c0d7f0f9154277d11bf7"
+    },
+    {
+      "path": "src/dakp_pipeline/extract/ema_registry.py",
+      "sha256": "95cddb75f78d369a77b34372d25650cb5e314c8c655782642e54f0a104fbfd40"
+    },
+    {
+      "path": "src/dakp_pipeline/extract/ema_smpc.py",
+      "sha256": "11e47ec9fc73162a4f9aebda0fec9b7983c1aac0d1b351ad40eaafc2d6e767a1"
+    },
+    {
+      "path": "src/dakp_pipeline/extract/faers_ascii.py",
+      "sha256": "466bfd1c180909ec079a56c8ce2e81dbaf53c5a0ca01d1a3711c1e3eb323ca4a"
+    },
+    {
+      "path": "src/dakp_pipeline/extract/spl_xml.py",
+      "sha256": "3712089065eb590c8bb114c6097a5b65a7639a4a2a5478bb3ea1371f5277fa32"
+    },
+    {
+      "path": "src/dakp_pipeline/io/__init__.py",
+      "sha256": "01b5c076d42188f98f19577d13d565350401e5fee38501250c80666fd9b1be47"
+    },
+    {
+      "path": "src/dakp_pipeline/io/artifact_store.py",
+      "sha256": "00226ed082804127a2f2635eea222062e155bdd216febbace8d6c2026035f52a"
+    },
+    {
+      "path": "src/dakp_pipeline/io/content_hash.py",
+      "sha256": "9317f0aa9113f1b03d9dfce72521d87d3b473d086f8f27c3ad390f9bfbe42a1e"
+    },
+    {
+      "path": "src/dakp_pipeline/io/contracts.py",
+      "sha256": "b02ad67bba9ce342182ab23e72af482f01d73103d89b20103bb920dfa8449421"
+    },
+    {
+      "path": "src/dakp_pipeline/io/downloader.py",
+      "sha256": "ff58527d54b3802612e5e1956b5d2b1669f49c1b76c6b43f9c2374c3bff39705"
+    },
+    {
+      "path": "src/dakp_pipeline/io/downloads.py",
+      "sha256": "24fbc885c8f58eb56184053e80b02541ab71b107b77a2858bea01e94dfeb0dd7"
+    },
+    {
+      "path": "src/dakp_pipeline/io/manifests.py",
+      "sha256": "dfd129bf719faadcc1ad3722d1163cf810c2e86148a2d529bdeb7dfe4d60b793"
+    },
+    {
+      "path": "src/dakp_pipeline/io/schemas.py",
+      "sha256": "1001816575fc7be36ebf932cbfb3ba7dddf7cfcb1b4e9b56a7ca1e5101e7a393"
+    },
+    {
+      "path": "src/dakp_pipeline/io/xcom.py",
+      "sha256": "9a4835d50ec63d8a5d4ff6415804a51208c35d94a8fa1b82700d722d1312a52c"
+    },
+    {
+      "path": "src/dakp_pipeline/legacy_tsv.py",
+      "sha256": "32dcc67ba405abd9ab3fa363d070c181527666f2c15f480b502208e55f0b8318"
+    },
+    {
+      "path": "src/dakp_pipeline/logging_setup.py",
+      "sha256": "8af9ee4e77ae09bf3896ac3ca9bb60baf7cd7932d75503716f82e8229cc14bac"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/BENCHMARK.md",
+      "sha256": "8dd6aaae9a863c16afc6acbfa4372c5131ba96683d27605b50d62d6924d63779"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/README.md",
+      "sha256": "39531c6a50231f97cf0852f7293283dadf02316feee13ccdd518a0f66e50a201"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/__init__.py",
+      "sha256": "9492b2bc6511c3b8399e850b6755d75a772ddaa9a67672188fd5d28d409323a6"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/_gliner25_compat.py",
+      "sha256": "695b16428c853d917ed3656cf8099d8bb570b6dcc5d8f33315ada513eae393e2"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/dictionary.py",
+      "sha256": "000e2bfdb4ef3bb339bd460b75d69c3c74509ff2cc266478e67543cf74e916b7"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/lexical.py",
+      "sha256": "71d6dbad186a348cc4237647910ea1d24edc7002dd92841ac8c52fdee254128a"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/mention_cache.py",
+      "sha256": "bf556e9cb60241dc0d7a600dddc144679ebc56b7f74d437f3e7d86cdecf3172f"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/model_cache.py",
+      "sha256": "61ff5c15791740e1ffc01917b5c1305c2f0866069a3ce5e95df1f68126ff9795"
+    },
+    {
+      "path": "src/dakp_pipeline/ner/ner.py",
+      "sha256": "bb3b8eae1a9e26dddead928805bf81980b6317cc3b9842ddc4f3ef917427cfe5"
+    },
+    {
+      "path": "src/dakp_pipeline/ner_export.py",
+      "sha256": "5e2018fb9831f9f0fedf51aa505371c73194aeee0e9a4802b99f5d9fd4b3e284"
+    },
+    {
+      "path": "src/dakp_pipeline/paths.py",
+      "sha256": "9c963b2e4f0f3a9003e792771eb4421c78ed81305c815c64a1d8bb3c350fc314"
+    },
+    {
+      "path": "src/dakp_pipeline/release.py",
+      "sha256": "7c72f5de87d83cb0714606d98f6dd34e97afab250c7fc8a2fa73ab0caf5438a3"
+    },
+    {
+      "path": "src/dakp_pipeline/runtime.py",
+      "sha256": "d8fd44927d379700d4e44982fdfd5e9f14fcccfc3550ce319a8408398bcb2ac2"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/__init__.py",
+      "sha256": "4431ffc6cf51c43d7cfe6808ec4abe4f9057e46b0e5396f930c81f434caf2b9a"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/canada_vigilance.py",
+      "sha256": "041c5f3740ae887877e40411143930398bd9c21ad2257925be07c4be83f3e8e3"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/dailymed.py",
+      "sha256": "67989dce0a822eab9d2a51e358d1f9c2bcdcadb4cd0ebc2bfa0278d96deaa75d"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/drugsfda.py",
+      "sha256": "707c0b821e2460cc5b717073de3077e31efa218671e9215231071fbb6ddfe700"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/ema.py",
+      "sha256": "5b447f25e9cb4b6f9962b564942241be6aff57f024438606d298aeab7a6ff15a"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/ema_documents.py",
+      "sha256": "cc2ff2aa76409246f7f1655aa0b43009d5156aeac7dc608a6d8b68ace295d89d"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/ema_smpc.py",
+      "sha256": "82286ea850ee73da62f0492c8cf1709ba3f0b2efe03894a350788e6e5e4b805b"
+    },
+    {
+      "path": "src/dakp_pipeline/sources/faers.py",
+      "sha256": "0da70d7648f7c1a21b583c0c6747a7df95b5ee07d9d081dfc7ef3dd2256f5a2f"
+    },
+    {
+      "path": "src/dakp_pipeline/tablassert.py",
+      "sha256": "6689198809c3b2980c72eefc52c4aca7347b71576bec71aa47e4e51902c99636"
+    },
+    {
+      "path": "src/dakp_pipeline/textnorm.py",
+      "sha256": "447569b57fba97dac2b7d50c07b21ec697ae63ba5fbf34b915ea042b4e48d021"
+    },
+    {
+      "path": "src/dakp_pipeline/translator.py",
+      "sha256": "f08a5d39373c80cddf2edd599dd23ae29be4e976196d8c316f77b50631cb403b"
+    },
+    {
+      "path": "tables/approved_treats.yaml",
+      "sha256": "910bbd5acbd0d828f8835122f77c662a63de53d3b1a4127a329307263e6fc34a"
+    },
+    {
+      "path": "tables/contraindications.yaml",
+      "sha256": "fd62f99b191fce521e81febcaa5d972331ebf3b2b4c1029102bc37e19fbe4bd9"
+    },
+    {
+      "path": "tables/faers_applied_to_treat.yaml",
+      "sha256": "8faa90248c6fbc48563f392f5ed67d666292774e6183880bbf526ddf3133843e"
+    },
+    {
+      "path": "tables/graph.yaml",
+      "sha256": "56152b9117776c0e6b2e40d154ced49683c581b04c54fda4b40df423fb20e750"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "e500d6f7e67175caae25f35c9a2651f73a671d4d4ac3383be01c3aa83945198a"
+    },
+    {
+      "path": "tests/eval/ab_ner_diff.py",
+      "sha256": "b821999f21a1cf91df33bb0fe996c55c184dda0a0b01f2fa97056fcd4d9814cc"
+    },
+    {
+      "path": "tests/eval/approval_status_audit.py",
+      "sha256": "704e8a655f056fec2001f9b54c387550c121bf6a15fcc4630c6d728c1eca3205"
+    },
+    {
+      "path": "tests/eval/benchmark_ner.py",
+      "sha256": "79163272073151c70727ab9dc45ec24fe8de39590ae3788bf509024e7ce75bb9"
+    },
+    {
+      "path": "tests/eval/benchmark_results.json",
+      "sha256": "90105af44d59c2fbe6c0c6d70e15749f24dc583a3df553fc0310ddb323339d4f"
+    },
+    {
+      "path": "tests/eval/build_manifest.py",
+      "sha256": "aee11ebd9a2f49ab3bc03be5baeb958b3489aec4b81d607fc5da8c607effc39b"
+    },
+    {
+      "path": "tests/eval/ner_gold.json",
+      "sha256": "510840aaf531bef4ce2d316c0f233f1ff5cd54240c4d8cfc1fec02e1f0ce76d8"
+    },
+    {
+      "path": "tests/eval/ner_training_schema.json",
+      "sha256": "cae4cc601e6fc52eac26de300d9d094f4438a052d345022b109a7ca93069fd50"
+    },
+    {
+      "path": "tests/eval/species_lexicon_audit.py",
+      "sha256": "49d406c5e6b23adca5822f4348eb921b4de233522c49ad87a6080bd15575ef6a"
+    },
+    {
+      "path": "tests/fixtures/kgx/broken_edges.jsonl",
+      "sha256": "e51ff7e7580cdd81147f1a663752fee4a07f639c487d614d22972721160d0c16"
+    },
+    {
+      "path": "tests/fixtures/kgx/broken_nodes.jsonl",
+      "sha256": "bb73df7c3823991d9cc4e5918561c88536b99ec727fb547c3fca692f3f7a71f6"
+    },
+    {
+      "path": "tests/fixtures/kgx/edges.jsonl",
+      "sha256": "356d46342f6062f0ca7e73e4deb7747a2458dc5fcb900fb9b0f0f3fc853a112d"
+    },
+    {
+      "path": "tests/fixtures/kgx/nodes.jsonl",
+      "sha256": "1e2983c0653a9c246ee530b11bca1b76a934a6683d95b7f3ad1634dfe9037d92"
+    },
+    {
+      "path": "tests/fixtures/pipeline/dailymed/dailymed_spl.xml.gz",
+      "sha256": "bd0ed8dad5ea3bc97f622d45e5cea20f79718fcade616a21bb2ec847f6b4f0b1"
+    },
+    {
+      "path": "tests/fixtures/pipeline/dailymed/dailymed_spl_animal.xml.gz",
+      "sha256": "b9da7661c939f918e31163b4277a998fc4c46a7ca7cb3999c247325d5b40d091"
+    },
+    {
+      "path": "tests/fixtures/pipeline/drugsfda/drugsfda_applications.tsv",
+      "sha256": "29aa2148afcecff455556697e2eb1b6bc462606d7714f86c4dc522c33a144ada"
+    },
+    {
+      "path": "tests/fixtures/pipeline/drugsfda/drugsfda_products.tsv",
+      "sha256": "18bc465ff23c500f7bb058f567c2334a2d5f9233e51aa3d2705af3553b264df8"
+    },
+    {
+      "path": "tests/fixtures/pipeline/drugsfda/drugsfda_submissions.tsv",
+      "sha256": "23d3cdcd91af28e13fd4d39da6e4cb92f7f5c1a4db180af5e02615505a6890ce"
+    },
+    {
+      "path": "tests/fixtures/pipeline/ema/epar_documents_en.json",
+      "sha256": "ee4923ee6f8e1ed30d109c08935d1de35bc0b6b12c1c47285b0991f716ada4b4"
+    },
+    {
+      "path": "tests/fixtures/pipeline/ema/medicines-output-medicines-report_en.xlsx",
+      "sha256": "617f7cffd7df51114407cd823e8101af92c6eadda7b53bb0ff0e9d3d56d512e0"
+    },
+    {
+      "path": "tests/fixtures/pipeline/ema/smpc/ceplene-epar-product-information_en.pdf",
+      "sha256": "5c4648d65ecacc883c3814431fda996b976a2db7fc4538a2ebb8b48bc32a3ac9"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/DELETE24Q3.txt",
+      "sha256": "dabc08df3f6d0b8d3857e8c684a26a449eb9e4b1df405b31e3d9e019ba23bc7e"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/DEMO24Q2.txt",
+      "sha256": "40283eb80ca6db3bc562bee8c031e9bcc79d37fceee2d97394872806f7786401"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/DEMO24Q3.txt",
+      "sha256": "d82258c595b568f81e11794bdcf8b91b8bd11afe5ba2644da78a1b9b6856fdd2"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/DRUG24Q2.txt",
+      "sha256": "5912fabaefebd30f86c679712fe9076e140ceb43bbfa70e30ab5b814a2b1d58c"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/DRUG24Q3.txt",
+      "sha256": "59b63b8a56fa4551c5b94de435b632d0f82c7120dde744046cb24800871a71ce"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/INDI24Q2.txt",
+      "sha256": "64b5d600f72cb21089fa7cebd3b49ca999d612686b5aef29529b459946e59a9e"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/INDI24Q3.txt",
+      "sha256": "f0a3b5aca9d5422d61ae8e41968c8120119de62d392d85f87edde04510aee49d"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/REAC24Q2.txt",
+      "sha256": "7466082c5bcebd3cbc32dcbf41d00a307500655593ffdb77036732f9565e62b4"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/REAC24Q3.txt",
+      "sha256": "2f677e8d1aa74b6b265014557d4fbee8b5267b7e566d1f3a8a624d69530f57af"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/RPSR24Q2.txt",
+      "sha256": "2ce552479a4ee3944b43309d341f4b604869a0921bac8b391e847acdc65cca6b"
+    },
+    {
+      "path": "tests/fixtures/pipeline/faers/RPSR24Q3.txt",
+      "sha256": "a2d807f6342a107c366308389e80e54e3a3ce63d3c524b85a02db9ae8c485c2c"
+    },
+    {
+      "path": "tests/fixtures/pipeline/ontology/disease_map.tsv",
+      "sha256": "3bc7ac7c6ea052a16e9ec860b8c4c764308dd719ea4cd3da20355e753c36b690"
+    },
+    {
+      "path": "tests/integration/harness.py",
+      "sha256": "035056de09879acf4b36519c3f5fc8662dbf08d22b5d5cc7de02bdbdc05a967d"
+    },
+    {
+      "path": "tests/integration/test_animal_species_resolution.py",
+      "sha256": "253d2838122bd5ff6d63bf1358dd1493a65859e903bb313eca6ab6cff4e56ea7"
+    },
+    {
+      "path": "tests/integration/test_contraindication_nullable_tablassert.py",
+      "sha256": "387340c64963679cad053f5dc98284032a0bbf36ab0884b6587808484dae4c1a"
+    },
+    {
+      "path": "tests/integration/test_denylist_reindex.py",
+      "sha256": "e0389d06b71f53e6e1d2a1c1cf62d2ddc8366366d91191ff463976c4f144b623"
+    },
+    {
+      "path": "tests/integration/test_kgx_end_to_end.py",
+      "sha256": "fa7a4c309927eaf095f89698b654eaab1a694d43131f9750260c9d873bce469a"
+    },
+    {
+      "path": "tests/integration/test_merge_on_collision.py",
+      "sha256": "b3dbdb99de8ca86975af20d9b816ff0fbf8a8d071385d3d23a76a78cc2cc0996"
+    },
+    {
+      "path": "tests/integration/test_mock_pipeline.py",
+      "sha256": "3538708bf3ba1548c42258a4d8184a501d31dfe70b25e8edae116728b9c256c5"
+    },
+    {
+      "path": "tests/integration/test_prod_smoke.py",
+      "sha256": "73c8bd0f6d56de2115d0e900f726c942f281e66a6fedd17ddb94dd0e8297361b"
+    },
+    {
+      "path": "tests/integration/test_semantic_equivalence.py",
+      "sha256": "5d4bad66abd48cb3bd7818e7d2c8048cd28a4c5dd4dd87bad1f4400afc2186ae"
+    },
+    {
+      "path": "tests/integration/tiny_fullmap.py",
+      "sha256": "8ff60d99176627be503e00fdbcbe881e679a0b6443c88988197fa16f522d75b2"
+    },
+    {
+      "path": "tests/unit/conftest.py",
+      "sha256": "6611fdedce9e9a3e7e73a80a317d0c7b20fca6fd59923f6fcf237bd6951824c4"
+    },
+    {
+      "path": "tests/unit/test_approval_reconciliation.py",
+      "sha256": "3e4c344e6b8a6bf06af7013b0dd92cfd4cfa73f15ba4c3a92b1049b4af8575d6"
+    },
+    {
+      "path": "tests/unit/test_artifact_store.py",
+      "sha256": "090b5d296387d1d70659012deae8787b51d047262399ccee963ad3cf63338373"
+    },
+    {
+      "path": "tests/unit/test_assertions_approved_treats.py",
+      "sha256": "6fe3da0e840453505cefc7f5e2752983e907c94fbb2b06f22aee3b91ff891233"
+    },
+    {
+      "path": "tests/unit/test_assertions_approved_treats_edge.py",
+      "sha256": "f54e03bb120704997a36100549fe9b9b8a95171b8fd10c4f40d495e6a4258b0d"
+    },
+    {
+      "path": "tests/unit/test_assertions_approved_treats_ema.py",
+      "sha256": "4d134e3e04a44d847a1e49726250c411632f23c93bd133909a4dce315273c694"
+    },
+    {
+      "path": "tests/unit/test_assertions_approved_treats_ner.py",
+      "sha256": "9d6c5f51cfb3dd0fa4ada659b18bdb38ae78766c7ea88ab1fd8c8b1f42602add"
+    },
+    {
+      "path": "tests/unit/test_assertions_contexts.py",
+      "sha256": "72c86eb1750735eeec14bc342694a0a76f8240249485b1868b6dfb4dfa9528ae"
+    },
+    {
+      "path": "tests/unit/test_assertions_contraindications.py",
+      "sha256": "6f63481b63e08bbe4821383d6e35e11cdce5661de24c683fbd3d067f9742813c"
+    },
+    {
+      "path": "tests/unit/test_assertions_contraindications_edge.py",
+      "sha256": "3ad23a75ce8c2cf94120e057d85792966f7d10a0c673703f600c14b24536aa20"
+    },
+    {
+      "path": "tests/unit/test_assertions_contraindications_ema.py",
+      "sha256": "71062714a92044745d928a2a54c1ef9f3cc80cb41b47ff58275016d6ead5408d"
+    },
+    {
+      "path": "tests/unit/test_assertions_contraindications_perf.py",
+      "sha256": "0404830fd564e69cc516fd0bd963d22ee783b33fa514a1e9eac30a50738ac3b2"
+    },
+    {
+      "path": "tests/unit/test_assertions_contraindications_warnings.py",
+      "sha256": "90c9f38568bdce84aca265ac4fce7d9c46c9cef46c72ca270508296b2daf5782"
+    },
+    {
+      "path": "tests/unit/test_assertions_disease_map.py",
+      "sha256": "aa973f15be59b7d65a8efdd07652504f22a1c587a700232a182e1f06cb6c68c5"
+    },
+    {
+      "path": "tests/unit/test_assertions_evidence.py",
+      "sha256": "e038b0e5cabb9ac382d34af5254c0b7d0c70692680e5f87869541319c5b20cc5"
+    },
+    {
+      "path": "tests/unit/test_assertions_evidence_cache.py",
+      "sha256": "a81ddb6b7d6a354a0a3422fdad7a5f4ccd04f6d993179fa513b576baf2c5be5e"
+    },
+    {
+      "path": "tests/unit/test_assertions_evidence_edge.py",
+      "sha256": "20449d4f019a9d91a196c5e4218e8af4172ea348de750c171a6846b3086d40b8"
+    },
+    {
+      "path": "tests/unit/test_assertions_ner_dispatch.py",
+      "sha256": "fa5634526f20ea8e2ebcd740adc4dcdd2014cc17026ba71923884c728050be44"
+    },
+    {
+      "path": "tests/unit/test_assertions_observed_uses.py",
+      "sha256": "195daebcc840df0276568dca514b00430208f63762915302f29158b5168fd40f"
+    },
+    {
+      "path": "tests/unit/test_assertions_observed_uses_canada.py",
+      "sha256": "7361526a750693198c9f0a541e57f4ac9441740a1b91b0ba2b51c25cd574c06e"
+    },
+    {
+      "path": "tests/unit/test_assertions_observed_uses_edge.py",
+      "sha256": "21a7875bde2e010fa5514e4d243fdfdc50cf5938d847d3e8c01140fe1a9ec1f2"
+    },
+    {
+      "path": "tests/unit/test_assertions_observed_uses_ner.py",
+      "sha256": "e788aec2f5b646eec636a4a060aa0cf0e171bad8e9c91ce36cba8db3f86f45c8"
+    },
+    {
+      "path": "tests/unit/test_assertions_species.py",
+      "sha256": "d1abd4d5ed2c55aaef5919b4f695f10c248332052f1673350f9aa6609d599284"
+    },
+    {
+      "path": "tests/unit/test_canada_vigilance_extract.py",
+      "sha256": "10f2a2ab02eee81378a0f3f643badea6f1caf2f466f3a411272d11998c49160c"
+    },
+    {
+      "path": "tests/unit/test_ci_unit_shard_selector.py",
+      "sha256": "61c5674906a019cdfdc51fa491795364665df66a2c598cdb8f12f91d254fd805"
+    },
+    {
+      "path": "tests/unit/test_cli.py",
+      "sha256": "2e27f20f86ca00abbd544d2ed9e33a6a0c6a65f5abf80e81c30197b827e6572e"
+    },
+    {
+      "path": "tests/unit/test_cli_edge.py",
+      "sha256": "58cf51d75b949c01d41a6402ca1f1987c2fef6e1d40cce92cd6e7d0c7d9586cd"
+    },
+    {
+      "path": "tests/unit/test_content_hash.py",
+      "sha256": "58e93008f79a08d9109b0ead21ade0b1b2d0b678398f76d60889277e88c4d01d"
+    },
+    {
+      "path": "tests/unit/test_dag.py",
+      "sha256": "cc5881b1aa56b410261a201544bc7ed3c509bf915aeacbaddb1e754ab9b8119d"
+    },
+    {
+      "path": "tests/unit/test_dag_downloads.py",
+      "sha256": "804ae98dc9ab8a67521282bb17ba5efd58da1ae2676de3fa345e2f81755c8703"
+    },
+    {
+      "path": "tests/unit/test_dag_edge.py",
+      "sha256": "5393a40fc1c34a1b0804c742a8fce8b7dc29a331e337d9d306c6c5ea60a8d91f"
+    },
+    {
+      "path": "tests/unit/test_dailymed_extract.py",
+      "sha256": "cb9a9d29554417ed6c1901fb9352d55a0316bb827feb939afdef72b89179d9a8"
+    },
+    {
+      "path": "tests/unit/test_dailymed_source.py",
+      "sha256": "df8623d5f16a7737920a889dad80daff1cde743cd32310bb1511d97f01f932c7"
+    },
+    {
+      "path": "tests/unit/test_downloader.py",
+      "sha256": "1a204498dc34b5dc98780419d472d7514edac3b5b48a618e936e0c6ea2f54b39"
+    },
+    {
+      "path": "tests/unit/test_drugsfda_extract.py",
+      "sha256": "df5ae64991a8b00f8fb170206135285c99a95ce24bbf25565ccb368250a79d1e"
+    },
+    {
+      "path": "tests/unit/test_drugsfda_products_edge.py",
+      "sha256": "9fb656b4462ef337719b30343eff0e8d1329288c1f80e7279b7eef1000b68b51"
+    },
+    {
+      "path": "tests/unit/test_drugsfda_source.py",
+      "sha256": "688d59df616390ff8622bb0f0120362e54d148c1e70b2b457f44b05c7afe1c9b"
+    },
+    {
+      "path": "tests/unit/test_ema_documents_source.py",
+      "sha256": "1d079c3e9dca113504065e69ce011206c9c04d339357879e23b47d0ae6cae0f4"
+    },
+    {
+      "path": "tests/unit/test_ema_extract.py",
+      "sha256": "77379c5b5b1f0fc559f255d8bb5566f458c8b129af64e33f8c559a1b4aa61b4d"
+    },
+    {
+      "path": "tests/unit/test_ema_smpc_extract.py",
+      "sha256": "77da109d23a2109dd17937c307fef7ee28d5bec047488272de0b22773f259bc5"
+    },
+    {
+      "path": "tests/unit/test_ema_smpc_source.py",
+      "sha256": "0b0e1e30b62712d18b1330c010d0cb2910e25d9764002802229c73fbfbda1aeb"
+    },
+    {
+      "path": "tests/unit/test_ema_source.py",
+      "sha256": "c6262d5b592fcee7948367b24fce411ca99addc64cefa9e7ea05f6120040ab97"
+    },
+    {
+      "path": "tests/unit/test_faers_ascii_edge.py",
+      "sha256": "a3199c407142de265f62eaf0c23f6198e5492865d8b7062353e9ea521094eb97"
+    },
+    {
+      "path": "tests/unit/test_faers_extract.py",
+      "sha256": "a7e71d177e89e1e546fc81f135c0eef93b6051a543274e35172644a8edc84d22"
+    },
+    {
+      "path": "tests/unit/test_faers_source.py",
+      "sha256": "7059a03c62cad04b9c3b04f8628d1aae5e31977b7157aa64e63959fdc9e493c7"
+    },
+    {
+      "path": "tests/unit/test_io_edge.py",
+      "sha256": "395cd5557a943b3bde944d1c7dcf468cc253138f5696fe8552081dad2aedbb58"
+    },
+    {
+      "path": "tests/unit/test_legacy_tsv.py",
+      "sha256": "74c78ddfce0fd991ec1f5db68332ea21d286566cb076ea8e84d71777682953d4"
+    },
+    {
+      "path": "tests/unit/test_logging_setup_edge.py",
+      "sha256": "89420b6e05b667fc70c4909863e3c88b9ffd5d2e29d8e01319129dae3b5501bb"
+    },
+    {
+      "path": "tests/unit/test_ner.py",
+      "sha256": "b8f11970aca760c8adccc44416835739af132760315f32329a3ab6493ace45e6"
+    },
+    {
+      "path": "tests/unit/test_ner_dictionary.py",
+      "sha256": "702c50f27cdc12362d2dc8aa6625093dbac330ee2b8d8ae8f32586907aa3065e"
+    },
+    {
+      "path": "tests/unit/test_ner_dictionary_edge.py",
+      "sha256": "614515a99a51096fc7d146caf0dd26df1b5320d8c54fedb413a915f3475e3e48"
+    },
+    {
+      "path": "tests/unit/test_ner_edge.py",
+      "sha256": "8c979451b2e4cb49c7ddf947b093c802e6ac59d95a8e74fd77df265178df6e27"
+    },
+    {
+      "path": "tests/unit/test_ner_export.py",
+      "sha256": "5133b02109259ab292af0e7eae8f85bd4212fb9c8f4eaabc37d2162ac4d9cc1d"
+    },
+    {
+      "path": "tests/unit/test_ner_export_edge.py",
+      "sha256": "50d6765c1434547dbb8ca7c61652218195ad104901e5f679fb0222d4d58473fb"
+    },
+    {
+      "path": "tests/unit/test_ner_gliner25_compat.py",
+      "sha256": "7b3a55c8abe6b052afe2ec68e4264f3317ce9157497d9c01cdcce684086e7e95"
+    },
+    {
+      "path": "tests/unit/test_ner_gpu_lock.py",
+      "sha256": "5dbd1e4a7866f1875d89f28194b39ca13099ee857d56fe5ce3ab5408a6388d7d"
+    },
+    {
+      "path": "tests/unit/test_ner_lexical.py",
+      "sha256": "187c86d728dcb9f71fb175249cfc6aaba16cd5889b965b1acd0be2c64337bad0"
+    },
+    {
+      "path": "tests/unit/test_ner_lexical_edge.py",
+      "sha256": "056edbc163fbc260df7c84ab9d6b6e76aa0769ae380ce7a2f24549da3ba8a0d8"
+    },
+    {
+      "path": "tests/unit/test_ner_mention_cache.py",
+      "sha256": "8bcd118186fd62d1d216fd14c9fb81cfefd63ec2b6a379917dfa7dd12c65078c"
+    },
+    {
+      "path": "tests/unit/test_ner_model_cache.py",
+      "sha256": "c3b16d2c1593d0081357b6c983c1035c2f4d5b8295a1e0b775415f4ef15fe1fa"
+    },
+    {
+      "path": "tests/unit/test_ner_model_cache_edge.py",
+      "sha256": "c6f68f41312fb29712bd84777d81eaefa09e3d884eac31eea8d3ba60195d5a96"
+    },
+    {
+      "path": "tests/unit/test_ner_schema.py",
+      "sha256": "c1b6d7d093a29f5e9af17c7828a4a95ed5a462ad3dffc9ff0b69acfcb36b70ae"
+    },
+    {
+      "path": "tests/unit/test_release.py",
+      "sha256": "48b0b7e9d6151fd3fa92b535ae5cc881600ce5a335896a2097f9671ab32bee52"
+    },
+    {
+      "path": "tests/unit/test_runtime_edge.py",
+      "sha256": "7419a8009bd71c8797c01d073681842a7788163f3a8e98fc8d6058b7bcbbb7fd"
+    },
+    {
+      "path": "tests/unit/test_sources_edge.py",
+      "sha256": "c4dbbd6e8e9538108450efe9217f661bd7ece60cb581b38b7cf2319be7abe3d3"
+    },
+    {
+      "path": "tests/unit/test_spl_xml_edge.py",
+      "sha256": "de94d788ec5c0021e17900a6f7bc2559b4eb56698b1ef34355fa0e152592e868"
+    },
+    {
+      "path": "tests/unit/test_tablassert_configs.py",
+      "sha256": "ab6770eadcaf8f1c91144986367aa09b00891ac251f0c305c6695c9d7af3d1c4"
+    },
+    {
+      "path": "tests/unit/test_tablassert_configs_edge.py",
+      "sha256": "507edceb4b3b8958779d235f58092879db5654566f5bd17fc731dec97d71857b"
+    },
+    {
+      "path": "tests/unit/test_tablassert_run_edge.py",
+      "sha256": "a5c5cd6d42b952847c8670068d391673e7c342a7686234eb0fc2a6cafea6f9fa"
+    },
+    {
+      "path": "tests/unit/test_textnorm.py",
+      "sha256": "c9d2e448b13f8c6591b9b7fc2b6cdfc8ba2e0df25579ab32e74ba6421309eff5"
+    },
+    {
+      "path": "tests/unit/test_translator_contract.py",
+      "sha256": "38edff08d24837f3150737c4ebf09c9fc85a7a48139e889b769a96659daafc73"
+    },
+    {
+      "path": "tests/unit/test_translator_contract_edge.py",
+      "sha256": "a442227a56e69c6cf3bfee385e84819517c5b42cb3cafff12eff1eb450b3f4f0"
+    },
+    {
+      "path": "tests/unit/test_translator_regression.py",
+      "sha256": "2a0e24a37f8e20b97a6cdbc15c0bb4ef45edced4a7f6448e5bd18d4f24e497af"
+    },
+    {
+      "path": "tests/unit/test_translator_regression_edge.py",
+      "sha256": "3aece3aa9b4d4613d87319b282c9781706027ac65631f5bc37646cc2cb2f22fa"
+    },
+    {
+      "path": "tests/unit/test_version.py",
+      "sha256": "237a0ae8f1cdc53b4045cafb65692db84c26568c507ca6f1cf345ec5aae3e6e6"
+    },
+    {
+      "path": "tests/unit/test_xcom.py",
+      "sha256": "891db6f9e95e897bca5810bb6cb1bff60bf3e2f31b75249e412081c755a511a9"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "ea527e75a24e3679544c64bc03a487d91a17926881f52005e9c8aae8dd915296"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pairs": 5095,
+  "cited_labels": 41430,
+  "parsed_labels": 8286,
+  "labels_with_nested_safety": 4,
+  "pairs_with_any_label_inspected": 4291,
+  "pairs_with_complete_coverage": 1041,
+  "pairs_with_nested_safety_matches": 11,
+  "pairs_losing_match_in_at_least_one_label": 9,
+  "pairs_with_observed_support_loss": 6,
+  "complete_pairs_with_observed_support_loss": 6,
+  "scope": "Lexical matches, not clinical adjudication; safety includes warnings, contraindications and precautions",
+  "updated_utc": "2026-11-04T00:29:34.173788+00:00"
+}

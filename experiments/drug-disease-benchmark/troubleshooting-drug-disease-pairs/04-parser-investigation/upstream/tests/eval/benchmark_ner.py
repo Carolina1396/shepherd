@@ -1,0 +1,277 @@
+"""NER benchmark harness — precision/recall/F1 of disease/phenotype mention extraction.
+
+Evaluates mention-extraction approaches against the hand-labeled gold fixture
+(``ner_gold.json``: DailyMed contraindication sections (LOINC 34070-3) + FAERS indication
+strings with gold disease/phenotype spans). This is the evidence base for the settled single
+composite NER backend (see ``ner/BENCHMARK.md``).
+
+Approaches benchmarked (all via the ONE ``DiseaseNER`` backend in different modes):
+  * ``gazetteer``  — offline mode: curated gazetteer + lexical matcher (deterministic).
+  * ``gliner``     — production mode with an EMPTY gazetteer: GLiNER only (isolates the model).
+  * ``composite``  — production mode with the curated gazetteer: the settled backend
+                     (gazetteer anchors high-precision spans; GLiNER fills OOV recall).
+
+Scoring is span-level, micro-averaged: a prediction is a true positive only if its
+``(start, end, type)`` exactly matches a gold span. Gold ``type`` values are the canonical
+``Mention.type`` strings (``Disease`` / ``PhenotypicFeature``), and only the **object** channel
+is scored: the backend also emits qualifier mentions (population, sex, temporal, ...) that the
+gold policy deliberately annotates as no-span, so they are filtered out before scoring.
+Run with::
+
+    uv run python tests/eval/benchmark_ner.py            # all runnable approaches
+    uv run python tests/eval/benchmark_ner.py --json out.json
+
+This script is an evaluation artifact: it is NOT collected by pytest (filename is not
+``test_*.py``) and is not part of the coverage-gated package. It imports ``ner.ner`` (which
+lazy-loads ``gliner2``) and never imports ``gliner2`` directly, so it type-checks with or without
+the NER dependencies installed (the model approaches simply skip when it is absent).
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+from collections.abc import Callable, Sequence
+from dataclasses import dataclass
+from pathlib import Path
+
+from dakp_pipeline.ner.dictionary import OBJECT_TYPES
+from dakp_pipeline.ner.ner import (
+    DEFAULT_MODEL,
+    EMBEDDED_GAZETTEER,
+    GLINER_GENERATION_FLOOR,
+    INDICATION_ACCEPT_THRESHOLD,
+    STRICT_GAZETTEER_EXTENSION_THRESHOLD,
+    DiseaseNER,
+)
+
+HERE = Path(__file__).resolve().parent
+GOLD_PATH = HERE / "ner_gold.json"
+
+# --- the curated disease/phenotype gazetteer (the offline baseline under test) -----
+# The shipped composite backend's embedded gazetteer itself — imported, not duplicated, so the
+# benchmark always measures the terms the backend ships. It is intentionally NOT exhaustive:
+# the three out-of-gazetteer gold cases (porphyria / myasthenia gravis / pheochromocytoma)
+# measure model generalization that a gazetteer alone cannot provide.
+GAZETTEER: dict[str, str] = EMBEDDED_GAZETTEER
+
+
+@dataclass(frozen=True)
+class Gold:
+    start: int
+    end: int
+    type: str
+    surface: str
+
+
+@dataclass(frozen=True)
+class Case:
+    case_id: str
+    source: str
+    text: str
+    gold: tuple[Gold, ...]
+
+
+@dataclass(frozen=True)
+class Pred:
+    start: int
+    end: int
+    type: str
+    text: str
+
+
+Predictor = Callable[[str], list[Pred]]
+
+
+def _object_preds(ner: DiseaseNER, text: str) -> list[Pred]:
+    """Object-channel predictions only — the channel the gold fixture annotates.
+
+    ``DiseaseNER.extract`` returns mixed channels; qualifier mentions (population, sex,
+    temporal, frequency, ...) have no gold counterpart by policy ("Population descriptors ...
+    get no span"), so scoring them would count every correct qualifier as a false positive and
+    make the numbers incomparable with the recorded ``benchmark_results.json`` baseline.
+    """
+    return [Pred(m.start, m.end, m.type, m.text) for m in ner.extract(text) if m.type in OBJECT_TYPES]
+
+
+# --- gold loading --------------------------------------------------------------
+
+
+def load_cases(path: Path = GOLD_PATH) -> list[Case]:
+    """Load the gold fixture, resolving each surface to unique ``(start, end)`` offsets."""
+    data = json.loads(path.read_text("utf-8"))
+    cases: list[Case] = []
+    for entry in data["cases"]:
+        text = entry["text"]
+        gold: list[Gold] = []
+        for mention in entry["mentions"]:
+            surface = mention["surface"]
+            if text.count(surface) != 1:
+                msg = f"gold surface {surface!r} not unique in case {entry['id']!r}"
+                raise ValueError(msg)
+            start = text.index(surface)
+            gold.append(Gold(start=start, end=start + len(surface), type=mention["type"], surface=surface))
+        cases.append(Case(case_id=entry["id"], source=entry["source"], text=text, gold=tuple(gold)))
+    return cases
+
+
+# --- candidate predictors (all via the single DiseaseNER backend) --------------
+
+
+def gazetteer_predictor() -> Predictor:
+    """Offline mode: curated gazetteer + lexical matcher (deterministic, no heavy deps)."""
+    from dakp_pipeline.ner.ner import DiseaseNER
+
+    ner = DiseaseNER(offline=True, gazetteer=GAZETTEER)
+    return lambda text: _object_preds(ner, text)
+
+
+def gliner_predictor(threshold: float = GLINER_GENERATION_FLOOR, accept_threshold: float | None = None, model_id: str = DEFAULT_MODEL) -> Predictor:
+    """Production mode with an EMPTY gazetteer: GLiNER only (isolates the model)."""
+    from dakp_pipeline.ner.ner import DiseaseNER
+
+    ner = DiseaseNER(
+        offline=False,
+        gazetteer={},
+        model_id=model_id,
+        threshold=threshold,
+        accept_threshold=accept_threshold if accept_threshold is not None else threshold,
+    )
+    return lambda text: _object_preds(ner, text)
+
+
+def composite_predictor(
+    threshold: float = GLINER_GENERATION_FLOOR, accept_threshold: float | None = None, model_id: str = DEFAULT_MODEL
+) -> Predictor:
+    """Production mode with the curated gazetteer and an explicit acceptance profile."""
+    from dakp_pipeline.ner.ner import DiseaseNER
+
+    ner = DiseaseNER(
+        offline=False,
+        gazetteer=GAZETTEER,
+        model_id=model_id,
+        threshold=threshold,
+        accept_threshold=accept_threshold if accept_threshold is not None else threshold,
+        strict_extension_threshold=STRICT_GAZETTEER_EXTENSION_THRESHOLD,
+    )
+    return lambda text: _object_preds(ner, text)
+
+
+# --- scoring -------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class Metrics:
+    precision: float
+    recall: float
+    f1: float
+    tp: int
+    fp: int
+    fn: int
+
+
+def _prf(tp: int, fp: int, fn: int) -> Metrics:
+    precision = tp / (tp + fp) if (tp + fp) else 0.0
+    recall = tp / (tp + fn) if (tp + fn) else 0.0
+    f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
+    return Metrics(precision=precision, recall=recall, f1=f1, tp=tp, fp=fp, fn=fn)
+
+
+def score(predict: Predictor, cases: Sequence[Case], *, type_aware: bool = True) -> Metrics:
+    """Span-level micro P/R/F1. Strict: a TP requires matching ``(start, end)`` and type."""
+    tp = fp = fn = 0
+    for case in cases:
+        gold = {(g.start, g.end, g.type) for g in case.gold} if type_aware else {(g.start, g.end, "") for g in case.gold}
+        preds = predict(case.text)
+        pred = {(p.start, p.end, p.type) for p in preds} if type_aware else {(p.start, p.end, "") for p in preds}
+        tp += len(gold & pred)
+        fp += len(pred - gold)
+        fn += len(gold - pred)
+    return _prf(tp, fp, fn)
+
+
+# --- driver --------------------------------------------------------------------
+
+
+def _candidates(model_id: str = DEFAULT_MODEL) -> dict[str, Predictor]:
+    """Runnable predictors; a model approach that cannot load is skipped with a note."""
+    candidates: dict[str, Predictor] = {"gazetteer": gazetteer_predictor()}
+    try:
+        candidates["gliner"] = gliner_predictor(model_id=model_id)
+        candidates["composite"] = composite_predictor(model_id=model_id)
+    except Exception as exc:  # report any model/load failure and continue with the gazetteer
+        print(f"[skip] gliner/composite (model unavailable): {exc}")
+    return candidates
+
+
+def _print_errors(predict: Predictor, cases: Sequence[Case]) -> None:
+    """Print exact false-positive/false-negative surfaces for threshold decisions."""
+    for case in cases:
+        gold = {(g.start, g.end, g.type, g.surface) for g in case.gold}
+        pred = {(p.start, p.end, p.type, p.text) for p in predict(case.text)}
+        fp = pred - {(start, end, etype, surface) for start, end, etype, surface in gold}
+        fn = gold - pred
+        if fp or fn:
+            print(f"  {case.case_id}: FP={[surface for _, _, _, surface in sorted(fp)]} FN={[surface for _, _, _, surface in sorted(fn)]}")
+
+
+def run(json_out: Path | None = None, *, sweep: Sequence[float] = (), model_id: str = DEFAULT_MODEL) -> dict[str, dict[str, float]]:
+    cases = load_cases()
+    total_gold = sum(len(case.gold) for case in cases)
+    dailymed = sum(1 for c in cases if c.source == "dailymed")
+    faers = sum(1 for c in cases if c.source == "faers")
+    print(f"NER benchmark: {len(cases)} cases, {total_gold} gold mentions ({dailymed} DailyMed, {faers} FAERS)")
+    print(f"Model checkpoint: {model_id}\n")
+
+    results: dict[str, dict[str, float]] = {}
+    header = f"{'approach':<12} {'P':>7} {'R':>7} {'F1':>7} {'TP':>5} {'FP':>5} {'FN':>5}"
+    print(header)
+    print("-" * len(header))
+    for name, predict in _candidates(model_id).items():
+        strict = score(predict, cases)
+        lenient = score(predict, cases, type_aware=False)
+        results[name] = {"precision": strict.precision, "recall": strict.recall, "f1": strict.f1, "lenient_f1": lenient.f1}
+        print(f"{name:<12} {strict.precision:>7.3f} {strict.recall:>7.3f} {strict.f1:>7.3f} {strict.tp:>5} {strict.fp:>5} {strict.fn:>5}")
+    print("\n(strict = exact (start,end,type) match; lenient_f1 = offset match ignoring type)")
+
+    if sweep:
+        print(f"\nAcceptance sweep (generation floor = {GLINER_GENERATION_FLOOR:.2f}):")
+        print(f"{'accept':>8} {'approach':<12} {'P':>7} {'R':>7} {'F1':>7} {'TP':>5} {'FP':>5} {'FN':>5}")
+        for accept in sweep:
+            for name, predictor in (
+                ("gliner", gliner_predictor(accept_threshold=accept, model_id=model_id)),
+                ("composite", composite_predictor(accept_threshold=accept, model_id=model_id)),
+            ):
+                strict = score(predictor, cases)
+                print(
+                    f"{accept:>8.2f} {name:<12} {strict.precision:>7.3f} {strict.recall:>7.3f} {strict.f1:>7.3f} {strict.tp:>5} {strict.fp:>5} {strict.fn:>5}"
+                )
+
+    if json_out is not None:
+        payload = {"schema_version": "dakp.ner.benchmark.v1", "cases": len(cases), "gold_mentions": total_gold, "results": results}
+        json_out.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+        print(f"\nwrote {json_out}")
+    return results
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Benchmark disease/phenotype NER approaches on the gold fixture.")
+    parser.add_argument("--json", type=Path, default=None, help="Optional path to write the results JSON.")
+    parser.add_argument("--sweep", action="store_true", help="Run the current-model acceptance sweep for GLiNER-only and composite variants.")
+    parser.add_argument("--errors", action="store_true", help="Print FP/FN examples for the selected checkpoint's default operating points.")
+    parser.add_argument("--model", default=DEFAULT_MODEL, help="Hugging Face checkpoint to evaluate (default: %(default)s).")
+    args = parser.parse_args()
+    sweep = (0.35, 0.50, 0.75, 0.90, 0.95) if args.sweep else ()
+    run(json_out=args.json, sweep=sweep, model_id=args.model)
+    if args.errors:
+        cases = load_cases()
+        for name, predictor in (
+            ("gliner", gliner_predictor(model_id=args.model)),
+            ("composite", composite_predictor(accept_threshold=INDICATION_ACCEPT_THRESHOLD, model_id=args.model)),
+        ):
+            print(f"\n{name} errors:")
+            _print_errors(predictor, cases)
+
+
+if __name__ == "__main__":
+    main()

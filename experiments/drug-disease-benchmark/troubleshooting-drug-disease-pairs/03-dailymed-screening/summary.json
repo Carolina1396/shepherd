@@ -1,0 +1,18 @@
+{
+  "pairs": 1408,
+  "unique_cited_labels": 28869,
+  "selected_labels": 935,
+  "retrieved_labels": 935,
+  "categories": {
+    "indication_and_safety_mentions": 735,
+    "indication_mentions_without_safety_match": 576,
+    "no_condition_name_match": 90,
+    "other_sections_only": 5,
+    "safety_mentions_without_indication_match": 2
+  },
+  "pairs_with_any_retrieved_label": 1408,
+  "pairs_all_cited_labels_inspected": 365,
+  "pairs_with_warning_section_mentions": 338,
+  "manually_reviewed_pairs": 7,
+  "scope": "Automated name-location screening on selected current cited labels; not clinical validation"
+}

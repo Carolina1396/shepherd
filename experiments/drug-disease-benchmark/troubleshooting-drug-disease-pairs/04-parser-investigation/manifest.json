@@ -1,0 +1,43 @@
+{
+  "upstream_commit": "d0456b3db7468ef3e9c17a7beab01c506249225d",
+  "packaged_utc": "2026-11-03T20:32:47.149242+00:00",
+  "files": [
+    {
+      "path": "upstream/LICENSE",
+      "sha256": "7c35163790cbefe133b553e6d78e1cfb9f1b8a2fe17a7e8ea2f94e3a01ca8bbd",
+      "source": "https://github.com/glusman-team/dakp/blob/d0456b3db7468ef3e9c17a7beab01c506249225d/LICENSE"
+    },
+    {
+      "path": "upstream/src/dakp_pipeline/extract/spl_xml.py",
+      "sha256": "3712089065eb590c8bb114c6097a5b65a7639a4a2a5478bb3ea1371f5277fa32",
+      "source": "https://github.com/glusman-team/dakp/blob/d0456b3db7468ef3e9c17a7beab01c506249225d/src/dakp_pipeline/extract/spl_xml.py"
+    },
+    {
+      "path": "upstream/src/dakp_pipeline/assertions/approved_treats.py",
+      "sha256": "64854ae1a2f8409163d548c64be56ece6a25d061bf8a3ab7fb2e326d6ff70a62",
+      "source": "https://github.com/glusman-team/dakp/blob/d0456b3db7468ef3e9c17a7beab01c506249225d/src/dakp_pipeline/assertions/approved_treats.py"
+    },
+    {
+      "path": "upstream/src/dakp_pipeline/assertions/evidence.py",
+      "sha256": "458a121579678f86a29f059f4cb7e25fc017f7426401447fbc466c15baf75902",
+      "source": "https://github.com/glusman-team/dakp/blob/d0456b3db7468ef3e9c17a7beab01c506249225d/src/dakp_pipeline/assertions/evidence.py"
+    },
+    {
+      "path": "upstream/go/internal/dailymed/dailymed.go",
+      "sha256": "3d799efeced2e723fca34be893dccb3d9b4243be0619e8e78100721c827b3503",
+      "source": "https://github.com/glusman-team/dakp/blob/d0456b3db7468ef3e9c17a7beab01c506249225d/go/internal/dailymed/dailymed.go"
+    },
+    {
+      "path": "fixtures/naproxen.xml",
+      "sha256": "0efcd058c7a1adc70228b199c5242897fdb1be8fd953d14b0dd2395554702567",
+      "set_id": "1b63177f-17e5-4b5a-8924-7023efe016aa",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b63177f-17e5-4b5a-8924-7023efe016aa"
+    },
+    {
+      "path": "fixtures/donepezil.xml",
+      "sha256": "caa090825b6d3d2faed69a8bbce68b49f6511b35bb964c1cfa01b58f0737facf",
+      "set_id": "03e26183-3e07-45e8-a414-a8bad32483e2",
+      "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03e26183-3e07-45e8-a414-a8bad32483e2"
+    }
+  ]
+}

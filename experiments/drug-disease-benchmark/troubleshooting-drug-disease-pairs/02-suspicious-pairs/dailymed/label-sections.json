@@ -1,0 +1,200 @@
+{
+  "source_file": "../../04-parser-investigation/fixtures/naproxen.xml",
+  "sha256": "0efcd058c7a1adc70228b199c5242897fdb1be8fd953d14b0dd2395554702567",
+  "set_id": "1b63177f-17e5-4b5a-8924-7023efe016aa",
+  "document_id": "e89898f3-afe1-4077-bf15-2621f32ace12",
+  "version": "8",
+  "effective_time": "20251009",
+  "application_numbers": [
+    "ANDA074661"
+  ],
+  "sections": [
+    {
+      "code": {
+        "code": "48780-1",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "SPL product data elements section"
+      },
+      "title": "",
+      "text": "",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "55106-9",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - ACTIVE INGREDIENT SECTION"
+      },
+      "title": "Active ingredient (in each tablet)",
+      "text": "Naproxen sodium 220 mg (naproxen 200 mg) (NSAID)* *nonsteroidal anti-inflammatory drug",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "55105-1",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - PURPOSE SECTION"
+      },
+      "title": "Purposes",
+      "text": "Pain reliever/fever reducer",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "34067-9",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "INDICATIONS & USAGE SECTION"
+      },
+      "title": "Uses",
+      "text": "\u2022 temporarily relieves minor aches and pains due to: \u2022 minor pain of arthritis \u2022 muscular aches \u2022 backache \u2022 menstrual cramps \u2022 headache \u2022 toothache \u2022 the common cold \u2022 temporarily reduces fever",
+      "contains_heart_failure": false,
+      "contains_toothache": true
+    },
+    {
+      "code": {
+        "code": "34071-1",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "WARNINGS SECTION"
+      },
+      "title": "Warnings",
+      "text": "Allergy Alert: Naproxen sodium may cause a severe allergic reaction, especially in people allergic to aspirin. Symptoms may include: \u2022 hives \u2022 facial swelling \u2022 asthma (wheezing) \u2022 shock \u2022 skin reddening \u2022 rash \u2022 blisters If an allergic reaction occurs, stop use and seek medical help right away. Stomach bleeding warning: This product contains NSAID, which may cause severe stomach bleeding. The chance is higher if you: \u2022 age 60 or older \u2022 have had stomach ulcers or bleeding problems \u2022 take a blood thinning (anticoagulant) or steroid drug \u2022 take other drugs containing prescription and nonprescription NSAIDs (aspirin, ibuprofen, naproxen or others) \u2022 have 3 or more alcoholic drinks every day while using this product \u2022 take more or for a longer time than directed Heart attack and stroke warning : NSAIDs, except aspirin, increase the risk of heart attack, heart failure, and stroke. These can be fatal. The risk is higher if you use more than directed or for longer than directed.",
+      "contains_heart_failure": true,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "50570-1",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - DO NOT USE SECTION"
+      },
+      "title": "Do not use",
+      "text": "\u2022 if you have ever had an allergic reaction to any other pain reliever/fever reducer \u2022 right before or after heart surgery",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "50569-3",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - ASK DOCTOR SECTION"
+      },
+      "title": "Ask a doctor before use if",
+      "text": "\u2022 the stomach bleeding warning applies to you \u2022 you have a history of stomach problems, such as heartburn \u2022 you have high blood pressure, heart disease, liver cirrhosis, kidney disease, asthma, or had a stroke \u2022 you are taking a diuretic \u2022 you have problems or serious side effects from taking pain relievers or fever reducers",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "50568-5",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - ASK DOCTOR/PHARMACIST SECTION"
+      },
+      "title": "Ask a doctor or pharmacist before use if you are",
+      "text": "\u2022 under a doctor\u2019s care for any serious condition \u2022 taking aspirin for heart attack or stroke, because naproxen may decrease this benefit of aspirin \u2022 taking any other drug",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "50567-7",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - WHEN USING SECTION"
+      },
+      "title": "When using this product",
+      "text": "\u2022 take with food or milk if stomach upset occurs",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "50566-9",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - STOP USE SECTION"
+      },
+      "title": "Stop use and ask a doctor if",
+      "text": "\u2022 you experience any of the following signs of stomach bleeding: \u2022 feel faint \u2022 vomit blood \u2022 have bloody or black stools \u2022 have stomach pain that does not get better \u2022 you have symptoms of heart problems or stroke: \u2022 chest pain \u2022 trouble breathing \u2022 weakness in one part or side of body \u2022 slurred speech \u2022 leg swelling \u2022 pain gets worse or lasts more than 10 days \u2022 fever gets worse or lasts more than 3 days \u2022 you have difficulty swallowing \u2022 it feels like the pill is stuck in your throat \u2022 redness or swelling is present in the painful area \u2022 any new symptoms appear",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "53414-9",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - PREGNANCY OR BREAST FEEDING SECTION"
+      },
+      "title": "If pregnant or breast-feeding,",
+      "text": "ask a health professional before use. It is especially important not to use naproxen sodium during the last 3 months of pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery.",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "50565-1",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - KEEP OUT OF REACH OF CHILDREN SECTION"
+      },
+      "title": "Keep out of reach of children.",
+      "text": "In case of overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "34068-7",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "DOSAGE & ADMINISTRATION SECTION"
+      },
+      "title": "Directions",
+      "text": "\u2022 do not take more than directed \u2022 the smallest effective dose should be used \u2022 drink a full glass of water with each dose Adults and children 12 years and older: \u2022 take 1 tablet every 8 to 12 hours while symptoms last \u2022 for the first dose you may take 2 tablets within the first hour \u2022 do not exceed 2 tablets in any 8- to 12-hour period \u2022 do not exceed 3 tablets in a 24-hour period Children under 12 years: \u2022 ask a doctor",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "44425-7",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "STORAGE AND HANDLING SECTION"
+      },
+      "title": "Other information",
+      "text": "\u2022 each tablet contains : sodium 22 mg \u2022 store at 20-25\u00b0C (68-77\u00b0F). Avoid high humidity and excessive heat above 40\u00b0C (104\u00b0F).",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "51727-6",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "INACTIVE INGREDIENT SECTION"
+      },
+      "title": "Inactive ingredients",
+      "text": "FD&C blue no. 2 aluminum lake, hypromellose, magnesium stearate, microcrystalline cellulose, polyethylene glycol, povidone, talc, titanium dioxide",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "53413-1",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "OTC - QUESTIONS SECTION"
+      },
+      "title": "Questions or comments?",
+      "text": "1-800-719-9260",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    },
+    {
+      "code": {
+        "code": "51945-4",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "displayName": "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"
+      },
+      "title": "Principal Display Panel",
+      "text": "Compare to the active ingredient of Aleve \u00ae Tablets FREE F R \u221a M | GLUTEN FREE STRENGTH TO LAST 12 HOURS NAPROXEN SODIUM TABLETS, 220 mg PAIN RELIEVER/FEVER REDUCER (NSAID) ACTUAL SIZE 100 TABLETS",
+      "contains_heart_failure": false,
+      "contains_toothache": false
+    }
+  ]
+}

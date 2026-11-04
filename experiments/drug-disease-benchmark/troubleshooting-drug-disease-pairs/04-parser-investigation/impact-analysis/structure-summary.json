@@ -1,0 +1,16 @@
+{
+  "state": "paused",
+  "pid": 3924580,
+  "target_labels": 41430,
+  "inspected_labels": 11492,
+  "failed_labels": 8,
+  "not_downloaded": 0,
+  "not_yet_attempted": 29930,
+  "labels_with_coded_indications": 11492,
+  "labels_with_nested_coded_warnings": 2,
+  "labels_with_nested_warnings_by_code_or_heading": 2,
+  "labels_with_nested_safety": 5,
+  "updated_utc": "2026-11-04T01:04:16.048015+00:00",
+  "paused_utc": "2026-11-04T01:07:16.416714+00:00",
+  "coverage_note": "Counts are the last saved checkpoint before termination, not a completed census. Downloaded files beyond that checkpoint remain cached."
+}

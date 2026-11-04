@@ -1,0 +1,439 @@
+# NER backend benchmark & decision
+
+Evidence base for settling on **one** composite NER backend (user directive: no pluggable
+backend selector). Harness + gold fixture: `tests/eval/benchmark_ner.py`, `tests/eval/ner_gold.json`.
+
+## Fixture
+
+34 cases / 42 gold disease/phenotype spans: 20 DailyMed "Contraindications" sections
+(LOINC `34070-3`) + 14 held-out FAERS indication strings. The FAERS examples remain only as
+backend evaluation coverage; the production observed-use path bypasses NER. Includes 3
+**out-of-gazetteer** rare
+diseases (porphyria, myasthenia gravis, pheochromocytoma) to probe model generalization
+that a gazetteer alone cannot provide, 4 cases added 2026-08-10 that expose fixed
+weaknesses: a population descriptor with no mention (`dailymed-childbearing`), a maximal-span
+multiword disease (`dailymed-chf`), two OOV liver diseases (`dailymed-cirrhosis`), and an
+OOV FAERS disease (`faers-aki`), and 3 cases added 2026-08-14 for the specificity merge: two
+qualified diseases whose generic head is a gazetteer term (`dailymed-pulm-htn`,
+`dailymed-portal-htn`) and one hedge-prefixed mention (`dailymed-recent-mi`). Annotation policy
+is documented in the fixture — it now states explicitly that concept-changing qualifiers are
+part of the span while temporal/evidential hedges are not.
+
+## Results (strict span-level micro P/R/F1; a TP needs exact `(start, end, type)`)
+
+### GLiNER2.5 boundary checkpoint + full-window inference (2026-10-13, wenceslaus 4x P100)
+
+The production default moved from the GLiNER2 large **span** checkpoint
+`fastino/gliner2-large-v1` (384-word effective window: the checkpoint config has no `max_len`, so
+the backend fell back to `_DEFAULT_WORD_BUDGET = 384`) to the GLiNER2.5 **boundary** checkpoint
+`fastino/gliner2.5-base-v1` (`max_len: 4096`) at the full 4096-word budget, fp32. Composite stays
+**1.000 / 1.000 / 1.000** (42 TP / 0 FP / 0 FN; `benchmark_results.json`); the isolated GLiNER
+leg improves from P 0.794 / R 0.643 / F1 0.711 (lenient 0.789) to **P 0.897 / R 0.833 /
+F1 0.864 (lenient 0.938)** — the boundary architecture's attribute mechanism extracts longer,
+qualifier-aware spans without mistyping them.
+
+Supporting evidence from the same session (all on wenceslaus, 4x Tesla P100-16GB, fp32):
+
+- **Window budget probe** (single 4096-word window, batch 1): peak 14.44 GiB / 2.79 s — fits a
+  16 GB P100 only at batch 1, hence the adaptive `_word_budget_batches`: windows pack into
+  batches by word budget, and a CUDA OOM halves both the batch size and the word budget
+  (`_MAX_OOM_HALVINGS = 2`).
+- **gliner2 2.1.0 CUDA bug**: `_attach_entity_attributes` indexes CPU logits with `device=`
+  indices (crashes every boundary-model attribute pass). Fixed by the vendored, source-
+  signature-gated shim `ner/_gliner25_compat.py` (no engine edit); no-op on span checkpoints
+  and after an upstream fix.
+- **A/B vs the old checkpoint** (`tests/eval/ab_ner_diff.py --sample 500`): 411/500 texts
+  produce different mentions. Per-label counts (500 DailyMed sections, same seed): the old
+  model over-extracts boilerplate — Disease 5474 vs 2326, PhenotypicFeature 5141 vs 2070,
+  PopulationOfIndividualOrganisms 1987 vs 342 (top old surfaces: `patients`, `adults`,
+  `pediatric patients`), OrganismTaxon 528 vs 320 (old top surfaces: `human`, `rats`, `mice`,
+  `rabbits` — animal-study boilerplate), frequency_qualifier 523 vs 65 (dose-wording junk).
+  `QUALIFIER_SURFACE_BLOCKLIST` enforcement is visible in the abstain log (`adults` blocked at
+  score 0.96).
+- **Throughput**: old checkpoint 500 texts on one P100 = 183.8 s (2.72 texts/s/GPU, ~8 windows
+  per section); new checkpoint 500 texts pooled across 4 P100s via `MiningPool` = 47.5 s
+  (10.5 texts/s aggregate, ~2.6 texts/s/GPU at full-length windows, but each section runs as
+  ONE window instead of ~8 — no truncation, no redundant boundary passes, 4x aggregate over
+  the previous single-GPU setup).
+- **Qualifier prompting** is Biolink-grounded: `MODEL_LABELS` descriptions follow the
+  biolink-model class definitions, and the assertion-context vocabulary is limited to the two
+  predicates the pipeline actually compiles (`indication` -> `biolink:treats` /
+  `biolink:applied_to_treat`, `contraindication` -> `biolink:contraindicated_in`); the
+  unusable `prevention` / `observed_prevention` contexts were removed.
+
+### v1.16.0 build-speed work (2026-10-01, wenceslaus 4x P100)
+
+Composite stays **1.000 / 1.000 / 1.000** on branch HEAD defaults
+(`benchmark_1.16.0.json`). Inference-config sweep over 2,000 real SPL section texts
+(`tests/eval/ab_ner_diff.py`, per-config diff vs the cache-served production config):
+
+- **Control (defaults vs defaults): 0/2000 texts differ** - run-to-run deterministic, and the
+  Tier B span cache reproduces production mentions via CPU re-merge (1,829/2,000 served).
+- **`compute_dtype=fp16`: 28/2000 texts differ (1.4%)** - span-boundary extensions
+  ("edema" -> "generalized edema") and extra qualifier mentions, i.e. threshold knife-edge
+  flips from fp16 numerics; wall time unchanged (eager attention dominates on sm_60).
+  Left opt-in at the time; ADOPTED as the production default in v1.19.0 (see below).
+- **`chunk_words=1024` (+ batch 32/64): REJECTED.** Halving the window budget doubles the
+  window count and OOM-thrashes 16 GB P100s (129k CUDA-OOM retries in the sweep log; no run
+  finished in over an hour). The 4096-word budget stays.
+- **Batching note for the +87 delta:** length-bucketed batching (v1.16.0) changes batch
+  composition, which flips a few knife-edge mentions: the warm full build produced 19,634
+  contraindication assertions vs 19,547 at v1.15.0 (+87 KGX edges, 1 removed, +2 nodes).
+  Accuracy gate (this benchmark) unchanged at 1.000; delta accepted as documented.
+- xformers/flash-deberta remain infeasible on P100 (sm_60, no flash kernels); the encoder
+  still falls back from `sdpa` to `eager` (transformers DebertaV2 limitation).
+
+### fp16 inference (v1.19.0 default, reverted to opt-in in v1.21.0)
+
+v1.19.0 made `compute_dtype` default to `fp16`: every GLiNER run (DAG mining workers, the CLI,
+the multi-GPU dispatch) executed the forward under `torch.autocast("cuda", float16)`, so
+accumulation-sensitive ops (LayerNorm, softmax) stayed fp32 while the rest ran at the
+device's fp16 rate. The 28/2000 knife-edge flips recorded above remain the documented
+accuracy delta. Both cache tiers key `compute_dtype` (`span_material` / `config_fingerprint`),
+so fp32-mined stores are never served to an fp16 run: the first fp16 build re-mines once.
+
+That one-time cost is what v1.21.0 reverts. Measured on wenceslaus (4x Tesla P100, 2026-10-02,
+DAKP 1.20.0 = fp16 default) against the warm v1.16.0 store: the fp32-era run served 144,688 of
+187,376 contraindication texts from Tier B spans by CPU re-merge and GPU-mined only ~42.7k, while
+the fp16 run missed every key in both tiers and GPU-mined the full corpus at ~1,300 texts/min
+(multi-hour, versus minutes for the warm merge). `compute_dtype` therefore defaults to `fp32`
+again: the existing store stays warm and the 1.4% knife-edge flips are avoided. fp16 remains
+available per backend via `compute_dtype="fp16"` (autocast path unchanged, still keyed in both
+tiers, so an fp16 experiment never serves or overwrites fp32 mentions). CPU inference and the
+test suite are unaffected (autocast arms only on CUDA).
+
+### Current-model local run
+
+The then-default checkpoint (`SkyeAv/drug-approvals-gliner-small-v2.1`) was available in
+this checkout's cache and was benchmarked on CPU. This checkout is not the deployment machine,
+so these are provisional local measurements and should be rerun on deployment hardware/cache.
+The fixture has 34 cases and 42 gold spans.
+
+| variant | acceptance | precision | recall | F1 | TP | FP | FN |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| gazetteer-only | n/a | 0.949 | 0.881 | 0.914 | 37 | 2 | 5 |
+| GLiNER-only | 0.35 | 0.718 | 0.667 | 0.691 | 28 | 11 | 14 |
+| composite (historical merge) | 0.35 | 0.952 | 0.952 | 0.952 | 40 | 2 | 2 |
+| composite (historical merge) | 0.90 | 0.976 | 0.929 | 0.951 | 39 | 1 | 3 |
+| composite (strict extension) | 0.35 | **1.000** | **1.000** | **1.000** | **42** | **0** | **0** |
+| **composite (strict extension)** | **0.95** | **1.000** | **0.976** | **0.988** | **41** | **0** | **1** |
+
+Historical-merge rows generated candidates at `0.35` without the strict extension floor. The
+final production rows use the strict extension floor `0.95` as well as the shared generation floor.
+The precision-first DailyMed indication profile therefore uses acceptance `0.95`; FAERS
+observed-use shaping does not invoke NER. The contraindication profile uses the lower `0.35`
+acceptance point to preserve recall. The two
+generic `0.35` defaults are no longer the production policy: they represent the named generation
+floor and the recall-first contraindication profile respectively.
+
+Representative historical-merge composite errors at acceptance `0.35` were boundary overreach:
+`hypersensitivity to ibuprofen.` and `persistent transaminase elevations`. The strict extension
+floor removes both without sacrificing the OOV contraindication probes. The final indication
+profile retains one false negative, OOV `pheochromocytoma`; the final contraindication profile
+retains none on this fixture.
+
+Current (2026-08-14, after the specificity merge + abstention below):
+
+| approach  | precision | recall | F1    | TP | FP | FN | notes                                   |
+| --------- | --------- | ------ | ----- | -- | -- | -- | --------------------------------------- |
+| gazetteer | 0.949     | 0.881  | 0.914 | 37 | 2  | 5  | deterministic; no heavy deps; FN = 3 OOV probes + the 2 qualified-disease cases |
+| gliner    | 0.781     | 0.595  | 0.676 | 25 | 7  | 17 | zero-shot alone (`gliner_large-v2.5`); catches **all 3 OOV** exactly |
+| **composite** | **1.000** | **1.000** | **1.000** | 42 | 0 | 0 | **settled backend** (gazetteer + GLiNER merge) |
+
+The composite holds perfect precision *and* recall across the widened fixture: the two qualified
+diseases and the hedge-prefixed mention all come out exactly right.
+
+> **Checkpoint change (2026-09-10):** the production default became the domain fine-tune
+> `SkyeAv/drug-approvals-gliner-small-v2.1` (deberta-v3-small, `max_len: 384`, trained on
+> `disease` and `phenotype` labels; model output preserves its type; gazetteer types
+> still win on overlap). All numbers on this page were measured with `gliner_large-v2.5`;
+> re-run `tests/eval/benchmark_ner.py` to re-measure against the fine-tune.
+>
+> **Checkpoint change (gliner2 large evaluation):** the production default is the compatible
+> large span checkpoint `fastino/gliner2-large-v1`, prompted with the schema-conditioned
+> vocabulary below. On the historical two-label fixture it improved GLiNER-only F1 from 0.651
+> (27 TP / 14 FP / 15 FN) to 0.675 (28 TP / 13 FP / 14 FN), while both checkpoints kept
+> composite F1 at 1.000. GLiNER2.5 has no English large checkpoint (only small/base/multilingual
+> multi); `gliner2-large-v1` loads through `AutoExtractor`. Re-run
+> `tests/eval/benchmark_ner.py --model <checkpoint>` to compare a replacement reproducibly.
+>
+> **Schema change (prompt-engineered vocabulary + two channels):** inference no longer asks for
+> the bare words `disease`/`phenotype`. `MODEL_LABELS` is a `{label: description}` mapping of
+> Biolink category IDs (`biolink:Disease`, `biolink:PhenotypicFeature`, four qualifier
+> categories, three field-named qualifiers) handed to gliner2 verbatim, which renders each
+> description into the prompt; gold `type` values were renamed to the canonical `Mention.type`
+> strings (`Disease` / `PhenotypicFeature`) and the harness scores the **object channel only**.
+> **Every table on this page predates that change and has NOT been re-measured** — the numbers
+> below are the historical `disease`/`phenotype` record. What follows is spot-check evidence for
+> the schema itself, measured on the build host (cached checkpoint, CPU fallback; empty
+> gazetteer, so only the model channel speaks):
+>
+> | text | extracted `(surface, type, score)` |
+> | ---- | ---------------------------------- |
+> | `Contraindicated in patients with pulmonary hypertension.` | `('pulmonary hypertension', 'Disease', 1.0)` |
+> | `Contraindicated during pregnancy and in women of childbearing potential.` | `('pregnancy', 'PhenotypicFeature', 1.0)`, `('women', 'BiologicalSex', 1.0)`, `('women of childbearing potential', 'PopulationOfIndividualOrganisms', 1.0)` |
+> | `Not recommended in patients with renal impairment or a history of hypertension.` (generation floor 0.35) | `('renal impairment', 'PhenotypicFeature', 1.0)`, `('hypertension', 'Disease', 0.94)`, `('history of hypertension', 'temporal_context_qualifier', 0.65)` |
+>
+> The baseline this replaces: the same checkpoint prompted with plain `['disease', 'phenotype']`
+> mistyped "pregnancy" as a disease at 0.82 and emitted "childbearing potential" at 0.40.
+> Two description wordings proved load-bearing (both measured): listing `pregnancy` as a
+> `biolink:PhenotypicFeature` exemplar is what recovers it at 1.00 — without it the checkpoint
+> emits no pregnancy span at all — and listing `during` as a `temporal_context_qualifier`
+> exemplar makes it mistype "pregnancy" as `temporal_context_qualifier` 0.64, so `during` is not
+> an exemplar. Note the third row's cross-label overlap (`renal impairment` under both
+> `biolink:PhenotypicFeature` 1.0 and `biolink:Disease` 0.41): de-overlapping is per label, and
+> the object channel's longest-then-highest-score selection keeps the 1.0 one.
+> Re-run `tests/eval/benchmark_ner.py` to re-measure the table against this schema.
+
+The **gazetteer** row moved down (was 1.000 / 0.923 / 0.960 on 31 cases) and that is expected,
+not a regression. Offline mode was deliberately left unchanged (see "Specificity merge" below),
+so on `pulmonary hypertension` it still emits its generic head `hypertension` — wrong offsets
+against the new gold, hence one FP + one FN per qualified case. Offline remains the deterministic
+zero-dependency baseline; specificity is a production-mode capability.
+
+Previous (2026-08-10, 31 cases / 39 gold spans, before the specificity merge):
+
+| approach  | precision | recall | F1    | TP | FP | FN |
+| --------- | --------- | ------ | ----- | -- | -- | -- |
+| gazetteer | 1.000     | 0.923  | 0.960 | 36 | 0  | 3  |
+| gliner    | 0.759     | 0.564  | 0.647 | 22 | 7  | 17 |
+| composite | 1.000     | 1.000  | 1.000 | 39 | 0  | 0  |
+
+Baseline before the improvements (original 27-case fixture; the composite shipped at these
+numbers):
+
+| approach  | precision | recall | F1    | TP | FP | FN | notes                                   |
+| --------- | --------- | ------ | ----- | -- | -- | -- | --------------------------------------- |
+| gazetteer | **1.000** | 0.914  | 0.955 | 32 | 0  | 3  | FN = the 3 OOV |
+| gliner    | 0.692     | 0.514  | 0.590 | 18 | 8  | 17 | boundary truncation + disease↔phenotype confusion |
+| **composite** | 0.972 | **1.000** | **0.986** | 35 | 1 | 0 | FP = `women of childbearing potential` (population descriptor) |
+| scispacy  | 0.571     | 0.457  | 0.508 | 16 | 12 | 19 | BC5CDR: no phenotype label, coarse spans |
+
+The **composite** (the shipped `DiseaseNER` in production mode) is the clear winner: perfect
+recall — it catches every gold span including all three rare out-of-gazetteer diseases — now
+at perfect precision too. The gazetteer anchors high-precision spans; GLiNER fills the
+coverage gaps without inheriting the model's standalone boundary/type noise because
+gazetteer spans win on overlap.
+
+GLiNER standalone F1 is dragged down by boundary/type disagreement on common multiword terms
+(the v2.5 large checkpoint is more aggressive than the old small one: more extra spans, mostly
+disease↔phenotype type confusion), but it extracts every rare OOV disease with the correct span
+and type — exactly the recall a fixed gazetteer lacks. SciSpacy's BC5CDR model labels only
+`DISEASE`/`CHEMICAL` (no phenotype) and its boundaries are coarse, so it is strictly worse here.
+
+Environment notes (reproducibility): GLiNER (`gliner-community/gliner_large-v2.5`, ~1.8 GB
+fp32 weights, deberta-v3-large encoder, `max_len: 768` word tokens) loads in ~3 s from the
+BLAKE3-keyed cache and runs on GPU on the build host (a laptop RTX 5070 Ti / sm_120 falls back
+to CPU under the cu126 torch build's arch gate and still benchmarks in ~15 s). GLiNER is
+natively multi-entity (one `predict_entities` call scores every label — disease and phenotype
+here — and returns any number of spans per label). SciSpacy required two workarounds in this
+environment and still underperformed; it is dropped from the shipped extra.
+
+## GLiNER2 large checkpoint evaluation (2026-09-15)
+
+The requested large-model evaluation compared the default `fastino/gliner2-large-v1` (340M,
+DeBERTa-v3-large span architecture) with the former `fastino/gliner2.5-base-v1` (194M,
+DeBERTa-v3-base boundary architecture) through the production `DiseaseNER` path on the 34-case,
+42-span fixture. Both load through `gliner2.AutoExtractor` and preserve the gazetteer-first
+composite's perfect strict score; the large model improves the isolated zero-shot baseline.
+
+| checkpoint | GLiNER-only P/R/F1 | GLiNER-only TP/FP/FN | composite P/R/F1 |
+| --- | --- | --- | --- |
+| `fastino/gliner2.5-base-v1` | 0.659 / 0.643 / 0.651 | 27 / 14 / 15 | 1.000 / 1.000 / 1.000 |
+| `fastino/gliner2-large-v1` | **0.683 / 0.667 / 0.675** | **28 / 13 / 14** | 1.000 / 1.000 / 1.000 |
+
+The 2.5 family has no English `large` checkpoint (only small/base/multilingual multi); the
+available GLiNER2 large checkpoint is the compatible span model above. `fastino/gliner2-large-v1`
+is therefore the production default. The benchmark accepts `--model <checkpoint>` so a future
+checkpoint or fine-tune can be compared with the same fixture and threshold sweep before replacing
+it.
+
+## Composite precision improvements (2026-08-10)
+
+Error analysis on the gold fixture + hand-checked snippets found exactly one composite error:
+GLiNER tagging the population descriptor `women of childbearing potential` as a phenotype
+(raw scores 0.54–0.62 depending on sentence context). Three targeted changes landed:
+
+1. **Population-descriptor filter.** Model spans whose normalized surface equals a curated
+   population phrase (`women of childbearing potential`, `childbearing potential`, `women`,
+   `patients`, …) are dropped. Deterministic, precision-safe, offline mode untouched.
+   Removes the lone FP on the original fixture (composite 0.972→1.000 P at unchanged 1.000 R).
+2. **Cross-window rejoin.** Budget hard-splits can cut a multiword mention in two (observed:
+   `myasthenia | gravis` → `myasthenia` + `gravis:phenotype` on a run-on sentence with a
+   small `chunk_words`). Flush span pairs across a hard-split gap are re-unified; type/score
+   come from the higher-scoring side (ties left). Sentence-piece boundaries are untouched
+   (mentions cannot span punctuation).
+3. **Gazetteer growth.** Recurring high-confidence contraindication diseases seen in the
+   hand checks joined `EMBEDDED_GAZETTEER`: `congestive heart failure`, `cirrhosis`,
+   `hepatic encephalopathy`, `acute kidney injury`, `hepatocellular carcinoma`. Keeps the
+   maximal-span policy offline (`congestive heart failure`, not just `heart failure`) and
+   lets the composite anchor them at gazetteer precision. The three OOV probes stay OUT of
+   the gazetteer on purpose (they measure GLiNER generalization).
+
+Ideas evaluated and **skipped** (with reasons):
+
+* **Threshold 0.5 → 0.65:** the earlier sweep showed recall 1.0 throughout, but the FP's raw
+  score is context-dependent (0.54 standalone, ~0.6 in-fixture) — thresholding is a fragile
+  fix and 0.5 stays the recall-safe default for a safety KG. The blocklist removes the FP
+  structurally instead.
+* **Disease-vs-phenotype type-conflict policy:** every GLiNER type confusion on the fixture
+  (`gastrointestinal bleeding`, `QT prolongation`, `seizures` as disease) overlaps a gazetteer
+  span and is already suppressed by gazetteer-wins-on-overlap; no residual measured error.
+* **Overlap-extension merge (model span ⊇ gazetteer span):** GLiNER does produce longer
+  containing spans (e.g. `congestive heart failure` ⊃ `heart failure`, score 0.99), but
+  accepting model boundaries would also admit modifier over-extensions (`recent myocardial
+  infarction`). Gazetteer growth captures the same maximal spans at gazetteer precision.
+  — **SUPERSEDED 2026-08-14**, see "Specificity merge" below. Gazetteer growth does not
+  generalize: it only ever covers the qualified terms someone thought to enumerate, and the
+  cross product (pulmonary/portal/ocular/intracranial/systemic × hypertension, …) is unbounded.
+  The over-extension objection was real but narrower than it looked — the offending prefixes are
+  a closed class of hedges, so trimming them makes containment safe to accept.
+* **Span-edge boundary trim:** all observed v2.5 spans are word-aligned; no evidence of
+  punctuation-fringed boundaries to clean.
+* **Gazetteer growth for the 3 OOV probes:** would silently convert the generalization probe
+  into a gazetteer lookup; composite recall is already 1.0 via GLiNER for exactly those terms.
+
+## Specificity merge + abstention (2026-08-14)
+
+**Problem.** The backend prioritized the generic head over the specific term: on `severe
+pulmonary hypertension` it emitted `hypertension`, because `hypertension` is a gazetteer term and
+the merge dropped *any* GLiNER span overlapping a gazetteer span. `pulmonary hypertension`
+(MONDO:0005149) is not `hypertension` (MONDO:0005044), so the row asserted a broader
+contraindication than the label supports. Same shape for `portal hypertension`, `ocular
+hypertension`, and every other qualified form of a gazetteer head.
+
+**Fix — most specific span wins.** Gazetteer-wins-on-overlap is now decided by span structure:
+
+1. **Hedge trim.** Leading tokens from a closed class (`_HEDGE_TOKENS`: determiners,
+   prepositions, temporal/evidential hedges, population heads) come off the model span first.
+   The polarity is deliberate — anything *not* listed counts as a clinical qualifier and is kept,
+   so `severe` / `active` / `congestive` / `pulmonary` survive while `recent myocardial
+   infarction` and `a history of peptic ulcer disease` collapse onto the gazetteer term. This is
+   what defuses the over-extension objection that got the merge skipped in the first place. Left
+   edge only: trimming the right edge would turn the population descriptor `pregnant women` into
+   an emittable `pregnant`.
+2. **Containment.** A trimmed model span that strictly contains exactly one gazetteer span
+   supersedes it, taking the model's **boundary** and the gazetteer's **type** — GLiNER's
+   documented weakness is disease↔phenotype confusion, not boundaries, so the two authorities are
+   split along the axis each is actually good at. Equal spans and partial overlaps still go to the
+   gazetteer. A span containing *several* gazetteer terms is a conjunction (`asthma or
+   hypertension`), not a qualifier, and is discarded.
+3. **Model-vs-model** overlaps resolve longest-first, ties on score then offsets (deterministic).
+
+**Fix — abstention.** Thresholds are split: candidates are **generated** at
+`DEFAULT_THRESHOLD = 0.35` and **accepted** at `DEFAULT_ACCEPT_THRESHOLD = 0.5`. Generating below
+the acceptance floor is what makes the merge work at all — a specific span often scores lower
+than its generic head, so the old generate-at-0.5 hid exactly the spans worth preferring. Spans
+in the band between are visible to the merge but abstained on rather than asserted, logged at
+DEBUG as `ner_abstain` with surface, score and reason. Crucially a superseded gazetteer span is
+**not** resurrected when its challenger falls short: the backend returns nothing rather than the
+term it now has reason to believe is too general. `extract` already contracted an empty list, so
+no caller changed.
+
+**Measured (real `gliner_large-v2.5`, CPU).** Composite 1.000 / 1.000 / 1.000 on the widened
+34-case fixture. Hand checks:
+
+* `Contraindicated in patients with severe pulmonary hypertension.` — `pulmonary
+  hypertension`:disease 0.965 `gliner:extends` ✓ (was `hypertension`)
+* `Contraindicated in patients with portal hypertension and cirrhosis.` — `portal
+  hypertension`:disease 0.986 `gliner:extends` + `cirrhosis` at gazetteer precision ✓
+* `Contraindicated in patients with a recent myocardial infarction.` — `myocardial
+  infarction`:disease, hedge trimmed, gazetteer span intact ✓
+* `Do not use in patients with a history of peptic ulcer disease.` — `peptic ulcer disease` ✓
+* `Contraindicated in patients with asthma or hypertension.` — both gazetteer spans kept, the
+  conjunction span discarded ✓
+* `Contraindicated in patients with idiopathic pulmonary fibrosis.` — OOV, `gliner` 0.995 ✓
+* `Contraindicated in women of childbearing potential.` — still no mention ✓
+* Forcing `accept_threshold=0.99` on the 0.965 `pulmonary hypertension` span returns `[]` and
+  logs `ner_abstain reason=superseded_unresolved` — it does **not** fall back to `hypertension` ✓
+
+**Known boundary case.** `drug hypersensitivity` scores exactly 0.35 — right at the generation
+threshold, so GLiNER filters it out and the gazetteer's `hypersensitivity` stands (unchanged from
+before). Had it been generated it would have superseded and then abstained, since 0.35 is below
+the acceptance floor. Noted rather than tuned around: moving the generation threshold to chase one
+knife-edge span is the same fragility this file warns about for the 0.5→0.65 sweep.
+
+**Offline mode deliberately unchanged.** It has no model, so it still returns the generic
+gazetteer head. Specificity is a production-mode capability; offline stays the deterministic,
+zero-dependency baseline that tests and offline runs rely on. The cost is visible and accepted in
+the gazetteer row of the results table above.
+
+## Acceptance floor lowered to the generation floor (2026-08-17)
+
+Production mining showed the `[0.35, 0.5)` abstention band was dropping spans GLiNER had gotten
+right: **0.35 is the lowest score at which the model is still accurate**. The acceptance floor
+came down to meet the generation threshold — `DEFAULT_ACCEPT_THRESHOLD` 0.5 → 0.35, while
+`DEFAULT_THRESHOLD` stays at 0.35 (never generate below the accuracy floor). By default the band
+is now empty: every span GLiNER is willing to generate is asserted. The two-knob mechanism is
+unchanged — raising `accept_threshold` re-opens the band and abstention (including
+`superseded_unresolved`) exactly as before. Two recorded notes flip with it:
+
+* The `drug hypersensitivity` knife-edge (score exactly 0.35, above) is still filtered by
+  GLiNER's own generation filter, so that case is unchanged — but if it is ever generated it is
+  now **accepted** rather than superseded-and-abstained, resolving that granularity limit toward
+  recall.
+* The "0.5 recall-safe default" in the v2.5-upgrade note is superseded: the recall-safe floor is
+  0.35, still enforced at acceptance (now equal to generation).
+
+**Measured (real `gliner_large-v2.5`, CPU, regenerated `benchmark_results.json`).** Composite
+holds 1.000 / 1.000 / 1.000 on the 34-case fixture — the emptied band adds no FPs. GLiNER
+standalone *improves* to P 0.794 / R 0.643 / F1 0.711 (was 0.781 / 0.595 / 0.676): +2 TP at
+unchanged FP count, i.e. the formerly-abstained band spans that reach gold are correct.
+
+## Small-example checks (hand verification, 2026-08-10)
+
+Short DailyMed-style snippets and held-out FAERS indication strings through `DiseaseNER`
+offline + production (real model) for backend evaluation only:
+
+* `Contraindicated in patients with known hypersensitivity to any component of the product.`
+  — `hypersensitivity`:phenotype exact in both modes ✓
+* `Do not administer to patients with severe hepatic impairment, including cirrhosis and
+  hepatic encephalopathy.` — gazetteer anchors `severe hepatic impairment`; GLiNER adds
+  `cirrhosis` (0.88) and `hepatic encephalopathy` (0.96) ✓ — both now gazetteer terms too
+* `Contraindicated in patients with congestive heart failure.` — was `heart failure` only
+  (gazetteer granularity); now the maximal `congestive heart failure` offline + composite ✓
+* `drug hypersensitivity` (FAERS) — gazetteer returns the shorter `hypersensitivity`; GLiNER's
+  full-span candidate scores 0.35 (< 0.5 threshold), so the shorter span stands. Known
+  granularity limit of the phenotype policy; accepted (mention text still resolves downstream)
+* `Contraindicated in women who are or may become pregnant.` — no mention in either mode;
+  paraphrase of the pregnancy phenotype that neither layer catches. Noted, not gold-labeled
+* Run-on sentence with `myasthenia gravis` straddling a `chunk_words=20` hard split — was two
+  broken mentions (`myasthenia`:disease + `gravis`:phenotype); now one re-unified
+  `myasthenia gravis`:disease ✓
+* `acute kidney injury`, `hepatocellular carcinoma` (FAERS) — GLiNER 0.97/0.91 ✓, now
+  gazetteer terms too; repeated mentions (`asthma and again asthma`) correctly kept as two
+
+## Decision: gazetteer-first, GLiNER-augmented composite (ONE backend)
+
+* **Offline mode (default):** the curated disease/phenotype gazetteer + deterministic lexical
+  matcher. P 0.949 / F1 0.914 on the current fixture, zero heavy dependencies, fully
+  deterministic — the best single laptop-safe option. Used by tests and offline runs. It returns
+  the generic head for qualified diseases (`hypertension` for `pulmonary hypertension`); that
+  granularity limit is inherent to a fixed vocabulary and is why production mode exists.
+* **Production mode:** the same gazetteer anchors high-precision spans, and GLiNER zero-shot
+  fills out-of-gazetteer gaps (non-overlapping GLiNER spans add recall; on overlap the most
+  specific span wins — a containing model span supersedes the gazetteer's boundary but not its
+  type; population descriptors dropped; hedge prefixes trimmed; hard-split fragments re-joined;
+  sub-floor spans abstained on) → perfect recall at perfect precision. GLiNER is a core,
+  lazy-imported dep.
+* **SciSpacy dropped:** strictly worse, no phenotype coverage, heavy. Removed from the NER backend.
+
+This is one unified backend (`ner/ner.py`, `DiseaseNER`) with one entry point
+(`extract_disease_mentions` / `extract_contraindication_diseases`) and an offline/production
+mode toggle — **not** a selectable backend enum. DAKP emits mention text spans + type only;
+ontology CURIE resolution is Tablassert's job (`tablassert build-kg`), never DAKP's.
+
+## v2.5 upgrade (2026-08-10)
+
+The production checkpoint moved from `urchade/gliner_small-v2.1` to
+`gliner-community/gliner_large-v2.5`: a larger encoder (deberta-v3-large vs deberta-v3-small)
+trained on more data, with double the word-token context (`max_len` 768 vs 384, so fewer
+prediction windows over ~3000-word DailyMed sections). On the original 27-case fixture the
+composite was P 0.972 / R 1.000 / F1 0.986 (one boundary FP — since removed by the
+population-descriptor filter), and all three rare OOV diseases are caught exactly — the
+upgrade's payoff is better OOV generalization on real label text, which a small fixture cannot
+measure. A threshold sweep (0.40–0.70) shows composite recall stays 1.0 throughout;
+`DEFAULT_THRESHOLD` stayed 0.5 as the recall-safe default for a safety KG. *(Superseded
+2026-08-14: 0.5 is now the* acceptance *floor `DEFAULT_ACCEPT_THRESHOLD`, and generation dropped
+to 0.35 so the specificity merge can see candidates it is allowed to prefer. The recall-safe
+operating point is unchanged — only which stage enforces it.)*

@@ -1,0 +1,10 @@
+primary_knowledge_source,status,edges,unique_pairs
+clinicaltrials-kp,clinical_trial_phase_4,34744,34744
+drugcentral,approved_for_condition,7903,7903
+multiomics-drugapprovals,approved_for_condition,5095,5095
+drug-repurposing-hub,not_provided,3563,3563
+clinicaltrials-kp,not_provided,3385,3385
+ttd,approved_for_condition,2419,2419
+drugcentral,off_label_use,1704,1704
+ttd,clinical_trial_phase_4,34,34
+drugcentral,not_provided,1,1

@@ -1,0 +1,178 @@
+"""Shared stage-harness for the DAKP integration tests.
+
+Reproduces the Airflow DAG's (``dakp_pipeline.dags.dakp_build``) Python stage wiring so the
+integration tests call the stage functions DIRECTLY through ONE harness instead of through a
+duplicated runner. Production orchestration is the Airflow DAG; this module is test-only, lives
+outside the coverage ``source`` (``src/``), and adds no run-config concepts of its own beyond the
+explicit ``params`` it forwards to :func:`dakp_pipeline.runtime.build_context`.
+
+WHY a harness and not per-test wiring: the four end-to-end integration tests (semantic-equivalence,
+offline-pipeline, prod-smoke, KGX) all run the identical acquire -> extract -> shape -> NER
+export -> Tablassert -> legacy TSV -> release publish sequence. Centralizing it in one place means
+a stage signature
+change touches one call site, the byte-determinism re-run uses the exact same path as the first
+run, and monkeypatch boundaries stay identical across tests.
+
+Fully monkeypatchable: the source fetchers are resolved through their owning MODULE at call time
+(``dailymed.fetch``/``faers.fetch``/``drugsfda.fetch``) and ``tablassert.run`` through its owning
+MODULE (``dakp_pipeline.tablassert``), so ``monkeypatch.setattr(dailymed, "fetch", ...)`` and
+``monkeypatch.setattr("dakp_pipeline.tablassert.run", ...)`` take effect exactly as they did with
+the retired runner. Fetchers always run their real (download) branches; :func:`install_fixture_fetchers`
+is the shared offline stand-in that routes them to the tiny pipeline fixtures via ``ctx.fixture()``.
+
+NOT collected by pytest (no ``test_`` prefix); imported by the integration tests as a sibling
+module (``from harness import run_stages``).
+"""
+
+from __future__ import annotations
+
+from collections.abc import Mapping
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Any
+
+import pytest
+
+from dakp_pipeline import legacy_tsv as _legacy_tsv
+from dakp_pipeline import ner_export as _ner_export
+from dakp_pipeline import release as _release
+from dakp_pipeline import tablassert as _tablassert
+from dakp_pipeline.assertions import approved_treats, contraindications, observed_uses
+from dakp_pipeline.extract import drugsfda_products, ema_registry, faers_ascii, spl_xml
+from dakp_pipeline.io.contracts import ArtifactRef, TaskContext
+from dakp_pipeline.logging_setup import configure_logging
+from dakp_pipeline.paths import Workdir
+from dakp_pipeline.runtime import build_context
+from dakp_pipeline.sources import dailymed, drugsfda, ema, faers
+
+
+@dataclass
+class TableOutput:
+    """One produced assertion table: its path on disk + row count."""
+
+    name: str
+    path: Path
+    rows: int
+
+
+@dataclass
+class StageResult:
+    """Return value of :func:`run_stages`: produced table summaries + the assertion refs."""
+
+    workdir: Workdir
+    tables: dict[str, TableOutput] = field(default_factory=dict)
+    #: The registered assertion-table ArtifactRefs (approved-treats + observed-uses +
+    #: contraindications), in production order.
+    assertion_refs: list[ArtifactRef] = field(default_factory=list)
+    #: The four NER export-bundle refs ([manifest, examples.avro, examples.ndjson, gold]);
+    #: empty if the export stage did not run.
+    ner_export_refs: list[ArtifactRef] = field(default_factory=list)
+    #: The legacy-named release copies (nodes/edges ndjson + tsv, graph yaml); empty on a
+    #: deferred Tablassert handoff.
+    release_refs: list[ArtifactRef] = field(default_factory=list)
+
+    def table(self, name: str) -> TableOutput:
+        if name not in self.tables:
+            available = ", ".join(sorted(self.tables)) or "<none>"
+            msg = f"No table named {name!r} in result; available: {available}"
+            raise KeyError(msg)
+        return self.tables[name]
+
+
+def install_fixture_fetchers(monkeypatch: pytest.MonkeyPatch, *, include_animal_spl: bool = False) -> None:
+    """Route the three source fetchers to the tiny pipeline fixtures via ``ctx.fixture()``.
+
+    Offline stand-in for real acquisition: fetchers always run their real (download) branches now,
+    so integration tests that want the fixture pipeline monkeypatch the module-level ``fetch``
+    boundaries (exactly as the unit tests do). Loads the pipeline fixture set: one DailyMed SPL,
+    the three Drugs@FDA tables, and every FAERS ``.txt`` family under ``fixture_root/faers``.
+
+    ``include_animal_spl`` adds the veterinary SPL fixture
+    (``dailymed/dailymed_spl_animal.xml.gz``) to the DailyMed set. It is opt-in because most
+    integration expectations are pinned to the human-only corpus; the KGX end-to-end test uses it
+    to prove the animal-label path (label type -> derived species -> ``species_context_qualifier``
+    on the emitted edge) through the real pipeline and the real ``build-kg``.
+    """
+    spl_fixtures = ["dailymed/dailymed_spl.xml.gz"]
+    if include_animal_spl:
+        spl_fixtures.append("dailymed/dailymed_spl_animal.xml.gz")
+    monkeypatch.setattr(dailymed, "fetch", lambda ctx: [ctx.fixture(name) for name in spl_fixtures])
+    monkeypatch.setattr(ema, "fetch", lambda ctx: [ctx.fixture("ema/medicines-output-medicines-report_en.xlsx")])
+    monkeypatch.setattr(
+        drugsfda,
+        "fetch",
+        lambda ctx: [
+            ctx.fixture("drugsfda/drugsfda_products.tsv"),
+            ctx.fixture("drugsfda/drugsfda_applications.tsv"),
+            ctx.fixture("drugsfda/drugsfda_submissions.tsv"),
+        ],
+    )
+
+    def _faers_fixtures(ctx: TaskContext) -> list[ArtifactRef]:
+        assert ctx.fixture_root is not None
+        return [ctx.fixture(f"faers/{path.name}") for path in sorted((ctx.fixture_root / "faers").glob("*.txt"))]
+
+    monkeypatch.setattr(faers, "fetch", _faers_fixtures)
+
+
+def run_stages(*, workdir: Path | str, fixture_root: Path | str | None, params: Mapping[str, Any] | None = None) -> StageResult:
+    """Wire the DAKP stages exactly as the Airflow DAG does, end-to-end.
+
+    Stages: acquire -> extract -> shape assertions -> NER export -> generate Tablassert
+    configs -> Tablassert handoff -> legacy TSV export -> release publish (legacy names).
+    The same sequence the DAG drives (the NER export runs AFTER the shape stage, which warms
+    the mention cache its GLiNER mining then hits); the only
+    difference is this runs Airflow-free in-process so the tests exercise the real stage
+    functions (and the pure-Python reference extractors) with full monkeypatch control.
+    ``params`` carries the explicit run behavior (``run_tablassert``, ``quarter_limit``,
+    ``release_limit``, ``fullmap``); fetchers run their real branches unless a test
+    monkeypatches them (see :func:`install_fixture_fetchers`).
+    """
+    wd = Workdir(Path(workdir))
+    wd.create()
+
+    configure_logging(wd.root, level="INFO", for_airflow=False)
+    ctx = build_context(wd, fixture_root, params)
+
+    # 1. Acquire sources (real fetchers; offline tests monkeypatch the module-level fetch).
+    dm_raw = dailymed.fetch(ctx)
+    faers_raw = faers.fetch(ctx)
+    drugsfda_raw = drugsfda.fetch(ctx)
+    ema_raw = ema.fetch(ctx)
+
+    # 2. Extract raw -> interim parquet tables (pure-Python reference extractors).
+    dm_ext = spl_xml.extract(dm_raw, ctx)
+    faers_ext = faers_ascii.extract(faers_raw, ctx)
+    drugsfda_ext = drugsfda_products.extract(drugsfda_raw, ctx)
+    ema_ext = ema_registry.extract(ema_raw, ctx)
+
+    # 3. Shape assertion tables (uncompressed TSV, Tablassert-facing). Observed-uses consumes the
+    # produced approved-treats table for its approval-status cross-reference (as the DAG wires it).
+    approved = approved_treats.transform([*dm_ext, *drugsfda_ext, *faers_ext, *ema_ext], ctx)
+    uses = observed_uses.transform([*faers_ext, *dm_ext, *approved], ctx)
+    contra = contraindications.transform([*dm_ext], ctx)
+    assertion_refs = [*approved, *uses, *contra]
+
+    # 3b. GLiNER2 training-data export: runs AFTER shaping (which warms the mention cache the
+    # export's own mining then hits), consuming the DailyMed + FAERS + EMA interim extracts —
+    # the DAG wires exactly these inputs plus the shape dependency.
+    ner_refs = _ner_export.export([*dm_ext, *faers_ext, *ema_ext], ctx)
+
+    # 4. Generate Tablassert Graph + per-table configs.
+    config_refs = _tablassert.generate(assertion_refs, ctx)
+
+    # 5. Tablassert handoff (deferred unless run_tablassert is set; no local KGX compiler).
+    kgx_refs = _tablassert.run(assertion_refs, config_refs, ctx)
+
+    # 6. Legacy TSV export (retrofit the KGX pair into the old DAKP TSV schema; [] when deferred).
+    legacy_refs = _legacy_tsv.export(kgx_refs, ctx)
+
+    # 6b. Release naming: copy the final ndjson/tsv pair + the Tablassert RIG to the legacy
+    # ``drug_approvals_kg_*_v<version>`` names (the DAG's publish_release_artifacts task).
+    release_refs = _release.publish(kgx_refs, legacy_refs, ctx)
+
+    tables = {ref.uri.stem: TableOutput(ref.uri.stem, ref.uri, ref.rows or 0) for ref in assertion_refs}
+    return StageResult(workdir=wd, tables=tables, assertion_refs=assertion_refs, ner_export_refs=ner_refs, release_refs=release_refs)
+
+
+__all__ = ["StageResult", "TableOutput", "install_fixture_fetchers", "run_stages"]

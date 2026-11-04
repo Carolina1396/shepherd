@@ -1,0 +1,5 @@
+source,drugcentral,multiomics-drugapprovals,ttd,only_this_source
+drugcentral,7903,1408,590,6197
+multiomics-drugapprovals,1408,5095,455,3524
+ttd,590,455,2419,1666
+union,13256,,,

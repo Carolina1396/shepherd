@@ -1,0 +1,16 @@
+side,most_specific_category,nodes
+drug,biolink:SmallMolecule,1014173
+drug,biolink:ChemicalEntity,140083
+drug,biolink:MolecularMixture,8978
+drug,biolink:Drug,2772
+drug,biolink:ChemicalMixture,431
+drug,biolink:NucleicAcidEntity,72
+drug,biolink:ComplexMolecularMixture,62
+drug,biolink:BiologicalEntity,27
+drug,biolink:OrganismTaxon,6
+drug,biolink:AnatomicalEntity,1
+drug,biolink:CellularComponent,1
+disease,biolink:BiologicalEntity,35219
+disease,biolink:Disease,29220
+disease,biolink:PhenotypicFeature,26822
+disease,biolink:DiseaseOrPhenotypicFeature,7

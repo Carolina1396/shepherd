@@ -1,0 +1,231 @@
+"""Real Tablassert/fullmap smoke for ``uuid_on_collision: merge`` (Tablassert >= 16.2).
+
+Two FAERS observed-use rows name the SAME drug with different raw spellings ("Advil" vs
+"Ibuprofen"). The shapers aggregate on raw text, so both rows reach Tablassert; fullmap
+resolution then maps both subjects to CHEBI:5855, and the two rows derive ONE edge id under
+DAKP's narrowed ``uuid_fields`` (subject/predicate/object + the — here absent — context
+qualifier). With ``uuid_on_collision: merge`` the build merges them into a single edge
+(list-valued evidence unions sorted) instead of aborting with ``uuid-fields-not-a-key``.
+
+On Tablassert >= 16.6 the merged ``number_of_cases`` is EXACT, not first-wins: each row carries
+its distinct-case token set as ``case_ids`` -> ``supporting_case_ids`` (the build-internal edge
+extra), the merge unions the lists, and the count is recomputed as the union size — extra unique
+cases are ADDED, shared cases counted ONCE, and the carrier is stripped before the final NDJSON.
+On 16.2-16.5 the carrier column folds into ``supporting_text`` and the conflicting count is
+first-wins; both shapes are asserted here.
+"""
+
+from __future__ import annotations
+
+import json
+import multiprocessing
+from pathlib import Path
+from typing import Any
+
+import polars as pl
+import pytest
+
+from dakp_pipeline import tablassert as dakp_tablassert
+from dakp_pipeline.io import schemas
+
+pytest.importorskip("tablassert")
+from tablassert import rs
+from tablassert.cli import build_pipeline
+from tablassert.progress import PipelineProgress
+
+
+def _tablassert_at_least(major: int, minor: int) -> bool:
+    """Installed-Tablassert version gate for behavior that lands mid-pin-range."""
+    from importlib.metadata import version
+
+    parts = [*version("tablassert").split("."), "0"][:2]
+    return tuple(int(part) for part in parts) >= (major, minor)
+
+
+def _synonym(curie: str, name: str, names: list[str], category: str) -> dict[str, Any]:
+    return {"curie": curie, "preferred_name": name, "names": names, "types": [category], "taxa": ["NCBITaxon:9606"]}
+
+
+def _class(curie: str) -> dict[str, Any]:
+    return {"id": curie, "equivalent_identifiers": []}
+
+
+def test_synonym_spellings_resolving_to_one_curie_merge_into_one_edge(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """ "Advil" + "Ibuprofen" rows (both -> CHEBI:5855) for one indication merge into ONE edge."""
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / ".tablassert" / "store").mkdir(parents=True)
+    (tmp_path / "tabular").mkdir(parents=True)
+    fullmap_root = tmp_path / "fullmap"
+    fullmap_root.mkdir()
+    classes = fullmap_root / "classes.ndjson"
+    synonyms = fullmap_root / "synonyms.ndjson"
+    classes.write_text("\n".join(json.dumps(_class(curie)) for curie in ("CHEBI:5855", "HP:0002315", "NCBITaxon:9606")) + "\n")
+    synonyms.write_text(
+        "\n".join(
+            json.dumps(row)
+            for row in (
+                # ONE node, TWO mention spellings — the collision this merge mode exists for.
+                _synonym("CHEBI:5855", "ibuprofen", ["Advil", "Ibuprofen"], "SmallMolecule"),
+                _synonym("HP:0002315", "headache", ["headache"], "PhenotypicFeature"),
+                # Non-nullable species qualifier: the human constant must resolve to an
+                # OrganismTaxon concept or every row would drop at load time.
+                _synonym("NCBITaxon:9606", "Homo sapiens (human)", ["NCBITaxon:9606", "human"], "OrganismTaxon"),
+            )
+        )
+        + "\n"
+    )
+    fullmap = fullmap_root / "kgx" / "fullmap.redb"
+    rs.build_fullmap_db(fullmap, [classes], [synonyms])
+
+    # Case "2" appears under BOTH spellings (a case reported under two wordings): the union
+    # counts it once, so the merged count is 3 + 7 - 1 = 9, not first-wins (3 or 7) and not the
+    # naive sum (10).
+    rows: list[dict[str, str]] = []
+    for spelling, cases, case_ids, approvals in (("Advil", "3", "1|2|3", "NDA017977"), ("Ibuprofen", "7", "2|4|5|6|7|8|9", "NDA021010")):
+        row = dict.fromkeys(schemas.FAERS_APPLIED_TO_TREAT_COLUMNS, "")
+        row.update(
+            subject_text=spelling,
+            object_text="headache",
+            predicate="biolink:applied_to_treat",
+            subject_category="ChemicalEntity",
+            species_context_text="NCBITaxon:9606",
+            number_of_cases=cases,
+            case_ids=case_ids,
+            FDA_regulatory_approvals=approvals,
+            knowledge_level="statistical_association",
+            agent_type="manual_validation_of_automated_agent",
+            primary_knowledge_source="infores:drugapprovals-kp",
+            upstream_resource_ids="infores:dailymed|infores:faers",
+        )
+        rows.append(row)
+    pl.DataFrame(rows, schema=schemas.FAERS_APPLIED_TO_TREAT_COLUMNS).write_csv(
+        tmp_path / "tabular" / "faers_applied_to_treat_assertions.tsv", separator="\t"
+    )
+
+    table = tmp_path / "faers_applied_to_treat.yaml"
+    table.write_text(dakp_tablassert.table_yaml("faers_applied_to_treat_assertions"), encoding="utf-8")
+    graph = tmp_path / "graph.yaml"
+    graph.write_text(dakp_tablassert.graph_yaml(["faers_applied_to_treat.yaml"], fullmap=str(fullmap)), encoding="utf-8")
+    # The generated graph config is what turns the collision abort into a merge.
+    assert dakp_tablassert.graph_config()["uuid_on_collision"] == "merge"
+
+    # Same guard as test_kgx_end_to_end's in-process build: Tablassert spawns two cpu-count-sized
+    # fork Pools per build, and fork inherits xdist thread locks. Pin the section pools to
+    # spawn/Pool(1); ingestion, fullmap resolution and KGX compilation all stay real.
+    monkeypatch.setattr("tablassert.cli.Pool", lambda: multiprocessing.get_context("spawn").Pool(processes=1))
+    build_pipeline(graph, PipelineProgress(total_stages=6))
+    version = dakp_tablassert.graph_config()["version"]
+    edges_path = tmp_path / "kgx" / f"{dakp_tablassert.GRAPH_NAME}_{version}.edges.ndjson"  # rig.artifact_base_path = "kgx" (Tablassert >= 11)
+    edges = [json.loads(line) for line in edges_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+    # ONE edge: the two spellings derived the same id and merged instead of aborting.
+    assert len(edges) == 1
+    edge = edges[0]
+    assert (edge["subject"], edge["predicate"], edge["object"]) == ("CHEBI:5855", "biolink:applied_to_treat", "HP:0002315")
+    # Original source mentions survive collision merging and use deterministic pipe joining.
+    assert edge["original_subject"] == "Advil|Ibuprofen"
+    assert edge["original_object"] == "headache"
+    # Reporter application numbers stay source-table metadata, never approval claims on
+    # observed-use edges, including after synonym collisions merge their case evidence.
+    for field in ("regulatory_approvals", "FDA_regulatory_approvals", "approval_ids", "approvals"):
+        assert field not in edge
+    assert "NDA017977" not in json.dumps(edge)
+    assert "NDA021010" not in json.dumps(edge)
+    # The carrier never ships as an edge field (16.6 strips it; older Tablassert folds it into
+    # supporting_text, never a top-level key).
+    assert "supporting_case_ids" not in edge
+    if _tablassert_at_least(16, 6):
+        # The case count is the union of both rows' case tokens: {1..9} = 9, independent of
+        # which record the dedup stream saw first.
+        assert int(edge["number_of_cases"]) == 9
+    else:
+        # Pre-16.6 first-wins: the conflicting scalar keeps the first-seen record's value,
+        # whose order is Tablassert-internal — deterministic per build but not the TSV row order.
+        assert int(edge["number_of_cases"]) in (3, 7)
+
+
+def test_rows_differing_only_in_species_never_fold(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """``uuid_fields`` includes ``species_context_qualifier``: species partitions edge identity.
+
+    Three observed-use rows name the SAME drug and condition; two are dog rows (one under each
+    raw spelling) and one is a cat row. Under ``uuid_on_collision: merge`` the two dog rows
+    derive ONE edge id and merge (case-count union), while the cat row derives a DISTINCT id and
+    stays its own edge. Without the species slot in ``uuid_fields`` all three would fold into a
+    single edge and the cat assertion would inherit the dog evidence -- the exact fold the
+    qualifier exists to prevent.
+    """
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / ".tablassert" / "store").mkdir(parents=True)
+    (tmp_path / "tabular").mkdir(parents=True)
+    fullmap_root = tmp_path / "fullmap"
+    fullmap_root.mkdir()
+    classes = fullmap_root / "classes.ndjson"
+    synonyms = fullmap_root / "synonyms.ndjson"
+    taxa = ("NCBITaxon:9606", "NCBITaxon:9615", "NCBITaxon:9685")
+    classes.write_text("\n".join(json.dumps(_class(curie)) for curie in ("CHEBI:5855", "HP:0002315", *taxa)) + "\n")
+    synonyms.write_text(
+        "\n".join(
+            json.dumps(row)
+            for row in (
+                _synonym("CHEBI:5855", "ibuprofen", ["Advil", "Ibuprofen"], "SmallMolecule"),
+                _synonym("HP:0002315", "headache", ["headache"], "PhenotypicFeature"),
+                _synonym("NCBITaxon:9606", "Homo sapiens (human)", ["NCBITaxon:9606", "human"], "OrganismTaxon"),
+                _synonym("NCBITaxon:9615", "Canis lupus familiaris (dog)", ["NCBITaxon:9615", "dog"], "OrganismTaxon"),
+                _synonym("NCBITaxon:9685", "Felis catus (domestic cat)", ["NCBITaxon:9685", "cat"], "OrganismTaxon"),
+            )
+        )
+        + "\n"
+    )
+    fullmap = fullmap_root / "kgx" / "fullmap.redb"
+    rs.build_fullmap_db(fullmap, [classes], [synonyms])
+
+    rows: list[dict[str, str]] = []
+    for spelling, species, cases, case_ids in (
+        ("Advil", "NCBITaxon:9615", "2", "1|2"),
+        ("Ibuprofen", "NCBITaxon:9615", "2", "2|3"),
+        ("Advil", "NCBITaxon:9685", "1", "9"),
+    ):
+        row = dict.fromkeys(schemas.FAERS_APPLIED_TO_TREAT_COLUMNS, "")
+        row.update(
+            subject_text=spelling,
+            object_text="headache",
+            predicate="biolink:applied_to_treat",
+            subject_category="ChemicalEntity",
+            species_context_text=species,
+            number_of_cases=cases,
+            case_ids=case_ids,
+            knowledge_level="statistical_association",
+            agent_type="manual_validation_of_automated_agent",
+            primary_knowledge_source="infores:drugapprovals-kp",
+            upstream_resource_ids="infores:dailymed|infores:faers",
+        )
+        rows.append(row)
+    pl.DataFrame(rows, schema=schemas.FAERS_APPLIED_TO_TREAT_COLUMNS).write_csv(
+        tmp_path / "tabular" / "faers_applied_to_treat_assertions.tsv", separator="\t"
+    )
+
+    table = tmp_path / "faers_applied_to_treat.yaml"
+    table.write_text(dakp_tablassert.table_yaml("faers_applied_to_treat_assertions"), encoding="utf-8")
+    graph = tmp_path / "graph.yaml"
+    graph.write_text(dakp_tablassert.graph_yaml(["faers_applied_to_treat.yaml"], fullmap=str(fullmap)), encoding="utf-8")
+    assert "species_context_qualifier" in dakp_tablassert.graph_config()["uuid_fields"]
+
+    monkeypatch.setattr("tablassert.cli.Pool", lambda: multiprocessing.get_context("spawn").Pool(processes=1))
+    build_pipeline(graph, PipelineProgress(total_stages=6))
+    version = dakp_tablassert.graph_config()["version"]
+    edges_path = tmp_path / "kgx" / f"{dakp_tablassert.GRAPH_NAME}_{version}.edges.ndjson"
+    edges = [json.loads(line) for line in edges_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+    # TWO edges, partitioned by species: the dog rows merged, the cat row stayed distinct.
+    assert len(edges) == 2
+    by_species = {edge["species_context_qualifier"]: edge for edge in edges}
+    assert set(by_species) == {"NCBITaxon:9615", "NCBITaxon:9685"}
+    dog, cat = by_species["NCBITaxon:9615"], by_species["NCBITaxon:9685"]
+    assert (dog["subject"], dog["predicate"], dog["object"]) == ("CHEBI:5855", "biolink:applied_to_treat", "HP:0002315")
+    assert (cat["subject"], cat["predicate"], cat["object"]) == ("CHEBI:5855", "biolink:applied_to_treat", "HP:0002315")
+    assert dog["original_subject"] == "Advil|Ibuprofen"  # same-species spellings still merge
+    assert cat["original_subject"] == "Advil"  # the cat row's evidence never folds into the dog edge
+    assert dog["id"] != cat["id"]
+    if _tablassert_at_least(16, 6):
+        assert int(dog["number_of_cases"]) == 3  # union of {1,2} and {2,3}
+        assert int(cat["number_of_cases"]) == 1

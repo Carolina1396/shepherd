@@ -1,0 +1,16 @@
+HTTP/2 200 
+date: Mon, 02 Nov 2026 19:57:26 GMT
+content-type: application/zip
+content-length: 291502
+status: 200 OK
+content-disposition: attachment; filename=20251012_1b63177f-17e5-4b5a-8924-7023efe016aa.zip
+vary: Origin
+referrer-policy: same-origin
+x-dailymed-label-last-updated: November 17, 2025
+cross-origin-opener-policy: same-origin
+x-content-type-options: nosniff
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' script.crazyegg.com siteintercept.qualtrics.com zn0ojdzesiqbhitcx-nlmenterprise.siteintercept.qualtrics.com www.google-analytics.com www.googletagmanager.com ajax.googleapis.com www.accessdata.fda.gov www.nlm.nih.gov *.addthis.com *.addthisedge.com dap.digitalgov.gov; connect-src 'self' *.nlm.nih.gov www.google-analytics.com stats.g.doubleclick.net siteintercept.qualtrics.com zn0ojdzesiqbhitcx-nlmenterprise.siteintercept.qualtrics.com ajax.googleapis.com www.accessdata.fda.gov *.addthis.com *.addthisedge.com; frame-src 'self' www.googletagmanager.com *.addthis.com; object-src 'none'; style-src 'self' 'unsafe-inline' ajax.googleapis.com; img-src 'self' data: 'unsafe-eval' *.gov www.google-analytics.com www.googletagmanager.com stats.g.doubleclick.net ajax.googleapis.com; font-src 'self'; report-uri https://nlmoccs.report-uri.com/r/d/csp/reportOnly
+x-powered-by: Phusion Passenger(R)
+server: nginx + Phusion Passenger(R)
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+

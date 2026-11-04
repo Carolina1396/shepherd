@@ -1,0 +1,6 @@
+labels/
+parsed/
+run.log
+run-status.json
+structure-run.log
+__pycache__/

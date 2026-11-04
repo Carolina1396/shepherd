@@ -1,0 +1,12 @@
+{
+  "pairs": 5095,
+  "source_edges": 5095,
+  "drugs": 1244,
+  "conditions": 963,
+  "distinct_cited_labels": 41430,
+  "cached_labels": 935,
+  "pairs_without_label_citations": 3,
+  "pairs_with_cached_label": 3201,
+  "pairs_with_all_labels_cached": 842,
+  "status": "Inventory only; parser impact has not been measured"
+}

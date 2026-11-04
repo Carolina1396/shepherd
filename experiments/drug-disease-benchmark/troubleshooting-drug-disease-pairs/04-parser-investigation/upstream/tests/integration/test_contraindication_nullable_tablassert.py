@@ -1,0 +1,131 @@
+"""Real Tablassert/fullmap smoke for sparse contraindication context."""
+
+from __future__ import annotations
+
+import json
+import multiprocessing
+from pathlib import Path
+from typing import Any
+
+import polars as pl
+import pytest
+
+from dakp_pipeline import tablassert as dakp_tablassert
+from dakp_pipeline.io import schemas
+
+pytest.importorskip("tablassert")
+from tablassert import rs
+from tablassert.cli import build_pipeline
+from tablassert.progress import PipelineProgress
+
+
+def _synonym(curie: str, name: str, category: str) -> dict[str, Any]:
+    return {"curie": curie, "preferred_name": name, "names": [name], "types": [category], "taxa": ["NCBITaxon:9606"]}
+
+
+def _class(curie: str) -> dict[str, Any]:
+    return {"id": curie, "equivalent_identifiers": []}
+
+
+def test_generated_contraindication_config_separates_context_and_blank_rows(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Context-bearing and unconditional rows stay DISTINCT edges; only the first is qualified.
+
+    The test forces tablassert's section-extraction ``Pool`` onto the ``spawn`` context: under
+    pytest-xdist the default fork inherits execnet/loguru threads and their locks, and a child
+    forked while a lock is held deadlocks forever (seen live in CI 2026-09-23/24; faulthandler
+    pinned the parent in ``Pool`` wait at tablassert/cli.py extract stage). Spawn re-imports
+    cleanly, sidestepping inherited-thread state entirely. ``processes=1`` keeps exactly one
+    such child: the assertion shape under test (qualifier keeps rows distinct) does not depend
+    on worker count, and every extra spawn child re-imports the full tablassert stack for
+    nothing.
+
+    biolink-model 4.4.5 declares ``disease_context_qualifier`` natively on the pinned
+    ``EntityToDiseaseAssociation`` (Tablassert 15.1's ``CLASS_FIELD_OVERRIDES`` grant,
+    SkyeAv/Tablassert#120, carried it there ahead of the model until then), and the emitted qualifier
+    is ``nullable``, so "contraindicated in asthma when treating hypertension" and "contraindicated in
+    asthma" no longer deduplicate: the qualifier distinguishes them. The qualified edge carries the
+    resolved context CURIE; the blank-context row keeps its edge minus only the qualifier.
+    """
+    monkeypatch.setattr("tablassert.cli.Pool", lambda: multiprocessing.get_context("spawn").Pool(processes=1))
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / ".tablassert" / "store").mkdir(parents=True)
+    (tmp_path / "tabular").mkdir(parents=True)
+    fullmap_root = tmp_path / "fullmap"
+    fullmap_root.mkdir()
+    classes = fullmap_root / "classes.ndjson"
+    synonyms = fullmap_root / "synonyms.ndjson"
+    classes.write_text("\n".join(json.dumps(_class(curie)) for curie in ("UNII:GOLD", "MONDO:0004979", "MONDO:0005148", "NCBITaxon:9606")) + "\n")
+    synonyms.write_text(
+        "\n".join(
+            json.dumps(row)
+            for row in (
+                _synonym("UNII:GOLD", "DrugGold", "Drug"),
+                _synonym("MONDO:0004979", "asthma", "Disease"),
+                _synonym("MONDO:0005148", "hypertension", "Disease"),
+                # The species qualifier is NON-nullable, so the human constant must resolve to an
+                # OrganismTaxon concept or every row drops at load time. TAXON_ID 0 mirrors the
+                # production fullmap, where OrganismTaxon rows carry no taxon of their own.
+                {
+                    "curie": "NCBITaxon:9606",
+                    "preferred_name": "Homo sapiens (human)",
+                    "names": ["NCBITaxon:9606", "human"],
+                    "types": ["OrganismTaxon"],
+                    "taxa": ["NCBITaxon:0"],
+                },
+            )
+        )
+        + "\n"
+    )
+    fullmap = fullmap_root / "kgx" / "fullmap.redb"
+    rs.build_fullmap_db(fullmap, [classes], [synonyms])
+
+    rows: list[dict[str, str]] = []
+    for context, evidence in (
+        ("hypertension", "Contraindicated for treatment of hypertension in patients with asthma."),
+        ("", "Contraindicated in patients with asthma."),
+    ):
+        row = dict.fromkeys(schemas.CONTRAINDICATION_COLUMNS, "")
+        row.update(
+            subject_text="DrugGold",
+            object_text="asthma",
+            disease_context_text=context,
+            evidence_text=evidence,
+            predicate="biolink:contraindicated_in",
+            subject_category="ChemicalEntity",
+            species_context_text="NCBITaxon:9606",
+            knowledge_level="knowledge_assertion",
+            agent_type="manual_validation_of_automated_agent",
+            primary_knowledge_source="infores:drugapprovals-kp",
+            upstream_resource_ids="infores:dailymed",
+        )
+        rows.append(row)
+    pl.DataFrame(rows, schema=schemas.CONTRAINDICATION_COLUMNS).write_csv(tmp_path / "tabular" / "contraindication_assertions.tsv", separator="\t")
+
+    table = tmp_path / "contraindications.yaml"
+    table.write_text(dakp_tablassert.table_yaml("contraindication_assertions"), encoding="utf-8")
+    graph = tmp_path / "graph.yaml"
+    graph.write_text(dakp_tablassert.graph_yaml(["contraindications.yaml"], fullmap=str(fullmap)), encoding="utf-8")
+
+    build_pipeline(graph, PipelineProgress(total_stages=6))
+    version = dakp_tablassert.graph_config()["version"]
+    edges_path = tmp_path / "kgx" / f"{dakp_tablassert.GRAPH_NAME}_{version}.edges.ndjson"  # rig.artifact_base_path = "kgx" (Tablassert >= 11)
+    edges = [json.loads(line) for line in edges_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+    assert len(edges) == 2
+    for edge in edges:
+        assert (edge["subject"], edge["object"]) == ("UNII:GOLD", "MONDO:0004979")
+        # Species rides every edge as a resolved CURIE qualifier (part of the graph uuid_fields).
+        assert edge["species_context_qualifier"] == "NCBITaxon:9606"
+    qualified = [edge for edge in edges if "disease_context_qualifier" in edge]
+    assert len(qualified) == 1
+    assert qualified[0]["disease_context_qualifier"] == "MONDO:0005148"
+    # The context CURIE appears ONLY as the qualifier on the qualified edge — the unqualified edge
+    # must not pick it up through a pruned-column rescue or a ``supporting_text`` fold.
+    unqualified = [edge for edge in edges if "disease_context_qualifier" not in edge]
+    assert len(unqualified) == 1
+    assert not any("MONDO:0005148" in str(value) for value in unqualified[0].values())
+    # The SPL evidence prose is deliberately NOT on the edges (full sentences under
+    # ``supporting_text`` made them unreadable); ``evidence_text`` stays in the assertion TSV.
+    for edge in edges:
+        supporting = edge.get("supporting_text") or []
+        assert not any("Contraindicated" in entry for entry in supporting)

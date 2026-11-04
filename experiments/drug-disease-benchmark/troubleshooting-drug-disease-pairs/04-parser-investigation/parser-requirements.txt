@@ -1,0 +1,5 @@
+# Parser-only dependencies pinned from upstream uv.lock; not the full DAKP runtime.
+blake3==1.0.9
+loguru==0.7.3
+polars==2.0.0rc2
+pydantic==2.13.4

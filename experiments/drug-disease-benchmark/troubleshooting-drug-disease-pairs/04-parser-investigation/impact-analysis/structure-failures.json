@@ -1,0 +1,42 @@
+[
+  {
+    "set_id": "01dfae56-3d9b-448a-84a7-03a54a533eb1",
+    "status": "error",
+    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+    "set_id": "0720268c-2c92-4632-8c55-76c254d1beb8",
+    "status": "error",
+    "error": "ParseError: syntax error: line 1, column 0"
+  },
+  {
+    "set_id": "0e3aa498-ed3d-4400-b25d-12bb9a894143",
+    "status": "error",
+    "error": "ParseError: syntax error: line 1, column 0"
+  },
+  {
+    "set_id": "1e50d4a4-8732-4e21-b7da-178961185021",
+    "status": "error",
+    "error": "ParseError: syntax error: line 1, column 0"
+  },
+  {
+    "set_id": "25483b41-d84a-4eb2-9e86-56d0c58649d9",
+    "status": "error",
+    "error": "ParseError: syntax error: line 1, column 0"
+  },
+  {
+    "set_id": "2a9166ed-4d36-4d09-8c83-f0ccd6feeb74",
+    "status": "error",
+    "error": "ParseError: syntax error: line 1, column 0"
+  },
+  {
+    "set_id": "2dbd56d5-2bb5-4697-b7cb-e4c154321997",
+    "status": "error",
+    "error": "ParseError: syntax error: line 1, column 0"
+  },
+  {
+    "set_id": "2eb90f6c-a5de-472a-98eb-cdc027e74e2e",
+    "status": "error",
+    "error": "ParseError: syntax error: line 1, column 0"
+  }
+]

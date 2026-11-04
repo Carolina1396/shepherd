@@ -1,0 +1,6 @@
+results/
+__pycache__/
+
+# Baseline analysis entry points are needed to reproduce the investigation.
+!scripts/
+!scripts/*.py

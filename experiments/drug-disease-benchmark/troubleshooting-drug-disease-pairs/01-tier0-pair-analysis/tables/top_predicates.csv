@@ -1,0 +1,29 @@
+rank,predicate,edges,share_of_edges,unique_pairs,drugs,diseases,primary_knowledge_sources
+1,biolink:in_clinical_trials_for,620245,0.414,618762,25403,18340,clinicaltrials-kp=616137; ttd=3903; drug-repurposing-hub=205
+2,biolink:treats_or_applied_or_studied_to_treat,354731,0.237,329934,13222,8932,text-mining-provider-targeted=273460; semmeddb=43750; ctd=37467; drug-repurposing-hub=54
+3,biolink:has_side_effect,138291,0.092,138291,1446,4029,sider=138291
+4,biolink:contributes_to,99992,0.067,99983,5063,4590,text-mining-provider-targeted=99992
+5,biolink:correlated_with,69290,0.046,69181,6110,2639,ctd=66042; icees-kg=3248
+6,biolink:applied_to_treat,65254,0.044,65254,1475,1520,faers=65254
+7,biolink:treats,58848,0.039,53176,6793,5710,clinicaltrials-kp=38129; drugcentral=9608; multiomics-drugapprovals=5095; drug-repurposing-hub=3563
+8,biolink:related_to,23437,0.016,23254,1716,2296,semmeddb=23437
+9,biolink:contraindicated_in,22859,0.015,22125,1798,1329,drugcentral=18954; medi=3905
+10,biolink:causes,20260,0.014,20260,2759,1987,semmeddb=20260
+11,biolink:affects,13699,0.009,13686,2074,1389,semmeddb=13699
+12,biolink:positively_correlated_with,3365,0.002,3365,558,453,ctd=2410; icees-kg=893; cohd=62
+13,biolink:disrupts,3312,0.002,3312,1156,359,semmeddb=3312
+14,biolink:predisposes_to_condition,3033,0.002,3033,705,533,semmeddb=3033
+15,biolink:studied_to_treat,1645,0.001,1645,1062,207,ttd=1645
+16,biolink:negatively_correlated_with,438,0.000,438,197,128,ctd=303; icees-kg=133; cohd=2
+17,biolink:produces,311,0.000,311,127,126,semmeddb=311
+18,biolink:in_preclinical_trials_for,275,0.000,275,246,104,ttd=215; drug-repurposing-hub=60
+19,biolink:located_in,194,0.000,194,113,38,semmeddb=194
+20,biolink:coexists_with,146,0.000,118,106,5,semmeddb=146
+21,biolink:has_part,62,0.000,62,47,26,semmeddb=62
+22,biolink:occurs_in,39,0.000,39,27,4,semmeddb=39
+23,biolink:interacts_with,36,0.000,28,26,4,semmeddb=36
+24,biolink:exacerbates_condition,33,0.000,33,21,18,semmeddb=33
+25,biolink:has_input,29,0.000,29,27,8,semmeddb=29
+26,biolink:diagnoses,9,0.000,9,8,9,drug-repurposing-hub=8; drugcentral=1
+27,biolink:ameliorates_condition,5,0.000,5,5,2,drug-repurposing-hub=5
+28,biolink:has_chemical_role,1,0.000,1,1,1,drug-repurposing-hub=1

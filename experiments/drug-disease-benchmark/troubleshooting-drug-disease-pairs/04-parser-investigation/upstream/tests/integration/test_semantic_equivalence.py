@@ -1,0 +1,454 @@
+"""Semantic-equivalence verification: the NEW DAKP preserves the OLD DAKP's knowledge semantics.
+
+The legacy DAKP build (``ref/legacy/bin/drug2indi2kg.py``, ``ref/legacy/bin/uselist2kg.py``,
+``ref/legacy/bin/dakp-postprocess2jsonlBL.py``, ``ref/legacy/matrix/bin/contraindications2kg.py``)
+established a precise Translator contract: three edge families, fixed subject/object categories,
+a per-family provenance chain under ``infores:drugapprovals-kp``, a
+``clinical_approval_status`` rule, and FDA-approval / FAERS-case / SPL evidence fields. This
+module asserts the rebuild **preserves** those semantics.
+
+This is a semantic-*preservation* guardrail, not edge-for-edge equality with the legacy build.
+The rebuild deliberately improves coverage and mappings (PLAN.md "allowing improved coverage and
+improved mappings"); the invariants locked here are the
+family / predicate / category / provenance / label / evidence contracts the old KP established and
+the DINGO reference ingest (``../DINGO/src/translator_ingest/ingests/dakp/dakp_rig.yaml``) publishes.
+The guardrails live in :mod:`dakp_pipeline.translator`.
+
+The deliberate, documented *differences* (contraindications NER-mined from DailyMed instead of the
+MEDI/Matrix xlsx; the FAERS ``clinical_approval_status`` cross-referenced against the
+approved-treats table — ``approved_for_condition`` / ``off_label_use`` — instead of the legacy
+``observed_use`` label, which was never a ``ClinicalApprovalStatusEnum`` member and is invalid now
+that Tablassert >= 8.2 emits ``clinical_approval_status`` as a first-class enum-typed edge field;
+ontology mapping delegated to Tablassert/fullmap) are
+asserted here as the NEW behavior and explained in ``docs/semantic-equivalence.md``.
+"""
+
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any
+
+import polars as pl
+import pytest
+from harness import install_fixture_fetchers, run_stages
+
+from dakp_pipeline import translator
+from dakp_pipeline.assertions.evidence import is_fda_application_number
+
+_FIXTURE_ROOT = Path(__file__).resolve().parents[1] / "fixtures" / "pipeline"
+
+# --- the three DAKP edge families (legacy + DINGO) --------------------------------
+
+TREATS = "biolink:treats"
+APPLIED_TO_TREAT = "biolink:applied_to_treat"
+CONTRAINDICATED_IN = "biolink:contraindicated_in"
+
+# --- expected DINGO ``dakp_rig.yaml`` category contract --------------------------
+# Mirrored from ../DINGO/src/translator_ingest/ingests/dakp/dakp_rig.yaml so the test stays
+# green without the sibling repo present.
+
+DINGO_SUBJECT_CATEGORIES: tuple[str, ...] = (
+    "biolink:ChemicalEntity",
+    "biolink:SmallMolecule",
+    "biolink:MolecularMixture",
+    "biolink:ComplexMolecularMixture",
+    "biolink:Drug",
+)
+DINGO_OBJECT_CATEGORIES: tuple[str, ...] = ("biolink:Disease", "biolink:PhenotypicFeature", "biolink:DiseaseOrPhenotypicFeature")
+
+# Legacy subject/object category tuples (ref/legacy/bin/*.py ``interventionCategories`` /
+# ``conditionCategories``). The rebuild's chemical/drug contract is the legacy intervention set
+# minus the protein/mixture edge cases the DINGO RIG does not publish; the condition set is identical.
+LEGACY_CONDITION_CATEGORIES: tuple[str, ...] = ("Disease", "PhenotypicFeature")
+
+
+# --- pipeline fixture (module-scoped: run the offline fixture pipeline once) ------
+
+
+@pytest.fixture(scope="module")
+def built(tmp_path_factory: pytest.TempPathFactory) -> dict[str, Any]:
+    """Run the offline fixture pipeline (fetchers monkeypatched, no Tablassert) once."""
+    workdir = tmp_path_factory.mktemp("semantic-equiv")
+    # Fetchers always run their real branches; route them to the fixtures for this offline build.
+    # The patch is undone once the tables are built (the byte-determinism re-run re-installs it).
+    monkeypatch = pytest.MonkeyPatch()
+    install_fixture_fetchers(monkeypatch)
+    try:
+        result = run_stages(fixture_root=_FIXTURE_ROOT, workdir=workdir)
+    finally:
+        monkeypatch.undo()
+    tables: dict[str, pl.DataFrame] = {}
+    for name in ("approved_treats_assertions", "faers_applied_to_treat_assertions", "contraindication_assertions"):
+        table = result.table(name)
+        # infer_schema_length=0 -> every column read as the exact stored string (no int coercion).
+        tables[name] = pl.read_csv(table.path, separator="\t", infer_schema_length=0)
+    return {"result": result, "tables": tables, "refs": result.assertion_refs, "workdir": workdir}
+
+
+def _family_rows(tables: dict[str, pl.DataFrame], predicate: str) -> list[dict[str, str]]:
+    """All assertion rows carrying ``predicate`` across the three tables."""
+    rows: list[dict[str, str]] = []
+    for frame in tables.values():
+        rows.extend(rec for rec in frame.iter_rows(named=True) if rec.get("predicate") == predicate)
+    return rows
+
+
+def _approval_values(rec: dict[str, str]) -> list[str]:
+    """The row's ``FDA_regulatory_approvals`` cell as a list (empty when it carries none)."""
+    return [value for value in str(rec.get("FDA_regulatory_approvals") or "").split("|") if value]
+
+
+# --- 1. the three edge families are all produced ----------------------------------
+
+
+def test_all_three_edge_families_present(built: dict[str, Any]) -> None:
+    """The rebuild emits all three legacy edge families (treats / applied_to_treat / contraindicated_in)."""
+    tables = built["tables"]
+    assert _family_rows(tables, TREATS), "no biolink:treats rows produced"
+    assert _family_rows(tables, APPLIED_TO_TREAT), "no biolink:applied_to_treat rows produced"
+    assert _family_rows(tables, CONTRAINDICATED_IN), "no biolink:contraindicated_in rows produced"
+
+
+def test_regression_invariants_pass_and_see_every_family(built: dict[str, Any]) -> None:
+    """The legacy-informed regression guardrail passes and observes all three families."""
+    report = translator.check_assertion_tables(built["refs"])
+    assert report.ok, f"regression violations: {[v.message for v in report.violations]}"
+    assert set(report.families_seen) == {TREATS, APPLIED_TO_TREAT, CONTRAINDICATED_IN}
+    assert report.row_count > 0
+
+
+def test_assertion_tables_satisfy_column_contract(built: dict[str, Any]) -> None:
+    """Every public assertion table exists with its declared Translator column contract."""
+    report = translator.validate(built["refs"])
+    assert report.ok, f"contract problems: {report.problems}"
+
+
+# --- 2. subject + object categories match the legacy/DINGO contract ---------------
+
+
+def test_subject_categories_are_chemical_drug(built: dict[str, Any]) -> None:
+    """Every subject carries a chemical/drug category (legacy ``interventionCategories``)."""
+    chemical = {cat.removeprefix("biolink:") for cat in DINGO_SUBJECT_CATEGORIES}
+    for frame in built["tables"].values():
+        categories = {str(rec.get("subject_category")) for rec in frame.iter_rows(named=True)}
+        assert categories, "empty subject category set"
+        assert categories <= chemical, f"non-chemical subject categories: {categories - chemical}"
+
+
+def test_object_categories_are_disease_or_phenotype(built: dict[str, Any]) -> None:
+    """Resolved objects carry Disease/PhenotypicFeature (legacy ``conditionCategories``).
+
+    Contraindication objects are mined mention TEXT with the category left empty for
+    Tablassert/fullmap (an intentional delegation, not a regression); the resolved families
+    (treats / applied_to_treat) must carry a legacy condition category on every object.
+    """
+    for predicate in (TREATS, APPLIED_TO_TREAT):
+        for rec in _family_rows(built["tables"], predicate):
+            assert str(rec.get("object_category")) in LEGACY_CONDITION_CATEGORIES, (
+                f"{predicate} object category {rec.get('object_category')!r} not in {LEGACY_CONDITION_CATEGORIES}"
+            )
+
+
+# --- 3. provenance chains match the legacy postprocess + DINGO ingest -------------
+
+
+def test_provenance_primary_is_always_dakp(built: dict[str, Any]) -> None:
+    """Every family aggregates under infores:drugapprovals-kp as primary_knowledge_source."""
+    for frame in built["tables"].values():
+        primaries = {str(rec.get("primary_knowledge_source")) for rec in frame.iter_rows(named=True)}
+        assert primaries == {translator.INFORES_DAKP}, f"unexpected primary sources: {primaries}"
+
+
+@pytest.mark.parametrize(
+    ("predicate", "expected_upstream"),
+    [
+        # legacy dakp-postprocess2jsonlBL.py ``sources`` blocks + DINGO dakp_rig.yaml:
+        pytest.param(TREATS, {"infores:dailymed", "infores:faers", "infores:epar", "infores:ema"}, id="treats-dailymed+faers+ema"),
+        pytest.param(APPLIED_TO_TREAT, {"infores:faers", "infores:dailymed"}, id="applied_to_treat-faers+dailymed"),
+        # IMPROVEMENT: contraindications are DailyMed-NER-mined, so upstream is dailymed (not medi).
+        pytest.param(CONTRAINDICATED_IN, {"infores:dailymed"}, id="contraindicated_in-dailymed"),
+    ],
+)
+def test_provenance_upstream_per_family(built: dict[str, Any], predicate: str, expected_upstream: set[str]) -> None:
+    """Each family carries exactly the legacy/DINGO upstream infores chain (order-insensitive)."""
+    for rec in _family_rows(built["tables"], predicate):
+        upstream = {token for token in str(rec.get("upstream_resource_ids")).split("|") if token}
+        if predicate == TREATS and upstream in ({"infores:ema"}, {"infores:epar"}):
+            # EMA's two approved-treats channels are intentional: MeSH therapeutic-area rows
+            # carry `infores:ema`; DiseaseNER-mined therapeutic-indication rows carry
+            # `infores:epar`. FDA/FAERS treats retain the legacy two-source chain.
+            assert upstream in ({"infores:ema"}, {"infores:epar"})
+        elif predicate == TREATS and upstream == {"infores:dailymed", "infores:faers"}:
+            assert upstream == {"infores:dailymed", "infores:faers"}
+        else:
+            assert upstream == expected_upstream, f"{predicate} upstream {upstream} != {expected_upstream}"
+
+
+def test_medi_is_not_a_provenance_source_anywhere(built: dict[str, Any]) -> None:
+    """IMPROVEMENT: MEDI/Matrix is gone — no edge cites infores:medi (contraindications are DailyMed-NER)."""
+    for frame in built["tables"].values():
+        for rec in frame.iter_rows(named=True):
+            upstream = str(rec.get("upstream_resource_ids"))
+            assert "infores:medi" not in upstream, f"unexpected medi provenance: {upstream}"
+            assert str(rec.get("primary_knowledge_source")) != "infores:medi"
+
+
+# --- 4. clinical_approval_status + knowledge_level + agent_type logic -------------
+
+
+def test_treats_clinical_approval_status_is_approved_for_condition(built: dict[str, Any]) -> None:
+    """Legacy postprocess set treats -> approved_for_condition; the rebuild preserves it exactly."""
+    for rec in _family_rows(built["tables"], TREATS):
+        assert str(rec.get("clinical_approval_status")) == "approved_for_condition"
+        assert str(rec.get("knowledge_level")) == "knowledge_assertion"
+        assert str(rec.get("agent_type")) == "manual_validation_of_automated_agent"
+
+
+def test_applied_to_treat_carries_the_off_label_signal(built: dict[str, Any]) -> None:
+    """applied_to_treat carries the legacy postprocess approval status (approved vs off-label).
+
+    The legacy postprocess (``dakp-postprocess2jsonlBL.py``) marked each applied_to_treat pair by
+    its treats counterpart: ``approved_for_condition`` when the pair is label-approved, else
+    ``off_label_use`` -- both biolink-valid ``ClinicalApprovalStatusEnum`` members (the legacy
+    ``observed_use`` label never was one).
+
+    The rebuild answers with two keys, and this fixture exercises both plus the miss:
+
+    * ``Examplestatin`` matches the approved subject by normalized TEXT (the legacy rule).
+    * ``Advil`` does NOT: the approved row's subject is the DailyMed ingredient text, and
+      ``BRAND_ALIASES`` carries no Advil entry. It is approved anyway through the FDA
+      APPLICATION IDENTITY key -- the FAERS record cites ``017977`` and the approved row for
+      that application covers ``headache``. That is the point of the second key: the legacy
+      name-variant caveat (a brand subject reading off-label for an on-label use) is exactly the
+      bug that shipped ``ELIGARD applied_to_treat Prostate cancer stage IV`` as ``off_label_use``.
+    * ``Aspirin`` (``arthritis``) has no treats counterpart under its application, so it stays
+      ``off_label_use``: the application key must not approve everything.
+    """
+    rows = _family_rows(built["tables"], APPLIED_TO_TREAT)
+    assert rows
+    for rec in rows:
+        assert str(rec.get("knowledge_level")) == "statistical_association"
+        assert str(rec.get("agent_type")) == "manual_validation_of_automated_agent"
+    statuses = {(str(rec.get("subject_text")), str(rec.get("object_text"))): str(rec.get("clinical_approval_status")) for rec in rows}
+    assert statuses[("Examplestatin", "hypercholesterolemia")] == "approved_for_condition"
+    assert statuses[("Advil", "headache")] == "approved_for_condition"  # via NDA017977, not the brand text
+    # Aspirin has no treats counterpart under NDA020000, so it stays off-label: the application
+    # key must not approve everything.
+    assert statuses[("Aspirin", "arthritis")] == "off_label_use"
+
+
+def test_contraindications_are_knowledge_assertions_text_mined(built: dict[str, Any]) -> None:
+    """contraindicated_in is a knowledge_assertion mined from DailyMed (legacy agent_type)."""
+    for rec in _family_rows(built["tables"], CONTRAINDICATED_IN):
+        assert str(rec.get("knowledge_level")) == "knowledge_assertion"
+        assert str(rec.get("agent_type")) == "manual_validation_of_automated_agent"
+
+
+# --- 5. evidence fields: FDA approval/NDA, FAERS case counts, SPL support ---------
+
+
+def test_treats_carries_fda_approval_and_spl_evidence(built: dict[str, Any]) -> None:
+    """Legacy ``approval`` (NDA) + ``supporting_spls`` survive as FDA_regulatory_approvals + supporting_spl_*."""
+    fda_approvals: list[list[str]] = []
+    for rec in _family_rows(built["tables"], TREATS):
+        is_ema = str(rec.get("upstream_resource_ids")) in {"infores:ema", "infores:epar"}
+        approvals = _approval_values(rec)
+        # An EMA row carries an EMA product number in the same column; an FDA row carries only real
+        # FDA application numbers. A row may legitimately carry NONE: a DailyMed approval id no
+        # register resolves is dropped rather than shipped as a value nobody can resolve.
+        if is_ema:
+            assert all(value.startswith("EMEA/") for value in approvals), (rec["subject_text"], approvals)
+        else:
+            assert all(is_fda_application_number(value) for value in approvals), (rec["subject_text"], approvals)
+            fda_approvals.append(approvals)
+        assert str(rec.get("supporting_spl_sets")).strip() or is_ema, "treats row missing supporting SPL set"
+        assert str(rec.get("supporting_spl_documents")).strip() or is_ema, "treats row missing supporting SPL doc"
+    assert any(fda_approvals), "no FDA-sourced treats row carried an application number"
+
+
+def test_all_edge_families_carry_identifier_provenance(built: dict[str, Any]) -> None:
+    """Every family exposes the unified identifier-only evidence contract.
+
+    Human-readable URLs remain in the source-specific debug columns; KGX ``publications`` is
+    intentionally limited to the stable ``dailymed:`` identifiers (``faers:`` report ids stay in
+    the debug columns only).
+    """
+    for rec in _family_rows(built["tables"], TREATS):
+        evidence = str(rec.get("edge_evidence") or "")
+        if str(rec.get("upstream_resource_ids")) in {"infores:ema", "infores:epar"}:
+            assert not evidence
+            continue
+        assert "dailymed:" in evidence
+        assert "faers:" not in evidence
+        assert str(rec.get("supporting_faers_records") or "").strip()
+        assert str(rec.get("supporting_faers_urls") or "").startswith("https://")
+    approvals_by_subject: dict[str, set[str]] = {}
+    for rec in _family_rows(built["tables"], APPLIED_TO_TREAT):
+        assert not str(rec.get("edge_evidence") or "").strip()
+        # ``regulatory_approvals`` carries ONLY real FDA application numbers. FAERS ``nda_num`` is
+        # reporter free text, so a number no register resolves contributes nothing instead of an
+        # unresolvable value: the fixtures exercise both outcomes (Aspirin's 020000 is in no
+        # Drugs@FDA fixture, exactly as the production placeholders ``999999``/``99`` are in no
+        # real register). The row keeps its FAERS case and URL provenance either way.
+        approvals = _approval_values(rec)
+        assert all(is_fda_application_number(value) for value in approvals), (rec["subject_text"], approvals)
+        approvals_by_subject.setdefault(str(rec["subject_text"]), set()).update(approvals)
+        assert str(rec.get("supporting_faers_records") or "").strip()
+        assert str(rec.get("supporting_faers_urls") or "").startswith("https://")
+    assert approvals_by_subject["Examplestatin"] == {"NDA012345"}  # resolved from Drugs@FDA applications
+    assert approvals_by_subject["Advil"] == {"NDA017977"}  # resolved from Drugs@FDA products
+    assert approvals_by_subject["Aspirin"] == set()  # unresolvable: dropped, edge kept
+    for rec in _family_rows(built["tables"], CONTRAINDICATED_IN):
+        assert str(rec.get("edge_evidence") or "").startswith("dailymed:")
+        approvals = _approval_values(rec)
+        assert approvals, f"contraindication row carries no FDA application number: {rec['subject_text']}"
+        assert all(is_fda_application_number(value) for value in approvals), (rec["subject_text"], approvals)
+
+
+def test_applied_to_treat_carries_faers_case_counts(built: dict[str, Any]) -> None:
+    """Legacy ``N_cases`` survives as a positive number_of_cases on every applied_to_treat row."""
+    for rec in _family_rows(built["tables"], APPLIED_TO_TREAT):
+        assert int(str(rec.get("number_of_cases"))) > 0, "applied_to_treat row missing FAERS case count"
+
+
+def test_contraindications_carry_spl_support(built: dict[str, Any]) -> None:
+    """Contraindication rows carry the DailyMed SPL set/document they were mined from."""
+    for rec in _family_rows(built["tables"], CONTRAINDICATED_IN):
+        assert str(rec.get("supporting_spl_sets")).strip(), "contraindication row missing supporting SPL set"
+        assert str(rec.get("supporting_spl_documents")).strip(), "contraindication row missing supporting SPL document"
+
+
+# --- 6. deterministic output (precondition for Tablassert's deterministic edge ids)
+
+
+def test_rows_uniquely_keyed_by_subject_predicate_object(built: dict[str, Any]) -> None:
+    """No duplicate semantic assertion keys, including the optional context qualifier.
+
+    Unqualified and disease-context-qualified contraindications may share subject/predicate/object
+    but are distinct assertions once nullable qualifiers are enabled.
+    """
+    for frame in built["tables"].values():
+        triples = [
+            (str(r.get("subject_text")), str(r.get("predicate")), str(r.get("object_text")), str(r.get("disease_context_text", "")))
+            for r in frame.iter_rows(named=True)
+        ]
+        assert len(triples) == len(set(triples)), f"duplicate semantic assertion key in {frame.columns}"
+
+
+def test_output_is_byte_deterministic_across_runs(built: dict[str, Any], tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Re-running the identical pipeline reproduces byte-identical assertion TSVs.
+
+    Deterministic bytes in -> deterministic edge ids out (Tablassert derives UUIDs from the
+    resolved triples). This is the rebuild's equivalent of the legacy uuid3 edge-id stability.
+    """
+    install_fixture_fetchers(monkeypatch)
+    rerun = run_stages(fixture_root=_FIXTURE_ROOT, workdir=tmp_path / "rerun")
+    for name in ("approved_treats_assertions", "faers_applied_to_treat_assertions", "contraindication_assertions"):
+        first = built["result"].table(name).path.read_bytes()
+        second = rerun.table(name).path.read_bytes()
+        assert first == second, f"{name} output is not byte-deterministic across runs"
+
+
+# --- 7. cross-check the Translator contract against the DINGO RIG -----------------
+
+
+def test_contract_categories_match_dingo_rig() -> None:
+    """The translator module's subject/object category tuples equal the DINGO dakp_rig.yaml categories."""
+    assert translator.CHEMICAL_DRUG_CATEGORIES == DINGO_SUBJECT_CATEGORIES
+    assert translator.DISEASE_PHENOTYPE_CATEGORIES == DINGO_OBJECT_CATEGORIES
+
+
+def test_contract_edge_families_match_dingo_predicates() -> None:
+    """translator.EDGE_FAMILIES publishes exactly the three DINGO predicates + upstream chains."""
+    assert tuple(translator.EDGE_FAMILIES) == (TREATS, APPLIED_TO_TREAT, CONTRAINDICATED_IN)
+    assert translator.EDGE_FAMILIES[TREATS].required_upstream == frozenset({"infores:dailymed", "infores:faers"})
+    # EMA centrally-authorised rows union into treats with their own accepted upstream chains
+    # (MeSH-area rows: infores:ema; EPAR indication-mined rows: infores:epar).
+    assert translator.EDGE_FAMILIES[TREATS].alternative_upstream == (frozenset({"infores:ema"}), frozenset({"infores:epar"}))
+    assert translator.EDGE_FAMILIES[TREATS].emitted_upstream == frozenset({"infores:dailymed", "infores:faers", "infores:ema", "infores:epar"})
+    assert translator.EDGE_FAMILIES[APPLIED_TO_TREAT].required_upstream == frozenset({"infores:faers", "infores:dailymed"})
+    assert translator.EDGE_FAMILIES[CONTRAINDICATED_IN].required_upstream == frozenset({"infores:dailymed"})
+
+
+# --- 8. the produced rows satisfy the full KGX/Translator contract ----------------
+
+
+def _edge_category(object_category: str) -> str:
+    """Legacy ``dakp-postprocess2jsonlBL.py`` edge-category derivation from the object category."""
+    if object_category == "Disease":
+        return "biolink:EntityToDiseaseAssociation"
+    if object_category == "PhenotypicFeature":
+        return "biolink:EntityToPhenotypicFeatureAssociation"
+    return f"biolink:EntityTo{object_category}Association"
+
+
+def _node_id(curie: str, text: str) -> str:
+    """A stable node id: the source CURIE when present, else a deterministic text placeholder.
+
+    Mirrors the resolution Tablassert/fullmap performs for mention text (contraindication objects
+    and FAERS subjects carry no source CURIE in the assertion table).
+    """
+    return curie if curie.strip() else f"TEXT:{text.strip()}"
+
+
+def _synthesize_kgx(tables: dict[str, pl.DataFrame]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Build KGX node/edge records from the assertion tables, simulating Tablassert resolution.
+
+    Object CURIEs/categories left empty by the shapers (contraindication mentions) are resolved to
+    a deterministic id + the shaper's own default category (Disease), exactly as fullmap would before
+    KGX emission — so this validates the contract the *resolved* graph must satisfy.
+    """
+    nodes: dict[str, dict[str, Any]] = {}
+    edges: list[dict[str, Any]] = []
+
+    def add_node(node_id: str, name: str, category: str) -> None:
+        if node_id not in nodes:
+            nodes[node_id] = {"id": node_id, "name": name, "category": [f"biolink:{category}"]}
+
+    for frame in tables.values():
+        for rec in frame.iter_rows(named=True):
+            subject_category = str(rec.get("subject_category") or "ChemicalEntity")
+            object_category = str(rec.get("object_category")) or "Disease"  # fullmap default for mined mentions
+            subject_id = _node_id(str(rec.get("subject_curie")), str(rec.get("subject_text")))
+            object_id = _node_id(str(rec.get("object_curie")), str(rec.get("object_text")))
+            add_node(subject_id, str(rec.get("subject_name")) or str(rec.get("subject_text")), subject_category)
+            add_node(object_id, str(rec.get("object_name")) or str(rec.get("object_text")), object_category)
+
+            upstream = [token for token in str(rec.get("upstream_resource_ids")).split("|") if token]
+            edge: dict[str, Any] = {
+                "id": f"edge:{subject_id}:{rec.get('predicate')}:{object_id}:{rec.get('disease_context_text', '')}",
+                "subject": subject_id,
+                "predicate": str(rec.get("predicate")),
+                "object": object_id,
+                "category": [_edge_category(object_category)],
+                "knowledge_level": str(rec.get("knowledge_level")),
+                "agent_type": str(rec.get("agent_type")),
+                "primary_knowledge_source": str(rec.get("primary_knowledge_source")),
+                "sources": [
+                    {
+                        "resource_id": str(rec.get("primary_knowledge_source")),
+                        "resource_role": "primary_knowledge_source",
+                        "upstream_resource_ids": upstream,
+                    }
+                ],
+            }
+            context_text = str(rec.get("disease_context_text") or "").strip()
+            if context_text:
+                context_id = _node_id("", context_text)
+                add_node(context_id, context_text, "Disease")
+                edge["disease_context_qualifier"] = context_id
+            edges.append(edge)
+    return list(nodes.values()), edges
+
+
+def test_produced_rows_pass_the_kgx_translator_contract(built: dict[str, Any]) -> None:
+    """After (simulated) resolution, every node/edge passes contract.validate_kgx.
+
+    This is the deepest semantic check: node coverage, biolink-prefixed categories, the three
+    edge families with chemical/drug subjects + disease/phenotype objects, and the per-family
+    infores provenance chain — the same gate the DINGO ingest applies to the published KGX.
+    """
+    nodes, edges = _synthesize_kgx(built["tables"])
+    assert edges, "no edges synthesized from the assertion tables"
+    report = translator.validate_kgx(nodes, edges)
+    assert report.ok, f"KGX contract problems: {report.problems}"
