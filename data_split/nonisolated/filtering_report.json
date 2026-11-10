@@ -1,0 +1,70 @@
+{
+  "graph": "/Users/carolinagonzalez/shepherd-new-pathfinder/.local/data/gandalf_1.0.4",
+  "source_splits": "/Users/carolinagonzalez/shepherd-autoresearch/data_split",
+  "source_csv_sha256": {
+    "train": "4693e9b493ccf8372d98048a34b78aa42e88eb0b814db3850cd01ce080237e8b",
+    "val": "c0632db52c0c6b1cfa9f8261774b11fae75656b1d82ccc233e63547e376681a0",
+    "test": "8a57343117dde4f0f7690cb0daebed12fda43a27e17eb3ad124919dc70c028e1"
+  },
+  "rule": "Remove all drug/chemical--disease/phenotype edges in either direction, all predicates and sources; retain pairs only if both endpoint degrees remain positive.",
+  "drug_categories": [
+    "biolink:ChemicalEntity",
+    "biolink:ChemicalMixture",
+    "biolink:ComplexMolecularMixture",
+    "biolink:Drug",
+    "biolink:MolecularMixture",
+    "biolink:SmallMolecule"
+  ],
+  "disease_categories": [
+    "biolink:Disease",
+    "biolink:DiseaseOrPhenotypicFeature",
+    "biolink:PhenotypicFeature"
+  ],
+  "original_nodes": 1706896,
+  "original_edges": 28935121,
+  "edges_to_remove": 1499839,
+  "edges_to_retain": 27435282,
+  "isolated_nodes_after_filtering": 21552,
+  "splits": {
+    "train": {
+      "original": 7686,
+      "retained": 6684,
+      "excluded": 1002
+    },
+    "val": {
+      "original": 961,
+      "retained": 831,
+      "excluded": 130
+    },
+    "test": {
+      "original": 961,
+      "retained": 830,
+      "excluded": 131
+    }
+  },
+  "retained_pairs": 8345,
+  "excluded_pairs": 1263,
+  "assignments_preserved": true,
+  "graph_modified": false,
+  "limitation": "Positive endpoint degrees do not guarantee a connecting path.",
+  "output_csv_sha256": {
+    "excluded_pairs.csv": "5173bf6fd115c85ea29474ff1b379e7ba59486ef68cfba76504a43f767860422",
+    "test.csv": "af6d7e23addc833301926eedf8f465abdd229f034f901ac77da1c78803f75918",
+    "train.csv": "741ca4fc225ea4189379c0108de0213a7850147cba202a1de2ec58ecf5275700",
+    "val.csv": "ed8ec432116ca9ddd84e06ace578d72e043cb893ead58f08dc442e7b2f244eec"
+  },
+  "source_graph_build": {
+    "source_release": "1.0.4",
+    "source_download": {
+      "url": "https://kgx-storage.ci.transltr.io/releases/translator_kg/1.0.4/translator_kg.tar.zst",
+      "bytes": 3317886609,
+      "sha256": "fbfec961ac6a63c4b6b30940cb49b987043c19ae2d3a76b9787be65e30d766bb",
+      "zstd_integrity": "passed"
+    },
+    "gandalf_commit": "3fbaded1c922de3d61ff2af17694264d13b221f5",
+    "biolink_version": "4.4.4",
+    "node_count": 1706896,
+    "edge_count": 28935121,
+    "build_seconds": 1305.7875480651855
+  }
+}

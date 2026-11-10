@@ -1,0 +1,36 @@
+{
+  "message": {
+    "query_graph": {
+      "nodes": {
+        "drug": {
+          "categories": [
+            "biolink:ChemicalEntity"
+          ]
+        },
+        "disease": {
+          "categories": [
+            "biolink:DiseaseOrPhenotypicFeature"
+          ],
+          "ids": [
+            "MONDO:0009061"
+          ]
+        }
+      },
+      "edges": {
+        "e0": {
+          "subject": "drug",
+          "object": "disease",
+          "predicates": [
+            "biolink:treats"
+          ],
+          "knowledge_type": "inferred"
+        }
+      }
+    }
+  },
+  "parameters": {
+    "tiers": [
+      0
+    ]
+  }
+}

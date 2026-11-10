@@ -395,6 +395,50 @@
       },
       "image": "shepherd-autoresearch-filter_results_top_n:baseline",
       "volumes": []
+    },
+    "aragorn_omnicorp": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/aragorn_omnicorp/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "2g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false",
+        "OMNICORP_CURIES_LMDB_PATH": "/app/omnicorp_lmdb/curies.lmdb",
+        "OMNICORP_SHARED_COUNTS_LMDB_PATH": "/app/omnicorp_lmdb/shared_counts.lmdb",
+        "OMNICORP_LMDB_URL": "",
+        "OMNICORP_MAX_CURIE_PAIRS": "1000000"
+      },
+      "image": "shepherd-autoresearch-aragorn_omnicorp:baseline",
+      "volumes": [
+        "./omnicorp_lmdb:/app/omnicorp_lmdb:ro"
+      ],
+      "profiles": [
+        "local-omnicorp"
+      ]
     }
   },
   "volumes": {

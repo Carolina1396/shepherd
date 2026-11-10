@@ -1,0 +1,31 @@
+Graph: /Users/carolinagonzalez/shepherd-new-pathfinder/.local/data/gandalf_1.0.4
+Source: infores:drugcentral, primary_knowledge_source
+Predicate: exact biolink:treats; categories from analyze_graph.py
+Overlap: same drug/disease IDs in either direction, across all sources.
+DrugCentral treats edge records: 9,608
+DrugCentral treats unique pairs: 9,608
+Pairs with any OTHER predicate: 5,169 / 9,608
+Pairs with no other predicate: 4,439
+Other-predicate edge records on these pairs: 15,058
+Pairs also having treats without DrugCentral primary provenance: 2,541 (3,973 records)
+
+Other predicates (rows can overlap; percentages use DrugCentral treats unique pairs):
+Predicate                                         Records       Pairs   % pairs  Pairs non-DC
+biolink:treats_or_applied_or_studied_to_treat       7,193       4,161    43.31%         4,161
+biolink:in_clinical_trials_for                      3,389       3,297    34.32%         3,297
+biolink:applied_to_treat                            2,504       2,504    26.06%         2,504
+biolink:related_to                                    575         575     5.98%           575
+biolink:has_side_effect                               413         413     4.30%           413
+biolink:affects                                       316         316     3.29%           316
+biolink:correlated_with                               268         267     2.78%           267
+biolink:contributes_to                                177         177     1.84%           177
+biolink:causes                                         67          67     0.70%            67
+biolink:disrupts                                       67          67     0.70%            67
+biolink:contraindicated_in                             40          39     0.41%            36
+biolink:positively_correlated_with                     29          29     0.30%            29
+biolink:predisposes_to_condition                        8           8     0.08%             8
+biolink:studied_to_treat                                8           8     0.08%             8
+biolink:has_part                                        2           2     0.02%             2
+biolink:in_preclinical_trials_for                       1           1     0.01%             1
+biolink:negatively_correlated_with                      1           1     0.01%             1
+Pairs non-DC: overlap pairs with at least one record lacking DrugCentral primary provenance.

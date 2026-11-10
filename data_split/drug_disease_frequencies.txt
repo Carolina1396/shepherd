@@ -1,0 +1,38 @@
+Graph: /Users/carolinagonzalez/shepherd-new-pathfinder/.local/data/gandalf_1.0.4
+Drug categories: biolink:ChemicalEntity, biolink:ChemicalMixture, biolink:ComplexMolecularMixture, biolink:Drug, biolink:MolecularMixture, biolink:SmallMolecule
+Disease categories: biolink:Disease, biolink:DiseaseOrPhenotypicFeature, biolink:PhenotypicFeature
+Matching nodes: 1,166,606 drug/chemical; 91,268 disease/phenotype
+Stored edges, all predicates; separate source records are not deduplicated.
+Nodes matching both groups: 0
+
+Predicate                                      Drug -> Disease  Disease -> Drug         Total   Percent
+---------------------------------------------------------------------------------------------------------
+biolink:in_clinical_trials_for                         620,245                0       620,245    41.35%
+biolink:treats_or_applied_or_studied_to_treat          354,731                0       354,731    23.65%
+biolink:has_side_effect                                138,291                0       138,291     9.22%
+biolink:contributes_to                                  99,977               15        99,992     6.67%
+biolink:correlated_with                                 67,562            1,728        69,290     4.62%
+biolink:applied_to_treat                                65,254                0        65,254     4.35%
+biolink:treats                                          58,848                0        58,848     3.92%
+biolink:related_to                                      23,181              256        23,437     1.56%
+biolink:contraindicated_in                              22,859                0        22,859     1.52%
+biolink:causes                                          20,260                0        20,260     1.35%
+biolink:affects                                         13,661               38        13,699     0.91%
+biolink:positively_correlated_with                       2,791              574         3,365     0.22%
+biolink:disrupts                                         3,312                0         3,312     0.22%
+biolink:predisposes_to_condition                         3,033                0         3,033     0.20%
+biolink:studied_to_treat                                 1,645                0         1,645     0.11%
+biolink:negatively_correlated_with                         367               71           438     0.03%
+biolink:produces                                             1              310           311     0.02%
+biolink:in_preclinical_trials_for                          275                0           275     0.02%
+biolink:located_in                                         155               39           194     0.01%
+biolink:coexists_with                                       59               87           146     0.01%
+biolink:has_part                                             1               61            62     0.00%
+biolink:occurs_in                                            0               39            39     0.00%
+biolink:interacts_with                                      16               20            36     0.00%
+biolink:exacerbates_condition                               33                0            33     0.00%
+biolink:has_input                                            0               29            29     0.00%
+biolink:diagnoses                                            9                0             9     0.00%
+biolink:ameliorates_condition                                5                0             5     0.00%
+biolink:has_chemical_role                                    1                0             1     0.00%
+TOTAL                                                1,496,572            3,267     1,499,839

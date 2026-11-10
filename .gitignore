@@ -187,3 +187,6 @@ ars_payloads/
 
 # Autoresearch local outputs
 responses/
+
+# Reproducible large local graph builds
+artifacts/

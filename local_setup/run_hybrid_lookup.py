@@ -11,6 +11,21 @@ import urllib.error
 import urllib.request
 
 
+def validate_query(qgraph):
+    edges = list(qgraph['edges'].values())
+    inferred = [e for e in edges if e.get('knowledge_type', 'lookup') == 'inferred']
+    if any(e.get('knowledge_type', 'lookup') not in ('lookup', 'inferred') for e in edges):
+        raise ValueError('Only lookup and inferred knowledge types are supported.')
+    if inferred:
+        if len(edges) != 1:
+            raise ValueError('AMIE inference requires a single query edge.')
+        edge = inferred[0]
+        nodes = [qgraph['nodes'][edge[k]] for k in ('subject', 'object')]
+        pinned = [node for node in nodes if node.get('ids')]
+        if len(pinned) != 1 or len(pinned[0]['ids']) != 1:
+            raise ValueError('AMIE inference requires exactly one endpoint pinned to one ID.')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--query', type=Path, required=True)
@@ -22,8 +37,10 @@ def main():
     args = parser.parse_args()
     query = json.loads(args.query.read_text())
     qgraph = query['message']['query_graph']
-    if any(e.get('knowledge_type', 'lookup') != 'lookup' for e in qgraph['edges'].values()):
-        parser.error('This runner supports lookup queries only.')
+    try:
+        validate_query(qgraph)
+    except ValueError as error:
+        parser.error(str(error))
     if args.timeout <= 0 or args.max_results <= 0:
         parser.error('timeout and max-results must be positive')
     args.out.mkdir(parents=True, exist_ok=False)
@@ -40,7 +57,7 @@ def main():
     summary = []
     for name, url, workflow in stages:
         payload = {'message': message, 'workflow': workflow,
-                   'parameters': {'timeout': args.timeout}}
+                   'parameters': {**query.get('parameters', {}), 'timeout': args.timeout}}
         data = json.dumps(payload).encode()
         (args.out / f'{name}.request.json').write_bytes(data)
         request = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})

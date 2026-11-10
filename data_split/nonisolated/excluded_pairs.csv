@@ -1,0 +1,1264 @@
+split,drug_id,drug_name,disease_id,disease_name,reason
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:100241,Ciprofloxacin,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0349734,Female pelvic cellulitis,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0520777,Chlamydial pelvic inflammatory disease,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:100246,Norfloxacin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:10119,Ziprasidone,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:101853,Gemifloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:101853,Gemifloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:101853,Gemifloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:102484,Sulfisoxazole,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:102484,Sulfisoxazole,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:102484,Sulfisoxazole,UMLS:C1278807,Chlamydial urethritis,isolated_disease_id
+train,CHEBI:116278,Lomefloxacin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:116278,Lomefloxacin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:116278,Lomefloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:116278,Lomefloxacin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:124991,Cefalotin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:124991,Cefalotin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:124991,Cefalotin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:124991,Cefalotin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:12777,Vitamin A,UMLS:C0687148,Mineral deficiency,isolated_disease_id
+train,CHEBI:127780,Foscarnet,UMLS:C1720144,Herpes zoster with AIDS (acquired immunodeficiency syndrome),isolated_disease_id
+train,CHEBI:131391,CID 129628383,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:131716,Garenoxacin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:131716,Garenoxacin,UMLS:C0729772,Infective laryngitis,isolated_disease_id
+train,CHEBI:133009,Velpatasvir,UMLS:C1299579,Early cirrhosis,isolated_disease_id
+train,CHEBI:133011,Oxytetracycline,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:133011,Oxytetracycline,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:133011,Oxytetracycline,UMLS:C1997322,Chlamydia trachomatis infection of genital structure,isolated_disease_id
+train,CHEBI:134708,Saroglitazar,UMLS:C3661933,Dyslipidemia due to type 2 diabetes mellitus,isolated_disease_id
+train,CHEBI:134815,salacetamide,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:135404,flumethiazide,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:135611,Benzalkonium,UMLS:C0849907,Itching of ear,isolated_disease_id
+train,CHEBI:135694,mozavaptan,UMLS:C1321135,Paraneoplastic hyponatremia,isolated_disease_id
+train,CHEBI:135772,Meclocycline,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:135772,Meclocycline,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:135772,Meclocycline,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:135772,Meclocycline,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:135772,Meclocycline,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:135782,ulobetasol propionate,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:135791,Prednicarbate,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C0520777,Chlamydial pelvic inflammatory disease,isolated_disease_id
+train,CHEBI:135829,Alatrofloxacin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:135919,Nesiritide,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,CHEBI:136021,Phenylmercuric nitrate,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:136050,Ozenoxacin,UMLS:C0342985,Superficial bacterial infection of skin,isolated_disease_id
+train,CHEBI:140376,Cefiderocol,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:140376,Cefiderocol,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:140376,Cefiderocol,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:143117,Lorlatinib,UMLS:C5394780,Anaplastic lymphoma kinase fusion oncogene positive non-small cell lung cancer,isolated_disease_id
+train,CHEBI:145371,Binimetinib,UMLS:C5394779,Malignant melanoma with BRAF V600E mutation,isolated_disease_id
+train,CHEBI:147675,Idoxuridine,UMLS:C1301518,Vaccinia keratitis,isolated_disease_id
+train,CHEBI:149836,Tigecycline,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:15407,Ephedrine,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:157175,Enoxacin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:157175,Enoxacin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:161680,Aztreonam,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C0577690,Proteus septicemia,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+train,CHEBI:161680,Aztreonam,UMLS:C3163829,Sepsis caused by Gram negative bacteria,isolated_disease_id
+train,CHEBI:16330,Stanolone,UMLS:C0271932,Anemia of chronic renal failure,isolated_disease_id
+train,CHEBI:16359,Cholic Acid,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:16469,Estradiol,UMLS:C0520577,Urethral atrophy,isolated_disease_id
+train,CHEBI:16664,Albendazole,UMLS:C0153289,Echinococcus granulosus infection of liver,isolated_disease_id
+train,CHEBI:16664,Albendazole,UMLS:C0153290,Echinococcus granulosus infection of lung,isolated_disease_id
+train,CHEBI:16962,Cortisone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:16962,Cortisone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:16962,Cortisone,UMLS:C0849907,Itching of ear,isolated_disease_id
+train,CHEBI:17015,Riboflavin,UMLS:C0687148,Mineral deficiency,isolated_disease_id
+train,CHEBI:17076,Streptomycin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:17076,Streptomycin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:17076,Streptomycin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:17076,Streptomycin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:17076,Streptomycin,UMLS:C0700226,Pulmonary mycobacterium avium-intracellulare infection,isolated_disease_id
+train,CHEBI:17115,Serine,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:17334,penicillin,UMLS:C0017418,Primary genital syphilis,isolated_disease_id
+train,CHEBI:17334,penicillin,UMLS:C0152946,Anthrax sepsis,isolated_disease_id
+train,CHEBI:17334,penicillin,UMLS:C0588233,Septicemia due to enterococcus,isolated_disease_id
+train,CHEBI:17334,penicillin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:17334,penicillin,UMLS:C1318559,Fusospirochetal pharyngitis,isolated_disease_id
+train,CHEBI:17439,Cyanocobalamin,UMLS:C0268617,Homocystinemia,isolated_disease_id
+train,CHEBI:17606,Iodine,UMLS:C0276727,Lymphocutaneous sporotrichosis,isolated_disease_id
+train,CHEBI:17606,Iodine,UMLS:C0342199,Iodine deficiency syndrome,isolated_disease_id
+train,CHEBI:17630,Kanamycin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:17650,Hydrocortisone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:17650,Hydrocortisone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:17650,Hydrocortisone,UMLS:C0849907,Itching of ear,isolated_disease_id
+train,CHEBI:17650,Hydrocortisone,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+train,CHEBI:17698,Chloramphenicol,UMLS:C0343500,Gas gangrene caused by clostridium perfringens,isolated_disease_id
+train,CHEBI:17698,Chloramphenicol,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:17750,Betaine,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:17750,Betaine,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:177836,Dacarbazine,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_disease_id
+train,CHEBI:18243,Dopamine,UMLS:C0268734,Acute nephropathy,isolated_disease_id
+train,CHEBI:18385,Thiamine,UMLS:C0687148,Mineral deficiency,isolated_disease_id
+train,CHEBI:184381,Bacitracin,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,CHEBI:184381,Bacitracin,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:188153,Oteseconazole,UMLS:C3872606,Recurrent candidiasis of vagina,isolated_disease_id
+train,CHEBI:190509,Imipenem,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:190509,Imipenem,UMLS:C0343500,Gas gangrene caused by clostridium perfringens,isolated_disease_id
+train,CHEBI:190509,Imipenem,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:190509,Imipenem,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:190509,Imipenem,UMLS:C0948204,Infection caused by Citrobacter,isolated_disease_id
+train,CHEBI:190509,Imipenem,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:190509,Imipenem,UMLS:C1320183,Infection caused by Enterococcus,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C1278807,Chlamydial urethritis,isolated_disease_id
+train,CHEBI:194135,Ofloxacin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:195558,Entrectinib,UMLS:C4302554,Reactive oxygen species 1 positive non-small cell lung cancer,isolated_disease_id
+train,CHEBI:195558,Entrectinib,UMLS:C5192106,Solid neoplasm with neurotrophic receptor tyrosine kinase gene fusion,isolated_disease_id
+train,CHEBI:204734,Desonide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:204734,Desonide,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:204734,Desonide,UMLS:C1960764,Crohn's disease in remission,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:204928,Cefotaxime,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0276064,Sepsis caused by Bacteroides,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0349734,Female pelvic cellulitis,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:209807,Cefoxitin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:214480,Loracarbef,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:214480,Loracarbef,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:214480,Loracarbef,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:229223,Daprodustat,UMLS:C0472713,Anemia of renal disease,isolated_disease_id
+train,CHEBI:229539,Durlobactam,UMLS:C2063075,Pneumonia caused by Acinetobacter,isolated_disease_id
+train,CHEBI:229539,Durlobactam,UMLS:C2959527,Infection caused by carbapenem resistant Acinetobacter,isolated_disease_id
+train,CHEBI:231087,Trilaciclib,UMLS:C4303663,Extensive stage primary small cell carcinoma of lung,isolated_disease_id
+train,CHEBI:231344,Talazoparib,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+train,CHEBI:232810,Brigatinib,UMLS:C5394780,Anaplastic lymphoma kinase fusion oncogene positive non-small cell lung cancer,isolated_disease_id
+train,CHEBI:23765,Sparfloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:23765,Sparfloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:2453,Acyclovir,UMLS:C0349719,Herpes simplex infection of skin,isolated_disease_id
+train,CHEBI:2618,Amantadine,UMLS:C2711180,Influenza caused by Influenza A virus,isolated_disease_id
+train,CHEBI:2637,Amikacin,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C0349650,Non-tuberculous mycobacterial pneumonia,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C3163829,Sepsis caused by Gram negative bacteria,isolated_disease_id
+train,CHEBI:2637,Amikacin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:26580,Rifamycin,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0275793,Staphylococcal tonsillitis,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0275794,Staphylococcal pharyngitis,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:2676,Amoxicillin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:2682,Amphotericin B,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:2682,Amphotericin B,UMLS:C0276824,Meningoencephalitis caused by Naegleria,isolated_disease_id
+train,CHEBI:2682,Amphotericin B,UMLS:C0349009,Septicaemia candida,isolated_disease_id
+train,CHEBI:2682,Amphotericin B,UMLS:C1997322,Chlamydia trachomatis infection of genital structure,isolated_disease_id
+train,CHEBI:2682,Amphotericin B,UMLS:C2960008,C2960008,isolated_disease_id
+train,CHEBI:2686,Amrinone,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,CHEBI:27373,Dexpanthenol,UMLS:C0263283,Contact dermatitis caused by urushiol from Pacific poison oak,isolated_disease_id
+train,CHEBI:27373,Dexpanthenol,UMLS:C0406175,Chafing of skin,isolated_disease_id
+train,CHEBI:27446,Penicillin V,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:27446,Penicillin V,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:27446,Penicillin V,UMLS:C1318559,Fusospirochetal pharyngitis,isolated_disease_id
+train,CHEBI:27470,Folic acid,UMLS:C0268617,Homocystinemia,isolated_disease_id
+train,CHEBI:27470,Folic acid,UMLS:C0687148,Mineral deficiency,isolated_disease_id
+train,CHEBI:27565,Aminosalicylic acid,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:27644,Chlortetracycline,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,CHEBI:27644,Chlortetracycline,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:27732,Caffeine,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:27902,Tetracycline,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:27902,Tetracycline,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:27902,Tetracycline,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,CHEBI:27902,Tetracycline,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:27902,Tetracycline,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:27902,Tetracycline,UMLS:C1997322,Chlamydia trachomatis infection of genital structure,isolated_disease_id
+train,CHEBI:28001,Vancomycin,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+train,CHEBI:28001,Vancomycin,UMLS:C0520767,Staphylococcal endocarditis,isolated_disease_id
+train,CHEBI:28001,Vancomycin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:28748,Doxorubicin,UMLS:C3163805,Malignant epithelial neoplasm of female breast,isolated_disease_id
+train,CHEBI:28748,Doxorubicin,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_disease_id
+train,CHEBI:28787,Nitroglycerin,UMLS:C1299641,Extravasation injury,isolated_disease_id
+train,CHEBI:28787,Nitroglycerin,UMLS:C1997351,Left ventricular cardiac dysfunction,isolated_disease_id
+train,CHEBI:28787,Nitroglycerin,UMLS:C3661921,Perioperative hypertension,isolated_disease_id
+train,CHEBI:28864,Tobramycin,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+train,CHEBI:28864,Tobramycin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:28915,Fosfomycin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0275555,Acute bacterial epiglottitis,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0275761,Pneumococcal pharyngitis,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0406143,Cutaneous listeriosis,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0577690,Proteus septicemia,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0588233,Septicemia due to enterococcus,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:28971,Ampicillin,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0153225,Gonococcal meningitis,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0275778,Lyme carditis,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:29007,Ceftriaxone,UMLS:C1719906,Meningitis caused by Klebsiella aerogenes,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0275778,Lyme carditis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0276085,Ecthyma gangrenosum,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0340354,Q fever endocarditis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0341779,Chlamydial epididymitis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0577690,Proteus septicemia,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C1997322,Chlamydia trachomatis infection of genital structure,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C3163829,Sepsis caused by Gram negative bacteria,isolated_disease_id
+train,CHEBI:29013,Fusidic acid,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0520777,Chlamydial pelvic inflammatory disease,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0700226,Pulmonary mycobacterium avium-intracellulare infection,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C1261256,Pelvic inflammatory disease caused by Metamycoplasma hominis,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:2955,Azithromycin,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+train,CHEBI:2956,Azlocillin,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:2956,Azlocillin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:2956,Azlocillin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:2956,Azlocillin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:2968,Bacampicillin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:2968,Bacampicillin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:30769,Citric acid,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:3077,Betamethasone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:3077,Betamethasone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:31184,alclometasone dipropionate,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:31184,alclometasone dipropionate,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:31199,Amcinonide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:31225,Antipyrine,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:31236,Aripiprazole,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:3125,Bisacodyl,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:31336,Calcium glycerophosphate,UMLS:C0869150,Late neonatal hypocalcemia,isolated_disease_id
+train,CHEBI:31348,Capecitabine,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_disease_id
+train,CHEBI:31444,Cyclacillin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:31459,Dehydrocholic acid,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:31521,Doxifluridine,UMLS:C1306632,Primary malignant neoplasm of gastrointestinal tract,isolated_disease_id
+train,CHEBI:31623,Fluocinolone acetonide,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:31625,Fluorometholone,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+train,CHEBI:31663,Halcinonide,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:31793,MAGNESITE,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:31794,magnesium oxide,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:31964,Pazufloxacin,UMLS:C2887084,Sepsis caused by Streptococcus pneumoniae,isolated_disease_id
+train,CHEBI:31995,phenylpropanol,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:3207,Budesonide,UMLS:C1960764,Crohn's disease in remission,isolated_disease_id
+train,CHEBI:32071,Prulifloxacin,UMLS:C0268821,Lower urinary tract infectious disease,isolated_disease_id
+train,CHEBI:32071,Prulifloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:3213,Bumetanide,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,CHEBI:32149,Sodium sulfate,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:32188,Tegafur,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+train,CHEBI:32599,CID 522565,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:3306,calcitonin,UMLS:C0473771,Secondary generalized osteoporosis,isolated_disease_id
+train,CHEBI:3310,Calcium acetate,UMLS:C0869150,Late neonatal hypocalcemia,isolated_disease_id
+train,CHEBI:3314,Calcium glucoheptonate,UMLS:C0869150,Late neonatal hypocalcemia,isolated_disease_id
+train,CHEBI:3371,Capreomycin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:3374,Capsaicin,UMLS:C4511594,Cannabis hyperemesis syndrome co-occurrent and due to cannabis dependence,isolated_disease_id
+train,CHEBI:3380,Captopril,UMLS:C1997351,Left ventricular cardiac dysfunction,isolated_disease_id
+train,CHEBI:3387,Carbamazepine,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:3387,Carbamazepine,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:3393,Carbenicillin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3441,Carvedilol,UMLS:C1997351,Left ventricular cardiac dysfunction,isolated_disease_id
+train,CHEBI:34683,CID 58592228,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:34683,CID 58592228,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:34764,Flumethasone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:34764,Flumethasone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:3478,Cefaclor,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:3478,Cefaclor,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:3478,Cefaclor,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:3479,Cefadroxil,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:3479,Cefadroxil,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3479,Cefadroxil,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3480,Cefamandole,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3480,Cefamandole,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:3480,Cefamandole,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3480,Cefamandole,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3480,Cefamandole,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:3480,Cefamandole,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:3480,Cefamandole,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:3485,Cefdinir,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:3485,Cefdinir,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3485,Cefdinir,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:3485,Cefdinir,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:3489,Cefmetazole,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3491,Cefonicid,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3491,Cefonicid,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:3491,Cefonicid,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3491,Cefonicid,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3491,Cefonicid,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:34914,Phenolphthalein,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:3499,Cefotetan,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:3504,Cefpodoxime,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:3510,Ceftibuten,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:3510,Ceftibuten,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:3510,Ceftibuten,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:3510,Ceftibuten,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:3510,Ceftibuten,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:3515,Cefuroxime,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:3534,Cephalexin,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:3534,Cephalexin,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:3534,Cephalexin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:3534,Cephalexin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3534,Cephalexin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3534,Cephalexin,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:3547,Cefradine,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:3638,Chloroquine,UMLS:C0340354,Q fever endocarditis,isolated_disease_id
+train,CHEBI:3640,Chlorothiazide,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:3654,Chlorthalidone,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:36560,Zinc oxide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:3697,Cilastatin,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:3697,Cilastatin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:3697,Cilastatin,UMLS:C0343500,Gas gangrene caused by clostridium perfringens,isolated_disease_id
+train,CHEBI:3697,Cilastatin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:3697,Cilastatin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:3697,Cilastatin,UMLS:C0948204,Infection caused by Citrobacter,isolated_disease_id
+train,CHEBI:3697,Cilastatin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C0700226,Pulmonary mycobacterium avium-intracellulare infection,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:3732,Clarithromycin,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:3766,Clozapine,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:3892,Corticotropin,UMLS:C0581392,Exacerbation of multiple sclerosis,isolated_disease_id
+train,CHEBI:38940,Sunitinib,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_disease_id
+train,CHEBI:39867,Valproic acid,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:39867,Valproic acid,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:40009,Cycloserine,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:40279,Allopurinol,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:404903,Ertapenem,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:404903,Ertapenem,UMLS:C0343500,Gas gangrene caused by clostridium perfringens,isolated_disease_id
+train,CHEBI:404903,Ertapenem,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:404903,Ertapenem,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:41879,Dexamethasone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:41879,Dexamethasone,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:41879,Dexamethasone,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+train,CHEBI:42355,Erythromycin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:42355,Erythromycin,UMLS:C0275761,Pneumococcal pharyngitis,isolated_disease_id
+train,CHEBI:42355,Erythromycin,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:42355,Erythromycin,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,CHEBI:42355,Erythromycin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:42355,Erythromycin,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:42355,Erythromycin,UMLS:C1278807,Chlamydial urethritis,isolated_disease_id
+train,CHEBI:43755,Lisinopril,UMLS:C0403527,Acute scleroderma renal crisis,isolated_disease_id
+train,CHEBI:43755,Lisinopril,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,CHEBI:4392,Demeclocycline,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:4392,Demeclocycline,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:4392,Demeclocycline,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:4392,Demeclocycline,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:43968,Meropenem,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:43968,Meropenem,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:44185,Methotrexate,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+train,CHEBI:44185,Methotrexate,UMLS:C3163805,Malignant epithelial neoplasm of female breast,isolated_disease_id
+train,CHEBI:45367,Rifabutin,UMLS:C0700226,Pulmonary mycobacterium avium-intracellulare infection,isolated_disease_id
+train,CHEBI:45924,Trimethoprim,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:45924,Trimethoprim,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:45924,Trimethoprim,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:45924,Trimethoprim,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:45924,Trimethoprim,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:45924,Trimethoprim,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:45924,Trimethoprim,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+train,CHEBI:45979,Thiabendazole,UMLS:C0041648,Infection by Uncinaria,isolated_disease_id
+train,CHEBI:46081,Fluconazole,UMLS:C0276667,Disseminated coccidioidomycosis,isolated_disease_id
+train,CHEBI:46081,Fluconazole,UMLS:C0349009,Septicaemia candida,isolated_disease_id
+train,CHEBI:46195,Acetaminophen,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:46345,Fluorouracil,UMLS:C0346218,Neoplasm of glans penis,isolated_disease_id
+train,CHEBI:46345,Fluorouracil,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_disease_id
+train,CHEBI:4670,Dobutamine,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,CHEBI:4710,Doxepin,UMLS:C0270458,Severe major depression with psychotic features,isolated_disease_id
+train,CHEBI:4710,Doxepin,UMLS:C1535964,Cholestatic pruritus,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:472657,Cefixime,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:4728,Dyphylline,UMLS:C4038730,Asthma-Chronic Obstructive Pulmonary Disease Overlap Syndrome,isolated_disease_id
+train,CHEBI:47381,Diclofenac,UMLS:C0877543,"Neck, shoulder and arm syndrome",isolated_disease_id
+train,CHEBI:474014,Dirithromycin,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,CHEBI:474014,Dirithromycin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:474053,Cefazolin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:47426,Furosemide,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,CHEBI:478164,Cefepime,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:478164,Cefepime,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:478164,Cefepime,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:4877,Ethambutol,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:4877,Ethambutol,UMLS:C0700226,Pulmonary mycobacterium avium-intracellulare infection,isolated_disease_id
+train,CHEBI:4885,Ethionamide,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:4885,Ethionamide,UMLS:C0700226,Pulmonary mycobacterium avium-intracellulare infection,isolated_disease_id
+train,CHEBI:4888,Ethotoin,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:48947,Clavulanic acid,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+train,CHEBI:49566,Cloxacillin,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+train,CHEBI:49566,Cloxacillin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:50693,Milrinone,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,CHEBI:50694,Minocycline,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:50694,Minocycline,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:50694,Minocycline,UMLS:C1318559,Fusospirochetal pharyngitis,isolated_disease_id
+train,CHEBI:50694,Minocycline,UMLS:C1997322,Chlamydia trachomatis infection of genital structure,isolated_disease_id
+train,CHEBI:50848,Loteprednol,UMLS:C0153027,Herpes zoster keratoconjunctivitis,isolated_disease_id
+train,CHEBI:50848,Loteprednol,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+train,CHEBI:5088,Flavoxate,UMLS:C0241310,Suprapubic pain,isolated_disease_id
+train,CHEBI:5109,Fluocinonide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:51209,Pseudoephedrine,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:5134,Fluticasone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:5134,Fluticasone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:5165,Fosphenytoin,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:5280,Gatifloxacin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:5280,Gatifloxacin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:5280,Gatifloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:5280,Gatifloxacin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:5280,Gatifloxacin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:5280,Gatifloxacin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:5530,gramicidin,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0276064,Sepsis caused by Bacteroides,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:553473,Ceftizoxime,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:5543,Grepafloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:5543,Grepafloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:5543,Grepafloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:5543,Grepafloxacin,UMLS:C1278807,Chlamydial urethritis,isolated_disease_id
+train,CHEBI:554446,Cefapirin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:554446,Cefapirin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:554446,Cefapirin,UMLS:C0520767,Staphylococcal endocarditis,isolated_disease_id
+train,CHEBI:554446,Cefapirin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:554446,Cefapirin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:554446,Cefapirin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:554446,Cefapirin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:5551,Guaifenesin,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:5551,Guaifenesin,UMLS:C4038730,Asthma-Chronic Obstructive Pulmonary Disease Overlap Syndrome,isolated_disease_id
+train,CHEBI:5747,Homatropine,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:575568,Atovaquone,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+train,CHEBI:5778,Hydrochlorothiazide,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:5784,Hydroflumethiazide,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:5801,Hydroxychloroquine,UMLS:C0340354,Q fever endocarditis,isolated_disease_id
+train,CHEBI:5855,Ibuprofen,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:59343,Cefditoren,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:59343,Cefditoren,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:5950,iodoquinol,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:5950,iodoquinol,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:59582,Clocortolone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:59582,Clocortolone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:59750,Diflorasone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:59750,Diflorasone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:6030,Isoniazid,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:60761,Floxuridine,UMLS:C1306632,Primary malignant neoplasm of gastrointestinal tract,isolated_disease_id
+train,CHEBI:62984,Zinc acetate,UMLS:C0849907,Itching of ear,isolated_disease_id
+train,CHEBI:63036,CID 24506,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:63580,Ribavirin,UMLS:C2711180,Influenza caused by Influenza A virus,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:63598,Levofloxacin,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,CHEBI:63611,Moxifloxacin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,CHEBI:63611,Moxifloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:63611,Moxifloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:63611,Moxifloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:63626,Tesamorelin,UMLS:C3854116,Lipodystrophy due to Human immunodeficiency virus infection and antiretroviral therapy,isolated_disease_id
+train,CHEBI:63637,Vemurafenib,UMLS:C5394779,Malignant melanoma with BRAF V600E mutation,isolated_disease_id
+train,CHEBI:63638,Vigabatrin,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:6367,Lamotrigine,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:63845,Sulfacetamide,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:64355,Posaconazole,UMLS:C0343861,Pharyngeal candidiasis,isolated_disease_id
+train,CHEBI:6456,Lidocaine,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:64733,Potassium citrate,UMLS:C0558595,Uric acid renal calculus,isolated_disease_id
+train,CHEBI:64733,Potassium citrate,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+train,CHEBI:6504,CID 516884,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:6532,Loperamide,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,CHEBI:6637,Nemalite,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,CHEBI:6722,Megestrol,UMLS:C0276587,Nutritional deficiency with AIDS (acquired immunodeficiency syndrome),isolated_disease_id
+train,CHEBI:6762,Mepyramine,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:6805,Metacycline,UMLS:C0152516,Bacterial enteritis,isolated_disease_id
+train,CHEBI:6827,Meticillin,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+train,CHEBI:6827,Meticillin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:68478,Everolimus,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_disease_id
+train,CHEBI:6888,Methylprednisolone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:6888,Methylprednisolone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:6909,Metronidazole,UMLS:C0276064,Sepsis caused by Bacteroides,isolated_disease_id
+train,CHEBI:6909,Metronidazole,UMLS:C0343500,Gas gangrene caused by clostridium perfringens,isolated_disease_id
+train,CHEBI:6909,Metronidazole,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:6909,Metronidazole,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:6909,Metronidazole,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:691037,Desoximetasone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:691037,Desoximetasone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:6919,Mezlocillin,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:6919,Mezlocillin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:6919,Mezlocillin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:6919,Mezlocillin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:6954,Mitotane,UMLS:C0686510,Carcinoma in situ of adrenal cortex,isolated_disease_id
+train,CHEBI:6970,Mometasone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:6970,Mometasone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:70718,Ceftaroline fosamil,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:71013,Perampanel,UMLS:C0270838,"Secondarily generalized seizures, NOS",isolated_disease_id
+train,CHEBI:71200,Tofacitinib,UMLS:C1444843,"Juvenile idiopathic arthritis, extended oligoarthritis",isolated_disease_id
+train,CHEBI:71415,Nitrofurantoin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:71415,Nitrofurantoin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:72564,Temozolomide,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_disease_id
+train,CHEBI:73274,Canagliflozin,UMLS:C3662038,Chronic kidney disease due to type 2 diabetes mellitus,isolated_disease_id
+train,CHEBI:7447,Nafcillin,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+train,CHEBI:7447,Nafcillin,UMLS:C0520767,Staphylococcal endocarditis,isolated_disease_id
+train,CHEBI:7447,Nafcillin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:7447,Nafcillin,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:7466,Nandrolone,UMLS:C0271932,Anemia of chronic renal failure,isolated_disease_id
+train,CHEBI:7476,Naproxen,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:7488,Natamycin,UMLS:C0339170,Fungal conjunctivitis,isolated_disease_id
+train,CHEBI:74947,Thalidomide,UMLS:C3874401,Intestinal hemorrhage due to angiodysplasia of intestine,isolated_disease_id
+train,CHEBI:74947,Thalidomide,UMLS:C4038767,Gastric hemorrhage due to angiodysplasia of stomach,isolated_disease_id
+train,CHEBI:75045,Dabrafenib,UMLS:C5394779,Malignant melanoma with BRAF V600E mutation,isolated_disease_id
+train,CHEBI:7507,Framycetin,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:75246,Rifaximin,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,CHEBI:75832,ferrous sulfate,UMLS:C0687148,Mineral deficiency,isolated_disease_id
+train,CHEBI:75998,Trametinib,UMLS:C5394779,Malignant melanoma with BRAF V600E mutation,isolated_disease_id
+train,CHEBI:7660,nystatin,UMLS:C0343886,Gastrointestinal candidiasis,isolated_disease_id
+train,CHEBI:7735,Olanzapine,UMLS:C4511590,Cannabis hyperemesis syndrome co-occurrent and due to cannabis abuse,isolated_disease_id
+train,CHEBI:7735,Olanzapine,UMLS:C4511594,Cannabis hyperemesis syndrome co-occurrent and due to cannabis dependence,isolated_disease_id
+train,CHEBI:7735,Olanzapine,UMLS:C5394779,Malignant melanoma with BRAF V600E mutation,isolated_disease_id
+train,CHEBI:77942,Tavaborole,UMLS:C0276754,Onychomycosis caused by Trichophyton rubrum,isolated_disease_id
+train,CHEBI:77942,Tavaborole,UMLS:C0276755,Onychomycosis caused by Trichophyton mentagrophytes,isolated_disease_id
+train,CHEBI:7809,Oxacillin,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+train,CHEBI:7809,Oxacillin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:7809,Oxacillin,UMLS:C0520767,Staphylococcal endocarditis,isolated_disease_id
+train,CHEBI:7809,Oxacillin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:7809,Oxacillin,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:78320,Lactic acid,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:78432,Ceritinib,UMLS:C5394780,Anaplastic lymphoma kinase fusion oncogene positive non-small cell lung cancer,isolated_disease_id
+train,CHEBI:78540,Apremilast,UMLS:C1321482,Behçet's disease affecting oral mucosa,isolated_disease_id
+train,CHEBI:7934,Paromomycin,UMLS:C0152499,Acute amebiasis,isolated_disease_id
+train,CHEBI:8069,Phenobarbital,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:8069,Phenobarbital,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:8093,Phenylephrine,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:8093,Phenylephrine,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:8107,Phenytoin,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:8107,Phenytoin,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:81579,Erythropoietin,UMLS:C4708167,Anemia due to and following chemotherapy,isolated_disease_id
+train,CHEBI:8232,Piperacillin,EFO:1001421,Serratia Infections,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0276064,Sepsis caused by Bacteroides,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0276085,Ecthyma gangrenosum,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0577690,Proteus septicemia,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0588233,Septicemia due to enterococcus,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C3163829,Sepsis caused by Gram negative bacteria,isolated_disease_id
+train,CHEBI:8232,Piperacillin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,CHEBI:82405,Benzoyl peroxide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:82405,Benzoyl peroxide,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+train,CHEBI:82699,Oritavancin,UMLS:C1274355,Streptococcal infection of skin,isolated_disease_id
+train,CHEBI:82717,Tedizolid,UMLS:C1274355,Streptococcal infection of skin,isolated_disease_id
+train,CHEBI:8310,Polymyxin B,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,CHEBI:8310,Polymyxin B,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:8357,Pramocaine,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:8357,Pramocaine,UMLS:C0849907,Itching of ear,isolated_disease_id
+train,CHEBI:8364,Prazosin,UMLS:C1997862,Nightmares associated with chronic post-traumatic stress disorder,isolated_disease_id
+train,CHEBI:83766,Olaparib,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+train,CHEBI:8378,Prednisolone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:8378,Prednisolone,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,CHEBI:8378,Prednisolone,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,CHEBI:83804,Paliperidone,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:8412,Primidone,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:8412,Primidone,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:8499,Propranolol,UMLS:C3888500,Ulcerated haemangioma,isolated_disease_id
+train,CHEBI:85083,Sofosbuvir,UMLS:C1299579,Early cirrhosis,isolated_disease_id
+train,CHEBI:85994,Lenvatinib,UMLS:C4302369,Primary thymic carcinoma,isolated_disease_id
+train,CHEBI:8654,Pyrantel,UMLS:C0041648,Infection by Uncinaria,isolated_disease_id
+train,CHEBI:8654,Pyrantel,UMLS:C0153303,Mixed intestinal infection caused by Cestoda and/or Trematoda and/or Phylum Nematoda,isolated_disease_id
+train,CHEBI:8673,Pyrimethamine,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+train,CHEBI:8707,Quetiapine,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:8713,Quinapril,UMLS:C0403527,Acute scleroderma renal crisis,isolated_disease_id
+train,CHEBI:8774,Ramipril,UMLS:C0403527,Acute scleroderma renal crisis,isolated_disease_id
+train,CHEBI:8774,Ramipril,UMLS:C1997351,Left ventricular cardiac dysfunction,isolated_disease_id
+train,CHEBI:8871,Risperidone,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+train,CHEBI:8871,Risperidone,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+train,CHEBI:90217,Quizartinib,UMLS:C4543165,Acute myeloid leukemia with FMS-like tyrosine kinase-3 mutation,isolated_disease_id
+train,CHEBI:90936,Alectinib,UMLS:C4518436,Anaplastic lymphoma kinase positive anaplastic large cell lymphoma,isolated_disease_id
+train,CHEBI:9123,Sertraline,UMLS:C1535964,Cholestatic pruritus,isolated_disease_id
+train,CHEBI:91591,Pheniramine,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,CHEBI:9321,Sulbactam,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:9321,Sulbactam,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:9321,Sulbactam,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:9321,Sulbactam,UMLS:C2063075,Pneumonia caused by Acinetobacter,isolated_disease_id
+train,CHEBI:9321,Sulbactam,UMLS:C2959527,Infection caused by carbapenem resistant Acinetobacter,isolated_disease_id
+train,CHEBI:9328,Sulfadiazine,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+train,CHEBI:9331,Sulfamethizole,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:9331,Sulfamethizole,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:9331,Sulfamethizole,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:9331,Sulfamethizole,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:9331,Sulfamethizole,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:9332,Sulfamethoxazole,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,CHEBI:9332,Sulfamethoxazole,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:9332,Sulfamethoxazole,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,CHEBI:9332,Sulfamethoxazole,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,CHEBI:9332,Sulfamethoxazole,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,CHEBI:9332,Sulfamethoxazole,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+train,CHEBI:9421,Tazobactam,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:9421,Tazobactam,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:9421,Tazobactam,UMLS:C0742964,Bacterial cystitis,isolated_disease_id
+train,CHEBI:9421,Tazobactam,UMLS:C2887091,Sepsis caused by Haemophilus influenzae,isolated_disease_id
+train,CHEBI:9421,Tazobactam,UMLS:C2887097,Sepsis caused by Serratia,isolated_disease_id
+train,CHEBI:9434,Telmisartan,UMLS:C1719939,Disorder due to type 2 diabetes mellitus,isolated_disease_id
+train,CHEBI:94366,itraconazole,UMLS:C1274469,onychomycosis of fingernail,isolated_disease_id
+train,CHEBI:94440,Rimantadine,UMLS:C2711180,Influenza caused by Influenza A virus,isolated_disease_id
+train,CHEBI:9448,Terbinafine,UMLS:C1274469,onychomycosis of fingernail,isolated_disease_id
+train,CHEBI:9460,Testolactone,UMLS:C3163805,Malignant epithelial neoplasm of female breast,isolated_disease_id
+train,CHEBI:9570,Thiotepa,UMLS:C3163805,Malignant epithelial neoplasm of female breast,isolated_disease_id
+train,CHEBI:9586,Tiagabine,UMLS:C2711653,C2711653,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C0577690,Proteus septicemia,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,CHEBI:9587,Ticarcillin,UMLS:C3163829,Sepsis caused by Gram negative bacteria,isolated_disease_id
+train,CHEBI:9637,Torasemide,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,CHEBI:9667,Triamcinolone,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+train,CHEBI:9667,Triamcinolone,UMLS:C0392445,Necrobiosis Lipoidica Diabeticorum,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0349734,Female pelvic cellulitis,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C0520777,Chlamydial pelvic inflammatory disease,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+train,CHEBI:9763,Trovafloxacin,UMLS:C1278797,Postnatal infection,isolated_disease_id
+train,CHEBI:9927,Valsartan,UMLS:C1997351,Left ventricular cardiac dysfunction,isolated_disease_id
+train,CHEMBL.COMPOUND:CHEMBL2108290,epoetin theta,UMLS:C0271932,Anemia of chronic renal failure,isolated_disease_id
+train,DRUGBANK:DB16536,Birch bark extract,MONDO:0006541,epidermolysis bullosa,isolated_drug_id
+train,DrugCentral:2349,quinupristin,EFO:0003952,fever of unknown origin,isolated_drug_id
+train,DrugCentral:2349,quinupristin,UMLS:C0554628,Group A Streptococcal Infections,isolated_drug_id
+train,DrugCentral:456,butropium,MONDO:0004966,gastritis,isolated_drug_id
+train,DrugCentral:5090,arterolane,MONDO:0005920,Plasmodium falciparum malaria,isolated_drug_id
+train,DrugCentral:5160,epoetin beta,UMLS:C4708167,Anemia due to and following chemotherapy,isolated_disease_id
+train,PUBCHEM.COMPOUND:11332179,pasireotide,MONDO:0006640,adrenal gland hyperfunction,isolated_drug_id
+train,PUBCHEM.COMPOUND:122173797,lactulose,MONDO:0001711,hepatic encephalopathy,isolated_drug_id
+train,PUBCHEM.COMPOUND:122173797,lactulose,MONDO:0002203,Constipation,isolated_drug_id
+train,PUBCHEM.COMPOUND:122173803,taltirelin,MONDO:0004742,primary cerebellar degeneration,isolated_drug_id
+train,PUBCHEM.COMPOUND:129696905,CID 132987570,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+train,PUBCHEM.COMPOUND:129696905,CID 132987570,UMLS:C3697063,Acute exacerbation of chronic congestive heart failure,isolated_disease_id
+train,PUBCHEM.COMPOUND:135900090,rifampicin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+train,PUBCHEM.COMPOUND:135968625,rifapentine,MONDO:0006052,pulmonary tuberculosis,isolated_drug_id
+train,PUBCHEM.COMPOUND:138713709,deucravacitinib,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+train,PUBCHEM.COMPOUND:16135415,Ziconotide,UMLS:C0423673,Pain in spine,isolated_disease_id
+train,PUBCHEM.COMPOUND:164512666,enarodustat,UMLS:C0472713,Anemia of renal disease,isolated_disease_id
+train,PUBCHEM.COMPOUND:16683013,Stibogluconate,MONDO:0011989,leishmaniasis,isolated_drug_id
+train,PUBCHEM.COMPOUND:23279496,uridine triacetate,MONDO:0009797,orotic aciduria,isolated_drug_id
+train,PUBCHEM.COMPOUND:25185057,lefamulin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,PUBCHEM.COMPOUND:25185057,lefamulin,UMLS:C4040491,Bronchopneumonia caused by Haemophilus influenzae,isolated_disease_id
+train,PUBCHEM.COMPOUND:25185057,lefamulin,UMLS:C4510691,Pneumonia caused by Chlamydia pneumoniae,isolated_disease_id
+train,PUBCHEM.COMPOUND:2733335,streptozocin,MONDO:0100347,carcinoid syndrome,isolated_drug_id
+train,PUBCHEM.COMPOUND:2733335,streptozocin,UMLS:C4305467,Neuroendocrine tumor of pancreas,isolated_drug_id_and_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,EFO:1001421,Serratia Infections,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0276085,Ecthyma gangrenosum,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0549398,Meibomianitis,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0577690,Proteus septicemia,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+train,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C3163829,Sepsis caused by Gram negative bacteria,isolated_disease_id
+train,PUBCHEM.COMPOUND:44398819,dalfopristin,UMLS:C0554628,Group A Streptococcal Infections,isolated_drug_id
+train,PUBCHEM.COMPOUND:4786,Phenylpropanolamine,UMLS:C0037195,Sinus headache,isolated_disease_id
+train,PUBCHEM.COMPOUND:49773361,beclabuvir,MONDO:0005354,chronic hepatitis C virus infection,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,EFO:1001753,abdominal abscess,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,EFO:1001865,ventilator-associated pneumonia,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,MONDO:0002155,cholecystitis,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,MONDO:0003529,acute pyelonephritis,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,MONDO:0100338,urinary tract infection,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,MONDO:0700051,Liver Abscess,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_drug_id_and_disease_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,UMLS:C0949083,Hospital acquired pneumonia,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,UMLS:C1112209,Abdominal Infection,isolated_drug_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,UMLS:C2887091,Sepsis caused by Haemophilus influenzae,isolated_drug_id_and_disease_id
+train,PUBCHEM.COMPOUND:49863420,ceftolozane,UMLS:C2887097,Sepsis caused by Serratia,isolated_drug_id_and_disease_id
+train,PUBCHEM.COMPOUND:5249,sofalcone,MONDO:0001126,gastric ulcer,isolated_drug_id
+train,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+train,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C0275778,Lyme carditis,isolated_disease_id
+train,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+train,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C0340354,Q fever endocarditis,isolated_disease_id
+train,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C0341779,Chlamydial epididymitis,isolated_disease_id
+train,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C1997322,Chlamydia trachomatis infection of genital structure,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0152973,Serratia sepsis,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0153225,Gonococcal meningitis,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+train,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,PUBCHEM.COMPOUND:657309,Ipratropium,UMLS:C4038730,Asthma-Chronic Obstructive Pulmonary Disease Overlap Syndrome,isolated_disease_id
+train,PUBCHEM.COMPOUND:78357831,micafungin,MONDO:0001648,esophageal candidiasis,isolated_drug_id
+train,PUBCHEM.COMPOUND:78357831,micafungin,MONDO:0042233,disseminated candidiasis,isolated_drug_id
+train,PUBCHEM.COMPOUND:78357831,micafungin,MONDO:0044070,candidemia,isolated_drug_id
+train,PUBCHEM.COMPOUND:78357831,micafungin,UMLS:C0349009,Septicaemia candida,isolated_drug_id_and_disease_id
+train,PUBCHEM.COMPOUND:9601226,fosinopril,UMLS:C0403527,Acute scleroderma renal crisis,isolated_disease_id
+train,PUBCHEM.COMPOUND:9952872,zabofloxacin,UMLS:C0563269,Acute infective exacerbation of chronic obstructive pulmonary disease,isolated_drug_id_and_disease_id
+train,UNII:1B56C968OA,Becaplermin,UMLS:C0406526,Neuropathic ulcer of foot due to diabetes mellitus,isolated_disease_id
+train,UNII:1C75676F8V,Vaborbactam,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,UNII:1C75676F8V,Vaborbactam,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,UNII:1GA689N629,aluminum carbonate,MONDO:0002268,dyspepsia,isolated_drug_id
+train,UNII:1GA689N629,aluminum carbonate,MONDO:0004247,Peptic Ulcer,isolated_drug_id
+train,UNII:1GA689N629,aluminum carbonate,MONDO:0005412,duodenal ulcer,isolated_drug_id
+train,UNII:1GA689N629,aluminum carbonate,MONDO:0007186,Heartburn,isolated_drug_id
+train,UNII:1OQF7TT3PF,Relebactam,EFO:1001421,Serratia Infections,isolated_disease_id
+train,UNII:1OQF7TT3PF,Relebactam,UMLS:C0152515,Intestinal infection caused by Pseudomonas,isolated_disease_id
+train,UNII:1OQF7TT3PF,Relebactam,UMLS:C0343337,Pseudomonas gastrointestinal tract infection,isolated_disease_id
+train,UNII:1OQF7TT3PF,Relebactam,UMLS:C1320183,Infection caused by Enterococcus,isolated_disease_id
+train,UNII:1OQF7TT3PF,Relebactam,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+train,UNII:23CA79S88F,Tasonermin,MONDO:0005089,sarcoma,isolated_drug_id
+train,UNII:2O4BE0K238,Volanesorsen,UMLS:C1274228,Chylomicronemia syndrome,isolated_disease_id
+train,UNII:2P6O7CFW5K,Triheptanoin,UMLS:C1960675,Long-chain fatty acid transport deficiency,isolated_disease_id
+train,UNII:2S9ZZM9Q9V,Bevacizumab,UMLS:C4722085,Malignant neoplasm of colon and/or rectum,isolated_disease_id
+train,UNII:31YO63LBSN,Nivolumab,UMLS:C0349531,Late gastric cancer,isolated_disease_id
+train,UNII:3FYP5M0IJX,Sennosides,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C0152967,Septicaemia due to anaerobes,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C0343500,Gas gangrene caused by clostridium perfringens,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+train,UNII:3U02EL437C,Clindamycin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+train,UNII:4MG6O8991R,Retapamulin,UMLS:C0342985,Superficial bacterial infection of skin,isolated_disease_id
+train,UNII:4T36H88UA7,Apalutamide,UMLS:C1282496,Metastasis from malignant tumor of prostate,isolated_disease_id
+train,UNII:4W0459ZA4V,cefprozil,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+train,UNII:4W0459ZA4V,cefprozil,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+train,UNII:4W0459ZA4V,cefprozil,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+train,UNII:4W0459ZA4V,cefprozil,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+train,UNII:4W0459ZA4V,cefprozil,UMLS:C0729586,Infective otitis media,isolated_disease_id
+train,UNII:4W0459ZA4V,cefprozil,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+train,UNII:52CMI0WC3Y,Atezolizumab,UMLS:C4303663,Extensive stage primary small cell carcinoma of lung,isolated_disease_id
+train,UNII:52CMI0WC3Y,Atezolizumab,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+train,UNII:55MOB566V7,lascufloxacin,MONDO:0000744,lung abscess,isolated_drug_id
+train,UNII:55MOB566V7,lascufloxacin,MONDO:0001218,acute laryngopharyngitis,isolated_drug_id
+train,UNII:55MOB566V7,lascufloxacin,MONDO:0005824,Legionnaires' disease,isolated_drug_id
+train,UNII:55MOB566V7,lascufloxacin,MONDO:0005867,Mycoplasma pneumoniae pneumonia,isolated_drug_id
+train,UNII:55MOB566V7,lascufloxacin,MONDO:0005906,peritonsillar abscess,isolated_drug_id
+train,UNII:55MOB566V7,lascufloxacin,MONDO:0041879,staphylococcus aureus pneumonia,isolated_drug_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C0341016,Streptococcal infection of mouth,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C0553656,Peritonsillar cellulitis,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C0729518,Bacterial respiratory infection,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C0729519,Bacterial upper respiratory infection,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C0729520,Bacterial lower respiratory infection,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C1262006,Bacterial sinusitis,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C1696371,Bacterial tonsillitis,isolated_drug_id_and_disease_id
+train,UNII:55MOB566V7,lascufloxacin,UMLS:C1698510,Bacterial otitis media,isolated_drug_id_and_disease_id
+train,UNII:5GCF8EPY6R,Idursulfase beta,MONDO:0010674,Hunter Syndrome,isolated_drug_id
+train,UNII:5IB2J79MCX,Spesolimab,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+train,UNII:5V9KLZ54CY,Vinblastine,UMLS:C3163805,Malignant epithelial neoplasm of female breast,isolated_disease_id
+train,UNII:6931E8LH07,carbaldrate,MONDO:0002268,dyspepsia,isolated_drug_id
+train,UNII:6931E8LH07,carbaldrate,MONDO:0007186,Heartburn,isolated_drug_id
+train,UNII:6931E8LH07,carbaldrate,MONDO:0016586,systemic mastocytosis,isolated_drug_id
+train,UNII:6931E8LH07,carbaldrate,MONDO:0017169,multiple endocrine neoplasia,isolated_drug_id
+train,UNII:6M3P64V0NC,Almasilate,MONDO:0002268,dyspepsia,isolated_drug_id
+train,UNII:6M3P64V0NC,Almasilate,MONDO:0004247,Peptic Ulcer,isolated_drug_id
+train,UNII:6M3P64V0NC,Almasilate,MONDO:0007186,Heartburn,isolated_drug_id
+train,UNII:6M3P64V0NC,Almasilate,MONDO:0016586,systemic mastocytosis,isolated_drug_id
+train,UNII:6M3P64V0NC,Almasilate,MONDO:0017169,multiple endocrine neoplasia,isolated_drug_id
+train,UNII:704G17JK68,ANISOTROPINE,MONDO:0001126,gastric ulcer,isolated_drug_id
+train,UNII:704G17JK68,ANISOTROPINE,MONDO:0004247,Peptic Ulcer,isolated_drug_id
+train,UNII:704G17JK68,ANISOTROPINE,MONDO:0005052,irritable bowel syndrome,isolated_drug_id
+train,UNII:7SEV7J4R1U,talc,UMLS:C3161098,Secondary spontaneous pneumothorax,isolated_drug_id
+train,UNII:7SI2UZG934,Condoliase,UMLS:C2733598,Disorder of lumbar disc,isolated_disease_id
+train,UNII:90ZX3Q3FR7,Risankizumab,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+train,UNII:94X46KW4AE,Amenamevir,UMLS:C0276223,Recurrent herpes simplex,isolated_disease_id
+train,UNII:97RWB5S1U6,Idarucizumab,UMLS:C0272373,Drug-induced coagulation inhibitor disorder,isolated_drug_id_and_disease_id
+train,UNII:9JH486CZ13,Molidustat,UMLS:C0472713,Anemia of renal disease,isolated_disease_id
+train,UNII:9K8GNJ2874,Naxitamab,MONDO:0005072,neuroblastoma,isolated_drug_id
+train,UNII:9R3D3Y0UHS,Elapegademase,UMLS:C0272230,SCID (severe combined immunodeficiency) due to absent adenosine deaminase,isolated_disease_id
+train,UNII:9RV78Q2002,Vedolizumab,UMLS:C5688196,Chronic antibiotic-refractory pouchitis,isolated_disease_id
+train,UNII:A3ULP0F556,Eculizumab,UMLS:C2919522,Congenital hemolytic uremic syndrome,isolated_disease_id
+train,UNII:AD4J2O47FQ,Dasiglucagon,UMLS:C0342313,Hypoglycemia due to diabetes mellitus,isolated_disease_id
+train,UNII:B72HH48FLU,Infliximab,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+train,UNII:D959AE5USF,clofazimine,UMLS:C1563054,Dapsone resistant leprosy,isolated_disease_id
+train,UNII:D99YVK4L0X,Ramucirumab,UMLS:C4722085,Malignant neoplasm of colon and/or rectum,isolated_disease_id
+train,UNII:DE2O63YV8R,Finerenone,UMLS:C3662038,Chronic kidney disease due to type 2 diabetes mellitus,isolated_disease_id
+train,UNII:DPT0O3T46P,Pembrolizumab,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+train,UNII:E58MLH082P,Evocalcet,UMLS:C0271852,Hypercalcemia due to hyperthyroidism,isolated_disease_id
+train,UNII:EEO29FZT86,Padeliporfin,MONDO:0005082,prostate adenocarcinoma,isolated_drug_id
+train,UNII:F70C5K4786,Melphalan flufenamide,MONDO:0009693,plasma cell myeloma,isolated_drug_id
+train,UNII:FQ3DRG0N5K,Pancrelipase,MONDO:0001684,exocrine pancreatic insufficiency,isolated_drug_id
+train,UNII:I031V2H011,Tocilizumab,UMLS:C1444843,"Juvenile idiopathic arthritis, extended oligoarthritis",isolated_disease_id
+train,UNII:I031V2H011,Tocilizumab,UMLS:C4048747,Juvenile seropositive polyarthritis,isolated_disease_id
+train,UNII:JD24M53P9U,anacaulase,UMLS:C0423778,Skin eschar,isolated_drug_id
+train,UNII:K6BUU8J72P,Glecaprevir,UMLS:C1299579,Early cirrhosis,isolated_disease_id
+train,UNII:K911R84KEW,Margetuximab,UMLS:C4721209,Metastatic human epidermal growth factor 2 positive carcinoma of breast,isolated_disease_id
+train,UNII:MT6QI8324A,Magnesium lactate,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+train,UNII:N7T15V1FUY,Setmelanotide,UMLS:C5191640,Obesity due to leptin receptor gene deficiency,isolated_disease_id
+train,UNII:NWQ5N31VKK,Daptomycin,UMLS:C0585966,MRSA infection of postoperative wound,isolated_disease_id
+train,UNII:NWQ5N31VKK,Daptomycin,UMLS:C1960924,Right-sided Staphylococcus aureus endocarditis,isolated_disease_id
+train,UNII:NWQ5N31VKK,Daptomycin,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+train,UNII:NWQ5N31VKK,Daptomycin,UMLS:C3164390,Sepsis caused by methicillin resistant Staphylococcus aureus,isolated_disease_id
+train,UNII:NWQ5N31VKK,Daptomycin,UMLS:C5567802,Methicillin resistant Staphylococcus aureus skin infection,isolated_disease_id
+train,UNII:P76B05O5V6,Relugolix,UMLS:C5190725,Abnormal uterine bleeding due to uterine fibroid,isolated_disease_id
+train,UNII:PF9462I9HX,Larotrectinib,UMLS:C5192106,Solid neoplasm with neurotrophic receptor tyrosine kinase gene fusion,isolated_disease_id
+train,UNII:PQX0D8J21J,Cetuximab,UMLS:C3163899,Squamous cell carcinoma of nose,isolated_disease_id
+train,UNII:QEN1X95CIX,Tremelimumab,UMLS:C5394854,Anaplastic lymphoma kinase fusion oncogene negative non-small cell lung cancer,isolated_disease_id
+train,UNII:QMS40680K6,Palifermin,UMLS:C1274988,Drug-induced mucositis,isolated_disease_id
+train,UNII:R17X820ROL,Magnesium aspartate,MONDO:0002203,Constipation,isolated_drug_id
+train,UNII:R17X820ROL,Magnesium aspartate,UMLS:C0426639,Incomplete passage of stool,isolated_drug_id_and_disease_id
+train,UNII:S51J6N56M7,Eladocagene exuparvovec,MONDO:0012084,aromatic L-amino acid decarboxylase deficiency,isolated_drug_id
+train,UNII:SE2KH7T06F,BB-10901,UMLS:C0553656,Peritonsillar cellulitis,isolated_disease_id
+train,UNII:SE2KH7T06F,BB-10901,UMLS:C4721209,Metastatic human epidermal growth factor 2 positive carcinoma of breast,isolated_disease_id
+train,UNII:T42NAD2KHC,Magnesium gluconate,MONDO:0002203,Constipation,isolated_drug_id
+train,UNII:T42NAD2KHC,Magnesium gluconate,MONDO:0002268,dyspepsia,isolated_drug_id
+train,UNII:T42NAD2KHC,Magnesium gluconate,UMLS:C0426639,Incomplete passage of stool,isolated_drug_id_and_disease_id
+train,UNII:UMD07X179E,CERTOLIZUMAB,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+train,UNII:X8XI70B5Z6,Nitrofural,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+train,UNII:Y6BX7BL23K,Pemigatinib,UMLS:C1541061,C1541061,isolated_disease_id
+val,CHEBI:100241,Ciprofloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+val,CHEBI:100246,Norfloxacin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+val,CHEBI:100246,Norfloxacin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+val,CHEBI:100246,Norfloxacin,UMLS:C1278797,Postnatal infection,isolated_disease_id
+val,CHEBI:100246,Norfloxacin,UMLS:C1278807,Chlamydial urethritis,isolated_disease_id
+val,CHEBI:131527,Dipotassium phosphate,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+val,CHEBI:133011,Oxytetracycline,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+val,CHEBI:135447,Penthienate,UMLS:C0581358,Gastric spasm (disorder),isolated_disease_id
+val,CHEBI:135772,Meclocycline,UMLS:C0276027,Haemophilus influenzae otitis media,isolated_disease_id
+val,CHEBI:135829,Alatrofloxacin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+val,CHEBI:135829,Alatrofloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+val,CHEBI:17115,Serine,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+val,CHEBI:17334,penicillin,UMLS:C0343500,Gas gangrene caused by clostridium perfringens,isolated_disease_id
+val,CHEBI:17630,Kanamycin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+val,CHEBI:17650,Hydrocortisone,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+val,CHEBI:17750,Betaine,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+val,CHEBI:17823,Calcitriol,UMLS:C0869150,Late neonatal hypocalcemia,isolated_disease_id
+val,CHEBI:190509,Imipenem,EFO:1001421,Serratia Infections,isolated_disease_id
+val,CHEBI:194135,Ofloxacin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+val,CHEBI:204928,Cefotaxime,UMLS:C1719906,Meningitis caused by Klebsiella aerogenes,isolated_disease_id
+val,CHEBI:209807,Cefoxitin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+val,CHEBI:209807,Cefoxitin,UMLS:C2887088,Sepsis caused by Staphylococcus aureus,isolated_disease_id
+val,CHEBI:23765,Sparfloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+val,CHEBI:261649,Bismuth subsalicylate,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+val,CHEBI:2637,Amikacin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+val,CHEBI:2637,Amikacin,UMLS:C0338396,Proteus meningitis,isolated_disease_id
+val,CHEBI:2637,Amikacin,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+val,CHEBI:2682,Amphotericin B,UMLS:C0151874,Fungal infection of lung,isolated_disease_id
+val,CHEBI:2682,Amphotericin B,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+val,CHEBI:28787,Nitroglycerin,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+val,CHEBI:28864,Tobramycin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+val,CHEBI:28971,Ampicillin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+val,CHEBI:28971,Ampicillin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+val,CHEBI:29007,Ceftriaxone,UMLS:C0153227,Gonococcal endocarditis,isolated_disease_id
+val,CHEBI:29007,Ceftriaxone,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+val,CHEBI:29013,Fusidic acid,UMLS:C0549398,Meibomianitis,isolated_disease_id
+val,CHEBI:2955,Azithromycin,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+val,CHEBI:2955,Azithromycin,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+val,CHEBI:2955,Azithromycin,UMLS:C1278807,Chlamydial urethritis,isolated_disease_id
+val,CHEBI:2956,Azlocillin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+val,CHEBI:30742,macrogol,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+val,CHEBI:30863,Oteracil,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+val,CHEBI:31199,Amcinonide,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+val,CHEBI:31623,Fluocinolone acetonide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+val,CHEBI:3312,Calol,UMLS:C0869150,Late neonatal hypocalcemia,isolated_disease_id
+val,CHEBI:3374,Capsaicin,UMLS:C4511590,Cannabis hyperemesis syndrome co-occurrent and due to cannabis abuse,isolated_disease_id
+val,CHEBI:3393,Carbenicillin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+val,CHEBI:3478,Cefaclor,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+val,CHEBI:3479,Cefadroxil,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+val,CHEBI:3480,Cefamandole,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+val,CHEBI:3485,Cefdinir,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+val,CHEBI:3504,Cefpodoxime,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+val,CHEBI:3515,Cefuroxime,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+val,CHEBI:3534,Cephalexin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+val,CHEBI:3534,Cephalexin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+val,CHEBI:3697,Cilastatin,UMLS:C1320183,Infection caused by Enterococcus,isolated_disease_id
+val,CHEBI:40009,Cycloserine,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+val,CHEBI:40279,Allopurinol,UMLS:C0558595,Uric acid renal calculus,isolated_disease_id
+val,CHEBI:41879,Dexamethasone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+val,CHEBI:42355,Erythromycin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+val,CHEBI:42355,Erythromycin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+val,CHEBI:43602,Obeticholic acid,UMLS:C0267919,Primary cholangitis,isolated_disease_id
+val,CHEBI:4511,Dicloxacillin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+val,CHEBI:45285,Pyrazinamide,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+val,CHEBI:45367,Rifabutin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+val,CHEBI:478164,Cefepime,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+val,CHEBI:4856,Esmolol,UMLS:C3661921,Perioperative hypertension,isolated_disease_id
+val,CHEBI:48947,Clavulanic acid,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+val,CHEBI:48947,Clavulanic acid,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+val,CHEBI:48947,Clavulanic acid,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+val,CHEBI:50694,Minocycline,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+val,CHEBI:5127,Flurandrenolide,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+val,CHEBI:5280,Gatifloxacin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+val,CHEBI:5280,Gatifloxacin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+val,CHEBI:5280,Gatifloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+val,CHEBI:534,Docusate,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+val,CHEBI:553473,Ceftizoxime,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+val,CHEBI:63598,Levofloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+val,CHEBI:63598,Levofloxacin,UMLS:C0276077,Malignant otitis media,isolated_disease_id
+val,CHEBI:63598,Levofloxacin,UMLS:C0277528,Traveler's diarrhea,isolated_disease_id
+val,CHEBI:63611,Moxifloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+val,CHEBI:63627,Tinidazole,UMLS:C0152499,Acute amebiasis,isolated_disease_id
+val,CHEBI:6437,Levetiracetam,UMLS:C2711653,C2711653,isolated_disease_id
+val,CHEBI:64735,Lithium citrate,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+val,CHEBI:6847,Methyclothiazide,UMLS:C1959799,Calcium renal calculus,isolated_disease_id
+val,CHEBI:68534,Enzalutamide,UMLS:C1282496,Metastasis from malignant tumor of prostate,isolated_disease_id
+val,CHEBI:70718,Ceftaroline fosamil,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+val,CHEBI:74947,Thalidomide,UMLS:C0406378,Erosive oral lichen planus,isolated_disease_id
+val,CHEBI:75172,Formestane,UMLS:C3163805,Malignant epithelial neoplasm of female breast,isolated_disease_id
+val,CHEBI:78320,Lactic acid,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+val,CHEBI:8081,Phentolamine,UMLS:C1299641,Extravasation injury,isolated_disease_id
+val,CHEBI:81579,Erythropoietin,UMLS:C0472713,Anemia of renal disease,isolated_disease_id
+val,CHEBI:8232,Piperacillin,UMLS:C0349774,Diverticulitis of gastrointestinal tract,isolated_disease_id
+val,CHEBI:82718,Efinaconazole,UMLS:C0276755,Onychomycosis caused by Trichophyton mentagrophytes,isolated_disease_id
+val,CHEBI:8310,Polymyxin B,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+val,CHEBI:8346,Potassium Iodide,UMLS:C0276727,Lymphocutaneous sporotrichosis,isolated_disease_id
+val,CHEBI:8378,Prednisolone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+val,CHEBI:9215,Spectinomycin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+val,CHEBI:9332,Sulfamethoxazole,UMLS:C1720498,Toxoplasmosis associated with acquired immunodeficiency syndrome,isolated_disease_id
+val,CHEBI:9421,Tazobactam,UMLS:C2062473,Acute pyelonephritis caused by bacterium,isolated_disease_id
+val,CHEBI:9587,Ticarcillin,EFO:1001421,Serratia Infections,isolated_disease_id
+val,CHEBI:9587,Ticarcillin,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+val,DrugCentral:3875,benzamycin,MONDO:0011438,acne,isolated_drug_id
+val,PUBCHEM.COMPOUND:160883,Butylscopolamine,UMLS:C0581358,Gastric spasm (disorder),isolated_disease_id
+val,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+val,PUBCHEM.COMPOUND:3467,gentamicin,UMLS:C1260917,Proteus pneumonia,isolated_disease_id
+val,PUBCHEM.COMPOUND:49863420,ceftolozane,UMLS:C2062473,Acute pyelonephritis caused by bacterium,isolated_drug_id_and_disease_id
+val,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+val,PUBCHEM.COMPOUND:54671203,doxycycline,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+val,PUBCHEM.COMPOUND:6321415,ceftazidime,UMLS:C0276085,Ecthyma gangrenosum,isolated_disease_id
+val,UNII:09495UIM6V,Bimekizumab,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+val,UNII:1GA689N629,aluminum carbonate,MONDO:0001126,gastric ulcer,isolated_drug_id
+val,UNII:1OQF7TT3PF,Relebactam,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+val,UNII:1OQF7TT3PF,Relebactam,UMLS:C0948204,Infection caused by Citrobacter,isolated_disease_id
+val,UNII:2WU922TK3L,Pibrentasvir,UMLS:C1299579,Early cirrhosis,isolated_disease_id
+val,UNII:4TGB4HYC3M,menadiol sulfate,MONDO:0013361,congenital prothrombin deficiency,isolated_drug_id
+val,UNII:4W0459ZA4V,cefprozil,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+val,UNII:55MOB566V7,lascufloxacin,MONDO:0030602,Klebsiella pneumonia,isolated_drug_id
+val,UNII:6931E8LH07,carbaldrate,MONDO:0004247,Peptic Ulcer,isolated_drug_id
+val,UNII:6T8C155666,Ipilimumab,UMLS:C5686210,High grade squamous intraepithelial neoplasia of esophagus,isolated_disease_id
+val,UNII:7V6HE3DM5A,Ocriplasmin,UMLS:C0730274,Vitreomacular traction syndrome,isolated_disease_id
+val,UNII:7XL5ISS668,Adcetris,UMLS:C1275317,Anaplastic large T-cell systemic malignant lymphoma,isolated_disease_id
+val,UNII:8L7891MRB6,Encorafenib,UMLS:C5394779,Malignant melanoma with BRAF V600E mutation,isolated_disease_id
+val,UNII:939U7C91AI,Solriamfetol,UMLS:C0393764,Excessive daytime sleepiness - normal night sleep,isolated_disease_id
+val,UNII:9X7O8V25IT,collagenase,UMLS:C0410065,C0410065,isolated_disease_id
+val,UNII:BTY153760O,Ixekizumab,UMLS:C0748052,Erythrodermic psoriasis,isolated_disease_id
+val,UNII:DTI67O9503,Alglucosidase alfa,UMLS:C0342751,Generalized glycogen storage disease of infants,isolated_disease_id
+val,UNII:EO144CP0X9,Avalglucosidase alfa,UMLS:C0342751,Generalized glycogen storage disease of infants,isolated_disease_id
+val,UNII:WKM56H3TLB,Myrcludex B,UMLS:C4543747,Chronic viral hepatitis D,isolated_disease_id
+val,UNII:X8XI70B5Z6,Nitrofural,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+test,CHEBI:100241,Ciprofloxacin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+test,CHEBI:100241,Ciprofloxacin,UMLS:C4076057,Urinary tract infection caused by Klebsiella,isolated_disease_id
+test,CHEBI:100246,Norfloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+test,CHEBI:100246,Norfloxacin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+test,CHEBI:100246,Norfloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+test,CHEBI:116278,Lomefloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+test,CHEBI:134722,Favipiravir,UMLS:C4304383,Influenza caused by pandemic influenza virus,isolated_disease_id
+test,CHEBI:135782,ulobetasol propionate,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+test,CHEBI:135791,Prednicarbate,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+test,CHEBI:136035,glycobiarsol,UMLS:C0152499,Acute amebiasis,isolated_disease_id
+test,CHEBI:15365,Aspirin,UMLS:C0037195,Sinus headache,isolated_disease_id
+test,CHEBI:161680,Aztreonam,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+test,CHEBI:161680,Aztreonam,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+test,CHEBI:16962,Cortisone,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+test,CHEBI:16962,Cortisone,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+test,CHEBI:17076,Streptomycin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+test,CHEBI:17334,penicillin,UMLS:C0275778,Lyme carditis,isolated_disease_id
+test,CHEBI:17334,penicillin,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+test,CHEBI:18243,Dopamine,UMLS:C0581377,Decompensated cardiac failure,isolated_disease_id
+test,CHEBI:190509,Imipenem,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+test,CHEBI:194135,Ofloxacin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+test,CHEBI:194135,Ofloxacin,UMLS:C0520777,Chlamydial pelvic inflammatory disease,isolated_disease_id
+test,CHEBI:194135,Ofloxacin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+test,CHEBI:194135,Ofloxacin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+test,CHEBI:194135,Ofloxacin,UMLS:C1263758,Female genital tract infection,isolated_disease_id
+test,CHEBI:204928,Cefotaxime,UMLS:C0275778,Lyme carditis,isolated_disease_id
+test,CHEBI:204928,Cefotaxime,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+test,CHEBI:209807,Cefoxitin,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+test,CHEBI:23765,Sparfloxacin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+test,CHEBI:2636,Amifostine,UMLS:C1274988,Drug-induced mucositis,isolated_disease_id
+test,CHEBI:2637,Amikacin,UMLS:C0154640,Staphylococcal meningitis,isolated_disease_id
+test,CHEBI:2637,Amikacin,UMLS:C0577690,Proteus septicemia,isolated_disease_id
+test,CHEBI:2637,Amikacin,UMLS:C1719906,Meningitis caused by Klebsiella aerogenes,isolated_disease_id
+test,CHEBI:2637,Amikacin,UMLS:C2887096,Sepsis due to Pseudomonas,isolated_disease_id
+test,CHEBI:2676,Amoxicillin,UMLS:C1698510,Bacterial otitis media,isolated_disease_id
+test,CHEBI:2682,Amphotericin B,UMLS:C0729586,Infective otitis media,isolated_disease_id
+test,CHEBI:28001,Vancomycin,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+test,CHEBI:28177,Theophylline,UMLS:C4038730,Asthma-Chronic Obstructive Pulmonary Disease Overlap Syndrome,isolated_disease_id
+test,CHEBI:28864,Tobramycin,UMLS:C0549398,Meibomianitis,isolated_disease_id
+test,CHEBI:28887,Ofatumumab,UMLS:C0393664,"Multiple Sclerosis, Acute Relapsing",isolated_disease_id
+test,CHEBI:28971,Ampicillin,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+test,CHEBI:28971,Ampicillin,UMLS:C0520767,Staphylococcal endocarditis,isolated_disease_id
+test,CHEBI:28971,Ampicillin,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+test,CHEBI:29007,Ceftriaxone,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+test,CHEBI:29013,Fusidic acid,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+test,CHEBI:2955,Azithromycin,UMLS:C0339933,Acute bacterial bronchitis,isolated_disease_id
+test,CHEBI:2955,Azithromycin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+test,CHEBI:29688,Telithromycin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+test,CHEBI:3011,Benazepril,UMLS:C0403527,Acute scleroderma renal crisis,isolated_disease_id
+test,CHEBI:31652,Gimeracil,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+test,CHEBI:31663,Halcinonide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+test,CHEBI:32588,Potassium chloride,UMLS:C0426639,Incomplete passage of stool,isolated_disease_id
+test,CHEBI:337298,Abarelix,UMLS:C2711256,Ischemic priapism,isolated_disease_id
+test,CHEBI:3478,Cefaclor,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+test,CHEBI:34829,Medrysone,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+test,CHEBI:3491,Cefonicid,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+test,CHEBI:3491,Cefonicid,UMLS:C0684256,Bacterial sepsis,isolated_disease_id
+test,CHEBI:3504,Cefpodoxime,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+test,CHEBI:3515,Cefuroxime,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+test,CHEBI:3515,Cefuroxime,UMLS:C0856695,Acute exacerbation of chronic bronchitis,isolated_disease_id
+test,CHEBI:3515,Cefuroxime,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+test,CHEBI:3697,Cilastatin,UMLS:C0343402,Bacterial infection caused by Klebsiella pneumoniae,isolated_disease_id
+test,CHEBI:3732,Clarithromycin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+test,CHEBI:3732,Clarithromycin,UMLS:C0729586,Infective otitis media,isolated_disease_id
+test,CHEBI:404903,Ertapenem,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+test,CHEBI:41774,Tamoxifen,UMLS:C3163805,Malignant epithelial neoplasm of female breast,isolated_disease_id
+test,CHEBI:41879,Dexamethasone,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+test,CHEBI:42355,Erythromycin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+test,CHEBI:42355,Erythromycin,UMLS:C0275959,Acute tuberculosis,isolated_disease_id
+test,CHEBI:43755,Lisinopril,UMLS:C0729587,Infective blepharitis,isolated_disease_id
+test,CHEBI:4392,Demeclocycline,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+test,CHEBI:4392,Demeclocycline,UMLS:C0729586,Infective otitis media,isolated_disease_id
+test,CHEBI:45924,Trimethoprim,UMLS:C0729586,Infective otitis media,isolated_disease_id
+test,CHEBI:46905,Pantothenate,UMLS:C0342938,Pantothenic acid deficiency,isolated_disease_id
+test,CHEBI:474014,Dirithromycin,UMLS:C0339932,Acute Moraxella catarrhalis bronchitis,isolated_disease_id
+test,CHEBI:478164,Cefepime,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+test,CHEBI:478164,Cefepime,UMLS:C0577709,Proteus urinary tract infection,isolated_disease_id
+test,CHEBI:5109,Fluocinonide,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+test,CHEBI:5127,Flurandrenolide,UMLS:C0033775,Pruritus Ani,isolated_disease_id
+test,CHEBI:5280,Gatifloxacin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+test,CHEBI:5391,Glucagon,UMLS:C0342313,Hypoglycemia due to diabetes mellitus,isolated_disease_id
+test,CHEBI:553473,Ceftizoxime,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+test,CHEBI:554446,Cefapirin,UMLS:C1997728,Osteomyelitis caused by Staphylococcus aureus,isolated_disease_id
+test,CHEBI:59343,Cefditoren,UMLS:C0275804,Streptococcal tonsillitis,isolated_disease_id
+test,CHEBI:63580,Ribavirin,UMLS:C1299579,Early cirrhosis,isolated_disease_id
+test,CHEBI:63598,Levofloxacin,UMLS:C1699099,Bacterial otitis externa,isolated_disease_id
+test,CHEBI:63631,Topiramate,UMLS:C2711653,C2711653,isolated_disease_id
+test,CHEBI:6367,Lamotrigine,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+test,CHEBI:6757,Mephenytoin,UMLS:C2711653,C2711653,isolated_disease_id
+test,CHEBI:6846,Methsuximide,UMLS:C2711653,C2711653,isolated_disease_id
+test,CHEBI:6909,Metronidazole,UMLS:C0152499,Acute amebiasis,isolated_disease_id
+test,CHEBI:6919,Mezlocillin,UMLS:C0155860,Pneumonia caused by Pseudomonas,isolated_disease_id
+test,CHEBI:6919,Mezlocillin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+test,CHEBI:72291,Cobicistat,UMLS:C5394779,Malignant melanoma with BRAF V600E mutation,isolated_disease_id
+test,CHEBI:7447,Nafcillin,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+test,CHEBI:75179,Trifluridine,UMLS:C0276228,Herpes simplex keratoconjunctivitis,isolated_disease_id
+test,CHEBI:7735,Olanzapine,UMLS:C0270425,Bipolar disorder in remission,isolated_disease_id
+test,CHEBI:7824,Oxcarbazepine,UMLS:C2711653,C2711653,isolated_disease_id
+test,CHEBI:8049,Phenacemide,UMLS:C2711653,C2711653,isolated_disease_id
+test,CHEBI:8232,Piperacillin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+test,CHEBI:8378,Prednisolone,UMLS:C1275687,Herpes zoster keratitis,isolated_disease_id
+test,CHEBI:8654,Pyrantel,UMLS:C0277334,Infection by Moniliformis,isolated_disease_id
+test,CHEBI:9215,Spectinomycin,UMLS:C0275665,Gonorrhea of rectum,isolated_disease_id
+test,CHEBI:9332,Sulfamethoxazole,UMLS:C0520775,Klebsiella cystitis,isolated_disease_id
+test,CHEBI:93752,Alpelisib,UMLS:C4708088,"Germline BRCA-mutated, HER2-negative metastatic breast cancer",isolated_disease_id
+test,CHEBI:9421,Tazobactam,UMLS:C0276085,Ecthyma gangrenosum,isolated_disease_id
+test,CHEBI:94806,Carbarsone,UMLS:C0152499,Acute amebiasis,isolated_disease_id
+test,CHEBI:9587,Ticarcillin,UMLS:C0577708,Urinary tract infection caused by Escherichia coli,isolated_disease_id
+test,CHEBI:9649,Trandolapril,UMLS:C1997351,Left ventricular cardiac dysfunction,isolated_disease_id
+test,CHEBI:9667,Triamcinolone,UMLS:C0033777,Pruritus of genital organs,isolated_disease_id
+test,CHEBI:9763,Trovafloxacin,UMLS:C0275652,Acute gonococcal urethritis,isolated_disease_id
+test,CHEBI:9763,Trovafloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_disease_id
+test,PUBCHEM.COMPOUND:44398819,dalfopristin,EFO:0003952,fever of unknown origin,isolated_drug_id
+test,PUBCHEM.COMPOUND:49863420,ceftolozane,MONDO:0005195,septic peritonitis,isolated_drug_id
+test,PUBCHEM.COMPOUND:49863420,ceftolozane,UMLS:C0742964,Bacterial cystitis,isolated_drug_id_and_disease_id
+test,PUBCHEM.COMPOUND:71296095,Sarecycline Hydrochloride,MONDO:0011438,acne,isolated_drug_id
+test,UNII:1OQF7TT3PF,Relebactam,UMLS:C1720135,Gastrointestinal infection caused by Klebsiella aerogenes,isolated_disease_id
+test,UNII:20OK4AFR4Y,Alipogene tiparvovec,MONDO:0009387,familial lipoprotein lipase deficiency,isolated_drug_id
+test,UNII:234248D0HH,Tucatinib,UMLS:C4721209,Metastatic human epidermal growth factor 2 positive carcinoma of breast,isolated_disease_id
+test,UNII:28X28X9OKV,Durvalumab,UMLS:C4303663,Extensive stage primary small cell carcinoma of lung,isolated_disease_id
+test,UNII:2URQ2N32W3,Calcium lactate,UMLS:C0869150,Late neonatal hypocalcemia,isolated_disease_id
+test,UNII:48N2IYJ202,candicidin,UMLS:C0006852,Candidiasis of vagina,isolated_drug_id
+test,UNII:4W0459ZA4V,cefprozil,UMLS:C0275556,Acute bacterial sinusitis,isolated_disease_id
+test,UNII:55MOB566V7,lascufloxacin,MONDO:0005972,streptococcal pneumonia,isolated_drug_id
+test,UNII:55MOB566V7,lascufloxacin,UMLS:C0276026,Haemophilus influenzae pneumonia,isolated_drug_id_and_disease_id
+test,UNII:CEGM9YBNGD,Selpercatinib,UMLS:C1282509,metastasis from malignant neoplasm of thyroid,isolated_disease_id
+test,UNII:HW3H7D91F6,Pegademase,MONDO:0007064,"severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency",isolated_drug_id
+test,UNII:I60W9520VV,Vadadustat,UMLS:C0472713,Anemia of renal disease,isolated_disease_id
+test,UNII:PF9462I9HX,Larotrectinib,UMLS:C1288351,C1288351,isolated_disease_id
+test,UNII:R17X820ROL,Magnesium aspartate,MONDO:0002268,dyspepsia,isolated_drug_id
+test,UNII:T9FVH03HMZ,Calaspargase pegol,UMLS:C1531702,C1531702,isolated_disease_id

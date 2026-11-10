@@ -1,0 +1,70 @@
+AUTORESEARCH HANDOFF FOR MEMEX -- 2026-11-10
+
+Purpose
+Test whether changing Aragorn AMIE rules improves recovery of known treatment
+pairs while keeping evidence data, enrichment, scoring, and evaluation fixed.
+No rule optimization experiments have been run yet.
+
+Workspace
+shepherd-autoresearch, branch research/autoresearch, baseline 4ba54ed.
+The original shepherd-new-pathfinder project is unchanged. This checkout uses
+separate Shepherd containers/volumes and reuses installed retrieval services.
+The setup is reproducible from instructions but NOT self-contained in Git:
+large data, credentials, Docker images, and sibling environments are external.
+
+Verified pipeline
+Local Shepherd/Aragorn :55440 -> AMIE expansion -> local Retriever :8080 ->
+local Gandalf :56429 -> local Omnicorp -> local Aragorn scoring/ranking.
+Gandalf is a host Python process; Shepherd workers and Retriever use Docker.
+The running Gandalf still serves the ORIGINAL graph, not our filtered graph.
+
+Benchmark and evidence preparation
+DrugCentral exact biolink:treats, primary source infores:drugcentral: 9,608 pairs.
+Random pair split, seed 42, 80/10/10; entities may occur in multiple partitions.
+After excluding pairs with endpoints isolated by graph cleaning: 8,345 pairs
+(train 6,684, val 831, test 830), preserving original partition assignments.
+Use data_split/nonisolated/*.csv, not the original split CSVs, for evaluation.
+A separate graph was built in artifacts/gandalf_no_drug_disease/:
+remove 1,499,839 drug/chemical <-> disease/phenotype edges of ALL predicates and
+sources, then 21,552 isolated nodes. Retain 1,685,344 nodes / 27,435,282 edges.
+Retained IDs, attributes and sources preserved; indexes/metadata rebuilt.
+All 8,345 label pair endpoints exist. Gandalf in-process load/query passed.
+Non-isolation does not guarantee a connecting rule path.
+
+Blocker and resolution
+Initially we used remote development Omnicorp explicitly through a hybrid
+runner because local publication-count databases were missing.
+The supplied individual shared_counts.lmdb download was 437,898,240 bytes,
+while its embedded metadata referenced 9,060,515,840 bytes. Entity publication
+lookups worked, but shared-pair reads caused SIGBUS. A full query reproduced it:
+lookup returned 2 results, local enrichment crashed, HTTP 500, no scoring.
+A directory listing revealed omnicorp_data_05_05_2026.tar.gz (2.68 GB compressed).
+It contains the complete database. Extracted manually because the archive has
+an enclosing directory, which the automatic downloader would retain.
+Validated page bounds, backed up earlier files, and reused the existing worker
+image without reinstalling or rebuilding. Startup validation guard remains
+removed at user request; the validator is available manually.
+
+Successful verification
+responses/full-local-omnicorp-archive-20261110-122205/ (local, not committed):
+full inferred query CHEBI:100147, HTTP 200 in 2.57s, 2 results / 3 nodes / 5 edges.
+Two local Omnicorp literature edges: counts 7 and 768. Local scores:
+0.30543678092265497 and 0.30409193024661424. No errors or SIGBUS.
+Seven existing retrieval MetaEdge warnings remain; not all AMIE patterns have
+matching graph predicates. The local Omnicorp worker is now running.
+Hybrid runner remains available and still defaults to REMOTE enrichment.
+
+Next step
+Serve the filtered graph separately and configure the experiment's Retriever
+to use it, without disrupting the original project's shared services.
+Verify that complete pipeline, establish baseline evaluation, then vary rules.
+Keep validation for rule selection and reserve test labels for final evaluation.
+Graph filtering constrains retrieval evidence; Omnicorp can still add literature
+edges later during scoring. Keep this enrichment behavior fixed in comparisons.
+
+Read next
+local_setup/README.txt: service configuration, archive source/checksum, setup.
+graph_cleaning/README.txt: filtering policy, build and verification commands.
+data_split/generate_split.py and filter_split_pairs.py: benchmark definitions.
+Git tracks scripts, small benchmark CSVs and notes, not .env, graph/LMDB files,
+Docker state, or large query responses. Nothing is published by a local commit.
