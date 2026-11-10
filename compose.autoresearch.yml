@@ -1,0 +1,404 @@
+{
+  "name": "shepherd-autoresearch",
+  "services": {
+    "shepherd_db": {
+      "build": {
+        "context": ".",
+        "dockerfile": "shepherd_db/Dockerfile"
+      },
+      "cpus": 1,
+      "command": [
+        "postgres",
+        "-c",
+        "max_connections=100"
+      ],
+      "entrypoint": null,
+      "environment": {
+        "POSTGRES_PASSWORD": "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}"
+      },
+      "healthcheck": {
+        "test": [
+          "CMD-SHELL",
+          "pg_isready -h 127.0.0.1 -U postgres -d postgres"
+        ],
+        "timeout": "2s",
+        "interval": "2s",
+        "retries": 5,
+        "start_period": "1m0s"
+      },
+      "mem_limit": "512m",
+      "volumes": [
+        "research_pg:/var/lib/postgresql/data"
+      ],
+      "image": "shepherd-autoresearch-shepherd_db:baseline",
+      "env_file": [
+        ".env"
+      ]
+    },
+    "shepherd_broker": {
+      "build": {
+        "context": ".",
+        "dockerfile": "shepherd_broker/Dockerfile"
+      },
+      "cpus": 1,
+      "command": [
+        "sh",
+        "-c",
+        "exec redis-server /usr/local/etc/redis/redis.conf --requirepass \"$$REDIS_PASSWORD\" --maxmemory 512mb --logfile \"\""
+      ],
+      "entrypoint": null,
+      "environment": {
+        "REDIS_PASSWORD": "${REDIS_PASSWORD:?Set REDIS_PASSWORD in .env}"
+      },
+      "healthcheck": {
+        "test": [
+          "CMD-SHELL",
+          "redis-cli -a \"$$REDIS_PASSWORD\" --no-auth-warning ping | grep -qx PONG"
+        ],
+        "timeout": "5s",
+        "interval": "5s",
+        "retries": 10,
+        "start_period": "1m0s"
+      },
+      "mem_limit": "1g",
+      "volumes": [
+        "research_redis:/data"
+      ],
+      "image": "shepherd-autoresearch-shepherd_broker:baseline",
+      "env_file": [
+        ".env"
+      ]
+    },
+    "shepherd_server": {
+      "build": {
+        "context": ".",
+        "dockerfile": "shepherd_server/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "ARS_PAYLOAD_DIR": "/app/ars_payloads",
+        "CALLBACK_ALLOWED_HOSTS": "host.docker.internal,172.16.0.0/12",
+        "POSTGRES_PASSWORD": "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "ports": [
+        {
+          "target": 5439,
+          "published": "55440",
+          "host_ip": "127.0.0.1",
+          "protocol": "tcp"
+        }
+      ],
+      "image": "shepherd-autoresearch-shepherd_server:baseline",
+      "volumes": []
+    },
+    "aragorn": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/aragorn/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "image": "shepherd-autoresearch-aragorn:baseline",
+      "volumes": []
+    },
+    "merge_message": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/merge_message/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "2g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "image": "shepherd-autoresearch-merge_message:baseline",
+      "volumes": []
+    },
+    "sort_results_score": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/sort_results_score/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "image": "shepherd-autoresearch-sort_results_score:baseline",
+      "volumes": []
+    },
+    "filter_kgraph_orphans": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/filter_kgraph_orphans/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "image": "shepherd-autoresearch-filter_kgraph_orphans:baseline",
+      "volumes": []
+    },
+    "finish_query": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/finish_query/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "CALLBACK_ALLOWED_HOSTS": "host.docker.internal,172.16.0.0/12",
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "image": "shepherd-autoresearch-finish_query:baseline",
+      "volumes": []
+    },
+    "aragorn_lookup": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/aragorn_lookup/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "image": "shepherd-autoresearch-aragorn_lookup:baseline",
+      "volumes": []
+    },
+    "aragorn_score": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/aragorn_score/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "image": "shepherd-autoresearch-aragorn_score:baseline",
+      "volumes": []
+    },
+    "filter_results_top_n": {
+      "build": {
+        "context": ".",
+        "dockerfile": "workers/filter_results_top_n/Dockerfile"
+      },
+      "cpus": 1,
+      "command": null,
+      "depends_on": {
+        "shepherd_broker": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "shepherd_db": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "mem_limit": "1g",
+      "platform": "linux/amd64",
+      "env_file": [
+        ".env"
+      ],
+      "environment": {
+        "TASK_LIMIT": "1",
+        "POOL_MAX_WORKERS": "1",
+        "POSTGRES_POOL_MIN_SIZE": "1",
+        "POSTGRES_POOL_MAX_SIZE": "4",
+        "WEB_CONCURRENCY": "1",
+        "ARAX_BACKGROUND_TASKS": "false",
+        "OTEL_ENABLED": "false"
+      },
+      "image": "shepherd-autoresearch-filter_results_top_n:baseline",
+      "volumes": []
+    }
+  },
+  "volumes": {
+    "research_pg": {},
+    "research_redis": {}
+  }
+}

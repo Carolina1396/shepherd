@@ -1,0 +1,25 @@
+{
+  "message": {
+    "query_graph": {
+      "nodes": {
+        "n0": {
+          "ids": [
+            "NCBIGene:7157"
+          ]
+        },
+        "n1": {
+          "ids": [
+            "NCBIGene:4193"
+          ]
+        }
+      },
+      "edges": {
+        "e0": {
+          "subject": "n0",
+          "object": "n1",
+          "knowledge_type": "lookup"
+        }
+      }
+    }
+  }
+}

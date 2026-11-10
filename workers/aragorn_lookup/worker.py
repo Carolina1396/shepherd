@@ -119,7 +119,9 @@ async def run_async_lookup(
         try:
             response = await client.post(
                 settings.kg_retrieval_url,
-                json=message,
+                # Shepherd's internal workflow names are not TRAPI operations
+                # understood by Retriever. Keep orchestration local.
+                json={key: value for key, value in message.items() if key != "workflow"},
             )
             return AsyncResponse(
                 status_code=response.status_code,
@@ -192,7 +194,7 @@ async def aragorn_lookup(task, logger: logging.Logger):
             ) as client:
                 await client.post(
                     settings.kg_retrieval_url,
-                    json=message,
+                    json={key: value for key, value in message.items() if key != "workflow"},
                 )
     else:
         expanded_messages = expand_aragorn_query(message, logger)

@@ -25,6 +25,36 @@ from workers.aragorn_lookup.worker import (
 logger = logging.getLogger(__name__)
 
 
+@pytest.mark.asyncio
+@pytest.mark.parametrize("direct", [True, False])
+async def test_lookup_keeps_internal_workflow_out_of_retriever_request(redis_mock, mocker, direct):
+    """Retriever rejects Shepherd-specific workflow IDs with HTTP 422."""
+    message = {
+        "message": {"query_graph": {"nodes": {}, "edges": {}}},
+        "workflow": [{"id": "aragorn.lookup"}],
+        "parameters": {"timeout": 5},
+    }
+    mocker.patch.object(al, "add_callback_id", new_callable=mocker.AsyncMock)
+    client = mocker.Mock()
+    client.post = mocker.AsyncMock(return_value=httpx.Response(200))
+    if direct:
+        mocker.patch.object(al, "get_message", new_callable=mocker.AsyncMock, return_value=message)
+        mocker.patch.object(al, "examine_query", return_value=(False, None, None, False))
+        mocker.patch.object(al, "get_running_callbacks", new_callable=mocker.AsyncMock, return_value=[])
+        mocker.patch.object(al, "abandon_lookup_if_data_lost", new_callable=mocker.AsyncMock)
+        context = mocker.patch.object(al.httpx, "AsyncClient")
+        context.return_value.__aenter__ = mocker.AsyncMock(return_value=client)
+        context.return_value.__aexit__ = mocker.AsyncMock(return_value=False)
+        await aragorn_lookup(_make_task(), logger)
+    else:
+        await run_async_lookup(client, message, "qid", logger)
+    submitted = client.post.call_args.kwargs["json"]
+    assert "workflow" not in submitted
+    assert submitted["message"] == message["message"]
+    assert submitted["callback"]
+    assert message["workflow"] == [{"id": "aragorn.lookup"}]
+
+
 def _make_task():
     return [
         "test",

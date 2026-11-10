@@ -1,0 +1,57 @@
+{
+  "shepherd_db": {
+    "source_image": "shepherd-creative-local-shepherd_db:latest",
+    "research_image": "shepherd-autoresearch-shepherd_db:baseline",
+    "image_id": "sha256:2ede1914fa79b97676a94181946a8f4af098f6901e92d73c2350cca0c3de760e"
+  },
+  "shepherd_broker": {
+    "source_image": "shepherd-creative-local-shepherd_broker:latest",
+    "research_image": "shepherd-autoresearch-shepherd_broker:baseline",
+    "image_id": "sha256:bb18b068e7938fab782ef9ee64e5302064361fc558d47cdc3400e40713f4cd48"
+  },
+  "shepherd_server": {
+    "source_image": "shepherd-creative-local-shepherd_server:latest",
+    "research_image": "shepherd-autoresearch-shepherd_server:baseline",
+    "image_id": "sha256:844494887b97ae72970247bcdaab3867f3baea55575ec2d0b14b502ef73470d6"
+  },
+  "aragorn": {
+    "source_image": "shepherd-creative-local-aragorn:latest",
+    "research_image": "shepherd-autoresearch-aragorn:baseline",
+    "image_id": "sha256:6790e9764d546099e880e2f28b1159b197c7efdf49891b95438e129fb2a71a01"
+  },
+  "merge_message": {
+    "source_image": "shepherd-creative-local-merge_message:latest",
+    "research_image": "shepherd-autoresearch-merge_message:baseline",
+    "image_id": "sha256:87ca67e56398ff34a73179fe903ae6308968c537d1af274e73efb4c4360dfe1e"
+  },
+  "sort_results_score": {
+    "source_image": "shepherd-creative-local-sort_results_score:latest",
+    "research_image": "shepherd-autoresearch-sort_results_score:baseline",
+    "image_id": "sha256:1dbae5983d7ce80de67b09a5549f200a490a0902129749c223f5bd7af2b2a908"
+  },
+  "filter_kgraph_orphans": {
+    "source_image": "shepherd-creative-local-filter_kgraph_orphans:latest",
+    "research_image": "shepherd-autoresearch-filter_kgraph_orphans:baseline",
+    "image_id": "sha256:25ee25cf86dc5110029220ac9d4ba2e8b960b29a82b2d8ab7abb8f561abd5f28"
+  },
+  "finish_query": {
+    "source_image": "shepherd-creative-local-finish_query:latest",
+    "research_image": "shepherd-autoresearch-finish_query:baseline",
+    "image_id": "sha256:caf0135e6119c1e9dd3704ec952a9d3ae994b9b1485f645c2e5ec5edaaaa86e2"
+  },
+  "aragorn_lookup": {
+    "source_image": "shepherd-creative-local-aragorn_lookup:latest",
+    "research_image": "shepherd-autoresearch-aragorn_lookup:baseline",
+    "image_id": "sha256:69acb7b410d0ff1e8521785286b191fc4681dc37a7268e7215080dd18b65c2f0"
+  },
+  "aragorn_score": {
+    "source_image": "shepherd-creative-local-aragorn_score:latest",
+    "research_image": "shepherd-autoresearch-aragorn_score:baseline",
+    "image_id": "sha256:894c967c43e18927efdcc9f3a01fdb7091866dda3bbd8a8df6cd8f9be39c8d0f"
+  },
+  "filter_results_top_n": {
+    "source_image": "shepherd-creative-local-filter_results_top_n:latest",
+    "research_image": "shepherd-autoresearch-filter_results_top_n:baseline",
+    "image_id": "sha256:f5cf15cbfc24617b14a5fb4b41591c5d0f0a9d20c18fe947373f602402d0280e"
+  }
+}

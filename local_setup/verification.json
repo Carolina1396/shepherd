@@ -1,0 +1,36 @@
+{
+  "stages": [
+    {
+      "stage": "1_local_lookup",
+      "url": "http://127.0.0.1:55440/aragorn/query",
+      "http_status": 200,
+      "seconds": 2.712,
+      "results": 1,
+      "nodes": 4,
+      "edges": 25,
+      "scored_analyses": 0
+    },
+    {
+      "stage": "2_dev_omnicorp",
+      "url": "https://shepherd.renci.org/aragorn/query",
+      "http_status": 200,
+      "seconds": 3.861,
+      "results": 1,
+      "nodes": 4,
+      "edges": 26,
+      "scored_analyses": 0
+    },
+    {
+      "stage": "3_local_scored",
+      "url": "http://127.0.0.1:55440/aragorn/query",
+      "http_status": 200,
+      "seconds": 2.053,
+      "results": 1,
+      "nodes": 4,
+      "edges": 26,
+      "scored_analyses": 1
+    }
+  ],
+  "baseline_commit": "53a5ad9",
+  "analysis_directories_copied": false
+}

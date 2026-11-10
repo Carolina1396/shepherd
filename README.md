@@ -539,3 +539,4 @@ python scripts/run_query.py arax-local --async --callback-host 172.17.0.1   # /a
 ```
 
 Responses are saved under `responses/` and timings under `benchmark_metrics.json`; `--help` lists every option.
+Autoresearch local setup: [instructions](local_setup/README.txt).
