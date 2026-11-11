@@ -1,0 +1,59 @@
+{
+  "backend": "service-v1",
+  "tests_passed": 15,
+  "manual_runs": {
+    "service-broad-001": {
+      "mode": "ranked",
+      "batch": "debug",
+      "complete": true,
+      "metrics": {
+        "pairs": 12,
+        "pair_recovery": 0.08333333333333333,
+        "pair_mrr_at_500": 0.0010040160642570282,
+        "macro_hits_at_10": 0.0,
+        "macro_recovery": 0.08333333333333333
+      },
+      "runtime_unchanged": true,
+      "eligible_for_selection": false,
+      "candidate_mean": 277,
+      "candidate_max": 277,
+      "query_seconds": 3.378,
+      "incomplete_diseases": [],
+      "interpretation": "Observed metrics include incomplete runs; never select from incomplete evaluation.",
+      "treatment_or_procedure_templates": []
+    },
+    "service-decreased-001": {
+      "mode": "ranked",
+      "batch": "debug",
+      "complete": true,
+      "metrics": {
+        "pairs": 12,
+        "pair_recovery": 0.0,
+        "pair_mrr_at_500": 0.0,
+        "macro_hits_at_10": 0.0,
+        "macro_recovery": 0.0
+      },
+      "runtime_unchanged": true,
+      "eligible_for_selection": false,
+      "candidate_mean": 1,
+      "candidate_max": 1,
+      "query_seconds": 2.564,
+      "incomplete_diseases": [],
+      "interpretation": "Observed metrics include incomplete runs; never select from incomplete evaluation.",
+      "treatment_or_procedure_templates": []
+    }
+  },
+  "matching_code_config_runtime": true,
+  "qualifier_evidence_checked": true,
+  "broad_bound_drug_edges_missing_direction": 73,
+  "cache_reuse_verified": true,
+  "batch_assignments_unchanged": true,
+  "autonomous_search_started": false,
+  "full_validation_completed": false,
+  "notes": [
+    "No local-index fallback in evaluator.",
+    "No AMIE expansion: all query edges lookup and workflow aragorn.lookup only.",
+    "Exact qualifier evidence post-check invalidates a response that omits requested qualifiers.",
+    "No unrestricted recall claim; service limits and client evidence caps apply."
+  ]
+}

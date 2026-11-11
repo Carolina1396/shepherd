@@ -1,0 +1,22 @@
+{
+  "graph": "artifacts/gandalf_no_drug_disease",
+  "train": "data_split/train.csv",
+  "validation": "data_split/val.csv",
+  "local_url": "http://127.0.0.1:55440/aragorn/query",
+  "seed": 42,
+  "batch_size": 50,
+  "limits": {
+    "max_paths": 5000,
+    "max_candidates": 1000
+  },
+  "timeout": 210,
+  "result_cap": 500,
+  "primary_metric": "macro_hits_at_10",
+  "selection": "Only complete full-validation ranked runs qualify. Higher macro_hits_at_10 wins; exact ties prefer fewer templates. Report paired differences, MRR@500 and recovery@500. Training screens never establish a final winner.",
+  "treatment_evidence": "allowed, with treatment/trial predicates and Procedure intermediates flagged in reports",
+  "semantics": "Explicit lookup via local Shepherd -> filtered Retriever/Gandalf; service predicate/category expansion; exact qualifier evidence checks; distinct-node path assembly",
+  "search_budget": 10,
+  "protocol_version": "service-v1",
+  "retriever_url": "http://127.0.0.1:8081",
+  "retrieval_backend": "shepherd.lookup"
+}

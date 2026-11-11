@@ -1,0 +1,21 @@
+{
+  "format_version": 1,
+  "templates": [
+    {
+      "id": "affects_gene_broad",
+      "intermediate_category": "biolink:Gene",
+      "edges": {
+        "drug_edge": {
+          "subject": "drug",
+          "object": "intermediate",
+          "predicate": "biolink:affects"
+        },
+        "disease_edge": {
+          "subject": "intermediate",
+          "object": "disease",
+          "predicate": "biolink:associated_with"
+        }
+      }
+    }
+  ]
+}
