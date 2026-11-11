@@ -1,0 +1,33 @@
+case_id,asset_id,query,expected_nodes,minimum_required,status,first_matching_rank,matching_path_count,all_matching_ranks,response_file
+TestCase_0,Asset_2,Imatinib → asthma,KIT,1,PASSED,2,5,"[2, 28, 44, 126, 167]",test_results/pathfinder-test-full-20261107T192900Z/TestCase_0/query-3bb87fb75ea2/response.json
+TestCase_0,Asset_3,Imatinib → asthma,Histamine,1,PASSED,402,1,[402],test_results/pathfinder-test-full-20261107T192900Z/TestCase_0/query-3bb87fb75ea2/response.json
+TestCase_0,Asset_5,Imatinib → asthma,Mast Cell,1,PASSED,22,5,"[22, 143, 266, 290, 483]",test_results/pathfinder-test-full-20261107T192900Z/TestCase_0/query-3bb87fb75ea2/response.json
+TestCase_0,Asset_1,Imatinib → asthma,KIT; Histamine; Mast Cell,2,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_0/query-3bb87fb75ea2/response.json
+TestCase_11,Asset_57,acetylsalicylate → colorectal cancer,COX2,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_11/query-750c6b6c83b3/response.json
+TestCase_11,Asset_61,acetylsalicylate → colorectal cancer,hMSH2,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_11/query-750c6b6c83b3/response.json
+TestCase_11,Asset_60,acetylsalicylate → colorectal cancer,prostaglandin PGE2,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_11/query-750c6b6c83b3/response.json
+TestCase_11,Asset_56,acetylsalicylate → colorectal cancer,COX2; NFKB; resolvins; prostaglandin PGE2; hMSH2; hMLH1,2,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_11/query-750c6b6c83b3/response.json
+TestCase_11,Asset_59,acetylsalicylate → colorectal cancer,resolvins,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_11/query-750c6b6c83b3/response.json
+TestCase_11,Asset_58,acetylsalicylate → colorectal cancer,NFKB,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_11/query-750c6b6c83b3/response.json
+TestCase_11,Asset_62,acetylsalicylate → colorectal cancer,hMLH1,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_11/query-750c6b6c83b3/response.json
+TestCase_16,Asset_55,Sildenafil → Alzheimer disease,vasodilation,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_16/query-cae45fa89836/response.json
+TestCase_16,Asset_54,Sildenafil → Alzheimer disease,cGMP,1,PASSED,332,1,[332],test_results/pathfinder-test-full-20261107T192900Z/TestCase_16/query-cae45fa89836/response.json
+TestCase_16,Asset_53,Sildenafil → Alzheimer disease,PDE5A,1,PASSED,229,2,"[229, 275]",test_results/pathfinder-test-full-20261107T192900Z/TestCase_16/query-cae45fa89836/response.json
+TestCase_16,Asset_52,Sildenafil → Alzheimer disease,PDE5A; cGMP; vasodilation,2,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_16/query-cae45fa89836/response.json
+TestCase_2,Asset_71,Fluoxetine → long COVID-19,IFNG,1,PASSED,442,2,"[442, 485]",test_results/pathfinder-test-full-20261107T192900Z/TestCase_2/query-aeb28a2a8e92/response.json
+TestCase_2,Asset_70,Fluoxetine → long COVID-19,IFNG; SSRI agonist; SIGMAR1; ERN1; vagus nerve,2,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_2/query-aeb28a2a8e92/response.json
+TestCase_2,Asset_75,Fluoxetine → long COVID-19,vagus nerve,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_2/query-aeb28a2a8e92/response.json
+TestCase_2,Asset_74,Fluoxetine → long COVID-19,ERN1,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_2/query-aeb28a2a8e92/response.json
+TestCase_2,Asset_73,Fluoxetine → long COVID-19,SIGMAR1,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_2/query-aeb28a2a8e92/response.json
+TestCase_2,Asset_72,Fluoxetine → long COVID-19,SSRI agonist,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_2/query-aeb28a2a8e92/response.json
+TestCase_3,Asset_67,Acetylsalicylic acid → colorectal cancer,prostaglandin PGE2,1,PASSED,227,1,[227],test_results/pathfinder-test-full-20261107T192900Z/TestCase_3/query-b16ac05959bc/response.json
+TestCase_3,Asset_66,Acetylsalicylic acid → colorectal cancer,resolvins,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_3/query-b16ac05959bc/response.json
+TestCase_3,Asset_63,Acetylsalicylic acid → colorectal cancer,COX2; NFKB; resolvins; prostaglandin PGE2; hMSH2; hMLH1,2,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_3/query-b16ac05959bc/response.json
+TestCase_3,Asset_65,Acetylsalicylic acid → colorectal cancer,NFKB,1,PASSED,444,1,[444],test_results/pathfinder-test-full-20261107T192900Z/TestCase_3/query-b16ac05959bc/response.json
+TestCase_3,Asset_69,Acetylsalicylic acid → colorectal cancer,hMLH1,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_3/query-b16ac05959bc/response.json
+TestCase_3,Asset_68,Acetylsalicylic acid → colorectal cancer,hMSH2,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_3/query-b16ac05959bc/response.json
+TestCase_3,Asset_64,Acetylsalicylic acid → colorectal cancer,COX2,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_3/query-b16ac05959bc/response.json
+TestCase_6,Asset_10,Imatinib → allergic asthma,Mast Cell,1,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_6/query-62f057aaa6fb/response.json
+TestCase_6,Asset_8,Imatinib → allergic asthma,Histamine,1,PASSED,43,42,"[43, 53, 93, 115, 141, 157, 169, 172, 218, 228, 259, 266, 268, 272, 287, 290, 292, 293, 296, 299, 300, 306, 322, 325, 329, 332, 347, 355, 379, 395, 397, 398, 407, 415, 446, 447, 449, 468, 481, 483, 489, 496]",test_results/pathfinder-test-full-20261107T192900Z/TestCase_6/query-62f057aaa6fb/response.json
+TestCase_6,Asset_6,Imatinib → allergic asthma,KIT; Histamine; Mast Cell,2,FAILED,,0,[],test_results/pathfinder-test-full-20261107T192900Z/TestCase_6/query-62f057aaa6fb/response.json
+TestCase_6,Asset_7,Imatinib → allergic asthma,KIT,1,PASSED,42,3,"[42, 179, 351]",test_results/pathfinder-test-full-20261107T192900Z/TestCase_6/query-62f057aaa6fb/response.json

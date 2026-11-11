@@ -1,0 +1,42 @@
+PATHFINDER ANALYSIS — START HERE
+
+The analysis uses the saved November 7, 2026 TEST run. Nothing here submits
+new queries or publishes results. Keep the original responses in
+../test_results/pathfinder-test-full-20261107T192900Z/.
+
+MAIN NOTEBOOKS (run in this order)
+1. notebooks/passing_asset_ranks.ipynb
+   Rechecks all 79 assets and ranks the 26 passes. Produces shared data.
+2. notebooks/drug_disease_metapaths.ipynb
+   Main notebook for our current focus: all 3,000 returned paths from six
+   drug/chemical–disease cases, plus the ranks/statuses of all 32 assets.
+3. notebooks/exact_path_evaluation.ipynb
+   Rechecks the 32 assets, tests the Imatinib candidate node sequence,
+   and provides an exact-relationship evaluator. Exact reference pathways
+   are still missing; its missing_reference entries are not failures.
+
+OPTIONAL NOTEBOOK (run after notebook 1)
+notebooks/matching_path_metapaths.ipynb
+   Earlier broad analysis of the 331 paths matching all 26 passing assets.
+   Includes disease–disease and other query types; not drug–disease only.
+
+WHAT THE OTHER FOLDERS CONTAIN
+references/  Editable exact-path definitions. Preserve these inputs.
+data/        Two generated JSON files used by later notebooks.
+exports/     Generated CSV, JSON, and PNG outputs, grouped by analysis.
+             You do not need to open these to read the notebooks.
+
+USEFUL EXPORTS
+exports/ranks/drug_disease_all_32_asset_results.csv
+exports/drug_disease/drug_disease_metapaths_by_query.csv
+
+DO WE NEED EVERY FILE?
+Keep the notebooks, references, and original saved test responses.
+The data and exports are reproducible: if removed, rerun the notebooks in
+order. Keeping data avoids rerunning prerequisites; keeping exports makes
+results easy to open in other tools. No existing analysis file was deleted
+in this reorganization.
+
+TO RERUN
+Select the repository interpreter .local/TestHarness/.venv/bin/python.
+Use Run All in the notebook. Saved outputs are already included for reading.

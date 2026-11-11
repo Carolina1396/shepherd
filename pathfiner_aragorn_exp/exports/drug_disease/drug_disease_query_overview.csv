@@ -1,0 +1,7 @@
+case_id,query,source_id,target_id,source_type,target_type,tested_assets,passing_assets,returned_analyses,returned_paths,asset_matching_paths,distinct_metapaths
+TestCase_0,Imatinib → asthma,CHEBI:45783,MONDO:0004979,Drug,Disease,4,3,500,500,11,365
+TestCase_6,Imatinib → allergic asthma,CHEBI:45783,MONDO:0004784,Drug,Disease,4,2,500,500,45,563
+TestCase_2,Fluoxetine → long COVID-19,CHEBI:5118,MONDO:0100233,Drug,Disease,6,1,500,500,2,697
+TestCase_3,Acetylsalicylic acid → colorectal cancer,CHEBI:15365,MONDO:0005575,Drug,Disease,7,2,500,500,2,561
+TestCase_11,acetylsalicylate → colorectal cancer,CHEBI:13719,MONDO:0005575,SmallMolecule,Disease,7,0,500,500,0,272
+TestCase_16,Sildenafil → Alzheimer disease,CHEBI:9139,MONDO:0004975,Drug,Disease,4,2,500,500,3,2515

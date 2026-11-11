@@ -1,0 +1,27 @@
+case_id,asset_id,query,expected_nodes,first_matching_rank,asset_key,matching_paths,distinct_metapaths,most_frequent_metapath,paths_with_top_metapath
+TestCase_0,Asset_2,Imatinib → Asthma,KIT,2,TestCase_0/Asset_2,5,40,Drug — affects — Gene — actively_involved_in — BiologicalProcess — genetic_association — Disease,2
+TestCase_13,Asset_23,Crohn's Disease → Parkinson's Disease,LRRK2,2,TestCase_13/Asset_23,58,185,Disease — associated_with — Gene — directly_physically_interacts_with — SmallMolecule — directly_physically_interacts_with — Gene — affects — Disease,18
+TestCase_9,Asset_37,IFNG → tryptophan,IDO1,3,TestCase_9/Asset_37,50,80,Gene — affects — Protein — affects — Gene — affects — Drug,15
+TestCase_7,Asset_79,Parkinson's Disease → melanoma,LRRK2,4,TestCase_7/Asset_79,28,160,Disease — affects — Gene — physically_interacts_with — Gene — physically_interacts_with — Gene — associated_with — Disease,12
+TestCase_7,Asset_86,Parkinson's Disease → melanoma,MC1R,21,TestCase_7/Asset_86,5,138,Disease — correlated_with — SmallMolecule — affects — Gene — directly_physically_interacts_with — Gene — associated_with — Disease,2
+TestCase_9,Asset_40,IFNG → tryptophan,T Cell,21,TestCase_9/Asset_40,7,27,Gene — affects — Gene — interacts_with — Cell — affects — Drug,5
+TestCase_0,Asset_5,Imatinib → Asthma,Mast Cell,22,TestCase_0/Asset_5,5,22,Drug — affects — Cell — interacts_with — Cell — interacts_with — Cell — disrupts — Disease,1
+TestCase_1,Asset_25,SLC6A20 → COVID-19,ACE2,27,TestCase_1/Asset_25,23,60,Gene — affects — SmallMolecule — affects — Gene — physically_interacts_with — Gene — affects — Disease,7
+TestCase_13,Asset_22,Crohn's Disease → Parkinson's Disease,PARK7,27,TestCase_13/Asset_22,15,92,Disease — associated_with — Gene — physically_interacts_with — Gene — physically_interacts_with — Gene — affects — Disease,9
+TestCase_7,Asset_83,Parkinson's Disease → melanoma,HTRA2,28,TestCase_7/Asset_83,1,2,Disease — causes — Gene — physically_interacts_with — Gene — associated_with — Disease,1
+TestCase_5,Asset_30,IFNG → COVID-19,IFNGR,31,TestCase_5/Asset_30,5,40,Gene — affects — Gene — physically_interacts_with — Gene — associated_with — Disease — causes — Disease,3
+TestCase_7,Asset_80,Parkinson's Disease → melanoma,PARK7,38,TestCase_7/Asset_80,13,112,Disease — affects — Gene — physically_interacts_with — Gene — physically_interacts_with — Gene — associated_with — Disease,8
+TestCase_7,Asset_78,Parkinson's Disease → melanoma,SNCA,40,TestCase_7/Asset_78,36,465,Disease — affects — Gene — physically_interacts_with — Gene — physically_interacts_with — Gene — associated_with — Disease,13
+TestCase_6,Asset_7,Imatinib → Asthma,KIT,42,TestCase_6/Asset_7,3,24,Drug — affects — Gene — actively_involved_in — BiologicalProcess — affects — Protein — causes — Disease,1
+TestCase_6,Asset_8,Imatinib → Asthma,Histamine,43,TestCase_6/Asset_8,42,10,Drug — affects — Gene — has_participant — Pathway — has_participant — Drug — contributes_to — Disease,33
+TestCase_7,Asset_77,Parkinson's Disease → melanoma,PRKN,69,TestCase_7/Asset_77,7,6,Disease — associated_with — Gene — physically_interacts_with — Protein — physically_interacts_with — Gene — associated_with — Disease,4
+TestCase_7,Asset_81,Parkinson's Disease → melanoma,PINK1,118,TestCase_7/Asset_81,17,44,Disease — affects — Gene — physically_interacts_with — Gene — physically_interacts_with — Gene — associated_with — Disease,12
+TestCase_5,Asset_29,IFNG → COVID-19,IDO1,157,TestCase_5/Asset_29,1,6,Gene — affects — Gene — affects — SmallMolecule — in_clinical_trials_for — Disease,1
+TestCase_17,Asset_97,Oxaloacetate → fructose-6-phosphate,3-Phospho-D-glyceroyl phosphate,165,TestCase_17/Asset_97,1,1,SmallMolecule — has_participant — Pathway — has_participant — SmallMolecule — has_participant — Pathway — has_participant — SmallMolecule,1
+TestCase_3,Asset_67,Aspirin → Colorectal Cancer,prostaglandin PGE2,227,TestCase_3/Asset_67,1,9,Drug — affects — SmallMolecule — contributes_to — Disease,1
+TestCase_16,Asset_53,Sildenafil → Alzheimer's disease,PDE5A,229,TestCase_16/Asset_53,2,36,Drug — affects — Gene — physically_interacts_with — Gene — affects — Drug — causes — Disease,1
+TestCase_9,Asset_38,IFNG → tryptophan,IFNGR,246,TestCase_9/Asset_38,1,9,Gene — affects — Gene — physically_interacts_with — Protein — physically_interacts_with — Gene — affects — Drug,1
+TestCase_16,Asset_54,Sildenafil → Alzheimer's disease,cGMP,332,TestCase_16/Asset_54,1,4,Drug — affects — Gene — actively_involved_in — BiologicalProcess — affects — SmallMolecule — causes — Disease,1
+TestCase_0,Asset_3,Imatinib → Asthma,Histamine,402,TestCase_0/Asset_3,1,7,Drug — directly_physically_interacts_with — Gene — has_participant — Pathway — has_participant — Drug — affects — Disease,1
+TestCase_2,Asset_71,Fluoxetine (Prozac) → long-COVID,IFNG,442,TestCase_2/Asset_71,2,9,Drug — affects — Gene — affects — Protein — in_clinical_trials_for — Disease — causes — Disease,2
+TestCase_3,Asset_65,Aspirin → Colorectal Cancer,NFKB,444,TestCase_3/Asset_65,1,20,Drug — affects — Gene — directly_physically_interacts_with — Gene — affects — Disease,1

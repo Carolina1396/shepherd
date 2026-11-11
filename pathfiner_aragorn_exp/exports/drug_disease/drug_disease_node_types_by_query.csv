@@ -1,0 +1,284 @@
+case_id,node_type_sequence,path_count,asset_matching_path_count,best_rank,median_rank,returned_paths,query,percent_of_query_paths
+TestCase_0,Drug — Gene — Gene — Disease,299,2,4,255.0,500,Imatinib → asthma,59.8
+TestCase_0,Drug — Gene — Disease — Disease,59,1,2,137.0,500,Imatinib → asthma,11.8
+TestCase_0,Drug — Gene — BiologicalProcess — Disease,45,2,20,228.0,500,Imatinib → asthma,9.0
+TestCase_0,Drug — Gene — Disease,39,0,163,269.0,500,Imatinib → asthma,7.8
+TestCase_0,Drug — Gene — Gene — Disease — Disease,13,0,315,452.0,500,Imatinib → asthma,2.6
+TestCase_0,Drug — Gene — Cell — Disease,10,1,13,74.0,500,Imatinib → asthma,2.0
+TestCase_0,Drug — Gene — Pathway — Disease,6,0,67,253.0,500,Imatinib → asthma,1.2
+TestCase_0,Drug — Gene — Protein — Disease,3,0,5,298.0,500,Imatinib → asthma,0.6
+TestCase_0,Drug — Cell — Cell — Disease,2,1,290,374.0,500,Imatinib → asthma,0.4
+TestCase_0,Drug — Gene — PhenotypicFeature — Disease,2,0,209,220.5,500,Imatinib → asthma,0.4
+TestCase_0,Drug — Gene — SmallMolecule — Disease,2,0,261,372.5,500,Imatinib → asthma,0.4
+TestCase_0,Drug — Protein — Gene — Disease,2,0,377,431.5,500,Imatinib → asthma,0.4
+TestCase_0,Drug — BiologicalProcess — Cell — Disease,1,0,292,292.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Cell — Cell — Cell — Disease,1,1,483,483.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Disease,1,0,1,1.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Disease — Disease,1,0,350,350.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Disease — Protein — Disease,1,0,357,357.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — BiologicalProcess — Protein — Disease,1,0,321,321.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — Cell — Cell — Disease,1,1,143,143.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — CellularComponent — Disease,1,0,150,150.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — Disease — Disease — Disease,1,0,347,347.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — Gene — Drug — Disease,1,0,465,465.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — Gene — PhenotypicFeature — Disease,1,0,466,466.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — Gene — SmallMolecule — Disease,1,0,421,421.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — MolecularActivity — Disease,1,0,116,116.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — Pathway — Drug — Disease,1,1,402,402.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Gene — Protein — Gene — Disease,1,0,432,432.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — MolecularActivity — Protein — Disease,1,0,203,203.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — PhenotypicFeature — Disease,1,0,401,401.0,500,Imatinib → asthma,0.2
+TestCase_0,Drug — Protein — Cell — Disease,1,1,266,266.0,500,Imatinib → asthma,0.2
+TestCase_11,SmallMolecule — Gene — Gene — Gene — Disease,377,0,1,223.0,500,acetylsalicylate → colorectal cancer,75.4
+TestCase_11,SmallMolecule — Gene — Gene — Drug — Disease,33,0,10,353.0,500,acetylsalicylate → colorectal cancer,6.6
+TestCase_11,SmallMolecule — Gene — Gene — SmallMolecule — Disease,22,0,46,311.0,500,acetylsalicylate → colorectal cancer,4.4
+TestCase_11,SmallMolecule — Gene — Protein — Gene — Disease,19,0,106,317.0,500,acetylsalicylate → colorectal cancer,3.8
+TestCase_11,SmallMolecule — Gene — Gene — Disease,9,0,3,166.0,500,acetylsalicylate → colorectal cancer,1.8
+TestCase_11,SmallMolecule — Gene — BiologicalProcess — Gene — Disease,7,0,146,414.0,500,acetylsalicylate → colorectal cancer,1.4
+TestCase_11,SmallMolecule — Gene — Protein — Disease,6,0,129,297.0,500,acetylsalicylate → colorectal cancer,1.2
+TestCase_11,SmallMolecule — Gene — SmallMolecule — Gene — Disease,5,0,201,460.0,500,acetylsalicylate → colorectal cancer,1.0
+TestCase_11,SmallMolecule — Gene — Gene — Disease — Disease,4,0,179,355.5,500,acetylsalicylate → colorectal cancer,0.8
+TestCase_11,SmallMolecule — Gene — Pathway — Gene — Disease,3,0,156,180.0,500,acetylsalicylate → colorectal cancer,0.6
+TestCase_11,SmallMolecule — Gene — ChemicalEntity — Gene — Disease,2,0,278,342.0,500,acetylsalicylate → colorectal cancer,0.4
+TestCase_11,SmallMolecule — Gene — Gene — Cell — Disease,2,0,105,129.0,500,acetylsalicylate → colorectal cancer,0.4
+TestCase_11,SmallMolecule — Gene — Gene — MolecularMixture — Disease,2,0,155,317.0,500,acetylsalicylate → colorectal cancer,0.4
+TestCase_11,SmallMolecule — Gene — Gene — Protein — Disease,2,0,259,305.0,500,acetylsalicylate → colorectal cancer,0.4
+TestCase_11,SmallMolecule — Gene — PhenotypicFeature — Gene — Disease,2,0,473,474.5,500,acetylsalicylate → colorectal cancer,0.4
+TestCase_11,SmallMolecule — Gene — BiologicalProcess — SmallMolecule — Disease,1,0,291,291.0,500,acetylsalicylate → colorectal cancer,0.2
+TestCase_11,SmallMolecule — Gene — Gene — ChemicalEntity — Disease,1,0,413,413.0,500,acetylsalicylate → colorectal cancer,0.2
+TestCase_11,SmallMolecule — Gene — Protein — Protein — Disease,1,0,459,459.0,500,acetylsalicylate → colorectal cancer,0.2
+TestCase_11,SmallMolecule — Gene — SmallMolecule — Drug — Disease,1,0,270,270.0,500,acetylsalicylate → colorectal cancer,0.2
+TestCase_11,SmallMolecule — Gene — SmallMolecule — SmallMolecule — Disease,1,0,484,484.0,500,acetylsalicylate → colorectal cancer,0.2
+TestCase_16,Drug — Gene — Gene — Gene — Disease,100,0,22,306.0,500,Sildenafil → Alzheimer disease,20.0
+TestCase_16,Drug — Gene — Gene — Disease,73,0,4,178.0,500,Sildenafil → Alzheimer disease,14.6
+TestCase_16,Drug — Gene — Protein — Gene — Disease,37,0,54,248.0,500,Sildenafil → Alzheimer disease,7.4
+TestCase_16,Drug — Gene — Pathway — Drug — Disease,30,0,14,71.0,500,Sildenafil → Alzheimer disease,6.0
+TestCase_16,Drug — Gene — Pathway — Gene — Disease,23,0,100,356.0,500,Sildenafil → Alzheimer disease,4.6
+TestCase_16,Drug — Gene — BiologicalProcess — Disease,21,0,7,213.0,500,Sildenafil → Alzheimer disease,4.2
+TestCase_16,Drug — Gene — Pathway — SmallMolecule — Disease,20,0,50,235.0,500,Sildenafil → Alzheimer disease,4.0
+TestCase_16,Drug — Disease — Gene — Disease — Disease,15,0,111,383.0,500,Sildenafil → Alzheimer disease,3.0
+TestCase_16,Drug — Gene — Gene — SmallMolecule — Disease,14,0,198,390.5,500,Sildenafil → Alzheimer disease,2.8
+TestCase_16,Drug — Gene — Gene — Disease — Disease,13,1,64,218.0,500,Sildenafil → Alzheimer disease,2.6
+TestCase_16,Drug — Disease — Disease,10,0,144,312.0,500,Sildenafil → Alzheimer disease,2.0
+TestCase_16,Drug — Gene — Gene — Drug — Disease,9,1,134,377.0,500,Sildenafil → Alzheimer disease,1.8
+TestCase_16,Drug — Gene — BiologicalProcess — Gene — Disease,6,0,32,247.5,500,Sildenafil → Alzheimer disease,1.2
+TestCase_16,Drug — Gene — MolecularActivity — Disease,6,0,33,241.5,500,Sildenafil → Alzheimer disease,1.2
+TestCase_16,Drug — Drug — Gene — Disease,5,0,2,45.0,500,Sildenafil → Alzheimer disease,1.0
+TestCase_16,Drug — BiologicalProcess — Gene — BiologicalProcess — Disease,4,0,80,179.5,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — Drug — Protein — Disease,4,0,16,126.5,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — Gene — BiologicalProcess — Drug — Disease,4,0,90,209.0,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — Gene — BiologicalProcess — SmallMolecule — Disease,4,1,120,388.0,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — Gene — Disease,4,0,219,295.0,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — Gene — Protein — Disease,4,0,13,68.5,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — Gene — SmallMolecule — Gene — Disease,4,0,254,368.5,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — SmallMolecule — Protein — Disease,4,0,9,137.5,500,Sildenafil → Alzheimer disease,0.8
+TestCase_16,Drug — Gene — PhenotypicFeature — Gene — Disease,3,0,177,367.0,500,Sildenafil → Alzheimer disease,0.6
+TestCase_16,Drug — Gene — SmallMolecule — Drug — Disease,3,0,124,325.0,500,Sildenafil → Alzheimer disease,0.6
+TestCase_16,Drug — BiologicalProcess — Drug — Disease,2,0,319,388.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — BiologicalProcess — Gene — Gene — Disease,2,0,408,445.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Disease — Gene — Drug — Disease,2,0,159,179.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Disease — Gene — PhenotypicFeature — Disease,2,0,452,458.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Drug — BiologicalProcess — Disease,2,0,53,56.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Drug — ChemicalEntity — PhenotypicFeature — Disease,2,0,12,62.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Drug — Disease — Disease,2,0,73,141.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Drug — Gene — Gene — Disease,2,0,173,247.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Drug — GrossAnatomicalStructure — Drug — Disease,2,0,106,145.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Gene — Disease — Gene — Disease,2,0,99,126.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Gene — Gene — PhenotypicFeature — Disease,2,0,235,236.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Gene — Pathway — Disease,2,0,270,308.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Gene — SmallMolecule — PhenotypicFeature — Disease,2,0,174,261.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — PhenotypicFeature — Disease,2,0,122,157.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — PhenotypicFeature — Disease — Disease,2,0,136,209.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — PhenotypicFeature — PhenotypicFeature — Disease — Disease,2,0,44,251.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — Protein — Gene — Disease,2,0,26,52.0,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — SmallMolecule — Gene — Disease,2,0,101,101.5,500,Sildenafil → Alzheimer disease,0.4
+TestCase_16,Drug — BiologicalProcess — ChemicalEntity — Disease — Disease,1,0,424,424.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — BiologicalProcess — Drug — Drug — Disease,1,0,263,263.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — BiologicalProcess — Gene — Drug — Disease,1,0,434,434.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — BiologicalProcess — Protein — Disease,1,0,186,186.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — BiologicalProcess — Protein — Gene — Disease,1,0,242,242.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — BiologicalProcess — SmallMolecule — PhenotypicFeature — Disease,1,0,496,496.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Disease,1,0,1,1.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Disease — Cell — Disease — Disease,1,0,143,143.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Disease — Disease — SmallMolecule — Disease,1,0,453,453.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Disease — Gene — MolecularMixture — Disease,1,0,413,413.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Disease — Gene — SmallMolecule — Disease,1,0,477,477.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Disease — PhenotypicFeature — Disease — Disease,1,0,34,34.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — AnatomicalEntity — PhenotypicFeature — Disease,1,0,500,500.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — BiologicalProcess — Drug — Disease,1,0,369,369.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — Cell — AnatomicalEntity — Disease,1,0,104,104.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — Cell — Disease,1,0,51,51.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — Cell — Drug — Disease,1,0,133,133.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — Disease,1,0,165,165.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — Drug — PhenotypicFeature — Disease,1,0,121,121.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — Gene — Drug — Disease,1,0,303,303.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — SmallMolecule — Disease,1,0,217,217.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — SmallMolecule — PhenotypicFeature — Disease,1,0,112,112.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Drug — SmallMolecule — SmallMolecule — Disease,1,0,380,380.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — BiologicalProcess — ChemicalEntity — Disease,1,0,187,187.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — Cell — BiologicalProcess — Disease,1,0,116,116.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — ChemicalEntity — Disease,1,0,181,181.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — Disease — Disease,1,0,28,28.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — Disease — PhenotypicFeature — Disease,1,0,183,183.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — Gene — ChemicalEntity — Disease,1,0,331,331.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — PhenotypicFeature — Disease,1,0,3,3.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — Protein — BiologicalProcess — Disease,1,0,317,317.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — Protein — PhenotypicFeature — Disease,1,0,341,341.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — Protein — SmallMolecule — Disease,1,0,390,390.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — Gene — SmallMolecule — SmallMolecule — Disease,1,0,414,414.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — PhenotypicFeature — Gene — Disease — Disease,1,0,373,373.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — PhenotypicFeature — Gene — PhenotypicFeature — Disease,1,0,421,421.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — BiologicalProcess — Drug — Disease,1,0,86,86.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — ChemicalEntity — Disease,1,0,123,123.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — Disease,1,0,141,141.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — Drug — ChemicalEntity — Disease,1,0,251,251.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — Drug — Drug — Disease,1,0,474,474.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — Gene — Disease — Disease,1,0,95,95.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — GrossAnatomicalStructure — Drug — Disease,1,0,379,379.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_16,Drug — SmallMolecule — Protein — PhenotypicFeature — Disease,1,0,76,76.0,500,Sildenafil → Alzheimer disease,0.2
+TestCase_2,Drug — Gene — Pathway — Drug — Disease,155,0,4,217.0,500,Fluoxetine → long COVID-19,31.0
+TestCase_2,Drug — Gene — Pathway — SmallMolecule — Disease,71,0,2,98.0,500,Fluoxetine → long COVID-19,14.2
+TestCase_2,Drug — Gene — Gene — Drug — Disease,61,0,37,349.0,500,Fluoxetine → long COVID-19,12.2
+TestCase_2,Drug — Gene — Gene — SmallMolecule — Disease,36,0,35,346.5,500,Fluoxetine → long COVID-19,7.2
+TestCase_2,Drug — Gene — BiologicalProcess — Disease — Disease,16,0,128,347.5,500,Fluoxetine → long COVID-19,3.2
+TestCase_2,Drug — Gene — BiologicalProcess — Drug — Disease,13,0,70,323.0,500,Fluoxetine → long COVID-19,2.6
+TestCase_2,Drug — Drug — Pathway — SmallMolecule — Disease,11,0,42,71.0,500,Fluoxetine → long COVID-19,2.2
+TestCase_2,Drug — SmallMolecule — Gene — Drug — Disease,10,0,7,294.0,500,Fluoxetine → long COVID-19,2.0
+TestCase_2,Drug — Gene — Gene — ComplexMolecularMixture — Disease,9,0,190,396.0,500,Fluoxetine → long COVID-19,1.8
+TestCase_2,Drug — Pathway — Gene — Drug — Disease,8,0,89,262.5,500,Fluoxetine → long COVID-19,1.6
+TestCase_2,Drug — Gene — Disease — Disease — Disease,7,0,65,195.0,500,Fluoxetine → long COVID-19,1.4
+TestCase_2,Drug — Gene — Gene — Gene — Disease,6,0,27,337.0,500,Fluoxetine → long COVID-19,1.2
+TestCase_2,Drug — Gene — SmallMolecule — Disease,6,0,154,279.0,500,Fluoxetine → long COVID-19,1.2
+TestCase_2,Drug — Gene — PhenotypicFeature — Disease — Disease,5,0,114,232.0,500,Fluoxetine → long COVID-19,1.0
+TestCase_2,Drug — Gene — Protein — Disease — Disease,5,2,185,435.0,500,Fluoxetine → long COVID-19,1.0
+TestCase_2,Drug — Gene — Gene — Disease — Disease,4,0,225,246.0,500,Fluoxetine → long COVID-19,0.8
+TestCase_2,Drug — Gene — Protein — Disease,4,0,339,425.0,500,Fluoxetine → long COVID-19,0.8
+TestCase_2,Drug — SmallMolecule — BiologicalProcess — Disease — Disease,4,0,22,260.0,500,Fluoxetine → long COVID-19,0.8
+TestCase_2,Drug — Gene — Cell — Cell — Disease,3,0,164,332.0,500,Fluoxetine → long COVID-19,0.6
+TestCase_2,Drug — Gene — Disease — OrganismTaxon — Disease,3,0,147,198.0,500,Fluoxetine → long COVID-19,0.6
+TestCase_2,Drug — Gene — Drug — Disease,3,0,230,354.0,500,Fluoxetine → long COVID-19,0.6
+TestCase_2,Drug — Gene — Gene — MolecularMixture — Disease,3,0,105,136.0,500,Fluoxetine → long COVID-19,0.6
+TestCase_2,Drug — Disease — Disease — Disease,2,0,320,351.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Disease — Gene — SmallMolecule — Disease,2,0,355,400.5,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Gene — Cell — Disease,2,0,3,105.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Gene — Gene — ChemicalEntity — Disease,2,0,481,488.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Gene — Gene — Disease,2,0,46,248.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Gene — Gene — OrganismTaxon — Disease,2,0,170,209.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Gene — MolecularActivity — Disease — Disease,2,0,226,312.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Pathway — Drug — Disease,2,0,62,67.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — Pathway — SmallMolecule — SmallMolecule — Disease,2,0,54,202.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — SmallMolecule — Gene — SmallMolecule — Disease,2,0,448,456.0,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — SmallMolecule — PhenotypicFeature — Disease — Disease,2,0,29,65.5,500,Fluoxetine → long COVID-19,0.4
+TestCase_2,Drug — BiologicalProcess — Cell — Cell — Disease,1,0,277,277.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — BiologicalProcess — Cell — OrganismTaxon — Disease,1,0,346,346.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — BiologicalProcess — Disease — Disease,1,0,427,427.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — BiologicalProcess — Gene — Drug — Disease,1,0,353,353.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Cell — Protein — Disease — Disease,1,0,490,490.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Disease — Disease,1,0,68,68.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Disease — PhenotypicFeature — Disease — Disease,1,0,444,444.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Drug — BiologicalProcess — Disease — Disease,1,0,445,445.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Drug — BiologicalProcess — Drug — Disease,1,0,213,213.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Drug — Disease — Disease,1,0,407,407.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Drug — Gene — ComplexMolecularMixture — Disease,1,0,438,438.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Drug — Gene — SmallMolecule — Disease,1,0,307,307.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Drug — Protein — Drug — Disease,1,0,235,235.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — Cell — OrganismTaxon — Disease,1,0,233,233.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — CellularComponent — Drug — Disease,1,0,401,401.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — ChemicalEntity — SmallMolecule — Disease,1,0,214,214.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — Disease,1,0,95,95.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — Disease — Disease,1,0,1,1.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — Gene — Cell — Disease,1,0,344,344.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — MolecularMixture — Disease,1,0,395,395.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — MolecularMixture — Disease — Disease,1,0,266,266.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — OrganismTaxon — Disease,1,0,59,59.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — Pathway — Disease — Disease,1,0,404,404.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — PhenotypicFeature — OrganismTaxon — Disease,1,0,378,378.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — Protein — Gene — Disease,1,0,390,390.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — Protein — OrganismTaxon — Disease,1,0,280,280.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — SmallMolecule — Disease — Disease,1,0,302,302.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — SmallMolecule — Gene — Disease,1,0,477,477.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Gene — SmallMolecule — SmallMolecule — Disease,1,0,431,431.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — Pathway — SmallMolecule — Disease,1,0,17,17.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — PhenotypicFeature — OrganismTaxon — Disease,1,0,253,253.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — SmallMolecule — BiologicalProcess — Drug — Disease,1,0,290,290.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — SmallMolecule — Cell — Cell — Disease,1,0,104,104.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — SmallMolecule — GrossAnatomicalStructure — Cell — Disease,1,0,261,261.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_2,Drug — SmallMolecule — MolecularActivity — Drug — Disease,1,0,356,356.0,500,Fluoxetine → long COVID-19,0.2
+TestCase_3,Drug — Gene — Gene — Disease,280,1,2,157.5,500,Acetylsalicylic acid → colorectal cancer,56.0
+TestCase_3,Drug — Gene — SmallMolecule — Gene — Disease,64,0,129,402.0,500,Acetylsalicylic acid → colorectal cancer,12.8
+TestCase_3,Drug — Gene — Gene — Gene — Disease,43,0,69,388.0,500,Acetylsalicylic acid → colorectal cancer,8.6
+TestCase_3,Drug — Gene — Protein — Gene — Disease,25,0,252,383.0,500,Acetylsalicylic acid → colorectal cancer,5.0
+TestCase_3,Drug — Gene — Disease,10,0,198,254.5,500,Acetylsalicylic acid → colorectal cancer,2.0
+TestCase_3,Drug — Gene — Pathway — Gene — Disease,7,0,146,279.0,500,Acetylsalicylic acid → colorectal cancer,1.4
+TestCase_3,Drug — Gene — SmallMolecule — Disease,7,0,89,358.0,500,Acetylsalicylic acid → colorectal cancer,1.4
+TestCase_3,Drug — Pathway — SmallMolecule — Disease,7,0,136,285.0,500,Acetylsalicylic acid → colorectal cancer,1.4
+TestCase_3,Drug — SmallMolecule — Pathway — Gene — Disease,7,0,113,280.0,500,Acetylsalicylic acid → colorectal cancer,1.4
+TestCase_3,Drug — Gene — Protein — Disease,4,0,117,278.0,500,Acetylsalicylic acid → colorectal cancer,0.8
+TestCase_3,Drug — SmallMolecule — Disease,4,1,156,233.5,500,Acetylsalicylic acid → colorectal cancer,0.8
+TestCase_3,Drug — SmallMolecule — Gene — Disease,4,0,120,230.5,500,Acetylsalicylic acid → colorectal cancer,0.8
+TestCase_3,Drug — Pathway — SmallMolecule — Gene — Disease,3,0,184,236.0,500,Acetylsalicylic acid → colorectal cancer,0.6
+TestCase_3,Drug — Cell — Gene — Disease,2,0,54,120.5,500,Acetylsalicylic acid → colorectal cancer,0.4
+TestCase_3,Drug — Disease — Gene — Disease,2,0,460,474.0,500,Acetylsalicylic acid → colorectal cancer,0.4
+TestCase_3,Drug — Gene — Disease — Gene — Disease,2,0,333,393.0,500,Acetylsalicylic acid → colorectal cancer,0.4
+TestCase_3,Drug — Gene — Gene — SmallMolecule — Disease,2,0,217,355.5,500,Acetylsalicylic acid → colorectal cancer,0.4
+TestCase_3,Drug — Protein — Gene — Disease,2,0,77,145.0,500,Acetylsalicylic acid → colorectal cancer,0.4
+TestCase_3,Drug — SmallMolecule — Pathway — SmallMolecule — Disease,2,0,193,267.5,500,Acetylsalicylic acid → colorectal cancer,0.4
+TestCase_3,Drug — SmallMolecule — SmallMolecule — Disease,2,0,107,225.5,500,Acetylsalicylic acid → colorectal cancer,0.4
+TestCase_3,Drug — BiologicalProcess — Cell — Disease,1,0,233,233.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — BiologicalProcess — Cell — Gene — Disease,1,0,441,441.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — BiologicalProcess — Gene — Disease,1,0,350,350.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — BiologicalProcess — SmallMolecule — Gene — Disease,1,0,464,464.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Cell — Cell — Disease,1,0,108,108.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Cell — Protein — Disease,1,0,493,493.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — ChemicalEntity — Gene — Disease,1,0,37,37.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Disease,1,0,1,1.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Drug — Disease,1,0,215,215.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Drug — Gene — Disease,1,0,434,434.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Drug — SmallMolecule — Disease,1,0,268,268.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Gene — Cell — Disease,1,0,376,376.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Gene — CellularComponent — Gene — Disease,1,0,492,492.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Gene — ChemicalEntity — Disease,1,0,209,209.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Gene — Disease — Disease,1,0,463,463.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Pathway — Drug — Disease,1,0,364,364.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — Pathway — Gene — Gene — Disease,1,0,4,4.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — PhenotypicFeature — Gene — Disease,1,0,420,420.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — SmallMolecule — BiologicalProcess — Drug — Disease,1,0,413,413.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — SmallMolecule — Cell — Disease,1,0,299,299.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_3,Drug — SmallMolecule — Gene — Gene — Disease,1,0,334,334.0,500,Acetylsalicylic acid → colorectal cancer,0.2
+TestCase_6,Drug — Gene — Gene — SmallMolecule — Disease,275,1,36,283.0,500,Imatinib → allergic asthma,55.0
+TestCase_6,Drug — Gene — SmallMolecule — Disease,67,0,9,148.0,500,Imatinib → allergic asthma,13.4
+TestCase_6,Drug — Gene — Pathway — Drug — Disease,41,41,43,306.0,500,Imatinib → allergic asthma,8.2
+TestCase_6,Drug — Gene — BiologicalProcess — Disease,16,0,50,261.0,500,Imatinib → allergic asthma,3.2
+TestCase_6,Drug — Gene — BiologicalProcess — SmallMolecule — Disease,13,0,10,193.0,500,Imatinib → allergic asthma,2.6
+TestCase_6,Drug — Gene — Cell — Disease,9,0,1,7.0,500,Imatinib → allergic asthma,1.8
+TestCase_6,Drug — Gene — Protein — Disease,8,0,82,125.5,500,Imatinib → allergic asthma,1.6
+TestCase_6,Drug — Gene — BiologicalProcess — Protein — Disease,6,1,64,274.0,500,Imatinib → allergic asthma,1.2
+TestCase_6,Drug — Gene — Gene — BiologicalProcess — Disease,6,0,164,285.5,500,Imatinib → allergic asthma,1.2
+TestCase_6,Drug — Gene — PhenotypicFeature — Disease,6,0,8,32.5,500,Imatinib → allergic asthma,1.2
+TestCase_6,Drug — Gene — Gene — Disease,5,0,17,33.0,500,Imatinib → allergic asthma,1.0
+TestCase_6,Drug — Gene — Gene — Drug — Disease,5,1,53,390.0,500,Imatinib → allergic asthma,1.0
+TestCase_6,Drug — BiologicalProcess — Cell — Disease,4,0,3,11.5,500,Imatinib → allergic asthma,0.8
+TestCase_6,Drug — Gene — BiologicalProcess — Cell — Disease,4,0,37,157.0,500,Imatinib → allergic asthma,0.8
+TestCase_6,Drug — Gene — Gene — Protein — Disease,4,0,86,160.5,500,Imatinib → allergic asthma,0.8
+TestCase_6,Drug — MolecularActivity — Protein — Cell — Disease,3,0,133,194.0,500,Imatinib → allergic asthma,0.6
+TestCase_6,Drug — Protein — Cell — Disease,3,0,41,59.0,500,Imatinib → allergic asthma,0.6
+TestCase_6,Drug — Cell — Cell — Cell — Disease,2,0,145,196.0,500,Imatinib → allergic asthma,0.4
+TestCase_6,Drug — Cell — Cell — Disease,2,0,23,31.5,500,Imatinib → allergic asthma,0.4
+TestCase_6,Drug — Gene — Disease — PhenotypicFeature — Disease,2,0,74,206.5,500,Imatinib → allergic asthma,0.4
+TestCase_6,Drug — Gene — Gene — Cell — Disease,2,0,48,109.0,500,Imatinib → allergic asthma,0.4
+TestCase_6,Drug — Gene — Protein — Cell — Disease,2,0,150,300.0,500,Imatinib → allergic asthma,0.4
+TestCase_6,Drug — BiologicalProcess — Gene — SmallMolecule — Disease,1,0,237,237.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Cell — Protein — Cell — Disease,1,0,482,482.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Disease — Cell — Cell — Disease,1,0,318,318.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — BiologicalProcess — PhenotypicFeature — Disease,1,0,362,362.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — Cell — BiologicalProcess — Disease,1,0,35,35.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — Cell — Protein — Disease,1,0,149,149.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — CellularComponent — SmallMolecule — Disease,1,0,327,327.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — ChemicalEntity — Disease,1,1,42,42.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — Disease — Procedure — Disease,1,0,388,388.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — Gene — Gene — Disease,1,0,167,167.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — Protein — Protein — Disease,1,0,168,168.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — Gene — SmallMolecule — Cell — Disease,1,0,428,428.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — MolecularActivity — ChemicalEntity — PhenotypicFeature — Disease,1,0,171,171.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — MolecularActivity — Gene — SmallMolecule — Disease,1,0,265,265.0,500,Imatinib → allergic asthma,0.2
+TestCase_6,Drug — MolecularActivity — SmallMolecule — Disease,1,0,116,116.0,500,Imatinib → allergic asthma,0.2

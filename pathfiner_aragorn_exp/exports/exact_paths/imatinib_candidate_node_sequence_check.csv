@@ -1,0 +1,4 @@
+check,returned_paths_checked,matching_paths,first_rank
+"All candidate nodes present, any order",500,0,
+"Candidate node order, extra nodes allowed",500,0,
+"Exact candidate node sequence, no extra nodes",500,0,
