@@ -1,0 +1,73 @@
+SU10 HANDOFF
+
+SSH configured locally: agonzalez@su10.scripps.edu (alias su10.scripps.edu).
+Noninteractive login was rejected on 2026-11-13. Authentication must be resolved
+before the assistant can inspect SU10, transfer data, or launch workloads there.
+Do not send passwords or private keys through chat.
+
+Resource inspection after login (read-only):
+  hostname
+  free -h
+  df -h .
+  python3 --version
+  java -version
+  command -v tmux
+  command -v sbatch
+  command -v qsub
+If this is a cluster login node, use its scheduler/compute allocation rather than
+launching mining there. For a dedicated server, use tmux. Mining defaults remain
+two threads, up to 16 GiB Java heap, and one hour per body length, plus validation
+for at most one hour. Allow at least 25 GiB free disk for the current transfer and
+additional space for output candidates. Available RAM must pass the preflight.
+
+Code checkout (on SU10 after the experiment branch has been pushed):
+  git clone --branch research/amie-filtered https://github.com/Carolina1396/shepherd.git ~/shepherd-amie
+  cd ~/shepherd-amie
+  git rev-parse HEAD
+The commit must match the locally recorded handoff commit. Do not replace an
+existing checkout; use a new directory if ~/shepherd-amie already exists.
+
+Data transfer (run on the Mac, after SU10 login works):
+  ssh su10.scripps.edu 'mkdir -p shepherd-amie/experiments/amie-filtered/runs/export-001 shepherd-amie/artifacts/gandalf_no_drug_disease'
+  rsync -av --partial --progress --exclude export.sqlite experiments/amie-filtered/runs/export-001/ su10.scripps.edu:shepherd-amie/experiments/amie-filtered/runs/export-001/
+  rsync -av --partial --progress --exclude lock.mdb artifacts/gandalf_no_drug_disease/ su10.scripps.edu:shepherd-amie/artifacts/gandalf_no_drug_disease/
+The export is ~650 MiB excluding the SQLite scratch index. Graph is ~18 GiB.
+Do not put these data in Git. rsync can resume; no --delete option is used.
+The split CSVs are already tracked in the repository. The workflow checks their
+original checksums; it does not regenerate or shuffle split assignments.
+
+Setup (on SU10):
+  cd ~/shepherd-amie
+  bash experiments/amie-filtered/setup_server.sh
+If python3 is older than 3.12, select an installed compatible interpreter:
+  PYTHON_BIN=python3.12 bash experiments/amie-filtered/setup_server.sh
+Setup creates only an experiment-local virtual environment, installs four pinned
+Python packages, downloads/verifies the AMIE executable, and runs fixture tests.
+It does not install the Shepherd application or require Docker/root privileges.
+Java must support -XX:ActiveProcessorCount (Java 17 is the tested version).
+
+Launch (dedicated server only, after resource checks and transfer):
+  cd ~/shepherd-amie
+  tmux new -s amie
+  bash experiments/amie-filtered/run_server.sh su10-001
+Detach with Ctrl-b then d. Reconnect with: tmux attach -t amie
+Do not rerun the same run name: each output directory must be new.
+For a cluster allocation, run the same script inside a job with >=2 CPUs and
+>=18 GiB allocated memory and a wall time of at least 3h15m, subject to site policy.
+Host memory availability is not a substitute for an adequate job allocation.
+
+Results:
+  experiments/amie-filtered/runs/su10-001/driver.log
+  experiments/amie-filtered/runs/su10-001/git-commit.txt
+  experiments/amie-filtered/runs/su10-001/mining/manifest.json
+  experiments/amie-filtered/runs/su10-001/mining/body-{2,3}/rules.json
+  experiments/amie-filtered/runs/su10-001/validation/report.json
+The runner supplies relocated graph/split paths explicitly and preserves the
+original export manifest. Every graph/export file required by the workflow is
+checksum-verified before it is consumed. Validation failures or capped mining
+remain visible; a disconnected terminal does not stop a tmux session.
+
+Copy results back (on the Mac):
+  rsync -av --partial --progress su10.scripps.edu:shepherd-amie/experiments/amie-filtered/runs/su10-001/ experiments/amie-filtered/runs/su10-001/
+Test-set predictions remain out of scope. Do not lower memory/threshold settings
+or change graph semantics silently if a run cannot complete.

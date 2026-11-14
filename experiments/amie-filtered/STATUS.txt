@@ -1,0 +1,38 @@
+Implementation and first export: 2026-11-13
+
+Implemented export, pinned executable verification, bounded two/three-body mining,
+path-rule parsing/canonicalization, exact qualifier validation, and reporting.
+
+Full export completed in 108 seconds:
+  Directory: runs/export-001
+  Source edge records: 27,435,282
+  Distinct qualified evidence triples: 27,391,227
+  Source duplicate triples collapsed: 44,055
+  Distinct predicate/full-qualifier relations: 53,393
+  Training-only target facts: 6,684
+  Validation/test partition integrity checked: 831/830 pairs
+  Source graph remains unchanged; no target labels are present in evidence.tsv.
+  All graph/export/split checksums are in runs/export-001/manifest.json.
+
+Mining preflight completed:
+  Directory: runs/mining-001
+  State: blocked_memory
+  Planned Java heap: 16 GiB
+  Available memory at preflight: 9,512,730,624 bytes (~8.86 GiB)
+  Required available memory: 17 GiB (heap plus 1 GiB native/process headroom)
+  No full-graph Java mining processes were launched.
+  No full-graph rule counts or validation metrics exist yet.
+
+Resume when the memory preflight passes, using a NEW mining directory:
+  ../shepherd-new-pathfinder/.local/gandalf-venv/bin/python experiments/amie-filtered/workflow.py mine --export experiments/amie-filtered/runs/export-001 --out experiments/amie-filtered/runs/mining-002
+  ../shepherd-new-pathfinder/.local/gandalf-venv/bin/python experiments/amie-filtered/workflow.py validate --export experiments/amie-filtered/runs/export-001 --mined experiments/amie-filtered/runs/mining-002 --out experiments/amie-filtered/runs/validation-001
+
+Do not reduce heap, sample evidence, or change the scientific thresholds to bypass
+this block. Any such alternative is a separate explicit protocol decision.
+The existing services/processes were not stopped or modified to free memory.
+
+Validation:
+  Eight tests pass, including the actual pinned AMIE executable discovering both
+  body lengths on fixtures, export/validation integration, opposite-qualifier
+  exclusion, split overlap rejection, timeout preservation, and memory blocking.
+  Fixture successes are not full-graph mining or validation results.
